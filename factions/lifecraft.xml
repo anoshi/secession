@@ -242,7 +242,7 @@
 	<!-- -------------- -->
 	<soldier name="supply" spawn_score="0.0">
 		<resources file="supply_common.resources" />
-		<resources file="supply_brown.resources" />
+		<resources file="supply_lifecraft.resources" />
 
 		<!-- low XP, likely to join player squad -->
 		<attribute_config class="xp">

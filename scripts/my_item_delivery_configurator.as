@@ -56,21 +56,35 @@ class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 		// - replace these with what we want to track as delivered to armory, with intention of unlocking that same item
 		// --------------------------------------------
 
-		// green weapons
+		// ReflexArq weapons
 		list.push_back(Resource("m16a4.weapon", "weapon"));
 		list.push_back(Resource("m240.weapon", "weapon"));
 		list.push_back(Resource("m24_a2.weapon", "weapon"));
 		list.push_back(Resource("mossberg.weapon", "weapon"));
 		list.push_back(Resource("m72_law.weapon", "weapon"));
 
-		// grey weapons
+		// BlastCorp weapons
 		list.push_back(Resource("g36.weapon", "weapon"));
 		list.push_back(Resource("imi_negev.weapon", "weapon"));
 		list.push_back(Resource("psg90.weapon", "weapon"));
 		list.push_back(Resource("spas-12.weapon", "weapon"));
 		list.push_back(Resource("m2_carlgustav.weapon", "weapon"));
 
-		// brown weapons
+		// WyreTek weapons
+		list.push_back(Resource("ak47.weapon", "weapon"));
+		list.push_back(Resource("pkm.weapon", "weapon"));
+		list.push_back(Resource("dragunov_svd.weapon", "weapon"));
+		list.push_back(Resource("qbs-09.weapon", "weapon"));
+		list.push_back(Resource("rpg-7.weapon", "weapon"));
+
+		// ScopeSystems weapons
+		list.push_back(Resource("m16a4.weapon", "weapon"));
+		list.push_back(Resource("m240.weapon", "weapon"));
+		list.push_back(Resource("m24_a2.weapon", "weapon"));
+		list.push_back(Resource("mossberg.weapon", "weapon"));
+		list.push_back(Resource("m72_law.weapon", "weapon"));
+
+		// LifeCraft weapons
 		list.push_back(Resource("ak47.weapon", "weapon"));
 		list.push_back(Resource("pkm.weapon", "weapon"));
 		list.push_back(Resource("dragunov_svd.weapon", "weapon"));

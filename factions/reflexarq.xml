@@ -1,57 +1,57 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="MoveWay" color="0.0 0.8 0.1" firstnames_file="english_firstnames.txt" lastnames_file="english_lastnames.txt" chat_icon_filename="chat_icon_soldier_green.png" chat_icon_commander_filename="chat_icon_commander_green.png" campaign_completion_icon_filename="campaign_win_0.png">
-	<rank xp="0.0" name="MW Recruit">
+<faction name="ReflexArq" color="0.0 0.8 0.1" firstnames_file="english_firstnames.txt" lastnames_file="english_lastnames.txt" chat_icon_filename="chat_icon_soldier_green.png" chat_icon_commander_filename="chat_icon_commander_green.png" campaign_completion_icon_filename="campaign_win_0.png">
+	<rank xp="0.0" name="RA Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
-	<rank xp="0.05" name="MW One">
+	<rank xp="0.05" name="RA One">
 		<hud_icon filename="hud_rank1.png" />
 	</rank>
-	<rank xp="0.1" name="MW Two">
+	<rank xp="0.1" name="RA Two">
 		<hud_icon filename="hud_rank2.png" />
 	</rank>
-	<rank xp="0.2" name="MW Three">
+	<rank xp="0.2" name="RA Three">
 		<hud_icon filename="hud_rank3.png" />
 	</rank>
-	<rank xp="0.3" name="MW Four">
+	<rank xp="0.3" name="RA Four">
 		<hud_icon filename="hud_rank4.png" />
 	</rank>
-	<rank xp="0.4" name="MW Five">
+	<rank xp="0.4" name="RA Five">
 		<hud_icon filename="hud_rank5.png" />
 	</rank>
-	<rank xp="0.6" name="MW Six">
+	<rank xp="0.6" name="RA Six">
 		<hud_icon filename="hud_rank6.png" />
 	</rank>
-	<rank xp="0.8" name="MW Seven">
+	<rank xp="0.8" name="RA Seven">
 		<hud_icon filename="hud_rank7.png" />
 	</rank>
-	<rank xp="1.0" name="MW Eight">
+	<rank xp="1.0" name="RA Eight">
 		<hud_icon filename="hud_rank8.png" />
 	</rank>
-	<rank xp="1.2" name="MW Nine">
+	<rank xp="1.2" name="RA Nine">
 		<hud_icon filename="hud_rank9.png" />
 	</rank>
-	<rank xp="1.4" name="MW Ten">
+	<rank xp="1.4" name="RA Ten">
 		<hud_icon filename="hud_rank10.png" />
 	</rank>
-	<rank xp="2.0" name="MW Eleven">
+	<rank xp="2.0" name="RA Eleven">
 		<hud_icon filename="hud_rank11.png" />
 	</rank>
-	<rank xp="5.0" name="MW Twelve">
+	<rank xp="5.0" name="RA Twelve">
 		<hud_icon filename="hud_rank12.png" />
 	</rank>
-	<rank xp="10.0" name="MW Thirteen">
+	<rank xp="10.0" name="RA Thirteen">
 		<hud_icon filename="hud_rank13.png" />
 	</rank>
-	<rank xp="20.0" name="MW Fourteen">
+	<rank xp="20.0" name="RA Fourteen">
 		<hud_icon filename="hud_rank14.png" />
 	</rank>
-	<rank xp="50.0" name="MW Fifteen">
+	<rank xp="50.0" name="RA Fifteen">
 		<hud_icon filename="hud_rank15.png" />
 	</rank>
-	<rank xp="100.0" name="MW Sixteen">
+	<rank xp="100.0" name="RA Sixteen">
 		<hud_icon filename="hud_rank16.png" />
 	</rank>
-	<rank xp="1000.0" name="MW Seventeen">
+	<rank xp="1000.0" name="RA Seventeen">
 		<hud_icon filename="hud_rank17.png" />
 	</rank>
 
@@ -62,13 +62,13 @@
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
-		<models file="moveway_default_basic.models" />
-		<models file="moveway_default.models" />
+		<models file="reflexarq_default_basic.models" />
+		<models file="reflexarq_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="moveway_primaries.resources" />
-		<resources file="moveway_secondaries.resources" />
-		<resources file="moveway_default.resources" />
+		<resources file="reflexarq_primaries.resources" />
+		<resources file="reflexarq_secondaries.resources" />
+		<resources file="reflexarq_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -99,7 +99,7 @@
 		<model filename="soldier_elite_a1.xml" />
 
 		<resources file="common_miniboss.resources" />
-		<resources file="moveway_miniboss.resources" />
+		<resources file="reflexarq_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -126,7 +126,7 @@
 	<!-- -------------- -->
 	<soldier name="medic" spawn_score="0.0" copy_from="default">
 		<resources file="common_medic.resources" />
-		<resources file="moveway_primaries.resources" />
+		<resources file="reflexarq_primaries.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -153,7 +153,7 @@
 
 		<!-- inherits initial config from default group -->
 		<resources file="common_miniboss.resources" />
-		<resources file="moveway_miniboss.resources" />
+		<resources file="reflexarq_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -183,9 +183,9 @@
 		<model filename="soldier_prison.xml" />
 
 		<resources file="common.resources" />
-		<resources file="moveway_primaries.resources" />
-		<resources file="moveway_secondaries.resources" />
-		<resources file="moveway_default.resources" />
+		<resources file="reflexarq_primaries.resources" />
+		<resources file="reflexarq_secondaries.resources" />
+		<resources file="reflexarq_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -215,7 +215,7 @@
 		<model filename="soldier_a1eod.xml" />
 
 		<resources file="common_eod.resources" />
-		<resources file="moveway_eod.resources" />
+		<resources file="RA _eod.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -242,7 +242,7 @@
 	<!-- -------------- -->
 	<soldier name="supply" spawn_score="0.0">
 		<resources file="supply_common.resources" />
-		<resources file="supply_green.resources" />
+		<resources file="supply_reflexarq.resources" />
 
 		<!-- low XP, likely to join player squad -->
 		<attribute_config class="xp">

@@ -5,7 +5,7 @@
 	<!-- change to fit with your idea of factions in the mod -->
 	<!-- -------------------------------- -->
 
-	<faction name="MoveWay" />
+	<faction name="ReflexArq" />
 	<faction name="BlastCorp" />
 	<faction name="WyreTek" />
 	<faction name="ScopeSystems" />

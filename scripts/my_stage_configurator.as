@@ -20,7 +20,7 @@ class MyStageConfigurator : StageConfiguratorCampaign {
 		//   can be same as the regular faction filename
 		// --------------------------------
 
-		availableFactionConfigs.push_back(FactionConfig(-1, "moveway.xml", "MoveWay", "0 0.6 0.4", "moveway_boss.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "reflexarq.xml", "ReflexArq", "0 0.6 0.4", "reflexarq_boss.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "blastcorp.xml", "BlastCorp", "0.2 0.2 0.3", "blastcorp.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "wyretek.xml", "WyreTek", "0.0 0.1 0.5", "wyretek_boss.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "scopesystems.xml", "ScopeSystems", "0.3 0.8 0.3", "scopesystems_boss.xml"));
