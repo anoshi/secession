@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+	<!-- -------------------------- -->
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest2.carry_item"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest2_2"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest2_3"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+
+	<!-- -------------------------- -->
+	<model filename="soldier_d1_camouflage_suit.xml">
+		<requirement class="carry_item" slot="1" key="camouflage_suit.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+	<!-- -------------------------- -->
+	<model filename="soldier_d1eod.xml">
+		<requirement class="carry_item" slot="1" key="eodvest.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="soldier_d1eod.xml">
+		<requirement class="carry_item" slot="1" key="eod_2"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="soldier_d1eod.xml">
+		<requirement class="carry_item" slot="1" key="eod_3"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="soldier_d1eod.xml">
+		<requirement class="carry_item" slot="1" key="eod_4"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="soldier_d1eod.xml">
+		<requirement class="carry_item" slot="1" key="eod_5"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="soldier_d1eod.xml">
+		<requirement class="carry_item" slot="1" key="eod_6"/>
+		<requirement class="rank" range="0 10000" />
+	</model>  
+
+	<!-- -------------------------- -->
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest3.carry_item"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest3_2"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest3_3"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest3_4"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest3_5"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="soldier_d1_vest.xml">
+		<requirement class="carry_item" slot="1" key="vest3_6"/>
+		<requirement class="rank" range="0 100" />
+	</model> 
+	
+<!-- -------------------------- -->
+
+	<model filename="costume_were.xml">
+		<requirement class="carry_item" slot="1" key="costume_werewolf.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	
+	<!-- -------------------------- -->
+	<model filename="costume_clown.xml">
+		<requirement class="carry_item" slot="1" key="costume_clown.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	
+
+	
+	<!-- -------------------------- -->
+	<model filename="costume_santa.xml">
+		<requirement class="carry_item" slot="1" key="costume_santa.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	
+	
+	<!-- -------------------------- -->
+	<model filename="costume_lizard.xml">
+		<requirement class="carry_item" slot="1" key="costume_lizard.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+	<!-- -------------------------- -->
+	<model filename="costume_underwear.xml">
+		<requirement class="carry_item" slot="1" key="costume_underpants.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+
+	
+	<!-- -------------------------- -->
+	<!-- black ops -->
+	<!-- -------------------------- -->
+	
+	<model filename="soldier_blackops.xml">
+		<requirement class="carry_item" slot="1" key="vest_blackops.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="soldier_blackops.xml">
+		<requirement class="carry_item" slot="1" key="stealth1_2"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+	<!-- -------------------------- -->	
+
+	<!-- -------------------------- -->
+	<!-- high rank -->
+	<!-- -------------------------- -->
+	<model filename="soldier_5stars_scopesystems.xml">
+		<requirement class="rank" range="100 1000" />
+	</model>
+	<model filename="president.xml">
+		<requirement class="rank" range="1000 10000" />
+	</model>    
+</models>

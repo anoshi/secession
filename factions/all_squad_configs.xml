@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<squad_configs>
+	<squad_config file="default.squad_config" />
+	<squad_config file="assault1.squad_config" />
+	<squad_config file="stealth1.squad_config" />
+	<squad_config file="destroyer1.squad_config" />
+</squad_configs>

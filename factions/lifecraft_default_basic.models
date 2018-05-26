@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<models>
+		<model filename="soldier_e1.xml" />
+		<model filename="soldier_e2.xml" />
+		<model filename="soldier_e3.xml" />        
+</models>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<package  
+  name="secession"
+  description="secession mod 0.01"
+  show_in_campaigns="1"
+  campaign_entry_script="start_campaign.as">
+
+	<campaign_options 
+		faction="1" 
+		presets="1"
+		friendly_capacity="1"
+		enemy_capacity="1"
+		friendly_accuracy="1"
+		enemy_accuracy="1"
+		xp_multiplier="1"
+		rp_multiplier="1" />
+
+</package>
