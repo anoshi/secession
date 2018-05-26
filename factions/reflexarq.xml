@@ -215,7 +215,7 @@
 		<model filename="soldier_a1eod.xml" />
 
 		<resources file="common_eod.resources" />
-		<resources file="RA _eod.resources" />
+		<resources file="reflexarq_eod.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->

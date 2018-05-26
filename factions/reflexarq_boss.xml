@@ -158,7 +158,7 @@
 	<!-- -------------- -->
 	<soldier name="medic" spawn_score="0.0" copy_from="default">
 		<resources file="common_medic.resources" />
-		<resources file="ReflexArq_primaries.resources" />
+		<resources file="reflexarq_primaries.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
