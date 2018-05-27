@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="BlastCorp" color="0.8 0.2 0.0" firstnames_file="german_firstnames.txt" lastnames_file="german_lastnames.txt" chat_icon_filename="chat_icon_soldier_gray.png" chat_icon_commander_filename="chat_icon_commander_gray.png" campaign_completion_icon_filename="campaign_win_1.png">
+<faction name="BlastCorp" color="0.8 0.2 0.0" firstnames_file="blastcorp_firstnames.txt" lastnames_file="blastcorp_lastnames.txt" chat_icon_filename="chat_icon_soldier_gray.png" chat_icon_commander_filename="chat_icon_commander_gray.png" campaign_completion_icon_filename="campaign_win_1.png">
 	<rank xp="0.0" name="BlastCorp Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
