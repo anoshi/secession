@@ -1,59 +1,59 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="ScopeSystems" color="0.3 0.8 0.0" firstnames_file="english_firstnames.txt" lastnames_file="english_lastnames.txt" chat_icon_filename="chat_icon_soldier_gray.png" chat_icon_commander_filename="chat_icon_commander_gray.png" campaign_completion_icon_filename="campaign_win_0.png">
-	<rank xp="0.0" name="SS Recruit">
+<faction name="WyreTek" color="0.1 0.1 0.6" firstnames_file="wt_firstnames.txt" lastnames_file="wt_lastnames.txt" chat_icon_filename="wt_chat_icon_soldier.png" chat_icon_commander_filename="wt_chat_icon_commander.png" campaign_completion_icon_filename="campaign_win_2.png">
+	<rank xp="0.0" name="WyreTek Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
-	<rank xp="0.05" name="SS One">
+	<rank xp="0.05" name="WyreTek One">
 		<hud_icon filename="hud_rank1.png" />
 	</rank>
-	<rank xp="0.1" name="SS Two">
+	<rank xp="0.1" name="WyreTek Two">
 		<hud_icon filename="hud_rank2.png" />
 	</rank>
-	<rank xp="0.2" name="SS Three">
+	<rank xp="0.2" name="WyreTek Three">
 		<hud_icon filename="hud_rank3.png" />
 	</rank>
-	<rank xp="0.3" name="SS Four">
+	<rank xp="0.3" name="WyreTek Four">
 		<hud_icon filename="hud_rank4.png" />
 	</rank>
-	<rank xp="0.4" name="SS Five">
+	<rank xp="0.4" name="WyreTek Five">
 		<hud_icon filename="hud_rank5.png" />
 	</rank>
-	<rank xp="0.6" name="SS Six">
+	<rank xp="0.6" name="WyreTek Six">
 		<hud_icon filename="hud_rank6.png" />
 	</rank>
-	<rank xp="0.8" name="SS Seven">
+	<rank xp="0.8" name="WyreTek Seven">
 		<hud_icon filename="hud_rank7.png" />
 	</rank>
-	<rank xp="1.0" name="SS Eight">
+	<rank xp="1.0" name="WyreTek Eight">
 		<hud_icon filename="hud_rank8.png" />
 	</rank>
-	<rank xp="1.2" name="SS Nine">
+	<rank xp="1.2" name="WyreTek Nine">
 		<hud_icon filename="hud_rank9.png" />
 	</rank>
-	<rank xp="1.4" name="SS Ten">
+	<rank xp="1.4" name="WyreTek Ten">
 		<hud_icon filename="hud_rank10.png" />
 	</rank>
-	<rank xp="2.0" name="SS Eleven">
+	<rank xp="2.0" name="WyreTek Eleven">
 		<hud_icon filename="hud_rank11.png" />
 	</rank>
-	<rank xp="5.0" name="SS Twelve">
+	<rank xp="5.0" name="WyreTek Twelve">
 		<hud_icon filename="hud_rank12.png" />
 	</rank>
-	<rank xp="10.0" name="SS Thirteen">
+	<rank xp="10.0" name="WyreTek Thirteen">
 		<hud_icon filename="hud_rank13.png" />
 	</rank>
-	<rank xp="20.0" name="SS Fourteen">
+	<rank xp="20.0" name="WyreTek Fourteen">
 		<hud_icon filename="hud_rank14.png" />
 	</rank>
-	<rank xp="50.0" name="SS Fifteen">
+	<rank xp="50.0" name="WyreTek Fifteen">
 		<hud_icon filename="hud_rank15.png" />
 	</rank>
-	<rank xp="100.0" name="SS Sixteen">
+	<rank xp="100.0" name="WyreTek Sixteen">
 		<hud_icon filename="hud_rank16.png" />
 	</rank>
-	<rank xp="1000.0" name="SS Seventeen">
+	<rank xp="1000.0" name="WyreTek Seventeen">
 		<hud_icon filename="hud_rank17.png" />
-	</rank>  
+	</rank>
 
 	<!-- -------------- -->
 	<!-- default group -->
@@ -62,21 +62,21 @@
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
-		<models file="scopesystems_default_basic.models" />
-		<models file="scopesystems_default.models" />
+    <models file="wt_default_basic.models" />
+		<models file="wt_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="scopesystems_primaries.resources" />
-		<resources file="scopesystems_secondaries.resources" />
-		<resources file="scopesystems_default.resources" />
+		<resources file="wt_primaries.resources" />
+		<resources file="wt_secondaries.resources" />
+		<resources file="wt_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="0.4" />
+			<item_class_existence class="weapon" slot="1" probability="0.4" />	
 			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="0.02" />
+			<item_class_existence class="carry_item" slot="1" probability="0.02" />	
 			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="0.03" />
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />	
 		</item_class_existence_config>
 
 		<attribute_config class="rp">
@@ -89,17 +89,18 @@
 		</attribute_config>
 
 	</soldier>
-
+	
 	<!-- -------------- -->
 	<!-- miniboss group -->
 	<!-- -------------- -->
-	<soldier name="miniboss" spawn_score="0.0035" squad_size_xp_cap="0.5">
+	<soldier name="miniboss" spawn_score="0.005" squad_size_xp_cap="0.5">
 		<character filename="default_miniboss_male.character" />
 		<ai filename="elite.ai" />
-		<model filename="soldier_elite_b1.xml" />
+		<model filename="wt_soldier_elite_1.xml" />
+		<model filename="wt_soldier_elite_2.xml" />     
 
 		<resources file="common_miniboss.resources" />
-		<resources file="scopesystems_miniboss.resources" />
+		<resources file="wt_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -126,7 +127,7 @@
 	<!-- -------------- -->
 	<soldier name="medic" spawn_score="0.0" copy_from="default">
 		<resources file="common_medic.resources" />
-		<resources file="scopesystems_primaries.resources" />
+		<resources file="wt_primaries.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -143,36 +144,7 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- -------------- -->
-	<!-- miniboss female -->
-	<!-- -------------- -->
-	<soldier name="miniboss_female" spawn_score="0.0015" squad_size_xp_cap="0.5" firstnames_file="english_firstnames_female.txt" lastnames_file="english_lastnames.txt" >
-		<character filename="default_miniboss_female.character" />
-		<ai filename="elite.ai" />
-		<model filename="soldier_elite_b2.xml" />  
 
-		<!-- inherits initial config from default group -->
-		<resources file="common_miniboss.resources" />
-		<resources file="scopesystems_miniboss.resources" />
-
-		<item_class_existence_config>
-			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="1.0" />
-			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="1.0" />
-			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="1.0" />
-		</item_class_existence_config>
-
-		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.5" max="0.8" />
-			<attribute weight="0.05" min="1.0" max="10.0" />
-		</attribute_config>
-
-		<attribute_config class="rp">
-			<attribute weight="1.0" min="500.0" max="500.0" />
-		</attribute_config>
-	</soldier>  
 
 	<!-- -------------- -->
 	<!-- prisoner group -->
@@ -183,9 +155,9 @@
 		<model filename="soldier_prison.xml" />
 
 		<resources file="common.resources" />
-		<resources file="scopesystems_primaries.resources" />
-		<resources file="scopesystems_secondaries.resources" />
-		<resources file="scopesystems_default.resources" />
+		<resources file="wt_primaries.resources" />
+		<resources file="wt_secondaries.resources" />
+		<resources file="wt_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -206,16 +178,17 @@
 		</attribute_config>
 	</soldier>
 
+  
 	<!-- -------------- -->
 	<!--    EOD group   -->
 	<!-- -------------- -->
 	<soldier name="eod" spawn_score="0.006" squad_size_xp_cap="0.0">
 		<character filename="default_male.character" />
 		<ai filename="eod.ai" />
-		<model filename="soldier_b1eod.xml" />
+		<model filename="wt_soldier_eod_1.xml" />
 
 		<resources file="common_eod.resources" />
-		<resources file="scopesystems_eod.resources" />
+		<resources file="wt_eod.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -235,19 +208,19 @@
 			<attribute weight="1.0" min="500.0" max="500.0" />
 		</attribute_config>
 
-	</soldier>  
+	</soldier> 
   
 	<!-- -------------- -->
 	<!-- supply box group -->
 	<!-- -------------- -->
 	<soldier name="supply" spawn_score="0.0">
-		<resources file="supply_common.resources" />
-		<resources file="supply_scopesystems.resources" />
+		<resources file="common_supply.resources" />
+		<resources file="wt_supply.resources" />
 
 		<!-- low XP, likely to join player squad -->
 		<attribute_config class="xp">
 			<attribute weight="1.0" min="0.0" max="0.05" />
 		</attribute_config>
 	</soldier>    
-
+   
 </faction>

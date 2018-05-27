@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="LifeCraft" color="0.6 0.0 0.0" firstnames_file="english_firstnames.txt" lastnames_file="english_lastnames.txt" chat_icon_filename="chat_icon_soldier_brown.png" chat_icon_commander_filename="chat_icon_commander_brown.png" campaign_completion_icon_filename="campaign_win_0.png">
+<faction name="LifeCraft" color="0.6 0.0 0.0" firstnames_file="lc_firstnames.txt" lastnames_file="lc_lastnames.txt" chat_icon_filename="lc_chat_icon_soldier.png" chat_icon_commander_filename="lc_chat_icon_commander.png" campaign_completion_icon_filename="campaign_win_0.png">
 	<rank xp="0.0" name="LC Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
@@ -62,13 +62,13 @@
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
-		<models file="lifecraft_default_basic.models" />
-		<models file="lifecraft_default.models" />
+		<models file="lc_default_basic.models" />
+		<models file="lc_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="lifecraft_primaries.resources" />
-		<resources file="lifecraft_secondaries.resources" />
-		<resources file="lifecraft_default.resources" />
+		<resources file="lc_primaries.resources" />
+		<resources file="lc_secondaries.resources" />
+		<resources file="lc_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -96,10 +96,10 @@
 	<soldier name="miniboss" spawn_score="0.0035" squad_size_xp_cap="0.5">
 		<character filename="default_miniboss_male.character" />
 		<ai filename="elite.ai" />
-		<model filename="soldier_elite_c1.xml" />
+		<model filename="lc_soldier_elite_1.xml" />
 
 		<resources file="common_miniboss.resources" />
-		<resources file="lifecraft_miniboss.resources" />
+		<resources file="lc_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -126,7 +126,7 @@
 	<!-- -------------- -->
 	<soldier name="medic" spawn_score="0.0" copy_from="default">
 		<resources file="common_medic.resources" />
-		<resources file="lifecraft_primaries.resources" />
+		<resources file="lc_primaries.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -146,14 +146,14 @@
 	<!-- -------------- -->
 	<!-- miniboss female -->
 	<!-- -------------- -->
-	<soldier name="miniboss_female" spawn_score="0.0015" squad_size_xp_cap="0.5" firstnames_file="english_firstnames_female.txt" lastnames_file="english_lastnames.txt" >
+	<soldier name="miniboss_female" spawn_score="0.0015" squad_size_xp_cap="0.5" firstnames_file="english_firstnames_female.txt" lastnames_file="lc_lastnames.txt" >
 		<character filename="default_miniboss_female.character" />
 		<ai filename="elite.ai" />
-		<model filename="soldier_elite_c2.xml" />  
+		<model filename="lc_soldier_elite_2.xml" />  
 
 		<!-- inherits initial config from default group -->
 		<resources file="common_miniboss.resources" />
-		<resources file="lifecraft_miniboss.resources" />
+		<resources file="lc_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -183,9 +183,9 @@
 		<model filename="soldier_prison.xml" />
 
 		<resources file="common.resources" />
-		<resources file="lifecraft_primaries.resources" />
-		<resources file="lifecraft_secondaries.resources" />
-		<resources file="lifecraft_default.resources" />
+		<resources file="lc_primaries.resources" />
+		<resources file="lc_secondaries.resources" />
+		<resources file="lc_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -212,10 +212,10 @@
 	<soldier name="eod" spawn_score="0.006" squad_size_xp_cap="0.0">
 		<character filename="default_male.character" />
 		<ai filename="eod.ai" />
-		<model filename="soldier_c1eod.xml" />
+		<model filename="lc_soldier_eod_1.xml" />
 
 		<resources file="common_eod.resources" />
-		<resources file="lifecraft_eod.resources" />
+		<resources file="lc_eod.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -241,8 +241,8 @@
 	<!-- supply box group -->
 	<!-- -------------- -->
 	<soldier name="supply" spawn_score="0.0">
-		<resources file="supply_common.resources" />
-		<resources file="supply_lifecraft.resources" />
+		<resources file="common_supply.resources" />
+		<resources file="lc_supply.resources" />
 
 		<!-- low XP, likely to join player squad -->
 		<attribute_config class="xp">

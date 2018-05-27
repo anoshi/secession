@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="ReflexArq" color="0.0 0.8 0.1" firstnames_file="english_firstnames.txt" lastnames_file="english_lastnames.txt" chat_icon_filename="chat_icon_soldier_green.png" chat_icon_commander_filename="chat_icon_commander_green.png">
+<faction name="ReflexArq" color="0.0 0.8 0.1" firstnames_file="ra_firstnames.txt" lastnames_file="ra_lastnames.txt" chat_icon_filename="ra_chat_icon_soldier.png" chat_icon_commander_filename="ra_chat_icon_commander.png">
 
 	<rank xp="0.0" name="RA BOSS Recruit">
 		<hud_icon filename="hud_rank0.png" />
@@ -60,16 +60,16 @@
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
-		<models file="reflexarq_default_basic.models" />
-		<models file="reflexarq_default.models" />
+		<models file="ra_default_basic.models" />
+		<models file="ra_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="reflexarq_primaries.resources" />
-		<resources file="reflexarq_secondaries.resources" />
+		<resources file="ra_primaries.resources" />
+		<resources file="ra_secondaries.resources" />
 		<resources>
 			<weapon key='l85a2.weapon' />
 		</resources>
-		<resources file="reflexarq_default.resources" />
+		<resources file="ra_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -97,10 +97,10 @@
 	<soldier name="miniboss" spawn_score="0.14" squad_size_xp_cap="0.2">
 		<character filename="default_miniboss_male.character" />
 		<ai filename="elite.ai" />
-		<model filename="soldier_elite_a1.xml" />
+		<model filename="ra_soldier_elite_1.xml" />
 
 		<resources file="common_miniboss.resources" />
-		<resources file="reflexarq_miniboss.resources" />
+		<resources file="ra_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -125,14 +125,14 @@
 	<!-- -------------- -->
 	<!-- miniboss female -->
 	<!-- -------------- -->
-	<soldier name="miniboss_female" spawn_score="0.05" squad_size_xp_cap="0.2" firstnames_file="english_firstnames_female.txt" lastnames_file="english_lastnames.txt" >
+	<soldier name="miniboss_female" spawn_score="0.05" squad_size_xp_cap="0.2" firstnames_file="english_firstnames_female.txt" lastnames_file="ra_lastnames.txt" >
 		<character filename="default_miniboss_female.character" />
 		<ai filename="elite.ai" />
-		<model filename="soldier_elite_a2.xml" />  
+		<model filename="ra_soldier_elite_2.xml" />  
 
 		<!-- inherits initial config from default group -->
 		<resources file="common_miniboss.resources" />
-		<resources file="reflexarq_miniboss.resources" />
+		<resources file="ra_miniboss.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -158,7 +158,7 @@
 	<!-- -------------- -->
 	<soldier name="medic" spawn_score="0.0" copy_from="default">
 		<resources file="common_medic.resources" />
-		<resources file="reflexarq_primaries.resources" />
+		<resources file="ra_primaries.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
