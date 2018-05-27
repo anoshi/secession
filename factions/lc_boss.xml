@@ -1,0 +1,177 @@
+<?xml version="1.0" encoding="utf-8"?>
+<faction name="LifeCraft" color="0.6 0.0 0.0" firstnames_file="lc_firstnames.txt" lastnames_file="lc_lastnames.txt" chat_icon_filename="lc_chat_icon_soldier.png" chat_icon_commander_filename="lc_chat_icon_commander.png">
+
+	<rank xp="0.0" name="LC BOSS Recruit">
+		<hud_icon filename="hud_rank0.png" />
+	</rank>
+	<rank xp="0.05" name="LC BOSS One">
+		<hud_icon filename="hud_rank1.png" />
+	</rank>
+	<rank xp="0.1" name="LC BOSS Two">
+		<hud_icon filename="hud_rank2.png" />
+	</rank>
+	<rank xp="0.2" name="LC BOSS Three">
+		<hud_icon filename="hud_rank3.png" />
+	</rank>
+	<rank xp="0.3" name="LC BOSS Four">
+		<hud_icon filename="hud_rank4.png" />
+	</rank>
+	<rank xp="0.4" name="LC BOSS Five">
+		<hud_icon filename="hud_rank5.png" />
+	</rank>
+	<rank xp="0.6" name="LC BOSS Six">
+		<hud_icon filename="hud_rank6.png" />
+	</rank>
+	<rank xp="0.8" name="LC BOSS Seven">
+		<hud_icon filename="hud_rank7.png" />
+	</rank>
+	<rank xp="1.0" name="LC BOSS Eight">
+		<hud_icon filename="hud_rank8.png" />
+	</rank>
+	<rank xp="1.2" name="LC BOSS Nine">
+		<hud_icon filename="hud_rank9.png" />
+	</rank>
+	<rank xp="1.4" name="LC BOSS Ten">
+		<hud_icon filename="hud_rank10.png" />
+	</rank>
+	<rank xp="2.0" name="LC BOSS Eleven">
+		<hud_icon filename="hud_rank11.png" />
+	</rank>
+	<rank xp="3.0" name="LC BOSS Twelve">
+		<hud_icon filename="hud_rank12.png" />
+	</rank>
+	<rank xp="5.0" name="LC BOSS Thirteen">
+		<hud_icon filename="hud_rank13.png" />
+	</rank>
+	<rank xp="10.0" name="LC BOSS Fourteen">
+		<hud_icon filename="hud_rank14.png" />
+	</rank>
+	<rank xp="20.0" name="LC BOSS Fifteen">
+		<hud_icon filename="hud_rank15.png" />
+	</rank>
+	<rank xp="50.0" name="LC BOSS Sixteen">
+		<hud_icon filename="hud_rank16.png" />
+	</rank>
+
+	<!-- -------------- -->
+	<!-- default group -->
+	<!-- -------------- -->
+	<soldier name="default" spawn_score="1.0" squad_size_xp_cap="0.2">
+		<character filename="default_male.character" />
+		<ai filename="default.ai" />
+
+		<models file="lc_default_basic.models" />
+		<models file="lc_default.models" />
+
+		<resources file="common.resources" />
+		<resources file="lc_primaries.resources" />
+		<resources file="lc_secondaries.resources" />
+		<resources>
+			<weapon key='l85a2.weapon' />
+		</resources>
+		<resources file="lc_default.resources" />
+
+		<item_class_existence_config>
+			<!-- secondaries -->
+			<item_class_existence class="weapon" slot="1" probability="0.4" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="0.02" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.0" max="0.45" />
+		</attribute_config>
+
+	</soldier>
+	
+	<!-- -------------- -->
+	<!-- miniboss group -->
+	<!-- -------------- -->
+	<soldier name="miniboss" spawn_score="0.14" squad_size_xp_cap="0.2">
+		<character filename="default_miniboss_male.character" />
+		<ai filename="elite.ai" />
+		<model filename="lc_soldier_elite_1.xml" />
+
+		<resources file="common_miniboss.resources" />
+		<resources file="lc_miniboss.resources" />
+
+		<item_class_existence_config>
+			<!-- secondaries -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="1.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.5" max="0.8" />
+			<attribute weight="0.05" min="1.0" max="10.0" />
+		</attribute_config>
+
+		<attribute_config class="rp">
+			<attribute weight="1.0" min="500.0" max="500.0" />
+		</attribute_config>
+
+	</soldier>
+
+	<!-- -------------- -->
+	<!-- miniboss female -->
+	<!-- -------------- -->
+	<soldier name="miniboss_female" spawn_score="0.05" squad_size_xp_cap="0.2" firstnames_file="english_firstnames_female.txt" lastnames_file="lc_lastnames.txt" >
+		<character filename="default_miniboss_female.character" />
+		<ai filename="elite.ai" />
+		<model filename="lc_soldier_elite_2.xml" />  
+
+		<!-- inherits initial config from default group -->
+		<resources file="common_miniboss.resources" />
+		<resources file="lc_miniboss.resources" />
+
+		<item_class_existence_config>
+			<!-- secondaries -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="1.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.5" max="0.8" />
+			<attribute weight="0.05" min="1.0" max="10.0" />
+		</attribute_config>
+
+		<attribute_config class="rp">
+			<attribute weight="1.0" min="500.0" max="500.0" />
+		</attribute_config>
+	</soldier>  
+
+	<!-- -------------- -->
+	<!-- designated medic group -->
+	<!-- -------------- -->
+	<soldier name="medic" spawn_score="0.0" copy_from="default">
+		<resources file="common_medic.resources" />
+		<resources file="lc_primaries.resources" />
+
+		<item_class_existence_config>
+			<!-- secondaries -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="0.02" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />
+		</item_class_existence_config>
+
+		<!-- low XP, likely to join player squad -->
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.0" max="0.05" />
+		</attribute_config>
+	</soldier>
+</faction>
