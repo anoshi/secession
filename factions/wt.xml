@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="WyreTek" color="0.1 0.1 0.6" firstnames_file="wt_firstnames.txt" lastnames_file="wt_lastnames.txt" chat_icon_filename="wt_chat_icon_soldier.png" chat_icon_commander_filename="wt_chat_icon_commander.png" campaign_completion_icon_filename="campaign_win_2.png">
+<faction name="WyreTek" color="0.1 0.1 0.6" firstnames_file="wt_firstnames.txt" lastnames_file="wt_lastnames.txt" chat_icon_filename="wt_chat_icon_soldier.png" chat_icon_commander_filename="wt_chat_icon_commander.png" campaign_completion_icon_filename="wt_campaign_win.png">
 	<rank xp="0.0" name="WyreTek Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>

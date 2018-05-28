@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="LifeCraft" color="0.6 0.0 0.0" firstnames_file="lc_firstnames.txt" lastnames_file="lc_lastnames.txt" chat_icon_filename="lc_chat_icon_soldier.png" chat_icon_commander_filename="lc_chat_icon_commander.png" campaign_completion_icon_filename="campaign_win_0.png">
+<faction name="LifeCraft" color="0.6 0.0 0.0" firstnames_file="lc_firstnames.txt" lastnames_file="lc_lastnames.txt" chat_icon_filename="lc_chat_icon_soldier.png" chat_icon_commander_filename="lc_chat_icon_commander.png" campaign_completion_icon_filename="lc_campaign_win.png">
 	<rank xp="0.0" name="LC Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
