@@ -200,7 +200,6 @@
 	<call key="humvee.call" />
 	<call key="buggy.call" />
 	<call key="supply_quad.call" />
-	<call key="tank.call" />  
-  
+	<call key="tank.call" />
 
 </resources>

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-    <carry_item key="bc_vest3.carry_item" name="Vest, type III" slot="1" transform_on_consume="bc_vest3_2" time_to_live_out_in_the_open="120.0">
+    <carry_item key="wt_vest3.carry_item" name="Vest, type III" slot="1" transform_on_consume="wt_vest3_2" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
@@ -21,7 +21,7 @@
         <modifier class="speed" value="-0.08" /> 
     </carry_item>
 
-    <carry_item key="bc_vest3_2" name="Vest, type III, 80%" slot="1" transform_on_consume="bc_vest3_3" time_to_live_out_in_the_open="60.0">
+    <carry_item key="wt_vest3_2" name="Vest, type III, 80%" slot="1" transform_on_consume="wt_vest3_3" time_to_live_out_in_the_open="60.0">
         <hud_icon filename="hud_vest3_80.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
@@ -42,7 +42,7 @@
         <modifier class="speed" value="-0.08" />
     </carry_item>
 
-    <carry_item key="bc_vest3_3" name="Vest, type III, 60%" slot="1" transform_on_consume="bc_vest3_4" time_to_live_out_in_the_open="60.0">
+    <carry_item key="wt_vest3_3" name="Vest, type III, 60%" slot="1" transform_on_consume="wt_vest3_4" time_to_live_out_in_the_open="60.0">
         <hud_icon filename="hud_vest3_60.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
@@ -61,7 +61,7 @@
         <modifier class="speed" value="-0.08" />
     </carry_item>
 	
-    <carry_item key="bc_vest3_4" name="Vest, type III, 40%" slot="1" transform_on_consume="bc_vest3_5" time_to_live_out_in_the_open="60.0">
+    <carry_item key="wt_vest3_4" name="Vest, type III, 40%" slot="1" transform_on_consume="wt_vest3_5" time_to_live_out_in_the_open="60.0">
         <hud_icon filename="hud_vest3_40.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
@@ -80,7 +80,7 @@
         <modifier class="speed" value="-0.08" />
     </carry_item>
 	
-    <carry_item key="bc_vest3_5" name="Vest, type III, 20%" slot="1" time_to_live_out_in_the_open="60.0">
+    <carry_item key="wt_vest3_5" name="Vest, type III, 20%" slot="1" time_to_live_out_in_the_open="60.0">
         <hud_icon filename="hud_vest3_20.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />

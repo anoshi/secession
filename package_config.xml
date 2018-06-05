@@ -2,6 +2,7 @@
 <package  
   name="secession"
   description="secession mod 0.01"
+  show_in_quick_match_mods="0"
   show_in_campaigns="1"
   campaign_entry_script="start_campaign.as">
 
