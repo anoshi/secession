@@ -2309,7 +2309,6 @@
             <voxel index="1017" />
             <voxel index="1018" />
             <voxel index="1019" />
-            <voxel index="1020" />
             <voxel index="1022" />
             <voxel index="1023" />
             <voxel index="1273" />
@@ -2400,7 +2399,6 @@
             <voxel index="1014" />
             <voxel index="1015" />
             <voxel index="1037" />
-            <voxel index="1074" />
             <voxel index="1075" />
             <voxel index="1076" />
             <voxel index="1091" />
@@ -2431,7 +2429,6 @@
             <voxel index="1318" />
             <voxel index="1319" />
             <voxel index="1320" />
-            <voxel index="1321" />
             <voxel index="1322" />
             <voxel index="1334" />
             <voxel index="1336" />
@@ -2657,6 +2654,7 @@
             <voxel index="1010" />
             <voxel index="1011" />
             <voxel index="1012" />
+            <voxel index="1020" />
             <voxel index="1021" />
             <voxel index="1033" />
             <voxel index="1034" />
@@ -2723,6 +2721,7 @@
             <voxel index="1066" />
             <voxel index="1067" />
             <voxel index="1073" />
+            <voxel index="1074" />
             <voxel index="1077" />
             <voxel index="1078" />
             <voxel index="1082" />
@@ -2757,6 +2756,7 @@
             <voxel index="1312" />
             <voxel index="1313" />
             <voxel index="1314" />
+            <voxel index="1321" />
             <voxel index="1361" />
             <voxel index="1362" />
             <voxel index="1363" />
@@ -3075,17 +3075,6 @@
             <voxel index="1497" />
             <voxel index="1498" />
             <voxel index="1499" />
-            <voxel index="1503" />
-            <voxel index="1504" />
-            <voxel index="1505" />
-            <voxel index="1506" />
-            <voxel index="1507" />
-            <voxel index="1508" />
-            <voxel index="1509" />
-            <voxel index="1510" />
-            <voxel index="1511" />
-            <voxel index="1512" />
-            <voxel index="1513" />
         </group>
     </skeletonVoxelBindings>
 </model>
