@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<call name="mortar strike (3x8)" key="mortar2.call"
+      initiation_comment1="Fire mission"
+      initiation_comment2="fire three rounds."
+      acknowledge_comment="Roger, wait three."
+      acknowledge_time="1.0"
+      launch_comment="Rounds on the way.">
+    
+    <round instances="8"
+           instance_class="grenade"
+           instance_key="mortar_shell1" 
+           instance_spread="7 8 7" 
+           common_spread="20 0 20" 
+           launch_time="5.0"
+           spawn_time="8.0">
+	   <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+    </round>
+
+    <round instances="8"
+           instance_class="grenade"
+           instance_key="mortar_shell1"
+           instance_spread="7 8 7" 
+           common_spread="10 0 10"
+           launch_time="7.0"
+           spawn_time="10.0">
+	   <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+    </round>
+
+    <round instances="8"
+           instance_class="grenade"
+           instance_key="mortar_shell1"
+           instance_spread="6 6.5 6"
+           common_spread="0 0 0"
+           launch_time="9.0"
+           spawn_time="12.0">
+	   <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+    </round>
+
+    <hud_icon filename="hud_mortar2.png" />
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="100" source="rank" source_value="0.3" />
+    <inventory encumbrance="0.0" price="200.0" />
+</call>

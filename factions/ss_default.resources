@@ -6,4 +6,8 @@
  	<vehicle key="transport_truck_2.vehicle" />    
 
 	<call key="tank_2.call" />
+	
+	<carry_item key="ss_vest1.carry_item" enabled="1" />
+	<carry_item key="ss_vest2.carry_item" enabled="1" />
+	<carry_item key="ss_vest3.carry_item" enabled="1" />	
 </resources>

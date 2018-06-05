@@ -1,7 +1,4 @@
 #include "path://media/packages/vanilla/scripts"
-// --------------------------------------------
-// TODO: replace with your package's script folder here
-// --------------------------------------------
 #include "path://media/packages/secession/scripts"
 
 #include "my_gamemode.as"
@@ -14,10 +11,6 @@ void main(dictionary@ inputData) {
 	settings.fromXmlElement(inputSettings);
 	_setupLog(inputSettings);
 	settings.print();
-
-	// --------------------------------------------
-	// TODO: replace with your package's folder here
-	// --------------------------------------------
 	array<string> overlays = {
                 "media/packages/secession"
         };

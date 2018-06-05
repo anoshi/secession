@@ -1,9 +1,15 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- WyreTek specific resources: Weapons, Vehicles, Radio Calls, and Carry Items -->
 <resources>
  	<vehicle key="jeep_2.vehicle" />
  	<vehicle key="apc_2.vehicle" />
  	<vehicle key="tank_2.vehicle" />
  	<vehicle key="transport_truck_2.vehicle" />    
 
-	<call key="tank_2.call" />
+	<call key="tank_2.call" enabled = "1" />
+	<call key="artillery1.call" enabled = "1" />
+
+	<carry_item key="wt_vest1.carry_item" enabled="1" />
+	<carry_item key="wt_vest2.carry_item" enabled="1" />
+	<carry_item key="wt_vest3.carry_item" enabled="1" />
 </resources>

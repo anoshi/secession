@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<faction name="ReflexArq" color="0.0 0.8 0.1" firstnames_file="ra_firstnames.txt" lastnames_file="ra_lastnames.txt" chat_icon_filename="ra_chat_icon_soldier.png" chat_icon_commander_filename="ra_chat_icon_commander.png" campaign_completion_icon_filename="campaign_win_0.png">
+<faction name="ReflexArq" color="0.0 0.8 0.1" firstnames_file="ra_firstnames.txt" lastnames_file="ra_lastnames.txt" chat_icon_filename="ra_chat_icon_soldier.png" chat_icon_commander_filename="ra_chat_icon_commander.png" campaign_completion_icon_filename="ra_campaign_win.png">
 	<rank xp="0.0" name="RA Recruit">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
