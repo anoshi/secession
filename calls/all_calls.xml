@@ -1,5 +1,7 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <calls>
+	<call file="wyretek1.call" />
+	<call file="lifecraft_healbomb.call" />
 	<call file="mortar1.call" />
 	<call file="mortar2.call" />
 	<call file="paratroopers1.call" />
@@ -12,7 +14,7 @@
 	<call file="tank.call" />
 	<call file="buggy.call" />
 	<call file="supply_quad.call" />
-  
+    
 	<call file="tracer_dart.call" />
   
 </calls>

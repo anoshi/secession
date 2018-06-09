@@ -1,10 +1,34 @@
-﻿<?xml version="1.0" encoding="utf-8"?>
+<?xml version="1.0" encoding="utf-8"?>
 <call name="mortar strike (1x8)" key="mortar1.call"
-      initiation_comment1="Fire mission"
-      initiation_comment2="fire one round."
+      initiation_comment1="Bingo on the Turkey"
+      initiation_comment2="Pantaloon Stew."
       acknowledge_comment="Roger, wait one."
       launch_comment="Round on the way.">
 
+<round instances="16"
+           instance_class="grenade"
+           instance_key="artillery_shell.projectile" 
+           instance_spread="15 15 15" 
+           common_spread="20 0 20" 
+           launch_time="5.0"
+           spawn_time="8.0">
+     <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
+     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />      
+	   <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
+    </round>
+
+    <round instances="16"
+           instance_class="grenade"
+           instance_key="artillery_shell.projectile" 
+           instance_spread="15 15 15" 
+           common_spread="20 0 20"
+           launch_time="7.0"
+           spawn_time="10.0">
+     <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
+     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />           
+	   <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
+    </round>
+<!--
     <round instances="8"
            instance_class="grenade"
            instance_key="mortar_shell1" 
@@ -14,10 +38,10 @@
            spawn_time="8.0">
 	   <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
     </round>
-
+--> 
     <hud_icon filename="hud_mortar1.png" />
     <capacity value="0" source="rank" source_value="0.0" />
     <capacity value="100" source="rank" source_value="0.1" />
-    <inventory encumbrance="0.0" price="100.0" />
+    <inventory encumbrance="0.0" price="10.0" />
 
 </call>
