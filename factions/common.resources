@@ -196,10 +196,10 @@
 	<call key="artillery1.call" />
 	<call key="artillery2.call" />
 	<call key="cover_drop.call" />
-	<call key="rubber_boat.call" />
+	<!--<call key="rubber_boat.call" />-->
 	<call key="humvee.call" />
 	<call key="buggy.call" />
 	<call key="supply_quad.call" />
-	<call key="tank.call" />
+	<!--<call key="tank.call" />-->
 
 </resources>

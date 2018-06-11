@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="WyreTek Call" key="wyretek1.call"
+      initiation_comment1="WT-only Fire mission"
+      initiation_comment2="fire one round."
+      acknowledge_comment="Roger, wait one."
+      launch_comment="Round on the way.">
+
+    <round instances="8"
+           instance_class="grenade"
+           instance_key="mortar_shell1" 
+           instance_spread="7 8 7" 
+           common_spread="0 0 0" 
+           launch_time="5.0"
+           spawn_time="8.0">
+	   <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+    </round>
+
+    <hud_icon filename="hud_mortar1.png" />
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="100" source="rank" source_value="0.1" />
+    <inventory encumbrance="0.0" price="25.0" />
+
+</call>
