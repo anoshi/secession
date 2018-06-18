@@ -3,7 +3,7 @@
 
 	<projectile file="stun_grenade.projectile" />
 	<projectile file="hand_grenade.projectile" />
-
+	<projectile file="lifecraft_healbomb.projectile" />
 	<!-- rather awkward place for this definition, but for now, that's the way it is -->
 	<!-- projectile itself defines its slot, 0 being actual throwables that can also equipped, thrown, bought and found -->
 	<!-- mortar shell is in slot 2 -->

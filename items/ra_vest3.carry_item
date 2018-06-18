@@ -18,7 +18,7 @@
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="none" consumes_item="0" />
         <modifier class="melee_hit_result" input_character_state="death" output_character_state="stun" />
-        <modifier class="speed" value="-0.08" /> 
+        <modifier class="speed" value="+0.35" /> 
     </carry_item>
 
     <carry_item key="ra_vest3_2" name="Vest, type III, 80%" slot="1" transform_on_consume="ra_vest3_3" time_to_live_out_in_the_open="60.0">
@@ -39,7 +39,7 @@
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="none" />
         <modifier class="melee_hit_result" input_character_state="death" output_character_state="stun" />
-        <modifier class="speed" value="-0.08" />
+        <modifier class="speed" value="+0.35" />
     </carry_item>
 
     <carry_item key="ra_vest3_3" name="Vest, type III, 60%" slot="1" transform_on_consume="ra_vest3_4" time_to_live_out_in_the_open="60.0">
@@ -58,7 +58,7 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
 	<!-- melee_hit goes right through, and doesn't consume -->
-        <modifier class="speed" value="-0.08" />
+        <modifier class="speed" value="+0.35" />
     </carry_item>
 	
     <carry_item key="ra_vest3_4" name="Vest, type III, 40%" slot="1" transform_on_consume="ra_vest3_5" time_to_live_out_in_the_open="60.0">
@@ -77,7 +77,7 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
 	<!-- melee_hit goes right through, and doesn't consume -->
-        <modifier class="speed" value="-0.08" />
+        <modifier class="speed" value="+0.35" />
     </carry_item>
 	
     <carry_item key="ra_vest3_5" name="Vest, type III, 20%" slot="1" time_to_live_out_in_the_open="60.0">
@@ -96,7 +96,7 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="wound" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="wound" />
 	<!-- melee_hit goes right through, and doesn't consume -->
-        <modifier class="speed" value="-0.08" />
+        <modifier class="speed" value="+0.35" />
     </carry_item>
      
 </carry_items>
