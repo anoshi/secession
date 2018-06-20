@@ -3,25 +3,21 @@
 
 	<projectile file="stun_grenade.projectile" />
 	<projectile file="hand_grenade.projectile" />
-	<projectile file="lifecraft_healbomb.projectile" />
+
 	<!-- rather awkward place for this definition, but for now, that's the way it is -->
 	<!-- projectile itself defines its slot, 0 being actual throwables that can also equipped, thrown, bought and found -->
 	<!-- mortar shell is in slot 2 -->
 	<projectile file="mortar_shell.projectile" />
 	<projectile file="impact_grenade.projectile" />
 	<projectile file="c4.projectile" />
-
-	<projectile file="artillery_shell.projectile" />	<projectile file="lifecraft_healbomb.projectile" />
-
+	<projectile file="artillery_shell.projectile" />
 <!--
 	<projectile file="at_mine.projectile" />
 -->
-
 	<projectile file="flare.projectile" />
 	<projectile file="claymore_blast.projectile" />   
 	<projectile file="claymore.projectile" />   
  
-
 	<projectile file="naval_mine.projectile" />  
  	<projectile file="flare_checkpoint.projectile" />
 	<projectile file="debri_stun.projectile" />

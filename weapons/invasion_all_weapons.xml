@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapons>
-  <weapon file="ak47.weapon">
+  <weapon file="wt_lr.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="apc_hmg.weapon">
@@ -30,7 +30,7 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
-  <weapon file="pkm.weapon">
+  <weapon file="wt_mg.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="famasg1.weapon">
@@ -67,7 +67,7 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.3" value="1" />
   </weapon>
-  <weapon file="dragunov_svd.weapon">
+  <weapon file="wt_sr.weapon">
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
@@ -88,7 +88,7 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.05" value="1" />
   </weapon>
-  <weapon file="qcw-05.weapon">
+  <weapon file="wt_sil.weapon">
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
@@ -133,7 +133,7 @@
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
 
-  <weapon file="sg552.weapon" >
+  <weapon file="wt_lrx.weapon" >
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
@@ -143,7 +143,7 @@
     <capacity source="rank" source_value="0.05" value="1" />
   </weapon>
 
-  <weapon file="qbs-09.weapon" >
+  <weapon file="wt_sg.weapon" >
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
 

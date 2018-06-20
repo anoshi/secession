@@ -3,7 +3,7 @@
   <weapon key='m16a4.weapon' />
   <weapon key='m240.weapon' />
   <weapon key='m24_a2.weapon' />
-
+  <weapon key='lc_heal_nade.weapon' />
   <weapon key='mp5sd.weapon' />
   <weapon key='mossberg.weapon' />
 

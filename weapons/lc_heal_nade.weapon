@@ -1,57 +1,37 @@
 <?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_rare.weapon" key="lc_heal_nade.weapon" radius="0.45">
-    <tag name="wrench" />
-<!--    <specification 
-  		retrigger_time="-1" 
-  		accuracy_factor="0.8" 
-  		sustained_fire_grow_step="2.0" 
-  		sustained_fire_diminish_rate="0.2" 
-  		magazine_size="5" 
-  		can_shoot_standing="1"
-  		can_shoot_crouching="1" 
-  		suppressed="0" 
-  		untransform_equipment_class="vest"
-  		untransform_count="1"
-  		character_state="unwound"
-  		affect_characters="1"
-  		affect_vehicles="1"
-  		damage="-10"
-  		name="LC Heal Nade" 
-  		class="4" 
-  		projectile_speed="120.0"
-  		projectiles_per_shot="1"
-  		barrel_offset="0.3" 
-  		spread_range="0.05"
-  		range="8.0"
-  		slot="1"
-  		reload_one_at_a_time="1"
-  		drop_count_factor_on_death="0.2"
-  	/>-->
-  	
-  	    <specification magazine_size="1" 
-    can_shoot_standing="0" 
-    can_shoot_crouching="1" 
-    carry_in_two_hands="1" 
-    name="large wrench" 
-    class="5" 
-    character_state="unwound" 
-    consume="1" 
-    sight_range_modifier="1" 
-    slot="1" 
-    affect_characters="0"
-    affect_vehicles="1"
-    damage="-1.5"
-    range="0.06"
-    stab_enabled="1" />
+<weapon file="base_primary_rare.weapon" key="lc_heal_nade.weapon">
+    <tag name="assault" />
 
-    <!--     <ballistics near_far_distance="20.0" speed_estimation_near="25.0" speed_estimation_far="25.0" max_speed="30.0" randomness="0.0" />    -->
+    <specification 
+  retrigger_time="-1" 
+  accuracy_factor="0.8" 
+  sustained_fire_grow_step="3.0" 
+  sustained_fire_diminish_rate="0.2" 
+  magazine_size="1" 
+  can_shoot_standing="1" 
+  suppressed="0" 
+  name="LC Heal Nade" 
+  class="4" 
+  projectile_speed="120.0" 
+  barrel_offset="0.3" 
+  spread_range="0.05"/>
+  <!-- medikit spec -->
+  <!-- character_state="unwound" -->
+  <!-- consume="0" -->
+  <!-- sight_range_modifier="1" -->
+  <!-- slot="1" -->
+  <!-- affect_characters="1" --> 
+  <!-- wrench spec -->
+  <!-- affect_vehicles="1" -->
+  <!-- damage="-10.0" -->
+  <!-- range="0.06" -->
+  <!-- stab_enabled="1" -->
+
     <ballistics curve_height="6.0" near_far_distance="0.0" speed_estimation_near="9.0" speed_estimation_far="17.0" max_speed="30.0" randomness="0.0" tweak_factor="1.1" /> 
-    <!-- <ballistics curve_height="4.0" near_far_distance="10.0" speed_estimation_near="20.0" max_speed="160.0" randomness="0.0" />   -->
-    <!-- <ballistics near_far_distance="20.0" speed_estimation_near="25.0" speed_estimation_far="25.0" max_speed="100.0" randomness="0.0" /> -->
 
-	<animation key="recoil" ref="12" />
-	<animation key="recoil" ref="13" />
-	<animation key="recoil" ref="14" />
+    <animation key="recoil" ref="12" />
+    <animation key="recoil" ref="13" />
+    <animation key="recoil" ref="14" />
     <animation state_key="reload" animation_key="reloading, m79" />
     <sound key="fire" fileref="m79_shot.wav" pitch_variety="0.1" volume="0.5" />
     <sound key="magazine_out" fileref="m79_clip_out.wav" volume="0.7" />
@@ -61,14 +41,14 @@
 
     <model filename="m79.xml" />
 
-    <projectile file="lifecraft_healbomb.projectile" />
+    <projectile file="lc_heal_bomb.projectile" />
     <weak_hand_hold offset="0.005" />
 
     <capacity value="0" source="rank" source_value="0.0" />
-    <capacity value="1" source="rank" source_value="0.3" />
+    <capacity value="1" source="rank" source_value="0.2" />
 
     <hud_icon filename="hud_m79.png" />
-    <commonness value="0.002" can_respawn_with="1" />
+    <commonness value="0.002" in_stock="1" can_respawn_with="1" />
     <inventory encumbrance="10.0" price="25.0" />
 
     <effect class="muzzle" ref="LawMuzzle" />
@@ -78,12 +58,30 @@
     <stance state_key="walking" accuracy="0.25" />
     <stance state_key="crouch_moving" accuracy="0.1" />
     <stance state_key="prone_moving" accuracy="0.1" />
-
     <stance state_key="standing" accuracy="0.6" />
     <stance state_key="crouching" accuracy="0.9" />
     <stance state_key="prone" accuracy="1.0" />
     <stance state_key="over_wall" accuracy="0.8" /> 
     
-    <modifier class="speed" value="-0.12" />
+    <modifier class="speed" value="-0.12" />    
+
+<!-- wrench stuff -->
+<!--<model filename="wrench.mesh"  texture_filename="concrete.png" /> -->
+<!--	<animation state_key="recoil"			  animation_key="repairing, large wrench" /> -->
+<!--    <animation state_key="hold"				  animation_key="still, heavy weapon" /> -->
+<!--    <animation state_key="hold_on_wall"		  animation_key="still, heavy weapon" /> -->
+<!--    <animation state_key="hold_casual"		  animation_key="still, heavy weapon" /> -->
+<!--    <animation state_key="still_against_wall" animation_key="still, heavy weapon" /> -->
+<!--    <animation state_key="crouching" 		  animation_key="crouch, still, large wrench" /> -->
+<!--    <animation state_key="walking"			  animation_key="walking, heavy weapon" /> -->
+<!--    <animation state_key="walking_backwards"  animation_key="walking backwards, heavy weapon" /> -->
+<!--    <animation state_key="crouch_moving" 	  animation_key="crouching forwards, large wrench" /> -->
+<!--    <animation state_key="stabbing"			  animation_key="stabbing, bat" /> -->
+<!--    <animation state_key="reload"			  animation_key="reloading, m79" /> -->
+<!-- <sound key="effect" fileref="wrench_shot.wav" pitch_variety="0.03" volume="1.2" /> -->
+<!-- <sound key="stab" fileref="grenade_throw1.wav" pitch_variety="0.05" volume="1.0" />   -->
+<!-- <sound key="stab_hit" fileref="wrench_body_hit.wav" pitch_variety="0.05" volume="1.0" /> -->
+<!-- <sound class="impact" fileref="medikit_drop.wav" /> -->
+
 
 </weapon>

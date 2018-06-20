@@ -8,7 +8,7 @@
     
     <round instances="16"
            instance_class="grenade"
-           instance_key="lifecraft_healbomb.projectile" 
+           instance_key="lc_heal_bomb.projectile" 
            instance_spread="20 20 20" 
            common_spread="20 0 20" 
            launch_time="5.0"
@@ -20,7 +20,7 @@
 
     <round instances="16"
            instance_class="grenade"
-           instance_key="lifecraft_healbomb.projectile" 
+           instance_key="lc_heal_bomb.projectile" 
            instance_spread="20 20 20" 
            common_spread="20 0 20"
            launch_time="7.0"
@@ -32,7 +32,7 @@
 
     <round instances="16"
            instance_class="grenade"
-           instance_key="lifecraft_healbomb.projectile" 
+           instance_key="lc_heal_bomb.projectile"
            instance_spread="20 20 20" 
            common_spread="20 0 20"
            launch_time="9.0"

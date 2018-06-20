@@ -68,7 +68,7 @@
 	<carry_item file="ra_vest3.carry_item" />
 
 	<!-- BlastCorp -->
-	<carry_item file="bc_vest1.carry_item" />
+	<!--<carry_item file="bc_vest1.carry_item" />-->
 	<carry_item file="bc_vest2.carry_item" />
 	<carry_item file="bc_vest3.carry_item" />
 	
