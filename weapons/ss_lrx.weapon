@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_primary_rare.weapon" key="wt_lrx.weapon">
+<weapon file="base_primary_rare.weapon" key="ss_lrx.weapon">
     <tag name="assault" />
     <specification 
   retrigger_time="0.10" 
@@ -9,7 +9,7 @@
   magazine_size="30" 
   can_shoot_standing="1" 
   suppressed="0" 
-  name="WT Laser Rifle Xtreme" 
+  name="SS Laser Rifle Xtreme" 
   class="4" 
   burst_shots="1" 
   projectile_speed="100.0" 
@@ -34,7 +34,7 @@
     
 
     <weak_hand_hold offset="0.0" />
-    <projectile file="wt_laser.projectile">
+    <projectile file="ss_laser.projectile">
         <result class="hit"  kill_probability="0.57" kill_decay_start_time="0.33" kill_decay_end_time="0.68" />
     </projectile>
     <modifier class="speed" value="-0.00" />    
