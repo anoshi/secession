@@ -71,6 +71,7 @@
 	<carry_item file="bc_vest1.carry_item" />
 	<carry_item file="bc_vest2.carry_item" />
 	<carry_item file="bc_vest3.carry_item" />
+	<carry_item file="bc_impervavest.carry_item" />
 	
 	<!-- WyreTek -->
 	<carry_item file="wt_vest1.carry_item" />
