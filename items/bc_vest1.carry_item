@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-    <carry_item key="bc_vest1.carry_item" name="BlastCorp Vest mk.I" slot="1" transform_on_consume="bc_vest1_2" time_to_live_out_in_the_open="120.0">
+    <carry_item key="bc_vest1.carry_item" name="BC Vest mk.I" slot="1" transform_on_consume="bc_vest1_2" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />

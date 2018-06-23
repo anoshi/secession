@@ -26,7 +26,7 @@
 	<weapon key='taser.weapon' /> 
 	<weapon key='flamethrower.weapon' />     
 	<weapon key='aa12_frag.weapon' /> 
-<!--  <weapon key='bandage.weapon' /> -->       
+    <weapon key='bandage.weapon' />     
 
 
 	<!-- note, we have faction specific bazookas, therefore not included here -->
@@ -36,10 +36,6 @@
 	<weapon key='gl_resource.weapon' /> 
 	<weapon key='humvee_gl.weapon' />    
   
-	<carry_item key='vest3.carry_item' enabled="0" />
-	<carry_item key='eodvest.carry_item' enabled="0" />  
-
-
 	<carry_item key='costume_were.carry_item' />
 	<carry_item key='costume_clown.carry_item' />
 	<carry_item key='costume_santa.carry_item' />
