@@ -1,8 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<projectile class="grenade" name="lifecraft heal bomb" slot="2" pulldown_in_air="20.0" key="lc_heal_bomb.projectile" >
-    <tag name="medikit"/>
-    <result class="blast" radius="8.0" damage="-2.00" decal="0" character_state="unwound" untransform_equipment_class="vest" untransform_count="1" affect_characters="1" affect_vehicles="1"
-/>
+<projectile class="grenade" name="lifecraft heal bomb" key="lc_heal_bomb.projectile" slot="2" pulldown_in_air="20.0">
+    <result class="blast" radius="8.0" decal="0" character_state="unwound" />
     <trigger class="impact">
       <collider class="terrain" enabled="1" />     
       <collider class="static_object" enabled="1" /> 

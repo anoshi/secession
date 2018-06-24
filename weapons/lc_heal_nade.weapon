@@ -1,24 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapon file="base_primary_rare.weapon" key="lc_heal_nade.weapon">
-    <tag name="assault" />
-
-    <specification 
-  retrigger_time="-1" 
-  accuracy_factor="0.8" 
-  sustained_fire_grow_step="3.0" 
-  sustained_fire_diminish_rate="0.2" 
-  magazine_size="1" 
-  can_shoot_standing="1" 
-  suppressed="0" 
-  name="LC Heal Nade" 
-  class="4" 
-  projectile_speed="120.0" 
-  barrel_offset="0.3" 
-  spread_range="0.05"/>
+  <tag name="assault" />
+  <specification 
+    retrigger_time="-1" 
+    accuracy_factor="0.8" 
+    sustained_fire_grow_step="3.0" 
+    sustained_fire_diminish_rate="0.2" 
+    magazine_size="1" 
+    can_shoot_standing="1" 
+    suppressed="0" 
+    name="LC Heal Nade" 
+    class="4" 
+    projectile_speed="120.0" 
+    barrel_offset="0.3" 
+    spread_range="0.05"
+    sight_range_modifier="1"/>
   <!-- medikit spec -->
   <!-- character_state="unwound" -->
   <!-- consume="0" -->
-  <!-- sight_range_modifier="1" -->
   <!-- slot="1" -->
   <!-- affect_characters="1" --> 
   <!-- wrench spec -->
