@@ -6,7 +6,7 @@ material bc_laser {
 			fog_override true
 
 			depth_write off
-			scene_blend add
+			scene_blend alpha_blend
 
 			texture_unit {
 				texture bc_laser.png

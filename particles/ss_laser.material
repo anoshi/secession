@@ -2,12 +2,10 @@ material ss_laser {
 	receive_shadows off
 	technique {
 		pass {
+        	scene_blend alpha_blend			//scene_blend add
 			lighting off
 			fog_override true
-
 			depth_write off
-			scene_blend add
-
 			texture_unit {
 				texture ss_laser.png
 			}
