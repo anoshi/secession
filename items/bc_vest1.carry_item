@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-    <carry_item key="bc_vest1.carry_item" name="BlastCorp Vest mk.I" slot="1" transform_on_consume="bc_vest1_2" time_to_live_out_in_the_open="120.0">
-        <hud_icon filename="hud_vest1.png" />
+    <carry_item key="bc_vest1.carry_item" name="BC Vest mk.I" slot="1" transform_on_consume="bc_vest1_2" time_to_live_out_in_the_open="120.0">
+        <hud_icon filename="hud_vest3.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
         <inventory encumbrance="4" price="20" />
@@ -22,7 +22,7 @@
     </carry_item>
     
     <carry_item key="bc_vest1_2" name="BC Vest, type I 80%" slot="1" transform_on_consume="bc_vest1_3" time_to_live_out_in_the_open="120.0">
-        <hud_icon filename="hud_vest1.png" />
+        <hud_icon filename="hud_vest3_80.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
         <inventory encumbrance="4" price="20" />
@@ -42,7 +42,7 @@
     </carry_item>
     
         <carry_item key="bc_vest1_3" name="BC Vest, type I 60%" slot="1" transform_on_consume="bc_vest1_4" time_to_live_out_in_the_open="120.0">
-        <hud_icon filename="hud_vest1.png" />
+        <hud_icon filename="hud_vest3_60.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
         <inventory encumbrance="4" price="20" />
@@ -62,7 +62,7 @@
     </carry_item>
     
     carry_item key="bc_vest1_4" name="BC Vest, type I 40%" slot="1" transform_on_consume="bc_vest1_5" time_to_live_out_in_the_open="120.0">
-        <hud_icon filename="hud_vest1.png" />
+        <hud_icon filename="hud_vest3_40.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
         <inventory encumbrance="4" price="20" />
@@ -82,7 +82,7 @@
     </carry_item>
     
     carry_item key="bc_vest1_5" name="BC Vest, type I 20%" slot="1" transform_on_consume="bc_vest1_6" time_to_live_out_in_the_open="120.0">
-        <hud_icon filename="hud_vest1.png" />
+        <hud_icon filename="hud_vest3_20.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
         <inventory encumbrance="4" price="20" />
@@ -102,7 +102,7 @@
     </carry_item>
     
 	<carry_item key="bc_vest1_6" name="BC Vest, type I, 0%" slot="1">
-        <hud_icon filename="hud_vest1_hole1.png" />
+        <hud_icon filename="hud_vest3_1.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
         <inventory encumbrance="4" price="2" />

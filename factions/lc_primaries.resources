@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <weapon key='m16a4.weapon' />
-  <weapon key='m240.weapon' />
-  <weapon key='m24_a2.weapon' />
+  <weapon key='lc_lr.weapon' />
+  <weapon key='lc_mg.weapon' />
+  <weapon key='lc_sr.weapon' />
+  <weapon key='lc_heal_nade.weapon' />
+  <weapon key='lc_sil.weapon' />
+  <weapon key='lc_sg.weapon' />
 
-  <weapon key='mp5sd.weapon' />
-  <weapon key='mossberg.weapon' />
-
-  <weapon key='l85a2.weapon' />
+  <weapon key='lc_lrx.weapon' />
 </resources>

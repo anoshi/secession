@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-    <carry_item key="ra_vest1.carry_item" name="Vest, type I" slot="1" transform_on_consume="ra_vest1_2" time_to_live_out_in_the_open="120.0">
+    <carry_item key="ra_vest1.carry_item" name="RA Vest, type I" slot="1" transform_on_consume="ra_vest1_2" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest1.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
@@ -18,12 +18,12 @@
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" />
 	<!-- melee_hit goes right through, and doesn't consume -->
-    <modifier class="speed" value="+0.50" />  
+    <modifier class="speed" value="+0.15" />  
     </carry_item>
 
 
     
-     <carry_item key="ra_vest1_2" name="Vest, type I, 50%" slot="1" time_to_live_out_in_the_open="120.0">
+     <carry_item key="ra_vest1_2" name="RA Vest, type I, 50%" slot="1" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest1_hole1.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
@@ -38,5 +38,5 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="wound" />
 	<!-- melee_hit goes right through, and doesn't consume -->
     </carry_item>
-    <modifier class="speed" value="-0.10" />    
+    <modifier class="speed" value="+0.15" />    
 </carry_items>

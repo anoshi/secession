@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-    <carry_item key="lc_vest2.carry_item" name="Vest, type II" slot="1" transform_on_consume="lc_vest2_2" time_to_live_out_in_the_open="120.0">
+    <carry_item key="lc_vest2.carry_item" name="LC Vest, type II" slot="1" transform_on_consume="lc_vest2_2" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
@@ -8,7 +8,7 @@
 
         <model mesh_filename="vest.xml" />
 
-        <commonness value="1.0" in_stock="1" can_respawn_with="0" />
+        <commonness value="1.0" in_stock="1" can_respawn_with="1" />
 
 	<!-- death or wound or stun -> no effect -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
@@ -21,7 +21,7 @@
     <modifier class="speed" value="-0.05" />  
     </carry_item>
 
-    <carry_item key="lc_vest2_2" name="Vest, type II, 50%" slot="1" transform_on_consume="lc_vest2_3" time_to_live_out_in_the_open="120.0">
+    <carry_item key="lc_vest2_2" name="LC Vest, type II, 50%" slot="1" transform_on_consume="lc_vest2_3" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest_hole1.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
@@ -41,7 +41,7 @@
     <modifier class="speed" value="-0.05" />  
     </carry_item>
 
-    <carry_item key="lc_vest2_3" name="Vest, type II, 25%" slot="1" time_to_live_out_in_the_open="120.0">
+    <carry_item key="lc_vest2_3" name="LC Vest, type II, 25%" slot="1" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest_hole2.png" />
         <capacity value="0" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.1" />
