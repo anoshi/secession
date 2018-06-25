@@ -2,6 +2,7 @@
 <calls>
 	<call file="wt_mortar_1.call" />
 	<call file="lc_heal_bomb_1.call" />
+	<call file="lc_repair_bomb_1.call" />
 	<call file="mortar1.call" />
 	<call file="mortar2.call" />
 	<call file="paratroopers1.call" />
@@ -17,4 +18,5 @@
 
 	<call file="tracer_dart.call" />
 
+    <call file="notify_metagame.call" />
 </calls>
