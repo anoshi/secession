@@ -3,11 +3,11 @@
  	<vehicle key="jeep.vehicle" />
  	<vehicle key="apc.vehicle" />
  	<vehicle key="tank.vehicle" />
- 	<vehicle key="transport_truck.vehicle" />   
+ 	<vehicle key="transport_truck.vehicle" />
 
 	<call key="tank.call" />
-	<call key="lifecraft_healbomb.call" />
-	
+	<call key="lc_heal_bomb_1.call" />
+
 	<carry_item key="lc_vest1.carry_item" enabled="1" />
 	<carry_item key="lc_vest2.carry_item" enabled="1" />
 	<carry_item key="lc_vest3.carry_item" enabled="1" />
