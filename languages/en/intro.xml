@@ -1,34 +1,29 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <intro>
-    <text key="Hint" text="SECESSION: impact grenades have a low blast radius but are much more effective against vehicles than frag grenades"/>
-    <text key="Hint" text="SECESSION: radar structures jam radio signals within a 100m radius"/>
-    <text key="Hint" text="SECESSION: Structures with a lot of health points are best destroyed with C4"/>
-    <text key="Hint" text="SECESSION: if you have enough resource points (RP) it's wise to buy a vest"/>
-    <text key="Hint" text="SECESSION: too much encumbrance in your backpack will make your accuracy suffer a lot"/>
-    <text key="Hint" text="SECESSION: cover is your best friend, use it as often as you can"/>
-    <text key="Hint" text="SECESSION: diving away from a grenade can save your life"/>
-    <text key="Hint" text="SECESSION: stabbing an enemy gives you much more XP than shooting him"/>
-    <text key="Hint" text="SECESSION: flanking or backdooring a base can be a good way to break a stalemate"/>
-    <text key="Hint" text="SECESSION: to capture a base, enter the dotted area which is visible on the map"/>
-    <text key="Hint" text="SECESSION: Capturing a base requires a 2/3 majority of troops to begin the timer"/>
-    <text key="Hint" text="SECESSION: Machineguns need you to go prone before fire, unless behind cover"/>
-    <text key="Hint" text="SECESSION: Stun grenades have a large blast radius but don't kill"/>
-    <text key="Hint" text="SECESSION: In a campaign, you can only respawn with your faction's weapons, unless you unlocked other factions' weapons"/>
-    <text key="Hint" text="SECESSION: To unlock enemy weapons for your own faction, bring several of them to one of your armories"/>
-    <text key="Hint" text="SECESSION: Vehicles are easy targets to large groups of infantry, use them carefully"/>
-    <text key="Hint" text="SECESSION: There are no 'better' guns, each fulfills a different purpose and at a price"/>
-    <text key="Hint" text="SECESSION: Shooting single shots helps a lot in reducing bullet spread"/>
-    <text key="Hint" text="SECESSION: Spotting enemy vehicles is an easy way to gain RP"/>
-    <text key="Hint" text="SECESSION: Selling valuables that are dropped by dead soldiers can be worth the trip"/>
-    <text key="Hint" text="SECESSION: A vest Type-II absorbs 2 bullets, the third puts you in a wounded state"/>
-    <text key="Hint" text="SECESSION: A camouflage suit doesn't protect you but makes you harder to detect by the AI"/>
-    <text key="Hint" text="SECESSION: Some heavier weapons lower your movement speed"/>
-    <text key="Hint" text="SECESSION: The commander gives attack orders - you are free to do whatever you want, though"/>
-    <text key="Hint" text="SECESSION: Only soldiers who wore a vest can be revived with the medikit"/>
-    <text key="Hint" text="SECESSION: If you're wounded and can't get help, hold the melee key to force respawn"/>
-    <text key="Hint" text="ReflexArq uses a system that improves the reflexes of its subjects"/>
-    <text key="Hint" text="BlastCorp are leaders in the explosives field"/>
-    <text key="Hint" text="WyreTek have created an advanced communications network"/>
-    <text key="Hint" text="ScopeSystems develops long-range targeting equipment"/>
-    <text key="Hint" text="LifeCraft specialises in survival skills and medical procedures"/>
+  <text key="Hint" text="ReflexArq uses a system that improves the reflexes of its subjects"/>
+  <text key="Hint" text="BlastCorp are leaders in the explosives field"/>
+  <text key="Hint" text="WyreTek have created an advanced communications network"/>
+  <text key="Hint" text="ScopeSystems develops long-range targeting equipment"/>
+  <text key="Hint" text="LifeCraft specialises in survival skills and medical procedures"/>
+  <text key="Hint" text="SECESSION: impact grenades have a low blast radius but are much more effective against vehicles than frag grenades"/>
+  <text key="Hint" text="WyreTek troops utilise powerful radio calls. Deploy radio jammers on the front lines to counter their advantage"/>
+  <text key="Hint" text="Use remote-detonated sticky explosives on heavy vehicles and large structures"/>
+  <text key="Hint" text="Backpacks more than 20% full slow you down and affect the accuracy of your weapons"/>
+  <text key="Hint" text="SECESSION: diving away from a grenade can save your life"/>
+  <text key="Hint" text="Melee attacks pass through almost all armour types"/>
+  <text key="Hint" text="Sneak into ememy bases and destroy their resources to limit their abilities on the battlefield"/>
+  <text key="Hint" text="SECESSION: to capture a base, enter the dotted area which is visible on the map"/>
+  <text key="Hint" text="SECESSION: Capturing a base requires a 2/3 majority of troops to begin the timer"/>
+  <text key="Hint" text="SECESSION: Machineguns need you to go prone before fire, unless behind cover"/>
+  <text key="Hint" text="Some LifeCraft weapons are designed to heal, not harm"/>
+  <text key="Hint" text="EMP grenades are highly effective against power armours, such as those worn by BlastCorp troops"/>
+  <text key="Hint" text="SECESSION: Vehicles are easy targets to large groups of infantry, use them carefully"/>
+  <text key="Hint" text="Each faction has its own weapons and armour that can be looted and used by enemies"/>
+  <text key="Hint" text="Bring several items of enemy equipment to an armoury to unlock them for your own faction"/>
+  <text key="Hint" text="Automatic weapons lose their accuracy the longer they are fired for"/>
+  <text key="Hint" text="Aim your crosshair over enemy vehicles to mark them on the map"/>
+  <text key="Hint" text="Always wear armour and patch it up with <item name please> if it takes damage"/>
+  <text key="Hint" text="Heavy weapons and armour make you a fearsome opponent, but reduce your movement speed"/>
+  <text key="Hint" text="SECESSION: Only soldiers who wore a vest can be revived with the medikit"/>
+  <text key="Hint" text="SECESSION: If you're wounded and can't get help, hold the melee key to force respawn"/>
 </intro>
