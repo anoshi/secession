@@ -42,9 +42,6 @@
 	
 	<!-- armour and military reskins -->
 	<carry_item file="camouflage_suit.carry_item" />
-	<carry_item file="vest1.carry_item" />
-	<carry_item file="vest2.carry_item" />
-	<carry_item file="vest3.carry_item" />
 	<carry_item file="eodvest.carry_item" />
 	<carry_item file="vest_blackops.carry_item" />  
 

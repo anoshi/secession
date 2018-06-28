@@ -6,6 +6,7 @@
  	<vehicle key="transport_truck.vehicle" />   
 
 	<call key="tank.call" />
+	<call key="lc_heal_bomb_1.call">
 	
 	<carry_item key="ra_vest1.carry_item" enabled="1" />
 	<carry_item key="ra_vest2.carry_item" enabled="1" />

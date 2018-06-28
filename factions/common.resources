@@ -26,7 +26,7 @@
 	<weapon key='taser.weapon' />
 	<weapon key='flamethrower.weapon' />
 	<weapon key='aa12_frag.weapon' />
-  <weapon key='bandage.weapon' />
+    <weapon key='bandage.weapon' />
 
 	<!-- note, we have faction specific bazookas, therefore not included here -->
 	<weapon key='minig_resource.weapon' />
@@ -115,7 +115,7 @@
 
 	<vehicle key="racing_car1.vehicle" />
 	<vehicle key="racing_car1.vehicle" />
-  <vehicle key="racing_car2.vehicle" />
+    <vehicle key="racing_car2.vehicle" />
 	<vehicle key="racing_car3.vehicle" />
 	<vehicle key="racing_car4.vehicle" />
 	<vehicle key="racing_car5.vehicle" />

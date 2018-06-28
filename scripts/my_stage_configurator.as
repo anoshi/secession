@@ -23,7 +23,7 @@ class MyStageConfigurator : StageConfiguratorCampaign {
 		availableFactionConfigs.push_back(FactionConfig(-1, "ra.xml", "ReflexArq", "0 0.6 0.4", "ra.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "bc.xml", "BlastCorp", "0.2 0.2 0.3", "bc.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "wt.xml", "WyreTek", "0.0 0.1 0.5", "wt.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "ss.xml", "ScopeSystems", "0.3 0.8 0.3", "ss.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "ss.xml", "ScopeSystems", "0.3 0.7 0.3", "ss.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "lc.xml", "LifeCraft", "1.0 0.7 0.7", "lc.xml"));
 		return availableFactionConfigs;
 	}
