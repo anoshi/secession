@@ -35,13 +35,30 @@
 	<weapon key='gl_resource.weapon' />
 	<weapon key='humvee_gl.weapon' />
 
-	<carry_item key='costume_were.carry_item' />
-	<carry_item key='costume_clown.carry_item' />
-	<carry_item key='costume_santa.carry_item' />
-	<carry_item key='costume_lizard.carry_item' />
-	<carry_item key='costume_underpants.carry_item' />
-	<carry_item key='vest_blackops.carry_item' enabled="0" />
+	<!-- List all faction-specific carry items here as disabled. Enable them in <faction>_default.resources -->
+	<carry_item key="ra_vest1.carry_item" enabled="0" />
+	<carry_item key="ra_vest2.carry_item" enabled="0" />
+	<carry_item key="ra_vest3.carry_item" enabled="0" />
 
+	<carry_item key="bc_vest1.carry_item" enabled="0" />
+	<carry_item key="bc_vest2.carry_item" enabled="0" />
+	<carry_item key="bc_vest3.carry_item" enabled="0" />
+	<carry_item key="bc_impervavest.carry_item" enabled="0" />
+	
+	<carry_item key="wt_vest1.carry_item" enabled="0" />
+	<carry_item key="wt_vest2.carry_item" enabled="0" />
+	<carry_item key="wt_vest3.carry_item" enabled="0" />
+
+	<carry_item key="ss_vest1.carry_item" enabled="0" />
+	<carry_item key="ss_vest2.carry_item" enabled="0" />
+	<carry_item key="ss_vest3.carry_item" enabled="0" />
+
+	<carry_item key="lc_vest1.carry_item" enabled="0" />
+	<carry_item key="lc_vest2.carry_item" enabled="0" />
+	<carry_item key="lc_vest3.carry_item" enabled="0" />
+	
+	<!-- end ALL CARRY ITEMS --> 
+	
 	<!-- common vehicles -->
 	<vehicle key="humvee.vehicle" />
 	<vehicle key="humvee_gl.vehicle" />

@@ -29,7 +29,7 @@
 
         <model mesh_filename="vest1.xml" />
 
-        <commonness value="1.0" in_stock="0" can_respawn_with="1" />
+        <commonness value="0.0" in_stock="0" can_respawn_with="0" />
 	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
@@ -49,7 +49,7 @@
 
         <model mesh_filename="vest1.xml" />
 
-        <commonness value="1.0" in_stock="0" can_respawn_with="1" />
+        <commonness value="0.0" in_stock="0" can_respawn_with="0" />
 	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
@@ -69,7 +69,7 @@
 
         <model mesh_filename="vest1.xml" />
 
-        <commonness value="1.0" in_stock="0" can_respawn_with="1" />
+        <commonness value="0.0" in_stock="0" can_respawn_with="0" />
 	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
@@ -89,7 +89,7 @@
 
         <model mesh_filename="vest1.xml" />
 
-        <commonness value="1.0" in_stock="0" can_respawn_with="1" />
+        <commonness value="0.0" in_stock="0" can_respawn_with="0" />
 	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />

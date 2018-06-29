@@ -6,6 +6,5 @@
 
   <weapon key='bc_sil.weapon' />
   <weapon key='bc_sg.weapon' />
-
-	<weapon key='bc_lrx.weapon' />
+  <weapon key='bc_lrx.weapon' />
 </resources>

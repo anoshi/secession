@@ -1,4 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- BlastCorp-specific Vehicles, Radio Calls, and Carry Items -->
 <resources>
  	<vehicle key="jeep_1.vehicle" />
  	<vehicle key="apc_1.vehicle" />
@@ -7,7 +8,9 @@
 
 	<call key="tank_1.call" />
 
+	<!-- explicitly enable this faction's carry items -->
 	<carry_item key="bc_vest1.carry_item" enabled="1" />
 	<carry_item key="bc_vest2.carry_item" enabled="1" />
 	<carry_item key="bc_vest3.carry_item" enabled="1" />
+	<carry_item key="bc_impervavest.carry_item" enabled="1" />
 </resources>

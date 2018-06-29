@@ -9,6 +9,7 @@
 	<call key="tank_2.call" />
 	<call key="wt_mortar_1.call" />
 
+	<!-- explicitly enable this faction's carry items -->
 	<carry_item key="wt_vest1.carry_item" enabled="1" />
 	<carry_item key="wt_vest2.carry_item" enabled="1" />
 	<carry_item key="wt_vest3.carry_item" enabled="1" />

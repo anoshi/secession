@@ -58,7 +58,7 @@
 	<carry_item file="underpants.carry_item" /> 
 	<carry_item file="kamasutra.carry_item" /> 
 
-<!-- FACTION GEAR (see factions/<faction>_default.resources to include these items)-->		
+<!-- FACTION GEAR (see factions/<faction>_default.resources to enable and disable these items)-->		
 	<!-- ReflexArq -->
 	<carry_item file="ra_vest1.carry_item" />
 	<carry_item file="ra_vest2.carry_item" />
