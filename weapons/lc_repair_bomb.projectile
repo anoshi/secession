@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projectile class="grenade" name="lifecraft repair bomb" key="lc_repair_bomb.projectile" slot="2" pulldown_in_air="20.0">
-    <result class="blast" radius="8.0" decal="0" damage="-20.0" character_state="unwound" />
+    <result class="blast" radius="8.0" decal="0" character_state="unwound" />
     <trigger class="impact">
       <collider class="terrain" enabled="1" />     
       <collider class="static_object" enabled="1" /> 
-      <collider class="vehicle" enabled="1" /> 
-      <collider class="character" enabled="1" />
+      <collider class="vehicle" enabled="1" faction_compare="equal" damage="-20.0" /> 
+      <collider class="character" enabled="0" />
     </trigger>
     
     <rotation class="motion" />
