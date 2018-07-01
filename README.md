@@ -1,15 +1,15 @@
 # secession
 
-Secession is a real-time, single and multi-player combat simulation that operates as a modification to the game [Running With Rifles](http://www.runningwithrifles.com). Each player takes part in skirmishes occurring on various battlefields, and must choose to ally or engage in combat with other players in an effort to establish majority control of key locations in the game world.
+*Secession* is a real-time, single and multi-player combat simulation that operates as a modification to the game [Running With Rifles](http://www.runningwithrifles.com). Each player takes part in skirmishes occurring on various battlefields, and must choose to ally or engage in combat with other players in an effort to establish majority control of key locations in the game world.
 
 ### Story
-Secession is intended to be adaptable to portray any time or level of technology. This variant has a modern-day or near-future setting in terms of weapon technology, but does not take place on Earth. Instead, a similarly inhabitable planet is used that can be likened more to a gladiatorial ring than to a populated world with its own economy and laws.
+Secession is intended to be adaptable to portray any time or level of technology. This variant has a futuristic setting and its events take place on an planet not unlike earth, but one that can be likened more to a gladiatorial ring than a populated world with its own economy and laws.
 
-Five major corporations - vying for status and the right to provide security services to intergalactic governmental icons and celebrities - use this planet to showcase their staff's abilities and training. Unfortunately, the known universe exists in a time of greed, where one's allegiance is to the highest bidder. Mercenary teams that prove their worth to one corporation are prime candidates for assimilation within another.
+Five major corporations &mdash; vying for status and the right to provide security services to intergalactic governmental icons and celebrities &mdash; use this planet to showcase their staff's abilities and training. Unfortunately, the known universe exists in a time of greed, where one's allegiance is to the highest bidder. Mercenary teams that prove their worth to one corporation are prime candidates for assimilation within another.
 
-There are subtle differences in the training regimes of each of the corporations, however, which may encourage some teams to remain loyal to their employer.
+There are subtle differences in the training regimes of each of the corporations, encouraging some mercenary teams to remain loyal to the one employer. On the other hand, subjects with existing skills in an associated field will often complete another corporation's training course in a matter of days in their spare time. Mercenary units that have worked for and trained under multiple corporations &mdash; while rarely held in high regard by their past employers &mdash; can hold a decisive advantage over their opponents on the battlefield.
 
-Subjects with existing skills in an associated field will often complete a corporation's training course in a matter of days in their spare time. A mercenary team that has worked for and trained under multiple corporations, while not often held in high regard by their past employers, can hold a decisive advantage over their peers on the battlefield.
+Beyond the conflict occuring between the corporations, a media presence known as the 'Broadcast News Network' (`BNN`) keeps the inhabitants informed on matters ranging from places of interest to each corporation's overall performance and other statistics. The BNN even finds time to sneak in the odd product advertisement, but many rumour these are in fact encrypted transimissions.
 
 ### Game Setup
 1. Each player chooses a corporation to ally with:
@@ -21,37 +21,30 @@ Subjects with existing skills in an associated field will often complete a corpo
 
 2. The game server selects a starting map and location for the player based on the selected corporation. 
 
-3. The player spawns as one of the following character types:
-  * Medic;
-  * Sniper;
-  * Heavy Trooper;
-  * Light Foot;
-  * Communications Technician;
-  * Grendier;
-  * Demolition Trooper;
+3. The player spawns as one of the following character types, each of which having its own `Offence`, `Defence`, and `Command Rating`:
+  * `Light Foot`;
+  * `Heavy Trooper`;
+  * `Sniper`;
+  * `Grenadier`;
+  * `Demolition Trooper`;
+  * `Medic`;
+  * `Communications Technician`;
 
-Each character type has its own Offense, Defence, and Command ratings, as well as Movement Speed and Special Ability.
 
-3. As players gain skill and complete tasks they can customise their character's role abilities by spending `Resource Points` at an armoury or through death and respawning
-
-## REFACTORING BELOW HERE
+## work in progress, below this point (post refactor to mod)
 ### Game Play
-1) From the world map, each player selects a "tile" adjacent to his force's front to move his team to. Each tile of the world map has an associated Resource Rating, dependent upon its land type and fortifications. While more than one team may be present on a world tile, the combined Command Rating of units in allied teams may not exceed the Resource Rating of the tile. These, and other statistics of world tiles can be perused while viewing the world map.
+#### Primary and Secondary objectives:
+Each area in the *Secession* world has a number of zones that need to be captured and controlled by one corporation (or alliance) before the area is marked on the world map as owned by that entity. Each corporation's command staff will advise mercenaries which targets and zones are of most interest throughout each battle. 
 
-2) The view zooms in to show the battlefield. Players may place their units within a designated starting zone and scan the battlefield (under a fog-of-war") by panning the screen around
+#### Tertiary objectives
+The BNN posts regular announcements over the airwaves, advising listeners of locations of interest in their current area and statistics pertaining to the greater world. Mercenaries can investigate reports of misplaced supply drops or attempt high-risk missions that have been posted by external parties. Forming friendships outside of the major corporations can earn players a healthy side-income and may even allow them to gain access to unknown or experimental technologies.
 
-3) Players queue movements for their units such as run, crawl, cover, hide, attack, or special, and choose a destination for that movement. Individual movements may take more than one tick to complete, but only one movement may be queued per unit.
+#### Experience Points (XP)
 
-4) At the conclusion of the tick, movements and any ensuing combat are animated.
+#### Resource Points (RP)
+As players gain skill and complete tasks they can customise their character's abilities by spending `Resource Points` at upgrade centres.
 
-5) Steps (3) and (4) are repeated until a battlefield victory condition is met e.g. flag captured, attrition completed, fortifications destroyed, enemy surrendered/retreated.
+Players can access a tactical map at any time to see the status of the action in their local area as well as the greater world. Even though a corporation may be able to hold one area without difficultly, there are numerous other areas must be conquered and controlled to guarantee supply lines and ultimately claim victory over the other corporations.
 
-6) View returns to the world map.
-
-### Selling Points
-Secession offers:
-* a persistent world in which both casual and hardcore players can coexist;
-* a central point around which a community can form;
-* multiple modes of play from force to unit level control;
-* re-playability through random maps and subtly different skill sets;
-* a modular framework for adaptability to current and future trends in graphics and internet gaming.
+#### Rules
+Each area of the world map has an associated `Resource Rating`, calculated by its land type and fortifications. While more than one corporation may be present in each world area, the combined `Command Rating` of allied units may not exceed the `Resource Rating` of the area. This rule presents a significant challenge for corporations that engage in alliances or pacts; each allied corporation's effective presence in world areas will be reduced by half or more if their allies wish to occupy the area as well.
