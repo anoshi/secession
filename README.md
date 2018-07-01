@@ -13,22 +13,22 @@ Beyond the conflict occuring between the corporations, a media presence known as
 
 ### Game Setup
 1. Each player chooses a corporation to ally with:
-  * `ReflexArq` uses a system that improves the reflexes of its subjects;
-  * `BlastCorp` are leaders in the explosives field;
-  * `WyreTek` have created an advanced communications network;
-  * `ScopeSystems` develops long-range targeting equipment;
-  * `LifeCraft` specialises in survival skills and medical procedures.
+  * `ReflexArq` uses a system that improves the reflexes of its subjects
+  * `BlastCorp` are leaders in the explosives field
+  * `WyreTek` have created an advanced communications network
+  * `ScopeSystems` develops long-range targeting equipment
+  * `LifeCraft` specialises in survival skills and medical procedures
 
 2. The game server selects a starting map and location for the player based on the selected corporation. 
 
 3. The player spawns as one of the following character types, each of which having its own `Offence`, `Defence`, and `Command Rating`:
-  * `Light Foot`;
-  * `Heavy Trooper`;
-  * `Sniper`;
-  * `Grenadier`;
-  * `Demolition Trooper`;
-  * `Medic`;
-  * `Communications Technician`;
+  * `Light Foot`
+  * `Heavy Trooper`
+  * `Sniper`
+  * `Grenadier`
+  * `Demolition Trooper`
+  * `Medic`
+  * `Communications Technician`
 
 
 ## work in progress, below this point (post refactor to mod)
