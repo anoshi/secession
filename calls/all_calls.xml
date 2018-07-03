@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <calls>
-	<call file="wt_mortar_1.call" />
-	<call file="lc_heal_bomb_1.call" />
+    <!-- COMMON calls -->
 	<call file="mortar1.call" />
 	<call file="mortar2.call" />
 	<call file="paratroopers1.call" />
@@ -14,7 +13,31 @@
 	<call file="tank.call" />
 	<call file="buggy.call" />
 	<call file="supply_quad.call" />
-
 	<call file="tracer_dart.call" />
+	<!-- end COMMON calls -->
 
+	<!-- EVENT cals -->
+    <call file="notify_metagame.call" />
+	<!-- end EVENT calls -->
+
+	<!-- FACTION calls -->
+	<!-- ReflexArq calls -->
+	<!-- end ReflexArq calls -->
+
+	<!-- BlastCorp calls -->
+	<!-- end BlastCorp calls -->
+
+	<!-- WyreTek calls -->
+	<call file="wt_mortar_1.call" />
+	<!-- end WyreTek calls -->
+
+	<!-- ScopeSystems calls -->
+	<!-- end ScopeSystems calls -->
+
+	<!-- LifeCraft calls -->
+	<call file="lc_heal_bomb_1.call" />
+	<call file="lc_repair_bomb_1.call" />
+	<!-- end LifeCraft calls -->
+
+	<!-- end FACTION calls -->
 </calls>

@@ -2,5 +2,5 @@
 <resources>
 	<weapon key='m2_carlgustav.weapon' />
 	<weapon key='glock17.weapon' />
-  <weapon key='steyr_tmp.weapon' />  
+	<weapon key='steyr_tmp.weapon' />  
 </resources>

@@ -71,12 +71,12 @@
 
   <vehicle file="humvee_gl.vehicle" />
   
-	<vehicle file="m113_tank_mortar.vehicle" />
-	<vehicle file="atv_base.vehicle" />
-	<vehicle file="atv_armory.vehicle" /> 
+  <vehicle file="m113_tank_mortar.vehicle" />
+  <vehicle file="atv_base.vehicle" />
+  <vehicle file="atv_armory.vehicle" /> 
   
-	<vehicle file="wiesel_tow.vehicle" />
-	<vehicle file="wiesel_spawn.vehicle" />   
+  <vehicle file="wiesel_tow.vehicle" />
+  <vehicle file="wiesel_spawn.vehicle" />   
     
   <vehicle file="race_vehicles.xml" />
 </vehicles>

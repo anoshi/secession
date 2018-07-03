@@ -10,7 +10,7 @@
     can_shoot_standing="1" 
     suppressed="0" 
     name="LC Heal Nade" 
-    class="4" 
+    class="4"
     projectile_speed="120.0" 
     barrel_offset="0.3" 
     spread_range="0.05"
@@ -41,6 +41,7 @@
     <model filename="m79.xml" />
 
     <projectile file="lc_heal_bomb.projectile" />
+    //<projectile file="lc_repair_bomb.projectile" />
     <weak_hand_hold offset="0.005" />
 
     <capacity value="0" source="rank" source_value="0.0" />

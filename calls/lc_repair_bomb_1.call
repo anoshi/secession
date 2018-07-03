@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="lifecraft repairbomb" key="lc_repair_bomb_1.call"
+  initiation_comment1="FIX MY CAR"
+  initiation_comment2="Request panel work"
+  acknowledge_comment="Confirmed, nano mechanic bots will be dropped"
+  acknowledge_time="2.0"
+  launch_comment="Incoming. Try not to breathe.">
+  <round instances="12"
+    instance_class="grenade"
+    instance_key="lc_repair_bomb.projectile"
+    instance_spread="12 12 12"
+    common_spread="12 0 12"
+    launch_time="2.0"
+    spawn_time="4.0">
+    <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
+    <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
+	<sound class="spawn" fileref="woosh1.wav" volume="0.2" />
+  </round>
+  <round instances="12"
+    instance_class="grenade"
+    instance_key="lc_repair_bomb.projectile"
+    instance_spread="12 12 12"
+    common_spread="12 0 12"
+    launch_time="5.0"
+    spawn_time="7.0">
+	  <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
+    <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
+    <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
+  </round>
+  <hud_icon filename="hud_artillery2.png" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="25" source="rank" source_value="0.5" />
+  <inventory encumbrance="0.0" price="25.0" />
+</call>
