@@ -1,6 +1,5 @@
 ReflexArq - RA
-
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 	<voxel x="-2"  y="64" z="0" r="0.015047" g="0.011875" b="0.014705" a="1.000000" />  <!-- Black / Mouth -->
 	<voxel x="-3"  y="64" z="0" r="1.000000" g="0.401763" b="1.000000" a="1.000000" />  <!-- Pink / Eye -->
 	<voxel x="-4"  y="64" z="0" r="0.810096" g="0.650314" b="0.415966" a="1.000000" />  <!-- Skin -->
@@ -12,11 +11,10 @@ ReflexArq - RA
 	<voxel x="-10" y="64" z="0" r="0.124808" g="0.000000" b="0.178068" a="1.000000" />  <!-- Dark Purple / Tertiary -->
 	<voxel x="-11" y="64" z="0" r="0.501184" g="0.433720" b="0.625459" a="1.000000" />  <!-- Light Purple / Alternate secondary -->
 	<voxel x="-12" y="64" z="0" r="0.668067" g="0.547343" b="0.753284" a="1.000000" />  <!-- Lighter Purple / Alternate Primary -->
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 
 BlastCorp - BC
-
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 	<voxel x="-2"  y="62" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Black / Detail -->
 	<voxel x="-3"  y="62" z="0" r="0.050243" g="0.053793" b="0.060895" a="1.000000" />  <!-- Dark grey / Suit -->
 	<voxel x="-4"  y="62" z="0" r="0.142561" g="0.149663" b="0.149663" a="1.000000" />  <!-- Grey / Suit -->
@@ -29,26 +27,22 @@ BlastCorp - BC
 	<voxel x="-11" y="62" z="0" r="0.465676" g="0.163866" b="0.000000" a="1.000000" />  <!-- Dark red / Suit alt -->
 	<voxel x="-12" y="62" z="0" r="0.749734" g="0.000000" b="0.000000" a="1.000000" />  <!-- Red / Suit alt secondary -->
 	<voxel x="-13" y="62" z="0" r="0.500000" g="0.500000" b="0.500000" a="1.000000" />  <!-- Lighter grey / backup hilight -->
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 
 WyreTek - WT
-
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+	<voxel x="-2"  y="64" z="0" r="0.181690" g="0.409859" b="0.663380" a="1.000000" />  <!-- Primary -->
+	<voxel x="-3"  y="64" z="0" r="0.063380" g="0.114085" b="0.283099" a="1.000000" />  <!-- Secondary -->
+	<voxel x="-4"  y="64" z="0" r="0.063380" g="0.114085" b="0.198592" a="1.000000" />  <!-- Tertiary -->
+	<voxel x="-5"  y="64" z="0" r="0.680282" g="0.578873" b="0.342254" a="1.000000" />  <!-- Skin -->
+	<voxel x="-6"  y="64" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Eyes, secondary belt -->
+	<voxel x="-7"  y="64" z="0" r="0.137681" g="0.132246" b="0.115942" a="1.000000" />  <!-- Webbing -->
+	<voxel x="-8"  y="64" z="0" r="0.181159" g="0.208333" b="0.181159" a="1.000000" />  <!-- Belt and Hair -->
+	<voxel x="-9"  y="64" z="0" r="0.071831" g="0.114085" b="0.114085" a="1.000000" />  <!-- Boots -->
+	<voxel x="-10" y="64" z="0" r="0.800725" g="0.795290" b="0.795290" a="1.000000" />  <!-- V-Neck -->
 <!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-		<voxel x="-2"  y="64" z="0" r="0.181690" g="0.409859" b="0.663380" a="1.000000" />  <!-- Primary -->
-		<voxel x="-3"  y="64" z="0" r="0.063380" g="0.114085" b="0.283099" a="1.000000" />  <!-- Secondary -->
-		<voxel x="-4"  y="64" z="0" r="0.063380" g="0.114085" b="0.198592" a="1.000000" />  <!-- Tertiary -->
-		<voxel x="-5"  y="64" z="0" r="0.680282" g="0.578873" b="0.342254" a="1.000000" />  <!-- Skin -->
-		<voxel x="-6"  y="64" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Eyes, secondary belt -->
-		<voxel x="-7"  y="64" z="0" r="0.137681" g="0.132246" b="0.115942" a="1.000000" />  <!-- Webbing -->
-		<voxel x="-8"  y="64" z="0" r="0.181159" g="0.208333" b="0.181159" a="1.000000" />  <!-- Belt and Hair -->
-		<voxel x="-9"  y="64" z="0" r="0.071831" g="0.114085" b="0.114085" a="1.000000" />  <!-- Boots -->
-		<voxel x="-10" y="64" z="0" r="0.800725" g="0.795290" b="0.795290" a="1.000000" />  <!-- V-Neck -->
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-
 
 ScopeSystems - SS
-
 <!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 	<voxel x="-3"  y="62" z="0" r="0.000000" g="0.036040" b="0.000000" a="1.000000" />   <!-- Dark dark green / Boots details -->
 	<voxel x="-4"  y="62" z="0" r="0.032489" g="0.085750" b="0.021837" a="1.000000" />   <!-- Uniform green -->
@@ -60,12 +54,10 @@ ScopeSystems - SS
 	<voxel x="-10" y="62" z="0" r="0.440821" g="0.543792" b="0.000000" a="1.000000" />   <!-- Lighter green detail -->
 	<voxel x="-11" y="62" z="0" r="0.700024" g="0.685821" b="0.685821" a="1.000000" />   <!-- grey Metal detail -->
 	<voxel x="-12" y="62" z="0" r="0.881110" g="0.881110" b="0.881110" a="1.000000" />   <!-- white Polished metal detail -->
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 
 LifeCraft - LC
-
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 	<voxel x="-2"  y="64" z="0" r="0.688732" g="0.114085" b="0.080282" a="1.000000" />  <!-- Primary -->
 	<voxel x="-3"  y="64" z="0" r="0.688732" g="0.114085" b="0.080282" a="1.000000" />  <!-- Secondary NeedsFixing -->
 	<voxel x="-4"  y="64" z="0" r="0.891549" g="0.916902" b="0.874648" a="1.000000" />  <!-- Hat1 -->
@@ -78,4 +70,4 @@ LifeCraft - LC
 	<voxel x="-11" y="64" z="0" r="0.181159" g="0.208333" b="0.181159" a="1.000000" />  <!-- Belt -->
 	<voxel x="-12" y="64" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Eyes, secondary belt -->
 	<voxel x="-13" y="64" z="0" r="0.230769" g="0.214286" b="0.192308" a="1.000000" />  <!-- Sidearm -->
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
