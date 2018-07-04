@@ -6,6 +6,7 @@
  	<vehicle key="tank_2.vehicle" />
  	<vehicle key="transport_truck_2.vehicle" />    
 
+    <!-- faction-specific calls (not listed in common.resources -->
 	<call key="tank_2.call" />
 	<call key="wt_mortar_1.call" />
 
