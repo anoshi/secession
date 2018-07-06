@@ -1,4 +1,3 @@
-#include "path://media/packages/vanilla/scripts"
 #include "path://media/packages/secession/scripts"
 
 #include "my_gamemode.as"

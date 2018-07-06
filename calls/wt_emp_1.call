@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="WT EMP" key="wt_emp_1.call"
+  initiation_comment1="Kill the power"
+  acknowledge_comment="Confirmed"
+  launch_comment="EMP launching">
+  <round instances="16"
+    instance_class="grenade"
+    instance_key="emp.projectile"
+    instance_spread="10 10 10"
+    common_spread="15 0 15"
+    launch_time="3.0"
+    spawn_time="8.0">
+    <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
+    <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
+	  <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
+  </round>
+  <hud_icon filename="hud_at_mine.png" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="100" source="rank" source_value="0.1" />
+  <inventory encumbrance="0.0" price="40.0" />
+</call>

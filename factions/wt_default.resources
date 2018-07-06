@@ -7,8 +7,11 @@
  	<vehicle key="transport_truck_2.vehicle" />    
 
     <!-- faction-specific calls (not listed in common.resources -->
-	<call key="tank_2.call" />
-	<call key="wt_mortar_1.call" />
+	<call key="wt_charge_1.call" />
+	<call key="wt_defend_1.call" />
+	<call key="wt_emp_1.call" />
+	<call key="wt_jammer_1.call" />
+	<call key="wt_pathping_1.call" />
 
 	<!-- explicitly enable this faction's carry items -->
 	<carry_item key="wt_vest1.carry_item" enabled="1" />

@@ -6,7 +6,7 @@
  	<vehicle key="tank.vehicle" />
  	<vehicle key="transport_truck.vehicle" />
 
-	<call key="tank.call" />
+	<call key="lc_force_field_1.call" />
 	<call key="lc_heal_bomb_1.call" />
 	<call key="lc_repair_bomb_1.call" />
 

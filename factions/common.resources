@@ -44,6 +44,7 @@
 	<carry_item key="bc_vest2.carry_item" enabled="0" />
 	<carry_item key="bc_vest3.carry_item" enabled="0" />
 	<carry_item key="bc_impervavest.carry_item" enabled="0" />
+	<carry_item key="bc_power_armour.carry_item" enabled="0" />
 	
 	<carry_item key="wt_vest1.carry_item" enabled="0" />
 	<carry_item key="wt_vest2.carry_item" enabled="0" />
@@ -56,7 +57,6 @@
 	<carry_item key="lc_vest1.carry_item" enabled="0" />
 	<carry_item key="lc_vest2.carry_item" enabled="0" />
 	<carry_item key="lc_vest3.carry_item" enabled="0" />
-	
 	<!-- end ALL CARRY ITEMS --> 
 	
 	<!-- common vehicles -->
@@ -198,16 +198,10 @@
 	<vehicle key="wiesel_spawn.vehicle" />
 
 	<call key="mortar1.call" />
-	<call key="mortar2.call" />
 	<call key="paratroopers1.call" />
-	<call key="paratroopers2.call" />
 	<call key="artillery1.call" />
-	<call key="artillery2.call" />
 	<call key="cover_drop.call" />
-	<!--<call key="rubber_boat.call" />-->
-	<call key="humvee.call" />
 	<call key="buggy.call" />
 	<call key="supply_quad.call" />
 	<call key="notify_metagame.call" />
-	<!--<call key="tank.call" />-->
 </resources>
