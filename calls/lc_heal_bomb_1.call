@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <call name="lifecraft healbomb" key="lc_heal_bomb_1.call"
   initiation_comment1="FIX EVERYTHING"
-  initiation_comment2="Troops down in %location. Requesting assistance"
+  initiation_comment2="Troops down! Requesting assistance"
   acknowledge_comment="Confirmed, this will occur."
-  acknowledge_time="2.0"
+  acknowledge_time="1.0"
   launch_comment="Heal Bombs on the way.">
   <round instances="12"
     instance_class="grenade"
@@ -11,7 +11,7 @@
     instance_spread="12 12 12"
     common_spread="12 0 12"
     launch_time="2.0"
-    spawn_time="6.0">
+    spawn_time="5.0">
     <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
 	  <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
@@ -21,13 +21,13 @@
     instance_key="lc_heal_bomb.projectile"
     instance_spread="12 12 12"
     common_spread="12 0 12"
-    launch_time="4.0"
+    launch_time="5.0"
     spawn_time="8.0">
 	  <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
     <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
   </round>
-  <hud_icon filename="hud_artillery2.png" />
+  <hud_icon filename="hud_medic.png" />
   <capacity value="0" source="rank" source_value="0.0" />
   <capacity value="25" source="rank" source_value="0.5" />
   <inventory encumbrance="0.0" price="25.0" />

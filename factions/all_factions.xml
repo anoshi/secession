@@ -1,8 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <factions>
-	<faction name="ReflexArq" />
+    <!-- order here must match that of scripts/my_stage_configurator.as -->
 	<faction name="BlastCorp" />
-	<faction name="WyreTek" />
-	<faction name="ScopeSystems" />
 	<faction name="LifeCraft" />
+	<faction name="ReflexArq" />
+	<faction name="ScopeSystems" />
+	<faction name="WyreTek" />
 </factions>

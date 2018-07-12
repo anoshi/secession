@@ -6,11 +6,15 @@
  	<vehicle key="tank_1.vehicle" />
  	<vehicle key="transport_truck_1.vehicle" />  
 
-	<call key="tank_1.call" />
+	<call key="bc_annihilator_1.call" />
+	<call key="bc_grenade_launcher_turret_1.call" />
+	<call key="bc_minigun_turret_1.call" />
+	<call key="bc_power_armour_1.call" />
 
 	<!-- explicitly enable this faction's carry items -->
 	<carry_item key="bc_vest1.carry_item" enabled="1" />
 	<carry_item key="bc_vest2.carry_item" enabled="1" />
 	<carry_item key="bc_vest3.carry_item" enabled="1" />
 	<carry_item key="bc_impervavest.carry_item" enabled="1" />
+	<carry_item key="bc_power_armour.carry_item" enabled="1" />
 </resources>

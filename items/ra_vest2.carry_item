@@ -38,7 +38,7 @@
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" /> 
         
 	<!-- melee_hit goes right through, and doesn't consume -->
-    <modifier class="speed" value="+0.25" />  
+    <modifier class="speed" value="+0.35" />  
     </carry_item>
 
     <carry_item key="ra_vest2_3" name="RA Vest, type II, 25%" slot="1" time_to_live_out_in_the_open="120.0">
@@ -55,6 +55,6 @@
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="wound" />
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="wound" />
 	<!-- melee_hit goes right through, and doesn't consume -->
-    <modifier class="speed" value="+0.25" />  
+    <modifier class="speed" value="+0.45" />  
     </carry_item>
 </carry_items>

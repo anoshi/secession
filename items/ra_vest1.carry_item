@@ -38,5 +38,5 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="wound" />
 	<!-- melee_hit goes right through, and doesn't consume -->
     </carry_item>
-    <modifier class="speed" value="+0.15" />    
+    <modifier class="speed" value="+0.25" />    
 </carry_items>

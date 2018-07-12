@@ -2,18 +2,10 @@
 <calls>
     <!-- COMMON calls -->
 	<call file="mortar1.call" />
-	<call file="mortar2.call" />
 	<call file="paratroopers1.call" />
-	<call file="paratroopers2.call" />
 	<call file="artillery1.call" />
-	<call file="artillery2.call" />
-	<call file="cover_drop.call" />
-	<call file="rubber_boat.call" />
-	<call file="humvee.call" />
-	<call file="tank.call" />
 	<call file="buggy.call" />
 	<call file="supply_quad.call" />
-	<call file="tracer_dart.call" />
 	<!-- end COMMON calls -->
 
 	<!-- EVENT cals -->
@@ -21,23 +13,36 @@
 	<!-- end EVENT calls -->
 
 	<!-- FACTION calls -->
-	<!-- ReflexArq calls -->
-	<!-- end ReflexArq calls -->
-
 	<!-- BlastCorp calls -->
+	<call file="bc_annihilator_1.call" />
+	<call file="bc_grenade_launcher_turret_1.call" />
+	<call file="bc_minigun_turret_1.call" />
+	<call file="bc_power_armour_1.call" />
 	<!-- end BlastCorp calls -->
 
-	<!-- WyreTek calls -->
-	<call file="wt_mortar_1.call" />
-	<!-- end WyreTek calls -->
-
-	<!-- ScopeSystems calls -->
-	<!-- end ScopeSystems calls -->
-
 	<!-- LifeCraft calls -->
+	<call file="lc_force_field_1.call" />
 	<call file="lc_heal_bomb_1.call" />
 	<call file="lc_repair_bomb_1.call" />
 	<!-- end LifeCraft calls -->
 
+	<!-- ReflexArq calls -->
+	<call file="ra_nanobot_cloud_1.call" />
+	<call file="ra_sprint_1.call" />
+	<call file="ra_teleport_1.call" />
+	<!-- end ReflexArq calls -->
+
+	<!-- ScopeSystems calls -->
+	<call file="ss_probe_1.call" />
+	<call file="ss_x-ray_1.call" />
+	<!-- end ScopeSystems calls -->
+
+	<!-- WyreTek calls -->
+	<call file="wt_charge_1.call" />
+	<call file="wt_defend_1.call" />
+	<call file="wt_emp_1.call" />
+	<call file="wt_jammer_1.call" />
+	<call file="wt_pathping_1.call" />
+	<!-- end WyreTek calls -->
 	<!-- end FACTION calls -->
 </calls>

@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="RA Nanobot Cloud" key="ra_nanobot_cloud_1.call" nofity_metagame="1"
+  initiation_comment1="Dust us up here, boss"
+  acknowledge_comment="Copy that. Confusion will spread"
+  launch_comment="Have at it">
+  <round instances="2"
+    instance_class="weapon"
+    instance_key="cover_resource.weapon"
+    instance_spread="0.5 0.5 0.5"
+    common_spread="0 0 0"
+    launch_time="4.0"
+    spawn_time="6.0">
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>
+  <hud_icon filename="hud_steroids.png" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="100" source="rank" source_value="0.1" />
+  <inventory encumbrance="0.0" price="50.0" />
+</call>

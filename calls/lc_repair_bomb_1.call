@@ -27,7 +27,7 @@
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
     <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
   </round>
-  <hud_icon filename="hud_artillery2.png" />
+  <hud_icon filename="hud_wrench_small.png" />
   <capacity value="0" source="rank" source_value="0.0" />
   <capacity value="25" source="rank" source_value="0.5" />
   <inventory encumbrance="0.0" price="25.0" />
