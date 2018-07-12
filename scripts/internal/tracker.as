@@ -99,7 +99,6 @@ abstract class Tracker {
 			handleCharacterKillEvent(event);
 		} else if (rootName == "call_request_event") {
 			handleCallRequestEvent(event);
-			_log("CALL REQUEST EVENT HANDLER CALLED", 1);
 		} else {
 			_log("unhandled message: " + rootName, 1);
 		}

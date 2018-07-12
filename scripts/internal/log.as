@@ -10,7 +10,7 @@ class Log {
 
 		// by default, still going verbose;
 		// - see log_setup.php for how to control the log level via command line
-		m_logLevel = 1;
+		m_logLevel = 2;
 	}
 };
 

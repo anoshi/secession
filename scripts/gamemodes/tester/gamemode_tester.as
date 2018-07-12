@@ -4,7 +4,6 @@
 
 // generic trackers
 #include "basic_command_handler.as"
-#include "call_handler.as"
 #include "heal_on_kill.as"
 
 // --------------------------------------------

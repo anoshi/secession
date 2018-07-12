@@ -1,4 +1,4 @@
-#include "path://media/packages/vanilla/scripts"
+#include "path://media/packages/secession/scripts"
 #include "gamemode_tester.as"
 
 void main(dictionary@ inputData) {
