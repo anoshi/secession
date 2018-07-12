@@ -1,18 +1,3 @@
-ReflexArq - RA
-<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-	<voxel x="-2"  y="64" z="0" r="0.015047" g="0.011875" b="0.014705" a="1.000000" />  <!-- Black / Mouth -->
-	<voxel x="-3"  y="64" z="0" r="1.000000" g="0.401763" b="1.000000" a="1.000000" />  <!-- Pink / Eye -->
-	<voxel x="-4"  y="64" z="0" r="0.810096" g="0.650314" b="0.415966" a="1.000000" />  <!-- Skin -->
-	<voxel x="-5"  y="64" z="0" r="0.817197" g="0.962777" b="0.213576" a="1.000000" />  <!-- Light Green / Belt boots primary -->
-	<voxel x="-6"  y="64" z="0" r="0.472778" g="0.753284" b="0.018286" a="1.000000" />  <!-- Green / Belt boots secondary-->
-	<voxel x="-7"  y="64" z="0" r="0.270387" g="0.554444" b="0.018286" a="1.000000" />  <!-- Dark Green -->
-	<voxel x="-8"  y="64" z="0" r="0.391111" g="0.000000" b="0.465676" a="1.000000" />  <!-- Light Purple / Secondary -->
-	<voxel x="-9"  y="64" z="0" r="0.199373" g="0.000000" b="0.284590" a="1.000000" />  <!-- Purple / Primary -->
-	<voxel x="-10" y="64" z="0" r="0.124808" g="0.000000" b="0.178068" a="1.000000" />  <!-- Dark Purple / Tertiary -->
-	<voxel x="-11" y="64" z="0" r="0.501184" g="0.433720" b="0.625459" a="1.000000" />  <!-- Light Purple / Alternate secondary -->
-	<voxel x="-12" y="64" z="0" r="0.668067" g="0.547343" b="0.753284" a="1.000000" />  <!-- Lighter Purple / Alternate Primary -->
-<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-
 BlastCorp - BC
 <!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 	<voxel x="-2"  y="62" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Black / Detail -->
@@ -27,33 +12,6 @@ BlastCorp - BC
 	<voxel x="-11" y="62" z="0" r="0.465676" g="0.163866" b="0.000000" a="1.000000" />  <!-- Dark red / Suit alt -->
 	<voxel x="-12" y="62" z="0" r="0.749734" g="0.000000" b="0.000000" a="1.000000" />  <!-- Red / Suit alt secondary -->
 	<voxel x="-13" y="62" z="0" r="0.500000" g="0.500000" b="0.500000" a="1.000000" />  <!-- Lighter grey / backup hilight -->
-<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-
-WyreTek - WT
-<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-	<voxel x="-2"  y="64" z="0" r="0.181690" g="0.409859" b="0.663380" a="1.000000" />  <!-- Primary -->
-	<voxel x="-3"  y="64" z="0" r="0.063380" g="0.114085" b="0.283099" a="1.000000" />  <!-- Secondary -->
-	<voxel x="-4"  y="64" z="0" r="0.063380" g="0.114085" b="0.198592" a="1.000000" />  <!-- Tertiary -->
-	<voxel x="-5"  y="64" z="0" r="0.680282" g="0.578873" b="0.342254" a="1.000000" />  <!-- Skin -->
-	<voxel x="-6"  y="64" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Eyes, secondary belt -->
-	<voxel x="-7"  y="64" z="0" r="0.137681" g="0.132246" b="0.115942" a="1.000000" />  <!-- Webbing -->
-	<voxel x="-8"  y="64" z="0" r="0.181159" g="0.208333" b="0.181159" a="1.000000" />  <!-- Belt and Hair -->
-	<voxel x="-9"  y="64" z="0" r="0.071831" g="0.114085" b="0.114085" a="1.000000" />  <!-- Boots -->
-	<voxel x="-10" y="64" z="0" r="0.800725" g="0.795290" b="0.795290" a="1.000000" />  <!-- V-Neck -->
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-
-ScopeSystems - SS
-<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
-	<voxel x="-3"  y="62" z="0" r="0.000000" g="0.036040" b="0.000000" a="1.000000" />   <!-- Dark dark green / Boots details -->
-	<voxel x="-4"  y="62" z="0" r="0.032489" g="0.085750" b="0.021837" a="1.000000" />   <!-- Uniform green -->
-	<voxel x="-5"  y="62" z="0" r="0.096402" g="0.128358" b="0.021837" a="1.000000" />   <!-- Uniform green alt -->
-	<voxel x="-6"  y="62" z="0" r="0.259735" g="0.256184" b="0.252633" a="1.000000" />   <!-- Detail grey -->
-	<voxel x="-7"  y="62" z="0" r="0.948574" g="0.838502" b="0.572198" a="1.000000" />   <!-- Skin -->
-	<voxel x="-8"  y="62" z="0" r="0.703574" g="1.000000" b="0.192271" a="1.000000" />   <!-- Neon green hilight -->
-	<voxel x="-9"  y="62" z="0" r="0.277488" g="0.362706" b="0.000000" a="1.000000" />   <!-- Light green detail -->
-	<voxel x="-10" y="62" z="0" r="0.440821" g="0.543792" b="0.000000" a="1.000000" />   <!-- Lighter green detail -->
-	<voxel x="-11" y="62" z="0" r="0.700024" g="0.685821" b="0.685821" a="1.000000" />   <!-- grey Metal detail -->
-	<voxel x="-12" y="62" z="0" r="0.881110" g="0.881110" b="0.881110" a="1.000000" />   <!-- white Polished metal detail -->
 <!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
 
 LifeCraft - LC
@@ -71,3 +29,45 @@ LifeCraft - LC
 	<voxel x="-12" y="64" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Eyes, secondary belt -->
 	<voxel x="-13" y="64" z="0" r="0.230769" g="0.214286" b="0.192308" a="1.000000" />  <!-- Sidearm -->
 <!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+
+ReflexArq - RA
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+	<voxel x="-2"  y="64" z="0" r="0.015047" g="0.011875" b="0.014705" a="1.000000" />  <!-- Black / Mouth -->
+	<voxel x="-3"  y="64" z="0" r="1.000000" g="0.401763" b="1.000000" a="1.000000" />  <!-- Pink / Eye -->
+	<voxel x="-4"  y="64" z="0" r="0.810096" g="0.650314" b="0.415966" a="1.000000" />  <!-- Skin -->
+	<voxel x="-5"  y="64" z="0" r="0.817197" g="0.962777" b="0.213576" a="1.000000" />  <!-- Light Green / Belt boots primary -->
+	<voxel x="-6"  y="64" z="0" r="0.472778" g="0.753284" b="0.018286" a="1.000000" />  <!-- Green / Belt boots secondary-->
+	<voxel x="-7"  y="64" z="0" r="0.270387" g="0.554444" b="0.018286" a="1.000000" />  <!-- Dark Green -->
+	<voxel x="-8"  y="64" z="0" r="0.391111" g="0.000000" b="0.465676" a="1.000000" />  <!-- Light Purple / Secondary -->
+	<voxel x="-9"  y="64" z="0" r="0.199373" g="0.000000" b="0.284590" a="1.000000" />  <!-- Purple / Primary -->
+	<voxel x="-10" y="64" z="0" r="0.124808" g="0.000000" b="0.178068" a="1.000000" />  <!-- Dark Purple / Tertiary -->
+	<voxel x="-11" y="64" z="0" r="0.501184" g="0.433720" b="0.625459" a="1.000000" />  <!-- Light Purple / Alternate secondary -->
+	<voxel x="-12" y="64" z="0" r="0.668067" g="0.547343" b="0.753284" a="1.000000" />  <!-- Lighter Purple / Alternate Primary -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+
+ScopeSystems - SS
+<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+	<voxel x="-3"  y="62" z="0" r="0.000000" g="0.036040" b="0.000000" a="1.000000" />   <!-- Dark dark green / Boots details -->
+	<voxel x="-4"  y="62" z="0" r="0.032489" g="0.085750" b="0.021837" a="1.000000" />   <!-- Uniform green -->
+	<voxel x="-5"  y="62" z="0" r="0.096402" g="0.128358" b="0.021837" a="1.000000" />   <!-- Uniform green alt -->
+	<voxel x="-6"  y="62" z="0" r="0.259735" g="0.256184" b="0.252633" a="1.000000" />   <!-- Detail grey -->
+	<voxel x="-7"  y="62" z="0" r="0.948574" g="0.838502" b="0.572198" a="1.000000" />   <!-- Skin -->
+	<voxel x="-8"  y="62" z="0" r="0.703574" g="1.000000" b="0.192271" a="1.000000" />   <!-- Neon green hilight -->
+	<voxel x="-9"  y="62" z="0" r="0.277488" g="0.362706" b="0.000000" a="1.000000" />   <!-- Light green detail -->
+	<voxel x="-10" y="62" z="0" r="0.440821" g="0.543792" b="0.000000" a="1.000000" />   <!-- Lighter green detail -->
+	<voxel x="-11" y="62" z="0" r="0.700024" g="0.685821" b="0.685821" a="1.000000" />   <!-- grey Metal detail -->
+	<voxel x="-12" y="62" z="0" r="0.881110" g="0.881110" b="0.881110" a="1.000000" />   <!-- white Polished metal detail -->
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+
+WyreTek - WT
+<!-- PALETTEBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
+	<voxel x="-2"  y="64" z="0" r="0.181690" g="0.409859" b="0.663380" a="1.000000" />  <!-- Primary -->
+	<voxel x="-3"  y="64" z="0" r="0.063380" g="0.114085" b="0.283099" a="1.000000" />  <!-- Secondary -->
+	<voxel x="-4"  y="64" z="0" r="0.063380" g="0.114085" b="0.198592" a="1.000000" />  <!-- Tertiary -->
+	<voxel x="-5"  y="64" z="0" r="0.680282" g="0.578873" b="0.342254" a="1.000000" />  <!-- Skin -->
+	<voxel x="-6"  y="64" z="0" r="0.000000" g="0.000000" b="0.000000" a="1.000000" />  <!-- Eyes, secondary belt -->
+	<voxel x="-7"  y="64" z="0" r="0.137681" g="0.132246" b="0.115942" a="1.000000" />  <!-- Webbing -->
+	<voxel x="-8"  y="64" z="0" r="0.181159" g="0.208333" b="0.181159" a="1.000000" />  <!-- Belt and Hair -->
+	<voxel x="-9"  y="64" z="0" r="0.071831" g="0.114085" b="0.114085" a="1.000000" />  <!-- Boots -->
+	<voxel x="-10" y="64" z="0" r="0.800725" g="0.795290" b="0.795290" a="1.000000" />  <!-- V-Neck -->
+<!-- PALLETBLOCK. DELETE BLOCKS IN EDITOR PRIOR TO PUBLISH. DONT REMOVE MANUALLY -->
