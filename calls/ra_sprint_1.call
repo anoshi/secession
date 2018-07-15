@@ -1,19 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="RA Sprint" key="ra_sprint_1.call"
+<call name="RA Sprint" key="ra_sprint_1.call" notify_metagame="1"
   initiation_comment1="Need a boost here"
   acknowledge_comment="Concocting Serum"
   launch_comment="Hot stepper in action">
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
-    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  <round instances="8"
+    instance_class="grenade"
+    instance_key="emp.projectile"
+    instance_spread="15 15 15"
+    common_spread="10 0 10"
+    launch_time="4.0"
+    spawn_time="6.0">
+    <command 
+      class="soldier_ai" 
+      faction="0">
+      <parameter class="run_limit" value="50.0" />
+      <parameter class="day_reaction_time_to_fight_min" value="0.1" />
+      <parameter class="day_reaction_time_to_fight_max" value="0.3" />
+      <parameter class="night_reaction_time_to_fight_min" value="0.4" />
+      <parameter class="night_reaction_time_to_fight_max" value="0.7" />
+      <parameter class="willingness_to_charge" value="0.8" />
+    </command>
+    <command
+      class="set_soundtrack"
+      enabled="1">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- 6 million dollar man sound -->
+  </round>
+
+  <round launch_time="14.0"
+    spawn_time="16.0">
+    <command 
+      class="notify" 
+      text="Reflexes returning to normal in 5 seconds">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /> <!-- reverse 6-million-dollar man sound -->
+  </round>
+
+  <round launch_time="18.0"
+    spawn_time="21.0">
+    <command 
+      class="soldier_ai" 
+      faction="0">
+      <parameter class="run_limit" value="6.0" />
+      <parameter class="day_reaction_time_to_fight_min" value="0.3" />
+      <parameter class="day_reaction_time_to_fight_max" value="0.6" />
+      <parameter class="night_reaction_time_to_fight_min" value="0.8" />
+      <parameter class="night_reaction_time_to_fight_max" value="1.1" />
+      <parameter class="willingness_to_charge" value="0.0" />
+    </command>
+    <command
+      class="set_soundtrack"
+      enabled="0" >
+    </command>
   </round>
   <hud_icon filename="hud_energy_drink.png" />
   <capacity value="0" source="rank" source_value="0.0" />
   <capacity value="100" source="rank" source_value="0.1" />
-  <inventory encumbrance="0.0" price="25.0" />
+  <inventory encumbrance="0.0" price="50.0" />
 </call>

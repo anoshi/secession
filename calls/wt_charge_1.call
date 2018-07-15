@@ -3,15 +3,57 @@
   initiation_comment1="Rush this position"
   acknowledge_comment="Confirmed"
   launch_comment="Troops charging in">
+  <round launch_time="1.0"
+    spawn_time="3.0">
+    <command 
+      class="soldier_ai" 
+      faction="0">
+      <parameter class="run_limit" value="100.0" />
+      <parameter class="day_reaction_time_to_fight_min" value="0.1" />
+      <parameter class="day_reaction_time_to_fight_max" value="0.3" />
+      <parameter class="night_reaction_time_to_fight_min" value="0.4" />
+      <parameter class="night_reaction_time_to_fight_max" value="0.7" />
+      <parameter class="willingness_to_charge" value="1.0" />
+    </command>
+    <command 
+      class="notify"
+      text="Troops charging">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>
+
+   <round launch_time="14.0"
+    spawn_time="16.0">
+    <command 
+      class="notify" 
+      text="Charge fading">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>
+
   <round instances="1"
     instance_class="weapon"
     instance_key="cover_resource.weapon"
     instance_spread="0.5 0.5 0.5"
     common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
+    launch_time="18.0"
+    spawn_time="21.0">
+    <command 
+      class="soldier_ai" 
+      faction="0">
+      <parameter class="run_limit" value="6.0" />
+      <parameter class="day_reaction_time_to_fight_min" value="0.3" />
+      <parameter class="day_reaction_time_to_fight_max" value="0.6" />
+      <parameter class="night_reaction_time_to_fight_min" value="0.8" />
+      <parameter class="night_reaction_time_to_fight_max" value="1.1" />
+      <parameter class="willingness_to_charge" value="0.0" />
+    </command>
+    <command 
+      class="notify" 
+      text="Charge ended">
+    </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
-  </round>
+  </round>  
   <hud_icon filename="hud_meter_cursor_capture_area_enemy.png" />
   <capacity value="0" source="rank" source_value="0.0" />
   <capacity value="100" source="rank" source_value="0.1" />

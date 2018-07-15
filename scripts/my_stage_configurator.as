@@ -12,11 +12,10 @@ class MyStageConfigurator : StageConfiguratorCampaign {
 		array<FactionConfig@> availableFactionConfigs;
 
 		// --------------------------------
-		// TODO: define 3 faction configs here
-		// - "green.xml" faction specification filename
-		// - "Greenbelts" faction name, usually same as the one in the file
-		// - "0.1 0.5 0" color used for faction in the world view
-		// - "green_boss.xml" faction specification filename used in the final missions; 
+		// - "<faction>.xml" faction specification filename
+		// - "BlastCorp" faction name,
+		// - "0.2 0.2 0.3" RGB colour used for faction in the world view
+		// - "<faction_boss>.xml" faction specification filename used in the final missions; 
 		//   can be same as the regular faction filename
 		// --------------------------------
 

@@ -30,15 +30,15 @@ void _log(string input, int level = 0) {
 // --------------------------------------------
 void _setupLog(string logLevel) {
 	//_logger.m_debugOutput = m_launchArguments.exists("debug_output");
-	if (logLevel == "minimal") {
-		_logger.m_logLevel = -1;
-	} else if (logLevel == "normal") {
-		_logger.m_logLevel = 0;
-	} else if (logLevel == "verbose") {
-		_logger.m_logLevel = 1;
-	} else if (logLevel == "dev_verbose") {
+	//if (logLevel == "minimal") {
+	//	_logger.m_logLevel = -1;
+	//} else if (logLevel == "normal") {
+	//	_logger.m_logLevel = 0;
+	//} else if (logLevel == "verbose") {
+	//	_logger.m_logLevel = 1;
+	//} else if (logLevel == "dev_verbose") {
 		_logger.m_logLevel = 2;
-	}
+	//}
 }
 
 // --------------------------------------------

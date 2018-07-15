@@ -66,6 +66,7 @@ abstract class VehicleDelivery : Tracker {
 
 	// ----------------------------------------------------
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
+		_log("handleVehicleDestroyEvent in vehicle_delivery.as fired", 1);
 		if (event.getIntAttribute("vehicle_id") == m_trackedVehicleId) {
 			// vehicle was destroyed, stop this tracker
 			end();

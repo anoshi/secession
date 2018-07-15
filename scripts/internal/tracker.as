@@ -17,7 +17,9 @@ abstract class Tracker {
 	// vehicle state events
 	protected void handleVehicleSpawnEvent(const XmlElement@ event) {}
 	protected void handleVehicleHolderChangeEvent(const XmlElement@ event) {}
-	protected void handleVehicleDestroyEvent(const XmlElement@ event) {}
+	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
+		_log("handleVehiclDestroyEvent in tracker.as fired", 1);
+	}
 	// chat events
 	protected void handleChatEvent(const XmlElement@ event) {}
 	// results for script issued queries
@@ -43,7 +45,9 @@ abstract class Tracker {
 	protected void handleCharacterDieEvent(const XmlElement@ event) {}
 	protected void handleCharacterKillEvent(const XmlElement@ event) {}
 	// call events, happens for calls that have notify_metagame="1"
-	protected void handleCallRequestEvent(const XmlElement@ event) {}
+	protected void handleCallRequestEvent(const XmlElement@ event) {
+		_log("handleCallRequestEvent in tracker.as fired", 1);
+	}
 
 	void handleEvent(const XmlElement@ event) {
 		if (event is null) {

@@ -29,7 +29,7 @@ class DestroyVehicleToCaptureBase : Tracker {
 	// ----------------------------------------------------
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
 		// vehicle_id
-
+		_log("handleVehicleDestroyEvent in destroy_vehicle_to_capture_base.as fired", 1);
 		string key = event.getStringAttribute("vehicle_key");
 		if (key == m_vehicleKey) {
 			_log("DestroyVehicleToCaptureBase, vehicle being destroyed, key " + key, 1); 

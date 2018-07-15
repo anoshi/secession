@@ -1,16 +1,51 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="RA Nanobot Cloud" key="ra_nanobot_cloud_1.call" nofity_metagame="1"
+<call name="RA Nanobot Cloud" key="ra_nanobot_cloud_1.call" notify_metagame="1"
   initiation_comment1="Dust us up here, boss"
   acknowledge_comment="Copy that. Confusion will spread"
   launch_comment="Have at it">
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
+  <round instances="8"
+    instance_class="grenade"
+    instance_key="emp.projectile"
+    instance_spread="15 15 15"
+    common_spread="10 0 10"
     launch_time="4.0"
     spawn_time="6.0">
-    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+    <command 
+      class="soldier_ai" 
+      faction="1">
+      <parameter class="accuracy_offset" value="-1.0" />
+      <parameter class="leader_sight_range" value="5.0"/>
+      <parameter class="team_member_sight_range" value="5.0"/>
+    </command>
+    <command
+      class="set_soundtrack"
+      enabled="1">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- sound of gas cloud for 10 seconds-->
+  </round>
+
+  <round launch_time="14.0"
+    spawn_time="16.0">
+    <command 
+      class="notify" 
+      text="Nanobot Cloud Dissipating">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /> <!-- sound of gas cloud fading out -->
+  </round>
+
+  <round launch_time="18.0"
+    spawn_time="21.0">
+    <command 
+      class="soldier_ai" 
+      faction="1">
+      <parameter class="accuracy_offset" value="0.0" />
+      <parameter class="leader_sight_range" value="35.0"/>
+      <parameter class="team_member_sight_range" value="30.0"/>
+    </command>
+    <command
+      class="set_soundtrack"
+      enabled="0" >
+    </command>
   </round>
   <hud_icon filename="hud_steroids.png" />
   <capacity value="0" source="rank" source_value="0.0" />
