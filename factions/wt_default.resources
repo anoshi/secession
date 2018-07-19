@@ -5,7 +5,8 @@
  	<vehicle key="apc_2.vehicle" />
  	<vehicle key="tank_2.vehicle" />
  	<vehicle key="transport_truck_2.vehicle" />    
-
+    <vehicle key="wt_radio_jammer.vehicle" />
+	
   <!-- faction-specific calls (not listed in common.resources) -->
 	<call key="wt_charge_1.call" />
 	<call key="wt_defend_1.call" />

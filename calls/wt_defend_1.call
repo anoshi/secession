@@ -3,15 +3,45 @@
   initiation_comment1="Hold this position"
   acknowledge_comment="Confirmed"
   launch_comment="Troops will hold for 45">
-  <round instances="1"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
+  <round launch_time="1.0"
+    spawn_time="3.0">
+    <command 
+      class="commander_ai" 
+      faction="0"
+      base_defense="1.0"
+      border_defense="0.0"
+      active="1">
+    </command>
+    <command 
+      class="notify"
+      text="Troops adopting defensive posture">
+    </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
+
+   <round launch_time="41.0"
+    spawn_time="43.0">
+    <command 
+      class="notify" 
+      text="Resuming balanced strategy">
+    </command>
+  </round>
+
+  <round launch_time="46.0"
+    spawn_time="48.0">
+    <command 
+      class="commander_ai" 
+      faction="0"
+      base_defense="0.6"
+      border_defense="0.4"
+      active="1">
+    </command>
+    <command 
+      class="notify" 
+      text="Charge ended">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>  
   <hud_icon filename="hud_command_marker.png" />
   <capacity value="0" source="rank" source_value="0.0" />
   <capacity value="100" source="rank" source_value="0.1" />

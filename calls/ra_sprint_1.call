@@ -3,12 +3,7 @@
   initiation_comment1="Need a boost here"
   acknowledge_comment="Concocting Serum"
   launch_comment="Hot stepper in action">
-  <round instances="8"
-    instance_class="grenade"
-    instance_key="emp.projectile"
-    instance_spread="15 15 15"
-    common_spread="10 0 10"
-    launch_time="4.0"
+  <round launch_time="4.0"
     spawn_time="6.0">
     <command 
       class="soldier_ai" 

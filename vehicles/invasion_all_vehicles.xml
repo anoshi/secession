@@ -79,4 +79,7 @@
   <vehicle file="wiesel_spawn.vehicle" />   
     
   <vehicle file="race_vehicles.xml" />
+
+  <!-- faction-specific vehicles -->
+  <vehicle file="wt_radio_jammer.vehicle">
 </vehicles>

@@ -1,18 +1,141 @@
 <?xml version="1.0" encoding="utf-8"?>
 <models>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest1.carry_item"/>
+		<requirement class="rank" range="0 50" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest1_2"/>
+		<requirement class="rank" range="0 50" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2.carry_item"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2_2"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2_3"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3.carry_item"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_2"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_3"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_4"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_5"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_6"/>
+		<requirement class="rank" range="0 100" />
+	</model> 
+
 	<!-- -------------------------- -->
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest2.carry_item"/>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest1.carry_item"/>
+		<requirement class="rank" range="0 50" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest1_2"/>
+		<requirement class="rank" range="0 50" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2.carry_item"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2_2"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2_3"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3.carry_item"/>
 		<requirement class="rank" range="0 100" />
 	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest2_2"/>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_2"/>
 		<requirement class="rank" range="0 100" />
 	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest2_3"/>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_3"/>
 		<requirement class="rank" range="0 100" />
 	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_4"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_5"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_6"/>
+		<requirement class="rank" range="0 100" />
+	</model> 
+
+		<!-- -------------------------- -->
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest1.carry_item"/>
+		<requirement class="rank" range="0 50" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest1_2"/>
+		<requirement class="rank" range="0 50" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2.carry_item"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2_2"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest2_3"/>
+		<requirement class="rank" range="51 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3.carry_item"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_2"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_3"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_4"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_5"/>
+		<requirement class="rank" range="0 100" />
+	</model>
+	<model filename="lc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="lc_vest3_6"/>
+		<requirement class="rank" range="0 100" />
+	</model> 
 
 	<!-- -------------------------- -->
 	<model filename="lc_soldier_camo_1.xml">
@@ -46,68 +169,6 @@
 		<requirement class="rank" range="0 10000" />
 	</model>  
 
-	<!-- -------------------------- -->
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest3.carry_item"/>
-		<requirement class="rank" range="0 100" />
-	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest3_2"/>
-		<requirement class="rank" range="0 100" />
-	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest3_3"/>
-		<requirement class="rank" range="0 100" />
-	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest3_4"/>
-		<requirement class="rank" range="0 100" />
-	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest3_5"/>
-		<requirement class="rank" range="0 100" />
-	</model>
-	<model filename="lc_soldier_vest_1.xml">
-		<requirement class="carry_item" slot="1" key="vest3_6"/>
-		<requirement class="rank" range="0 100" />
-	</model> 
-	
-<!-- -------------------------- -->
-
-	<model filename="costume_were.xml">
-		<requirement class="carry_item" slot="1" key="costume_werewolf.carry_item"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	
-	<!-- -------------------------- -->
-	<model filename="costume_clown.xml">
-		<requirement class="carry_item" slot="1" key="costume_clown.carry_item"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	
-
-	
-	<!-- -------------------------- -->
-	<model filename="costume_santa.xml">
-		<requirement class="carry_item" slot="1" key="costume_santa.carry_item"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	
-	
-	<!-- -------------------------- -->
-	<model filename="costume_lizard.xml">
-		<requirement class="carry_item" slot="1" key="costume_lizard.carry_item"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-
-	<!-- -------------------------- -->
-	<model filename="costume_underwear.xml">
-		<requirement class="carry_item" slot="1" key="costume_underpants.carry_item"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-
-
-	
 	<!-- -------------------------- -->
 	<!-- black ops -->
 	<!-- -------------------------- -->

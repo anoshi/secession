@@ -7,6 +7,7 @@
 class CallHandler : Tracker {
 	protected GameMode@ m_metagame;
 	protected dictionary m_trackedMaps;
+	protected Vector3 m_position;
 	protected string m_managerName;
 	protected int m_factionId;
 
