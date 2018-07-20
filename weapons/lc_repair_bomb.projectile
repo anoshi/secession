@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<projectile class="grenade" name="lifecraft repair bomb" key="lc_repair_bomb.projectile" slot="2" pulldown_in_air="20.0">
-    <result class="blast" radius="8.0" decal="0" character_state="unwound" />
+<projectile class="grenade" name="lifecraft repair bomb" key="lc_repair_bomb.projectile" slot="1" pulldown_in_air="20.0">
+    <result class="blast" radius="15.0" damage="-5.15" push="0.1" decal="0" />
     <trigger class="impact">
       <collider class="terrain" enabled="1" />     
       <collider class="static_object" enabled="1" /> 
-      <collider class="vehicle" enabled="1" faction_compare="equal" damage="-20.0" /> 
-      <collider class="character" enabled="0" />
+      <collider class="vehicle" enabled="1" /> 
+      <collider class="character" enabled="1" />
     </trigger>
-    
+
     <rotation class="motion" />
     <model mesh_filename="40mm.mesh" texture_filename="40mm.png" />
     <commonness value="0.01" />
@@ -40,9 +40,9 @@
     <effect class="result" key="vehicle" copy="terrain" />
     <effect class="result" key="character" copy="terrain" />
 
-	<effect class="activated" ref="Propulsion_gl" />
+    <effect class="activated" ref="Propulsion_gl" />
 
 </projectile>
 
 <!-- projectile itself defines its slot, 0 being actual throwables that can also be equipped, thrown, bought and found -->
-	<!-- mortar shell is in slot 2 -->
+<!-- mortar shell is in slot 2 -->
