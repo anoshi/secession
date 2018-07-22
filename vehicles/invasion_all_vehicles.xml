@@ -81,5 +81,11 @@
   <vehicle file="race_vehicles.xml" />
 
   <!-- faction-specific vehicles -->
+  <!-- BlastCorp -->
+  <!-- LifeCraft -->
+  <vehicle file="lc_jeep.vehicle">
+  <!-- ReflexArq -->
+  <!-- ScopeSystems -->
+  <!-- WyreTek -->
   <vehicle file="wt_radio_jammer.vehicle">
 </vehicles>

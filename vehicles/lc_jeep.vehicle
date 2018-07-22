@@ -1,4 +1,4 @@
-<vehicle file="vehicle_base.vehicle" name="Jeep" key="jeep.vehicle" map_view_atlas_index="0" minimum_fill_requirement="0.5" >
+<vehicle file="vehicle_base.vehicle" name="LC Jeep" key="lc_jeep.vehicle" map_view_atlas_index="0" minimum_fill_requirement="0.5" >
 	<tag name="metal_thin" />
 	<tag name="jeep" />  
 

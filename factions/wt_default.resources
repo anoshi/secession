@@ -1,20 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- WyreTek-specific Vehicles, Radio Calls, and Carry Items -->
 <resources>
+	<!-- faction-specific vehicles (not listed in common.resources) -->
  	<vehicle key="jeep_2.vehicle" />
  	<vehicle key="apc_2.vehicle" />
  	<vehicle key="tank_2.vehicle" />
  	<vehicle key="transport_truck_2.vehicle" />    
     <vehicle key="wt_radio_jammer.vehicle" />
 	
-  <!-- faction-specific calls (not listed in common.resources) -->
+  	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="wt_charge_1.call" />
 	<call key="wt_defend_1.call" />
 	<call key="wt_emp_1.call" />
 	<call key="wt_jammer_1.call" />
 	<call key="wt_pathping_1.call" />
 
-	<!-- explicitly enable this faction's carry items -->
+	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="wt_vest1.carry_item" enabled="1" />
 	<carry_item key="wt_vest2.carry_item" enabled="1" />
 	<carry_item key="wt_vest3.carry_item" enabled="1" />

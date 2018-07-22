@@ -1,15 +1,17 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ScopeSystems-specific Vehicles, Radio Calls, and Carry Items -->
 <resources>
- 	<vehicle key="jeep_2.vehicle" />
+ 	<!-- faction-specific vehicles (not listed in common.resources) -->
+	<vehicle key="jeep_2.vehicle" />
  	<vehicle key="apc_2.vehicle" />
  	<vehicle key="tank_2.vehicle" />
  	<vehicle key="transport_truck_2.vehicle" />    
 
+	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="ss_probe_1.call" />
 	<call key="ss_x-ray_1.call" />
 	
-	<!-- explicitly enable this faction's carry items -->
+	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="ss_vest1.carry_item" enabled="1" />
 	<carry_item key="ss_vest2.carry_item" enabled="1" />
 	<carry_item key="ss_vest3.carry_item" enabled="1" />

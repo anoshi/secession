@@ -23,7 +23,8 @@ class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 		list.push_back(Resource("minig_resource.weapon", "weapon"));
 		list.push_back(Resource("desert_eagle.weapon", "weapon"));
 		list.push_back(Resource("tow_resource.weapon", "weapon"));
-   		list.push_back(Resource("eodvest.carry_item", "carry_item"));   
+   		list.push_back(Resource("eodvest.carry_item", "carry_item"));
+		list.push_back(Resource("bc_impervavest.carry_item", "carry_item")); 
          
 		return list;
 	}
@@ -56,40 +57,36 @@ class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 		// - replace these with what we want to track as delivered to armory, with intention of unlocking that same item
 		// --------------------------------------------
 
-		// ReflexArq weapons
-		list.push_back(Resource("m16a4.weapon", "weapon"));
-		list.push_back(Resource("m240.weapon", "weapon"));
-		list.push_back(Resource("m24_a2.weapon", "weapon"));
-		list.push_back(Resource("mossberg.weapon", "weapon"));
-		list.push_back(Resource("m72_law.weapon", "weapon"));
+		// BlastCorp equipment
+		list.push_back(Resource("bc_lr.weapon", "weapon"));
+		list.push_back(Resource("bc_mg.weapon", "weapon"));
+		list.push_back(Resource("bc_sr.weapon", "weapon"));
+		list.push_back(Resource("bc_sg.weapon", "weapon"));
 
-		// BlastCorp weapons
-		list.push_back(Resource("g36.weapon", "weapon"));
-		list.push_back(Resource("imi_negev.weapon", "weapon"));
-		list.push_back(Resource("psg90.weapon", "weapon"));
-		list.push_back(Resource("spas-12.weapon", "weapon"));
-		list.push_back(Resource("m2_carlgustav.weapon", "weapon"));
+		// LifeCraft equipment
+		list.push_back(Resource("lc_lr.weapon", "weapon"));
+		list.push_back(Resource("lc_mg.weapon", "weapon"));
+		list.push_back(Resource("lc_sr.weapon", "weapon"));
+		list.push_back(Resource("lc_sg.weapon", "weapon"));
+		list.push_back(Resource("lc_heal_nade.weapon", "weapon"));
 
-		// WyreTek weapons
-		list.push_back(Resource("ak47.weapon", "weapon"));
-		list.push_back(Resource("pkm.weapon", "weapon"));
-		list.push_back(Resource("dragunov_svd.weapon", "weapon"));
-		list.push_back(Resource("qbs-09.weapon", "weapon"));
-		list.push_back(Resource("rpg-7.weapon", "weapon"));
+		// ReflexArq equipment
+		list.push_back(Resource("ra_lr.weapon", "weapon"));
+		list.push_back(Resource("ra_mg.weapon", "weapon"));
+		list.push_back(Resource("ra_sr.weapon", "weapon"));
+		list.push_back(Resource("ra_sg.weapon", "weapon"));
 
-		// ScopeSystems weapons
-		list.push_back(Resource("m16a4.weapon", "weapon"));
-		list.push_back(Resource("m240.weapon", "weapon"));
-		list.push_back(Resource("m24_a2.weapon", "weapon"));
-		list.push_back(Resource("mossberg.weapon", "weapon"));
-		list.push_back(Resource("m72_law.weapon", "weapon"));
+		// ScopeSystems equipment
+		list.push_back(Resource("ss_lr.weapon", "weapon"));
+		list.push_back(Resource("ss_mg.weapon", "weapon"));
+		list.push_back(Resource("ss_sr.weapon", "weapon"));
+		list.push_back(Resource("ss_sg.weapon", "weapon"));
 
-		// LifeCraft weapons
-		list.push_back(Resource("ak47.weapon", "weapon"));
-		list.push_back(Resource("pkm.weapon", "weapon"));
-		list.push_back(Resource("dragunov_svd.weapon", "weapon"));
-		list.push_back(Resource("qbs-09.weapon", "weapon"));
-		list.push_back(Resource("rpg-7.weapon", "weapon"));
+		// WyreTek equipment
+		list.push_back(Resource("wt_lr.weapon", "weapon"));
+		list.push_back(Resource("wt_mg.weapon", "weapon"));
+		list.push_back(Resource("wt_sr.weapon", "weapon"));
+		list.push_back(Resource("wt_sg.weapon", "weapon"));
 
 		return list;
 	}

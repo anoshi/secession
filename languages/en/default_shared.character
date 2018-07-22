@@ -7,7 +7,10 @@
 	<comment key="CallHandler" text="blah blah" />
 	<comment key="hCRE method running" text="handleCallRequestEvent method happening" />	
 	<comment key="hCRE method running" text="pants off! it finally worked!" />	
-	<comment key="hello world" text="hello world text yay" />
+	<comment key="hello world" text="hello call_handler.as world text yay" />
+	<comment key="hello world" text="option 2 call_handler.as call hello world" />
+	<comment key="hello world" text="option 3 hello world text yay" />
+	<comment key="hello world" text="random option 4 for hello world text" />
 	<!-- END secession comment keys --> 
 
 	<comment key="Driver, abandon vehicle" />

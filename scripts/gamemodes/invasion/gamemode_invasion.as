@@ -273,6 +273,8 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 		addTracker(AutoSaver(this));
 
 		addTracker(BasicCommandHandler(this));
+
+		addTracker(CallHandler(this));
 	}
 
 	// --------------------------------------------

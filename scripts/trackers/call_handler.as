@@ -1,51 +1,25 @@
 // internal
-#include "query_helpers.as"
 #include "tracker.as"
+#include "helpers.as"
 #include "log.as"
+#include "query_helpers.as"
 
 // --------------------------------------------
 class CallHandler : Tracker {
-	protected GameMode@ m_metagame;
-	protected dictionary m_trackedMaps;
-	protected Vector3 m_position;
-	protected string m_managerName;
-	protected int m_factionId;
+	protected Metagame@ m_metagame;
+	//protected dictionary m_trackedMaps;
+	//protected Vector3 m_position;
+	//protected string m_managerName;
+	//protected int m_factionId;
 
 	// ----------------------------------------------------
-	CallHandler(GameMode@ metagame, string managerName, int factionId) {
+	CallHandler(Metagame@ metagame) {
 		@m_metagame = @metagame;
-		m_managerName = managerName;
-		m_factionId = factionId;
 	}
 
-	// --------------------------------------------
-	void init() {
-	}
-
-	// --------------------------------------------
-	void start() {
-	}
-
-	// --------------------------------------------
-	bool hasEnded() const {
-		// always on
-		return false;
-	}
-
-	// --------------------------------------------
-	bool hasStarted() const {
-		// always on
-		return true;
-	}
-
-	// --------------------------------------------
-	void update(float time) {
-	}
-
-	// ----------------------------------------------------
 	protected void handleCallRequestEvent(const XmlElement@ event) {
 		_log("handleCallRequestEvent in call_handler.as fired", 1);
-		sendFactionMessageKey(m_metagame, 0, "CallHandler", dictionary = {}, 1.0);
+		//sendFactionMessageKey(m_metagame, 0, "CallHandler", dictionary = {}, 1.0);
 
 		string key = event.getStringAttribute("call_key");
 		_log("call made was for " + key, 1);
@@ -83,5 +57,33 @@ class CallHandler : Tracker {
 		m_metagame.getComms().send(players)
 		*/
 	}
+	/*
+	
+	// --------------------------------------------
+	void init() {
+	}
+
+	// --------------------------------------------
+	void start() {
+	}
+	*/
+	// --------------------------------------------
+	bool hasEnded() const {
+		// always on
+		return false;
+	}
+
+	// --------------------------------------------
+	bool hasStarted() const {
+		// always on
+		return true;
+	}
+	/*
+	// --------------------------------------------
+	void update(float time) {
+	}
+	*/
+
+	// ----------------------------------------------------
 
 }
