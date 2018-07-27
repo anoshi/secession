@@ -62,7 +62,7 @@
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
-    <models file="bc_default_basic.models" />
+    	<models file="bc_default_basic.models" />
 		<models file="bc_default.models" />
 
 		<resources file="common.resources" />

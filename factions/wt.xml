@@ -62,7 +62,7 @@
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
-    <models file="wt_default_basic.models" />
+    	<models file="wt_default_basic.models" />
 		<models file="wt_default.models" />
 
 		<resources file="common.resources" />

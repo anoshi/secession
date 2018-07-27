@@ -24,6 +24,7 @@ class QueryTracker : Tracker {
 	// --------------------------------------------
 	protected void handleQueryResultEvent(const XmlElement@ event) {
 		int incomingQueryId = event.getIntAttribute("query_id");
+		_log("handleQueryResultEvent in comms.as fired", 1);
 		_log("handleQueryResult, incomingQueryId " + incomingQueryId, 1);
 		_log("handleQueryResult, m_outgoingQueryId " + m_outgoingQueryId, 1);
 		// check if this is the result for our query, and process it 

@@ -11,6 +11,7 @@
 	<projectile file="impact_grenade.projectile" />
 	<projectile file="c4.projectile" />
 	<projectile file="artillery_shell.projectile" />
+	<projectile file="emp.projectile" />
 <!--
 	<projectile file="at_mine.projectile" />
 -->

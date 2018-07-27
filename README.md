@@ -13,12 +13,12 @@ Beyond the conflict occuring between the corporations, a media presence known as
 
 ### Game Setup
 1. Each player chooses a corporation to ally with:
-  * `ReflexArq` uses a system that improves the reflexes of its subjects
   * `BlastCorp` are leaders in the explosives field
-  * `WyreTek` have created an advanced communications network
-  * `ScopeSystems` develops long-range targeting equipment
   * `LifeCraft` specialises in survival skills and medical procedures
-
+  * `ReflexArq` uses a system that improves the reflexes of its subjects
+  * `ScopeSystems` develops long-range targeting equipment
+  * `WyreTek` have created an advanced communications network
+  
 2. The game server selects a starting map and location for the player based on the selected corporation. 
 
 3. The player spawns as one of the following character types, each of which having its own `Offence`, `Defence`, and `Command Rating`:
@@ -48,3 +48,10 @@ Players can access a tactical map at any time to see the status of the action in
 
 #### Rules
 Each area of the world map has an associated `Resource Rating`, calculated by its land type and fortifications. While more than one corporation may be present in each world area, the combined `Command Rating` of allied units may not exceed the `Resource Rating` of the area. This rule presents a significant challenge for corporations that engage in alliances or pacts; each allied corporation's effective presence in world areas will be reduced by half or more if their allies wish to occupy the area as well.
+
+#### Selling Points
+* Take command of a small group of mercenaries in a battle for planetary resources and possession.
+* Align yourself with a number of corporations and take advantage of their distinct combat bonuses.
+* Coordinate your team's movement with your allies to gain the upper hand in skirmishes.
+* Hire specialist units to your team and use their skills to strategically conquer various battlefields.
+* Step back from the front lines and take part in dangerous but lucrative contract missions.

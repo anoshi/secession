@@ -3,11 +3,9 @@
   initiation_comment1="Cut their comms!"
   acknowledge_comment="Confirmed"
   launch_comment="Enemy radios now serving scrambled eggs">
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
+  <round instances="1"
+    instance_class="vehicle"
+    instance_key="wt_radio_jammer.vehicle"
     launch_time="4.0"
     spawn_time="4.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />

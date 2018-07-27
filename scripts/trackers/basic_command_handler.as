@@ -16,6 +16,7 @@ class BasicCommandHandler : Tracker {
 	
 	// ----------------------------------------------------
 	protected void handleChatEvent(const XmlElement@ event) {
+		_log("handleChatEvent in basic_command_handler.as fired", 1);
 		// player_id
 		// player_name
 		// message

@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projectile class="grenade" name="lifecraft heal bomb" key="lc_heal_bomb.projectile" slot="2" pulldown_in_air="20.0">
-    <result class="blast" radius="8.0" decal="0" character_state="unwound" />
+    <result class="blast" radius="8.0" decal="0" character_state="unwound" faction_compare="equal" />
     <trigger class="impact">
       <collider class="terrain" enabled="1" />     
       <collider class="static_object" enabled="1" /> 
-      <collider class="vehicle" enabled="0" /> 
-      <collider class="character" enabled="1" faction_compare="equal"/>
+      <collider class="vehicle" enabled="1" /> 
+      <collider class="character" enabled="1" />
     </trigger>
     
     <rotation class="motion" />
@@ -45,4 +45,4 @@
 </projectile>
 
 <!-- projectile itself defines its slot, 0 being actual throwables that can also be equipped, thrown, bought and found -->
-	<!-- mortar shell is in slot 2 -->
+<!-- mortar shell is in slot 2 -->

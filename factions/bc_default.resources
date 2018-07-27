@@ -1,17 +1,19 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- BlastCorp-specific Vehicles, Radio Calls, and Carry Items -->
 <resources>
+	<!-- faction-specific vehicles (not listed in common.resources) -->
  	<vehicle key="jeep_1.vehicle" />
  	<vehicle key="apc_1.vehicle" />
  	<vehicle key="tank_1.vehicle" />
  	<vehicle key="transport_truck_1.vehicle" />  
 
+	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="bc_annihilator_1.call" />
 	<call key="bc_grenade_launcher_turret_1.call" />
 	<call key="bc_minigun_turret_1.call" />
 	<call key="bc_power_armour_1.call" />
 
-	<!-- explicitly enable this faction's carry items -->
+	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="bc_vest1.carry_item" enabled="1" />
 	<carry_item key="bc_vest2.carry_item" enabled="1" />
 	<carry_item key="bc_vest3.carry_item" enabled="1" />

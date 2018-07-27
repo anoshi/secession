@@ -3,15 +3,45 @@
   initiation_comment1="Rush this position"
   acknowledge_comment="Confirmed"
   launch_comment="Troops charging in">
-  <round instances="1"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
-    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  <round launch_time="1.0"
+    spawn_time="3.0">
+    <command 
+      class="commander_ai" 
+      faction="0"
+      base_defense="0.0"
+      border_defense="0.0"
+      active="1">
+    </command>
+    <command 
+      class="notify"
+      text="Troops charging">
+    </command>
+    <sound class="spawn" fileref="achievement2_1.wav" volume="0.07" />
   </round>
+
+   <round launch_time="16.0"
+    spawn_time="16.0">
+    <command 
+      class="notify" 
+      text="Charge fading">
+    </command>
+  </round>
+
+  <round launch_time="18.0"
+    spawn_time="21.0">
+    <command 
+      class="commander_ai" 
+      faction="0"
+      base_defense="0.8"
+      border_defense="0.2"
+      active="1">
+    </command>
+    <command 
+      class="notify" 
+      text="Charge ended">
+    </command>
+    <sound class="launch" fileref="achievement1.wav" volume="0.07" />
+  </round>  
   <hud_icon filename="hud_meter_cursor_capture_area_enemy.png" />
   <capacity value="0" source="rank" source_value="0.0" />
   <capacity value="100" source="rank" source_value="0.1" />

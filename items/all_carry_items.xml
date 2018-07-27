@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-	<!-- general resale items -->
+	<!-- general resale / dropped items -->
 	<carry_item file="whiskey_bottle.carry_item" />
 	<carry_item file="cigarettes.carry_item" />
 	<carry_item file="dollars.carry_item" />
@@ -33,6 +33,7 @@
 	<carry_item file="cd.carry_item" /> 
 	<carry_item file="pickashoe.carry_item" />  
 	<carry_item file="gold_bar.carry_item" />
+	<carry_item file="kamasutra.carry_item" /> 
   
 	<!-- gift boxes? -->
   	<carry_item file="gift_box_1.carry_item" />  
@@ -40,23 +41,17 @@
 	<carry_item file="gift_box_3.carry_item" />   
 	<carry_item file="gift_box_community_1.carry_item" /> 
 	
-	<!-- armour and military reskins -->
+	<!-- legacy armour and military reskins -->
 	<carry_item file="camouflage_suit.carry_item" />
 	<carry_item file="eodvest.carry_item" />
-	<carry_item file="vest_blackops.carry_item" />  
+	<carry_item file="vest_blackops.carry_item" />
 
 	<!-- intel items -->
 	<carry_item file="laptop.carry_item" />  
 	<carry_item file="suitcase.carry_item" />
 
-	<!-- disguises and costumes -->
-	<carry_item file="costume_werewolf.carry_item" />
-	<carry_item file="costume_clown.carry_item" />
-	<carry_item file="costume_santa.carry_item" />
-	<carry_item file="costume_lizard.carry_item" />
-	<carry_item file="costume_underpants.carry_item"/>      
-	<carry_item file="underpants.carry_item" /> 
-	<carry_item file="kamasutra.carry_item" /> 
+	<!-- disguises and costumes (none at this time, was santa, lizard, werewolf, underpants) -->
+
 
 <!-- FACTION GEAR (enable these items in factions/<faction>_default.resources)-->	
 	<!-- ReflexArq -->
@@ -69,7 +64,7 @@
 	<carry_item file="bc_vest2.carry_item" />
 	<carry_item file="bc_vest3.carry_item" />
 	<carry_item file="bc_impervavest.carry_item" />
-	<carry_item file="bc_power_armour.carry_item" />
+	<carry_item file="bc_power_armour.carry_item" /><!-- this item marked to become a vehicle that can be called -->
 	
 	<!-- WyreTek -->
 	<carry_item file="wt_vest1.carry_item" />

@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- LifeCraft-specific Vehicles, Radio Calls, and Carry Items -->
 <resources>
- 	<vehicle key="jeep.vehicle" />
+	<!-- faction-specific vehicles (not listed in common.resources) -->
+ 	<vehicle key="lc_jeep.vehicle" />
  	<vehicle key="apc.vehicle" />
  	<vehicle key="tank.vehicle" />
  	<vehicle key="transport_truck.vehicle" />
 
+	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="lc_force_field_1.call" />
 	<call key="lc_heal_bomb_1.call" />
 	<call key="lc_repair_bomb_1.call" />
 
-	<!-- explicitly enable this faction's carry items -->
+	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="lc_vest1.carry_item" enabled="1" />
 	<carry_item key="lc_vest2.carry_item" enabled="1" />
 	<carry_item key="lc_vest3.carry_item" enabled="1" />

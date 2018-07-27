@@ -17,11 +17,15 @@ abstract class Tracker {
 	// vehicle state events
 	protected void handleVehicleSpawnEvent(const XmlElement@ event) {}
 	protected void handleVehicleHolderChangeEvent(const XmlElement@ event) {}
-	protected void handleVehicleDestroyEvent(const XmlElement@ event) {}
+	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
+		_log("handleVehicleDestroyEvent in tracker.as fired", 1);
+	}
 	// chat events
 	protected void handleChatEvent(const XmlElement@ event) {}
 	// results for script issued queries
-	protected void handleQueryResultEvent(const XmlElement@ event) {}
+	protected void handleQueryResultEvent(const XmlElement@ event) {
+		_log("handleQueryResultEvent in tracker.as fired", 1);
+	}
 	// player events
 	protected void handlePlayerConnectEvent(const XmlElement@ event) {}
 	protected void handlePlayerDisconnectEvent(const XmlElement@ event) {}
@@ -31,7 +35,9 @@ abstract class Tracker {
 	protected void handlePlayerStunEvent(const XmlElement@ event) {}
 	protected void handlePlayerWoundEvent(const XmlElement@ event) {}
 	// hitbox events
-	protected void handleHitboxEvent(const XmlElement@ event) {}
+	protected void handleHitboxEvent(const XmlElement@ event) {
+		_log("handleHitboxEvent in tracker.as fired", 1);
+	}
 	// item events
 	protected void handleItemDropEvent(const XmlElement@ event) {}
 	// character events
@@ -41,9 +47,16 @@ abstract class Tracker {
 	// * <command class="set_metagame_event" name="character_kill" enabled="1" />
 	protected void handleCharacterSpawnEvent(const XmlElement@ event) {}
 	protected void handleCharacterDieEvent(const XmlElement@ event) {}
-	protected void handleCharacterKillEvent(const XmlElement@ event) {}
+	protected void handleCharacterKillEvent(const XmlElement@ event) {
+		_log("handleCharacterKillEvent in tracker.as fired", 1);
+	}
 	// call events, happens for calls that have notify_metagame="1"
-	protected void handleCallRequestEvent(const XmlElement@ event) {}
+	protected void handleCallRequestEvent(const XmlElement@ event) {
+		_log("handleCallRequestEvent in tracker.as fired", 1);
+		string key = event.getStringAttribute("call_key");
+		_log("call made was for: " + key, 1);
+		_log("call position was: " + event.getStringAttribute("target_position"), 1);
+	}
 
 	void handleEvent(const XmlElement@ event) {
 		if (event is null) {

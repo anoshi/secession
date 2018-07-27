@@ -1,18 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="WT EMP" key="wt_emp_1.call"
+<call name="WT EMP" key="wt_emp_1.call" notify_metagame="1"
   initiation_comment1="Kill the power"
   acknowledge_comment="Confirmed"
   launch_comment="EMP launching">
-  <round instances="16"
+  <round instances="8"
     instance_class="grenade"
     instance_key="emp.projectile"
-    instance_spread="10 10 10"
-    common_spread="15 0 15"
-    launch_time="3.0"
-    spawn_time="8.0">
-    <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
-    <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
-	  <sound class="spawn" fileref="woosh1.wav" volume="0.2" />
+    instance_spread="15 15 15"
+    common_spread="10 0 10"
+    launch_time="4.0"
+    spawn_time="6.0">
+    <!-- for all vehicles in blast zone, get id, max_speed, accel, max_reverse_speedset -->
+    <command
+      class="make_query"
+      id="emp_call_vehicle_query">
+      <data class="vehicles" faction_id="1" /> 
+    </command>
+    <!-- set these values to 0 -->
+    <command
+      class="update_vehicle" 
+      id="0"
+      max_speed="0.0"
+      acceleration="0" 
+      max_reverse_speed="0.0">
+    </command>
+    <command
+      class="set_soundtrack"
+      enabled="1"
+      filename="achievement2_2.wav">
+    </command>
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- sound of electrical shockwave -->
+  </round>
+
+  <round launch_time="6.0"
+    spawn_time="6.0">
+    <command 
+      class="notify" 
+      text="EMP in effect for 15 seconds">
+    </command>
+  </round>
+
+  <round launch_time="18.0"
+    spawn_time="21.0">
+    <!-- revert changes to each vehicle if not destroyed -->
+    <command
+      class="update_vehicle" 
+      id="0"
+      max_speed="28.0"
+      acceleration="7.7" 
+      max_reverse_speed="10.0">
+    </command>
+    <command
+      class="set_soundtrack"
+      enabled="0" >
+    </command>
+    <sound class="launch" fileref="achievement1.wav" volume="0.25" /><!-- sound of gas cloud fading out -->
   </round>
   <hud_icon filename="hud_at_mine.png" />
   <capacity value="0" source="rank" source_value="0.0" />

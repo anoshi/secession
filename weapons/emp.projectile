@@ -1,6 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<projectile class="grenade" name="artillery shell" slot="2" key="artillery_shell.projectile" >
-    <result class="blast" radius="16.0" damage="0.00" decal="1" />
+<projectile class="grenade" name="EMP bomb" slot="2" key="emp.projectile" >
+    <result class="blast" radius="0.0" damage="0.00" decal="1" character_state="stun" />
+    <result class="xml_command">
+        <command
+            class="make_query"
+            id="emp_vehicle_query">
+            <data class="vehicles" faction_id="1" key="cargo_truck.vehicle" /> 
+        </command>
+    </result>
     <trigger class="impact" />
     <rotation class="motion" />
     <model mesh_filename="mortar_shell.xml" />

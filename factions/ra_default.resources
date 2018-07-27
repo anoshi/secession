@@ -1,16 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- ReflexArq-specific Vehicles, Radio Calls, and Carry Items -->
 <resources>
+	<!-- faction-specific vehicles (not listed in common.resources) -->
  	<vehicle key="jeep.vehicle" />
  	<vehicle key="apc.vehicle" />
  	<vehicle key="tank.vehicle" />
  	<vehicle key="transport_truck.vehicle" />   
 
+	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="ra_nanobot_cloud_1.call" />
 	<call key="ra_sprint_1.call" />
 	<call key="ra_teleport_1.call" />
 	
-	<!-- explicitly enable this faction's carry items -->
+	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="ra_vest1.carry_item" enabled="1" />
 	<carry_item key="ra_vest2.carry_item" enabled="1" />
 	<carry_item key="ra_vest3.carry_item" enabled="1" />

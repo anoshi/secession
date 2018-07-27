@@ -67,7 +67,7 @@ class SpecialVehicleManager : Tracker {
 
 	// ----------------------------------------------------
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
-		_log("handle_vehicle_destroyed_event", 1);
+		_log("handle_vehicle_destroyed_event in special_vehicle_manager.as fired", 1);
 
 		array<string>@ trackedVehicles = getTrackedVehicles();
 		string key = event.getStringAttribute("vehicle_key");
