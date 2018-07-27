@@ -1,14 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Resources available to BlastCorp Grenadiers -->
-<resources clear_weapons="1" clear_vehicles="1" clear_calls="1"> 
+<resources clear_vehicles="1" clear_calls="1"> 
 	<weapon key='bc_sa_gren.weapon' />
 	<weapon key='bc_sa_sil_gren.weapon' />
 
-	<weapon key='bc_lr.weapon' />
-
-	<projectile key="grenadier_he.projectile" enabled="1" />
-	<projectile key="grenadier_imp.projectile" enabled="1" />
-	<projectile key="grenadier_stun.projectile" enabled="1" /> 
+	<!--<projectile key="grenadier_he.projectile" enabled="1" />-->
+	<!--<projectile key="grenadier_imp.projectile" enabled="1" />-->
+	<!--<projectile key="grenadier_stun.projectile" enabled="1" />-->
 	
 	<carry_item key="bc_impervavest.carry_item" enabled="1" />
 	<carry_item key="bc_vest1.carry_item" enabled="0" />

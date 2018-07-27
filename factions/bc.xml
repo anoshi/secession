@@ -92,7 +92,7 @@
 	<!-- --------- -->
 	<!-- GRENADIER -->
 	<!-- --------- -->
-	<soldier name="grenadier" spawn_score="1.0" squad_size_xp_cap="0.5">
+	<soldier name="grenadier" spawn_score="0.3" squad_size_xp_cap="0.5">
 		<character filename="default_male.character" />
 		<ai filename="grenadier.ai" />
 
@@ -100,18 +100,15 @@
 		<models file="bc_default.models" />
 
 		<!-- inherits initial config from default group -->
-		<resources file="common.resources" />
-		<resources file="bc_primaries.resources" />
 		<resources file="bc_secondaries.resources" />
-		<resources file="bc_default.resources" />
-		<!--<resources file="common_grenadier.resources" />-->
+		<resources file="common_grenadier.resources" />
 		<resources file="bc_grenadier.resources" />
 
 		<item_class_existence_config>
 			<!-- primary weapon -->
 			<item_class_existence class="weapon" slot="0" probability="1.0" />
 			<!-- secondary weapon -->
-			<item_class_existence class="weapon" slot="1" probability="0.75" />
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
 			<item_class_existence class="carry_item" slot="1" probability="1.0" />
 			<!-- backpack -->
