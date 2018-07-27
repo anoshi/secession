@@ -54,10 +54,8 @@
 
 
 <!-- FACTION GEAR (enable these items in factions/<faction>_default.resources)-->	
-	<!-- ReflexArq -->
-	<carry_item file="ra_vest1.carry_item" />
-	<carry_item file="ra_vest2.carry_item" />
-	<carry_item file="ra_vest3.carry_item" />
+	<!-- Common Items -->
+	<carry_item file="commstech_radio_1.carry_item" />
 
 	<!-- BlastCorp -->
 	<carry_item file="bc_vest1.carry_item" />
@@ -65,21 +63,27 @@
 	<carry_item file="bc_vest3.carry_item" />
 	<carry_item file="bc_impervavest.carry_item" />
 	<carry_item file="bc_power_armour.carry_item" /><!-- this item marked to become a vehicle that can be called -->
+
+	<!-- LifeCraft -->
+	<carry_item file="lc_vest1.carry_item" />
+	<carry_item file="lc_vest2.carry_item" />
+	<carry_item file="lc_vest3.carry_item" />
 	
-	<!-- WyreTek -->
-	<carry_item file="wt_vest1.carry_item" />
-	<carry_item file="wt_vest2.carry_item" />
-	<carry_item file="wt_vest3.carry_item" />
-  
 	<!-- ScopeSystems -->
 	<carry_item file="ss_vest1.carry_item" />
 	<carry_item file="ss_vest2.carry_item" />
 	<carry_item file="ss_vest3.carry_item" />
 	
-	<!-- LifeCraft -->
-	<carry_item file="lc_vest1.carry_item" />
-	<carry_item file="lc_vest2.carry_item" />
-	<carry_item file="lc_vest3.carry_item" />
+	<!-- ReflexArq -->
+	<carry_item file="ra_vest1.carry_item" />
+	<carry_item file="ra_vest2.carry_item" />
+	<carry_item file="ra_vest3.carry_item" />
+
+	<!-- WyreTek -->
+	<carry_item file="wt_vest1.carry_item" />
+	<carry_item file="wt_vest2.carry_item" />
+	<carry_item file="wt_vest3.carry_item" />
+  
 <!-- END FACTION GEAR -->
      
 </carry_items>

@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<weapon key="ss_sa.weapon" on_ground_up="0 0 1">
+<weapon file="base_primary.weapon" key="ss_sa_pri.weapon" drop_count_factor_on_death="0.0">
     <tag name="assault" />
 
     <specification 
@@ -17,7 +17,7 @@
     class="0" 
     projectile_speed="100.0"
     barrel_offset="0"   
-    slot="1"   />
+    slot="0"   />
 
 	<animation state_key="recoil"	animation_key="recoil, pistol" />
     <animation state_key="reload"	animation_key="reloading, pistol" />
@@ -41,7 +41,7 @@
     <model filename="ss_sa.xml" />
     <hud_icon filename="hud_aek_919k.png" />
     <inventory encumbrance="6.0" price="3.0" />
-    <commonness value="0.0" can_respawn_with="1" in_stock="1"/>
+    <commonness value="0.8" can_respawn_with="1" in_stock="1"/>
 
     <projectile file="bullet.projectile">
         <result class="hit" kill_probability="0.46" kill_decay_start_time="0.20" kill_decay_end_time="0.35" />
