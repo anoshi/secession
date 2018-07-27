@@ -6,6 +6,5 @@
   <weapon key='lc_heal_nade.weapon' />
   <weapon key='lc_sil.weapon' />
   <weapon key='lc_sg.weapon' />
-
   <weapon key='lc_lrx.weapon' />
 </resources>

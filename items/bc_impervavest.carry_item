@@ -13,7 +13,7 @@
 
         <model mesh_filename="vest1.xml" />
 
-        <commonness value="0.00001" in_stock="1" can_respawn_with="0" />
+        <commonness value="0.00001" in_stock="1" can_respawn_with="1" />
 
 	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />

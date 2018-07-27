@@ -61,7 +61,7 @@
     <modifier class="speed" value="-0.25" />  
     </carry_item>
     
-    carry_item key="bc_vest1_4" name="BC Vest, type I 40%" slot="1" transform_on_consume="bc_vest1_5" time_to_live_out_in_the_open="120.0">
+    <carry_item key="bc_vest1_4" name="BC Vest, type I 40%" slot="1" transform_on_consume="bc_vest1_5" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_40.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />
@@ -81,7 +81,7 @@
     <modifier class="speed" value="-0.25" />  
     </carry_item>
     
-    carry_item key="bc_vest1_5" name="BC Vest, type I 20%" slot="1" transform_on_consume="bc_vest1_6" time_to_live_out_in_the_open="120.0">
+    <carry_item key="bc_vest1_5" name="BC Vest, type I 20%" slot="1" transform_on_consume="bc_vest1_6" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_20.png" />
         <capacity value="1" source="rank" source_value="0.0" />
         <capacity value="1" source="rank" source_value="0.05" />

@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-  <weapon key='m72_law.weapon' />
-  <weapon key='beretta_m9.weapon' />
-  <weapon key='mini_uzi.weapon' />
+  <weapon key='lc_rl.weapon' />
+  <weapon key='lc_sa.weapon' />
+  <weapon key='lc_sa_sil.weapon' />
 </resources>

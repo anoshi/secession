@@ -1,55 +1,70 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapons>
-
-  <!-- RA weapons -->
-  <weapon file="ra_lr.weapon" />
-  <weapon file="ra_mg.weapon" />
-  <weapon file="ra_sr.weapon" />
-  <weapon file="ra_sil.weapon" />
-  <weapon file="ra_sg.weapon" />
-  <weapon file="ra_lrx.weapon" >
-  <!-- end RA weapons -->
-  
   <!-- BC weapons -->
-  <weapon file="bc_lr.weapon" />
-  <weapon file="bc_mg.weapon" >
-  <weapon file="bc_sr.weapon" >
-  <weapon file="bc_sil.weapon" >
-  <weapon file="bc_sg.weapon" />
-  <weapon file="bc_lrx.weapon" />
-  <!-- end BC weapons -->  
-  
-  <!-- WT weapons -->
-  <weapon file="wt_lr.weapon" />
-  <weapon file="wt_mg.weapon" />
-  <weapon file="wt_sr.weapon" />
-  <weapon file="wt_sil.weapon" />
-  <weapon file="wt_sg.weapon" >
-  <weapon file="wt_lrx.weapon" >
-  <!-- end WT weapons -->
-  
-  <!-- SS weapons -->
-  <weapon file="ss_lr.weapon" />
-  <weapon file="ss_mg.weapon" />
-  <weapon file="ss_sr.weapon" />
-  <weapon file="ss_sil.weapon" />
-  <weapon file="ss_sg.weapon" >
-  <weapon file="ss_lrx.weapon" >
-  <!-- end SS weapons -->
-  
+  <weapon file="bc_lr.weapon" /> <!-- laser rifle -->
+  <weapon file="bc_mg.weapon" > <!-- machine gun -->
+  <weapon file="bc_sr.weapon" > <!-- sniper rifle -->
+  <weapon file="bc_sil.weapon" > <!-- silenced laser rifle -->
+  <weapon file="bc_sg.weapon" /> <!-- shotgun -->
+  <weapon file="bc_lrx.weapon" /> <!-- laser rifle extreme -->
+  <weapon file="bc_sa.weapon" /> <!-- sidearm -->
+  <weapon file="bc_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="bc_sa_gren.weapon" /> <!-- grenadier sidearm (primary) -->
+  <weapon file="bc_sa_sil_gren.weapon" /> <!-- grenadier silenced sidearm (primary) -->
+  <weapon file="bc_rl.weapon" /> <!-- rocket launcher -->  
+  <!-- end BC weapons -->
+
   <!-- LC weapons -->
-  <weapon file="lc_lr.weapon" />
-  <weapon file="lc_mg.weapon" />
-  <weapon file="lc_sr.weapon" />
-  <weapon file="lc_sil.weapon" />
-  <weapon file="lc_sg.weapon" />
-  <weapon file="lc_lrx.weapon" >
-  <weapon file="lc_heal_nade.weapon" >
+  <weapon file="lc_lr.weapon" /> <!-- laser rifle -->
+  <weapon file="lc_mg.weapon" /> <!-- machine gun -->
+  <weapon file="lc_sr.weapon" /> <!-- sniper rifle -->
+  <weapon file="lc_sil.weapon" /> <!-- silenced laser rifle -->
+  <weapon file="lc_sg.weapon" /> <!-- shotgun -->
+  <weapon file="lc_lrx.weapon" > <!-- laser rifle extreme -->
+  <weapon file="lc_heal_nade.weapon" > <!-- LC custom weapon -->
+  <weapon file="lc_sa.weapon" /> <!-- sidearm -->
+  <weapon file="lc_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="lc_rl.weapon" /> <!-- rocket launcher -->  
   <!-- end LC weapons -->
+  
+  <!-- RA weapons -->
+  <weapon file="ra_lr.weapon" /> <!-- laser rifle -->
+  <weapon file="ra_mg.weapon" /> <!-- machine gun -->
+  <weapon file="ra_sr.weapon" /> <!-- sniper rifle -->
+  <weapon file="ra_sil.weapon" /> <!-- silenced laser rifle -->
+  <weapon file="ra_sg.weapon" /> <!-- shotgun -->
+  <weapon file="ra_lrx.weapon" > <!-- laser rifle extreme -->
+  <weapon file="ra_sa.weapon" /> <!-- sidearm -->
+  <weapon file="ra_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="ra_rl.weapon" /> <!-- rocket launcher -->
+  <!-- end RA weapons -->
+
+  <!-- SS weapons -->
+  <weapon file="ss_lr.weapon" /> <!-- laser rifle -->
+  <weapon file="ss_mg.weapon" /> <!-- machine gun -->
+  <weapon file="ss_sr.weapon" /> <!-- sniper rifle -->
+  <weapon file="ss_sil.weapon" /> <!-- silenced laser rifle -->
+  <weapon file="ss_sg.weapon" > <!-- shotgun -->
+  <weapon file="ss_lrx.weapon" > <!-- laser rifle extreme -->
+  <weapon file="ss_sa.weapon" /> <!-- sidearm -->
+  <weapon file="ss_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="ss_rl.weapon" /> <!-- rocket launcher -->
+  <!-- end SS weapons -->
+
+  <!-- WT weapons -->
+  <weapon file="wt_lr.weapon" /> <!-- laser rifle -->
+  <weapon file="wt_mg.weapon" /> <!-- machine gun -->
+  <weapon file="wt_sr.weapon" /> <!-- sniper rifle -->
+  <weapon file="wt_sil.weapon" /> <!-- silenced laser rifle -->
+  <weapon file="wt_sg.weapon" > <!-- shotgun -->
+  <weapon file="wt_lrx.weapon" > <!-- laser rifle extreme -->
+  <weapon file="wt_sa.weapon" /> <!-- sidearm -->
+  <weapon file="wt_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="wt_rl.weapon" /> <!-- rocket launcher -->  
+  <!-- end WT weapons -->
 
   <!-- SHARED / generic weapons -->
   <weapon file="riot_shield.weapon" />
-  <weapon file="m72_law.weapon" />
   <weapon file="medikit.weapon" />
   <weapon file="cover_resource.weapon" />
   <weapon file="binoculars.weapon" /> 
@@ -105,11 +120,6 @@
   <weapon file="vss_vintorez.weapon" />
   <weapon file="stoner_lmg.weapon" />
   <weapon file="m79.weapon" >
-  <weapon file="rpg-7.weapon" >
-  <weapon file="m2_carlgustav.weapon" >
-  <weapon file="beretta_m9.weapon" />
-  <weapon file="glock17.weapon" />
-  <weapon file="pb.weapon" />
   <weapon file="xm25.weapon" />
   <weapon file="desert_eagle.weapon" />
   <weapon file="desert_eagle_gold.weapon" />
@@ -117,9 +127,6 @@
   <weapon file="mgl_flasher.weapon" />
   <weapon file="barrett_m107.weapon" />
   <weapon file="xm8.weapon" />
-  <weapon file="mini_uzi.weapon" />
-  <weapon file="steyr_tmp.weapon" />
-  <weapon file="aek_919k.weapon" />
   <weapon file="microgun.weapon" />
   <weapon file="kriss_vector.weapon" />
   <weapon file="javelin.weapon" />

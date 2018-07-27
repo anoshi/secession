@@ -3,9 +3,7 @@
   <weapon key='ra_lr.weapon' />
   <weapon key='ra_mg.weapon' />
   <weapon key='ra_sr.weapon' />
-
   <weapon key='ra_sil.weapon' />
   <weapon key='ra_sg.weapon' />
-
   <weapon key='ra_lrx.weapon' />
 </resources>

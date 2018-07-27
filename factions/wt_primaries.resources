@@ -3,9 +3,7 @@
   <weapon key='wt_lr.weapon' />
   <weapon key='wt_sg.weapon' />
   <weapon key='wt_mg.weapon' />
-
   <weapon key='wt_sr.weapon' />
   <weapon key='wt_sil.weapon' />
-
   <weapon key='wt_srx.weapon' />
 </resources>
