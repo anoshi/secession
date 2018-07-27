@@ -34,8 +34,15 @@
 	<weapon key='tow_resource.weapon' />
 	<weapon key='gl_resource.weapon' />
 	<weapon key='humvee_gl.weapon' />
+
+	<!-- CLASS CARRY ITEMS -->
+	<!-- Comms Tech items listed here and enabled in common_commstech.resources -->
+	<carry_item key="commstech_radio_1.carry_item" />
+
+	<!-- end CLASS CARRY ITEMS -->
 	
-	<!-- List all faction-specific carry items here as disabled. Enable them in <faction>_default.resources -->
+	<!-- FACTION CARRY ITEMS -->
+	<!-- List all faction-specific carry items as disabled. Enable in factions/<faction>_default.resources -->
 	<carry_item key="ra_vest1.carry_item" enabled="0" />
 	<carry_item key="ra_vest2.carry_item" enabled="0" />
 	<carry_item key="ra_vest3.carry_item" enabled="0" />
@@ -57,6 +64,8 @@
 	<carry_item key="lc_vest1.carry_item" enabled="0" />
 	<carry_item key="lc_vest2.carry_item" enabled="0" />
 	<carry_item key="lc_vest3.carry_item" enabled="0" />
+	<!-- end FACTION CARRY ITEMS -->
+
 	<!-- end ALL CARRY ITEMS --> 
 	
 	<!-- common vehicles -->

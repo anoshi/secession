@@ -90,6 +90,39 @@
 
 	</soldier>
 
+	<!-- ---------- -->
+	<!-- COMMS TECH -->
+	<!-- ---------- -->
+	<soldier name="commstech" spawn_score="0.2" squad_size_xp_cap="0.5">
+		<character filename="default_male.character" />
+		<ai filename="commstech.ai" />
+
+    	<models file="ra_default_basic.models" />
+		<models file="ra_default.models" />
+
+		<!-- inherits initial config from default group -->
+		<resources file="common_commstech.resources" />
+		<resources file="ra_commstech.resources" />
+
+		<item_class_existence_config>
+			<!-- secondary weapon -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="1.00" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.0" max="0.45" />
+		</attribute_config>
+	</soldier>
+
 	<!-- -------------- -->
 	<!-- miniboss group -->
 	<!-- -------------- -->

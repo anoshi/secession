@@ -9,8 +9,8 @@
   <weapon file="bc_lrx.weapon" /> <!-- laser rifle extreme -->
   <weapon file="bc_sa.weapon" /> <!-- sidearm -->
   <weapon file="bc_sa_sil.weapon" /> <!-- silenced sidearm -->
-  <weapon file="bc_sa_gren.weapon" /> <!-- grenadier sidearm (primary) -->
-  <weapon file="bc_sa_sil_gren.weapon" /> <!-- grenadier silenced sidearm (primary) -->
+  <weapon file="bc_sa_pri.weapon" /> <!-- sidearm (as a primary) -->
+  <weapon file="bc_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
   <weapon file="bc_rl.weapon" /> <!-- rocket launcher -->  
   <!-- end BC weapons -->
 
@@ -24,6 +24,8 @@
   <weapon file="lc_heal_nade.weapon" > <!-- LC custom weapon -->
   <weapon file="lc_sa.weapon" /> <!-- sidearm -->
   <weapon file="lc_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="lc_sa_pri.weapon" /> <!-- sidearm (as a primary) -->
+  <weapon file="lc_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
   <weapon file="lc_rl.weapon" /> <!-- rocket launcher -->  
   <!-- end LC weapons -->
   
@@ -36,6 +38,8 @@
   <weapon file="ra_lrx.weapon" > <!-- laser rifle extreme -->
   <weapon file="ra_sa.weapon" /> <!-- sidearm -->
   <weapon file="ra_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="ra_sa_pri.weapon" /> <!-- sidearm (as a primary) -->
+  <weapon file="ra_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
   <weapon file="ra_rl.weapon" /> <!-- rocket launcher -->
   <!-- end RA weapons -->
 
@@ -48,6 +52,8 @@
   <weapon file="ss_lrx.weapon" > <!-- laser rifle extreme -->
   <weapon file="ss_sa.weapon" /> <!-- sidearm -->
   <weapon file="ss_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="ss_sa_pri.weapon" /> <!-- sidearm (as a primary) -->
+  <weapon file="ss_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->  
   <weapon file="ss_rl.weapon" /> <!-- rocket launcher -->
   <!-- end SS weapons -->
 
@@ -60,6 +66,8 @@
   <weapon file="wt_lrx.weapon" > <!-- laser rifle extreme -->
   <weapon file="wt_sa.weapon" /> <!-- sidearm -->
   <weapon file="wt_sa_sil.weapon" /> <!-- silenced sidearm -->
+  <weapon file="wt_sa_pri.weapon" /> <!-- sidearm (as a primary) -->
+  <weapon file="wt_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
   <weapon file="wt_rl.weapon" /> <!-- rocket launcher -->  
   <!-- end WT weapons -->
 

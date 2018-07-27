@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available only to LifeCraft Communications Technicians -->
+<resources>
+	<weapon key='lc_sa_pri.weapon' />
+	<weapon key='lc_sa_sil_pri.weapon' />
+
+	<!-- need to explicitly disable carry items that are enabled in <faction>_default.resources -->
+	<carry_item key="lc_vest1.carry_item" enabled="0" />
+	<carry_item key="lc_vest2.carry_item" enabled="0" />
+	<carry_item key="lc_vest3.carry_item" enabled="0" />
+
+</resources>

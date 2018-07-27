@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_secondary_sidearm.weapon" key="wt_sa_sil.weapon">
+<weapon file="base_primary.weapon" key="ss_sa_sil_pri.weapon" drop_count_factor_on_death="0.0">
     <tag name="stealth" />
 
     <specification
@@ -11,14 +11,14 @@
 	can_shoot_standing="1"
     carry_in_two_hands="0" 
 	suppressed="1"
-	name="WT Sidearm (Suppressed)"
+	name="SS Sidearm (Suppressed)"
 	class="4"
 	reload_one_at_a_time="0"
 	sight_range_modifier="1.0"
 	projectile_speed="95.0"
 	projectiles_per_shot="1"
 	burst_shots="1" 
-    slot="1" />
+    slot="0" />
 	
 	<animation state_key="recoil"	animation_key="recoil, pistol" />
     <animation state_key="reload"	animation_key="reloading, pistol" />
@@ -37,10 +37,10 @@
     <sound key="magazine_out" fileref="pistol_clip_out.wav" />
     <sound key="magazine_in" fileref="pistol_clip_in.wav" volume="0.4" />    
     <sound key="cycle" fileref="pistol_chamber.wav" volume="0.4" />
-    <model filename="wt_sa_sil.xml" />
+    <model filename="ss_sa_sil.xml" />
 
     <hud_icon filename="hud_pb.png" />
-    <commonness value="0.0" />
+    <commonness value="0.2" />
     <inventory encumbrance="5.0" price="3.0" />
 
     <projectiles_per_shot value="1" />
@@ -51,7 +51,7 @@
 		kill_decay_start_time="0.3"
 		kill_decay_end_time="0.4"  />
     </projectile>
-    <capacity value="1" source="rank" source_value="0.0" />        
+    <capacity value="1" source="rank" source_value="0.0" />    
 
     <stance state_key="running" accuracy="0.4" />
     <stance state_key="walking" accuracy="0.5" />

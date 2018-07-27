@@ -1,6 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <models>
 	<model filename="ra_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+	<model filename="ra_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="ra_vest1.carry_item"/>
 		<requirement class="rank" range="0 50" />
 	</model>
@@ -38,15 +43,16 @@
 	</model>
 	<model filename="ra_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="ra_vest3_5"/>
-		<requirement class="rank" range="0 100" />
-	</model>
-	<model filename="ra_soldier_1.xml">
-		<requirement class="carry_item" slot="1" key="ra_vest3_6"/>
 		<requirement class="rank" range="0 100" />
 	</model> 
 
 	<!-- -------------------------- -->
 	<model filename="ra_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+	<model filename="ra_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="ra_vest1.carry_item"/>
 		<requirement class="rank" range="0 50" />
 	</model>
@@ -86,13 +92,14 @@
 		<requirement class="carry_item" slot="1" key="ra_vest3_5"/>
 		<requirement class="rank" range="0 100" />
 	</model>
-	<model filename="ra_soldier_2.xml">
-		<requirement class="carry_item" slot="1" key="ra_vest3_6"/>
-		<requirement class="rank" range="0 100" />
-	</model> 
 
 		<!-- -------------------------- -->
 	<model filename="ra_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
+	<model filename="ra_soldier_3.xml">
 		<requirement class="carry_item" slot="1" key="ra_vest1.carry_item"/>
 		<requirement class="rank" range="0 50" />
 	</model>
@@ -132,10 +139,6 @@
 		<requirement class="carry_item" slot="1" key="ra_vest3_5"/>
 		<requirement class="rank" range="0 100" />
 	</model>
-	<model filename="ra_soldier_3.xml">
-		<requirement class="carry_item" slot="1" key="ra_vest3_6"/>
-		<requirement class="rank" range="0 100" />
-	</model> 
 
 	<!-- -------------------------- -->
 	<model filename="ra_soldier_camo_1.xml">
