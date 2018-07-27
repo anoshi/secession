@@ -8,20 +8,13 @@
 	<weapon key='claymore_resource.weapon' /> 
 	<weapon key='cover_resource.weapon' />  
 
-
 	<projectile key="hand_grenade.projectile" enabled="1" />
 	<projectile key="impact_grenade.projectile" enabled="0" />
 	<projectile key="stun_grenade.projectile" enabled="1" />  
 	<projectile key="c4.projectile" enabled="1" />
 	<projectile key="flare.projectile" enabled="1" />  
 
-	<carry_item key='vest1.carry_item' enabled="0" />
-	<carry_item key='vest2.carry_item' enabled="0" />
-	<carry_item key='vest3.carry_item' enabled="0" />
 	<carry_item key='eodvest.carry_item' enabled="0" />
-	<carry_item key='dollars.carry_item' enabled="0" />
-	<carry_item key='dollars_300.carry_item' enabled="0" />
-	<carry_item key='gold_bar.carry_item' enabled="0" />
 	<carry_item key='camouflage_suit.carry_item' enabled="0" />
 
 </resources>

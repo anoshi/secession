@@ -34,6 +34,7 @@
 	<weapon key='tow_resource.weapon' />
 	<weapon key='gl_resource.weapon' />
 	<weapon key='humvee_gl.weapon' />
+	
 	<!-- List all faction-specific carry items here as disabled. Enable them in <faction>_default.resources -->
 	<carry_item key="ra_vest1.carry_item" enabled="0" />
 	<carry_item key="ra_vest2.carry_item" enabled="0" />

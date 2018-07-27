@@ -3,9 +3,7 @@
   <weapon key='ss_lr.weapon' />
   <weapon key='ss_mg.weapon' />
   <weapon key='ss_sr.weapon' />
-     
   <weapon key='ss_sil.weapon' />
   <weapon key='ss_sg.weapon' />
-
   <weapon key='ss_lrx.weapon' />
 </resources>

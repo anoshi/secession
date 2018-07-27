@@ -97,7 +97,7 @@
 		<character filename="default_miniboss_male.character" />
 		<ai filename="elite.ai" />
 		<model filename="wt_soldier_elite_1.xml" />
-		<model filename="wt_soldier_elite_2.xml" />     
+		<model filename="wt_soldier_elite_1.xml" />     
 
 		<resources file="common_miniboss.resources" />
 		<resources file="wt_miniboss.resources" />

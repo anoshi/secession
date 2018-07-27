@@ -1,31 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapons>
-
-  <!-- RA weapons -->
-  <weapon file="ra_lr.weapon">
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="ra_mg.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.025" value="1" />
-  </weapon>
-  <weapon file="ra_sr.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>
-  <weapon file="ra_sil.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>
-  <weapon file="ra_sg.weapon">
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-    <weapon file="ra_lrx.weapon" >
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>  
-  <!-- end RA weapons -->
-  
   <!-- BC weapons -->
   <weapon file="bc_lr.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
@@ -50,55 +24,24 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.1" value="1" />
   </weapon>
+  <weapon file="bc_sa.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="bc_sa_sil.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="bc_sa_gren.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="bc_sa_sil_gren.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="bc_rl.weapon">
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon>  
   <!-- end BC weapons -->  
-  
-  <!-- WT weapons -->
-  <weapon file="wt_lr.weapon">
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="wt_mg.weapon">
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="wt_sr.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>
-  <weapon file="wt_sil.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>  
-  <weapon file="wt_sg.weapon" >
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="wt_lrx.weapon" >
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>
-  <!-- end WT weapons -->
-  
-  <!-- SS weapons -->
-  <weapon file="ss_lr.weapon">
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="ss_mg.weapon">
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="ss_sr.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>
-  <weapon file="ss_sil.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>  
-  <weapon file="ss_sg.weapon" >
-    <capacity source="rank" source_value="0.0" value="1" />
-  </weapon>
-  <weapon file="ss_lrx.weapon" >
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.15" value="1" />
-  </weapon>
-  <!-- end SS weapons -->
   
   <!-- LC weapons -->
   <weapon file="lc_lr.weapon">
@@ -124,20 +67,118 @@
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
   <weapon file="lc_heal_nade.weapon" >
-	<commonness value="0.2" in_stock="1" />
-    <capacity source="rank" source_value="0.0" value="0" />
+	  <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.25" value="1" />
   </weapon>
+  <weapon file="lc_sa.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="lc_sa_sil.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="lc_rl.weapon">
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon>  
   <!-- end LC weapons -->
 
-  <!-- SHARED / generic weapons -->
-  <weapon file="riot_shield.weapon">
+  <!-- RA weapons -->
+  <weapon file="ra_lr.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
-  <weapon file="m72_law.weapon">
+  <weapon file="ra_mg.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.025" value="1" />
+  </weapon>
+  <weapon file="ra_sr.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="ra_sil.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="ra_sg.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+    <weapon file="ra_lrx.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="ra_rl.weapon">
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon>  
+  <!-- end RA weapons -->
+
+  <!-- SS weapons -->
+  <weapon file="ss_lr.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ss_mg.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ss_sr.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="ss_sil.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>  
+  <weapon file="ss_sg.weapon" >
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ss_lrx.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="ss_rl.weapon">
     <capacity value="0" source="rank" source_value="0.0" />
     <capacity value="1" source="rank" source_value="0.05" />
     <capacity value="2" source="rank" source_value="0.2" />
   </weapon>
+  <!-- end SS weapons -->
+
+  <!-- WT weapons -->
+  <weapon file="wt_lr.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_mg.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_sr.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="wt_sil.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>  
+  <weapon file="wt_sg.weapon" >
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_lrx.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="wt_sa.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_sa_sil.weapon">
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_rl.weapon">
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon>
+  <!-- end WT weapons -->
+
+  <!-- SHARED / generic weapons -->
+  <weapon file="riot_shield.weapon" />
   <weapon file="medikit.weapon" />
   <weapon file="cover_resource.weapon">
     <capacity source="rank" source_value="0.0" value="0" />
@@ -262,28 +303,6 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.25" value="1" />
   </weapon>
-  <weapon file="rpg-7.weapon" >
-    <capacity value="0" source="rank" source_value="0.0" />
-    <capacity value="1" source="rank" source_value="0.05" />
-    <capacity value="2" source="rank" source_value="0.2" />
-  </weapon>
-  <weapon file="m2_carlgustav.weapon" >
-    <capacity value="0" source="rank" source_value="0.0" />
-    <capacity value="1" source="rank" source_value="0.05" />
-    <capacity value="2" source="rank" source_value="0.2" />
-  </weapon>
-  <weapon file="beretta_m9.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.025" value="1" />
-  </weapon>
-  <weapon file="glock17.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.025" value="1" />
-  </weapon>
-  <weapon file="pb.weapon">
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.025" value="1" />
-  </weapon>
   <weapon file="xm25.weapon">
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.4" value="1" />
@@ -315,19 +334,7 @@
     <commonness value="0.0004" in_stock="0" />
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.3" value="1" />
-  </weapon>
-  <weapon file="mini_uzi.weapon">
-	<capacity source="rank" source_value="0.0" value="0" />
-	<capacity source="rank" source_value="0.1" value="1" />
-  </weapon>
-  <weapon file="steyr_tmp.weapon">
-	<capacity source="rank" source_value="0.0" value="0" />
-	<capacity source="rank" source_value="0.1" value="1" />
   </weapon> 
-  <weapon file="aek_919k.weapon">
-	<capacity source="rank" source_value="0.0" value="0" />
-	<capacity source="rank" source_value="0.1" value="1" />
-  </weapon>  
   <weapon file="microgun.weapon">
     <commonness value="0.00004" in_stock="0" />
     <capacity source="rank" source_value="0.0" value="0" />

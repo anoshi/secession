@@ -149,7 +149,7 @@
 	<soldier name="miniboss_female" spawn_score="0.0015" squad_size_xp_cap="0.5" firstnames_file="english_firstnames_female.txt" lastnames_file="lc_lastnames.txt" >
 		<character filename="default_miniboss_female.character" />
 		<ai filename="elite.ai" />
-		<model filename="lc_soldier_elite_2.xml" />  
+		<model filename="lc_soldier_elite_1.xml" />  
 
 		<!-- inherits initial config from default group -->
 		<resources file="common_miniboss.resources" />
