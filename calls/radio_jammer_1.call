@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="Radio Jammer" key="radio_jammer_1.call"
+  initiation_comment1="Cut their comms!"
+  acknowledge_comment="Copy that"
+  launch_comment="Device inbound">
+  <round instances="1"
+    instance_class="vehicle"
+    instance_key="wt_radio_jammer.vehicle"
+    launch_time="4.0"
+    spawn_time="4.0">
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>
+  <hud_icon filename="hud_radio.png" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="100" source="rank" source_value="0.1" />
+  <inventory encumbrance="0.0" price="40.0" />
+</call>

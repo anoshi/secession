@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Resources available to BlastCorp Grenadiers -->
-<resources clear_vehicles="1" clear_calls="1"> 
-	<weapon key='bc_sa_pri.weapon' />
-	<weapon key='bc_sa_sil_pri.weapon' />
-	
+<resources>
 	<carry_item key="bc_impervavest.carry_item" enabled="1" />
 	<carry_item key="bc_vest1.carry_item" enabled="0" />
 	<carry_item key="bc_vest2.carry_item" enabled="0" />
@@ -11,5 +8,4 @@
 	<carry_item key="bc_power_armour.carry_item" enabled="0" />
 
 	<call key="bc_minigun_turret_1.call" />
-	<!--<call key="bc_resupply_gren.call" />-->
 </resources>

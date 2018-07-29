@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <faction name="WyreTek" color="0.1 0.1 0.6" firstnames_file="wt_firstnames.txt" lastnames_file="wt_lastnames.txt" chat_icon_filename="wt_chat_icon_soldier.png" chat_icon_commander_filename="wt_chat_icon_commander.png" campaign_completion_icon_filename="wt_campaign_win.png">
-	<rank xp="0.0" name="WyreTek Recruit">
+	<rank xp="0.0" name="WyreTek Civilian">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
 	<rank xp="0.05" name="WyreTek One">
@@ -58,7 +58,7 @@
 	<!-- -------------- -->
 	<!-- default group -->
 	<!-- -------------- -->
-	<soldier name="default" spawn_score="1.0">
+	<soldier name="default" spawn_score="0.0">
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
 
@@ -85,22 +85,187 @@
 		</attribute_config>
 
 		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.0" max="0.45" />
+			<attribute weight="1.0" min="0.05" max="0.45" />
 		</attribute_config>
 
 	</soldier>
-	
+
+	<!-- ---------- -->
+	<!-- LIGHT FOOT -->
+	<!-- ---------- -->
+	<soldier name="lightfoot" spawn_score="0.1" copy_from="default">
+		<ai filename="lightfoot.ai" />
+
+		<resources file="common_lightfoot.resources" />
+		<resources file="wt_primaries.resources" />
+
+		<item_class_existence_config>
+			<!-- secondary weapon -->
+			<item_class_existence class="weapon" slot="1" probability="0.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.05" max="0.15" />
+		</attribute_config>
+	</soldier>
+
+	<!-- ------------- -->
+	<!-- HEAVY TROOPER -->
+	<!-- ------------- -->
+	<soldier name="heavytrooper" spawn_score="0.2" copy_from="default">
+		<ai filename="heavytrooper.ai" />
+
+		<resources file="common_heavytrooper.resources" />
+		<resources file="wt_default.resources" />
+
+		<item_class_existence_config>
+			<!-- secondary weapon -->
+			<item_class_existence class="weapon" slot="1" probability="0.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.05" max="0.5" />
+		</attribute_config>
+	</soldier>
+
+	<!-- ------ -->
+	<!-- SNIPER -->
+	<!-- ------ -->
+	<soldier name="sniper" spawn_score="0.1" copy_from="default">
+		<ai filename="sniper.ai" />
+
+		<resources file="common_sniper.resources" />
+		<resources file="wt_sniper.resources" />
+
+		<item_class_existence_config>
+			<!-- primary weapon -->
+			<item_class_existence class="weapon" slot="0" probability="1.0" />		
+			<!-- secondary weapon -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.05" max="0.45" />
+		</attribute_config>
+	</soldier>
+
+	<!-- --------- -->
+	<!-- GRENADIER -->
+	<!-- --------- -->
+	<soldier name="grenadier" spawn_score="0.1" copy_from="default">
+		<ai filename="grenadier.ai" />
+
+		<resources file="common_grenadier.resources" />
+		<resources file="wt_1h_weapons.resources" />
+
+		<item_class_existence_config>
+			<!-- primary weapon -->
+			<item_class_existence class="weapon" slot="0" probability="1.0" />
+			<!-- secondary weapon -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.05" max="0.45" />
+		</attribute_config>
+	</soldier>
+
+	<!-- ------------------- -->
+	<!-- DEMOLITIONS TROOPER -->
+	<!-- ------------------- -->
+	<soldier name="demotrooper" spawn_score="0.05" copy_from="default">
+		<ai filename="demotrooper.ai" />
+
+		<resources file="common_demotrooper.resources" />
+		<resources file="wt_1h_weapons.resources" />
+
+		<item_class_existence_config>
+			<!-- secondary weapon -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="1.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="0.3" min="80.0" max="300.0" />
+			<attribute weight="0.7" min="0.0" max="0.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.05" max="0.45" />
+		</attribute_config>
+	</soldier>
+
+	<!-- ----- -->
+	<!-- MEDIC -->
+	<!-- ----- -->
+	<soldier name="medic" spawn_score="0.1" copy_from="default">
+		<ai filename="medic.ai" />
+
+		<resources file="common_medic.resources" />
+		<resources file="wt_primaries.resources" />
+
+		<item_class_existence_config>
+			<!-- secondaries -->
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<!-- wearables -->
+			<item_class_existence class="carry_item" slot="1" probability="0.02" />
+			<!-- backpack -->
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />
+		</item_class_existence_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.05" max="0.2" />
+		</attribute_config>
+	</soldier>
+
 	<!-- ---------- -->
 	<!-- COMMS TECH -->
 	<!-- ---------- -->
-	<soldier name="commstech" spawn_score="0.2" squad_size_xp_cap="0.5">
+	<soldier name="commstech" spawn_score="0.3" squad_size_xp_cap="0.5">
 		<character filename="default_male.character" />
 		<ai filename="commstech.ai" />
 
-    	<models file="wt_default_basic.models" />
-		<models file="wt_default.models" />
+		<model filename="wt_soldier_elite_1.xml" />
 
-		<!-- inherits initial config from default group -->
 		<resources file="common_commstech.resources" />
 		<resources file="wt_commstech.resources" />
 
@@ -114,83 +279,25 @@
 		</item_class_existence_config>
 
 		<attribute_config class="rp">
-			<attribute weight="0.3" min="80.0" max="300.0" />
-			<attribute weight="0.7" min="0.0" max="0.0" />
+			<attribute weight="0.7" min="250.0" max="1250.0" />
+			<attribute weight="0.3" min="500.0" max="1750.0" />
 		</attribute_config>
 
 		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.0" max="0.45" />
-		</attribute_config>
-	</soldier>
-
-	<!-- -------------- -->
-	<!-- miniboss group -->
-	<!-- -------------- -->
-	<soldier name="miniboss" spawn_score="0.005" squad_size_xp_cap="0.5">
-		<character filename="default_miniboss_male.character" />
-		<ai filename="elite.ai" />
-		<model filename="wt_soldier_elite_1.xml" />
-		<model filename="wt_soldier_elite_1.xml" />     
-
-		<resources file="common_miniboss.resources" />
-		<resources file="wt_miniboss.resources" />
-
-		<item_class_existence_config>
-			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="1.0" />
-			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="1.0" />
-			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="1.0" />
-		</item_class_existence_config>
-
-		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.5" max="0.8" />
+			<attribute weight="0.95" min="0.05" max="0.9" />
 			<attribute weight="0.05" min="1.0" max="10.0" />
 		</attribute_config>
-
-		<attribute_config class="rp">
-			<attribute weight="1.0" min="500.0" max="500.0" />
-		</attribute_config>
-
 	</soldier>
 
-	<!-- -------------- -->
-	<!-- designated medic group -->
-	<!-- -------------- -->
-	<soldier name="medic" spawn_score="0.0" copy_from="default">
-		<resources file="common_medic.resources" />
-		<resources file="wt_primaries.resources" />
-
-		<item_class_existence_config>
-			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="1.0" />
-			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="0.02" />
-			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="0.03" />
-		</item_class_existence_config>
-
-		<!-- low XP, likely to join player squad -->
-		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.0" max="0.05" />
-		</attribute_config>
-	</soldier>
-
-
-
-	<!-- -------------- -->
-	<!-- prisoner group -->
-	<!-- -------------- -->
-	<soldier name="prisoner" spawn_score="0.0">
+	<!-- --------- -->
+	<!-- CIVILIANS -->
+	<!-- --------- -->
+	<soldier name="civilian" spawn_score="0.05">
 		<character filename="default_male.character" />
-		<ai filename="default.ai" />
-		<model filename="soldier_prison.xml" />
+		<ai filename="civilian.ai" />
+		<model filename="civilian.xml" />
 
-		<resources file="common.resources" />
-		<resources file="wt_primaries.resources" />
-		<resources file="wt_secondaries.resources" />
-		<resources file="wt_default.resources" />
+		<resources file="common_civilian.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -198,51 +305,18 @@
 			<!-- wearables -->
 			<item_class_existence class="carry_item" slot="1" probability="0.0" />
 			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="0.03" />
+			<item_class_existence class="carry_item" slot="0" probability="0.7" />
 		</item_class_existence_config>
 
 		<attribute_config class="rp">
-			<attribute weight="0.3" min="80.0" max="300.0" />
-			<attribute weight="0.7" min="0.0" max="0.0" />
+			<attribute weight="1.0" min="0.0" max="50.0" />
 		</attribute_config>
 
 		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.0" max="0.45" />
+			<attribute weight="1.0" min="0.0" max="0.04" />
 		</attribute_config>
 	</soldier>
-
-  
-	<!-- -------------- -->
-	<!--    EOD group   -->
-	<!-- -------------- -->
-	<soldier name="eod" spawn_score="0.006" squad_size_xp_cap="0.0">
-		<character filename="default_male.character" />
-		<ai filename="eod.ai" />
-		<model filename="wt_soldier_eod_1.xml" />
-
-		<resources file="common_eod.resources" />
-		<resources file="wt_eod.resources" />
-
-		<item_class_existence_config>
-			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="1.0" />
-			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="1.0" />
-			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="1.0" />
-		</item_class_existence_config>
-
-		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.5" max="0.7" />
-			<attribute weight="0.05" min="1.0" max="10.0" />
-		</attribute_config>
-
-		<attribute_config class="rp">
-			<attribute weight="1.0" min="500.0" max="500.0" />
-		</attribute_config>
-
-	</soldier> 
-  
+ 
 	<!-- -------------- -->
 	<!-- supply box group -->
 	<!-- -------------- -->
@@ -250,9 +324,8 @@
 		<resources file="common_supply.resources" />
 		<resources file="wt_supply.resources" />
 
-		<!-- low XP, likely to join player squad -->
 		<attribute_config class="xp">
-			<attribute weight="1.0" min="0.0" max="0.05" />
+			<attribute weight="1.0" min="0.0" max="0.04" />
 		</attribute_config>
 	</soldier>    
    

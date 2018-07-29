@@ -12,6 +12,16 @@
     <call file="notify_metagame.call" />
 	<!-- end EVENT calls -->
 
+	<!-- CLASS calls -->
+	<!-- LIGHT FOOT -->
+	<call file="radio_jammer_1.call" />
+	<!-- GRENADIER -->
+	<call file="resupply_gren.call" /> <!-- could one restock.call suffice with notify_metagame ...? -->
+	<!-- DEMOLITIONS TROOPER -->   <!-- work out the class of the caller and drop that class's weapons -->
+	<call file="resupply_demo.call" />
+	<!-- SNIPER -->
+	<call file="target_designator.call" />
+	
 	<!-- FACTION calls -->
 	<!-- BlastCorp calls -->
 	<call file="bc_annihilator_1.call" />

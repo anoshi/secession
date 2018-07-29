@@ -2,8 +2,9 @@
 <resources>
   <weapon key='ra_lr.weapon' />
   <weapon key='ra_mg.weapon' />
-  <weapon key='ra_sr.weapon' />
   <weapon key='ra_sil.weapon' />
   <weapon key='ra_sg.weapon' />
   <weapon key='ra_lrx.weapon' />
+
+  <carry_item key="ra_vest_1.carry_item" enabled="1" />
 </resources>
