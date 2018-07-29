@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available to ScopeSystems Snipers -->
+<resources>
+	<weapon key='ss_sr.weapon' />
+
+	<call key="ss_probe_1.call" />
+</resources>

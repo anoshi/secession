@@ -32,7 +32,7 @@
 
     <model filename="dragunov_svd.xml" />
     <hud_icon filename="hud_dragunov_svd.png" />
-    <commonness value="0.01" />
+    <commonness value="1.0" /><!-- SRs were commonness 0.01 -->
     <inventory encumbrance="10.0" price="4.0" />
 
     <projectiles_per_shot value="1" />

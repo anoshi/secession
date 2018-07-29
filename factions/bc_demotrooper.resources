@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available to BlastCorp Demolition Troopers -->
+<resources> 
+	<call key="bc_annihilator_1.call" />
+	<call key="bc_grenade_launcher_turret_1.call" />
+</resources>

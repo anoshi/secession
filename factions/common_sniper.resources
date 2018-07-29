@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources clear_weapons="1">
+    <carry_item key="camouflage_suit.carry_item" enabled="1" />
+
+    <call key="target_designator.call" />
+</resources>

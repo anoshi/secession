@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available to ReflexArq Snipers -->
+<resources>
+	<weapon key='ra_sr.weapon' />
+</resources>

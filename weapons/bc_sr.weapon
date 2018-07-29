@@ -29,7 +29,7 @@
     <model filename="psg90.xml" />
 
     <hud_icon filename="hud_psg90.png" />
-    <commonness value="0.01" />
+    <commonness value="1.0" />
     <inventory encumbrance="10.0" price="4.0" />
 
     <projectiles_per_shot value="1" />

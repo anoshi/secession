@@ -3,7 +3,8 @@
   <weapon key='wt_lr.weapon' />
   <weapon key='wt_sg.weapon' />
   <weapon key='wt_mg.weapon' />
-  <weapon key='wt_sr.weapon' />
   <weapon key='wt_sil.weapon' />
   <weapon key='wt_srx.weapon' />
+
+  <carry_item key="wt_vest_1.carry_item" enabled="1" />
 </resources>

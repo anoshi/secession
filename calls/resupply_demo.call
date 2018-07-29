@@ -1,0 +1,28 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<call name="Resupply Demolition" key="resupply_demo.call"
+  initiation_comment1="See more C4?"
+  acknowledge_comment="I hear that!"
+  launch_comment="Cool guys don't look at explosions">
+  <round instances="1"
+    instance_class="visual_item"
+    instance_key="crate.static_object"
+    instance_spread="0.5 0.5 0.5"
+    common_spread="0 0 0"
+    launch_time="1.0"
+    spawn_time="2.0">
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>
+  <round instances="2"
+    instance_class="weapon"
+    instance_key="c4.projectile"
+    instance_spread="0.5 0.5 0.5"
+    common_spread="0 0 0"
+    launch_time="1.0"
+    spawn_time="2.0">
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  </round>
+  <hud_icon filename="crate_wood.png" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="100" source="rank" source_value="0.1" />
+  <inventory encumbrance="0.0" price="40.0" />
+</call>
