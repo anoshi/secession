@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <weapon key='ra_rl.weapon' />
-  <weapon key='ra_sa.weapon' />
+  <weapon key='ra_smg.weapon' />
   <weapon key='ra_sa_sil.weapon' />
 </resources>

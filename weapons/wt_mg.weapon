@@ -31,7 +31,7 @@
     <model filename="machine_gun2.xml" />
 
     <hud_icon filename="hud_pkm.png" />
-    <commonness value="0.05" />
+    <commonness value="0.5" />
     <inventory encumbrance="10.0" price="3.0" />
 
     <weak_hand_hold offset="0.4" />

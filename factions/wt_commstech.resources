@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Resources available only to WyreTek Communications Technicians -->
 <resources>
-	<weapon key='wt_sa_pri.weapon' />
+	<weapon key='wt_smg_pri.weapon' />
 	<weapon key='wt_sa_sil_pri.weapon' />
 
 	<!-- need to explicitly disable carry items that are enabled in <faction>_default.resources -->

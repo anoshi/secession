@@ -27,7 +27,7 @@
     <model filename="qcw-05.xml" />
     <hud_icon filename="hud_qcw-05.png" />
     <inventory encumbrance="10.0" price="4.0" />
-    <commonness value="0.0" />
+    <commonness value="0.25" />
 
     <projectile file="wt_laser.projectile">
         <result class="hit" kill_probability="0.35" kill_decay_start_time="0.22" kill_decay_end_time="0.35" />

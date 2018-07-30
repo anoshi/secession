@@ -27,7 +27,7 @@
     <model filename="assault_rifle3.xml" />
 
     <hud_icon filename="hud_famasg1.png" />
-    <commonness value="0.0003" can_respawn_with="1" />
+    <commonness value="0.05" can_respawn_with="1" />
     <inventory encumbrance="10.0" price="10.0" />
     
     <capacity value="0" source="rank" source_value="0.0" />

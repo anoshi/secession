@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <weapon key='ra_mg.weapon' />
+  <weapon key='ra_sg.weapon' />
+  <weapon key='ra_rl.weapon' />
+
+  <carry_item key="ra_vest_1.carry_item" enabled="0" />
+  <carry_item key="ra_vest_2.carry_item" enabled="1" />
+  <carry_item key="ra_vest_3.carry_item" enabled="1" />
+</resources>

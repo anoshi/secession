@@ -29,7 +29,7 @@
     <model filename="assault_rifle4.xml" />
 
     <hud_icon filename="hud_m16a4.png" />
-    <commonness value="0.2" />
+    <commonness value="0.725" />
     <inventory encumbrance="10.0" price="2.0" />
 
     <weak_hand_hold offset="0.2" />

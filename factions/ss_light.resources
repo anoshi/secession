@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <weapon key='ss_lr.weapon' />
-  <weapon key='ss_mg.weapon' />
-  <weapon key='ss_sr.weapon' />
   <weapon key='ss_sil.weapon' />
-  <weapon key='ss_sg.weapon' />
   <weapon key='ss_lrx.weapon' />
 
   <carry_item key="ss_vest_1.carry_item" enabled="1" />

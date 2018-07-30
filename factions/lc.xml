@@ -66,7 +66,8 @@
 		<models file="lc_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="lc_primaries.resources" />
+		<resources file="lc_light.resources" />
+		<resources file="lc_heavy.resources" />		
 		<resources file="lc_secondaries.resources" />
 		<resources file="lc_default.resources" />
 
@@ -97,9 +98,9 @@
 		<ai filename="lightfoot.ai" />
 
 		<resources file="common_lightfoot.resources" />
-		<resources file="lc_primaries.resources" />
+		<resources file="lc_light.resources" />
 
-		<item_class_existence_config>
+		<item_class_existence_config>		
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="0.0" />
 			<!-- wearables -->
@@ -156,8 +157,6 @@
 		<resources file="lc_sniper.resources" />
 
 		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -186,8 +185,6 @@
 		<resources file="lc_1h_weapons.resources" />
 
 		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -244,7 +241,7 @@
 		<model filename="lc_soldier_elite_1.xml" />
 
 		<resources file="common_medic.resources" />
-		<resources file="lc_primaries.resources" />
+		<resources file="lc_light.resources" />
 		<resources file="lc_medic.resources" />
 
 		<item_class_existence_config>

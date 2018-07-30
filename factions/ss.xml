@@ -66,7 +66,8 @@
 		<models file="ss_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="ss_primaries.resources" />
+		<resources file="ss_light.resources" />
+		<resources file="ss_heavy.resources" />
 		<resources file="ss_secondaries.resources" />
 		<resources file="ss_default.resources" />
 
@@ -97,9 +98,9 @@
 		<ai filename="lightfoot.ai" />
 
 		<resources file="common_lightfoot.resources" />
-		<resources file="ss_primaries.resources" />
+		<resources file="ss_light.resources" />
 
-		<item_class_existence_config>
+		<item_class_existence_config>		
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="0.0" />
 			<!-- wearables -->
@@ -125,7 +126,7 @@
 		<ai filename="heavytrooper.ai" />
 
 		<resources file="common_heavytrooper.resources" />
-		<resources file="ss_default.resources" />
+		<resources file="ss_heavy.resources" />
 
 		<item_class_existence_config>
 			<!-- secondary weapon -->
@@ -187,8 +188,6 @@
 		<resources file="ss_1h_weapons.resources" />
 
 		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -242,11 +241,9 @@
 		<ai filename="medic.ai" />
 
 		<resources file="common_medic.resources" />
-		<resources file="ss_primaries.resources" />
+		<resources file="ss_light.resources" />
 
-		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />		
+		<item_class_existence_config>		
 			<!-- secondaries -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->

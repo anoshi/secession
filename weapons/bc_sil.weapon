@@ -25,7 +25,7 @@
     <model filename="scorpion-evo.xml" />
     <hud_icon filename="hud_scorpion-evo.png" />
     <inventory encumbrance="10.0" price="4.0" />
-    <commonness value="0.00001" in_stock="1" />
+    <commonness value="0.225" in_stock="1" />
 
     <projectile file="bc_laser.projectile">
         <result class="hit" kill_probability="0.36" kill_decay_start_time="0.22" kill_decay_end_time="0.36" />

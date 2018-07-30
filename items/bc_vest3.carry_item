@@ -1,102 +1,119 @@
 <?xml version="1.0" encoding="utf-8"?>
 <carry_items>
-    <carry_item key="bc_vest3.carry_item" name="BC Vest, type III" slot="1" transform_on_consume="bc_vest3_2" time_to_live_out_in_the_open="120.0">
+    <carry_item key="bc_vest3.carry_item" name="BC Vest mk.III" slot="1" transform_on_consume="bc_vest3_2" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3.png" />
-        <capacity value="0" source="rank" source_value="0.0" />
-        <capacity value="1" source="rank" source_value="0.1" />
-        <inventory encumbrance="5" price="150" />
+        <capacity value="1" source="rank" source_value="0.0" />
+        <capacity value="1" source="rank" source_value="0.05" />
+        <inventory encumbrance="4" price="20" />
 
         <model mesh_filename="vest3.xml" />
 
         <commonness value="1.0" in_stock="1" can_respawn_with="1" />
 
-	<!-- death or wound or stun -> no effect -->
+	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
-<!--        <modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />  -->
+        <modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />
+	<!-- projectile hits have no effect on character but does damage armour -->
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
-        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="none" consumes_item="0" />
-        <modifier class="melee_hit_result" input_character_state="death" output_character_state="stun" />
-        <modifier class="speed" value="-0.08" /> 
+        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
+    <modifier class="speed" value="-0.25" />  
     </carry_item>
-
-    <carry_item key="bc_vest3_2" name="BC Vest, type III, 80%" slot="1" transform_on_consume="bc_vest3_3" time_to_live_out_in_the_open="60.0">
+    
+    <carry_item key="bc_vest3_2" name="BC Vest, type III 80%" slot="1" transform_on_consume="bc_vest3_3" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_80.png" />
-        <capacity value="0" source="rank" source_value="0.0" />
-        <capacity value="1" source="rank" source_value="0.1" />
-        <inventory encumbrance="5" price="2" />
+        <capacity value="1" source="rank" source_value="0.0" />
+        <capacity value="1" source="rank" source_value="0.05" />
+        <inventory encumbrance="4" price="20" />
 
         <model mesh_filename="vest3.xml" />
 
         <commonness value="0.0" in_stock="0" can_respawn_with="0" />
-
-	<!-- death or wound -> stun only -->
+	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
-<!--        <modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />  -->
+	<modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />
+	<!-- projectile hits have no effect on character but does damage armour -->
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
-        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="none" />
-        <modifier class="melee_hit_result" input_character_state="death" output_character_state="stun" />
-        <modifier class="speed" value="-0.08" />
+        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
+    <modifier class="speed" value="-0.25" />  
     </carry_item>
-
-    <carry_item key="bc_vest3_3" name="BC Vest, type III, 60%" slot="1" transform_on_consume="bc_vest3_4" time_to_live_out_in_the_open="60.0">
+    
+        <carry_item key="bc_vest3_3" name="BC Vest, type III 60%" slot="1" transform_on_consume="bc_vest3_4" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_60.png" />
-        <capacity value="0" source="rank" source_value="0.0" />
-        <capacity value="1" source="rank" source_value="0.1" />
-        <inventory encumbrance="5" price="2" />
+        <capacity value="1" source="rank" source_value="0.0" />
+        <capacity value="1" source="rank" source_value="0.05" />
+        <inventory encumbrance="4" price="20" />
 
         <model mesh_filename="vest3.xml" />
 
         <commonness value="0.0" in_stock="0" can_respawn_with="0" />
-
-	<!-- death or wound -> stun only -->
+	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
-        <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
-        <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
-	<!-- melee_hit goes right through, and doesn't consume -->
-        <modifier class="speed" value="-0.08" />
+	<modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />
+	<!-- projectile hits have no effect on character but does damage armour -->
+        <modifier class="projectile_hit_result" input_character_state="death" output_character_state="none" />
+        <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
+        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
+    <modifier class="speed" value="-0.25" />  
     </carry_item>
-	
-    <carry_item key="bc_vest3_4" name="BC Vest, type III, 40%" slot="1" transform_on_consume="bc_vest3_5" time_to_live_out_in_the_open="60.0">
+    
+    <carry_item key="bc_vest3_4" name="BC Vest, type III 40%" slot="1" transform_on_consume="bc_vest3_5" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_40.png" />
-        <capacity value="0" source="rank" source_value="0.0" />
-        <capacity value="1" source="rank" source_value="0.1" />
-        <inventory encumbrance="5" price="2" />
+        <capacity value="1" source="rank" source_value="0.0" />
+        <capacity value="1" source="rank" source_value="0.05" />
+        <inventory encumbrance="4" price="20" />
 
         <model mesh_filename="vest3.xml" />
 
         <commonness value="0.0" in_stock="0" can_respawn_with="0" />
-
-	<!-- death or wound -> stun only -->
+	<!-- projectile blast damage stuns character and applies damage to armour -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
+	<modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />
+	<!-- projectile hits now stun the character and continue to damage armour -->
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
-	<!-- melee_hit goes right through, and doesn't consume -->
-        <modifier class="speed" value="-0.08" />
+        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
+    <modifier class="speed" value="-0.25" />  
     </carry_item>
-	
-    <carry_item key="bc_vest3_5" name="BC Vest, type III, 20%" slot="1" time_to_live_out_in_the_open="60.0">
+    
+    <carry_item key="bc_vest3_5" name="BC Vest, type III 20%" slot="1" transform_on_consume="bc_vest3_6" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_20.png" />
+        <capacity value="1" source="rank" source_value="0.0" />
+        <capacity value="1" source="rank" source_value="0.05" />
+        <inventory encumbrance="4" price="20" />
+
+        <model mesh_filename="vest3.xml" />
+
+        <commonness value="0.0" in_stock="0" can_respawn_with="0" />
+	<!-- projectile blast damage stuns character and applies damage to armour -->
+        <modifier class="projectile_blast_result" input_character_state="death" output_character_state="stun" />
+        <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="stun" />
+	<modifier class="projectile_blast_result" input_character_state="stun" output_character_state="stun" />
+	<!-- projectile hits now stun the character and continue to damage armour -->
+        <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
+        <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
+        <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
+    <modifier class="speed" value="-0.25" />  
+    </carry_item>
+    
+	<carry_item key="bc_vest3_6" name="BC Vest, type III, 0%" slot="1">
+        <hud_icon filename="hud_vest3_1.png" />
         <capacity value="0" source="rank" source_value="0.0" />
-        <capacity value="1" source="rank" source_value="0.1" />
-        <inventory encumbrance="5" price="2" />
+        <capacity value="1" source="rank" source_value="0.05" />
+        <inventory encumbrance="4" price="2" />
 
         <model mesh_filename="vest3.xml" />
 
         <commonness value="0.0" in_stock="0" can_respawn_with="0" />
 
-	<!-- death or wound -> stun only -->
-        <modifier class="projectile_blast_result" input_character_state="death" output_character_state="death" />
-        <modifier class="projectile_blast_result" input_character_state="wound" output_character_state="wound" />
+	<!-- final armour stage, wound -->
+        <modifier class="projectile_blast_result" input_character_state="death" output_character_state="wound" />
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="wound" />
-        <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="wound" />
-	<!-- melee_hit goes right through, and doesn't consume -->
-        <modifier class="speed" value="-0.08" />
+    	<modifier class="speed" value="-0.25" />    
     </carry_item>
-     
 </carry_items>

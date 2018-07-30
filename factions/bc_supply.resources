@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <weapon key='bc_rl.weapon' enabled="1" />
-  <weapon key='bc_sa.weapon' enabled="1" />
+  <weapon key='bc_smg.weapon' enabled="1" />
   <weapon key='bc_sa_sil.weapon' enabled="1" />
 </resources>

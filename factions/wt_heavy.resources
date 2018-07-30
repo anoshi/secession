@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <weapon key='wt_mg.weapon' />
+  <weapon key='wt_sg.weapon' />
+  <weapon key='wt_rl.weapon' />
+
+  <carry_item key="wt_vest_1.carry_item" enabled="0" />
+  <carry_item key="wt_vest_2.carry_item" enabled="1" />
+  <carry_item key="wt_vest_3.carry_item" enabled="1" />
+</resources>

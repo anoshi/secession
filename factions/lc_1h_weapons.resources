@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 1-handed weapon resources available to LifeCraft troops -->
 <resources> 
-	<weapon key='lc_sa_pri.weapon' />
+	<weapon key='lc_smg_pri.weapon' />
 	<weapon key='lc_sa_sil_pri.weapon' />
 
-	<weapon key='lc_sa.weapon' />
+	<weapon key='lc_smg.weapon' />
 	<weapon key='lc_sa_sil.weapon' /> 
 </resources>
