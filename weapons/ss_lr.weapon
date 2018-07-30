@@ -28,7 +28,7 @@
     <model filename="assault_rifle1.xml" />
 
     <hud_icon filename="hud_ak47.png" />
-    <commonness value="0.2" />
+    <commonness value="0.6" />
     <inventory encumbrance="10.0" price="2.0" />
 
     <projectile file="ss_laser.projectile">

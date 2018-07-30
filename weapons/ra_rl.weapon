@@ -41,7 +41,7 @@
     <capacity value="2" source="rank" source_value="0.2" />
 
     <hud_icon filename="hud_m72law.png" />
-    <commonness value="0.22" />
+    <commonness value="0.5" />
     <inventory encumbrance="5.0" price="4.0" />
 
     <effect class="muzzle" ref="LawMuzzle" />

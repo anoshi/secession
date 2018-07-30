@@ -22,7 +22,8 @@ class CallHandler : Tracker {
 		//sendFactionMessageKey(m_metagame, 0, "CallHandler", dictionary = {}, 1.0);
 
 		string key = event.getStringAttribute("call_key");
-		_log("call made was for " + key, 1);
+		_log("call made was for: " + key, 1);
+		_log("call position was: " + event.getStringAttribute("target_position"), 1);
 
 		if (key == "notify_metagame.call") {
 			_log("key was definitely notify_metagame.call", 1);

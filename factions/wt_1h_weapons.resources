@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 1-handed weapon resources available to WyreTek troops -->
 <resources> 
-	<weapon key='wt_sa_pri.weapon' />
+	<weapon key='wt_smg_pri.weapon' />
 	<weapon key='wt_sa_sil_pri.weapon' />
 
-	<weapon key='bc_sa.weapon' />
+	<weapon key='bc_smg.weapon' />
 	<weapon key='bc_sa_sil.weapon' /> 
 </resources>

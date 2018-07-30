@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <weapon key='ss_mg.weapon' />
+  <weapon key='ss_sg.weapon' />
+  <weapon key='ss_rl.weapon' />
+
+  <carry_item key="ss_vest_1.carry_item" enabled="0" />
+  <carry_item key="ss_vest_2.carry_item" enabled="1" />
+  <carry_item key="ss_vest_3.carry_item" enabled="1" />
+</resources>

@@ -25,7 +25,7 @@
     <model filename="l85a2.xml" />
 
     <hud_icon filename="hud_l85a2.png" />
-    <commonness value="0.0003" can_respawn_with="1" />
+    <commonness value="0.075" can_respawn_with="1" />
     <inventory encumbrance="10.0" price="10.0" />
 
     <capacity value="0" source="rank" source_value="0.0" />

@@ -52,10 +52,6 @@ abstract class Tracker {
 	}
 	// call events, happens for calls that have notify_metagame="1"
 	protected void handleCallRequestEvent(const XmlElement@ event) {
-		_log("handleCallRequestEvent in tracker.as fired", 1);
-		string key = event.getStringAttribute("call_key");
-		_log("call made was for: " + key, 1);
-		_log("call position was: " + event.getStringAttribute("target_position"), 1);
 	}
 
 	void handleEvent(const XmlElement@ event) {

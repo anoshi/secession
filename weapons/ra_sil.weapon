@@ -26,7 +26,7 @@
     <model filename="suppressed_smg1.xml" />
     <hud_icon filename="hud_mp5sd.png" />
     <inventory encumbrance="10.0" price="4.0" />
-    <commonness value="0.00001" />
+    <commonness value="0.225" />
 
     <projectile file="ra_laser.projectile">
         <result class="hit" kill_probability="0.4" kill_decay_start_time="0.23" kill_decay_end_time="0.38" />

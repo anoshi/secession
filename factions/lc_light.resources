@@ -1,9 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
   <weapon key='lc_lr.weapon' />
-  <weapon key='lc_mg.weapon' />
   <weapon key='lc_sil.weapon' />
-  <weapon key='lc_sg.weapon' />
   <weapon key='lc_lrx.weapon' />
 
   <carry_item key="lc_vest_1.carry_item" enabled="1" />

@@ -24,13 +24,13 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.1" value="1" />
   </weapon>
-  <weapon file="bc_sa.weapon">
+  <weapon file="bc_smg.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="bc_sa_sil.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
-  <weapon file="bc_sa_pri.weapon">
+  <weapon file="bc_smg_pri.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="bc_sa_sil_pri.weapon">
@@ -70,13 +70,13 @@
 	  <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.25" value="1" />
   </weapon>
-  <weapon file="lc_sa.weapon">
+  <weapon file="lc_smg.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="lc_sa_sil.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
-  <weapon file="lc_sa_pri.weapon">
+  <weapon file="lc_smg_pri.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="lc_sa_sil_pri.weapon">
@@ -112,13 +112,13 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
-  <weapon file="ra_sa.weapon">
+  <weapon file="ra_smg.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="ra_sa_sil.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
-  <weapon file="ra_sa_pri.weapon">
+  <weapon file="ra_smg_pri.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="ra_sa_sil_pri.weapon">
@@ -153,13 +153,13 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
-  <weapon file="ss_sa.weapon">
+  <weapon file="ss_smg.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="ss_sa_sil.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
-  <weapon file="ss_sa_pri.weapon">
+  <weapon file="ss_smg_pri.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="ss_sa_sil_pri.weapon">
@@ -194,13 +194,13 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.15" value="1" />
   </weapon>
-  <weapon file="wt_sa.weapon">
+  <weapon file="wt_smg.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="wt_sa_sil.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
-  <weapon file="wt_sa_pri.weapon">
+  <weapon file="wt_smg_pri.weapon">
     <capacity source="rank" source_value="0.0" value="1" />
   </weapon>
   <weapon file="wt_sa_sil_pri.weapon">

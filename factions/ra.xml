@@ -66,7 +66,8 @@
 		<models file="ra_default.models" />
 
 		<resources file="common.resources" />
-		<resources file="ra_primaries.resources" />
+		<resources file="ra_light.resources" />
+		<resources file="ra_heavy.resources" />
 		<resources file="ra_secondaries.resources" />
 		<resources file="ra_default.resources" />
 
@@ -102,7 +103,7 @@
 		<resources file="common_lightfoot.resources" />
 		<resources file="ra_default.resources" />
 
-		<item_class_existence_config>
+		<item_class_existence_config>		
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="0.0" />
 			<!-- wearables -->
@@ -158,9 +159,7 @@
 		<resources file="common_sniper.resources" />
 		<resources file="ra_sniper.resources" />
 
-		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />		
+		<item_class_existence_config>		
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -189,8 +188,6 @@
 		<resources file="ra_1h_weapons.resources" />
 
 		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -219,8 +216,6 @@
 		<resources file="ra_1h_weapons.resources" />
 
 		<item_class_existence_config>
-			<!-- primary weapon -->
-			<item_class_existence class="weapon" slot="0" probability="1.0" />
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -246,7 +241,7 @@
 		<ai filename="medic.ai" />
 
 		<resources file="common_medic.resources" />
-		<resources file="ra_primaries.resources" />
+		<resources file="ra_light.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->

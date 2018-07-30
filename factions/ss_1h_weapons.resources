@@ -1,9 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- 1-handed weapon resources available to ScopeSystems troops -->
 <resources> 
-	<weapon key='ss_sa_pri.weapon' />
+	<weapon key='ss_smg_pri.weapon' />
 	<weapon key='ss_sa_sil_pri.weapon' />
 
-	<weapon key='ss_sa.weapon' />
+	<weapon key='ss_smg.weapon' />
 	<weapon key='ss_sa_sil.weapon' /> 
 </resources>

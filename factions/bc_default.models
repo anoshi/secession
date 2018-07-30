@@ -5,6 +5,7 @@
 		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
+
 	<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest1.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -15,19 +16,7 @@
 	</model>
 	<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest1_3"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_1.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_4"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-		<model filename="bc_soldier_1.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_5"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_1.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_6"/>
-		<requirement class="rank" range="0 10000" />
+		<requirement class="rank" range="0 10000" />	
 	</model>
 	<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest2.carry_item"/>
@@ -42,6 +31,14 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 	<model filename="bc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest2_4"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="bc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest2_5"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+		<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest3.carry_item"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
@@ -57,8 +54,12 @@
 		<requirement class="carry_item" slot="1" key="bc_vest3_4"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
-	<model filename="bc_soldier_1.xml">
+		<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest3_5"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="bc_soldier_1.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest3_6"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
 
@@ -68,7 +69,7 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 
-		<model filename="bc_soldier_2.xml">
+	<model filename="bc_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest1.carry_item"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
@@ -78,18 +79,6 @@
 	</model>
 	<model filename="bc_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest1_3"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_2.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_4"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_2.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_5"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_2.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_6"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
 	<model filename="bc_soldier_2.xml">
@@ -104,6 +93,14 @@
 		<requirement class="carry_item" slot="1" key="bc_vest2_3"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
+	<model filename="bc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest2_4"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="bc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest2_5"/>
+		<requirement class="rank" range="0 10000" />
+	</model>	
 	<model filename="bc_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest3.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -124,8 +121,11 @@
 		<requirement class="carry_item" slot="1" key="bc_vest3_5"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
-	
-		<!-- -------------------------- -->
+	<model filename="bc_soldier_2.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest3_6"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+
 	<model filename="bc_soldier_3.xml">
 		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -144,18 +144,6 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 	<model filename="bc_soldier_3.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_4"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_3.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_5"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_3.xml">
-		<requirement class="carry_item" slot="1" key="bc_vest1_6"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_3.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest2.carry_item"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
@@ -165,6 +153,14 @@
 	</model>
 	<model filename="bc_soldier_3.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest2_3"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="bc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest2_4"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
+	<model filename="bc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest2_5"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
 	<model filename="bc_soldier_3.xml">
@@ -187,7 +183,13 @@
 		<requirement class="carry_item" slot="1" key="bc_vest3_5"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
+	<model filename="bc_soldier_3.xml">
+		<requirement class="carry_item" slot="1" key="bc_vest3_6"/>
+		<requirement class="rank" range="0 10000" />
+	</model>
 
+	<!-- -------------------------- -->
+	<!-- camouflage -->
 	<!-- -------------------------- -->
 	<model filename="bc_soldier_camo_1.xml">
 		<requirement class="carry_item" slot="1" key="camouflage_suit.carry_item"/>
@@ -195,35 +197,8 @@
 	</model>
 
 	<!-- -------------------------- -->
-	<model filename="bc_soldier_eod_1.xml">
-		<requirement class="carry_item" slot="1" key="eodvest.carry_item"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_eod_1.xml">
-		<requirement class="carry_item" slot="1" key="eod_2"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_eod_1.xml">
-		<requirement class="carry_item" slot="1" key="eod_3"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_eod_1.xml">
-		<requirement class="carry_item" slot="1" key="eod_4"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_eod_1.xml">
-		<requirement class="carry_item" slot="1" key="eod_5"/>
-		<requirement class="rank" range="0 10000" />
-	</model>
-	<model filename="bc_soldier_eod_1.xml">
-		<requirement class="carry_item" slot="1" key="eod_6"/>
-		<requirement class="rank" range="0 10000" />
-	</model>   
-
-	<!-- -------------------------- -->
 	<!-- black ops -->
 	<!-- -------------------------- -->
-	
 	<model filename="soldier_blackops.xml">
 		<requirement class="carry_item" slot="1" key="vest_blackops.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -232,8 +207,6 @@
 		<requirement class="carry_item" slot="1" key="stealth1_2"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
-
-	<!-- -------------------------- -->	
 
 	<!-- -------------------------- -->
 	<!-- high rank -->
