@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="WT Radio Jammer" key="wt_jammer_1.call"
+<call name="WT Radio Jammer" key="wt_jammer_1.call" notify_metagame="1"
   initiation_comment1="Cut their comms!"
   acknowledge_comment="Confirmed"
   launch_comment="Enemy radios now serving scrambled eggs">

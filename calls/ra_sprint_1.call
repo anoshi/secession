@@ -25,8 +25,10 @@
   <round launch_time="14.0"
     spawn_time="16.0">
     <command 
-      class="notify" 
-      text="Reflexes returning to normal in 5 seconds">
+      class="chat" 
+      text="Reflexes returning to normal in 5 seconds"
+      priority="1"
+      faction="0">
     </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" /> <!-- reverse 6-million-dollar man sound -->
   </round>

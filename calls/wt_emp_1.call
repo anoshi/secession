@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="WT EMP" key="wt_emp_1.call" notify_metagame="1"
+<call name="WT EMP" key="wt_emp_1.call" notify_metagame="1" bob="yes"
   initiation_comment1="Kill the power"
   acknowledge_comment="Confirmed"
   launch_comment="EMP launching">
@@ -10,20 +10,20 @@
     common_spread="10 0 10"
     launch_time="4.0"
     spawn_time="6.0">
-    <!-- for all vehicles in blast zone, get id, max_speed, accel, max_reverse_speedset -->
+    <!-- for all vehicles in blast zone, get id, max_speed, accel, max_reverse_speed
     <command
       class="make_query"
       id="emp_call_vehicle_query">
       <data class="vehicles" faction_id="1" /> 
     </command>
-    <!-- set these values to 0 -->
+    set these values to 0
     <command
       class="update_vehicle" 
       id="0"
       max_speed="0.0"
       acceleration="0" 
       max_reverse_speed="0.0">
-    </command>
+    </command>-->
     <command
       class="set_soundtrack"
       enabled="1"
@@ -35,8 +35,10 @@
   <round launch_time="6.0"
     spawn_time="6.0">
     <command 
-      class="notify" 
-      text="EMP in effect for 15 seconds">
+      class="chat" 
+      text="EMP in effect for 15 seconds"
+      priority="1"
+      faction="0">
     </command>
   </round>
 

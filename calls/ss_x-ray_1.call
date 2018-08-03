@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="SS X-Ray" key="ss_x-ray_1.call"
+<call name="SS X-Ray" key="ss_x-ray_1.call" notify_metagame="1"
   initiation_comment1="What's in the box?"
   acknowledge_comment="Engaging subharmonic state-changer"
   launch_comment="Contents examined">

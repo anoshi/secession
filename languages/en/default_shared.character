@@ -11,6 +11,11 @@
 	<comment key="hello world" text="option 2 call_handler.as call hello world" />
 	<comment key="hello world" text="option 3 hello world text yay" />
 	<comment key="hello world" text="random option 4 for hello world text" />
+
+	<!-- BEGIN calls -->
+	<comment key="ra_nanobot_cloud" text="Nanobot cloud spreading" />
+	<comment key="ra_sprint" text="ReflexArq troops are boosted" />
+	<!-- END calls>
 	<!-- END secession comment keys --> 
 
 	<comment key="Driver, abandon vehicle" />
