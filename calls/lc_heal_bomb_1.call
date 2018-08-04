@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="lifecraft healbomb" key="lc_heal_bomb_1.call" notify_metagame="1"
+<call name="lifecraft healbomb" key="lc_heal_bomb_1.call"
   initiation_comment1="Troops down!"
   initiation_comment2="Requesting assistance"
   acknowledge_comment="Roger that."

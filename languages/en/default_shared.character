@@ -7,10 +7,10 @@
 	<comment key="CallHandler" text="blah blah" />
 	<comment key="hCRE method running" text="handleCallRequestEvent method happening" />	
 	<comment key="hCRE method running" text="pants off! it finally worked!" />	
-	<comment key="hello world" text="hello call_handler.as world text yay" />
-	<comment key="hello world" text="option 2 call_handler.as call hello world" />
-	<comment key="hello world" text="option 3 hello world text yay" />
-	<comment key="hello world" text="random option 4 for hello world text" />
+	<comment key="notify call" text="hello call_handler.as world text yay" />
+	<comment key="notify call" text="option 2 call_handler.as call notify call" />
+	<comment key="notify call" text="option 3 notify call text yay" />
+	<comment key="notify call" text="random option 4 for notify call text" />
 
 	<!-- BEGIN calls -->
 	<comment key="ra_nanobot_cloud" text="Nanobot cloud spreading" />
