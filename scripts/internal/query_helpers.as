@@ -436,7 +436,7 @@ array<const XmlElement@>@ getCharactersNearPosition(const Metagame@ metagame, co
 }
 
 // --------------------------------------------------------
-array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId, float range = 80.0f) {
+array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId, float range) {
 	array<const XmlElement@> vehicles;
 
 	XmlElement@ query = XmlElement(
