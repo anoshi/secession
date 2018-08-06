@@ -93,7 +93,7 @@
 	<!-- ---------- -->
 	<!-- LIGHT FOOT -->
 	<!-- ---------- -->
-	<soldier name="lightfoot" spawn_score="0.1" copy_from="default">
+	<soldier name="lightfoot" spawn_score="0.15" copy_from="default">
 		<ai filename="lightfoot.ai" />
 
 		<resources file="common_lightfoot.resources" />
@@ -177,7 +177,7 @@
 	<!-- --------- -->
 	<!-- GRENADIER -->
 	<!-- --------- -->
-	<soldier name="grenadier" spawn_score="0.25" copy_from="default">
+	<soldier name="grenadier" spawn_score="0.2" copy_from="default">
 		<ai filename="grenadier.ai" />
 
 		<resources file="common_grenadier.resources" />
