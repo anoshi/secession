@@ -38,6 +38,7 @@ class CallHandler : Tracker {
 	////////////////////////
 	//   Common   Calls   //
 	////////////////////////
+		// Notify metage call is a placeholder call to test calls that have 'notify_metagame="1"' set
 		if (sKey == "notify_metagame.call") {
 			sendFactionMessageKey(m_metagame, 0, "notify call", dictionary = {}, 1.0);
 			//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 3.0, 0, "notify call", bc_call_dict));
@@ -45,15 +46,18 @@ class CallHandler : Tracker {
 	////////////////////////
 	//  BlastCorp  Calls  //
 	////////////////////////
-
+		// None that requires script-side support at this time. See 'command' blocks in the calls themselves.
 	////////////////////////
 	//  LifeCraft  Calls  //
 	////////////////////////
+		// The LC Forcefield places a red translucent dome over the area for a period. Characters can move 
+		// through the field, but projectiles that hit the dome ricochet or explode 
 		else if (sKey == "lc_force_field_1.call") {
-			_log("establishing lc forcefield at: " + sPosi, 1);
-			// place some sort of red translucent dome over the area for a period 
-			// projectiles that hit the dome ricochet or explode 
-		} else if (sKey == "lc_repair_bomb_1.call") {
+			_log("establishing lc forcefield at: " + sPosi, 1);	
+		} 
+		// The Repair Bomb operates similarly to the LC Heal bomb, repairing damage to all vehicles in the area of effect
+		// Currently works far too well; it doesn't stop 'repairing' a vehicle that is 100% health... Script a solution
+		else if (sKey == "lc_repair_bomb_1.call") {
 			_log("launching repair bombs near: " + sPosi, 1);
 			array<const XmlElement@> repVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 0, 2.000f);
 			_log("vehicles to be repaired include: ", 1);
@@ -62,6 +66,7 @@ class CallHandler : Tracker {
 	////////////////////////
 	//  ReflexArq  Calls  //
 	////////////////////////
+		// The nanobot cloud blinds and confuses enemy troops (AI only) in the area for a duration
 		else if (sKey == "ra_nanobot_cloud_1.call") {
 			_log("nanobot cloud operating", 1);
 			sendFactionMessageKey(m_metagame, 0, "ra_nanobot_cloud", dictionary = {}, 1.0);
@@ -69,7 +74,9 @@ class CallHandler : Tracker {
 			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 1, 25.00f);
 			_log(hitChars.size() + " characters affected by Nanobot Cloud", 1);
 			_log("finished running getCharactersNearPosition", 1);
-		} else if (sKey == "ra_sprint_1.call") {
+		} 
+		// The sprint call temporarily boosts the speed and willingness to charge attributes of friendly units near the caller 
+		else if (sKey == "ra_sprint_1.call") {
 			_log("ra sprint operating", 1);
 			sendFactionMessageKey(m_metagame, 0, "ra_sprint", dictionary = {}, 1.0);
 			_log("now running getCharactersNearPosition", 1);
@@ -77,7 +84,9 @@ class CallHandler : Tracker {
 			_log(hitChars.size() + " characters boosed by Sprint", 1);
 			string command = "<command class='update_character' id='" + sCaller + "' position='" + sPosi + "' ></command>";
 			_log("finished running getCharactersNearPosition", 1);
-		} else if (sKey == "ra_teleport_1.call") {
+		} 
+		// The teleport call relocates the caller to the desired location. * Warning: May not transfer all equipment in the process *
+		else if (sKey == "ra_teleport_1.call") {
 			_log("ra teleport requested", 1);
 			_log("relocating character " + sCaller + " to " + sPosi, 1);
 			string command = "<command class='update_character' id='" + sCaller + "' position='" + sPosi + "' ></command><command class='update_camera' position='" + sPosi + "'></command>";
@@ -87,10 +96,39 @@ class CallHandler : Tracker {
 	////////////////////////
 	// ScopeSystems Calls //
 	////////////////////////
-
+		// The x-ray call advises the contents of crates as well as armoured and hidden devices in the game. It allows SS troops to make 
+		// a judgement call as to whether or not they should attempt to reach the location in the first place.
+		else if (sKey == "ss_x-ray_1.call") {
+			array<const XmlElement@> xrayItem = getVehiclesNearPosition(m_metagame, v3Posi, 1, 2.000f);
+			for (uint i = 0; i < xrayItem.size(); ++i) {
+				const XmlElement@ info = xrayItem[i];
+				int id = info.getIntAttribute("id");
+				_log("vehicle id: " + id, 1);
+				const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
+				int vType = vehInfo.getIntAttribute("type_id");
+				string sName = vehInfo.getStringAttribute("name");
+				string sType = vehInfo.getStringAttribute("type_id");
+				string sKey = vehInfo.getStringAttribute("key");
+				if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
+					_log("vehicle type " + sType + " (" + sKey + ") not a target worth seeing.", 1);
+					xrayItem.erase(i);
+					i--;
+				} else {
+					_log("showing vehicle " + id + " (" + sName + ") on map", 1); 
+					string command = "<command class='set_spotting' vehicle_id='" + id + "' />";
+					m_metagame.getComms().send(command);
+				}
+			}
+		}
+		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
+		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and destroy the device.
+		else if (sKey == "ss_probe.call") {
+			_log("SS probe not implemented, yet", 1);
+		}
 	////////////////////////
 	//   WyreTek  Calls   //
 	////////////////////////
+		// The EMP is verly likely to stop movement of all enemy vehicles caught in the blast area. 
 		else if (sKey == "wt_emp_1.call") {
 			_log("WT activated EMP at: " + event.getStringAttribute("target_position"), 1);
 			_log("now running getVehiclesNearPosition", 1);
@@ -101,7 +139,6 @@ class CallHandler : Tracker {
 			for (uint i = 0; i < hitVehicles.size(); ++i) {
 				const XmlElement@ info = hitVehicles[i];
 				int id = info.getIntAttribute("id");
-				string sId = info.getStringAttribute("id");
 				_log("vehicle id: " + id, 1);
 				//SCRIPT:vehicle id: 0
 				const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
@@ -117,7 +154,7 @@ class CallHandler : Tracker {
 					i--;
 				} else {
 					_log("applying EMP effect on vehicle " + sName, 1); 
-					string command = "<command class='update_vehicle' id='" + sId + "' max_speed='0.0' acceleration='0' max_reverse_speed='0.0' locked='1'></command>";
+					string command = "<command class='update_vehicle' id='" + id + "' max_speed='0.0' acceleration='0' max_reverse_speed='0.0' locked='1'></command>";
 					// optional: locked='1'>
 					m_metagame.getComms().send(command);
 				}
@@ -136,12 +173,12 @@ class CallHandler : Tracker {
 			//	_log(entity at target location + " is within effect area of " + sKey, 1);
 			//}
 		}
+		// Pathping scans powered equipment (tanks, radio jammers, etc.) in use by the enemy and shows each item on the map.
 		else if (sKey == "wt_pathping_1.call") {
 			array<const XmlElement@> seenVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1, 2.000f);
 			for (uint i = 0; i < seenVehicles.size(); ++i) {
 				const XmlElement@ info = seenVehicles[i];
 				int id = info.getIntAttribute("id");
-				//string sID = info.getStringAttribute("id");
 				_log("vehicle id: " + id, 1);
 				const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
 				int vType = vehInfo.getIntAttribute("type_id");
