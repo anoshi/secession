@@ -51,10 +51,11 @@ class CallHandler : Tracker {
 	////////////////////////
 		else if (sKey == "lc_force_field_1.call") {
 			_log("establishing lc forcefield at: " + sPosi, 1);
-			// place some sort of red translucent dome over the area 
-			// projectiles that hit the dome and ricochet or explode 
+			// place some sort of red translucent dome over the area for a period 
+			// projectiles that hit the dome ricochet or explode 
 		} else if (sKey == "lc_repair_bomb_1.call") {
 			_log("launching repair bombs near: " + sPosi, 1);
+			array<const XmlElement@> repVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 0, 2.000f);
 			_log("vehicles to be repaired include: ", 1);
 			//_log(getVehiclesNearPosition(m_metagame, v3Posi, 0, 25.00f), 1);
 		}
@@ -74,12 +75,14 @@ class CallHandler : Tracker {
 			_log("now running getCharactersNearPosition", 1);
 			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 0, 25.00f);
 			_log(hitChars.size() + " characters boosed by Sprint", 1);
+			string command = "<command class='update_character' id='" + sCaller + "' position='" + sPosi + "' ></command>";
 			_log("finished running getCharactersNearPosition", 1);
 		} else if (sKey == "ra_teleport_1.call") {
 			_log("ra teleport requested", 1);
 			_log("relocating character " + sCaller + " to " + sPosi, 1);
-			//<command class="update_character" id="sCaller" position="v3Posi" /></command>
-			_log("finished teleporting character_id " + sCaller, 1);
+			string command = "<command class='update_character' id='" + sCaller + "' position='" + sPosi + "' ></command><command class='update_camera' position='" + sPosi + "'></command>";
+			m_metagame.getComms().send(command);
+			_log("finished teleporting character_id " + sCaller + " to " + sPosi, 1);
 		}
 	////////////////////////
 	// ScopeSystems Calls //
@@ -132,6 +135,29 @@ class CallHandler : Tracker {
 			//if checkRange(sPosi target, call_effect_radius) {
 			//	_log(entity at target location + " is within effect area of " + sKey, 1);
 			//}
+		}
+		else if (sKey == "wt_pathping_1.call") {
+			array<const XmlElement@> seenVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1, 2.000f);
+			for (uint i = 0; i < seenVehicles.size(); ++i) {
+				const XmlElement@ info = seenVehicles[i];
+				int id = info.getIntAttribute("id");
+				//string sID = info.getStringAttribute("id");
+				_log("vehicle id: " + id, 1);
+				const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
+				int vType = vehInfo.getIntAttribute("type_id");
+				string sName = vehInfo.getStringAttribute("name");
+				string sType = vehInfo.getStringAttribute("type_id");
+				string sKey = vehInfo.getStringAttribute("key");
+				if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
+					_log("vehicle type " + sType + " (" + sKey + ") not a target worth seeing.", 1);
+					seenVehicles.erase(i);
+					i--;
+				} else {
+					_log("showing vehicle " + id + " (" + sName + ") on map", 1); 
+					string command = "<command class='set_spotting' vehicle_id='" + id + "' />";
+					m_metagame.getComms().send(command);
+				}
+			}
 		}
 		/* bool checkRange(const Vector3@ pos1, const Vector3@ pos2, float range) {
 		float length = getPositionDistance(pos1, pos2);

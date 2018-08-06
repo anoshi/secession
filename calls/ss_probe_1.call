@@ -3,13 +3,13 @@
   initiation_comment1="Give me eyes"
   acknowledge_comment="Can do"
   launch_comment="Probe en route">
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
+  <round instances="1"
+    instance_class="vehicle"
+    instance_key="ss_probe.vehicle"
+    instance_spread="0 0 0"
     common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
+    launch_time="3.0"
+    spawn_time="7.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
   <hud_icon filename="hud_binoculars.png" />

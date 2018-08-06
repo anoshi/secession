@@ -101,11 +101,11 @@
 		<model filename="ra_soldier_elite_1.xml" />
 
 		<resources file="common_lightfoot.resources" />
-		<resources file="ra_default.resources" />
+		<resources file="ra_light.resources" />
 
 		<item_class_existence_config>		
 			<!-- secondary weapon -->
-			<item_class_existence class="weapon" slot="1" probability="0.0" />
+			<item_class_existence class="weapon" slot="1" probability="0.4" />
 			<!-- wearables -->
 			<item_class_existence class="carry_item" slot="1" probability="1.0" />
 			<!-- backpack -->

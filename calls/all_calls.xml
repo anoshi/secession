@@ -8,10 +8,6 @@
 	<call file="supply_quad.call" />
 	<!-- end COMMON calls -->
 
-	<!-- EVENT cals -->
-    <call file="notify_metagame.call" />
-	<!-- end EVENT calls -->
-
 	<!-- CLASS calls -->
 	<!-- LIGHT FOOT -->
 	<call file="radio_jammer_1.call" />
