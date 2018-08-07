@@ -11,7 +11,26 @@
 	<projectile file="impact_grenade.projectile" />
 	<projectile file="c4.projectile" />
 	<projectile file="artillery_shell.projectile" />
+
+	<!-- FACTION-SPECIFIC THROWABLES -->
+
+	<!-- BC throwables -->
+
+	<!-- end BC throwables -->  
+
+	<!-- LC throwables -->
+	<projectile file="lc_heal_bomb.projectile" />
+	<!-- end LC throwables -->  
+	<!-- RA throwables -->
+
+	<!-- end RA throwables -->  
+	<!-- SS throwables -->
+
+	<!-- end SS throwables -->  
+	<!-- WT throwables -->
 	<projectile file="emp.projectile" />
+	<!-- end WT throwables -->  
+
 <!--
 	<projectile file="at_mine.projectile" />
 -->

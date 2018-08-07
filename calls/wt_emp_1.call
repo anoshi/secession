@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="WT EMP" key="wt_emp_1.call" notify_metagame="1" bob="yes"
+<call name="WT EMP" key="wt_emp_1.call" notify_metagame="1"
   initiation_comment1="Kill the power"
   acknowledge_comment="Confirmed"
   launch_comment="EMP launching">

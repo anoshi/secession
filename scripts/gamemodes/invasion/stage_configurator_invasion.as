@@ -30,10 +30,11 @@ class StageConfiguratorInvasion : StageConfigurator {
 	const array<FactionConfig@>@ getAvailableFactionConfigs() const {
 		array<FactionConfig@> availableFactionConfigs;
 
-		availableFactionConfigs.push_back(FactionConfig(-1, "green.xml", "Greenbelts", "0.1 0.5 0", "green_boss.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "grey.xml", "Graycollars", "0.5 0.5 0.5", "grey_boss.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "brown.xml", "Brownpants", "0.5 0.25 0", "brown_boss.xml"));
-
+		availableFactionConfigs.push_back(FactionConfig(-1, "bc.xml", "BlastCorp", "0.2 0.2 0.3", "bc.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "lc.xml", "LifeCraft", "1.0 0.2 0.2", "lc.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "ra.xml", "ReflexArq", "0.5 0.2 0.5", "ra.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "ss.xml", "ScopeSystems", "0.2 0.4 0.2", "ss.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "wt.xml", "WyreTek", "0.0 0.1 0.6", "wt.xml"));
 		return availableFactionConfigs;
 	}
 
