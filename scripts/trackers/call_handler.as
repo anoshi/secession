@@ -59,9 +59,8 @@ class CallHandler : Tracker {
 		// Currently works far too well; it doesn't stop 'repairing' a vehicle that is 100% health... Script a solution
 		else if (sKey == "lc_repair_bomb_1.call") {
 			_log("launching repair bombs near: " + sPosi, 1);
-			array<const XmlElement@> repVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 0, 2.000f);
+			array<const XmlElement@> repVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 0);
 			_log("vehicles to be repaired include: ", 1);
-			//_log(getVehiclesNearPosition(m_metagame, v3Posi, 0, 25.00f), 1);
 		}
 	////////////////////////
 	//  ReflexArq  Calls  //
@@ -73,17 +72,36 @@ class CallHandler : Tracker {
 			_log("now running getCharactersNearPosition", 1);
 			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 1, 25.00f);
 			_log(hitChars.size() + " characters affected by Nanobot Cloud", 1);
-			_log("finished running getCharactersNearPosition", 1);
+			for (uint i = 0; i < hitChars.size(); ++i) {
+				const XmlElement@ info = hitChars[i];
+				int id = info.getIntAttribute("id");
+				_log("character id:" + id, 1);
+				const XmlElement@ charInfo = getCharacterInfo(m_metagame, id);
+				string qComm = "<command class='make_query' id='nanobot_query'><data class='character' id='" + id + "' /></command>";
+				m_metagame.getComms().send(qComm);
+				string command = "<command class='soldier_ai' id='" + id + "'><parameter class='accuracy_offset' value='-1.0' /><parameter class='leader_sight_range' value='5.0'/><parameter class='team_member_sight_range' value='5.0'/></command>";
+				m_metagame.getComms().send(command);
+			}
+			_log("finished establishing RA Nanobot Cloud", 1);
 		} 
 		// The sprint call temporarily boosts the speed and willingness to charge attributes of friendly units near the caller 
 		else if (sKey == "ra_sprint_1.call") {
 			_log("ra sprint operating", 1);
 			sendFactionMessageKey(m_metagame, 0, "ra_sprint", dictionary = {}, 1.0);
+    		string command = "<command class='set_marker' faction_id='0' id='0' enabled='1' atlas_index='0' text='RANDOM TEXT YEEOW' position='" + sPosi + "' color='#ff0000' range='10.0'></command>";
+			m_metagame.getComms().send(command);
 			_log("now running getCharactersNearPosition", 1);
 			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 0, 25.00f);
 			_log(hitChars.size() + " characters boosed by Sprint", 1);
-			string command = "<command class='update_character' id='" + sCaller + "' position='" + sPosi + "' ></command>";
-			_log("finished running getCharactersNearPosition", 1);
+			for (uint i = 0; i < hitChars.size(); ++i) {
+				const XmlElement@ info = hitChars[i];
+				int id = info.getIntAttribute("id");
+				_log("character id:" + id, 1);
+				const XmlElement@ charInfo = getCharacterInfo(m_metagame, id);
+				string command = "<command class='soldier_ai' id='" + id + "'><parameter class='willingness_to_charge' value='1.0' /></command>";
+				m_metagame.getComms().send(command);
+			}
+			_log("finished running RA Sprint", 1);
 		} 
 		// The teleport call relocates the caller to the desired location. * Warning: May not transfer all equipment in the process *
 		else if (sKey == "ra_teleport_1.call") {
@@ -99,7 +117,7 @@ class CallHandler : Tracker {
 		// The x-ray call advises the contents of crates as well as armoured and hidden devices in the game. It allows SS troops to make 
 		// a judgement call as to whether or not they should attempt to reach the location in the first place.
 		else if (sKey == "ss_x-ray_1.call") {
-			array<const XmlElement@> xrayItem = getVehiclesNearPosition(m_metagame, v3Posi, 1, 2.000f);
+			array<const XmlElement@> xrayItem = getVehiclesNearPosition(m_metagame, v3Posi, 1);
 			for (uint i = 0; i < xrayItem.size(); ++i) {
 				const XmlElement@ info = xrayItem[i];
 				int id = info.getIntAttribute("id");
@@ -132,9 +150,7 @@ class CallHandler : Tracker {
 		else if (sKey == "wt_emp_1.call") {
 			_log("WT activated EMP at: " + event.getStringAttribute("target_position"), 1);
 			_log("now running getVehiclesNearPosition", 1);
-			array<const XmlElement@> hitVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1, 2.000f);
-			//SCRIPT:  sending: TagName=command class=make_query id=11.000 TagName=data class=vehicles faction_id=0.000 position=181.80701 17.85490 335.78699 range=25.000 
-			//SCRIPT:  received: TagName=query_result query_id=11     TagName=vehicle id=0     TagName=vehicle id=8     TagName=vehicle id=9     TagName=vehicle id=14     TagName=vehicle id=16     TagName=vehicle id=19     TagName=vehicle id=20     TagName=vehicle id=22
+			array<const XmlElement@> hitVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1);
 			_log(hitVehicles.size() + " vehicles in radius of EMP detonation", 1);
 			for (uint i = 0; i < hitVehicles.size(); ++i) {
 				const XmlElement@ info = hitVehicles[i];
@@ -143,20 +159,28 @@ class CallHandler : Tracker {
 				//SCRIPT:vehicle id: 0
 				const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
 				int vType = vehInfo.getIntAttribute("type_id");
+				Vector3 v3VehPosi = stringToVector3(vehInfo.getStringAttribute("position"));
 				string sName = vehInfo.getStringAttribute("name");
 				string sType = vehInfo.getStringAttribute("type_id");
 				string sKey = vehInfo.getStringAttribute("key");
 				//SCRIPT:  sending: TagName=command class=make_query id=12.000     TagName=data class=vehicle id=0.000 
 				//SCRIPT:  received: TagName=query_result query_id=12     TagName=vehicle block=9 9 forward=0.925284 0 0.379275 health=2 holder_id=0 id=0 key=jeep_2.vehicle name=Urbal UAS owner_id=0 position=323.597 12.4804 310.537 right=0.379267 0 -0.925287 type_id=93 
-				if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
-					_log("vehicle type " + sType + " (" + sKey + ") not affected by EMP.", 1);
-					hitVehicles.erase(i);
-					i--;
+				if (checkRange(v3Posi, v3VehPosi, 25.00f) ) {
+					if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
+						_log("vehicle type " + sType + " (" + sKey + ") not affected by EMP.", 1);
+						hitVehicles.erase(i);
+						i--;
+					} else {
+						if (rand(0, 99) <= 90) {
+						_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
+						string command = "<command class='update_vehicle' id='" + id + "' max_speed='0.0' acceleration='0' max_reverse_speed='0.0' locked='1'></command>";
+						m_metagame.getComms().send(command);
+						} else {
+							_log(sName + " passed save roll (>90). Not affected by EMP", 1 ); 
+						}
+					}
 				} else {
-					_log("applying EMP effect on vehicle " + sName, 1); 
-					string command = "<command class='update_vehicle' id='" + id + "' max_speed='0.0' acceleration='0' max_reverse_speed='0.0' locked='1'></command>";
-					// optional: locked='1'>
-					m_metagame.getComms().send(command);
+					_log("vehicle is out of range of EMP", 1);
 				}
 			}
 				//now the 'hitVehicles' array stores only the vehicles the the EMP blast will affect.
@@ -175,7 +199,7 @@ class CallHandler : Tracker {
 		}
 		// Pathping scans powered equipment (tanks, radio jammers, etc.) in use by the enemy and shows each item on the map.
 		else if (sKey == "wt_pathping_1.call") {
-			array<const XmlElement@> seenVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1, 2.000f);
+			array<const XmlElement@> seenVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1);
 			for (uint i = 0; i < seenVehicles.size(); ++i) {
 				const XmlElement@ info = seenVehicles[i];
 				int id = info.getIntAttribute("id");
