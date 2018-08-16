@@ -69,6 +69,7 @@
 		<resources file="bc_light.resources" />
 		<resources file="bc_heavy.resources" />
 		<resources file="bc_secondaries.resources" />
+		<resources file="bc_default.resources" />
 >
 
 		<item_class_existence_config>
