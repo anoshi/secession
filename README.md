@@ -44,7 +44,7 @@ The BNN posts regular announcements over the airwaves, advising listeners of loc
 #### Resource Points (RP)
 As players gain skill and complete tasks they can customise their character's abilities by spending `Resource Points` at upgrade centres.
 
-Players can access a tactical map at any time to see the status of the action in their local area as well as the greater world. Even though a corporation may be able to hold one area without difficultly, there are numerous other areas must be conquered and controlled to guarantee supply lines and ultimately claim victory over the other corporations.
+Players can access a tactical map at any time to see the status of the action in their local area as well as the greater world. Even though a corporation may be able to hold one area without difficultly, there are numerous other areas that must be conquered and controlled to guarantee supply lines and ultimately claim victory over the other corporations.
 
 #### Rules
 Each area of the world map has an associated `Resource Rating`, calculated by its land type and fortifications. While more than one corporation may be present in each world area, the combined `Command Rating` of allied units may not exceed the `Resource Rating` of the area. This rule presents a significant challenge for corporations that engage in alliances or pacts; each allied corporation's effective presence in world areas will be reduced by half or more if their allies wish to occupy the area as well.

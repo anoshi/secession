@@ -436,6 +436,20 @@ array<const XmlElement@>@ getCharactersNearPosition(const Metagame@ metagame, co
 }
 
 // --------------------------------------------------------
+array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId) {
+	array<const XmlElement@> vehicles;
+
+	XmlElement@ query = XmlElement(
+		makeQuery(metagame, array<dictionary> = {
+			dictionary = { {"TagName", "data"}, {"class", "vehicles"}, {"faction_id", factionId}, 
+						   {"position", position.toString()} } }));
+
+	const XmlElement@ doc = metagame.getComms().query(query);
+	vehicles = doc.getElementsByTagName("vehicle");
+
+	return vehicles;
+}
+// --------------------------------------------------------
 array<const XmlElement@>@ getCharactersNearVehicle(const Metagame@ metagame, int vehicleId, int factionId) {
 	array<const XmlElement@>@ characters;
 

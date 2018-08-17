@@ -2,9 +2,11 @@
 string getWorldInitCommand() {
 	string command = """
 <command class='set_world_situation'>
-	<faction id='0' name='Green' color='0.1 0.5 0' />
-	<faction id='1' name='Grey' color='0.5 0.5 0.5' />
-	<faction id='2' name='Brown' color='0.5 0.25 0' />
+	<faction id='0' name='BlastCorp' color='0.2 0.2 0.3' />
+	<faction id='1' name='LifeCraft' color='1.0 0.2 0.2' />
+	<faction id='2' name='ReflexArq' color='0.5 0.2 0.5' />
+	<faction id='3' name='ScopeSystems' color='0.2' 0.4 0.2' />
+	<faction id='4' name='WyreTek' color='0.0 0.1 0.6' />
 	<region id='0' name='map1' position='501.794 414.398' size='280.01 244.85' texture_rect='0.206162 0.569839 0.335796 0.683196'>
 	</region>
 	<region id='1' name='map2' position='265.534 415.328' size='266.566 248.404' texture_rect='0.0265609 0.569447 0.149971 0.684449'>

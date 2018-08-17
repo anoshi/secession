@@ -10,6 +10,8 @@
     common_spread="0 0 0"
     launch_time="1.0"
     spawn_time="2.0">
+    <effect class="launch" ref="ShadowAirplaneFlyby" shadow="1" />
+    <sound class="launch" fileref="plane_flyby.wav" />
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
   <round instances="2"

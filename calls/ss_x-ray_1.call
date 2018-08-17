@@ -1,14 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="SS X-Ray" key="ss_x-ray_1.call"
+<call name="SS X-Ray" key="ss_x-ray_1.call" notify_metagame="1"
   initiation_comment1="What's in the box?"
   acknowledge_comment="Engaging subharmonic state-changer"
   launch_comment="Contents examined">
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
+  <round launch_time="1.0"
     spawn_time="2.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>

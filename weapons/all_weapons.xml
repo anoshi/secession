@@ -1,84 +1,260 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapons>
   <!-- BC weapons -->
-  <weapon file="bc_lr.weapon" /> <!-- laser rifle -->
-  <weapon file="bc_mg.weapon" > <!-- machine gun -->
-  <weapon file="bc_sr.weapon" > <!-- sniper rifle -->
-  <weapon file="bc_sil.weapon" > <!-- silenced laser rifle -->
-  <weapon file="bc_sg.weapon" /> <!-- shotgun -->
-  <weapon file="bc_lrx.weapon" /> <!-- laser rifle extreme -->
-  <weapon file="bc_smg.weapon" /> <!-- sidearm -->
-  <weapon file="bc_sa_sil.weapon" /> <!-- silenced sidearm -->
-  <weapon file="bc_smg_pri.weapon" /> <!-- sidearm (as a primary) -->
-  <weapon file="bc_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
-  <weapon file="bc_rl.weapon" /> <!-- rocket launcher -->  
-  <!-- end BC weapons -->
-
-  <!-- LC weapons -->
-  <weapon file="lc_lr.weapon" /> <!-- laser rifle -->
-  <weapon file="lc_mg.weapon" /> <!-- machine gun -->
-  <weapon file="lc_sr.weapon" /> <!-- sniper rifle -->
-  <weapon file="lc_sil.weapon" /> <!-- silenced laser rifle -->
-  <weapon file="lc_sg.weapon" /> <!-- shotgun -->
-  <weapon file="lc_lrx.weapon" > <!-- laser rifle extreme -->
-  <weapon file="lc_heal_nade.weapon" > <!-- LC custom weapon -->
-  <weapon file="lc_smg.weapon" /> <!-- sidearm -->
-  <weapon file="lc_sa_sil.weapon" /> <!-- silenced sidearm -->
-  <weapon file="lc_smg_pri.weapon" /> <!-- sidearm (as a primary) -->
-  <weapon file="lc_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
-  <weapon file="lc_rl.weapon" /> <!-- rocket launcher -->  
-  <!-- end LC weapons -->
+  <weapon file="bc_lr.weapon"> <!-- laser rifle -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="bc_mg.weapon"> <!-- machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="bc_sr.weapon"> <!-- sniper rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="bc_sil.weapon"> <!-- silenced laser rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="bc_sg.weapon"> <!-- shotgun -->
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="bc_lrx.weapon"> <!-- laser rifle extreme -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
+  <weapon file="bc_smg.weapon"> <!-- sub machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="bc_sa_sil.weapon"> <!-- silenced sidearm -->
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="bc_smg_pri.weapon"> <!-- sub machine gun (as a primary) -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="bc_sa_sil_pri.weapon"> <!-- silenced sidearm (as a primary) -->  
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="bc_rl.weapon"> <!-- rocket launcher -->
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon>  
+  <!-- end BC weapons -->  
   
+  <!-- LC weapons -->
+  <weapon file="lc_lr.weapon"> <!-- laser rifle -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="lc_mg.weapon"> <!-- machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="lc_sr.weapon"> <!-- sniper rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="lc_sil.weapon"> <!-- silenced laser rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="lc_sg.weapon"> <!-- shotgun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="lc_lrx.weapon"> <!-- laser rifle extreme -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
+  <weapon file="lc_smg.weapon"> <!-- sub machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="lc_sa_sil.weapon"> <!-- silenced sidearm -->
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="lc_smg_pri.weapon"> <!-- sub machine gun (as a primary) -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="lc_sa_sil_pri.weapon"> <!-- silenced sidearm (as a primary) -->  
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="lc_rl.weapon"> <!-- rocket launcher -->
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon> 
+  <!-- end LC weapons -->
+
   <!-- RA weapons -->
-  <weapon file="ra_lr.weapon" /> <!-- laser rifle -->
-  <weapon file="ra_mg.weapon" /> <!-- machine gun -->
-  <weapon file="ra_sr.weapon" /> <!-- sniper rifle -->
-  <weapon file="ra_sil.weapon" /> <!-- silenced laser rifle -->
-  <weapon file="ra_sg.weapon" /> <!-- shotgun -->
-  <weapon file="ra_lrx.weapon" > <!-- laser rifle extreme -->
-  <weapon file="ra_smg.weapon" /> <!-- sidearm -->
-  <weapon file="ra_sa_sil.weapon" /> <!-- silenced sidearm -->
-  <weapon file="ra_smg_pri.weapon" /> <!-- sidearm (as a primary) -->
-  <weapon file="ra_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
-  <weapon file="ra_rl.weapon" /> <!-- rocket launcher -->
+  <weapon file="ra_lr.weapon"> <!-- laser rifle -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ra_mg.weapon"> <!-- machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ra_sr.weapon"> <!-- sniper rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ra_sil.weapon"> <!-- silenced laser rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="ra_sg.weapon"> <!-- shotgun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ra_lrx.weapon"> <!-- laser rifle extreme -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
+  <weapon file="ra_smg.weapon"> <!-- sub machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ra_sa_sil.weapon"> <!-- silenced sidearm -->
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ra_smg_pri.weapon"> <!-- sub machine gun (as a primary) -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ra_sa_sil_pri.weapon"> <!-- silenced sidearm (as a primary) -->  
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ra_rl.weapon"> <!-- rocket launcher -->
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon> 
   <!-- end RA weapons -->
 
   <!-- SS weapons -->
-  <weapon file="ss_lr.weapon" /> <!-- laser rifle -->
-  <weapon file="ss_mg.weapon" /> <!-- machine gun -->
-  <weapon file="ss_sr.weapon" /> <!-- sniper rifle -->
-  <weapon file="ss_sil.weapon" /> <!-- silenced laser rifle -->
-  <weapon file="ss_sg.weapon" > <!-- shotgun -->
-  <weapon file="ss_lrx.weapon" > <!-- laser rifle extreme -->
-  <weapon file="ss_smg.weapon" /> <!-- sidearm -->
-  <weapon file="ss_sa_sil.weapon" /> <!-- silenced sidearm -->
-  <weapon file="ss_smg_pri.weapon" /> <!-- sidearm (as a primary) -->
-  <weapon file="ss_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->  
-  <weapon file="ss_rl.weapon" /> <!-- rocket launcher -->
+  <weapon file="ss_lr.weapon"> <!-- laser rifle -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ss_mg.weapon"> <!-- machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ss_sr.weapon"> <!-- sniper rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ss_sil.weapon"> <!-- silenced laser rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="ss_sg.weapon"> <!-- shotgun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ss_lrx.weapon"> <!-- laser rifle extreme -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
+  <weapon file="ss_smg.weapon"> <!-- sub machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ss_sa_sil.weapon"> <!-- silenced sidearm -->
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ss_smg_pri.weapon"> <!-- sub machine gun (as a primary) -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="ss_sa_sil_pri.weapon"> <!-- silenced sidearm (as a primary) -->  
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="ss_rl.weapon"> <!-- rocket launcher -->
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon> 
   <!-- end SS weapons -->
 
   <!-- WT weapons -->
-  <weapon file="wt_lr.weapon" /> <!-- laser rifle -->
-  <weapon file="wt_mg.weapon" /> <!-- machine gun -->
-  <weapon file="wt_sr.weapon" /> <!-- sniper rifle -->
-  <weapon file="wt_sil.weapon" /> <!-- silenced laser rifle -->
-  <weapon file="wt_sg.weapon" > <!-- shotgun -->
-  <weapon file="wt_lrx.weapon" > <!-- laser rifle extreme -->
-  <weapon file="wt_smg.weapon" /> <!-- sidearm -->
-  <weapon file="wt_sa_sil.weapon" /> <!-- silenced sidearm -->
-  <weapon file="wt_smg_pri.weapon" /> <!-- sidearm (as a primary) -->
-  <weapon file="wt_sa_sil_pri.weapon" /> <!-- silenced sidearm (as a primary) -->
-  <weapon file="wt_rl.weapon" /> <!-- rocket launcher -->  
+  <weapon file="wt_lr.weapon"> <!-- laser rifle -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_mg.weapon"> <!-- machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="wt_sr.weapon"> <!-- sniper rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="wt_sil.weapon"> <!-- silenced laser rifle -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="wt_sg.weapon"> <!-- shotgun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="wt_lrx.weapon"> <!-- laser rifle extreme -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
+  <weapon file="wt_smg.weapon"> <!-- sub machine gun -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="wt_sa_sil.weapon"> <!-- silenced sidearm -->
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="wt_smg_pri.weapon"> <!-- sub machine gun (as a primary) -->
+    <capacity source="rank" source_value="0.0" value="1" />
+  </weapon>
+  <weapon file="wt_sa_sil_pri.weapon"> <!-- silenced sidearm (as a primary) -->  
+    <capacity source="rank" source_value="0.0" value="0" />  
+    <capacity source="rank" source_value="0.05" value="1" />
+  </weapon>
+  <weapon file="wt_rl.weapon"> <!-- rocket launcher -->
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
+  </weapon> 
   <!-- end WT weapons -->
 
   <!-- SHARED / generic weapons -->
   <weapon file="riot_shield.weapon" />
   <weapon file="medikit.weapon" />
-  <weapon file="cover_resource.weapon" />
-  <weapon file="binoculars.weapon" /> 
-  <weapon file="claymore_resource.weapon" />
-  <weapon file="wrench.weapon" />
-  <weapon file="wrench_small.weapon" />
+  <weapon file="cover_resource.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.025" value="1" />
+  </weapon>
+  <weapon file="binoculars.weapon"> 
+	<capacity source="rank" source_value="0.0" value="0" />
+	<capacity source="rank" source_value="0.025" value="1" />
+  </weapon>   
+  <weapon file="claymore_resource.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+    <capacity source="rank" source_value="0.2" value="2" />
+    <capacity source="rank" source_value="0.6" value="3" />
+  </weapon>
+  <weapon file="wrench.weapon">
+    <commonness value="0.0" in_stock="1" />
+    <capacity source="rank" source_value="0.0" value="4" />
+  </weapon>
+  <weapon file="wrench_small.weapon">
+    <commonness value="0.0" in_stock="1" />  
+    <capacity source="rank" source_value="0.0" value="4" />
+  </weapon>
   <weapon file="bandage.weapon" />     
   <!-- end SHARED / generic weapons -->
   
@@ -108,67 +284,273 @@
   <weapon file="mg_resource.weapon" >
   <weapon file="technical_mg.weapon" /> 
   <weapon file="radar_tank_cannon.weapon" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
   <weapon file="deployable_minig.weapon" />
   <weapon file="minig_resource.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
   <weapon file="deployable_gl.weapon" />
   <weapon file="gl_resource.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+    <capacity source="rank" source_value="0.5" value="2" />    
+  </weapon>  
   <weapon file="mortar.weapon" />
   <weapon file="mortar_resource.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
   <weapon file="tow.weapon" />
   <weapon file="tow_resource.weapon" >
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+    <capacity source="rank" source_value="1.0" value="2" />
+  </weapon>
   <!-- end VEHICULAR / MOUNTED weapons
 
   <!-- SPECIAL / bonus / secret weapons -->
-  <weapon file="aks74u.weapon" />
-  <weapon file="f2000.weapon" />
-  <weapon file="benelli_m4.weapon" />
-  <weapon file="pepperdust.weapon" />
-  <weapon file="p90.weapon" />
-  <weapon file="ns2000.weapon" />
-  <weapon file="vss_vintorez.weapon" />
-  <weapon file="stoner_lmg.weapon" />
+  <weapon file="aks74u.weapon">
+    <commonness value="0.0005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
+  <weapon file="f2000.weapon">
+    <commonness value="0.0006" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon>
+  <weapon file="benelli_m4.weapon">
+    <commonness value="0.0006" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>
+  <weapon file="pepperdust.weapon">
+    <commonness value="0.0006" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>
+  <weapon file="p90.weapon">
+    <commonness value="0.0005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon>
+  <weapon file="ns2000.weapon">
+    <commonness value="0.0005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>
+  <weapon file="vss_vintorez.weapon">
+    <commonness value="0.0002" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>
+  <weapon file="stoner_lmg.weapon">
+    <commonness value="0.0003" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>
   <weapon file="m79.weapon" >
-  <weapon file="xm25.weapon" />
-  <weapon file="desert_eagle.weapon" />
-  <weapon file="desert_eagle_gold.weapon" />
-  <weapon file="aa-12.weapon" />
-  <weapon file="mgl_flasher.weapon" />
-  <weapon file="barrett_m107.weapon" />
-  <weapon file="xm8.weapon" />
-  <weapon file="microgun.weapon" />
-  <weapon file="kriss_vector.weapon" />
-  <weapon file="javelin.weapon" />
-  <weapon file="benelli_m4_supp.weapon" />
-  <weapon file="musket.weapon" />
-  <weapon file="model_29.weapon" />
-  <weapon file="m712.weapon" />
-  <weapon file="mg42.weapon" /> 
-  <weapon file="lahti_l39.weapon" /> 
-  <weapon file="sawnoff.weapon" /> 
-  <weapon file="milkor_mgl.weapon" /> 
-  <weapon file="m202_flash.weapon" />
-  <weapon file="beretta_93r.weapon" />
-  <weapon file="apr.weapon" />
-  <weapon file="steyr_aug.weapon" />
-  <weapon file="scarssr.weapon" />
-  <weapon file="mp7.weapon" />
-  <weapon file="chain_saw.weapon" />
-  <weapon file="pecheneg_bullpup.weapon" />
-  <weapon file="mk23.weapon" />
-  <weapon file="honey_badger.weapon" />
-  <weapon file="m60e4.weapon" />
-  <weapon file="jackhammer.weapon" />
-  <weapon file="uts15.weapon" />
-  <weapon file="smaw.weapon" />
-  <weapon file="ares_shrike.weapon" />  
-  <weapon file="paw20.weapon" /> 
-  <weapon file="stoner62.weapon" /> 
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.25" value="1" />
+  </weapon>
+  <weapon file="xm25.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>
+  <weapon file="desert_eagle.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="desert_eagle_gold.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+  </weapon>
+  <weapon file="aa-12.weapon">
+    <commonness value="0.0004" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon>
+  <weapon file="mgl_flasher.weapon">
+    <commonness value="0.0002" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.25" value="1" />
+  </weapon>
+  <weapon file="barrett_m107.weapon">
+    <commonness value="0.0001" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+  </weapon>
+  <weapon file="xm8.weapon">
+    <commonness value="0.0004" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon> 
+  <weapon file="microgun.weapon">
+    <commonness value="0.00004" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+  </weapon>
+  <weapon file="kriss_vector.weapon">
+    <commonness value="0.0001" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+  </weapon>  
+  <weapon file="javelin.weapon">
+    <commonness value="0.01" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+    <capacity source="rank" source_value="0.25" value="2" />
+    <capacity source="rank" source_value="0.5" value="3" />        
+  </weapon> 
+  <weapon file="benelli_m4_supp.weapon">
+    <commonness value="0.0001" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>
+  <weapon file="musket.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.7" value="1" />
+  </weapon>   
+  <weapon file="model_29.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon>  
+  <weapon file="m712.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon> 
+  <weapon file="mg42.weapon"> 
+    <commonness value="0.00001" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />  
+  </weapon> 
+  <weapon file="lahti_l39.weapon"> 
+    <commonness value="0.000005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />  
+  </weapon> 
+  <weapon file="sawnoff.weapon"> 
+    <commonness value="0.0005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />  
+  </weapon>  
+  <weapon file="milkor_mgl.weapon"> 
+    <commonness value="0.00002" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.7" value="1" />  
+  </weapon> 
+  <weapon file="m202_flash.weapon">
+    <commonness value="0.06" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />
+    <capacity source="rank" source_value="0.8" value="2" /> 
+    <capacity source="rank" source_value="1.0" value="3" />       
+  </weapon> 
+  <weapon file="beretta_93r.weapon">
+    <commonness value="0.0010" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.15" value="1" />
+  </weapon>   
+  <weapon file="apr.weapon">
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.25" value="1" />
+  </weapon> 
+  <weapon file="steyr_aug.weapon">
+    <commonness value="0.0002" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>
+  <weapon file="scarssr.weapon">
+    <commonness value="0.0002" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />
+  </weapon> 
+  <weapon file="mp7.weapon">
+    <commonness value="0.0010" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon>  
+  <weapon file="chain_saw.weapon">
+    <commonness value="0.00005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+  </weapon> 
+  <weapon file="pecheneg_bullpup.weapon">
+    <commonness value="0.00005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+  </weapon>   
+  <weapon file="mk23.weapon">
+    <commonness value="0.0" in_stock="1" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="1" />
+  </weapon> 
+  <weapon file="honey_badger.weapon">
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />
+  </weapon>
+  <weapon file="m60e4.weapon">
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />
+  </weapon>
+  <weapon file="jackhammer.weapon">
+    <commonness value="0.0001" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />  
+  </weapon> 
+  <weapon file="uts15.weapon">
+    <commonness value="0.004" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.25" value="1" />  
+  </weapon>     
+  <weapon file="smaw.weapon">
+    <commonness value="0.0002" in_stock="1" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.1" value="1" />
+    <capacity source="rank" source_value="0.2" value="2" />
+    <capacity source="rank" source_value="0.5" value="3" />        
+  </weapon>      
+  <weapon file="ares_shrike.weapon">  
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />
+  </weapon> 
+  <weapon file="paw20.weapon"> 
+    <commonness value="0.00005" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />  
+  </weapon>  
+  <weapon file="stoner62.weapon"> 
+    <commonness value="0.00002" in_stock="0" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.5" value="1" />  
+  </weapon> 
   <weapon file="wiesel_mg3.weapon" />
   <weapon file="wiesel_tow.weapon" />  
-  <weapon file="taser.weapon" />  
-  <weapon file="tracer_dart.weapon" />  
-  <weapon file="flamethrower.weapon" />  
-  <weapon file="aa12_frag.weapon" />  
+  <weapon file="taser.weapon">  
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
+  </weapon>   
+  <weapon file="tracer_dart.weapon">  
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.4" value="5" />
+  </weapon>    
+  <weapon file="flamethrower.weapon">  
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.6" value="1" />
+  </weapon>    
+  <weapon file="aa12_frag.weapon">  
+    <commonness value="0.0" in_stock="0" />  
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.3" value="1" />
+  </weapon>   
   <!-- end SPECIAL / bonus / secret weapons -->
-  
 </weapons>

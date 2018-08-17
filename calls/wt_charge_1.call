@@ -13,8 +13,10 @@
       active="1">
     </command>
     <command 
-      class="notify"
-      text="Troops charging">
+      class="chat"
+      text="Troops charging"
+      priority="1"
+      faction_id="0">
     </command>
     <sound class="spawn" fileref="achievement2_1.wav" volume="0.07" />
   </round>
@@ -22,8 +24,10 @@
    <round launch_time="16.0"
     spawn_time="16.0">
     <command 
-      class="notify" 
-      text="Charge fading">
+      class="chat" 
+      text="Charge fading"
+      priority="1"
+      faction_id="0">
     </command>
   </round>
 
@@ -37,8 +41,11 @@
       active="1">
     </command>
     <command 
-      class="notify" 
-      text="Charge ended">
+      class="chat" 
+      text="Charge ended"
+      priorty="1"
+      faction_id="0"
+      >
     </command>
     <sound class="launch" fileref="achievement1.wav" volume="0.07" />
   </round>  

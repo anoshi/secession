@@ -8,10 +8,6 @@
 	<call file="supply_quad.call" />
 	<!-- end COMMON calls -->
 
-	<!-- EVENT cals -->
-    <call file="notify_metagame.call" />
-	<!-- end EVENT calls -->
-
 	<!-- CLASS calls -->
 	<!-- LIGHT FOOT -->
 	<call file="radio_jammer_1.call" />
@@ -26,6 +22,7 @@
 	<!-- BlastCorp calls -->
 	<call file="bc_annihilator_1.call" />
 	<call file="bc_grenade_launcher_turret_1.call" />
+	<call file="bc_hot_potato_1.call" />
 	<call file="bc_minigun_turret_1.call" />
 	<call file="bc_power_armour_1.call" />
 	<!-- end BlastCorp calls -->
@@ -53,6 +50,7 @@
 	<call file="wt_emp_1.call" />
 	<call file="wt_jammer_1.call" />
 	<call file="wt_pathping_1.call" />
+	<call file="wt_propaganda_1.call" />
 	<!-- end WyreTek calls -->
 	<!-- end FACTION calls -->
 </calls>

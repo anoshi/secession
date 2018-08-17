@@ -27,8 +27,10 @@
   <round launch_time="14.0"
     spawn_time="16.0">
     <command 
-      class="notify" 
-      text="Nanobot Cloud Dissipating">
+      class='chat' 
+      text='Nanobot Cloud Dissipating'
+      priority='1'
+      faction_id='0'>
     </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" /> <!-- sound of gas cloud fading out -->
   </round>

@@ -5,4 +5,6 @@
   <weapon key='ra_lrx.weapon' />
 
   <carry_item key="ra_vest_1.carry_item" enabled="1" />
+  <carry_item key="ra_vest2.carry_item" enabled="1" />
+	<carry_item key="ra_vest3.carry_item" enabled="1" />
 </resources>

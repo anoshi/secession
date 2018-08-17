@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available to LifeCraft Grenadiers -->
+<resources> 
+	<carry_item key="lc_vest1.carry_item" enabled="1" />
+	<carry_item key="lc_vest2.carry_item" enabled="1" />	
+</resources>

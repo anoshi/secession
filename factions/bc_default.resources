@@ -10,6 +10,7 @@
 	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="bc_annihilator_1.call" />
 	<call key="bc_grenade_launcher_turret_1.call" />
+	<call key="bc_hot_potato_1.call" />
 	<call key="bc_minigun_turret_1.call" />
 	<call key="bc_power_armour_1.call" />
 

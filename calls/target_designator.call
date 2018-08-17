@@ -1,5 +1,5 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
-<call name="target designator" key="target_designator.call"
+<call name="target designator" key="target_designator.call"  notify_metagame="1"
   initiation_comment1="Target Painted"
   acknowledge_comment="Confirmed. Maintain lock for 10"
   launch_comment="Sandbags on the way">
