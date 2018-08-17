@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available to ReflexArq Demolition Troopers -->
+<resources> 
+	<weapon key="ra_rl.weapon" />
+
+	<carry_item key="ra_vest1.carry_item" enabled="1" />
+	<carry_item key="ra_vest2.carry_item" enabled="1" />
+	<carry_item key="ra_vest3.carry_item" enabled="1" />	
+</resources>
