@@ -15,7 +15,9 @@
 	<!-- BEGIN calls -->
 	<comment key="ra_nanobot_cloud" text="Nanobot cloud spreading" />
 	<comment key="ra_sprint" text="ReflexArq troops are boosted" />
-	<!-- END calls>
+	<comment key="wt_propaganda" text="Join WyreTek and receive this set of steak knives!" />
+	<comment key="wt_propaganda" text="But wait... There's more!" />
+	<!-- END calls>-->
 	<!-- END secession comment keys --> 
 
 	<comment key="Driver, abandon vehicle" />

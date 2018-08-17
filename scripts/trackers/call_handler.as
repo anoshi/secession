@@ -278,6 +278,31 @@ class CallHandler : Tracker {
 				}
 			}
 		}
+		// The Propaganda call has a chance to convert enemy troops (AI only) in the area to fight for WyreTek
+		else if (sCall == "wt_propaganda_1.call") {
+			_log("WT propaganda is filling the airwaves", 1);
+			sendFactionMessageKey(m_metagame, 0, "wt_propaganda", dictionary = {}, 1.0);
+			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 1, 50.00f);
+			_log(hitChars.size() + " characters within range of propaganda", 1);
+			for (uint i = 0; i < hitChars.size(); ++i) {
+				const XmlElement@ info = hitChars[i];
+				int id = info.getIntAttribute("id");
+				if (rand(0, 99) < 75) {
+					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", id);
+					string charPosi = qResult.getStringAttribute("position");
+					//string charClass = info.getStringAttribute("soldier_group_name");
+					_log("Character " + id + " at position " + charPosi + " failed save roll (<75). Applying effect", 1);
+					killCharacter(m_metagame, id);
+					//string convertCommand = "<command class='update_character' id='" + id + "' faction_id='0' >/></command>";
+					//m_metagame.getComms().send(convertCommand);
+					string spawnCommand = "<command class='create_instance' instance_class='character' faction_id='0' position='" + charPosi + "' instance_key='civilian' /></command>";
+					m_metagame.getComms().send(spawnCommand);
+				} else {
+					_log("Character " + id + " passed save roll (>=75). Not affected by Propaganda", 1 ); 
+				}
+			}
+			_log("finished distributing propaganda", 1);
+		} 
 		/*if (event.hasAttribute("character_id")) {
 			_log("Attribute 'character_id' is stored in " + sCall, 1);
 		} else { 

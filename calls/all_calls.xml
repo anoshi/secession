@@ -50,6 +50,7 @@
 	<call file="wt_emp_1.call" />
 	<call file="wt_jammer_1.call" />
 	<call file="wt_pathping_1.call" />
+	<call file="wt_propaganda_1.call" />
 	<!-- end WyreTek calls -->
 	<!-- end FACTION calls -->
 </calls>
