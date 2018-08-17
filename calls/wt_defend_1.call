@@ -13,8 +13,10 @@
       active="1">
     </command>
     <command 
-      class="notify"
-      text="Troops adopting defensive posture">
+      class="chat"
+      text="Troops adopting defensive posture"
+      priority="1"
+      faction="0">
     </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
@@ -22,8 +24,10 @@
    <round launch_time="41.0"
     spawn_time="43.0">
     <command 
-      class="notify" 
-      text="Resuming balanced strategy">
+      class="chat" 
+      text="Resuming balanced strategy"
+      priority="1"
+      faction="0">
     </command>
   </round>
 
@@ -37,8 +41,10 @@
       active="1">
     </command>
     <command 
-      class="notify" 
-      text="Charge ended">
+      class="chat" 
+      text="Charge ended"
+      priority="1"
+      faction="0">
     </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>  

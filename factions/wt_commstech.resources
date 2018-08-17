@@ -10,4 +10,5 @@
 	<carry_item key="wt_vest3.carry_item" enabled="0" />
 
 	<!--<call key="some_call_noone_else_has.call" />-->
+	<call key="wt_propaganda_1.call" />
 </resources>

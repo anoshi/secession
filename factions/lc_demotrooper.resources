@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Resources available to LifeCraft Demolition Troopers -->
+<resources> 
+	<weapon key="lc_rl.weapon" />
+
+	<carry_item key="lc_vest1.carry_item" enabled="1" />
+	<carry_item key="lc_vest2.carry_item" enabled="1" />
+	<carry_item key="lc_vest3.carry_item" enabled="1" />
+</resources>

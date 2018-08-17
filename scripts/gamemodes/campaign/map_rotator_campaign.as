@@ -713,7 +713,7 @@ class MapRotatorCampaign : MapRotatorInvasion {
 						// should've been completed
 						_log("failsafe getting triggered, declaring this map done");
 						//m_metagame.getComms().send("declare_winner 0");
-						for (int i = 1; i < m_metagame.getFactionCount(); ++i) {
+						for (uint i = 1; i < m_metagame.getFactionCount(); ++i) {
 							m_metagame.getComms().send("<command class='set_match_status' lose='1' faction_id='" + i + "' />");
 						}
 						m_metagame.getComms().send("<command class='set_match_status' win='1' faction_id='0' />");

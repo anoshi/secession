@@ -55,9 +55,9 @@
 		<hud_icon filename="hud_rank17.png" />
 	</rank>  
 
-	<!-- -------------- -->
+	<!-- ///////////// -->
 	<!-- default group -->
-	<!-- -------------- -->
+	<!-- ///////////// -->
 	<soldier name="default" spawn_score="0.0">
 		<character filename="default_male.character" />
 		<ai filename="default.ai" />
@@ -91,9 +91,9 @@
 
 	</soldier>
 
-	<!-- ---------- -->
+	<!-- ////////// -->
 	<!-- LIGHT FOOT -->
-	<!-- ---------- -->
+	<!-- ////////// -->
 	<soldier name="lightfoot" spawn_score="0.1" copy_from="default">
 		<ai filename="lightfoot.ai" />
 
@@ -119,9 +119,9 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- ------------- -->
+	<!-- ///////////// -->
 	<!-- HEAVY TROOPER -->
-	<!-- ------------- -->
+	<!-- ///////////// -->
 	<soldier name="heavytrooper" spawn_score="0.25" copy_from="default">
 		<ai filename="heavytrooper.ai" />
 
@@ -147,14 +147,14 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- ------ -->
+	<!-- ////// -->
 	<!-- SNIPER -->
-	<!-- ------ -->
+	<!-- ////// -->
 	<soldier name="sniper" spawn_score="0.3" squad_size_xp_cap="0.5">
 		<character filename="default_male.character" />
 		<ai filename="sniper.ai" />
 
-		<model filename="ss_soldier_elite_1.xml" />
+		<model filename="ss_soldier_elite_1.xml" /><!-- this faction's best group/class -->
 
 		<resources file="common_sniper.resources" />
 		<resources file="ss_sniper.resources" />
@@ -178,14 +178,15 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- --------- -->
+	<!-- ///////// -->
 	<!-- GRENADIER -->
-	<!-- --------- -->
+	<!-- ///////// -->
 	<soldier name="grenadier" spawn_score="0.05" copy_from="default">
 		<ai filename="grenadier.ai" />
 
 		<resources file="common_grenadier.resources" />
 		<resources file="ss_1h_weapons.resources" />
+		<resources file="ss_grenadier.resources" />
 
 		<item_class_existence_config>
 			<!-- secondary weapon -->
@@ -206,14 +207,15 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- ------------------- -->
+	<!-- /////////////////// -->
 	<!-- DEMOLITIONS TROOPER -->
-	<!-- ------------------- -->
+	<!-- /////////////////// -->
 	<soldier name="demotrooper" spawn_score="0.05" copy_from="default">
 		<ai filename="demotrooper.ai" />
 
 		<resources file="common_demotrooper.resources" />
 		<resources file="ss_1h_weapons.resources" />
+		<resources file="ss_demotrooper.resources" />
 
 		<item_class_existence_config>
 			<!-- secondary weapon -->
@@ -234,9 +236,9 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- ----- -->
+	<!-- ///// -->
 	<!-- MEDIC -->
-	<!-- ----- -->
+	<!-- ///// -->
 	<soldier name="medic" spawn_score="0.1" copy_from="default">
 		<ai filename="medic.ai" />
 
@@ -257,14 +259,14 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- ---------- -->
+	<!-- ////////// -->
 	<!-- COMMS TECH -->
-	<!-- ---------- -->
+	<!-- ////////// -->
 	<soldier name="commstech" spawn_score="0.1"  copy_from="default">
 		<ai filename="commstech.ai" />
 
 		<resources file="common_commstech.resources" />
-		<resources file="ss_1h_weapons.resources" />
+		<resources file="ss_1h_weapons.resources" /><!-- carries a radio, no armour -->
 
 		<item_class_existence_config>
 			<!-- secondary weapon -->
@@ -285,9 +287,9 @@
 		</attribute_config>
 	</soldier>
 
-	<!-- --------- -->
+	<!-- ///////// -->
 	<!-- CIVILIANS -->
-	<!-- --------- -->
+	<!-- ///////// -->
 	<soldier name="civilian" spawn_score="0.05">
 		<character filename="default_male.character" />
 		<ai filename="civilian.ai" />
@@ -313,9 +315,9 @@
 		</attribute_config>
 	</soldier>
   
-	<!-- -------------- -->
+	<!-- //////////////// -->
 	<!-- supply box group -->
-	<!-- -------------- -->
+	<!-- //////////////// -->
 	<soldier name="supply" spawn_score="0.0">
 		<resources file="common_supply.resources" />
 		<resources file="ss_supply.resources" />

@@ -116,7 +116,7 @@ class GiftItemDeliveryRandomRewarder : ItemDeliveryRewarder {
 					array<ScoredResource@>@ rewardItems = @m_rewardItemPasses[i];
 
 					ScoredResource@ r = getRandomScoredResource(rewardItems);
-					for (uint k = 0; k < r.m_amount; ++k) {
+					for (int k = 0; k < r.m_amount; ++k) {
 						addItemInBackpack(m_metagame, characterId, r);
 					}
 

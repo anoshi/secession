@@ -5,7 +5,7 @@
   launch_comment="Synthetic warp fabric delivering">
   <round instances="1"
     instance_class="carry_item"
-    instance_key="uniform_rambo.carry_item"
+    instance_key="bc_power_armour.carry_item"
     instance_spread="0.5 0.5 0.5"
     common_spread="0 0 0"
     launch_time="1.0"
