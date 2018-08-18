@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projectile class="grenade" name="lifecraft repair bomb" key="lc_repair_bomb.projectile" slot="1" pulldown_in_air="20.0">
     <result class="blast" radius="15.0" damage="-5.15" push="0.1" decal="0" />
+    <!--<result class="xml_command"><command ... /></result>-->
     <trigger class="impact">
       <collider class="terrain" enabled="1" />     
       <collider class="static_object" enabled="1" /> 
