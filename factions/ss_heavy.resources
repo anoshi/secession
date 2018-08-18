@@ -4,6 +4,9 @@
   <weapon key='ss_sg.weapon' />
   <weapon key='ss_rl.weapon' />
 
+	<call key="ss_exp_rounds_1.call" />
+  <vehicle key="ss_exp_crate.vehicle" />
+
   <carry_item key="ss_vest_1.carry_item" enabled="0" />
   <carry_item key="ss_vest_2.carry_item" enabled="1" />
   <carry_item key="ss_vest_3.carry_item" enabled="1" />

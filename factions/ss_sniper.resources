@@ -3,5 +3,8 @@
 <resources>
 	<weapon key='ss_sr.weapon' />
 
+	<call key="ss_ap_rounds_1.call" />
 	<call key="ss_probe_1.call" />
+
+	<vehicle key="ss_ap_crate.vehicle" />
 </resources>

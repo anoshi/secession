@@ -8,6 +8,7 @@
  	<vehicle key="transport_truck.vehicle" />
 
 	<!-- faction-specific calls (not listed in common.resources) -->
+	<call key="lc_conversion_1.call" />
 	<call key="lc_force_field_1.call" />
 	<call key="lc_heal_bomb_1.call" />
 	<call key="lc_repair_bomb_1.call" />

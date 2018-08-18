@@ -19,7 +19,6 @@ class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 	array<Resource@>@ getUnlockWeaponList2() const {
 		array<Resource@> list;
 		// laptop delivery rewards
-
 		list.push_back(Resource("mp5sd.weapon", "weapon"));
 		list.push_back(Resource("scorpion-evo.weapon", "weapon"));
 		list.push_back(Resource("qcw-05.weapon", "weapon"));
