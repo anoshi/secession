@@ -39,7 +39,7 @@ class CallHandler : Tracker {
 	////////////////////////
 	//   Common   Calls   //
 	////////////////////////
-		// Notify metage call is a placeholder call to test calls that have 'notify_metagame="1"' set
+		// Notify metagame call is a placeholder call to test calls that have 'notify_metagame="1"' set
 		if (sCall == "notify_metagame.call") {
 			sendFactionMessageKey(m_metagame, 0, "notify call", dictionary = {}, 1.0);
 		}
@@ -77,6 +77,32 @@ class CallHandler : Tracker {
 	////////////////////////
 	//  LifeCraft  Calls  //
 	////////////////////////
+		// The Conversion call has a chance to convert enemy troops (AI only) in the area to fight for LifeCraft
+		else if (sCall == "lc_conversion_1.call") {
+			_log("LC troops attempting to convert nearby enemies", 1);
+			sendFactionMessageKey(m_metagame, 0, "lc_conversion", dictionary = {}, 1.0);
+			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 1, 50.00f);
+			_log(hitChars.size() + " characters available to convert", 1);
+			for (uint i = 0; i < hitChars.size(); ++i) {
+				const XmlElement@ info = hitChars[i];
+				int id = info.getIntAttribute("id");
+				if (rand(0, 99) < 60) {
+					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", id);
+					string charPosi = qResult.getStringAttribute("position");
+					//string charClass = info.getStringAttribute("soldier_group_name");
+					_log("Character " + id + " at position " + charPosi + " failed save roll (<60). Applying effect", 1);
+					killCharacter(m_metagame, id);
+					// or, we can make it a multiplayer job only. Kills enemy player and changes their faction to LC
+					//string convertCommand = "<command class='update_player' id='" + id + "' faction_id='0' >/></command>";
+					//m_metagame.getComms().send(convertCommand);
+					string spawnCommand = "<command class='create_instance' instance_class='character' faction_id='0' position='" + charPosi + "' instance_key='civilian' /></command>";
+					m_metagame.getComms().send(spawnCommand);
+				} else {
+					_log("Character " + id + " passed save roll (>=60). Not converted", 1 ); 
+				}
+			}
+			_log("finished conversion attempt", 1);
+		} 
 		// The LC Forcefield places a red translucent dome over the area for a period. Characters can move 
 		// through the field, but projectiles that hit the dome ricochet or explode 
 		else if (sCall == "lc_force_field_1.call") {
@@ -99,20 +125,18 @@ class CallHandler : Tracker {
 				string sKey = vehInfo.getStringAttribute("key");
 				if (checkRange(v3Posi, v3VehPosi, 25.00f) ) {
 					if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
-						_log("vehicle type " + sType + " (" + sKey + ") not affected by EMP.", 1);
+						_log("vehicle type " + sType + " (" + sKey + ") not affected by Repair Bomb.", 1);
 						repVehicles.erase(i);
 						i--;
 					} else {
 						if (rand(0, 99) <= 90) {
-						_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
-						string command = "<command class='update_vehicle' id='" + id + "' max_speed='0.0' acceleration='0' max_reverse_speed='0.0' locked='1'></command>";
+						_log(sName + " being repaired by Repair Bomb", 1); 
+						string command = "<command class='update_vehicle' id='" + id + "' health='0.0'></command>";
 						m_metagame.getComms().send(command);
 						} else {
 							_log(sName + " passed save roll (>90). Not affected by EMP", 1 ); 
 						}
 					}
-				} else {
-					_log("vehicle is out of range of EMP", 1);
 				}
 			}
 			_log("vehicles to be repaired include: ", 1);
@@ -175,6 +199,21 @@ class CallHandler : Tracker {
 	////////////////////////
 	// ScopeSystems Calls //
 	////////////////////////
+		// The armour-piercing rounds call was intended to grant armour-piercing qualities (kill_probability="3.01")
+		// to  projectiles fired by SS sniper rifles for a period. This does not appear to be possible, so the call drops 
+		// a crate containing a SS-specific sniper rifle (that fires AP rounds) at the location requested by the caller
+		else if (sCall == "ss_ap_rounds_1.call") {
+		}
+		// The explosive rounds call was intended to grant explosive qualities to projectiles fired by SS shotguns and sniper 
+		// rifles for a period. This does not appear to be possible, so the call drops a crate containing a SS-specific shotgun
+		// (that fires explosive rounds) at the location requested by the caller
+		else if (sCall =="ss_explosive_rounds_1.call") {
+		}
+		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
+		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and destroy the device.
+		else if (sCall == "ss_probe_1.call") {
+			_log("SS probe not implemented, yet", 1);
+		}
 		// The x-ray call advises the contents of crates as well as armoured and hidden devices in the game. It allows SS troops to make 
 		// a judgement call as to whether or not they should attempt to reach the location in the first place.
 		else if (sCall == "ss_x-ray_1.call") {
@@ -199,11 +238,6 @@ class CallHandler : Tracker {
 				}
 			}
 		}
-		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
-		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and destroy the device.
-		else if (sCall == "ss_probe.call") {
-			_log("SS probe not implemented, yet", 1);
-		}
 	////////////////////////
 	//   WyreTek  Calls   //
 	////////////////////////
@@ -212,7 +246,6 @@ class CallHandler : Tracker {
 			_log("WT activated EMP at: " + event.getStringAttribute("target_position"), 1);
 			_log("now running getVehiclesNearPosition", 1);
 			array<const XmlElement@> hitVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1);
-			_log(hitVehicles.size() + " vehicles in radius of EMP detonation", 1);
 			for (uint i = 0; i < hitVehicles.size(); ++i) {
 				const XmlElement@ info = hitVehicles[i];
 				int id = info.getIntAttribute("id");
@@ -231,7 +264,7 @@ class CallHandler : Tracker {
 					} else {
 						if (rand(0, 99) <= 90) {
 						_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
-						string command = "<command class='update_vehicle' id='" + id + "' max_speed='0.0' acceleration='0' max_reverse_speed='0.0' locked='1'></command>";
+						string command = "<command class='update_vehicle' id='" + id + "' forward='0 0 0' locked='1'></command>";
 						m_metagame.getComms().send(command);
 						} else {
 							_log(sName + " passed save roll (>90). Not affected by EMP", 1 ); 
@@ -243,11 +276,7 @@ class CallHandler : Tracker {
 			}
 				//now the 'hitVehicles' array stores only the vehicles the the EMP blast will affect.
 				// for each vehicle: get max_speed, acceleration, max_reverse_speed
-				
 				// for each vehicle: set above values to 0 for EMP period (e.g. 15 seconds)
-
-			//array<const XmlElement@> vehicleList = doc.getElementsByTagName("vehicle");
-			//_log("* " + vehicleList.size() + " vehicles found with key " + vehicleKey + " in faction " + factionId, 1);
 
 			_log("finished running getVehiclesNearPosition", 1);
 			// if target is within call effect radius of call position, do something
@@ -267,13 +296,13 @@ class CallHandler : Tracker {
 				string sName = vehInfo.getStringAttribute("name");
 				string sType = vehInfo.getStringAttribute("type_id");
 				string sKey = vehInfo.getStringAttribute("key");
-				if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
-					_log("vehicle type " + sType + " (" + sKey + ") not a target worth seeing.", 1);
+				if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster")) {
+					_log("vehicle type " + sType + " (" + sKey + ") is not a target worth seeing.", 1);
 					seenVehicles.erase(i);
 					i--;
 				} else {
 					_log("showing vehicle " + id + " (" + sName + ") on map", 1); 
-					string command = "<command class='set_spotting' vehicle_id='" + id + "' />";
+					string command = "<command class='set_spotting' vehicle_id='" + id + "'></command>";
 					m_metagame.getComms().send(command);
 				}
 			}
@@ -281,24 +310,26 @@ class CallHandler : Tracker {
 		// The Propaganda call has a chance to convert enemy troops (AI only) in the area to fight for WyreTek
 		else if (sCall == "wt_propaganda_1.call") {
 			_log("WT propaganda is filling the airwaves", 1);
+			string propCommand = "<command class='notify' key='wt_propaganda'></command>";
+			m_metagame.getComms().send(propCommand);
 			sendFactionMessageKey(m_metagame, 0, "wt_propaganda", dictionary = {}, 1.0);
 			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 1, 50.00f);
 			_log(hitChars.size() + " characters within range of propaganda", 1);
 			for (uint i = 0; i < hitChars.size(); ++i) {
 				const XmlElement@ info = hitChars[i];
 				int id = info.getIntAttribute("id");
-				if (rand(0, 99) < 75) {
+				if (rand(0, 99) < 60) {
 					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", id);
 					string charPosi = qResult.getStringAttribute("position");
 					//string charClass = info.getStringAttribute("soldier_group_name");
-					_log("Character " + id + " at position " + charPosi + " failed save roll (<75). Applying effect", 1);
+					_log("Character " + id + " at position " + charPosi + " failed save roll (<60). Applying effect", 1);
 					killCharacter(m_metagame, id);
 					//string convertCommand = "<command class='update_character' id='" + id + "' faction_id='0' >/></command>";
 					//m_metagame.getComms().send(convertCommand);
 					string spawnCommand = "<command class='create_instance' instance_class='character' faction_id='0' position='" + charPosi + "' instance_key='civilian' /></command>";
 					m_metagame.getComms().send(spawnCommand);
 				} else {
-					_log("Character " + id + " passed save roll (>=75). Not affected by Propaganda", 1 ); 
+					_log("Character " + id + " passed save roll (>=60). Not affected by Propaganda", 1 ); 
 				}
 			}
 			_log("finished distributing propaganda", 1);

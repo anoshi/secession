@@ -28,6 +28,7 @@
 	<!-- end BlastCorp calls -->
 
 	<!-- LifeCraft calls -->
+	<call file="lc_conversion_1.call" />
 	<call file="lc_force_field_1.call" />
 	<call file="lc_heal_bomb_1.call" />
 	<call file="lc_repair_bomb_1.call" />
@@ -40,6 +41,8 @@
 	<!-- end ReflexArq calls -->
 
 	<!-- ScopeSystems calls -->
+	<call file="ss_ap_rounds_1.call" />
+	<call file="ss_exp_rounds_1.call" />
 	<call file="ss_probe_1.call" />
 	<call file="ss_x-ray_1.call" />
 	<!-- end ScopeSystems calls -->
