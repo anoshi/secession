@@ -167,7 +167,7 @@ class ItemDeliveryConfiguratorInvasion : ItemDeliveryConfigurator {
 				ScoredResource("desert_eagle_gold.weapon", "weapon", 8.0f),
 				ScoredResource("mp7.weapon", "weapon", 4.0f),
 				ScoredResource("painting.carry_item", "carry_item", 16.0f),
-        ScoredResource("ares_shrike.weapon", "weapon", 8.0f)      
+        		ScoredResource("ares_shrike.weapon", "weapon", 8.0f)      
 			},
 			{
 				ScoredResource("vest_blackops.carry_item", "carry_item", 25.0f),
@@ -198,15 +198,15 @@ class ItemDeliveryConfiguratorInvasion : ItemDeliveryConfigurator {
 		array<array<ScoredResource@>> rewardPasses = {
 			{
 				ScoredResource("gold_bar.carry_item", "carry_item", 30.0f),
-        ScoredResource("costume_lizard.carry_item", "carry_item", 20.0f),
-        ScoredResource("tracer_dart.weapon", "weapon", 40.0f, 5),
-        ScoredResource("flamethrower.weapon", "weapon", 10.0f) 
+				ScoredResource("costume_lizard.carry_item", "carry_item", 20.0f),
+				ScoredResource("tracer_dart.weapon", "weapon", 40.0f, 5),
+				ScoredResource("flamethrower.weapon", "weapon", 10.0f) 
 			},
 			{
-         ScoredResource("costume_underpants.carry_item", "carry_item", 35.0f),
-         ScoredResource("taser.weapon", "weapon", 30.0f),
-         ScoredResource("aa12_frag.weapon", "weapon", 15.0f),
-         ScoredResource("wiesel_flare.projectile", "projectile", 20.0f, 2)
+				ScoredResource("costume_underpants.carry_item", "carry_item", 35.0f),
+				ScoredResource("taser.weapon", "weapon", 30.0f),
+				ScoredResource("aa12_frag.weapon", "weapon", 15.0f),
+				ScoredResource("wiesel_flare.projectile", "projectile", 20.0f, 2)
 			}
 		};   
 			
