@@ -67,7 +67,8 @@
 
 		<resources file="common.resources" />
 		<resources file="wt_light.resources" />
-		<resources file="wt_heavy.resources" />		
+		<resources file="wt_heavy.resources" />
+		<resources file="wt_sniper.resources" />	
 		<resources file="wt_secondaries.resources" />
 		<resources file="wt_default.resources" />
 

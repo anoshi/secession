@@ -67,7 +67,8 @@
 
 		<resources file="common.resources" />
 		<resources file="lc_light.resources" />
-		<resources file="lc_heavy.resources" />		
+		<resources file="lc_heavy.resources" />
+		<resources file="lc_sniper.resources" />	
 		<resources file="lc_secondaries.resources" />
 		<resources file="lc_default.resources" />
 

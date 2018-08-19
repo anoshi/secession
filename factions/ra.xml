@@ -68,6 +68,7 @@
 		<resources file="common.resources" />
 		<resources file="ra_light.resources" />
 		<resources file="ra_heavy.resources" />
+		<resources file="ra_sniper.resources" />
 		<resources file="ra_secondaries.resources" />
 		<resources file="ra_default.resources" />
 
