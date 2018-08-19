@@ -6,4 +6,5 @@
 	<projectile key="grenadier_stun.projectile" enabled="1" />
 
 	<call key="resupply_demo.call" />
+	<vehicle key="demo_supply_crate.vehicle" />
 </resources>

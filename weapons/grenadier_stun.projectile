@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<projectile class="grenade" name="Stun Gren" slot="0" radius="0.15" key="grenadier_stun.projectile">
+<projectile class="grenade" name="Stun Gren" key="grenadier_stun.projectile" slot="0" radius="0.15" >
     <tag name="flashbang" />
 
     <result class="blast" radius="10.0" damage="0.0" decal="0" character_state="stun" />
@@ -8,6 +8,7 @@
 
     <model mesh_filename="stun_grenade.xml" />
     <hud_icon filename="hud_stun_grenade.png" />
+    <commonness value="1.0" in_stock="0" can_respawn_with="1" />
 
     <!-- projectile slot 0 is used for hand grenade items currently -->
     <!-- bound to change -->

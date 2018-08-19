@@ -309,7 +309,7 @@
     <capacity source="rank" source_value="0.5" value="1" />
     <capacity source="rank" source_value="1.0" value="2" />
   </weapon>
-  <!-- end VEHICULAR / MOUNTED weapons
+  <!-- end VEHICULAR / MOUNTED weapons -->
 
   <!-- SPECIAL / bonus / secret weapons -->
   <weapon file="aks74u.weapon">

@@ -199,16 +199,14 @@ class CallHandler : Tracker {
 	////////////////////////
 	// ScopeSystems Calls //
 	////////////////////////
-		// The armour-piercing rounds call was intended to grant armour-piercing qualities (kill_probability="3.01")
-		// to  projectiles fired by SS sniper rifles for a period. This does not appear to be possible, so the call drops 
+		// The armour-piercing rounds call was intended to grant armour-piercing qualities (kill_probability="[123].01")
+		// to projectiles fired by SS sniper rifles for a period. This does not appear to be possible, so the call drops 
 		// a crate containing a SS-specific sniper rifle (that fires AP rounds) at the location requested by the caller
-		else if (sCall == "ss_ap_rounds_1.call") {
-		}
+
 		// The explosive rounds call was intended to grant explosive qualities to projectiles fired by SS shotguns and sniper 
 		// rifles for a period. This does not appear to be possible, so the call drops a crate containing a SS-specific shotgun
-		// (that fires explosive rounds) at the location requested by the caller
-		else if (sCall =="ss_explosive_rounds_1.call") {
-		}
+		// (that fires explosive rounds) at the location requested by the caller.
+		
 		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
 		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and destroy the device.
 		else if (sCall == "ss_probe_1.call") {

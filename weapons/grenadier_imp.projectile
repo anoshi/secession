@@ -8,6 +8,7 @@
 
     <model mesh_filename="impact_grenade.xml" />
     <hud_icon filename="hud_impact_grenade.png" />
+    <commonness value="1.0" in_stock="0" can_respawn_with="1" />
 
     <throwable curve_height="5.0" near_far_distance="5.0" speed_estimation_near="9.0" speed_estimation_far="17.0" max_speed="14.0" randomness="0.06" tweak_factor="1.1" />
 
@@ -52,7 +53,5 @@
 
     <effect class="result" key="static_object" copy="terrain" />
     <effect class="result" key="character" copy="terrain" />
-
-
 
 </projectile>

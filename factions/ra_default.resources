@@ -12,6 +12,10 @@
 	<call key="ra_sprint_1.call" />
 	<call key="ra_teleport_1.call" />
 	
+	<!-- class-specific calls (allow player 'default' class access to these as well) -->
+	<call key="resupply_demo.call" />
+	<call key="resupply_gren.call" />
+
 	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="ra_vest1.carry_item" enabled="1" />
 	<carry_item key="ra_vest2.carry_item" enabled="1" />
