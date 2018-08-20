@@ -5,6 +5,12 @@
 #include "query_helpers.as"
 
 // --------------------------------------------
+namespace CountDownTimer {
+	const float POTATO_TIMER = 15.0;
+	const float EMP_TIMER = 10.0;
+};
+
+// --------------------------------------------
 class CallHandler : Tracker {
 	protected Metagame@ m_metagame;
 	//protected dictionary m_trackedMaps;
@@ -57,7 +63,7 @@ class CallHandler : Tracker {
 				const XmlElement@ mrPotato = targetChars[i];
 				int id = mrPotato.getIntAttribute("id");
 				_log("character id:" + id + " chosen to receive hot potato.", 1);
-				string potatoComm = "<command class='update_inventory' character_id='" + id + "' container_type_class='backpack'>" + "<item class='grenade' key='c4.projectile' />" + "</command>";
+				string potatoComm = "<command class='update_inventory' character_id='" + id + "' container_type_class='backpack'>" + "<item class='grenade' key='grenadier_he.projectile' />" + "</command>";
 				m_metagame.getComms().send(potatoComm);
 				//aka: addItemInBackpack(m_metagame, id, const Resource@ r);
 			_log("finished placing the BC Hot Potato", 1);
@@ -332,11 +338,6 @@ class CallHandler : Tracker {
 			}
 			_log("finished distributing propaganda", 1);
 		} 
-		/*if (event.hasAttribute("character_id")) {
-			_log("Attribute 'character_id' is stored in " + sCall, 1);
-		} else { 
-			_log("no Attribute 'character_id' in " + sCall, 1); 
-		}*/
 	}
 	/*
 	
@@ -359,11 +360,11 @@ class CallHandler : Tracker {
 		// always on
 		return true;
 	}
-	/*
+	
 	// --------------------------------------------
 	void update(float time) {
 	}
-	*/
+	
 
 	// ----------------------------------------------------
 
