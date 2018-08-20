@@ -43,7 +43,7 @@
     <inventory encumbrance="6.0" price="3.0" />
     <commonness value="0.8" can_respawn_with="1" in_stock="1"/>
 
-    <projectile file="bullet.projectile">
+    <projectile file="wt_laser_short.projectile">
         <result class="hit" kill_probability="0.5" kill_decay_start_time="0.19" kill_decay_end_time="0.33" />
     </projectile>
     <capacity value="1" source="rank" source_value="0.0" />

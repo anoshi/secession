@@ -1,18 +1,13 @@
-<vehicle file="vehicle_base.vehicle" name="SS Explosive Rounds" key="ss_exp_crate.vehicle" map_view_atlas_index="0">
+<vehicle file="vehicle_base.vehicle" name="Grenadier Supply Crate" key="gren_supply_crate.vehicle" map_view_atlas_index="0" destroy_on_stab="1">
 	<tag name="sandbag" />
 	<tire_set offset="1.0 0.0 1.0" radius="0.65" />
 	<tire_set offset="1.0 0.0 -1.0" radius="0.65" />
 
 	<control max_speed="20.0" acceleration="6.7" max_reverse_speed="6.0" max_rotation="0.8" max_water_depth="1.9" />
 
-	<physics max_health="0.3" mass="6.0"  offset="0 0.0 0" top_offset="0 1 0" collision_model_pos="0 0.2 0" collision_model_extent="2.0 0.6 1.4" visual_offset="0 0.3 0" /> 
+	<physics max_health="0.1" mass="6.0"  offset="0 0.0 0" top_offset="0 1 0" collision_model_pos="0 0.2 0" collision_model_extent="2.0 0.6 1.4" visual_offset="0 0.3 0" /> 
 
 	<visual class="chassis" mesh_filename="crate_wood.mesh" texture_filename="crate_wood.png" />
-
-	<event key="receive_damage_xp_reward">
-		<trigger class="receive_damage" />
-		<result class="reward" xp="0.0010" />
-	</event>
 
 	<event>
 		<trigger class="destroy" />
@@ -41,9 +36,17 @@
 
 	<event>
 		<trigger class="destroy" />     
-		<result class="spawn" instance_class="weapon" instance_key="ss_sgx.weapon" />
+		<result class="spawn" instance_class="grenade" instance_key="grenadier_he.projectile" min_amount="2" max_amount="4" activated="0" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.1 0.0" />
 	</event>
 
-<!--	<effect event_key="destroy" key="other" ref="SmokeMinor" post_processing="1" />
-	<effect event_key="destroy" key="other" ref="ShadowSmokeMinor" shadow="1" /> -->
+	<event>
+		<trigger class="destroy" />     
+		<result class="spawn" instance_class="grenade" instance_key="grenadier_imp.projectile" min_amount="2" max_amount="4" activated="0" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.0 0.1" />
+	</event>
+
+	<event>
+		<trigger class="destroy" />     
+		<result class="spawn" instance_class="grenade" instance_key="grenadier_stun.projectile" min_amount="1" max_amount="2" activated="0" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.0 0.0" />
+	</event>-->
+
 </vehicle>

@@ -30,7 +30,7 @@
     <inventory encumbrance="10.0" price="2.0" />
 
     <weak_hand_hold offset="0.2" />
-    <projectile file="wt_laser.projectile">
+    <projectile file="wt_laser_short.projectile">
         <result class="hit" kill_probability="0.59" kill_decay_start_time="0.23" kill_decay_end_time="0.32" />
     </projectile>
 

@@ -30,7 +30,7 @@
     <inventory encumbrance="10.0" price="2.0" />
 
     <weak_hand_hold offset="0.2" />
-    <projectile file="lc_laser.projectile">
+    <projectile file="lc_laser_short.projectile">
         <result class="hit" kill_probability="0.6" kill_decay_start_time="0.25" kill_decay_end_time="0.30" />
     </projectile>
 

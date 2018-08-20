@@ -12,6 +12,12 @@
 	<projectile file="c4.projectile" />
 	<projectile file="artillery_shell.projectile" />
 
+	<!-- CLASS-SPECIFIC THROWABLES -->
+	<!-- GRENADIER -->
+	<projectile file="grenadier_he.projectile" />
+	<projectile file="grenadier_imp.projectile" />
+	<projectile file="grenadier_stun.projectile" />
+	<!-- end GRENADIER -->
 	<!-- FACTION-SPECIFIC THROWABLES -->
 
 	<!-- BC throwables -->

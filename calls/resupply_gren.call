@@ -4,24 +4,14 @@
   acknowledge_comment="Loud and clear!"
   launch_comment="Supplies on the way">
   <round instances="1"
-    instance_class="visual_item"
-    instance_key="crate.static_object"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
+    instance_class="vehicle"
+    instance_key="gren_supply_crate.vehicle"
+    instance_spread="6 6 6"
+    common_spread="6 0 6"
+    launch_time="3.0"
+    spawn_time="9.0">
     <effect class="launch" ref="ShadowAirplaneFlyby" shadow="1" />
     <sound class="launch" fileref="plane_flyby.wav" />
-    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
-  </round>
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="grenadier_he.projectile"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="2.0">
-    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
   <hud_icon filename="crate_wood.png" />
   <capacity value="0" source="rank" source_value="0.0" />

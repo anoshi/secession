@@ -3,14 +3,9 @@
   initiation_comment1="Move me"
   acknowledge_comment="On it"
   launch_comment="Happening">
-  <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
-    instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
-    launch_time="1.0"
-    spawn_time="4.0">
-    <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
+  <round launch_time="3.0"
+    spawn_time="3.0">
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- teleport sound -->
   </round>
   <hud_icon filename="hud_fancy_sunglasses.png" />
   <capacity value="0" source="rank" source_value="0.0" />

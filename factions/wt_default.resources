@@ -14,7 +14,11 @@
 	<call key="wt_emp_1.call" />
 	<call key="wt_jammer_1.call" />
 	<call key="wt_pathping_1.call" />
-	<call key="wt_propaganda_1.call" />	
+	<call key="wt_propaganda_1.call" />
+
+	<!-- class-specific calls (allow player 'default' class access to these as well) -->
+	<call key="resupply_demo.call" />
+	<call key="resupply_gren.call" />
 
 	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="wt_vest1.carry_item" enabled="1" />
