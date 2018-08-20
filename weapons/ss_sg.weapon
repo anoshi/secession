@@ -2,20 +2,20 @@
 <weapon file="base_primary_shotgun.weapon" key="ss_sg.weapon">
     <tag name="cqb" />
     <specification 
-  retrigger_time="0.40" 
-  accuracy_factor="0.59" 
-  sustained_fire_grow_step="2.0" 
-  sustained_fire_diminish_rate="0.6" 
-  magazine_size="10" 
-  can_shoot_standing="1" 
-  suppressed="0" 
-  name="SS Shotgun" 
-  class="4" 
-  reload_one_at_a_time="1" 
-  sight_range_modifier="1.0" 
-  projectile_speed="86.0" 
-  projectiles_per_shot="5" 
-  burst_shots="1" />
+    retrigger_time="0.40" 
+    accuracy_factor="0.59" 
+    sustained_fire_grow_step="2.0" 
+    sustained_fire_diminish_rate="0.6" 
+    magazine_size="10" 
+    can_shoot_standing="1" 
+    suppressed="0" 
+    name="SS Shotgun" 
+    class="4" 
+    reload_one_at_a_time="1" 
+    sight_range_modifier="1.0" 
+    projectile_speed="86.0" 
+    projectiles_per_shot="5" 
+    burst_shots="1" />
 
     <animation key="recoil" ref="27" />
     <animation key="reload" ref="29" />
@@ -30,7 +30,7 @@
     <inventory encumbrance="10.0" price="2.0" />
 
     <weak_hand_hold offset="0.2" />
-    <projectile file="ss_laser.projectile">
+    <projectile file="ss_laser_short.projectile">
         <result class="hit" kill_probability="0.59" kill_decay_start_time="0.23" kill_decay_end_time="0.32" />
     </projectile>
 

@@ -42,7 +42,7 @@
     <inventory encumbrance="18.0"  price="800.0" in_stock="0"/>
 
     <weak_hand_hold offset="0.4" />
-    <projectile file="bc_laser.projectile">
+    <projectile file="bc_laser_short.projectile">
         <result class="hit" kill_probability="0.5" kill_decay_start_time="0.25" kill_decay_end_time="0.60" />
     </projectile>
 

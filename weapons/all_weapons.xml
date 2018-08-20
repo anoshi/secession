@@ -150,6 +150,10 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.05" value="1" />
   </weapon>
+  <weapon file="ss_srx.weapon"> <!-- sniper rifle extreme (call only) -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.25" value="1" />
+  </weapon>
   <weapon file="ss_sil.weapon"> <!-- silenced laser rifle -->
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.1" value="1" />
@@ -158,6 +162,10 @@
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.05" value="1" />
   </weapon>
+  <weapon file="ss_sgx.weapon"> <!-- shotgun extreme (call only) -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.25" value="1" />
+  </weapon>>
   <weapon file="ss_lrx.weapon"> <!-- laser rifle extreme -->
     <capacity source="rank" source_value="0.0" value="0" />
     <capacity source="rank" source_value="0.2" value="1" />
