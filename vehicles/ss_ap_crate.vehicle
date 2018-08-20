@@ -41,7 +41,7 @@
 
 	<event>
 		<trigger class="destroy" />     
-		<result class="spawn" instance_class="weapon" instance_key="ss_sr.weapon" />
+		<result class="spawn" instance_class="weapon" instance_key="ss_srx.weapon" />
 	</event>
 
 <!--	<effect event_key="destroy" key="other" ref="SmokeMinor" post_processing="1" />

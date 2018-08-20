@@ -36,8 +36,7 @@
 
 	<event>
 		<trigger class="destroy" />     
-		<!--<result class="spawn" instance_class="grenade" instance_key="c4.projectile" min_amount="2" max_amount="4" />-->
-		<result class="xml_command"><command class='create_instance' instance_class='grenade' instance_key='c4.projectile' /></result>
+		<result class="spawn" instance_class="grenade" instance_key="c4.projectile" min_amount="2" max_amount="4" activated="0" />
 	</event>
 
 <!--	<effect event_key="destroy" key="other" ref="SmokeMinor" post_processing="1" />
