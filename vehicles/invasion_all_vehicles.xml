@@ -84,6 +84,7 @@
   <!-- BlastCorp -->
   <!-- LifeCraft -->
   <vehicle file="lc_jeep.vehicle" />
+  <vehicle file="veh_speeder.vehicle" />
   <!-- ReflexArq -->
   <!-- ScopeSystems -->
   <vehicle file="ss_ap_crate.vehicle" />

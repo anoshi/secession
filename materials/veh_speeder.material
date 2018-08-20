@@ -1,0 +1,31 @@
+				tex_coord_set 0
+				colour_op add
+			}
+		}
+	}
+	technique Material__37_basic_technique
+	{
+	scheme basic_mat
+		pass Material__37_standard
+		{
+			ambient 1 1 1 1
+			diffuse 1 1 1 1
+			specular 0 0 0 0 25.5
+			emissive 0 0 0 1
+
+			texture_unit Material__37_Diffuse#2
+			{
+				texture LC_SEC_CRAFT_SPEEDER_DIFF.png
+				tex_coord_set 0
+				colour_op modulate
+			}
+
+			texture_unit Material__37_Self-Illumination#3
+			{
+				texture LC_SEC_CRAFT_SPEEDER_EMISS.png
+				tex_coord_set 0
+				colour_op add
+			}
+		}
+	}
+}
