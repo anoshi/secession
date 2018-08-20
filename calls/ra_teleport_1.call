@@ -3,7 +3,7 @@
   initiation_comment1="Move me"
   acknowledge_comment="On it"
   launch_comment="Happening">
-  <round launch_time="1.0"
+  <round launch_time="3.0"
     spawn_time="3.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- teleport sound -->
   </round>
