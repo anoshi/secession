@@ -14,16 +14,14 @@ class CallHandler : Tracker {
 	//protected string m_managerName;
 	//protected int m_factionId;
 
-	protected float POTATO_TIMER = 15.0;
-	protected float EMP_TIMER = 10.0;
-	protected array<string> activeTimers;
-
+	protected float hpTimer = 15.0; // hot potato detonates after 15 seconds
+	protected int hpHolder; // id of character holding the hot potato
+	protected float empTimer = 10.0; // emp lasts for 10 seconds
+	protected array<int> empVeh; // array of vehicle ids affected by emp
+	protected array<string> activeTimers; // stores the names of active timers
 	/*
 	protected array<Timers@> m_timers; // to support multiple concurrent calls' countdown timers
-	
-	void bool potatoCountDownfloat getPotatoTime() const {
-		return POTATO_TIMER;
-	}
+	// requires Timers class - see prison_break_objective.as for an example
 	*/
 
 	// ----------------------------------------------------
@@ -69,14 +67,14 @@ class CallHandler : Tracker {
 			if (targetChars.size() > 0) {
 				uint i = rand(0, targetChars.size() - 1);
 				const XmlElement@ mrPotato = targetChars[i];
-				int id = mrPotato.getIntAttribute("id");
-				_log("character id: " + id + " chosen to receive hot potato.", 1);
-				string potatoComm = "<command class='update_inventory' character_id='" + id + "' container_type_class='backpack'>" + "<item class='grenade' key='grenadier_imp.projectile' activated='1' />" + "</command>";
+				hpHolder = mrPotato.getIntAttribute("id");
+				_log("character id: " + hpHolder + " chosen to receive hot potato.", 1);
+				string potatoComm = "<command class='update_inventory' character_id='" + hpHolder + "' container_type_class='backpack'>" + "<item class='grenade' key='hot_potato.projectile' />" + "</command>";
 				m_metagame.getComms().send(potatoComm);
 				//aka: addItemInBackpack(m_metagame, id, const Resource@ r);
 				activeTimers.push_back("hot potato");
-			_log("finished placing the BC Hot Potato", 1);
 			}
+			_log("finished placing the BC Hot Potato", 1);
 		}
 		//dictionary call_dict = {{"TagName", "command"},{"class", "chat"},{"text", "call request event handler called!"}};
 		//m_metagame.getComms().send(XmlElement(call_dict));
@@ -257,19 +255,6 @@ class CallHandler : Tracker {
 				}
 			}
 		}
-
-		/*
-		vehicle type_id reference (until the order and count of vehicles in all_vehicles.xml changes... :-|):
-		0: Jeep
-		1: APC
-		4: Rubber Boat
-		51: gas tank
-		60: mortar ammo
-		61 - 65: special_crate1 through special_crate5
-		66 - 70: special_cargo vehicles
-		71 - 80: special_crate_wood1 through special_crate_wood10
-		117: LifeCraft jeep
-		*/
 	////////////////////////
 	//   WyreTek  Calls   //
 	////////////////////////
@@ -298,10 +283,11 @@ class CallHandler : Tracker {
 						_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
 						string command = "<command class='update_vehicle' id='" + id + "' forward='0 0 0' locked='1'></command>";
 						m_metagame.getComms().send(command);
-						// now build in a timer to unlock vehicles after EMP effect has faded 
+						empVeh.push_back(id); // add the vehicle to empVeh array, ready to unlock when EMP effect has faded 
 					} else { _log(sName + " passed save roll (>90). Not affected by EMP", 1 ); }
 				} else { _log("vehicle is out of range of EMP", 1); }
 			}
+			activeTimers.push_back("emp");
 			_log("finished running getVehiclesNearPosition", 1);
 		}
 		// Pathping scans powered equipment (tanks, radio jammers, etc.) in use by the enemy and shows each item on the map.
@@ -357,8 +343,9 @@ class CallHandler : Tracker {
 		} 
 	}
 	// --------------------------------------------
+	/*
 	bool isTimerActive(string timerName) {
-		_log("isTimerActive called. Rejoice!. Looking for '" + timerName + "'", 1);
+		_log("Looking for '" + timerName + "'", 1);
 		uint found = 0;
 		for (uint i = 0; i < activeTimers.size(); ++i) {
 			if (timerName == activeTimers[i]) {
@@ -368,8 +355,7 @@ class CallHandler : Tracker {
 		} 
 		return found > 0;
 	}
-	/*
-	
+
 	// --------------------------------------------
 	void init() {
 	}
@@ -391,27 +377,54 @@ class CallHandler : Tracker {
 	}
 	// --------------------------------------------
 	void update(float time) {
-		//if (reason_to_be_here <= 0) return;
+		if (activeTimers.size() == 0) return;
 
-		if (isTimerActive("hot potato")) {
-			_log("hot potato timer is active", 1);
-		}
-		/*
-		for (uint i = 0; i < m_timers.size(); ++i) {
-			Timers@ timer = m_timers[i];
-
-			timer.update(time);
-			_log("countdown timer at: " + time, 1);
-
-			if (timer.hasEnded()) {
-				m_timers.erase(i);
-				--i;
+		for (uint i = 0; i < activeTimers.size(); ++i) {
+			if (activeTimers[i] == "hot potato") {
+				hpTimer -= time;
+				_log("hot potato timer is " + hpTimer, 1);
+				if (hpTimer <= 0) {
+					activeTimers.erase(i);
+					i--;
+					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", hpHolder);
+					string charPosi = qResult.getStringAttribute("position");
+					string boomComm = "<command class='create_instance' position='" + charPosi + "' instance_class='grenade' instance_key='hot_pot_boom.projectile' activated='1'></command>";
+					m_metagame.getComms().send(boomComm);
+				} 
+			} else if (activeTimers[i] == "emp") {
+				empTimer -= time;
+				_log("emp timer is " + empTimer, 1);
+				if (empTimer <= 0) {
+					activeTimers.erase(i);
+					i--;
+				} 
+				if (empVeh.size() >= 1) { 	
+					for (uint j = 0; j < empVeh.size(); ++j) {
+						uint id = empVeh[i];
+						string unlockComm = "<command class='update_vehicle' id='" + id + "' locked='0'></command>";
+						m_metagame.getComms().send(unlockComm);
+						_log("unlocking vehicle " + id, 1);
+					}
+				}
 			}
 		}
-		*/
 	}
 	
 
 	// ----------------------------------------------------
 
 }
+
+
+		/*
+		vehicle type_id reference (until the order and count of vehicles in all_vehicles.xml changes... :-|):
+		0: Jeep
+		1: APC
+		4: Rubber Boat
+		51: gas tank
+		60: mortar ammo
+		61 - 65: special_crate1 through special_crate5
+		66 - 70: special_cargo vehicles
+		71 - 80: special_crate_wood1 through special_crate_wood10
+		117: LifeCraft jeep
+		*/
