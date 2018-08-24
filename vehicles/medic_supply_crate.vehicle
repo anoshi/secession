@@ -1,5 +1,6 @@
-<vehicle file="vehicle_base.vehicle" name="Grenadier Supply Crate" key="gren_supply_crate.vehicle" map_view_atlas_index="0" destroy_on_stab="1">
+<vehicle file="vehicle_base.vehicle" name="Medic Supply Crate" key="medic_supply_crate.vehicle" map_view_atlas_index="0" destroy_on_stab="1">
 	<tag name="sandbag" />
+
 	<tire_set offset="1.0 0.0 1.0" radius="0.65" />
 	<tire_set offset="1.0 0.0 -1.0" radius="0.65" />
 
@@ -36,17 +37,12 @@
 
 	<event>
 		<trigger class="destroy" />     
-		<result class="spawn" instance_class="grenade" instance_key="grenadier_he.projectile" min_amount="2" max_amount="4" activated="0" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.1 0.0" />
+		<result class="spawn" instance_class="weapon" instance_key="medikit.weapon" min_amount="2" max_amount="3" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.1 0.0" />
 	</event>
 
 	<event>
 		<trigger class="destroy" />     
-		<result class="spawn" instance_class="grenade" instance_key="grenadier_imp.projectile" min_amount="2" max_amount="4" activated="0" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.0 0.1" />
-	</event>
-
-	<event>
-		<trigger class="destroy" />     
-		<result class="spawn" instance_class="grenade" instance_key="grenadier_stun.projectile" min_amount="1" max_amount="2" activated="0" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.0 0.0" />
+		<result class="spawn" instance_class="weapon" instance_key="bandage.weapon" min_amount="2" max_amount="2" offset="0 0.0 0" position_spread="1.5 1.5" direction_spread="0.0 0.1" />
 	</event>
 
 </vehicle>

@@ -37,7 +37,7 @@
 
 	<!-- CLASS CARRY ITEMS -->
 	<!-- Comms Tech items listed here and enabled in common_commstech.resources -->
-	<carry_item key="commstech_radio_1.carry_item" />
+	<carry_item key="commstech_radio_1.carry_item" enabled="0" />
 
 	<!-- end CLASS CARRY ITEMS -->
 	

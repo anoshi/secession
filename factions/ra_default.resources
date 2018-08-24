@@ -15,6 +15,7 @@
 	<!-- class-specific calls (allow player 'default' class access to these as well) -->
 	<call key="resupply_demo.call" />
 	<call key="resupply_gren.call" />
+	<call key="resupply_medic.call" />
 
 	<!-- explicitly enable this faction's carry items (listed as disabled in common.resources) -->
 	<carry_item key="ra_vest1.carry_item" enabled="1" />

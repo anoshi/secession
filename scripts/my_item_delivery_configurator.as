@@ -12,6 +12,9 @@ class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 		// briefcase delivery rewards
 		list.push_back(Resource("bc_impervavest.carry_item", "carry_item"));
 		list.push_back(Resource("lc_heal_nade.weapon", "weapon"));
+		list.push_back(Resource("ss_srx.weapon", "weapon"));
+		list.push_back(Resource("ss_sgx.weapon", "weapon"));
+		// include random items from secondary companies (udonis noodles et al.)
          
 		return list;
 	}

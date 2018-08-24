@@ -17,6 +17,8 @@
 	<call file="resupply_demo.call" />
 	<!-- SNIPER -->
 	<call file="target_designator.call" />
+	<!-- MEDIC -->
+	<call file="resupply_medic.call" />
 	
 	<!-- FACTION calls -->
 	<!-- BlastCorp calls -->
