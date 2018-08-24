@@ -397,13 +397,13 @@ class CallHandler : Tracker {
 				if (empTimer <= 0) {
 					activeTimers.erase(i);
 					i--;
-				} 
-				if (empVeh.size() >= 1) { 	
-					for (uint j = 0; j < empVeh.size(); ++j) {
-						uint id = empVeh[i];
-						string unlockComm = "<command class='update_vehicle' id='" + id + "' locked='0'></command>";
-						m_metagame.getComms().send(unlockComm);
-						_log("unlocking vehicle " + id, 1);
+					if (empVeh.size() >= 1) { 	
+						for (uint j = 0; j < empVeh.size(); ++j) {
+							uint id = empVeh[j];
+							string unlockComm = "<command class='update_vehicle' id='" + id + "' locked='0'></command>";
+							m_metagame.getComms().send(unlockComm);
+							_log("unlocking vehicle " + id, 1);
+						}
 					}
 				}
 			}

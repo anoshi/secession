@@ -14,7 +14,7 @@
     <throwable curve_height="6.0" near_far_distance="5.0" speed_estimation_near="9.0" speed_estimation_far="17.0" max_speed="13.0" randomness="0.07" />
 
     <capacity value="1" source="rank" source_value="0.0" />
-    <inventory encumbrance="30" price="250.0" />
+    <inventory encumbrance="40" price="250.0" />
 
     <sound class="result" key="other" fileref="explosion1.wav" />
     <sound class="result" key="other" fileref="explosion2.wav" />
