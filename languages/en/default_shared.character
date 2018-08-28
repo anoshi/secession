@@ -12,6 +12,10 @@
 	<comment key="notify call" text="option 3 notify call text yay" />
 	<comment key="notify call" text="random option 4 for notify call text" />
 
+	<!-- BNN comment keys -->
+	<comment key="BNN mission" text="sadness" />
+	<comment key="BNN advert" text="double sad" />
+
 	<!-- BEGIN calls -->
 	<comment key="ra_nanobot_cloud" text="Nanobot cloud spreading" />
 	<comment key="ra_sprint" text="ReflexArq troops are boosted" />

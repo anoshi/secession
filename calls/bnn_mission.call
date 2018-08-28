@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="BNN latest" key="bnn_mission.call" notify_metagame="1"
+  initiation_comment1="BNN: Latest Mission"
+  acknowledge_comment="Retrieving data...">
+  <round launch_time="1.0"
+    spawn_time="1.0">
+    <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- telegraph sound? -->
+  </round>
+  <hud_icon filename="hud_unknown.png" />
+  <capacity value="100" source="rank" source_value="0.1" />
+  <inventory encumbrance="0.0" price="2.0" />
+</call>
