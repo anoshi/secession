@@ -52,7 +52,10 @@ class CallHandler : Tracker {
 	//   Common   Calls   //
 	////////////////////////
 		// Notify metagame call is a placeholder call to test calls that have 'notify_metagame="1"' set
-		if (sCall == "bnn_mission.call") {
+		if (sCall == "notify_metagame.call") {
+			sendFactionMessageKey(m_metagame, 0, "notify call", dictionary = {}, 1.0);
+		}
+		else if (sCall == "bnn_mission.call") {
 			sendFactionMessageKey(m_metagame, 0, "BNN mission", dictionary = {}, 1.0);
 		}
 		else if (sCall == "bnn_advert.call") {
