@@ -17,7 +17,7 @@
 	<comment key="BNN mission" text="RECON of %location requested by %company_name. Hostiles: %rule_engage. Looting: %rule_loot. Payment: %reward_type, %reward_amount" />
 	<comment key="BNN mission" text="COURIER service requested for %company_name. Pick up: %location_pickup. Drop off: %location_drop. Payment: %reward_type, %reward_amount" />
 	<comment key="BNN mission" text="Anonymous DELETION request. Target: %character_name. Location: %vicinity %location. Payment: %reward_amount cash" />
-	<comment key="BNN mission" text="ESCORT">
+	<comment key="BNN mission" text="ESCORT" />
 
 	<comment key="BNN advert" text="YOU DON'T KNOW NOODLES UNTIL YOU'VE TRIED UDONIS NOODLES" />
 	<!-- END BNN announcements -->
