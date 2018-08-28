@@ -215,5 +215,4 @@
 	<call key="cover_drop.call" />
 	<call key="mortar1.call" />
 	<call key="paratroopers1.call" />
-	<call key="notify_metagame.call" />
 </resources>

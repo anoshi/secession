@@ -55,6 +55,12 @@ class CallHandler : Tracker {
 		if (sCall == "notify_metagame.call") {
 			sendFactionMessageKey(m_metagame, 0, "notify call", dictionary = {}, 1.0);
 		}
+		else if (sCall == "bnn_mission.call") {
+			sendFactionMessageKey(m_metagame, 0, "BNN mission", dictionary = {}, 1.0);
+		}
+		else if (sCall == "bnn_advert.call") {
+			sendFactionMessageKey(m_metagame, 0, "BNN advert", dictionary = {}, 1.0);
+		}
 	////////////////////////
 	//  BlastCorp  Calls  //
 	////////////////////////
