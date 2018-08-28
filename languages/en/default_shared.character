@@ -3,16 +3,9 @@
     <!-- defined in default.character for differentiation, see maps/lobby/default.character too -->
     <!-- <comment key="Hmm, no signal" /> -->
 
-	<!-- BEGIN secession comment keys -->
-	<comment key="CallHandler" text="blah blah" />
-	<comment key="hCRE method running" text="handleCallRequestEvent method happening" />	
-	<comment key="hCRE method running" text="pants off! it finally worked!" />	
-	<comment key="notify call" text="hello call_handler.as world text yay" />
-	<comment key="notify call" text="option 2 call_handler.as call notify call" />
-	<comment key="notify call" text="option 3 notify call text yay" />
-	<comment key="notify call" text="random option 4 for notify call text" />
+	<!-- BEGIN secession comment keys -->	
 
-    <!-- BEGIN BNN announcements -->
+  <!-- BEGIN BNN announcements -->
 	<comment key="BNN mission" text="%company_name reports unwanted %activity near %location. Hostile: %rule_engage. Payment: %reward_type, %reward_amount." />
 	<comment key="BNN mission" text="RECON of %location requested by %company_name. Hostiles: %rule_engage. Looting: %rule_loot. Payment: %reward_type, %reward_amount" />
 	<comment key="BNN mission" text="COURIER service requested for %company_name. Pick up: %location_pickup. Drop off: %location_drop. Payment: %reward_type, %reward_amount" />
