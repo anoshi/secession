@@ -23,7 +23,7 @@
 	<!-- END BNN announcements -->
 
 	<!-- BEGIN calls -->
-	<comment key="lc_conversion" text="Let it replenish your soul">
+	<comment key="lc_conversion" text="Let it replenish your soul" />
 	<comment key="ra_nanobot_cloud" text="Nanobot cloud spreading" />
 	<comment key="ra_sprint" text="ReflexArq troops are boosted" />
 	<comment key="wt_propaganda" text="Join WyreTek and receive this set of steak knives!" />

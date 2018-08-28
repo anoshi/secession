@@ -7,6 +7,7 @@
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- cheesy tv jingle sound? -->
   </round>
   <hud_icon filename="hud_oscar_statue.png" />
-  <capacity value="1" source="rank" source_value="0.0" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="100" source="rank" source_value="0.1" />
   <inventory encumbrance="0.0" price="1.0" />
 </call>
