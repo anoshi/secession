@@ -37,7 +37,7 @@
 
 	<!-- CLASS CARRY ITEMS -->
 	<!-- Comms Tech items listed here and enabled in common_commstech.resources -->
-	<carry_item key="commstech_radio_1.carry_item" />
+	<carry_item key="commstech_radio_1.carry_item" enabled="0" />
 
 	<!-- end CLASS CARRY ITEMS -->
 	
@@ -208,11 +208,11 @@
 
 	<vehicle key="veh_speeder.vehicle" />
 
+	<call key="artillery1.call" />
+	<call key="buggy.call" />
+	<call key="bnn_advert.call" />
+	<call key="bnn_mission.call" />
+	<call key="cover_drop.call" />
 	<call key="mortar1.call" />
 	<call key="paratroopers1.call" />
-	<call key="artillery1.call" />
-	<call key="cover_drop.call" />
-	<call key="buggy.call" />
-	<call key="supply_quad.call" />
-	<call key="notify_metagame.call" />
 </resources>

@@ -45,6 +45,12 @@
       <parameter class="night_reaction_time_to_fight_max" value="1.1" />
       <parameter class="willingness_to_charge" value="0.0" />
     </command>
+    <command 
+      class="set_marker"
+      faction_id="0"
+      id="4041"
+      enabled="0">
+    </command>
     <command
       class="set_soundtrack"
       enabled="0" >

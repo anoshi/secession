@@ -3,13 +3,15 @@
 
 	<projectile file="stun_grenade.projectile" />
 	<projectile file="hand_grenade.projectile" />
+	<projectile file="impact_grenade.projectile" />
+	<projectile file="c4.projectile" />
+	<projectile file="hot_potato.projectile" />
+	<projectile file="hot_pot_boom.projectile" />
 
 	<!-- rather awkward place for this definition, but for now, that's the way it is -->
 	<!-- projectile itself defines its slot, 0 being actual throwables that can also equipped, thrown, bought and found -->
 	<!-- mortar shell is in slot 2 -->
 	<projectile file="mortar_shell.projectile" />
-	<projectile file="impact_grenade.projectile" />
-	<projectile file="c4.projectile" />
 	<projectile file="artillery_shell.projectile" />
 
 	<!-- CLASS-SPECIFIC THROWABLES -->

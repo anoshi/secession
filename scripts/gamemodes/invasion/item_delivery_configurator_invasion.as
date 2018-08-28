@@ -108,7 +108,7 @@ class ItemDeliveryConfiguratorInvasion : ItemDeliveryConfigurator {
 				ScoredResource("vest3.carry_item", "carry_item", 9.0f),
 				ScoredResource("laptop.carry_item", "carry_item", 4.0f),
 				ScoredResource("xm25.weapon", "weapon", 4.0f),
-        ScoredResource("ares_shrike.weapon", "weapon", 2.0f)
+        		ScoredResource("ares_shrike.weapon", "weapon", 2.0f)
 			}
 		};
 		GiftItemDeliveryRandomRewarder@ rewarder = GiftItemDeliveryRandomRewarder(m_metagame, rewardPasses);
@@ -133,7 +133,7 @@ class ItemDeliveryConfiguratorInvasion : ItemDeliveryConfigurator {
 				ScoredResource("gold_bar.carry_item", "carry_item", 8.0f),
 				ScoredResource("laptop.carry_item", "carry_item", 6.0f),
 				ScoredResource("suitcase.carry_item", "carry_item", 4.0f),
-        ScoredResource("ares_shrike.weapon", "weapon", 4.0f)
+        		ScoredResource("ares_shrike.weapon", "weapon", 4.0f)
 			},
 			{ 
 				ScoredResource("underpants.carry_item", "carry_item", 30.0f),
