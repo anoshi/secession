@@ -2,6 +2,7 @@
 #include "tracker.as"
 #include "helpers.as"
 #include "log.as"
+#include "announce_task.as"
 #include "query_helpers.as"
 // --------------------------------------------
 
@@ -41,6 +42,11 @@ class CallHandler : Tracker {
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
 		const XmlElement@ char = getCharacterInfo(m_metagame, iChar);
 		//return getGenericObjectInfo(metagame, "character", characterId);
+		dictionary bnn_dict = {
+			{"%company_name", "Bob Pizza"}, 
+			{"%reward_type", "Pants"}, 
+			{"%rule_engage", "Kill em all!"}
+		};
 
 		_log("call made: " + sCall, 1);
 		//_log("call source position: " + getPlayerPosition, 1)
@@ -51,12 +57,10 @@ class CallHandler : Tracker {
 	////////////////////////
 	//   Common   Calls   //
 	////////////////////////
-		// Notify metagame call is a placeholder call to test calls that have 'notify_metagame="1"' set
-		if (sCall == "notify_metagame.call") {
-			sendFactionMessageKey(m_metagame, 0, "notify call", dictionary = {}, 1.0);
-		}
-		else if (sCall == "bnn_mission.call") {
-			sendFactionMessageKey(m_metagame, 0, "BNN mission", dictionary = {}, 1.0);
+		if (sCall == "bnn_mission.call") {
+			//sendFactionMessageKey(m_metagame, 0, "BNN mission", dictionary = {}, 1.0);
+			//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "BNN mission", bnn_dict));
+			notify(m_metagame, "BNN mission", bnn_dict);
 		}
 		else if (sCall == "bnn_advert.call") {
 			sendFactionMessageKey(m_metagame, 0, "BNN advert", dictionary = {}, 1.0);
@@ -67,7 +71,7 @@ class CallHandler : Tracker {
 		// The BC Hot Potato drops a very heavy, timed explosive in the backpack of a nearby enemy. If not detected 
 		// in time, the recipient (and those in the blast radius) is blown apart rather vigorously
 		else if (sCall == "bc_hot_potato_1.call") {
-			_log("BC hot potato reqested at: " + sPosi, 1);
+			_log("BC hot potato requested at: " + sPosi, 1);
 			array<const XmlElement@> targetChars = getCharactersNearPosition(m_metagame, v3Posi, 0, 10.00f);
 			_log(targetChars.size() + " potential characters to receive hot potato", 1);
 			if (targetChars.size() > 0) {
@@ -82,8 +86,6 @@ class CallHandler : Tracker {
 			}
 			_log("finished placing the BC Hot Potato", 1);
 		}
-		//dictionary call_dict = {{"TagName", "command"},{"class", "chat"},{"text", "call request event handler called!"}};
-		//m_metagame.getComms().send(XmlElement(call_dict));
 		//AnnounceTask(Metagame@ metagame, float time, int factionId, string key, dictionary@ a = dictionary(), float priority = 1.0)
 		//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 3.0, 0, "call made", bc_call_dict));
 		/*
@@ -386,12 +388,15 @@ class CallHandler : Tracker {
 		if (activeTimers.size() == 0) return;
 
 		for (uint i = 0; i < activeTimers.size(); ++i) {
+			// iterate through each active timer's countdowns
 			if (activeTimers[i] == "hot potato") {
 				hpTimer -= time;
 				_log("hot potato timer is " + hpTimer, 1);
 				if (hpTimer <= 0) {
 					activeTimers.erase(i);
 					i--;
+					// need a check to confirm the hot potato is still in the pack of hpHolder. If not, blow up where it is
+					// instead of blowing up the character who already got rid of it :-D
 					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", hpHolder);
 					string charPosi = qResult.getStringAttribute("position");
 					string boomComm = "<command class='create_instance' position='" + charPosi + "' instance_class='grenade' instance_key='hot_pot_boom.projectile' activated='1'></command>";
@@ -403,6 +408,7 @@ class CallHandler : Tracker {
 				if (empTimer <= 0) {
 					activeTimers.erase(i);
 					i--;
+					// add logic to remove destroyed vehicles from the empVeh array
 					if (empVeh.size() >= 1) { 	
 						for (uint j = 0; j < empVeh.size(); ++j) {
 							uint id = empVeh[j];
