@@ -42,10 +42,23 @@ class CallHandler : Tracker {
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
 		const XmlElement@ char = getCharacterInfo(m_metagame, iChar);
 		//return getGenericObjectInfo(metagame, "character", characterId);
+
+	///////////////////////////////////
+	// BNN Mission Dictionary populator
+	///////////////////////////////////
+	// Need to randomise the values of each dict map instead of hard-coded stuff, but this is mk.1 and working
 		dictionary bnn_dict = {
+			{"%activity", "the thing"},
+			{"%character_name", "char name"},
 			{"%company_name", "Bob Pizza"}, 
+			{"%location_pickup", "round the corner"},
+			{"%location_drop", "rah bish binnie"},
+			{"%location", "secret loc"},
+			{"%vicinity", "k-mart carpark"},
+			{"%reward_amount", "heaps!"},
 			{"%reward_type", "Pants"}, 
-			{"%rule_engage", "Kill em all!"}
+			{"%rule_engage", "Kill em all!"},
+			{"%rule_loot", "don't touch!"}
 		};
 
 		_log("call made: " + sCall, 1);
@@ -63,7 +76,7 @@ class CallHandler : Tracker {
 			notify(m_metagame, "BNN mission", bnn_dict);
 		}
 		else if (sCall == "bnn_advert.call") {
-			sendFactionMessageKey(m_metagame, 0, "BNN advert", dictionary = {}, 1.0);
+			notify(m_metagame, "BNN advert", bnn_dict);
 		}
 	////////////////////////
 	//  BlastCorp  Calls  //
