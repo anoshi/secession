@@ -210,6 +210,13 @@ class ItemDeliveryObjective : Objective {
 		// don't process if not properly started
 		if (!hasStarted()) return;
 
+		// BC Hot Potato item tracker
+		// we only need to know if the hot potato is dropped on the ground. Otherwise, it's still held by the target
+		if ((event.getStringAttribute("item_key") == "hot_potato.projectile") && (event.getStringAttribute("target_container_type_id") == "0")) {
+			string hpPosi = event.getStringAttribute("position");
+			_log("Hot Potato has been dropped on the ground at " + hpPosi, 1);
+			setHotPotPosi(hpPosi); // see helpers.as
+		}
 		// if already delivered, don't care
 		if (m_deliveryDone) return;
 

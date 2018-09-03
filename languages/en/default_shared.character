@@ -5,7 +5,7 @@
 
 	<!-- BEGIN secession comment keys -->	
 
-  <!-- BEGIN BNN announcements -->
+  	<!-- BEGIN BNN announcements -->
 	<comment key="BNN mission" text="%company_name reports unwanted %activity near %location. Hostile: %rule_engage. Payment: %reward_type, %reward_amount." />
 	<comment key="BNN mission" text="RECON of %location requested by %company_name. Hostiles: %rule_engage. Looting: %rule_loot. Payment: %reward_type, %reward_amount" />
 	<comment key="BNN mission" text="COURIER service requested for %company_name. Pick up: %location_pickup. Drop off: %location_drop. Payment: %reward_type, %reward_amount" />
