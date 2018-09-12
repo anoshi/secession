@@ -2,6 +2,7 @@
 <calls>
     <!-- COMMON calls -->
 	<call file="artillery1.call" />
+	<call file="bombing_run.call" />
 	<call file="buggy.call" />
 	<call file="bnn_advert.call" />
 	<call file="bnn_mission.call" />

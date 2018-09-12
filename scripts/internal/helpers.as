@@ -435,6 +435,19 @@ void merge(array<const XmlElement@>@ a1, const array<const XmlElement@>@ a2) {
 	}
 }
 
+// BEGIN SECESSION HELPERS
+// BC Hot Potato Position Tracker
+string hpPosition;
+void setHotPotPosi(string pos) {
+	hpPosition = pos;
+	_log("Hot Potato now at: " + hpPosition, 1);
+}
+string getHotPotPosi() {
+	return hpPosition;
+}
+
+// END SECESSION HELPERS
+// --------------------------------------------
 
 /*
 // --------------------------------------------

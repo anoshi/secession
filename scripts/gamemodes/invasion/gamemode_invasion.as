@@ -17,6 +17,7 @@
 // generic trackers
 #include "basic_command_handler.as"
 #include "call_handler.as"
+#include "bnn.as"
 #include "autosaver.as"
 #include "prison_break_objective.as"
 #include "unlock_manager.as"
@@ -274,7 +275,9 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 
 		addTracker(BasicCommandHandler(this));
 
-		addTracker(CallHandler(this));
+		addTracker(CallHandler(this)); // Secession: CallHandler Class and Methods
+
+		addTracker(BNN(this)); // Secession: Broadcast News Network Class and Methods
 	}
 
 	// --------------------------------------------

@@ -9,7 +9,8 @@
 
 // --------------------------------------------
 class CallHandler : Tracker {
-	protected Metagame@ m_metagame;
+	//protected Metagame@ m_metagame;
+	protected GameModeInvasion@ m_metagame;
 	//protected dictionary m_trackedMaps;
 	//protected Vector3 m_position;
 	//protected string m_managerName;
@@ -17,6 +18,7 @@ class CallHandler : Tracker {
 
 	protected float hpTimer = 15.0; // hot potato detonates after 15 seconds
 	protected int hpHolder; // id of character holding the hot potato
+	//protected string hpHolderPosi; // location of the target when receiving the hot potato
 	protected float empTimer = 10.0; // emp lasts for 10 seconds
 	protected array<int> empVeh; // array of vehicle ids affected by emp
 	protected array<string> activeTimers; // stores the names of active timers
@@ -26,7 +28,8 @@ class CallHandler : Tracker {
 	*/
 
 	// ----------------------------------------------------
-	CallHandler(Metagame@ metagame) {
+	CallHandler(GameModeInvasion@ metagame) {
+	//CallHandler(Metagame@ metagme) {}
 		@m_metagame = @metagame;
 	}
 
@@ -78,6 +81,10 @@ class CallHandler : Tracker {
 		else if (sCall == "bnn_advert.call") {
 			notify(m_metagame, "BNN advert", bnn_dict);
 		}
+		//else if (sCall == "bombing_run.call") {
+		//	_log("Bombing run from " + charPosi + " to " + sPosi + " queued", 1);
+		// subtract caller pos from target pos to get vector that is dist and dir from target to player.
+		//}
 	////////////////////////
 	//  BlastCorp  Calls  //
 	////////////////////////
@@ -85,19 +92,32 @@ class CallHandler : Tracker {
 		// in time, the recipient (and those in the blast radius) is blown apart rather vigorously
 		else if (sCall == "bc_hot_potato_1.call") {
 			_log("BC hot potato requested at: " + sPosi, 1);
-			array<const XmlElement@> targetChars = getCharactersNearPosition(m_metagame, v3Posi, 0, 10.00f);
-			_log(targetChars.size() + " potential characters to receive hot potato", 1);
-			if (targetChars.size() > 0) {
-				uint i = rand(0, targetChars.size() - 1);
-				const XmlElement@ mrPotato = targetChars[i];
-				hpHolder = mrPotato.getIntAttribute("id");
-				_log("character id: " + hpHolder + " chosen to receive hot potato.", 1);
-				string potatoComm = "<command class='update_inventory' character_id='" + hpHolder + "' container_type_class='backpack'>" + "<item class='grenade' key='hot_potato.projectile' />" + "</command>";
+			if (hpTimer == 15.0) {
+				array<const XmlElement@> targetChars;
+				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+					array<const XmlElement@> tempTargetChars = getCharactersNearPosition(m_metagame, v3Posi, i, 10.00f);
+					merge(targetChars, tempTargetChars);
+				}
+				_log(targetChars.size() + " potential characters to receive hot potato", 1);
+				if (targetChars.size() > 0) {
+					uint i = rand(0, targetChars.size() - 1);
+					const XmlElement@ mrPotato = targetChars[i];
+					hpHolder = mrPotato.getIntAttribute("id");
+					_log("character id: " + hpHolder + " chosen to receive hot potato.", 1);
+					string potatoComm = "<command class='update_inventory' character_id='" + hpHolder + "' container_type_class='backpack'>" + "<item class='grenade' key='hot_potato.projectile' />" + "</command>";
+					m_metagame.getComms().send(potatoComm);
+					//aka: addItemInBackpack(m_metagame, id, const Resource@ r);
+					//const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", hpHolder);
+					//hpHolderPosi = qResult.getStringAttribute("position");
+					_log("BC Hot Potato placed in backpack of character: " + hpHolder, 1);
+					setHotPotPosi("init");
+					activeTimers.push_back("hot potato");
+				}
+			} else { 
+				string potatoComm = "<command class='chat' faction_id='0' text='Wait for next available, over' priority='1'></command>";
 				m_metagame.getComms().send(potatoComm);
-				//aka: addItemInBackpack(m_metagame, id, const Resource@ r);
-				activeTimers.push_back("hot potato");
+				_log("hot potato already in effect", 1);
 			}
-			_log("finished placing the BC Hot Potato", 1);
 		}
 		//AnnounceTask(Metagame@ metagame, float time, int factionId, string key, dictionary@ a = dictionary(), float priority = 1.0)
 		//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 3.0, 0, "call made", bc_call_dict));
@@ -281,35 +301,41 @@ class CallHandler : Tracker {
 	////////////////////////
 		// The EMP is verly likely to stop movement of all enemy vehicles caught in the blast area. 
 		else if (sCall == "wt_emp_1.call") {
-			_log("WT activated EMP at: " + event.getStringAttribute("target_position"), 1);
-			array<const XmlElement@> hitVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1);
-			for (uint i = 0; i < hitVehicles.size(); ++i) {
-				const XmlElement@ info = hitVehicles[i];
-				int id = info.getIntAttribute("id");
-				_log("vehicle id: " + id, 1);
-				const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
-				int vType = vehInfo.getIntAttribute("type_id");
-				Vector3 v3VehPosi = stringToVector3(vehInfo.getStringAttribute("position"));
-				string sName = vehInfo.getStringAttribute("name");
-				string sType = vehInfo.getStringAttribute("type_id");
-				string sKey = vehInfo.getStringAttribute("key");
-				if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
-					_log("vehicle type " + sType + " (" + sKey + ") not affected by EMP.", 1);
-					hitVehicles.erase(i);
-					i--;
-					continue;
+			_log("WT requested EMP at: " + event.getStringAttribute("target_position"), 1);
+			if (empTimer == 10.0) {
+				array<const XmlElement@> hitVehicles = getVehiclesNearPosition(m_metagame, v3Posi, 1);
+				for (uint i = 0; i < hitVehicles.size(); ++i) {
+					const XmlElement@ info = hitVehicles[i];
+					int id = info.getIntAttribute("id");
+					_log("vehicle id: " + id, 1);
+					const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
+					int vType = vehInfo.getIntAttribute("type_id");
+					Vector3 v3VehPosi = stringToVector3(vehInfo.getStringAttribute("position"));
+					string sName = vehInfo.getStringAttribute("name");
+					string sType = vehInfo.getStringAttribute("type_id");
+					string sKey = vehInfo.getStringAttribute("key");
+					if ( vType == 51 || vType == 64 || vType == 65 || startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") || startsWith(sKey, "special_c") ) {
+						_log("vehicle type " + sType + " (" + sKey + ") not affected by EMP.", 1);
+						hitVehicles.erase(i);
+						i--;
+						continue;
+					}
+					if (checkRange(v3Posi, v3VehPosi, 25.00f) ) {
+						if (rand(0, 99) <= 90) {
+							_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
+							string command = "<command class='update_vehicle' id='" + id + "' forward='0 0 0' locked='1'></command>";
+							m_metagame.getComms().send(command);
+							empVeh.push_back(id); // add the vehicle to empVeh array, ready to unlock when EMP effect has faded 
+						} else { _log(sName + " passed save roll (>90). Not affected by EMP", 1 ); }
+					} else { _log("vehicle is out of range of EMP", 1); }
 				}
-				if (checkRange(v3Posi, v3VehPosi, 25.00f) ) {
-					if (rand(0, 99) <= 90) {
-						_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
-						string command = "<command class='update_vehicle' id='" + id + "' forward='0 0 0' locked='1'></command>";
-						m_metagame.getComms().send(command);
-						empVeh.push_back(id); // add the vehicle to empVeh array, ready to unlock when EMP effect has faded 
-					} else { _log(sName + " passed save roll (>90). Not affected by EMP", 1 ); }
-				} else { _log("vehicle is out of range of EMP", 1); }
+				activeTimers.push_back("emp");
+				_log("finished running getVehiclesNearPosition", 1);
+			} else {
+				string empComm = "<command class='chat' faction_id='0' text='Wait for next available, over' priority='1'></command>";
+				m_metagame.getComms().send(empComm);
+				_log("EMP already in effect", 1);				
 			}
-			activeTimers.push_back("emp");
-			_log("finished running getVehiclesNearPosition", 1);
 		}
 		// Pathping scans powered equipment (tanks, radio jammers, etc.) in use by the enemy and shows each item on the map.
 		else if (sCall == "wt_pathping_1.call") {
@@ -408,12 +434,21 @@ class CallHandler : Tracker {
 				if (hpTimer <= 0) {
 					activeTimers.erase(i);
 					i--;
-					// need a check to confirm the hot potato is still in the pack of hpHolder. If not, blow up where it is
-					// instead of blowing up the character who already got rid of it :-D
-					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", hpHolder);
-					string charPosi = qResult.getStringAttribute("position");
-					string boomComm = "<command class='create_instance' position='" + charPosi + "' instance_class='grenade' instance_key='hot_pot_boom.projectile' activated='1'></command>";
+					string hpPosition = getHotPotPosi();
+					if (hpPosition == "init") {
+						// hot potato wasn't dropped onto ground; may have been thrown. check if resource still exists
+						//const XmlElement@ isActive = getResource(m_metagame, "hot_potato.projectile", "grenade");
+						//if (isActive !is null) {
+						_log("Character id: " + hpHolder + " still has the hot potato. Good bye!", 1);
+						const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", hpHolder);
+						hpPosition = qResult.getStringAttribute("position");
+						//}
+					}
+					string boomComm = "<command class='create_instance' position='" + hpPosition + "' instance_class='grenade' instance_key='hot_pot_boom.projectile' activated='1'></command>";
 					m_metagame.getComms().send(boomComm);
+					// remove the hot potato item from play - not yet implemented
+					// reset the hot potato countdown timer
+					hpTimer = 15.0;
 				} 
 			} else if (activeTimers[i] == "emp") {
 				empTimer -= time;
@@ -428,6 +463,7 @@ class CallHandler : Tracker {
 							string unlockComm = "<command class='update_vehicle' id='" + id + "' locked='0'></command>";
 							m_metagame.getComms().send(unlockComm);
 							_log("unlocking vehicle " + id, 1);
+							empTimer = 10.0;
 						}
 					}
 				}
