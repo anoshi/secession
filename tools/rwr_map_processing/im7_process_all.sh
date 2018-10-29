@@ -143,7 +143,7 @@ fx_layers=(`find . -name 'effect_*' ! -name 'effect_combined_alpha.png' | sed 's
 IFS=
 
 if [[ "${#fx_layers[@]}" -eq 0 ]]; then
-    echo "No effects layers to process \n"
+    echo "No effects layers to process"
 else
     echo "Processing effects layers: ${fx_layers[@]}"
     convert \( -colorspace sRGB effect_none.png \) \( -colorspace sRGB effect_alpha_dirt*.png  \) \( -colorspace sRGB effect_none.png \) \( -colorspace sRGB -negate effect_none_a.png \) -channel RGBA -combine -colorspace sRGB PNG32:effect_combined_alpha.png
