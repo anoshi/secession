@@ -31,7 +31,7 @@ while [[ "$#" -gt 0 ]]; do
         -a|-al|--alpha|--alpha-layers|-r|--rwr-alpha) alpha_layers="$2 $3 $4 $5"; shift 4;;
         -t|-tl|--terrain|--terrain-layers|-s|--splat) terrain_layers="$2 $3 $4 $5"; shift 4;;
         -f|-fx|-fl|-fxl|--fx|--fx-layers) fx_layers="$2 $3 $4 $5"; shift 4;;
-        /?|-h|--help) echo; printf "usage: im7_process_all.sh [--alpha \e[4malpha_layers\e[0m] [--terrain \e[4mterrain_layers\e[0m] [--fx \e[4mfx_layers\e[0m]"; echo; echo; printf "example: im7_process_all.sh \e[33m-a\e[0m \e[31msand grass asphalt road\e[0m \e[33m-t\e[0m \e[32mrocky_mountain grass sand road\e[0m \e[33m-f\e[0m \e[034mnone dirtroad none none_a\e[0m"; echo; echo '* Layers must be specified in order from lowest to highest'; echo '* If no arguments are passed, the script will prompt for input'; exit;;
+        /?|-h|--help) echo; printf "usage: im6_process_all.sh [--alpha \e[4malpha_layers\e[0m] [--terrain \e[4mterrain_layers\e[0m] [--fx \e[4mfx_layers\e[0m]"; echo; echo; printf "example: im7_process_all.sh \e[33m-a\e[0m \e[31msand grass asphalt road\e[0m \e[33m-t\e[0m \e[32mrocky_mountain grass sand road\e[0m \e[33m-f\e[0m \e[034mnone dirtroad none none_a\e[0m"; echo; echo '* Layers must be specified in order from lowest to highest'; echo '* If no arguments are passed, the script will prompt for input'; exit;;
         *) echo "Unknown parameter passed: $1"; exit 1;;
     esac; 
     shift; 
