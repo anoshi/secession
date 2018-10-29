@@ -162,9 +162,9 @@ if [[ "${#alpha[@]}" -gt 0 ]]; then
 
     echo '5) Prepare map view'
     echo ' i] Convert heightmap to 8-bit greyscale'
-    convert _rwr_height.png -type Grayscale -resize 4096x4096 -depth 8 -set colorspace sRGB _big_grey_height.png
+    convert _rwr_height.png -type Grayscale -resize 4096x4096 -depth 8 -set colorspace RGB _big_grey_height.png
 
-    # convert _rwr_map_view_woods.png -type Grayscale -depth 8 -set colorspace sRGB _grey_woods.png'
+    # convert _rwr_map_view_woods.png -type Grayscale -depth 8 -set colorspace RGB _grey_woods.png'
     # convert _rwr_map_view_woods.png -modulate 100,0 _grey_woods.png
     convert _rwr_map_view_woods.png -alpha extract -depth 8 _grey_woods.png
     convert _rwr_map_view.png -modulate 100,0 _grey_objects.png
