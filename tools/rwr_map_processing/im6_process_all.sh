@@ -130,7 +130,7 @@ fi
 
 echo "Building terrain5_combined_alpha.png from ${terrain[0]}, ${terrain[1]}, ${terrain[2]}, and ${terrain[3]}"
 # Manually hack the convert command's arguments together
-convert -colorspace RGB ${terrain[0]} -colorspace RGB ${terrain[1]} -colorspace RGB ${terrain[2]} -colorspace RGB -negate ${terrain[3]} -channel RGBA -combine terrain5_combined_alpha.png
+convert -colorspace RGB ${terrain[0]} -colorspace RGB ${terrain[1]} -colorspace RGB ${terrain[2]} -colorspace RGB ${terrain[3]} -channel RGBA -combine terrain5_combined_alpha.png
 echo
 echo 'TERRAIN: done'
 echo
@@ -146,7 +146,7 @@ if [[ "${#fx_layers[@]}" -eq 0 ]]; then
     echo "No effects layers to process \n"
 else
     echo "Processing effects layers: ${fx_layers[@]}"
-    convert -colorspace RGB effect_none.png -colorspace RGB effect_alpha_dirt*.png -colorspace RGB effect_none.png -colorspace RGB -negate effect_none_a.png -channel RGBA -combine -colorspace RGB PNG32:effect_combined_alpha.png
+    convert -colorspace RGB effect_none.png -colorspace RGB effect_alpha_dirt*.png -colorspace RGB effect_none.png -colorspace RGB effect_none_a.png -channel RGBA -combine -colorspace RGB PNG32:effect_combined_alpha.png
     echo
     echo 'EFFECTS: done'
     echo
@@ -210,8 +210,8 @@ if [[ "${#alpha[@]}" -gt 0 ]]; then
     if [[ ! -e _rwr_alpha_road.png ]]; then
         echo 'No roads. Skipping'
     else
-        convert _rwr_alpha_road.png -negate -alpha extract -depth 8 _map_road_mask.png 
-        convert _map_composed"$count".png map_view_tile_road.png _map_road_mask.png -negate -composite _map_composed"$(($count+1))".png
+        convert _rwr_alpha_road.png -alpha extract -depth 8 _map_road_mask.png 
+        convert _map_composed"$count".png map_view_tile_road.png _map_road_mask.png -composite _map_composed"$(($count+1))".png
         let count=count+1
     fi
 
