@@ -3,7 +3,7 @@
 *Secession* is a real-time, single and multi-player combat simulation that operates as a modification to the game [Running With Rifles](http://www.runningwithrifles.com). Each player takes part in skirmishes occurring on various battlefields, and must choose to ally or engage in combat with other players in an effort to establish majority control of key locations in the game world.
 
 ### Story
-Secession is intended to be adaptable to portray any time or level of technology. This variant has a futuristic setting and its events take place on an planet not unlike earth, but one that can be likened more to a gladiatorial ring than a populated world with its own economy and laws.
+Secession is adaptable to portray any time or level of technology. This variant has a futuristic setting and its events take place on an planet not unlike earth, but one that can be likened more to a gladiatorial ring than a populated world with its own economy and laws.
 
 Five major corporations &mdash; vying for status and the right to provide security services to intergalactic governmental icons and celebrities &mdash; use this planet to showcase their staff's abilities and training. Unfortunately, the known universe exists in a time of greed, where one's allegiance is to the highest bidder. Mercenary teams that prove their worth to one corporation are prime candidates for assimilation within another.
 
@@ -21,7 +21,7 @@ Beyond the conflict occuring between the corporations, a media presence known as
   
 2. The game server selects a starting map and location for the player based on the selected corporation. 
 
-3. The player spawns as one of the following character types, each of which having its own `Offence`, `Defence`, and `Command Rating`:
+3. The player spawns as one of the following character types, each of which having its own `Offence`, `Defence`, and `Command` Ratings:
   * `Light Foot`
   * `Heavy Trooper`
   * `Sniper`
@@ -30,15 +30,20 @@ Beyond the conflict occuring between the corporations, a media presence known as
   * `Medic`
   * `Communications Technician`
 
-
-## work in progress, below this point (post refactor to mod)
 ### Game Play
 #### Primary and Secondary objectives:
-Each area in the *Secession* world has a number of zones that need to be captured and controlled by one corporation (or alliance) before the area is marked on the world map as owned by that entity. Each corporation's command staff will advise mercenaries which targets and zones are of most interest throughout each battle. 
+Each area in the *Secession* world has a number of zones that need to be captured and controlled by a corporation (or alliance) before the area is marked on the world map as owned by that entity. When sufficient zones have been captured by the player's faction, victory is achieved in that area and adjacent areas are made available for conquest. If the player's faction can conquer enough areas in the world map they can begin to launch attacks on the opposing factions' headquarters. Successful attacks on these areas allow the victor to inherit all of the defeated faction's technologies. The defeated faction is removed from the game world completely.
+
+Conversely, if an area encounter results in the player's faction losing control of too many zones, they are forced to retreat to an adjacent area still under their control. If none remains, the player is absorbed by the opposing faction and granted powers equivalent to that of a new recruit.
+
+Throughout every encounter, each corporation's command staff advise mercenaries which targets and locations in the current area are of most interest. The map overlay is updated accordingly so that players can immediately see where the bulk of their team is focussing its efforts. Players are encouraged to support their AI-controlled teammates in achieving these objectives, but are free to operate as they wish while the greater area is being contested.
+
+Players should be aware that other factions will be fighting for control of other areas while the area the player is located in is being contested. The world map may show significant changes in possession at the conclusion of each skirmish. With this in mind, it is vital for players to ensure their faction's territorial holdings are solidly defended before attempting to take over more areas. 
 
 #### Tertiary objectives
-The BNN posts regular announcements over the airwaves, advising listeners of locations of interest in their current area and statistics pertaining to the greater world. Mercenaries can investigate reports of misplaced supply drops or attempt high-risk missions that have been posted by external parties. Forming friendships outside of the major corporations can earn players a healthy side-income and may even allow them to gain access to unknown or experimental technologies.
+The BNN posts regular announcements over the airwaves, advising listeners of locations of interest in their current area and statistics pertaining to the greater world. Mercenaries can investigate reports of misplaced supply drops or attempt high-risk missions that have been posted by external parties. Forming friendships outside of the major corporations can earn players a healthy side-income and may even allow them to gain access to unknown or experimental technologies that can improve their performance in combat, transport, or trade.
 
+## work in progress, below this point (post refactor to mod)
 #### Experience Points (XP)
 
 #### Resource Points (RP)
