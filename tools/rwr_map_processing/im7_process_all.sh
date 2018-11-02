@@ -58,7 +58,7 @@ fnf=0 # file not found: false
 count=0 # iterate through array
 while [ $count -lt "${#alpha[@]}" ]; do
     if [[ ! -e "${alpha[$count]}" ]]; then
-        echo "${alpha[$count]} is not present"; fnf=1
+        printf "\e[31m${alpha[$count]} is not present\e[0m\n"; fnf=1
     else 
         out=`echo "${alpha[$count]}" | sed "s/_rwr_/terrain5_/"`
         if [[ "${alpha[$count]}" == road* || "${alpha[$count]}" == asphalt* ]]; then
@@ -74,7 +74,7 @@ while [ $count -lt "${#alpha[@]}" ]; do
     let count=count+1
 done
 if [[ $fnf -eq 1 ]]; then
-    { echo "Ensure the ALPHA layer(s) listed above is present and named accordingly in your Inkscape project, run the rwr_exporter, then try this utility again." 1>&2 ; exit 1; }
+    { printf "\nEnsure the ALPHA layer(s) listed above is present and named accordingly in your Inkscape project, run the rwr_exporter, then try this utility again.\n\n" 1>&2 ; exit 1; }
 fi
 
 printf "\n2) \e[4mOne-pass terrain optimisation\e[0m: merge generated terrain splat files into one (max: 4)\n\n"
@@ -118,12 +118,12 @@ fnf=0
 count=0
 while [ $count -lt "${#terrain[@]}" ]; do
     if [[ ! -e "${terrain[$count]}" ]]; then
-        echo "${terrain[$count]} is not present"; fnf=1
+        printf "\e[31m${terrain[$count]} is not present\e[0m\n"; fnf=1
     fi
     let count=count+1
 done
 if [[ $fnf -eq 1 ]]; then
-    { echo "Ensure the TERRAIN file(s) listed above is present in this map folder, then try this utility again." 1>&2 ; exit 1; }
+    { printf "\nEnsure the TERRAIN file(s) listed above is present in this map folder, then try this utility again.\n\n" 1>&2 ; exit 1; }
 fi
 
 echo "Building terrain5_combined_alpha.png from ${terrain[0]}, ${terrain[1]}, ${terrain[2]}, and ${terrain[3]}"
@@ -173,12 +173,12 @@ fnf=0
 count=0
 while [ $count -lt "${#fx[@]}" ]; do
     if [[ ! -e "${fx[$count]}" ]]; then
-        echo "${fx[$count]} is not present"; fnf=1
+        printf "\e[31m${fx[$count]} is not present\e]0m\n"; fnf=1
     fi
     let count=count+1
 done
 if [[ $fnf -eq 1 ]]; then
-    { echo "Ensure the EFFECT file(s) listed above is present in this map folder, then try this utility again." 1>&2 ; exit 1; }
+    { printf "\nEnsure the EFFECT file(s) listed above is present in this map folder, then try this utility again.\n\n" 1>&2 ; exit 1; }
 fi
 
 if [[ "${#fx[@]}" -eq 0 ]]; then
