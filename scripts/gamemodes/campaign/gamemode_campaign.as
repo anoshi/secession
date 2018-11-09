@@ -21,6 +21,11 @@ class GameModeCampaign : GameModeInvasion {
 	}
 
 	// --------------------------------------------
+	protected void setupUnlockManager() {
+		@m_unlockManager = UnlockManager(this, this, 100.0 * 60.0 * 60.0);
+	}
+	
+	// --------------------------------------------
 	protected void setupMapRotator() {
 		// StageConfigurator registers itself to map rotator, waiting to be called at a specific time
 		MapRotatorCampaign mapRotatorCampaign(this);
@@ -30,6 +35,11 @@ class GameModeCampaign : GameModeInvasion {
 
 	// --------------------------------------------
 	protected void setupPenaltyManager() {
+		// skip for single player
+	}
+
+	// --------------------------------------------
+	protected void setupLocalBanManager() {
 		// skip for single player
 	}
 
@@ -55,7 +65,9 @@ class GameModeCampaign : GameModeInvasion {
 
 		m_mapRotator.save(root);
 		m_unlockManager.save(root);
-		m_specialCrateManager.save(root);
+		if (m_specialCrateManager !is null) {
+			m_specialCrateManager.save(root);
+		}
 		if (m_specialCargoVehicleManager !is null) {
 			m_specialCargoVehicleManager.save(root);
 		}

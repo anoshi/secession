@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
+<!-- package 'description' is used here as a key, not a value. See languages/<language>/package_ui.xml> -->
 <package  
   name="secession"
   description="Campaign description"
-  show_in_quick_match_mods="0"
-  show_in_campaigns="1"
+	show_in_quick_match_mods="0"
+  show_in_campaign_menu="1"
   campaign_entry_script="start_campaign.as">
 
 	<campaign_options 

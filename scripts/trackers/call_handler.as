@@ -4,6 +4,7 @@
 #include "log.as"
 #include "announce_task.as"
 #include "query_helpers.as"
+#include "secession_helpers.as"
 // --------------------------------------------
 
 
@@ -53,13 +54,13 @@ class CallHandler : Tracker {
 		dictionary bnn_dict = {
 			{"%activity", "the thing"},
 			{"%character_name", "char name"},
-			{"%company_name", "Bob Pizza"}, 
+			{"%company_name", "Bob Pizza"},
 			{"%location_pickup", "round the corner"},
 			{"%location_drop", "rah bish binnie"},
 			{"%location", "secret loc"},
 			{"%vicinity", "k-mart carpark"},
 			{"%reward_amount", "heaps!"},
-			{"%reward_type", "Pants"}, 
+			{"%reward_type", "Pants"},
 			{"%rule_engage", "Kill em all!"},
 			{"%rule_loot", "don't touch!"}
 		};
@@ -88,7 +89,7 @@ class CallHandler : Tracker {
 	////////////////////////
 	//  BlastCorp  Calls  //
 	////////////////////////
-		// The BC Hot Potato drops a very heavy, timed explosive in the backpack of a nearby enemy. If not detected 
+		// The BC Hot Potato drops a very heavy, timed explosive in the backpack of a nearby enemy. If not detected
 		// in time, the recipient (and those in the blast radius) is blown apart rather vigorously
 		else if (sCall == "bc_hot_potato_1.call") {
 			_log("BC hot potato requested at: " + sPosi, 1);
@@ -113,7 +114,7 @@ class CallHandler : Tracker {
 					setHotPotPosi("init");
 					activeTimers.push_back("hot potato");
 				}
-			} else { 
+			} else {
 				string potatoComm = "<command class='chat' faction_id='0' text='Wait for next available, over' priority='1'></command>";
 				m_metagame.getComms().send(potatoComm);
 				_log("hot potato already in effect", 1);
@@ -123,8 +124,8 @@ class CallHandler : Tracker {
 		//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 3.0, 0, "call made", bc_call_dict));
 		/*
 		dictionary bc_call_dict = {
-			{"%map_name", stage.m_mapInfo.m_name}, 
-			{"%base_name", baseName}, 
+			{"%map_name", stage.m_mapInfo.m_name},
+			{"%base_name", baseName},
 			{"%number_of_bases", formatUInt(stage.m_factions[0].m_ownedBases.size())}
 		};
 		*/
@@ -152,16 +153,16 @@ class CallHandler : Tracker {
 					string spawnCommand = "<command class='create_instance' instance_class='character' faction_id='0' position='" + charPosi + "' instance_key='civilian' /></command>";
 					m_metagame.getComms().send(spawnCommand);
 				} else {
-					_log("Character " + id + " passed save roll (>=60). Not converted", 1 ); 
+					_log("Character " + id + " passed save roll (>=60). Not converted", 1 );
 				}
 			}
 			_log("finished conversion attempt", 1);
-		} 
-		// The LC Forcefield places a red translucent dome over the area for a period. Characters can move 
-		// through the field, but projectiles that hit the dome ricochet or explode 
+		}
+		// The LC Forcefield places a red translucent dome over the area for a period. Characters can move
+		// through the field, but projectiles that hit the dome ricochet or explode
 		else if (sCall == "lc_force_field_1.call") {
-			_log("establishing lc forcefield at: " + sPosi, 1);	
-		} 
+			_log("establishing lc forcefield at: " + sPosi, 1);
+		}
 		// The Repair Bomb operates similarly to the LC Heal bomb, repairing damage to all vehicles in the area of effect
 		// Currently works far too well; it doesn't stop 'repairing' a vehicle that is 100% health... Script a solution
 		else if (sCall == "lc_repair_bomb_1.call") {
@@ -184,11 +185,11 @@ class CallHandler : Tracker {
 						i--;
 					} else {
 						if (rand(0, 99) <= 90) {
-						_log(sName + " being repaired by Repair Bomb", 1); 
+						_log(sName + " being repaired by Repair Bomb", 1);
 						string command = "<command class='update_vehicle' id='" + id + "' health='0.0'></command>";
 						m_metagame.getComms().send(command);
 						} else {
-							_log(sName + " passed save roll (>90). Not affected by EMP", 1 ); 
+							_log(sName + " passed save roll (>90). Not affected by EMP", 1 );
 						}
 					}
 				}
@@ -219,13 +220,13 @@ class CallHandler : Tracker {
 				m_metagame.getComms().send(command);
 			}
 			_log("finished establishing RA Nanobot Cloud", 1);
-		} 
-		// The sprint call temporarily boosts the speed and willingness to charge attributes of friendly units near the caller 
+		}
+		// The sprint call temporarily boosts the speed and willingness to charge attributes of friendly units near the caller
 		else if (sCall == "ra_sprint_1.call") {
 			_log("ra sprint operating", 1);
 			sendFactionMessageKey(m_metagame, 0, "ra_sprint", dictionary = {}, 1.0);
 			string markComm = "<command class='set_marker' faction_id='0' id='4041' enabled='1' atlas_index='0' text='RANDOM TEXT YEEOW' position='" + sPosi + "' color='#ff0000' range='10.0'></command>";
-			m_metagame.getComms().send(markComm);			
+			m_metagame.getComms().send(markComm);
 			_log("now running getCharactersNearPosition", 1);
 			array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 0, 25.00f);
 			_log(hitChars.size() + " characters boosed by Sprint", 1);
@@ -238,7 +239,7 @@ class CallHandler : Tracker {
 				m_metagame.getComms().send(sprintcomm);
 			}
 			_log("finished running RA Sprint", 1);
-		} 
+		}
 		// The teleport call relocates the caller to the desired location. * Warning: May not transfer all equipment in the process *
 		else if (sCall == "ra_teleport_1.call") {
 			_log("ra teleport requested", 1);
@@ -254,19 +255,19 @@ class CallHandler : Tracker {
 	// ScopeSystems Calls //
 	////////////////////////
 		// The armour-piercing rounds call was intended to grant armour-piercing qualities (kill_probability="[123].01")
-		// to projectiles fired by SS sniper rifles for a period. This does not appear to be possible, so the call drops 
+		// to projectiles fired by SS sniper rifles for a period. This does not appear to be possible, so the call drops
 		// a crate containing a SS-specific sniper rifle (that fires AP rounds) at the location requested by the caller
 
-		// The explosive rounds call was intended to grant explosive qualities to projectiles fired by SS shotguns and sniper 
+		// The explosive rounds call was intended to grant explosive qualities to projectiles fired by SS shotguns and sniper
 		// rifles for a period. This does not appear to be possible, so the call drops a crate containing a SS-specific shotgun
 		// (that fires explosive rounds) at the location requested by the caller.
-		
+
 		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
 		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and destroy the device.
 		else if (sCall == "ss_probe_1.call") {
 			_log("SS probe not implemented, yet", 1);
 		}
-		// The x-ray call advises the contents of crates as well as armoured and hidden devices in the game. It allows SS troops to make 
+		// The x-ray call advises the contents of crates as well as armoured and hidden devices in the game. It allows SS troops to make
 		// a judgement call as to whether or not they should attempt to reach the location in the first place.
 		else if (sCall == "ss_x-ray_1.call") {
 			array<const XmlElement@> xrayItem = getVehiclesNearPosition(m_metagame, v3Posi, 1);
@@ -299,7 +300,7 @@ class CallHandler : Tracker {
 	////////////////////////
 	//   WyreTek  Calls   //
 	////////////////////////
-		// The EMP is verly likely to stop movement of all enemy vehicles caught in the blast area. 
+		// The EMP is verly likely to stop movement of all enemy vehicles caught in the blast area.
 		else if (sCall == "wt_emp_1.call") {
 			_log("WT requested EMP at: " + event.getStringAttribute("target_position"), 1);
 			if (empTimer == 10.0) {
@@ -322,10 +323,10 @@ class CallHandler : Tracker {
 					}
 					if (checkRange(v3Posi, v3VehPosi, 25.00f) ) {
 						if (rand(0, 99) <= 90) {
-							_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1); 
+							_log(sName + " is within 25.00f of EMP blast and failed save roll (<90). Applying effect", 1);
 							string command = "<command class='update_vehicle' id='" + id + "' forward='0 0 0' locked='1'></command>";
 							m_metagame.getComms().send(command);
-							empVeh.push_back(id); // add the vehicle to empVeh array, ready to unlock when EMP effect has faded 
+							empVeh.push_back(id); // add the vehicle to empVeh array, ready to unlock when EMP effect has faded
 						} else { _log(sName + " passed save roll (>90). Not affected by EMP", 1 ); }
 					} else { _log("vehicle is out of range of EMP", 1); }
 				}
@@ -334,7 +335,7 @@ class CallHandler : Tracker {
 			} else {
 				string empComm = "<command class='chat' faction_id='0' text='Wait for next available, over' priority='1'></command>";
 				m_metagame.getComms().send(empComm);
-				_log("EMP already in effect", 1);				
+				_log("EMP already in effect", 1);
 			}
 		}
 		// Pathping scans powered equipment (tanks, radio jammers, etc.) in use by the enemy and shows each item on the map.
@@ -355,7 +356,7 @@ class CallHandler : Tracker {
 					i--;
 					continue;
 				} else {
-					_log("showing vehicle " + id + " (" + sName + ") on map", 1); 
+					_log("showing vehicle " + id + " (" + sName + ") on map", 1);
 					string command = "<command class='set_spotting' vehicle_id='" + id + "'></command>";
 					m_metagame.getComms().send(command);
 				}
@@ -383,11 +384,11 @@ class CallHandler : Tracker {
 					string spawnCommand = "<command class='create_instance' instance_class='character' faction_id='0' position='" + charPosi + "' instance_key='civilian' /></command>";
 					m_metagame.getComms().send(spawnCommand);
 				} else {
-					_log("Character " + id + " passed save roll (>=60). Not affected by Propaganda", 1 ); 
+					_log("Character " + id + " passed save roll (>=60). Not affected by Propaganda", 1 );
 				}
 			}
 			_log("finished distributing propaganda", 1);
-		} 
+		}
 	}
 	// --------------------------------------------
 	/*
@@ -399,7 +400,7 @@ class CallHandler : Tracker {
 				found = 1;
 				break;
 			}
-		} 
+		}
 		return found > 0;
 	}
 
@@ -449,7 +450,7 @@ class CallHandler : Tracker {
 					// remove the hot potato item from play - not yet implemented
 					// reset the hot potato countdown timer
 					hpTimer = 15.0;
-				} 
+				}
 			} else if (activeTimers[i] == "emp") {
 				empTimer -= time;
 				_log("emp timer is " + empTimer, 1);
@@ -457,7 +458,7 @@ class CallHandler : Tracker {
 					activeTimers.erase(i);
 					i--;
 					// add logic to remove destroyed vehicles from the empVeh array
-					if (empVeh.size() >= 1) { 	
+					if (empVeh.size() >= 1) {
 						for (uint j = 0; j < empVeh.size(); ++j) {
 							uint id = empVeh[j];
 							string unlockComm = "<command class='update_vehicle' id='" + id + "' locked='0'></command>";
@@ -470,7 +471,7 @@ class CallHandler : Tracker {
 			}
 		}
 	}
-	
+
 
 	// ----------------------------------------------------
 

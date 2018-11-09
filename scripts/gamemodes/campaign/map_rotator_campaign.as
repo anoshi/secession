@@ -129,7 +129,9 @@ class MapRotatorCampaign : MapRotatorInvasion {
 
 		// also at this point, when the map is getting completed, change the stage settings already
 		// so that next time if we come back here, it's changed
-		setupStageComplete(m_currentStageIndex);
+		// - don't do it here, it's too early
+		// - if game is saved and quit, and then loaded, the stage settings have faction size 1 which isn't correct
+		//setupStageComplete(m_currentStageIndex);
 
 		if (checkForFinalBattleUnlock()) {
 			// we just unlocked a final battle, re-determine extraction points, might be in this map
@@ -357,6 +359,9 @@ class MapRotatorCampaign : MapRotatorInvasion {
 		const array<const XmlElement@> list = getExtractionHitboxList();
 		if (list is null) return;
 
+		// only show extraction markers at screen edge if current map is complete
+		bool showAtScreenEdge = isStageCompleted(m_currentStageIndex);
+
 		int offset = 2000;
 		for (uint i = 0; i < list.size(); ++i) {
 			const XmlElement@ hitboxNode = list[i];
@@ -383,7 +388,7 @@ class MapRotatorCampaign : MapRotatorInvasion {
 			string position = hitboxNode.getStringAttribute("position");
 
 			string command = "<command class='set_marker' id='" + offset + "' faction_id='0' atlas_index='" + atlasIndex + 
-				"' text='" + text + "' position='" + position + "' color='" + color + "' size='" + size + "' />";
+				"' text='" + text + "' position='" + position + "' color='" + color + "' size='" + size + "' show_at_screen_edge='" + (showAtScreenEdge?1:0) + "' />";
 			m_metagame.getComms().send(command);
 
 			offset++;
@@ -437,6 +442,7 @@ class MapRotatorCampaign : MapRotatorInvasion {
 
 	// ----------------------------------------------------
 	void update(float time) {
+		// TODO: likely we could do this at gameContinuePreStart, but won't change now to avoid re-testing
 		ensureValidLocalPlayer(time);
 	}
 
@@ -690,42 +696,23 @@ class MapRotatorCampaign : MapRotatorInvasion {
 
 	// --------------------------------------------
     void startMap(int index, bool beginOnly = false) {
+
+		// if current map is complete, change the stage to such now, so that if we get back, it'll be setup properly for 1 faction only
+		if (!beginOnly && m_currentStageIndex != index && isStageCompleted(m_currentStageIndex)) {
+			// assume 1-faction stages have been already setup in completed state
+			if (m_stages[m_currentStageIndex].m_factions.size() > 1) {
+				setupStageComplete(m_currentStageIndex);
+			}
+		}
+		
+		// if this is the very first map, remove intel manager to not overwhelm new player with it
+		if (m_stagesCompleted.size() == 0 && !m_metagame.getUserSettings().m_continueAsNewCampaign) {
+			m_stages[index].setIntelManager(null);
+		}
+
 		MapRotatorInvasion::startMap(index, beginOnly);
 
-		// for unknown reason, after map1 was completed, the game was quit and restarted,
-		// the metagame wasn't agreeing that the map had been already completed, while the match was over,
-		// resulting in no extraction point to the next map, map3 in that case
 		if (beginOnly && m_currentStageIndex >= 0) {
-			// here's a failsafe 
-			// - check if the game considers the game over, set the map completed
-			_log("checking for load game completed map fail safe:");
-			_log("current stage index: " + m_currentStageIndex);
-			_log("is completed: " + isStageCompleted(m_currentStageIndex));
-			if (!isStageCompleted(m_currentStageIndex)) {
-				// verify from game
-				const XmlElement@ node = getGeneralInfo(m_metagame);
-				if (node !is null) {
-					int matchWinner = node.getIntAttribute("match_winner");
-					bool matchOver = node.getIntAttribute("match_over") == 1;
-					_log("match winner: " + matchWinner);
-					_log("match over: " + matchOver);
-					if (matchOver && matchWinner == 0) {
-						// should've been completed
-						_log("failsafe getting triggered, declaring this map done");
-						//m_metagame.getComms().send("declare_winner 0");
-						for (uint i = 1; i < m_metagame.getFactionCount(); ++i) {
-							m_metagame.getComms().send("<command class='set_match_status' lose='1' faction_id='" + i + "' />");
-						}
-						m_metagame.getComms().send("<command class='set_match_status' win='1' faction_id='0' />");
-					} else if (matchOver && matchWinner != 0) {
-						// auto restart
-						restartMap();
-					}
-				}
-			} else {
-				_log("classified as completed");
-			}
-
 			// here's 0.97 compatibility:
 			// - if we notice a faction being completely beaten here, unlock a final battle
 			checkForFinalBattleUnlock();
@@ -756,7 +743,7 @@ class MapRotatorCampaign : MapRotatorInvasion {
 		}
 		return result;
 	}
-
+	
 	// --------------------------------------------
 	protected void saveImpl(XmlElement@ subroot) {
 		MapRotatorInvasion::saveImpl(subroot);
@@ -874,6 +861,15 @@ class MapRotatorCampaign : MapRotatorInvasion {
 		// to reflect that
 		for (uint i = 0; i < m_stagesCompleted.size(); ++i) {
 			int index = m_stagesCompleted[i];
+			if (m_currentStageIndex == index) {
+				// NOTE, take the factions from the game here, we don't know the actual amount of factions yet on the script side
+				// - could be what is initially set in the stages, or in completed stage if already transformed
+				if (getFactions(m_metagame).size() > 1) {
+					// not yet in complete state, don't setup as such then
+					continue;
+				}
+				// else we have just one faction, so setup the stage in complete state
+			}
 			setupStageComplete(index);
 		}
 

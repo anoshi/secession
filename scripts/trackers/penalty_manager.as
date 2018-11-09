@@ -455,5 +455,94 @@ class PenaltyManager : Tracker {
 	bool hasStarted() const {
 		return true;
 	}
+	
+	// --------------------------------------------
+	protected void handleChatEvent(const XmlElement@ event) {		
+		string message = event.getStringAttribute("message");
+		// for the most part, chat events aren't commands, so check that first 
+		if (!startsWith(message, "/")) {
+			return;
+		}
+		
+		string sender = event.getStringAttribute("player_name");
+		int senderId = event.getIntAttribute("player_id");
+		
+		// admin and moderator only from here on
+		if (!m_metagame.getAdminManager().isAdmin(sender, senderId) && !m_metagame.getModeratorManager().isModerator(sender, senderId)) {
+			return;
+		}
+		if (checkCommand(message, "penalize_id")) {
+			handlePenalize(message,senderId,true);
+		} else if (checkCommand(message, "penalize")) {
+			handlePenalize(message,senderId);
+		} else if (checkCommand(message, "forgive_id")) {
+			handleForgive(message,senderId,true);
+		} else if (checkCommand(message, "forgive")) {
+			handleForgive(message,senderId);
+		}
+	}
+	
+	// --------------------------------------------
+	protected void handlePenalize(string message, int senderId, bool id = false) {
+		const XmlElement@ p = getPlayerByIdOrNameFromCommand(m_metagame, message, id);
+		if (p !is null) {
+			// get player's id, ip, sid and hash, in case a PenalizedPlayer object must be constructed
+			int playerId = p.getIntAttribute("player_id"); 
+			string playerIp = p.getStringAttribute("ip");
+			string playerSid = p.getStringAttribute("sid");
+			string playerHash = p.getStringAttribute("profile_hash");
+			string playerName = p.getStringAttribute("name");
+
+			// ok player id, now penalize
+			//notify(m_metagame, "penalizing player", dictionary = {{"%player_name", playerName}}, "misc");
+			
+			PenalizedPlayer@ player;
+			string key = playerSid;
+			if (key != "ID0") {
+				if (m_trackedPlayers.exists(key)) {
+					@player = m_trackedPlayers.get(key);
+				} else {
+					@player = PenalizedPlayer(playerName, playerHash, playerIp, playerSid, playerId);
+					m_trackedPlayers.add(player);
+				}
+				
+				player.m_penaltyTimer = m_penaltyTime;
+				sendPrivateMessage(m_metagame, senderId, "penalizing " + playerName + " for " + (m_penaltyTime / 60) + " minutes");
+				startPenalty(player);
+			}
+		} else {
+			//_log("* couldn't find a match for " + playerName);
+			sendPrivateMessage(m_metagame, senderId, "penalize missed!");
+		}
+	}
+	
+	// --------------------------------------------
+	protected void handleForgive(string message, int senderId, bool id = false) {
+		const XmlElement@ p = getPlayerByIdOrNameFromCommand(m_metagame, message, id);
+		if (p !is null) {
+			int playerId = p.getIntAttribute("player_id"); // get player's id and sid
+			string playerSid = p.getStringAttribute("sid");
+			string playerName = p.getStringAttribute("name");
+
+			// ok player id, now forgive
+			PenalizedPlayer@ player;
+			string key = playerSid;
+			if (key != "ID0") {
+				if (m_trackedPlayers.exists(key)) {
+					@player = m_trackedPlayers.get(key);
+				} else {
+					sendPrivateMessage(m_metagame, senderId, "player not penalized");
+					return;
+				}
+				
+				player.m_penaltyTimer = -1.0;
+				endPenalty(player);
+				sendPrivateMessage(m_metagame, senderId, "player " + playerName + " forgiven");
+			}
+		} else {
+			//_log("* couldn't find a match for " + playerName);
+			sendPrivateMessage(m_metagame, senderId, "forgive missed!");
+		}
+	}
 }
 

@@ -351,7 +351,7 @@ class Phase4 : Phase {
 	}
 
 	// --------------------------------------------
-	void load(XmlElement@ root) {
+	void load(const XmlElement@ root) {
 		// here's a little hack;
 		// - if we come by load method, we know we're continuing, store that piece of inof
 		m_continueMode = true;

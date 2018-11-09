@@ -12,7 +12,8 @@ class Overtime : Tracker {
 	protected int m_matchWinner;
 	protected float m_timer;
 	protected float REFRESH_TIME = 10.0;
-	protected float THRESHOLD = 80.0;
+	protected float THRESHOLD1 = 120.0;
+	protected float THRESHOLD2 = 60.0;
 
 	// --------------------------------------------
 	Overtime(GameModeInvasion@ metagame, int factionId) {
@@ -64,17 +65,17 @@ class Overtime : Tracker {
 			// or current winner is neutral
 			(factions[m_matchWinner].isNeutral()) ||
 			// or win time used to be below threshold, and now went back up
-			(lastWinTimer <= THRESHOLD && m_matchWinTimer > THRESHOLD)) {
+			(lastWinTimer <= THRESHOLD1 && m_matchWinTimer > THRESHOLD1)) {
 
 			// go back to default
 			setLoserCapacityDefault();
-
 			setAllDefaultMode();
 
-		} else if (lastWinTimer > THRESHOLD && m_matchWinTimer <= THRESHOLD) {
-			setLoserCapacityDown();
-
+		} else if (lastWinTimer > THRESHOLD1 && m_matchWinTimer <= THRESHOLD1) {
 			setLoserOffensiveMode();
+
+		} else if (lastWinTimer > THRESHOLD2 && m_matchWinTimer <= THRESHOLD2) {
+			setLoserCapacityDown();
 		}
 
 		m_timer = REFRESH_TIME;
@@ -107,15 +108,19 @@ class Overtime : Tracker {
 		for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
 			Faction@ f = m_metagame.getFactions()[i];
 			float multiplier = m_metagame.determineFinalFactionCapacityMultiplier(f, i);
+			float offset = f.m_capacityOffset;
 
 			if (int(i) == m_matchWinner) {
 				command +=
-				"    <faction capacity_multiplier='" + multiplier + "' />";
+				"    <faction capacity_multiplier='" + multiplier + "' " + 
+				"    		  capacity_offset='" + offset + "' " + "/>";
 			} else {
 				// if capacity multiplier was 0 (neutral), it will continue to be
 				float capacity = min(multiplier, 0.05);
+				offset = 0.0;
 				command +=
-				"    <faction capacity_multiplier='" + capacity + "' />";
+				"    <faction capacity_multiplier='" + capacity + "' " +
+				"             capacity_offset='" + offset + "' />";
 			}
 		}
 
@@ -123,6 +128,16 @@ class Overtime : Tracker {
 			"</command>";
 
 		m_metagame.getComms().send(command);
+		
+		// also make enemies go in charge mode
+		for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+			if (int(i) != m_matchWinner) {
+				m_metagame.getComms().send(
+					"<command class='soldier_ai' faction='" + i + "'>" + 
+					"  <parameter class='willingness_to_charge' value='1.0' />" +
+					"</command>");			
+			}
+		}
 
 		// TODO: instead of using friendly id we could have this send messages to all factions
 		// - would make the tracker usable in PvP too 
@@ -145,9 +160,11 @@ class Overtime : Tracker {
 		for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
 			Faction@ f = m_metagame.getFactions()[i];
 			float multiplier = m_metagame.determineFinalFactionCapacityMultiplier(f, i);
+			float offset = f.m_capacityOffset;
 
 			command +=
-			"    <faction capacity_multiplier='" + multiplier + "' />";
+			"    <faction capacity_multiplier='" + multiplier + "' " +
+			"     		  capacity_offset='" + offset + "' " + "/>";
 		}
 
 		command += 
