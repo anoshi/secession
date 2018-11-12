@@ -10,7 +10,7 @@
     instance_key="lc_heal_bomb.projectile"
     instance_spread="12 12 12"
     common_spread="12 0 12"
-    launch_time="2.0"
+    launch_time="4.0"
     spawn_time="5.0">
     <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
@@ -21,7 +21,7 @@
     instance_key="lc_heal_bomb.projectile"
     instance_spread="12 12 12"
     common_spread="12 0 12"
-    launch_time="5.0"
+    launch_time="7.0"
     spawn_time="8.0">
 	  <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />

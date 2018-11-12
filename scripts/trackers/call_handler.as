@@ -164,9 +164,8 @@ class CallHandler : Tracker {
 	////////////////////////
 		// The Conversion call has a chance to convert enemy troops (AI only) in the area to fight for LifeCraft
 		else if (sCall == "lc_conversion_1.call") {
-			if (phase == "acknowledge") {
+			if (phase == "launch") {
 				_log("LC troops attempting to convert nearby enemies", 1);
-			} else if (phase == "launch") {
 				sendFactionMessageKey(m_metagame, 0, "lc_conversion", dictionary = {}, 1.0);
 				array<const XmlElement@> hitChars = getCharactersNearPosition(m_metagame, v3Posi, 1, 50.00f);
 				_log(hitChars.size() + " characters available to convert", 1);

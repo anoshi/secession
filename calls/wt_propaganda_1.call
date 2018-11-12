@@ -1,9 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <call name="WT Propaganda" key="wt_propaganda_1.call" notify_metagame="1"
   initiation_comment1="Spread the good word"
-  acknowledge_comment="We'll have them at 'hello'">
-  <round launch_time="1.0"
-    spawn_time="1.0">
+  acknowledge_comment="We'll have them at 'hello'"
+  acknowledge_time="1.0">
+  <round launch_time="3.0"
+    spawn_time="3.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- morse code sound? -->
   </round>
   <hud_icon filename="hud_horny_magazine.png" />
