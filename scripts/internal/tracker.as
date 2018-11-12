@@ -9,15 +9,16 @@ abstract class Tracker {
 
 	// match status events
 	protected void handleMatchEndEvent(const XmlElement@ event) {}
+	// faction/ai/comms services state events
 	protected void handleFactionLoseEvent(const XmlElement@ event) {}
-	// base state events
 	protected void handleBaseOwnerChangeEvent(const XmlElement@ event) {}
-	// comms services state events
 	protected void handleCommsChangeEvent(const XmlElement@ event) {}
+	protected void handleAttackChangeEvent(const XmlElement@ event) {}
 	// vehicle state events
 	protected void handleVehicleSpawnEvent(const XmlElement@ event) {}
 	protected void handleVehicleHolderChangeEvent(const XmlElement@ event) {}
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {}
+	protected void handleVehicleSpotEvent(const XmlElement@ event) {}
 	// chat events
 	protected void handleChatEvent(const XmlElement@ event) {}
 	// results for script issued queries
@@ -42,9 +43,10 @@ abstract class Tracker {
 	protected void handleCharacterSpawnEvent(const XmlElement@ event) {}
 	protected void handleCharacterDieEvent(const XmlElement@ event) {}
 	protected void handleCharacterKillEvent(const XmlElement@ event) {}
-	// call events, happens for calls that have notify_metagame="1"
-	protected void handleCallRequestEvent(const XmlElement@ event) {
-	}
+	// call events, happens for calls that have marked themselves for notification
+	protected void handleCallEvent(const XmlElement@ event) {}
+	// for compatibility, happens at acknowledge phase
+	protected void handleCallRequestEvent(const XmlElement@ event) {}
 
 	void handleEvent(const XmlElement@ event) {
 		if (event is null) {
@@ -61,12 +63,16 @@ abstract class Tracker {
 			handleQueryResultEvent(event);
 		} else if (rootName == "comms_change_event") {
 			handleCommsChangeEvent(event);
+		} else if (rootName == "attack_change_event") {
+			handleAttackChangeEvent(event);
 		} else if (rootName == "vehicle_spawn_event") {
 			handleVehicleSpawnEvent(event);
 		} else if (rootName == "vehicle_holder_change_event") {
 			handleVehicleHolderChangeEvent(event);
 		} else if (rootName == "vehicle_destroyed_event") {
 			handleVehicleDestroyEvent(event);
+		} else if (rootName == "vehicle_spot_event") {
+			handleVehicleSpotEvent(event);
 		} else if (rootName == "base_owner_change_event") {
 			handleBaseOwnerChangeEvent(event);
 		} else if (rootName == "chat_event") {
@@ -88,6 +94,7 @@ abstract class Tracker {
 		} else if (rootName == "hitbox_event") {
 			handleHitboxEvent(event);
 		} else if (rootName == "dummy_event") {
+		} else if (rootName == "pause_event") {
 		} else if (rootName == "faction_lost") {
 			handleFactionLoseEvent(event);
 		} else if (rootName == "item_drop_event") {
@@ -98,8 +105,12 @@ abstract class Tracker {
 			handleCharacterDieEvent(event);
 		} else if (rootName == "character_kill") {
 			handleCharacterKillEvent(event);
-		} else if (rootName == "call_request_event") {
-			handleCallRequestEvent(event);
+		} else if (rootName == "call_event") {
+			if (event.getStringAttribute("phase") == "acknowledge") {
+				// compatibility
+				handleCallRequestEvent(event);
+			}
+			handleCallEvent(event);
 		} else {
 			_log("unhandled message: " + rootName, 1);
 		}

@@ -9,8 +9,10 @@
 
 // --------------------------------------------
 namespace VehicleHints {
-	const float MIN_WAIT_INTEL_TIME = 120.0;
-	const float MAX_WAIT_INTEL_TIME = 300.0;
+	//const float MIN_WAIT_INTEL_TIME = 120.0;
+	//const float MAX_WAIT_INTEL_TIME = 300.0;
+	const float MIN_WAIT_INTEL_TIME = 300.0;
+	const float MAX_WAIT_INTEL_TIME = 500.0;
 };
 
 // --------------------------------------------

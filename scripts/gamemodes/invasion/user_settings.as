@@ -21,12 +21,15 @@ class UserSettings {
 	float m_xpFactor = 0.27;
 	float m_rpFactor = 1.0;
 	int m_factionChoice = 0;
+	float m_playerDamageModifier = 0.0;
+	string m_presetId = "";
 
 	// --------------------------------------------
 	// support for input from game menu doesn't exist for these, defaults are used
 	// --------------------------------------------
 	bool m_completionVarianceEnabled = true;
 	bool m_friendlyFire = false;
+	bool m_journalEnabled = false;
 	float m_initialXp = 0.0;
 	float m_initialRp = 0.0;
 	float m_maxRp = -1.0; // negative means not used
@@ -36,7 +39,14 @@ class UserSettings {
 	string m_baseCaptureSystem = "any"; // could be single for backdoor prevention, not really that useful in invasion
 	// when a campaign becomes complete, the menu offers to restart it with different settings while preserving the player profile,
 	// this is true when a new campaign is started that way
-	bool m_continueAsNewCampaign;
+	bool m_continueAsNewCampaign = false;
+	int m_fellowDisableEnemySpawnpointsSoldierCountOffset = 0;
+	bool m_fov = false;
+
+	// this flag decides if a tracker with special commands is added or not
+	// also appends a couple cheat resources
+	// should be false by default 
+	bool m_testingToolsEnabled = false;
 
 	// dedicated servers only
 	bool m_teamKillPenaltyEnabled = true;
@@ -54,7 +64,11 @@ class UserSettings {
 		} else {
 			// extract settings coming from game 
 			// and store to provide them for other components, mostly
-
+			
+			if (settings.hasAttribute("preset_id")) {
+				m_presetId = settings.getStringAttribute("preset_id");
+			}
+			
 			m_savegame = settings.getStringAttribute("savegame");
 			m_username = settings.getStringAttribute("username");
 			m_factionChoice = settings.getIntAttribute("faction_choice");
@@ -78,14 +92,19 @@ class UserSettings {
 				m_maxRp = settings.getFloatAttribute("max_rp");
 			}
 
-			// Let's play -support
-			if (settings.hasAttribute("headstart") && settings.getIntAttribute("headstart") != 0) {
-				m_initialXp = 0.3;
-				m_initialRp = 500;
-			}
-
 			if (settings.hasAttribute("continue_as_new_campaign") && settings.getIntAttribute("continue_as_new_campaign") != 0) {
 				m_continueAsNewCampaign = true;
+			}
+			
+			if (settings.hasAttribute("player_damage_modifier")) {
+				m_playerDamageModifier = settings.getFloatAttribute("player_damage_modifier");
+			}
+			
+			if (m_presetId == "veteran") {
+				m_fov = true;
+			} else if (m_presetId == "headstart") {
+				m_initialXp = 0.3;
+				m_initialRp = 500;
 			}
 		}
 	}
@@ -95,6 +114,8 @@ class UserSettings {
 		// NOTE, won't serialize continue keyword, it only works as input
 
 		XmlElement settings(name);
+
+		settings.setStringAttribute("preset_id", m_presetId);
 
 		settings.setStringAttribute("savegame", m_savegame);
 		settings.setStringAttribute("username", m_username);
@@ -111,6 +132,10 @@ class UserSettings {
 		settings.setFloatAttribute("initial_rp", m_initialRp);
 
 		settings.setFloatAttribute("max_rp", m_maxRp);
+		
+		settings.setFloatAttribute("player_damage_modifier", m_playerDamageModifier);
+
+		settings.setIntAttribute("continue_as_new_campaign", m_continueAsNewCampaign ? 1 : 0);
 
 		return settings;
 	}
@@ -133,6 +158,10 @@ class UserSettings {
 		_log(" * using initial rp: " + m_initialRp);
 
 		_log(" * using max rp: " + m_maxRp);
-	}
+
+		_log(" * using player damage modifier: " + m_playerDamageModifier);
+
+		_log(" * using preset id: " + m_presetId);
+		}
 
 };

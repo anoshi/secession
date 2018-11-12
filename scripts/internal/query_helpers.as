@@ -15,7 +15,7 @@ dictionary makeQuery(const Metagame@ metagame, array<dictionary> elements) {
 const XmlElement@ getGenericObjectInfo(const Metagame@ metagame, string className, int instanceId) {
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
-			dictionary = { {"TagName", "data"}, {"class", className}, {"id", instanceId} } 
+			dictionary = { {"TagName", "data"}, {"class", className}, {"id", instanceId} }
 		}));
 
 	const XmlElement@ doc = metagame.getComms().query(query);
@@ -80,6 +80,53 @@ const XmlElement@ getPlayerInfo(const Metagame@ metagame, int playerId) {
 		}
 	}
 
+	return player;
+}
+
+// --------------------------------------------
+const XmlElement@ findPlayerByName(Metagame@ metagame, string name) {
+	const XmlElement@ result = null;
+
+	array<const XmlElement@> playerList = getPlayers(metagame);
+
+	// go through the player list and match for the given name
+	int playerId = -1;
+	for (uint i = 0; i < playerList.size(); ++i) {
+		const XmlElement@ player = playerList[i];
+		string name2 = player.getStringAttribute("name");
+		// case insensitive
+		if (name2.toLowerCase() == name.toLowerCase()) {
+			// found it
+			@result = @player;
+			break;
+		}
+	}
+
+	return result;
+}
+
+// --------------------------------------------
+const XmlElement@ findPlayerById(Metagame@ metagame, int playerId) {
+	return getPlayerInfo(metagame, playerId);
+}
+
+// --------------------------------------------
+const XmlElement@ getPlayerByIdOrNameFromCommand(Metagame@ metagame, string message, bool id) {
+	string s = message.substr(message.findFirst(" ")+1);
+	const XmlElement@ player = null;
+	if (id) {
+		int playerId = parseInt(s);
+		// warning, id is 0 if parsing fails, check it again
+		if (playerId == 0 && s != "0") {
+			// cancel
+			//sendPrivateMessage(m_metagame, senderId, "not a number? " + s);
+			return player;
+		}
+		@player = findPlayerById(metagame, playerId);
+	} else {
+		string name = s;
+		@player = findPlayerByName(metagame, name);
+	}
 	return player;
 }
 
@@ -165,16 +212,21 @@ const XmlElement@ getStartingBase(const Metagame@ metagame, int factionId) {
 }
 
 // --------------------------------------------------------
-const XmlElement@ getBase(const Metagame@ metagame, int baseId) {
-    array<const XmlElement@> baseList = getBases(metagame);
+const XmlElement@ getBase(array<const XmlElement@>@ baseList, int baseId) {
 	for (uint i = 0; i < baseList.size(); ++i) {
 		const XmlElement@ base = baseList[i];
-		int id = base.getIntAttribute("base_id");
+		int id = base.getIntAttribute("id");
 		if (baseId == id) {
 			return base;
 		}
 	}
 	return null;
+}
+
+// --------------------------------------------------------
+const XmlElement@ getBase(const Metagame@ metagame, int baseId) {
+    array<const XmlElement@> baseList = getBases(metagame);
+	return getBase(baseList, baseId);
 }
 
 // --------------------------------------------------------
@@ -236,7 +288,7 @@ array<const XmlElement@>@ getCharactersInBlocks(const Metagame@ metagame, int fa
 
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
-			dictionary = { {"TagName", "data"}, {"class", "characters"}, {"faction_id", factionId}, {"Children", blockElements}} 
+			dictionary = { {"TagName", "data"}, {"class", "characters"}, {"faction_id", factionId}, {"Children", blockElements}}
 		}));
 
 	const XmlElement@ doc = metagame.getComms().query(query);
@@ -247,7 +299,7 @@ array<const XmlElement@>@ getCharactersInBlocks(const Metagame@ metagame, int fa
 array<const XmlElement@>@ getGenericNodes(const Metagame@ metagame, string layerName = "", string tag = "", string id = "") {
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
-			dictionary = { {"TagName", "data"}, {"class", "generic_nodes"}, {"layer_name", layerName}, 
+			dictionary = { {"TagName", "data"}, {"class", "generic_nodes"}, {"layer_name", layerName},
 						   {"tag", tag}, {"id", id} }
 		}));
 
@@ -260,6 +312,13 @@ array<const XmlElement@>@ getGenericNodes(const Metagame@ metagame, string layer
 // -------------------------------------------------------
 void sendPrivateMessage(const Metagame@ metagame, int playerId, string text, string pos = "") {
 	_log(" * private message to " + playerId + ": " + text, 1);
+
+	XmlElement command("command");
+	command.setStringAttribute("class", "chat");
+	command.setStringAttribute("text", text);
+	command.setIntAttribute("player_id", playerId);
+
+/*
 	string command =
 			"<command class='chat'\n" +
 			"  text='" + text + "'\n" +
@@ -268,10 +327,11 @@ void sendPrivateMessage(const Metagame@ metagame, int playerId, string text, str
 		command +=
 			"  position='" + pos + "'\n";
 	}
+*/
 
-	command += 
-			">\n" +
-			"</command>";
+	if (pos != "") {
+		command.setStringAttribute("position", pos);
+	}
 
 	metagame.getComms().send(command);
 }
@@ -283,6 +343,7 @@ void sendPrivateMessageKey(const Metagame@ metagame, int playerId, string key, d
 	int factionId = 0;
 
 	_log(" * private message to " + playerId + ": " + key, 1);
+	/*
 	string command =
 			"<command class='chat'\n" +
 			"  key='" + key + "'\n" +
@@ -293,9 +354,16 @@ void sendPrivateMessageKey(const Metagame@ metagame, int playerId, string key, d
 			"  position='" + pos + "'\n";
 	}
 	command += ">\n";
-
-	command += handleReplacements(replacements);
-	command += "</command>";
+*/
+	XmlElement command("command");
+	command.setStringAttribute("class", "chat");
+	command.setStringAttribute("key", key);
+	command.setIntAttribute("faction_id", factionId);
+	command.setIntAttribute("player_id", playerId);
+	if (pos != "") {
+		command.setStringAttribute("position", pos);
+	}
+	handleReplacements(command, replacements);
 
 	metagame.getComms().send(command);
 }
@@ -311,7 +379,9 @@ void sendFactionMessage(const Metagame@ metagame, int factionId, string text, do
 	metagame.getComms().send(command);
 }
 
+
 // -------------------------------------------------------
+// old, avoid using
 string handleReplacements(dictionary@ replacements) {
 	string command;
 	for (uint i = 0; i < replacements.getKeys().size(); ++i) {
@@ -324,17 +394,65 @@ string handleReplacements(dictionary@ replacements) {
 }
 
 // -------------------------------------------------------
+void handleReplacements(XmlElement@ command, dictionary@ replacements) {
+	for (uint i = 0; i < replacements.getKeys().size(); ++i) {
+		string key = replacements.getKeys()[i];
+		string value;
+		replacements.get(key, value);
+
+		//command += "<replacement key='" + key + "' text='" + value + "' />";
+
+		XmlElement replacement("replacement");
+		replacement.setStringAttribute("key", key);
+		replacement.setStringAttribute("text", value);
+
+		command.appendChild(replacement);
+	}
+}
+
+// -------------------------------------------------------
 // default priority < 1.0: user can control "amount" of commander messages to show, 1.0 priority goes through regardless of the user settings
 void sendFactionMessageKey(const Metagame@ metagame, int factionId, string key, dictionary@ replacements = dictionary(), double priority = 0.9) {
 	_log(" * faction message to " + factionId + ": " + key, 1);
+	/*
 	string command =
 		"<command class='chat'\n" +
 		"  key='" + key + "'\n" +
 		"  priority='" + priority + "'\n" +
 		"  faction_id='" + factionId + "'>\n";
+	*/
+	XmlElement command("command");
+	command.setStringAttribute("class", "chat");
+	command.setStringAttribute("key", key);
+	command.setFloatAttribute("priority", priority);
+	command.setIntAttribute("faction_id", factionId);
 
-	command += handleReplacements(replacements);
-	command += "</command>";
+	handleReplacements(command, replacements);
+
+	metagame.getComms().send(command);
+}
+
+// -------------------------------------------------------
+void sendFactionMessageKeySaidAsCharacter(const Metagame@ metagame, int factionId, int characterId, string key, dictionary@ replacements = dictionary(), double priority = 0.9) {
+	_log(" * faction message to " + factionId + " as character " + characterId + ": " + key, 1);
+
+	/*
+	string command =
+		"<command class='chat'\n" +
+		"  key='" + key + "'\n" +
+		"  priority='" + priority + "'\n" +
+		"  said_as_character_id='" + characterId + "'\n" +
+		"  faction_id='" + factionId + "'>\n";
+*/
+
+	XmlElement command("command");
+	command.setStringAttribute("class", "chat");
+	command.setStringAttribute("key", key);
+	command.setFloatAttribute("priority", priority);
+	command.setIntAttribute("faction_id", factionId);
+	command.setIntAttribute("said_as_character_id", characterId);
+
+	handleReplacements(command, replacements);
 
 	metagame.getComms().send(command);
 }
@@ -342,11 +460,15 @@ void sendFactionMessageKey(const Metagame@ metagame, int factionId, string key, 
 // -------------------------------------------------------
 void notify(const Metagame@ metagame, string key, dictionary@ replacements = dictionary(), string dict = "") {
 	_log(" * notification message: " + key, 1);
-	string command =
-		"<command class='notify' dict='" + dict + "' key='" + key + "'>";
 
-	command += handleReplacements(replacements);
-	command += "</command>";
+	//string command = "command class='notify' dict='" + dict + "' key='" + key + "'>";
+
+	XmlElement command("command");
+	command.setStringAttribute("class", "notify");
+	command.setStringAttribute("dict", dict);
+	command.setStringAttribute("key", key);
+
+	handleReplacements(command, replacements);
 
 	metagame.getComms().send(command);
 }
@@ -356,7 +478,7 @@ array<const XmlElement@>@ getHitboxes(const Metagame@ metagame) {
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
 			dictionary = { {"TagName", "data"}, {"class", "hitboxes"} } }));
-	
+
 	const XmlElement@ doc = metagame.getComms().query(query);
 	array<const XmlElement@> hitboxes = doc.getElementsByTagName("hitbox");
 	return hitboxes;
@@ -426,7 +548,7 @@ array<const XmlElement@>@ getCharactersNearPosition(const Metagame@ metagame, co
 
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
-			dictionary = { {"TagName", "data"}, {"class", "characters"}, {"faction_id", factionId}, 
+			dictionary = { {"TagName", "data"}, {"class", "characters"}, {"faction_id", factionId},
 						   {"position", position.toString()}, {"range", range} } }));
 
 	const XmlElement@ doc = metagame.getComms().query(query);
@@ -436,20 +558,7 @@ array<const XmlElement@>@ getCharactersNearPosition(const Metagame@ metagame, co
 }
 
 // --------------------------------------------------------
-array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId) {
-	array<const XmlElement@> vehicles;
 
-	XmlElement@ query = XmlElement(
-		makeQuery(metagame, array<dictionary> = {
-			dictionary = { {"TagName", "data"}, {"class", "vehicles"}, {"faction_id", factionId}, 
-						   {"position", position.toString()} } }));
-
-	const XmlElement@ doc = metagame.getComms().query(query);
-	vehicles = doc.getElementsByTagName("vehicle");
-
-	return vehicles;
-}
-// --------------------------------------------------------
 array<const XmlElement@>@ getCharactersNearVehicle(const Metagame@ metagame, int vehicleId, int factionId) {
 	array<const XmlElement@>@ characters;
 
@@ -477,12 +586,12 @@ void killCharacter(Metagame@ metagame, int characterId) {
 }
 
 // --------------------------------------------------------
-// $type_str1 = "weapon", "grenade", "carry_item" ("vehicle", "call") 
-// $type_str2 = "weapons", "grenades", "carry_items" ("vehicles", "calls") 
+// $type_str1 = "weapon", "grenade", "carry_item" ("vehicle", "call")
+// $type_str2 = "weapons", "grenades", "carry_items" ("vehicles", "calls")
 array<const XmlElement@>@ getFactionResources(const Metagame@ metagame, int factionId, string typeStr1, string typeStr2) {
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
-			dictionary = { {"TagName", "data"}, {"class", "resources"}, {"faction_id", factionId}, 
+			dictionary = { {"TagName", "data"}, {"class", "resources"}, {"faction_id", factionId},
 						   {typeStr2, "1"} } }));
 
 	const XmlElement@ doc = metagame.getComms().query(query);
@@ -501,14 +610,14 @@ array<const XmlElement@>@ getFactionDeliverables(const Metagame@ metagame, int f
 }
 
 // --------------------------------------------------------
-// $type_str1 = "weapon", "grenade", "carry_item" ("vehicle", "call") 
+// $type_str1 = "weapon", "grenade", "carry_item" ("vehicle", "call")
 const XmlElement@ getResource(const Metagame@ metagame, string key, string typeStr1) {
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
 			dictionary = { {"TagName", "data"}, {"class", "resource"}, {typeStr1 + "_key", key} } }));
 
 	const XmlElement@ doc = metagame.getComms().query(query);
-	
+
 	const XmlElement@ r = null;
 	if (doc !is null) {
 		@r = doc.getFirstElementByTagName(typeStr1);
@@ -570,7 +679,7 @@ void associateHitboxesEx(const Metagame@ metagame, const array<const XmlElement@
 		string command = "<command class='add_hitbox_check' id='" + id + "' instance_type='" + instanceType + "' instance_id='" + instanceId + "' />";
 		metagame.getComms().send(command);
 
-		// remember we've set out to track this armory 
+		// remember we've set out to track this armory
 		trackedHitboxes.push_back(id);
 	}
 }
@@ -585,7 +694,7 @@ void clearHitboxAssociations(const Metagame@ metagame, string instanceType, int 
 		string command = "<command class='remove_hitbox_check' id='" + id + "' instance_type='" + instanceType + "' instance_id='" + instanceId + "' />";
 		metagame.getComms().send(command);
 	}
-	
+
 	trackedHitboxes.clear();
 }
 
@@ -622,8 +731,8 @@ void addFactionResourceElements(XmlElement@ command, string type, const array<st
 
 // --------------------------------------------
 void addItemInBackpack(Metagame@ metagame, int characterId, const Resource@ r) {
-	string c = 
-		"<command class='update_inventory' character_id='" + characterId + "' container_type_class='backpack'>" + 
+	string c =
+		"<command class='update_inventory' character_id='" + characterId + "' container_type_class='backpack'>" +
 			"<item class='" + r.m_type + "' key='" + r.m_key + "' />" +
 		"</command>";
 	metagame.getComms().send(c);
@@ -649,4 +758,25 @@ void addCustomStatToAllPlayers(Metagame@ metagame, string tag) {
 			metagame.getComms().send(c);
 		}
 	}
+}
+
+// -------------------------------------------------------
+void playSound(const Metagame@ metagame, string filename, int factionId) {
+	XmlElement command("command");
+	command.setStringAttribute("class", "play_sound");
+	command.setStringAttribute("filename", filename);
+	command.setIntAttribute("faction_id", factionId);
+	// TODO: can also do private sounds with player_id, extend
+	metagame.getComms().send(command);
+}
+
+// -------------------------------------------------------
+void playObjectiveCompleteSound(const Metagame@ metagame, int factionId) {
+	playSound(metagame, "objective_complete.wav", factionId);
+}
+
+// --------------------------------------------
+bool hasFactionComms(const Metagame@ metagame, int factionId) {
+	const XmlElement@ faction = getFactionInfo(metagame, factionId);
+	return faction.getBoolAttribute("comms_status");
 }

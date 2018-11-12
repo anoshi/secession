@@ -30,7 +30,8 @@ class VehicleDeliveryConfiguratorInvasion : VehicleDeliveryConfigurator {
 			VehicleHintConfig hintConfig(target, "vehicle objective instruction", "vehicle objective cancelled, vehicle destroyed", 0);
 
 			array<string> targets = {target};
-			VehicleDeliveryConfig config(targets, 0, 0.0, 800.0, "", unlocker, hintConfig);
+			// 400=fallback reward if nothing to unlock
+			VehicleDeliveryConfig config(targets, 0, 0.0, 800.0, "", unlocker, hintConfig, 400.0);
 
 			m_metagame.addTracker(VehicleDeliveryToArmoryManager(m_metagame, config, i));
 		}

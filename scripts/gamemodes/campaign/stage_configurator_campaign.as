@@ -34,7 +34,10 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 			Faction f(getFactionConfigs()[0], createCommanderAiCommand(0));
 			stage.m_factions.insertLast(f);
 		}
-
+		
+		addFixedSpecialCrates(stage);
+		addRandomSpecialCrates(stage, stage.m_minRandomCrates, stage.m_maxRandomCrates);
+	
 		return stage;
 	}
 

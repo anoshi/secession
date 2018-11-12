@@ -60,6 +60,7 @@ class SpawnAtNode : Tracker {
 		string layerName = "";
 		array<const XmlElement@>@ nodes = getGenericNodes(m_metagame, layerName, m_genericNodeTag);
 
+		_log("  spawn count=" + m_spawnCount + ", nodes=" + nodes.size(), 1);
 		for (int i = 0; i < m_spawnCount && nodes.size() > 0; ++i) {
 			ScoredResource@ r = getRandomScoredResource(m_resources);
 

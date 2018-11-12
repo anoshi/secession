@@ -3,14 +3,14 @@
   initiation_comment1="FIX MY CAR"
   initiation_comment2="Request panel work"
   acknowledge_comment="Confirmed, nano mechanic bots will be dropped"
-  acknowledge_time="2.0"
+  acknowledge_time="1.0"
   launch_comment="Incoming. Try not to breathe.">
   <round instances="12"
     instance_class="grenade"
     instance_key="lc_repair_bomb.projectile"
     instance_spread="6 6 6"
     common_spread="6 0 6"
-    launch_time="2.0"
+    launch_time="4.0"
     spawn_time="4.0">
     <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />
@@ -21,7 +21,7 @@
     instance_key="lc_repair_bomb.projectile"
     instance_spread="8 8 8"
     common_spread="8 0 8"
-    launch_time="5.0"
+    launch_time="7.0"
     spawn_time="7.0">
 	  <sound class="launch" fileref="artillery_barrage_1.wav" volume="1.0" />
     <sound class="launch" fileref="artillery_barrage_2.wav" volume="1.0" />

@@ -1,5 +1,5 @@
 #include "phase_controller.as"
-
+#include "intel_manager.as"
 
 // --------------------------------------------
 XmlElement@ createFellowCommanderAiCommand(int factionId, float base = 0.62, float border = 0.14, bool active = true) {
@@ -50,11 +50,11 @@ class Faction {
 		m_loseWithoutBases = true;
 	}
 
-	bool isNeutral() {
+	bool isNeutral() const {
 		return m_capacityMultiplier <= 0.0;
 	}
 
-	string getName() {
+	string getName() const {
 		return m_config.m_name;
 	}
 };
@@ -88,12 +88,19 @@ class Stage {
 	float m_soldierCapacityVariance;
 	string m_soldierCapacityModel;
 	int m_defenseWinTime;
+	string m_defenseWinTimeMode;
 	float m_playerAiCompensation;
+  float m_playerAiReduction;
 
 	// metadata, mostly for instructions comment selection logic
 	string m_primaryObjective;
 	string m_kothTargetBase;
 	bool m_radioObjectivePresent;
+
+	int m_minRandomCrates;
+	int m_maxRandomCrates;
+
+	IntelManager@ m_intelManager;
 
 	// --------------------------------------------
 	Stage(const UserSettings@ userSettings) {
@@ -105,7 +112,9 @@ class Stage {
 		m_soldierCapacityVariance = 0.30;
 		m_soldierCapacityModel = "variable";
 		m_defenseWinTime = -1;
+		m_defenseWinTimeMode = "hold_bases";
 		m_playerAiCompensation = 8;
+		m_playerAiReduction = 0;
 		m_primaryObjective = "capture";
 		m_kothTargetBase = "center base";
 		m_radioObjectivePresent = true;
@@ -117,6 +126,11 @@ class Stage {
 
 		m_fogOffset = -100.0;
 		m_fogRange = 600.0;
+		
+		m_minRandomCrates = 5;
+		m_maxRandomCrates = 5;
+		
+		@m_intelManager = null;
 	}
 
 	// --------------------------------------------
@@ -134,6 +148,15 @@ class Stage {
 		m_trackers.insertLast(tracker);
 	}
 
+	// --------------------------------------------
+	// only call this before running the stage
+	void removeTracker(Tracker@ tracker) {
+		int i = m_trackers.findByRef(tracker);
+		if (i != -1) {
+			m_trackers.removeAt(i);
+		}
+	}
+	
 	// --------------------------------------------
 	bool hasSideObjectives() const {
 		return true;
@@ -203,6 +226,27 @@ class Stage {
 		{ XmlElement e("call");			e.setStringAttribute("file", "invasion_all_calls.xml"); mapConfig.appendChild(e); }
 		{ XmlElement e("vehicle");		e.setStringAttribute("file", "invasion_all_vehicles.xml"); mapConfig.appendChild(e); }
 		{ XmlElement e("achievement");	e.setStringAttribute("file", "achievements.xml"); mapConfig.appendChild(e); }
+		
+		if (m_userSettings.m_testingToolsEnabled) {
+			{ XmlElement e("carry_item");	e.setStringAttribute("file", "cheat_items.xml"); mapConfig.appendChild(e); }
+			{ XmlElement e("projectile");	e.setStringAttribute("file", "cheat_throwables.xml"); mapConfig.appendChild(e); }
+		}
+	}
+
+	// --------------------------------------------
+	protected void appendJournal(XmlElement@ mapConfig) const {
+		if (m_userSettings.m_journalEnabled) {
+			XmlElement journal("journal");
+			journal.setStringAttribute("filename", "journal.xml");
+			mapConfig.appendChild(journal); 
+		}
+	}
+
+	// --------------------------------------------
+	protected void appendMapLegend(XmlElement@ mapConfig) const {
+		XmlElement legend("map_legend");
+		legend.setStringAttribute("filename", "invasion_map_legend.xml");
+		mapConfig.appendChild(legend); 
 	}
 
 	// --------------------------------------------
@@ -252,6 +296,8 @@ class Stage {
 		appendFactions(mapConfig);
 		appendResources(mapConfig);
 		appendScene(mapConfig);
+		appendJournal(mapConfig);
+		appendMapLegend(mapConfig);
 
 		XmlElement command("command");
 		command.setStringAttribute("class", "change_map");
@@ -285,7 +331,7 @@ class Stage {
 		command.setFloatAttribute("soldier_capacity_variance", m_soldierCapacityVariance);
 		command.setStringAttribute("soldier_capacity_model", m_soldierCapacityModel);
 		command.setFloatAttribute("player_ai_compensation", m_playerAiCompensation * m_userSettings.m_playerAiCompensationFactor);
-		command.setFloatAttribute("player_ai_reduction", m_userSettings.m_playerAiReduction);
+		command.setFloatAttribute("player_ai_reduction", m_playerAiReduction + m_userSettings.m_playerAiReduction);
 		command.setFloatAttribute("xp_multiplier", m_userSettings.m_xpFactor);
 		command.setFloatAttribute("rp_multiplier", m_userSettings.m_rpFactor);
 		command.setFloatAttribute("initial_xp", m_userSettings.m_initialXp);
@@ -293,9 +339,13 @@ class Stage {
 		command.setStringAttribute("base_capture_system", m_userSettings.m_baseCaptureSystem);
 		command.setBoolAttribute("friendly_fire", m_userSettings.m_friendlyFire);
 		command.setFloatAttribute("max_rp", m_userSettings.m_maxRp);
+		command.setBoolAttribute("lose_last_base_without_spawnpoints", false);
+		command.setFloatAttribute("player_damage_modifier", m_userSettings.m_playerDamageModifier);
+		command.setBoolAttribute("fov", m_userSettings.m_fov);
 
 		if (m_defenseWinTime >= 0) {
 			command.setFloatAttribute("defense_win_time", m_defenseWinTime);
+			command.setStringAttribute("defense_win_time_mode", m_defenseWinTimeMode);
 		}
 
 		for (uint i = 0; i < m_factions.size(); ++i) {
@@ -313,6 +363,7 @@ class Stage {
 			if (i == 0) {
 				// friendly faction
 				faction.setFloatAttribute("ai_accuracy", m_userSettings.m_fellowAiAccuracyFactor);
+				faction.setIntAttribute("disable_enemy_spawnpoints_soldier_count_offset", m_userSettings.m_fellowDisableEnemySpawnpointsSoldierCountOffset);
 			} else {
 				// enemy
 				faction.setFloatAttribute("ai_accuracy", m_userSettings.m_enemyAiAccuracyFactor);
@@ -345,11 +396,35 @@ class Stage {
 	}
 
 	// --------------------------------------------
+	void setIntelManager(IntelManager@ intelManager) {
+		if (intelManager !is null) {
+			addTracker(intelManager);
+		} else {
+			// clearing intel manager
+			if (m_intelManager !is null) {
+				removeTracker(m_intelManager);
+			}
+		}
+		@m_intelManager = @intelManager;
+	}
+
+	// --------------------------------------------
+	bool hasIntelManager() const {
+		return m_intelManager !is null;
+	}
+	
+	// --------------------------------------------
 	void save(XmlElement@ root) {
+		if (m_intelManager !is null) {
+			m_intelManager.save(root);
+		}
 	}
 
 	// --------------------------------------------
 	void load(const XmlElement@ root) {
+		if (m_intelManager !is null) {
+			m_intelManager.load(root);
+		}
 	}
 }
 
@@ -370,6 +445,7 @@ class PhasedStage : Stage {
 
 	// --------------------------------------------
 	void save(XmlElement@ root) {
+		Stage::save(root);
 		if (m_phaseController !is null) {
 			m_phaseController.save(root);
 		}
@@ -377,6 +453,7 @@ class PhasedStage : Stage {
 
 	// --------------------------------------------
 	void load(const XmlElement@ root) {
+		Stage::load(root);
 		if (m_phaseController !is null) {
 			m_phaseController.load(root);
 		}

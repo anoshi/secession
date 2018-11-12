@@ -89,13 +89,16 @@ class ResourceUnlocker {
 	}
 
 	// ----------------------------------------------------
-	void handleItemDeliveryCompleted(const Resource@ item, int characterId = -1) {
+	bool handleItemDeliveryCompleted(const Resource@ item, int characterId = -1) {
 		_log("handle_item_delivery_completed", 1);
 
+		bool result = false;
+	
 		// link delivered item to a resource unlock:
 		const Resource@ unlock = getUnlock(item);
 
 		if (unlock !is null) {
+			result = true;
 			_log("* item delivery completed, picking unlock for " + item.m_key + " (" + item.m_type + "): " + unlock.m_key + " (" + unlock.m_type + ")", 1);
 			// enable a resource for the faction
 			changeFactionResources(m_metagame, m_factionId, array<const Resource@> = {unlock}, true);
@@ -129,6 +132,8 @@ class ResourceUnlocker {
 			// if all unlocks have been used:
 			// - don't care for now?
 		}
+		
+		return result;
 	}
 
 	// ----------------------------------------------------

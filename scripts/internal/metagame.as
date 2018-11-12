@@ -5,10 +5,10 @@
 #include "task_sequencer.as"
 #include "map_info.as"
 #include "admin_manager.as"
+#include "moderator_manager.as"
 
 // generic trackers
 #include "ban_manager.as"
-
 //TODO: #include "trackers/chat_logger.as"
 
 // --------------------------------------------
@@ -20,16 +20,21 @@ class Metagame {
 	protected array<Tracker@> m_trackers;
 	protected bool m_restartRequested;
 
+	protected ModeratorManager@ m_moderatorManager;
 	protected AdminManager@ m_adminManager;
 	protected BanManager@ m_banManager;
 
 	protected string m_startServerCommand;
 
+	protected bool m_gamePaused;
+
 	//protected m_chatLogger;
 
 	// --------------------------------------------
 	Metagame(string startServerCommand = "") {
+		m_gamePaused = false;
 		
+		@m_moderatorManager = ModeratorManager(this);
 		@m_adminManager = AdminManager(this);
 
 		m_startServerCommand = startServerCommand;
@@ -39,6 +44,7 @@ class Metagame {
 		if (isInServerMode()) {
 			startServer();
 			getAdminManager().loadFromFile();
+			getModeratorManager().loadFromFile();
 		}
 
 		/*
@@ -77,14 +83,17 @@ class Metagame {
 		const float MINIMUM_SLEEP_TIME = 0.010f;
 		float dummy = now();
 		bool processed = false;
+		m_gamePaused = false;
 		while (true) {
 			{
-				float elapsedTime = now();
-				update(elapsedTime);
-
+				float elapsedTime = !m_gamePaused ? now() : 0.0f;
 				float sleepTime = MINIMUM_SLEEP_TIME;
-				if (!processed) {
-					sleepTime = TARGET_CYCLE_TIME - elapsedTime;
+				if (elapsedTime > 0.0f) {
+					update(elapsedTime);
+
+					if (!processed) {
+						sleepTime = TARGET_CYCLE_TIME - elapsedTime;
+					}
 				}
 
 				if (sleepTime > 0.0f) {
@@ -100,6 +109,8 @@ class Metagame {
 					if (event.getName() == "user_quit_event") {
 						_log("user quit signal detected, stopping script", -1);
 						break;
+					} else if (event.getName() == "pause_event") {
+						m_gamePaused = event.getBoolAttribute("state");
 					}
 
 					// inform all trackers about the event
@@ -129,11 +140,13 @@ class Metagame {
 	void preBeginMatch() {		
 		m_taskSequencer.clear();
 		clearTrackers();
+		m_gamePaused = false;
 
 		if (isInServerMode()) {
 			// recreated every match begin, it's fine
 			addTracker(BanManager(this));
 			getAdminManager().loadFromFile();
+			getModeratorManager().loadFromFile();
 		}
 
 		/*
@@ -243,6 +256,11 @@ class Metagame {
 		m_restartRequested = true;
 	}
 
+	// --------------------------------------------
+	ModeratorManager@ getModeratorManager() const {
+		return m_moderatorManager;
+	}
+	
 	// --------------------------------------------
 	AdminManager@ getAdminManager() const {
 		return m_adminManager;
