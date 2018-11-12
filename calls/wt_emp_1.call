@@ -2,28 +2,14 @@
 <call name="WT EMP" key="wt_emp_1.call" notify_metagame="1"
   initiation_comment1="Kill the power"
   acknowledge_comment="Confirmed"
-  launch_comment="EMP launching">
+  launch_comment="EMP detonated">
   <round instances="8"
     instance_class="grenade"
     instance_key="emp.projectile"
     instance_spread="15 15 15"
     common_spread="10 0 10"
-    launch_time="1.0"
+    launch_time="4.0"
     spawn_time="3.0">
-    <!-- for all vehicles in blast zone, get id, max_speed, accel, max_reverse_speed
-    <command
-      class="make_query"
-      id="emp_call_vehicle_query">
-      <data class="vehicles" faction_id="1" /> 
-    </command>
-    set these values to 0
-    <command
-      class="update_vehicle" 
-      id="0"
-      max_speed="0.0"
-      acceleration="0" 
-      max_reverse_speed="0.0">
-    </command>-->
     <command
       class="set_soundtrack"
       enabled="1"
@@ -32,26 +18,18 @@
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" /><!-- sound of electrical shockwave -->
   </round>
 
-  <round launch_time="3.0"
-    spawn_time="3.0">
-    <command 
-      class="chat" 
-      text="EMP in effect for 15 seconds"
+  <round launch_time="4.0"
+    spawn_time="4.0">
+    <command
+      class="chat"
+      text="EMP in effect for 10 seconds"
       priority="1"
       faction="0">
     </command>
   </round>
 
-  <round launch_time="18.0"
-    spawn_time="18.0">
-    <!-- revert changes to each vehicle if not destroyed -->
-    <!--<command
-      class="update_vehicle" 
-      id="0"
-      max_speed="28.0"
-      acceleration="7.7" 
-      max_reverse_speed="10.0">
-    </command>-->
+  <round launch_time="14.0"
+    spawn_time="14.0">
     <command
       class="set_soundtrack"
       enabled="0" >
