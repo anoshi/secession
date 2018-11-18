@@ -19,6 +19,7 @@ class CallHandler : Tracker {
 
 	protected bool hpActive = false; // only one Hot Potato allowed at a time
 	protected int hpHolder; // id of character holding the hot potato
+	protected int numToTele = 0; // number of RA units removed during teleport 1 call, and to be delivered via teleport 2 call
 	//protected string hpHolderPosi; // location of the target when receiving the hot potato
 	protected bool empActive = false; // only one EMP allowed at a time
 	protected array<int> empVeh; // array of vehicle ids affected by emp
@@ -272,19 +273,56 @@ class CallHandler : Tracker {
 			}
 
 		}
-		// The teleport call relocates the caller to the desired location. * Warning: May not transfer all equipment in the process *
+		// The teleport (out) call relocates friendly characters in the targeted area off the field, ready to be teleported back in with teleport 2. * Warning: May not transfer all equipment in the process *
 		else if (sCall == "ra_teleport_1.call") {
-			if (phase == "acknowledge") {
+			if (numToTele >= 9 && phase == "queue") {
+				string teleComm = "<command class='chat' faction_id='0' text='Teleporter at maximum capacity. Dispatch units before calling again. Out.' priority='1'></command>";
+				m_metagame.getComms().send(teleComm);
+				_log("teleport targets already at maximum", 1);
+			} else if (phase == "acknowledge") {
 				_log("ra teleport requested", 1);
 			} else if (phase == "launch") {
-				_log("relocating character " + sChar + " to " + sPosi, 1);
-				string command = "<command class='update_character' id='" + sChar + "' position='" + sPosi + "' faction='0'></command>";
-				m_metagame.getComms().send(command);
+				// count, id, and remove friendlies at target location
+				array<const XmlElement@> teleChars = getCharactersNearPosition(m_metagame, v3Posi, 0, 10.00f);
+				for (uint i = 0; i < teleChars.size(); ++i) {
+					if (numToTele < 10) {
+						//const XmlElement@ teleChar = getCharacterInfo(m_metagame, teleChars[i]);
+						const XmlElement@ info = teleChars[i];
+						int id = info.getIntAttribute("id");
+						//string charClass = info.getStringAttribute("soldier_group_name");
+						//const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", id);
+						const XmlElement@ qResult = getCharacterInfo(m_metagame, id);
+						killCharacter(m_metagame, id);
+						_log("character " + id + " retrieved for teleport", 1);
+						// write the number of chars and their class/types to an array
+						numToTele += 1;
+					}
+				}
 			} else if (phase == "end") {
-				_log("finished teleporting character_id " + sChar + " to " + sPosi, 1);
-				//const XmlElement@ teleChar = getCharacterInfo(m_metagame, iChar);
-				string qComm = "<command class='make_query'><data class='character' id='" + iChar + "' /></command>";
-				m_metagame.getComms().send(qComm);
+				// if I use an array to store these guys ... _log(teleChars.size() + " characters prepped for teleport", 1);
+			}
+		}
+		// The teleport (in) call spawns friendly characters (who have already been teleported out/off the battlefield) at the target location
+		else if (sCall == "ra_teleport_2.call") {
+			if (numToTele == 0) {
+				string teleComm = "<command class='chat' faction_id='0' text='No units waiting in teleporter. Port units in before calling again, over.' priority='1'></command>";
+				m_metagame.getComms().send(teleComm);
+				_log("No units queued to teleport", 1);
+			} else {
+				if (phase == "acknowledge") {
+					_log(numToTele + " characters queued for teleport to " + sPosi, 1);
+				}
+				if (phase == "launch") {
+					for (uint i = 0; i < numToTele; ++i) {
+						// for each unit removed in teleport 1 call, spawn very close to target location of teleport 2 call
+						string teleInComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + sPosi + "'/></command>"; // instance_key='" + charType + "'
+						m_metagame.getComms().send(teleInComm);
+					}
+				}
+				if (phase == "end" && numToTele > 0) {
+					// job done, reset teleporter count.
+					numToTele = 0;
+				}
 			}
 		}
 	////////////////////////

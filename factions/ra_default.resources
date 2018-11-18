@@ -5,13 +5,14 @@
  	<vehicle key="jeep.vehicle" />
  	<vehicle key="apc.vehicle" />
  	<vehicle key="tank.vehicle" />
- 	<vehicle key="transport_truck.vehicle" />   
+ 	<vehicle key="transport_truck.vehicle" />
 
 	<!-- faction-specific calls (not listed in common.resources) -->
 	<call key="ra_nanobot_cloud_1.call" />
 	<call key="ra_sprint_1.call" />
 	<call key="ra_teleport_1.call" />
-	
+	<call key="ra_teleport_2.call" />
+
 	<!-- class-specific calls (allow player 'default' class access to these as well) -->
 	<call key="resupply_demo.call" />
 	<call key="resupply_gren.call" />
