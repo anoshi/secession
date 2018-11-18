@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="RA Teleport" key="ra_teleport_1.call" notify_metagame="1"
+<call name="RA Teleport OUT" key="ra_teleport_1.call" notify_metagame="1"
   initiation_comment1="Pick 'em up"
   acknowledge_comment="On it"
   launch_comment="Happening"
