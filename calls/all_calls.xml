@@ -21,7 +21,7 @@
 	<call file="target_designator.call" />
 	<!-- MEDIC -->
 	<call file="resupply_medic.call" />
-	
+
 	<!-- FACTION calls -->
 	<!-- BlastCorp calls -->
 	<call file="bc_annihilator_1.call" />
@@ -42,6 +42,7 @@
 	<call file="ra_nanobot_cloud_1.call" />
 	<call file="ra_sprint_1.call" />
 	<call file="ra_teleport_1.call" />
+	<call file="ra_teleport_2.call" />
 	<!-- end ReflexArq calls -->
 
 	<!-- ScopeSystems calls -->
