@@ -1,20 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- package 'description' is used here as a key, not a value. See languages/<language>/package_ui.xml> -->
-<package  
-  name="secession"
-  description="Campaign description"
-	show_in_quick_match_mods="0"
-  show_in_campaign_menu="1"
-  campaign_entry_script="start_campaign.as">
+<package
+	name="secession"
+	description="Campaign description"
+	show_in_quick_match_mods="1"
+	show_in_campaign_menu="1"
+	campaign_entry_script="start_campaign.as">
+	<!-- image="imagename.png"> (drop into textures (or probably any folder inside the mod) -->
 
-	<campaign_options 
-		faction="1" 
+	<campaign_options
+		faction="1"
 		presets="1"
 		friendly_capacity="1"
 		enemy_capacity="1"
 		friendly_accuracy="1"
 		enemy_accuracy="1"
 		xp_multiplier="1"
-		rp_multiplier="1" />
+		rp_multiplier="1"
+		allow_activate_server="1">
+
+		<preset text="Easy" help="Help:Easy" id="easy"
+			friendly_capacity="1.22"
+			friendly_accuracy="0.95"
+			enemy_capacity="1.0"
+			enemy_accuracy="0.93"
+			xp_multiplier="0.42"
+			rp_multiplier="1.0"
+			player_damage_modifier="0.33"
+			/>
+		<preset text="Hard" help="Help:Hard" id="hard"
+			friendly_capacity="1.20"
+			friendly_accuracy="0.94"
+			enemy_capacity="1.0"
+			enemy_accuracy="0.94"
+			xp_multiplier="0.3"
+			rp_multiplier="1.0"
+			player_damage_modifier="0.0"
+			/>
+		<preset text="Veteran" help="Help:Veteran" id="veteran"
+			friendly_capacity="1.20"
+			friendly_accuracy="0.94"
+			enemy_capacity="1.0"
+			enemy_accuracy="0.94"
+			xp_multiplier="0.3"
+			rp_multiplier="1.0"
+			player_damage_modifier="0.0"
+			/>
+		<preset text="Presets:Custom" help="Help:Presets:Custom" id="custom"
+			friendly_capacity="1.20"
+			friendly_accuracy="0.94"
+			enemy_capacity="1.0"
+			enemy_accuracy="0.94"
+			xp_multiplier="0.3"
+			rp_multiplier="1.0"
+			player_damage_modifier="0.0"
+			/>
+	</campaign_options>
 
 </package>
