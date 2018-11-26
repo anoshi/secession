@@ -446,7 +446,8 @@ class CallHandler : Tracker {
 						continue;
 					} else {
 						_log("showing vehicle " + id + " (" + sName + ") on map", 1);
-						string seeComm = "<command class='set_spotting' faction_id='" + oID + "' vehicle_id='" + id + "'></command>";
+						//string seeComm = "<command class='set_spotting' faction_id='" + oID + "' vehicle_id='" + id + "'></command>";
+						string seeComm = "<command class='set_spotting' faction_id='0' vehicle_id='" + id + "'></command>";
 						m_metagame.getComms().send(seeComm);
 						ppVeh.push_back(id);
 					}
@@ -456,7 +457,7 @@ class CallHandler : Tracker {
 					for (uint j = 0; j < ppVeh.size(); ++j) {
 						uint id = ppVeh[j];
 						// add logic to remove destroyed vehicles from the ppVeh array
-						string unseeComm = "<command class='set_spotting' vehicle_id='" + id + "' enabled='0'></command>";
+						string unseeComm = "<command class='set_spotting' faction_id='0' vehicle_id='" + id + "' enabled='0'></command>";
 						m_metagame.getComms().send(unseeComm);
 						_log("removing vehicle " + id + " from map view.", 1);
 					}
