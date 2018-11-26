@@ -3,14 +3,17 @@
   initiation_comment1="Wyre scan requested"
   acknowledge_comment="Roger"
   launch_comment="Locating network devices">
-  <round instances="2"
-    launch_time="4.0"
+  <round launch_time="4.0"
     spawn_time="4.0">
+    <command
+      class="update_camera"
+      position="512 0 512"
+      look_at="505 0 550">
+    </command>
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
 
-  <round instances="2"
-    launch_time="24.0"
+  <round launch_time="24.0"
     spawn_time="24.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
