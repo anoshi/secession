@@ -29,13 +29,13 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 		string sName = vehInfo.getStringAttribute("name");
 		string sKey = vehInfo.getStringAttribute("key");
 		Vector3 curVehPos = stringToVector3(vehInfo.getStringAttribute("position"));
-		_log("working on vehicle: " + id + " (" + sName + ") ", 1);
+		_log("working on vehicle: " + id + " (" + sKey + ") ", 1);
 		if (checkRange(position, curVehPos, range) ) {
 			// we should never need to know where the decoration vehicles are.
 			if ( startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") ) {
 				allVehicles.erase(i);
 				i--;
-				_log("removed vehicle " + sName + " from list.", 1);
+				_log("removed vehicle " + id + " (decoration) from list.", 1);
 			} else {
 				vehNearPos.insertLast(curVeh);
 				_log("vehicle: " + id + " (" + sName + ") is within desired range. Adding.", 1);
