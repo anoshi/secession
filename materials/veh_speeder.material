@@ -1,31 +1,41 @@
-				tex_coord_set 0
-				colour_op add
-			}
-		}
-	}
-	technique Material__37_basic_technique
+material "veh_speeder"
+{
+	technique veh_speeder_technique
 	{
-	scheme basic_mat
-		pass Material__37_standard
+		pass veh_speeder_standard
 		{
-			ambient 1 1 1 1
-			diffuse 1 1 1 1
-			specular 0 0 0 0 25.5
-			emissive 0 0 0 1
 
-			texture_unit Material__37_Diffuse#2
+		    ambient 1.0 1.0 1.0 1.0
+		    diffuse 1.0 1.0 1.0 1.0
+			emissive 1.0 1.0 1.0 1.0
+
+			texture_unit veh_speeder_Diffuse#0
 			{
-				texture LC_SEC_CRAFT_SPEEDER_DIFF.png
+				texture veh_speeder_DIFF.png
 				tex_coord_set 0
-				colour_op modulate
+				colour_op_ex src_texture
+				shading phong
+				lighting on
+				fog_override true none
+
+				depth_write off
+				depth_check on
+				depth_func greater
+				cull_hardware none
+				cull_software none
+
 			}
 
-			texture_unit Material__37_Self-Illumination#3
+			texture_unit veh_speeder_Self-Illumination#1
 			{
-				texture LC_SEC_CRAFT_SPEEDER_EMISS.png
+				texture veh_speeder_EMISS.png
 				tex_coord_set 0
 				colour_op add
 			}
+
+
 		}
 	}
 }
+
+
