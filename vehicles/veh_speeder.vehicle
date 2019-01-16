@@ -9,7 +9,7 @@
 
 	<physics max_health="2.4" mass="1.8" blast_damage_threshold="-100.00" TODO_blast_damage_threshold="-100.00" extent="1.8 0.0 3.8" offset="0 0.0 0" top_offset="0 4 0" collision_model_pos="0 0.5 0.3" collision_model_extent="2.2 1.6 4.2" visual_offset="0 0.0 0.0" preserve_motion_on_impact_factor="1.0" gravity="-10" friction_offset="0.0" drag_offset="-0.05" destroy_on_top_hit="1" destroy_on_top_hit_time="1.0" top_hit_tracking_time="0.6" /> 
 
-	<visual class="chassis" mesh_filename="veh_speeder.mesh" texture_filename="veh_speeder_DIFF.png" material="veh_speeder.material" />
+	<visual class="chassis" mesh_filename="veh_speeder.mesh" material="veh_speeder.material" />
 	<visual class="chassis" key="broken" mesh_filename="veh_speeder.mesh" texture_filename="jeep_body_broken.png" />
 	<!-- <visual class="tire" mesh_filename="jeep_wheel.mesh" texture_filename="jeep_wheel.png" /> -->
 
