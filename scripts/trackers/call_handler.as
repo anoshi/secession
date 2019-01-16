@@ -17,6 +17,7 @@ class CallHandler : Tracker {
 	//protected string m_managerName;
 	//protected int m_factionId;
 
+	protected string BNNFILE = "bnn_status.xml"; // BNN mission dictionary and state information
 	protected bool hpActive = false; // only one Hot Potato allowed at a time
 	protected int hpHolder; // id of character holding the hot potato
 	protected int numToTele = 0; // number of RA units removed during teleport 1 call, and to be delivered via teleport 2 call
@@ -61,12 +62,18 @@ class CallHandler : Tracker {
 		const XmlElement@ char = getCharacterInfo(m_metagame, iChar);
 		//return getGenericObjectInfo(metagame, "character", characterId);
 
+		_log("call made: " + sCall, 1);
+		//_log("call source position: " + getPlayerPosition, 1)
+		_log("call target position: " + sPosi, 1);
+		//_log("distance from source to target: " + getPositionDistance(const Vector3@ pos1, posi), 1);
+		//_log("call effect area: " + area, 1);
+
 	///////////////////////////////////
 	// BNN Mission Dictionary populator
 	///////////////////////////////////
 	// Need to randomise the values of each dict map instead of hard-coded stuff, but this is mk.1 and working
 		dictionary bnn_dict = {
-			{"%activity", "the thing"},
+			{"%activity", "call_handler the thing"},
 			{"%character_name", "char name"},
 			{"%company_name", "Bob Pizza"},
 			{"%location_pickup", "round the corner"},
@@ -79,19 +86,52 @@ class CallHandler : Tracker {
 			{"%rule_loot", "don't touch!"}
 		};
 
-		_log("call made: " + sCall, 1);
-		//_log("call source position: " + getPlayerPosition, 1)
-		_log("call target position: " + sPosi, 1);
-		//_log("distance from source to target: " + getPositionDistance(const Vector3@ pos1, posi), 1);
-		//_log("call effect area: " + area, 1);
-
 	////////////////////////
 	//   Common   Calls   //
 	////////////////////////
 		if (sCall == "bnn_mission.call") {
-			//sendFactionMessageKey(m_metagame, 0, "BNN mission", dictionary = {}, 1.0);
-			//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "BNN mission", bnn_dict));
-			notify(m_metagame, "BNN mission", bnn_dict);
+			if (phase == "launch") {
+				//sendFactionMessageKey(m_metagame, 0, "BNN mission", dictionary = {}, 1.0);
+				//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "BNN mission", bnn_dict));
+				notify(m_metagame, "BNN mission", bnn_dict);
+
+				XmlElement root("bnn_missions");
+
+				XmlElement mission("current_mission");
+				mission.setStringAttribute("current", "balls");
+				mission.setStringAttribute("company", "random company");
+				mission.setIntAttribute("timer", rand(0, 99));
+				mission.setIntAttribute("location_pickup_x", rand(0, 1024));
+				mission.setIntAttribute("location_pickup_y", rand(0, 1024));
+				mission.setIntAttribute("location_drop_x", rand(0, 1024));
+				mission.setIntAttribute("location_drop_y", rand(0, 1024));
+				mission.setIntAttribute("location_x", rand(0, 1024));
+				mission.setIntAttribute("location_y", rand(0, 1024));
+
+				root.appendChild(mission);
+
+			//XmlElement@ updateBNNStatus(XmlElement@ root) {
+				XmlElement command("command");
+				command.setStringAttribute("class", "save_data");
+				command.setStringAttribute("filename", BNNFILE);
+				command.setStringAttribute("location", "app_data");
+				command.appendChild(root);
+			//}
+
+				m_metagame.getComms().send(command);
+
+				_log("BNN mission file updated", 1);
+
+				XmlElement@ query = XmlElement(
+				makeQuery(m_metagame, array<dictionary> = {
+					dictionary = { {"TagName", "data"}, {"class", "saved_data"}, {"filename", BNNFILE}, {"location", "app_data"} } }));
+				const XmlElement@ doc = m_metagame.getComms().query(query);
+
+				const array<string>@ missions = loadStringsFromFile(m_metagame, BNNFILE, "current_mission", "timer");
+				for (uint i = 0; i < missions.length(); ++i) {
+					_log("mission timers, mission " + i + ": " + missions[i], 1);
+				}
+			}
 		}
 		else if (sCall == "bnn_advert.call") {
 			notify(m_metagame, "BNN advert", bnn_dict);
@@ -151,15 +191,6 @@ class CallHandler : Tracker {
 				hpActive = false;
 			}
 		}
-		//AnnounceTask(Metagame@ metagame, float time, int factionId, string key, dictionary@ a = dictionary(), float priority = 1.0)
-		//m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 3.0, 0, "call made", bc_call_dict));
-		/*
-		dictionary bc_call_dict = {
-			{"%map_name", stage.m_mapInfo.m_name},
-			{"%base_name", baseName},
-			{"%number_of_bases", formatUInt(stage.m_factions[0].m_ownedBases.size())}
-		};
-		*/
 	////////////////////////
 	//  LifeCraft  Calls  //
 	////////////////////////
@@ -313,7 +344,7 @@ class CallHandler : Tracker {
 					_log(numToTele + " characters queued for teleport to " + sPosi, 1);
 				}
 				if (phase == "launch") {
-					for (uint i = 0; i < numToTele; ++i) {
+					for (int i = 0; i < numToTele; ++i) {
 						// for each unit removed in teleport 1 call, spawn very close to target location of teleport 2 call
 						string teleInComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + sPosi + "'/></command>"; // instance_key='" + charType + "'
 						m_metagame.getComms().send(teleInComm);
@@ -337,7 +368,7 @@ class CallHandler : Tracker {
 		// (that fires explosive rounds) at the location requested by the caller.
 
 		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
-		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and destroy the device.
+		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and, after doing so, destroy the device.
 		else if (sCall == "ss_probe_1.call") {
 			_log("SS probe not implemented, yet", 1);
 		}
@@ -446,7 +477,8 @@ class CallHandler : Tracker {
 						continue;
 					} else {
 						_log("showing vehicle " + id + " (" + sName + ") on map", 1);
-						string seeComm = "<command class='set_spotting' faction_id='" + oID + "' vehicle_id='" + id + "'></command>";
+						//string seeComm = "<command class='set_spotting' faction_id='" + oID + "' vehicle_id='" + id + "'></command>";
+						string seeComm = "<command class='set_spotting' faction_id='0' vehicle_id='" + id + "'></command>";
 						m_metagame.getComms().send(seeComm);
 						ppVeh.push_back(id);
 					}
@@ -456,7 +488,7 @@ class CallHandler : Tracker {
 					for (uint j = 0; j < ppVeh.size(); ++j) {
 						uint id = ppVeh[j];
 						// add logic to remove destroyed vehicles from the ppVeh array
-						string unseeComm = "<command class='set_spotting' vehicle_id='" + id + "' enabled='0'></command>";
+						string unseeComm = "<command class='set_spotting' faction_id='0' vehicle_id='" + id + "' enabled='0'></command>";
 						m_metagame.getComms().send(unseeComm);
 						_log("removing vehicle " + id + " from map view.", 1);
 					}
@@ -482,8 +514,6 @@ class CallHandler : Tracker {
 						//string charClass = info.getStringAttribute("soldier_group_name");
 						_log("Character " + id + " at position " + charPosi + " failed save roll (<60). Applying effect", 1);
 						killCharacter(m_metagame, id);
-						//string convertCommand = "<command class='update_character' id='" + id + "' faction_id='0' >/></command>";
-						//m_metagame.getComms().send(convertCommand);
 						string spawnCommand = "<command class='create_instance' instance_class='character' faction_id='0' position='" + charPosi + "' instance_key='civilian' /></command>";
 						m_metagame.getComms().send(spawnCommand);
 					} else {

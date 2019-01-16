@@ -3,14 +3,14 @@
     <!-- defined in default.character for differentiation, see maps/lobby/default.character too -->
     <!-- <comment key="Hmm, no signal" /> -->
 
-	<!-- BEGIN secession comment keys -->	
+	<!-- BEGIN secession comment keys -->
 
   	<!-- BEGIN BNN announcements -->
 	<comment key="BNN mission" text="%company_name reports unwanted %activity near %vicinity. Hostile: %rule_engage. Payment: %reward_type, %reward_amount." />
 	<comment key="BNN mission" text="RECON of %location requested by %company_name. Hostiles: %rule_engage. Looting: %rule_loot. Payment: %reward_type, %reward_amount" />
 	<comment key="BNN mission" text="COURIER service requested for %company_name. Pick up: %location_pickup. Drop off: %location_drop. Payment: %reward_type, %reward_amount" />
 	<comment key="BNN mission" text="Anonymous DELETION request. Target: %character_name. Location: %vicinity %location. Payment: %reward_amount cash" />
-	<comment key="BNN mission" text="ESCORT" />
+	<comment key="BNN mission" text="ESCORT required. Collect %character_name at %location_pickup and deliver to %location. Payment: %reward_type, %reward_amount" />
 
 	<comment key="BNN advert" text="YOU DON'T KNOW NOODLES UNTIL YOU'VE TRIED UDONIS NOODLES" />
 	<comment key="BNN advert" text="Atomics Alliance - Fusion power for the modern age" />
@@ -73,7 +73,7 @@
 	<comment key="wt_propaganda" text="Join WyreTek and receive this set of steak knives!" />
 	<comment key="wt_propaganda" text="But wait... There's more!" />
 	<!-- END calls -->
-	<!-- END secession comment keys --> 
+	<!-- END secession comment keys -->
 
 	<comment key="Driver, abandon vehicle" />
 	<comment key="Driver, abandon vehicle" text="Driver, bail out" />
@@ -83,8 +83,8 @@
 	<comment key="Squad, get out" />
 
 	<comment key="Squad, get in" />
-	<comment key="Squad, get in" text="Squad, jump in" />
- 	<comment key="Squad, get in" text="Squad, occupy vehicle" />
+	<comment key="Squad, get in" text="Load up, team" />
+ 	<comment key="Squad, get in" text="Jump in team" />
 
 	<comment key="Squad, follow the vehicle" />
 	<comment key="Squad, follow the vehicle" text="Squad, stay close" />
@@ -137,37 +137,39 @@
   	<comment key="Medic!" text="Medic! I'm down!" />
 
 	<comment key="I feel good!" />
-	<comment key="I feel good!" text="Thanks mate!" />
+	<comment key="I feel good!" text="Great heals, thanks" />
 	<comment key="I feel good!" text="Thanks for the fix!" />
 	<comment key="I feel good!" text="Thanks Doc!" />
   	<comment key="I feel good!" text="That's the good stuff!" />
 
 	<comment key="Reloading" />
 	<comment key="Reloading" text="Cover me" />
-	<comment key="Reloading" text="" />
-	<comment key="Reloading" text="" />
+	<comment key="Reloading" text="Changing clip" />
+	<comment key="Reloading" text="I'm out. Reloading" />
 
 	<comment key="cancel radio call" text="Ignore last, out" />
-	<comment key="cancel radio call" text="Forget it, out" />
-	<comment key="initiate radio call" text="Alpha Zero, do you read me?" />
-	<comment key="commander radio response" text="This is Alpha Zero, go ahead" />
+	<comment key="cancel radio call" text="Cancel Forget it, out" />
+	<comment key="initiate radio call" text="HQ, do you read me?" />
+	<comment key="commander radio response" text="This is HQ, go ahead" />
 	<comment key="no radio equipment" text="I don't have a radio yet" />
 	<comment key="no radio equipment" text="They don't give radios to %rank_names" />
-	<comment key="no radio equipment" text="Seems I left the radio with my other pair of pants" />
+	<comment key="no radio equipment" text="No radio. I need a comms tech to handle this" />
 
 	<comment key="squad chat, not in squad" text="I'm not in a player squad" />
 
 	<comment key="Hey, wait up" />
 	<comment key="Hey, wait up" />
 	<comment key="Hey, wait up" text="Hey, wait for me!" />
-  	<comment key="Hey, wait up" text="Hold your horses Soldier!" />
+  	<comment key="Hey, wait up" text="Room for another?" />
 
 	<comment key="Quickly!" />
-	<comment key="Quickly!" text="Gogogo!" />
+	<comment key="Quickly!" text="Double time!" />
+	<comment key="Quickly!" text="Step it up team!" />
 
-	<comment key="Buzz off" />
+	<comment key="Buzz off" text="Find another ride" />
 
-	<comment key="Step out, kid" />
+	<comment key="Step out, kid" text="Commandeering your vehicle, soldier" />
+	<comment key="Step out, kid" text="I'll take it from here" />
 
 	<comment key="hostile vehicle takeover" text="?" />
 	<comment key="hostile vehicle takeover" text="wtf?" />
@@ -182,26 +184,27 @@
 	<comment key="I'm outta here" text="let's get out of here" />
 
 	<comment key="Good job, soldiers" />
-	<comment key="Good job, soldiers" text="Well done, men" />
-	<comment key="Good job, soldiers" text="" />
+	<comment key="Good job, soldiers" text="Well done team" />
+	<comment key="Good job, soldiers" text="Great work team" />
 	<comment key="Good job, soldiers" text="" />
 
 	<comment key="Open fire" />
 	<comment key="Open fire" text="Enemy in sight" />
+	<comment key="Open fire" text="Engage hostiles" />
 
 	<comment key="Lone leader, open fire" text="" />
 
 	<comment key="fire opened, weapon tag = sniper" text="Sniper" />
 	<comment key="fire opened, weapon tag = sniper" text="Sniper nearby" />
 
-	<comment key="grenade alert, grenade tag = grenade" text="OMG grenade" />
+	<comment key="grenade alert, grenade tag = grenade" text="Take cover!" />
 	<comment key="grenade alert, grenade tag = grenade" text="look out" />
 	<comment key="grenade alert, grenade tag = grenade" text="grenade" />
 
 	<comment key="grenade alert, grenade tag = flashbang" text="look out" />
 	<comment key="grenade alert, grenade tag = flashbang" text="flashbang" />
 
-	<comment key="grenade alert, grenade tag = rocket" text="OMG rocket" />
+	<comment key="grenade alert, grenade tag = rocket" text="RPG!" />
 	<comment key="grenade alert, grenade tag = rocket" text="incoming" />
 	<comment key="grenade alert, grenade tag = rocket" text="rocket" />
 
@@ -225,13 +228,12 @@
 	<comment key="enemy seen" text="Alert!" />
 	<comment key="enemy seen" text="Hostiles" />
 
-	<comment key="enemy seen, vehicle tag = tank" text="Heavy armor ahead!" />
+	<comment key="enemy seen, vehicle tag = tank" text="Heavy armour ahead!" />
 	<comment key="enemy seen, vehicle tag = tank" text="We need rockets over here!"/>
-	<comment key="enemy seen, vehicle tag = tank" text="Taaank!"/>
-	<comment key="enemy seen, vehicle tag = tank" text="Oh crap, that thing is huge!"/>
-	<comment key="enemy seen, vehicle tag = tank" text="Hostile armor spotted!" />
+	<comment key="enemy seen, vehicle tag = tank" text="Tank!"/>
+	<comment key="enemy seen, vehicle tag = tank" text="Hostile armour spotted!" />
 	<comment key="enemy seen, vehicle tag = tank" text="Enemy tank spotted!" />
- 	<comment key="enemy seen, vehicle tag = tank" text="Big boys incoming!" />
+ 	<comment key="enemy seen, vehicle tag = tank" text="Hostile armour in sight" />
 
  	<comment key="enemy seen, vehicle tag = apc" text="APC ahead!" />
  	<comment key="enemy seen, vehicle tag = apc" text="APC ahead! Wreck that thing!" />
@@ -252,7 +254,7 @@
 	<comment key="enemy not seen, taking suppressed fire" text="Incoming fire" />
 
 	<comment key="Waiting for reinforcements" />
-	<comment key="Waiting for reinforcements" text="Let's wait here" />
+	<comment key="Waiting for reinforcements" text="Wait for backup" />
 
 	<comment key="Hold on!" />
 	<comment key="Hold on!" />
@@ -271,7 +273,6 @@
 	<comment key="All quiet here" text="*whistles*" />
 	<comment key="All quiet here" text="Calm before the storm?" />
 	<comment key="All quiet here" text="No sign of them" />
-	<comment key="All quiet here" text="Just two more weeks..." />
 
 	<comment key="Yes sir" />
 	<comment key="Yes sir" text="On it" />
@@ -298,7 +299,7 @@
 	<comment key="Uh, I can't drive this thing" text="That wasn't my fault" />
 
 	<comment key="Waiting for squad" />
-	<comment key="Waiting for squad" text="Hop in, hurry up!" />
+	<comment key="Waiting for squad" text="Load up!" />
 
 	<comment key="Shield up" />
 	<comment key="Shield up" text="" />
