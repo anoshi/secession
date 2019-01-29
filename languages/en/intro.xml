@@ -1,30 +1,30 @@
 <?xml version="1.0" encoding="iso-8859-1"?>
 <intro>
-  <text key="Hint" text="ReflexArq uses a system that improves the reflexes of its subjects"/>
   <text key="Hint" text="BlastCorp are leaders in the explosives field"/>
-  <text key="Hint" text="WyreTek have created an advanced communications network"/>
-  <text key="Hint" text="ScopeSystems develops long-range targeting equipment"/>
   <text key="Hint" text="LifeCraft specialises in survival skills and medical procedures"/>
-  <text key="Hint" text="SECESSION: impact grenades have a low blast radius but are much more effective against vehicles than frag grenades"/>
+  <text key="Hint" text="ReflexArq uses a system that improves the reflexes of its subjects"/>
+  <text key="Hint" text="ScopeSystems develops long-range targeting equipment"/>
+  <text key="Hint" text="WyreTek have created an advanced communications network"/>
+  <text key="Hint" text="Contract missions advertised via the Broadcast News Network (BNN) pay handsomely"/>
+  <text key="Hint" text="The Grenadier class equips vastly improved throwable weapons but is limited to 1-handed firearms"/>
   <text key="Hint" text="EMP grenades are highly effective against power armours, such as those worn by BlastCorp troops"/>
-  <text key="Hint" text="WyreTek troops utilise powerful radio calls. Deploy radio jammers on the front lines to counter their advantage"/>
   <text key="Hint" text="Use remote-detonated sticky explosives on heavy vehicles and large structures"/>
   <text key="Hint" text="Backpacks over 20% full slow you down and reduce weapon accuracy"/>
   <text key="Hint" text="SECESSION: diving away from a grenade can save your life"/>
   <text key="Hint" text="Melee attacks pass through almost all armour types"/>
   <text key="Hint" text="Sneak into ememy bases and destroy their resources to limit their abilities on the battlefield"/>
-  <text key="Hint" text="The boundaries of capturable areas are shown as dotted outlines on the map"/>
+  <text key="Hint" text="The boundaries of capturable areas appear as dotted outlines on the map"/>
   <text key="Hint" text="SECESSION: Capturing a base requires a 2/3 majority of troops to begin the timer"/>
   <text key="Hint" text="Several heavy weapons require you to be prone or behind low cover before they can be fired"/>
-  <text key="Hint" text="Some LifeCraft weapons are designed to heal, not harm"/>
   <text key="Hint" text="Each faction has its own weapons and armour that can be looted and used by enemies"/>
   <text key="Hint" text="Equipping yourself with items stolen from other factions can give you an edge on the battlefield"/>
   <text key="Hint" text="Bring looted enemy equipment back to your armouries to unlock them for your own faction"/>
-  <text key="Hint" text="Automatic weapons lose their accuracy the longer they are fired for"/>
+  <text key="Hint" text="Automatic weapons suffer from reduced accuracy during periods of sustained fire"/>
   <text key="Hint" text="Aim your crosshair over enemy vehicles to mark them on the map"/>
   <text key="Hint" text="Always wear armour and patch it up with <item name please> if it takes damage"/>
   <text key="Hint" text="Heavy weapons and armour make you a fearsome opponent, but reduce your movement speed"/>
   <text key="Hint" text="Troops can only be revived if they are wounded while wearing a vest"/>
   <text key="Hint" text="UDONIS NOODLES are a favourite of BlastCorp troops"/>
-  <text key="Hint" text="Contract missions advertised via the Broadcast News Network (BNN) pay handsomely"/>
+  <text key="Hint" text="Some LifeCraft weapons are designed to heal, not harm"/>
+  <text key="Hint" text="WyreTek troops utilise powerful radio calls. Deploy radio jammers on the front lines to counter their advantage"/>
 </intro>
