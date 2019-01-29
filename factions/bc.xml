@@ -54,7 +54,7 @@
 	<rank xp="1000.0" name="BlastCorp Seventeen">
 		<hud_icon filename="hud_rank17.png" />
 	</rank>
-		 
+
 	<!-- ///////////// -->
 	<!-- default group -->
 	<!-- ///////////// -->
@@ -71,15 +71,14 @@
 		<resources file="bc_sniper.resources" />
 		<resources file="bc_secondaries.resources" />
 		<resources file="bc_default.resources" />
->
 
 		<item_class_existence_config>
 			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="0.4" />	
+			<item_class_existence class="weapon" slot="1" probability="0.4" />
 			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="1.0" />	
+			<item_class_existence class="carry_item" slot="1" probability="1.0" />
 			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="0.03" />	
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />
 		</item_class_existence_config>
 
 		<attribute_config class="rp">
@@ -91,7 +90,7 @@
 			<attribute weight="1.0" min="0.05" max="0.45" />
 		</attribute_config>
 	</soldier>
-	
+
 	<!-- ////////// -->
 	<!-- LIGHT FOOT -->
 	<!-- ////////// -->
@@ -101,7 +100,7 @@
 		<resources file="common_lightfoot.resources" />
 		<resources file="bc_light.resources" />
 
-		<item_class_existence_config>		
+		<item_class_existence_config>
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="0.0" />
 			<!-- wearables -->
@@ -287,7 +286,7 @@
 			<attribute weight="1.0" min="0.05" max="0.45" />
 		</attribute_config>
 	</soldier>
-  
+
 	<!-- ///////// -->
 	<!-- CIVILIANS -->
 	<!-- ///////// -->
@@ -315,7 +314,7 @@
 			<attribute weight="1.0" min="0.0" max="0.04" />
 		</attribute_config>
 	</soldier>
-   
+
 	<!-- //////////////// -->
 	<!-- supply box group -->
 	<!-- //////////////// -->
@@ -326,6 +325,6 @@
 		<attribute_config class="xp">
 			<attribute weight="1.0" min="0.0" max="0.05" />
 		</attribute_config>
-	</soldier>    
+	</soldier>
 
 </faction>
