@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<scene>
+	<camera direction="-0.01 -0.16 0.5" distance="18.5" far_clip="80.0" shadow_far_clip="80.0" fov="1.00" />
+	<fog offset="15.0" range="30.0" />
+</scene>
+
+<!-- -0.16 height offset allows camera to pass under 3rd stacked shipping container.mesh but above a
+45 unit high terrain jump (e.g. 150 base to 195 hill) -->
