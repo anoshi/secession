@@ -1,17 +1,20 @@
-material bc_laser {
+material bc_laser
+{
 	receive_shadows off
-	technique {
-		pass {
+	technique
+	{
+		pass
+		{
 			lighting off
 			fog_override true
 
 			depth_write off
 			scene_blend alpha_blend
 
-			texture_unit {
+			texture_unit
+			{
 				texture bc_laser.png
 			}
 		}
 	}
 }
-

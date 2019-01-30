@@ -1076,7 +1076,7 @@
 	<!-- commander comments -->
 	<comment key="player promotion" text="Congratulations soldier, you've just been promoted to %rank_name!" />
 	<comment key="we captured a base" text="%base_name is now controlled by our forces" />
-	<comment key="we captured a base" text="Our forces hves conquered %base_name" />
+	<comment key="we captured a base" text="Our forces have conquered %base_name" />
 	<comment key="enemy captured a base" text="%base_name is now controlled by %faction_name" />
 	<comment key="enemy captured a base" text="%faction_name has conquered %base_name" />
 	<comment key="neutral captured a base" text="" />

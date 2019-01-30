@@ -126,10 +126,10 @@ class Stage {
 
 		m_fogOffset = -100.0;
 		m_fogRange = 600.0;
-		
+
 		m_minRandomCrates = 5;
 		m_maxRandomCrates = 5;
-		
+
 		@m_intelManager = null;
 	}
 
@@ -156,7 +156,7 @@ class Stage {
 			m_trackers.removeAt(i);
 		}
 	}
-	
+
 	// --------------------------------------------
 	bool hasSideObjectives() const {
 		return true;
@@ -186,8 +186,8 @@ class Stage {
 	protected void appendIncludeLayers(XmlElement@ mapConfig) const {
 		for (uint i = 0; i < m_includeLayers.size(); ++i) {
 			string name = m_includeLayers[i];
-			XmlElement layer("include_layer"); 
-			layer.setStringAttribute("name", name); 
+			XmlElement layer("include_layer");
+			layer.setStringAttribute("name", name);
 			mapConfig.appendChild(layer);
 		}
 	}
@@ -226,7 +226,7 @@ class Stage {
 		{ XmlElement e("call");			e.setStringAttribute("file", "invasion_all_calls.xml"); mapConfig.appendChild(e); }
 		{ XmlElement e("vehicle");		e.setStringAttribute("file", "invasion_all_vehicles.xml"); mapConfig.appendChild(e); }
 		{ XmlElement e("achievement");	e.setStringAttribute("file", "achievements.xml"); mapConfig.appendChild(e); }
-		
+
 		if (m_userSettings.m_testingToolsEnabled) {
 			{ XmlElement e("carry_item");	e.setStringAttribute("file", "cheat_items.xml"); mapConfig.appendChild(e); }
 			{ XmlElement e("projectile");	e.setStringAttribute("file", "cheat_throwables.xml"); mapConfig.appendChild(e); }
@@ -238,7 +238,7 @@ class Stage {
 		if (m_userSettings.m_journalEnabled) {
 			XmlElement journal("journal");
 			journal.setStringAttribute("filename", "journal.xml");
-			mapConfig.appendChild(journal); 
+			mapConfig.appendChild(journal);
 		}
 	}
 
@@ -246,7 +246,7 @@ class Stage {
 	protected void appendMapLegend(XmlElement@ mapConfig) const {
 		XmlElement legend("map_legend");
 		legend.setStringAttribute("filename", "invasion_map_legend.xml");
-		mapConfig.appendChild(legend); 
+		mapConfig.appendChild(legend);
 	}
 
 	// --------------------------------------------
@@ -254,17 +254,17 @@ class Stage {
 		XmlElement scene("scene");
 		appendCamera(scene);
 		appendFog(scene);
-		mapConfig.appendChild(scene); 
+		mapConfig.appendChild(scene);
 	}
 
 	// --------------------------------------------
 	protected void appendCamera(XmlElement@ scene) const {
-		XmlElement camera("camera");
-		camera.setStringAttribute("direction", "-0.3 -1.7 1.0");
-		camera.setFloatAttribute("distance", 36.0);
-		camera.setFloatAttribute("far_clip", 95.0);
-		camera.setFloatAttribute("shadow_far_clip", 80.0);
-		scene.appendChild(camera);
+		//XmlElement camera("camera");
+		//camera.setStringAttribute("direction", "-0.3 -1.7 1.0");
+		//camera.setFloatAttribute("distance", 36.0);
+		//camera.setFloatAttribute("far_clip", 95.0);
+		//camera.setFloatAttribute("shadow_far_clip", 80.0);
+		//scene.appendChild(camera);
 	}
 
 	// --------------------------------------------
@@ -281,9 +281,9 @@ class Stage {
 		for (uint i = 0; i < m_userSettings.m_overlayPaths.size(); ++i) {
 			string path = m_userSettings.m_overlayPaths[i];
 			_log("adding overlay " + path);
-			
-			XmlElement e("overlay"); 
-			e.setStringAttribute("path", path); 
+
+			XmlElement e("overlay");
+			e.setStringAttribute("path", path);
 			command.appendChild(e);
 		}
 	}
@@ -367,11 +367,11 @@ class Stage {
 			} else {
 				// enemy
 				faction.setFloatAttribute("ai_accuracy", m_userSettings.m_enemyAiAccuracyFactor);
-			}			
+			}
 
 			// if base amount has been declared for the faction, use it
 
-			// allow adventure mode to use the amount of bases we managed to capture 
+			// allow adventure mode to use the amount of bases we managed to capture
 			// if we were in the map previously
 
 			if (i == 0 && f.m_ownedBases.size() > 0) {
@@ -412,7 +412,7 @@ class Stage {
 	bool hasIntelManager() const {
 		return m_intelManager !is null;
 	}
-	
+
 	// --------------------------------------------
 	void save(XmlElement@ root) {
 		if (m_intelManager !is null) {

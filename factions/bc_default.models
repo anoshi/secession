@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <models>
-	<!-- -------------------------- -->
 	<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -16,7 +15,7 @@
 	</model>
 	<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest1_3"/>
-		<requirement class="rank" range="0 10000" />	
+		<requirement class="rank" range="0 10000" />
 	</model>
 	<model filename="bc_soldier_1.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest2.carry_item"/>
@@ -63,7 +62,7 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<model filename="bc_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="commstech_radio_1.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -100,7 +99,7 @@
 	<model filename="bc_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest2_5"/>
 		<requirement class="rank" range="0 10000" />
-	</model>	
+	</model>
 	<model filename="bc_soldier_2.xml">
 		<requirement class="carry_item" slot="1" key="bc_vest3.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -188,17 +187,17 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<!-- camouflage -->
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<model filename="bc_soldier_camo_1.xml">
 		<requirement class="carry_item" slot="1" key="camouflage_suit.carry_item"/>
 		<requirement class="rank" range="0 10000" />
 	</model>
 
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<!-- black ops -->
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<model filename="soldier_blackops.xml">
 		<requirement class="carry_item" slot="1" key="vest_blackops.carry_item"/>
 		<requirement class="rank" range="0 10000" />
@@ -208,13 +207,13 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<!-- high rank -->
-	<!-- -------------------------- -->
+	<!-- ////////////////////////// -->
 	<model filename="bc_soldier_5stars.xml">
 		<requirement class="rank" range="100 1000" />
 	</model>
 	<model filename="president.xml">
 		<requirement class="rank" range="1000 10000" />
-	</model>    
+	</model>
 </models>
