@@ -11,14 +11,6 @@ class MyStageConfigurator : StageConfiguratorCampaign {
 	const array<FactionConfig@>@ getAvailableFactionConfigs() const {
 		array<FactionConfig@> availableFactionConfigs;
 
-		// --------------------------------
-		// - "<faction>.xml" faction specification filename
-		// - "BlastCorp" faction name,
-		// - "0.2 0.2 0.3" RGB colour used for faction in the world view
-		// - "<faction_boss>.xml" faction specification filename used in the final missions; 
-		//   can be same as the regular faction filename
-		// --------------------------------
-
 		availableFactionConfigs.push_back(FactionConfig(-1, "bc.xml", "BlastCorp", "0.2 0.2 0.3", "bc.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "lc.xml", "LifeCraft", "1.0 0.2 0.2", "lc.xml"));
 		availableFactionConfigs.push_back(FactionConfig(-1, "ra.xml", "ReflexArq", "0.5 0.2 0.5", "ra.xml"));
