@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!--<map_config min_factions="1" quick_match_entry_script="start_campaign.as">-->
+
 <map_config min_factions="2">
 	<weapon file="all_weapons.xml" />
 	<projectile file="all_throwables.xml" />

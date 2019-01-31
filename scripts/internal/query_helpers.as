@@ -558,7 +558,6 @@ array<const XmlElement@>@ getCharactersNearPosition(const Metagame@ metagame, co
 }
 
 // --------------------------------------------------------
-
 array<const XmlElement@>@ getCharactersNearVehicle(const Metagame@ metagame, int vehicleId, int factionId) {
 	array<const XmlElement@>@ characters;
 

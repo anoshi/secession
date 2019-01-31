@@ -1,4 +1,4 @@
-material lc_laser
+material lc_laser_mat
 {
 	receive_shadows off
 	technique

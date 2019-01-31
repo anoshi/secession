@@ -1,4 +1,4 @@
-material ra_laser
+material ra_laser_mat
 {
 	receive_shadows off
 	technique
