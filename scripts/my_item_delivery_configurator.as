@@ -14,24 +14,24 @@ class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 		list.push_back(Resource("lc_heal_nade.weapon", "weapon"));
 		list.push_back(Resource("ss_srx.weapon", "weapon"));
 		list.push_back(Resource("ss_sgx.weapon", "weapon"));
-		// include random items from secondary companies (udonis noodles et al.)
-         
+
 		return list;
 	}
 
 	array<Resource@>@ getUnlockWeaponList2() const {
 		array<Resource@> list;
 		// laptop delivery rewards
+		// include random items from secondary companies (udonis noodles et al.)
 		list.push_back(Resource("mp5sd.weapon", "weapon"));
 		list.push_back(Resource("scorpion-evo.weapon", "weapon"));
 		list.push_back(Resource("qcw-05.weapon", "weapon"));
 		list.push_back(MultiGroupResource("vest_blackops.carry_item", "carry_item", array<string> = {"default", "supply"}));
-		list.push_back(Resource("apr.weapon", "weapon")); 
-		list.push_back(MultiGroupResource("mk23.weapon", "weapon", array<string> = {"default", "supply"}));       
-         
+		list.push_back(Resource("apr.weapon", "weapon"));
+		list.push_back(MultiGroupResource("mk23.weapon", "weapon", array<string> = {"default", "supply"}));
+
 		return list;
 	}
-	
+
 	array<Resource@>@ getDeliverablesList() const {
 		array<Resource@> list;
 		// track delivery of these items to armory, with intention of unlocking that same item

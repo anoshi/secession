@@ -32,7 +32,7 @@ class DestroyVehicleToCaptureBase : Tracker {
 		_log("handleVehicleDestroyEvent in destroy_vehicle_to_capture_base.as fired", 1);
 		string key = event.getStringAttribute("vehicle_key");
 		if (key == m_vehicleKey) {
-			_log("DestroyVehicleToCaptureBase, vehicle being destroyed, key " + key, 1); 
+			_log("DestroyVehicleToCaptureBase, vehicle being destroyed, key " + key, 1);
 
 			int baseId = -1;
 			Vector3 position = stringToVector3(event.getStringAttribute("position"));
@@ -41,28 +41,12 @@ class DestroyVehicleToCaptureBase : Tracker {
 			if (baseInfo !is null) {
 				baseId = baseInfo.getIntAttribute("id");
 			} else {
-				_log("DestroyVehicleToCaptureBase, ERROR, closest base not found for position " + position.toString(), -1); 
+				_log("DestroyVehicleToCaptureBase, ERROR, closest base not found for position " + position.toString(), -1);
 			}
 
 			if (baseId >= 0) {
 				// capture the base
 				int owner = m_capturerFaction;
-				/*
-				{
-					// query who destroyed it
-					$id = $event->getAttribute("character_id");
-					if ($id >= 0) {
-						$info = get_character_info($this->metagame, $id);
-						if ($info) {
-							$owner = $info->getAttribute("faction_id");
-						}
-					}
-					// -> problematic; the enemy can destroy their own vehicle -> triggers the base capture for them again..
-				}*/
-
-				// announce the message now
-				//send_faction_message($this->metagame, 0, "vehicle destroyed");
-
 				// capture the associated base now
 				string command = "<command class='update_base'" +
 					"	base_id='" + baseId + "' " +
@@ -70,7 +54,7 @@ class DestroyVehicleToCaptureBase : Tracker {
 				m_metagame.getComms().send(command);
 
 			} else {
-				_log("DestroyVehicleToCaptureBase, ERROR, couldn't resolve base id for the vehicle", -1); 
+				_log("DestroyVehicleToCaptureBase, ERROR, couldn't resolve base id for the vehicle", -1);
 			}
 		}
 	}

@@ -32,7 +32,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 	protected SpecialVehicleManager@ m_specialCargoVehicleManager;
 	protected ItemDeliveryOrganizer@ m_itemDeliveryOrganizer;
 	protected PenaltyManager@ m_penaltyManager;
-	
+
 	protected array<Faction@> m_factions;
 
 	// TODO: can we avoid this?
@@ -68,7 +68,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 
 			m_mapRotator.startRotation(true);
 		} else {
-			// starting the invasion for the first time now, 
+			// starting the invasion for the first time now,
 			// pick user settings from command line
 
 			m_unlockManager.init(0);
@@ -93,7 +93,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 			// - in case of the very first start, that goes wrong: post_begin_match
 			//   informs item_delivery_organizer to add objectives, which haven't been created
 			//	 at that point
-			// - we'll just workaround that by re-doing that start here, 
+			// - we'll just workaround that by re-doing that start here,
 			//   after proper initialization
 			if (m_itemDeliveryOrganizer !is null) {
 				m_itemDeliveryOrganizer.init();
@@ -137,12 +137,12 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 		trackedCrates.push_back("special_crate2.vehicle");
 		trackedCrates.push_back("special_crate3.vehicle");
 		trackedCrates.push_back("special_crate4.vehicle");
-		trackedCrates.push_back("special_crate5.vehicle");    
+		trackedCrates.push_back("special_crate5.vehicle");
 		trackedCrates.push_back("special_crate6.vehicle");
 		trackedCrates.push_back("special_crate7.vehicle");
 		trackedCrates.push_back("special_crate8.vehicle");
 		trackedCrates.push_back("special_crate9.vehicle");
-		trackedCrates.push_back("special_crate10.vehicle");    
+		trackedCrates.push_back("special_crate10.vehicle");
 
 		trackedCrates.push_back("special_crate_wood1.vehicle");
 		trackedCrates.push_back("special_crate_wood2.vehicle");
@@ -165,7 +165,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 		trackedVehicles.push_back("special_cargo_vehicle2.vehicle");
 		trackedVehicles.push_back("special_cargo_vehicle3.vehicle");
 		trackedVehicles.push_back("special_cargo_vehicle4.vehicle");
-		trackedVehicles.push_back("special_cargo_vehicle5.vehicle");    
+		trackedVehicles.push_back("special_cargo_vehicle5.vehicle");
 
 		@m_specialCargoVehicleManager = SpecialVehicleManager(this, "special_cargo_vehicle_manager", trackedVehicles);
 	}
@@ -180,9 +180,9 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 	// --------------------------------------------
 	protected void setupPenaltyManager() {
 		if (getUserSettings().m_teamKillPenaltyEnabled) {
-			@m_penaltyManager = PenaltyManager(this, 
-				m_userSettings.m_teamKillsToStartPenalty, 
-				m_userSettings.m_teamKillPenaltyTime, 
+			@m_penaltyManager = PenaltyManager(this,
+				m_userSettings.m_teamKillsToStartPenalty,
+				m_userSettings.m_teamKillPenaltyTime,
 				m_userSettings.m_forgiveTeamKillTime);
 		}
 	}
@@ -258,7 +258,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 			// adds trackers
 			// NOTE: this works wrong with the very first time a map and match is started
 			// in campaign, as item delivery organizer gets to become initialized only
-			// after the map has changed and match has started, as it needs to 
+			// after the map has changed and match has started, as it needs to
 			// query own faction resources
 			m_itemDeliveryOrganizer.matchStarted();
 		}
@@ -283,7 +283,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 	// --------------------------------------------
 	protected void setupMinibosses() {
 		{
-			// disable minibosses in friendly faction 
+			// disable minibosses in friendly faction
 			// to prevent harvesting rares from minibosses
 			XmlElement command("command");
 			command.setStringAttribute("class", "faction");
@@ -344,7 +344,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 
 	// --------------------------------------------
 	// map rotator lets us know some specific map related information
-	// we need for handling position mapping 
+	// we need for handling position mapping
 	void setMapInfo(const MapInfo@ info) {
 		m_mapInfo = info;
 	}
@@ -399,7 +399,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 					multiplier *= 0.97f;
 				}
 			}
-		}			
+		}
 
 		return multiplier;
 	}
@@ -460,9 +460,8 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 				break;
 			} else {
 				_log("no match");
-			}			
+			}
 		}
 		return player;
 	}
 }
-
