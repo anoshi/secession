@@ -1,4 +1,4 @@
-material wt_laser
+material wt_laser_mat
 {
 	receive_shadows off
 	technique

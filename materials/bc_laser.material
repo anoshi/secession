@@ -1,4 +1,4 @@
-material bc_laser
+material bc_laser_mat
 {
 	receive_shadows off
 	technique
