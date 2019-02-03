@@ -14,7 +14,7 @@
     vertical_offset_at_spawn="50.0"
     initial_speed_to_target="0.0">
     <effect class="launch" ref="ShadowAirplaneFlyby" shadow="1" />
-    <sound class="launch" fileref="plane_flyby.wav" />
+    <sound class="launch" fileref="spaceship_fly_by_low.wav" />
   </round>
   <hud_icon filename="hud_deployable_gl.png" />
   <capacity value="0" source="rank" source_value="0.0" />

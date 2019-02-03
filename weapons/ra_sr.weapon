@@ -19,7 +19,7 @@
     <animation key="recoil" ref="27" />
     <animation key="cycle" ref="30" />
     <animation key="reload" ref="35" />
-    <sound key="fire" fileref="laser_pulse.wav" volume="1.0" />
+    <sound key="fire" fileref="ra_sr.wav" volume="1.0" />
     <sound key="cycle" fileref="sniper_cycle.wav" />
     <sound key="magazine_out" fileref="sniper_clip_out.wav" />
     <sound key="magazine_in" fileref="sniper_clip_in.wav" />

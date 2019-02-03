@@ -22,7 +22,7 @@
     <animation state_key="walking" animation_key="walking, heavy weapon" />
     <animation state_key="walking_backwards" animation_key="walking backwards, heavy weapon" />
 
-    <sound key="fire" fileref="laser2.wav" pitch_variety="0.2" volume="1.0" />
+    <sound key="fire" fileref="lc_mg.wav" pitch_variety="0.2" volume="1.0" />
     <sound key="magazine_out" fileref="mg_clip_out.wav" />
     <sound key="magazine_in" fileref="mg_clip_in.wav" />
     <sound key="cycle" fileref="rifle_chamber.wav" />
