@@ -19,7 +19,10 @@
 	<weapon key='tow_resource.weapon' />
 	<weapon key='gl_resource.weapon' />
 	<weapon key='humvee_gl.weapon' />
+
+	<!-- SECESSION common weapons -->
 	<weapon key='empl_turret.weapon' />
+	<weapon key='terminal.weapon' />
 
 	<!-- CLASS CARRY ITEMS -->
 	<!-- Comms Tech items listed here and enabled in common_commstech.resources -->
@@ -194,10 +197,12 @@
 
 	<!-- SECESSION VEHICLES -->
 	<vehicle key="veh_speeder.vehicle" />
-	<vehicle key="empl_turret.vehicle" />
-	<vehicle key="empl_turret_offline.vehicle" />
+	<vehicle key="veh_empl_turret.vehicle" />
+	<vehicle key="veh_empl_turret_offline.vehicle" />
+	<vehicle key="veh_terminal.vehicle" />
 	<!-- END SECESSION VEHICLES -->
 
+	<!-- common calls -->
 	<call key="artillery1.call" />
 	<call key="buggy.call" />
 	<call key="bnn_advert.call" />

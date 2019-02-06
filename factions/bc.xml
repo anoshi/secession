@@ -290,14 +290,13 @@
 	<!-- /////// -->
 	<!-- TURRETS -->
 	<!-- /////// -->
-	<soldier name="empl_turret" spawn_score="0.00" firstnames_file="empl_firstnames.txt" lastnames_file="empl_lastnames.txt" squad_size_xp_cap="0.0">
+	<soldier name="empl_turret" spawn_score="0.0" firstnames_file="empl_firstnames.txt" lastnames_file="empl_lastnames.txt" squad_size_xp_cap="0.0">
 		<character filename="emplacement.character" />
 
 		<ai filename="emplacement.ai" />
 
 		<model filename="empl_turret.xml" />
 
-		<resources file="common.resources" />
 		<resources file="emplacement.resources" />
 
 		<item_class_existence_config>
