@@ -71,6 +71,7 @@
 		<resources file="bc_sniper.resources" />
 		<resources file="bc_secondaries.resources" />
 		<resources file="bc_default.resources" />
+		<resources file="bc_demotrooper.resources" /> <!-- testing bc_gl.weapon -->
 
 		<item_class_existence_config>
 			<!-- secondaries -->

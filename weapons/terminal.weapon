@@ -49,7 +49,6 @@
     <capacity value="5" source="rank" source_value="0.4" />
 
     <projectile file="tracer_dart.projectile">
-    <!--    <result class="spawn" instance_class="call" instance_key="tracer_dart.call"  min_amount="1" max_amount="1" offset="0 3.0 0" position_spread="0 0" direction_spread="0 0" />     -->
 
     </projectile>
 

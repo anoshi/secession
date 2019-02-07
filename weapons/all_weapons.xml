@@ -43,9 +43,13 @@
     <capacity source="rank" source_value="0.05" value="1" />
   </weapon>
   <weapon file="bc_rl.weapon"> <!-- rocket launcher -->
-    <capacity value="0" source="rank" source_value="0.0" />
-    <capacity value="1" source="rank" source_value="0.05" />
-    <capacity value="2" source="rank" source_value="0.2" />
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.05" value="1" />
+    <capacity source="rank" source_value="0.2" value="2" />
+  </weapon>
+  <weapon file="bc_gl.weapon"> <!-- (sticky) grenade launcher -->
+    <capacity source="rank" source_value="0.0" value="0" />
+    <capacity source="rank" source_value="0.2" value="1" />
   </weapon>
   <!-- end BC weapons -->
 
