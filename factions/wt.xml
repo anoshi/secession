@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <faction name="WyreTek" color="0.1 0.1 0.6" firstnames_file="wt_firstnames.txt" lastnames_file="wt_lastnames.txt" chat_icon_filename="wt_chat_icon_soldier.png" chat_icon_commander_filename="wt_chat_icon_commander.png" campaign_completion_icon_filename="wt_campaign_win.png">
-	<rank xp="0.0" name="WyreTek Civilian">
+	<rank xp="0.0" name="WT Civilian">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
-	<rank xp="0.05" name="WyreTek One">
+	<rank xp="0.04" name="WT Turret">
+		<hud_icon filename="hud_rank0.png" />
+	</rank>
+	<rank xp="0.05" name="WT One">
 		<hud_icon filename="hud_rank1.png" />
 	</rank>
-	<rank xp="0.1" name="WyreTek Two">
+	<rank xp="0.1" name="WT Two">
 		<hud_icon filename="hud_rank2.png" />
 	</rank>
-	<rank xp="0.2" name="WyreTek Three">
+	<rank xp="0.2" name="WT Three">
 		<hud_icon filename="hud_rank3.png" />
 	</rank>
-	<rank xp="0.3" name="WyreTek Four">
+	<rank xp="0.3" name="WT Four">
 		<hud_icon filename="hud_rank4.png" />
 	</rank>
-	<rank xp="0.4" name="WyreTek Five">
+	<rank xp="0.4" name="WT Five">
 		<hud_icon filename="hud_rank5.png" />
 	</rank>
-	<rank xp="0.6" name="WyreTek Six">
+	<rank xp="0.6" name="WT Six">
 		<hud_icon filename="hud_rank6.png" />
 	</rank>
-	<rank xp="0.8" name="WyreTek Seven">
+	<rank xp="0.8" name="WT Seven">
 		<hud_icon filename="hud_rank7.png" />
 	</rank>
-	<rank xp="1.0" name="WyreTek Eight">
+	<rank xp="1.0" name="WT Eight">
 		<hud_icon filename="hud_rank8.png" />
 	</rank>
-	<rank xp="1.2" name="WyreTek Nine">
+	<rank xp="1.2" name="WT Nine">
 		<hud_icon filename="hud_rank9.png" />
 	</rank>
-	<rank xp="1.4" name="WyreTek Ten">
+	<rank xp="1.4" name="WT Ten">
 		<hud_icon filename="hud_rank10.png" />
 	</rank>
-	<rank xp="2.0" name="WyreTek Eleven">
+	<rank xp="2.0" name="WT Eleven">
 		<hud_icon filename="hud_rank11.png" />
 	</rank>
-	<rank xp="5.0" name="WyreTek Twelve">
+	<rank xp="5.0" name="WT Twelve">
 		<hud_icon filename="hud_rank12.png" />
 	</rank>
-	<rank xp="10.0" name="WyreTek Thirteen">
+	<rank xp="10.0" name="WT Thirteen">
 		<hud_icon filename="hud_rank13.png" />
 	</rank>
-	<rank xp="20.0" name="WyreTek Fourteen">
+	<rank xp="20.0" name="WT Fourteen">
 		<hud_icon filename="hud_rank14.png" />
 	</rank>
-	<rank xp="50.0" name="WyreTek Fifteen">
+	<rank xp="50.0" name="WT Fifteen">
 		<hud_icon filename="hud_rank15.png" />
 	</rank>
-	<rank xp="100.0" name="WyreTek Sixteen">
+	<rank xp="100.0" name="WT Sixteen">
 		<hud_icon filename="hud_rank16.png" />
 	</rank>
-	<rank xp="1000.0" name="WyreTek Seventeen">
+	<rank xp="1000.0" name="WT Seventeen">
 		<hud_icon filename="hud_rank17.png" />
 	</rank>
 
@@ -68,17 +71,17 @@
 		<resources file="common.resources" />
 		<resources file="wt_light.resources" />
 		<resources file="wt_heavy.resources" />
-		<resources file="wt_sniper.resources" />	
+		<resources file="wt_sniper.resources" />
 		<resources file="wt_secondaries.resources" />
 		<resources file="wt_default.resources" />
 
 		<item_class_existence_config>
 			<!-- secondaries -->
-			<item_class_existence class="weapon" slot="1" probability="0.4" />	
+			<item_class_existence class="weapon" slot="1" probability="0.4" />
 			<!-- wearables -->
-			<item_class_existence class="carry_item" slot="1" probability="1.00" />	
+			<item_class_existence class="carry_item" slot="1" probability="1.00" />
 			<!-- backpack -->
-			<item_class_existence class="carry_item" slot="0" probability="0.03" />	
+			<item_class_existence class="carry_item" slot="0" probability="0.03" />
 		</item_class_existence_config>
 
 		<attribute_config class="rp">
@@ -101,7 +104,7 @@
 		<resources file="common_lightfoot.resources" />
 		<resources file="wt_light.resources" />
 
-		<item_class_existence_config>		
+		<item_class_existence_config>
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="0.0" />
 			<!-- wearables -->
@@ -157,7 +160,7 @@
 		<resources file="common_sniper.resources" />
 		<resources file="wt_sniper.resources" />
 
-		<item_class_existence_config>		
+		<item_class_existence_config>
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="1.0" />
 			<!-- wearables -->
@@ -289,6 +292,30 @@
 		</attribute_config>
 	</soldier>
 
+	<!-- /////// -->
+	<!-- TURRETS -->
+	<!-- /////// -->
+	<soldier name="empl_turret" spawn_score="0.0000" firstnames_file="empl_firstnames.txt" lastnames_file="empl_lastnames.txt" squad_size_xp_cap="0.0">
+		<character filename="emplacement.character" />
+		<ai filename="emplacement.ai" />
+		<model filename="empl_turret.xml" />
+		<resources file="emplacement.resources" />
+
+		<item_class_existence_config>
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<item_class_existence class="carry_item" slot="1" probability="0.0" />
+			<item_class_existence class="carry_item" slot="0" probability="0.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="1.0" min="0.0" max="50.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.04" max="0.049" />
+		</attribute_config>
+	</soldier>
+
 	<!-- ///////// -->
 	<!-- CIVILIANS -->
 	<!-- ///////// -->
@@ -316,7 +343,7 @@
 			<attribute weight="1.0" min="0.0" max="0.04" />
 		</attribute_config>
 	</soldier>
- 
+
 	<!-- //////////////// -->
 	<!-- supply box group -->
 	<!-- //////////////// -->
@@ -327,6 +354,6 @@
 		<attribute_config class="xp">
 			<attribute weight="1.0" min="0.0" max="0.04" />
 		</attribute_config>
-	</soldier>    
-   
+	</soldier>
+
 </faction>

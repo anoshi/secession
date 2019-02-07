@@ -136,6 +136,9 @@ class CallHandler : Tracker {
 		else if (sCall == "bnn_advert.call") {
 			notify(m_metagame, "BNN advert", bnn_dict);
 		}
+		else if (sCall == "terminal.call") {
+			_log("Terminal call block processing...", 1);
+		}
 		//else if (sCall == "bombing_run.call") {
 		//	_log("Bombing run from " + charPosi + " to " + sPosi + " queued", 1);
 		// subtract caller pos from target pos to get vector that is dist and dir from target to player.

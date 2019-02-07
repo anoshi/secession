@@ -48,7 +48,7 @@
     <capacity value="0" source="rank" source_value="0.0" />
     <capacity value="5" source="rank" source_value="0.4" />
 
-    <projectile file="tracer_dart.projectile">
+    <projectile file="terminal.projectile">
 
     </projectile>
 

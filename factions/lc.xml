@@ -3,6 +3,9 @@
 	<rank xp="0.0" name="LC Civilian">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
+	<rank xp="0.04" name="LC Turret">
+		<hud_icon filename="hud_rank0.png" />
+	</rank>
 	<rank xp="0.05" name="LC One">
 		<hud_icon filename="hud_rank1.png" />
 	</rank>
@@ -68,7 +71,7 @@
 		<resources file="common.resources" />
 		<resources file="lc_light.resources" />
 		<resources file="lc_heavy.resources" />
-		<resources file="lc_sniper.resources" />	
+		<resources file="lc_sniper.resources" />
 		<resources file="lc_secondaries.resources" />
 		<resources file="lc_default.resources" />
 
@@ -101,7 +104,7 @@
 		<resources file="common_lightfoot.resources" />
 		<resources file="lc_light.resources" />
 
-		<item_class_existence_config>		
+		<item_class_existence_config>
 			<!-- secondary weapon -->
 			<item_class_existence class="weapon" slot="1" probability="0.0" />
 			<!-- wearables -->
@@ -289,6 +292,30 @@
 		</attribute_config>
 	</soldier>
 
+	<!-- /////// -->
+	<!-- TURRETS -->
+	<!-- /////// -->
+	<soldier name="empl_turret" spawn_score="0.0000" firstnames_file="empl_firstnames.txt" lastnames_file="empl_lastnames.txt" squad_size_xp_cap="0.0">
+		<character filename="emplacement.character" />
+		<ai filename="emplacement.ai" />
+		<model filename="empl_turret.xml" />
+		<resources file="emplacement.resources" />
+
+		<item_class_existence_config>
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<item_class_existence class="carry_item" slot="1" probability="0.0" />
+			<item_class_existence class="carry_item" slot="0" probability="0.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="1.0" min="0.0" max="50.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.04" max="0.049" />
+		</attribute_config>
+	</soldier>
+
 	<!-- ///////// -->
 	<!-- CIVILIANS -->
 	<!-- ///////// -->
@@ -316,7 +343,7 @@
 			<attribute weight="1.0" min="0.0" max="0.04" />
 		</attribute_config>
 	</soldier>
-   
+
 	<!-- //////////////// -->
 	<!-- supply box group -->
 	<!-- //////////////// -->
@@ -327,6 +354,6 @@
 		<attribute_config class="xp">
 			<attribute weight="1.0" min="0.0" max="0.05" />
 		</attribute_config>
-	</soldier>    
+	</soldier>
 
 </faction>

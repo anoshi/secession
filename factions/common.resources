@@ -205,6 +205,7 @@
 	<!-- SECESSION calls -->
 	<call key="bnn_advert.call" />
 	<call key="bnn_mission.call" />
+	<call key="terminal.call" />
 	<!-- end SECESSION calls -->
 	<!-- END ALL COMMON CALLS -->
 </resources>
