@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.000003"
-     inkscape:cx="957.64643"
-     inkscape:cy="1024.0758"
+     inkscape:zoom="11.313711"
+     inkscape:cx="827.69631"
+     inkscape:cy="1024.0511"
      inkscape:document-units="px"
-     inkscape:current-layer="layer31"
+     inkscape:current-layer="layer16"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -6924,17 +6924,6 @@
          style="stop-color:#4d4d4d;stop-opacity:0;" />
     </linearGradient>
     <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:collect="always"
-       id="filter10219-6"
-       color-interpolation-filters="sRGB">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend10221-5" />
-    </filter>
-    <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter4390">
@@ -7223,16 +7212,6 @@
          inkscape:collect="always"
          stdDeviation="8.0199984"
          id="feGaussianBlur8383" />
-    </filter>
-    <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:collect="always"
-       id="filter10219-6-7">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend10221-5-9" />
     </filter>
   </defs>
   <metadata
@@ -13395,7 +13374,11 @@ key = radio_jammer.vehicle;
       <title
          id="title33916-8">armory</title>
       <desc
-         id="desc6851-7-7-8">name = armory; mesh_name = armory.mesh; texture0 = armory.png; collision_model_type = 1; collision_model_size = 3 3.5 5.4;</desc>
+         id="desc6851-7-7-8">name = armory; 
+mesh_name = armory.mesh; 
+texture0 = armory.png; 
+collision_model_type = 1; 
+collision_model_size = 3 3.5 5.4;</desc>
     </rect>
     <rect
        inkscape:label=""
@@ -13410,7 +13393,7 @@ key = radio_jammer.vehicle;
          id="desc9425-9-0">type = weapon_rack;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;filter:url(#filter10219-6);enable-background:new"
+       style="display:inline;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;enable-background:new"
        id="mesh3-9-9-5-4-6-2-55-9-7-1"
        width="6"
        height="8"
@@ -17133,29 +17116,29 @@ tag = speeder;</desc>
       </rect>
       <rect
          inkscape:label=""
-         y="-55.97282"
-         x="1317.0479"
+         y="1030.8929"
+         x="811.32935"
          height="4"
          width="4"
          id="item_supply2-2-4-3"
-         style="display:inline;enable-background:new;opacity:0.93000034;fill:#de8787;fill-opacity:1"
-         transform="rotate(53.314832)">
+         style="display:inline;opacity:0.93000034;fill:#de8787;fill-opacity:1;enable-background:new"
+         transform="rotate(-0.50115533)">
         <desc
            id="desc9425-9-0-8">type = weapon_rack;</desc>
       </rect>
       <rect
-         style="display:inline;enable-background:new;opacity:0.93000034;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;filter:url(#filter10219-6-7)"
+         style="display:inline;opacity:0.93000034;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;enable-background:new"
          id="mesh3-9-9-5-4-6-2-55-9-7-1-0"
          width="6"
          height="8"
-         x="1556.3521"
-         y="-104.72078"
+         x="814.61316"
+         y="1018.9902"
          inkscape:label="#mesh"
-         transform="rotate(51.684682,38.645223,-286.1937)">
+         transform="rotate(-0.26343815)">
         <title
            id="title33916-4-7-0-2">armory</title>
         <desc
-           id="desc6851-7-7-1-7-9-4">name = armory; mesh_name = armory.mesh; texture0 = armory.png; collision_model_type = 1; collision_model_size = 3 3.5 5.4;</desc>
+           id="desc6851-7-7-1-7-9-4">template = armory;</desc>
       </rect>
     </g>
     <g
