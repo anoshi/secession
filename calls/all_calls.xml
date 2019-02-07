@@ -10,10 +10,6 @@
 	<call file="paratroopers1.call" />
 	<!-- end COMMON calls -->
 
-	<!-- AUTOMATED calls -->
-	<call file="terminal.call" />
-	<!-- end AUTOMATED calls -->
-
 	<!-- CLASS calls -->
 	<!-- LIGHT FOOT -->
 	<call file="radio_jammer_1.call" />

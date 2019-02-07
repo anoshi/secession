@@ -25,6 +25,6 @@
 
     <!--<effect class="activated" ref="RedFlamePropulsion" lighting="0" />-->
 
-    <result class="spawn" instance_class="vehicle" instance_key="veh_empl_turret.vehicle" min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
+    <result class="spawn" instance_class="vehicle" instance_key="empl_turret.vehicle" min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
 
 </projectile>

@@ -1,9 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources clear_weapons="1" clear_vehicles="1" clear_calls="1">
 	<!-- always load common first; it's the one that clears the initial weapon resources -->
-
-	<!-- ALL COMMON WEAPONS -->
-	<!-- RWR weapons -->
 	<weapon key='medikit.weapon' />
 	<weapon key='riot_shield.weapon' />
 	<weapon key='cover_resource.weapon' />
@@ -15,28 +12,22 @@
 	<weapon key='wrench.weapon' enabled="0" />
 	<weapon key='wrench_small.weapon' enabled="1" />
     <weapon key='bandage.weapon' />
+
+	<!-- note, we have faction specific bazookas, therefore not included here -->
 	<weapon key='minig_resource.weapon' />
 	<weapon key='mortar_resource.weapon' />
 	<weapon key='tow_resource.weapon' />
 	<weapon key='gl_resource.weapon' />
 	<weapon key='humvee_gl.weapon' />
-	<!-- end RWR weapons -->
-
-	<!-- SECESSION weapons -->
 	<weapon key='empl_turret.weapon' />
-	<weapon key='terminal.weapon' />
-	<!-- end SECESSION weapons -->
-	<!-- END ALL COMMON WEAPONS -->
 
-
-	<!-- ALL CARRY ITEMS -->
-	<!-- SECESSION CLASS carry items -->
+	<!-- CLASS CARRY ITEMS -->
 	<!-- Comms Tech items listed here and enabled in common_commstech.resources -->
 	<carry_item key="commstech_radio_1.carry_item" enabled="0" />
 
-	<!-- end SECESSION CLASS carry items -->
+	<!-- end CLASS CARRY ITEMS -->
 
-	<!-- SECESSION FACTION carry items -->
+	<!-- FACTION CARRY ITEMS -->
 	<!-- List all faction-specific carry items as disabled. Enable in factions/<faction>_default.resources -->
 	<carry_item key="ra_vest1.carry_item" enabled="0" />
 	<carry_item key="ra_vest2.carry_item" enabled="0" />
@@ -59,34 +50,41 @@
 	<carry_item key="lc_vest1.carry_item" enabled="0" />
 	<carry_item key="lc_vest2.carry_item" enabled="0" />
 	<carry_item key="lc_vest3.carry_item" enabled="0" />
-	<!-- end SECESSION FACTION carry items -->
+	<!-- end FACTION CARRY ITEMS -->
+
 	<!-- end ALL CARRY ITEMS -->
 
-	<!-- ALL COMMON VEHICLES -->
-	<!-- RWR vehicles -->
+	<!-- common vehicles -->
 	<vehicle key="humvee.vehicle" />
 	<vehicle key="humvee_gl.vehicle" />
+
 	<vehicle key="armored_truck.vehicle" />
 	<vehicle key="radar_truck.vehicle" />
 	<vehicle key="mobile_armory.vehicle" />
+
 	<vehicle key="rubber_boat.vehicle" />
 	<vehicle key="patrol_ship.vehicle" />
+
 	<vehicle key="m113_tank_mortar.vehicle" />
 	<vehicle key="atv_base.vehicle" />
 	<vehicle key="atv_armory.vehicle" />
+
 	<vehicle key="tow.vehicle" />
 	<vehicle key="cover1.vehicle" />
 	<vehicle key="deployable_mg.vehicle" />
 	<vehicle key="deployable_minig.vehicle" />
 	<vehicle key="mortar.vehicle" />
 	<vehicle key="deployable_gl.vehicle" />
+
 	<vehicle key="radar_tower.vehicle" />
 	<vehicle key="gas_tank.vehicle" />
 	<vehicle key="radio_jammer.vehicle" />
 	<vehicle key="radio_jammer2.vehicle" />
 	<vehicle key="water_tower.vehicle" />
 	<vehicle key="mortar_ammunition_crates.vehicle" />
+
 	<vehicle key="para_spawn.vehicle" />
+
 	<vehicle key="deco_car1_brown.vehicle" />
 	<vehicle key="deco_car1_blue.vehicle" />
 	<vehicle key="deco_car1_yellow.vehicle" />
@@ -95,6 +93,7 @@
 	<vehicle key="deco_car1_red.vehicle" />
 	<vehicle key="deco_car1_pink.vehicle" />
 	<vehicle key="deco_car1_green.vehicle" />
+
 	<vehicle key="deco_car2_red.vehicle" />
 	<vehicle key="deco_car2_green.vehicle" />
 	<vehicle key="deco_car2_yellow.vehicle" />
@@ -104,12 +103,14 @@
 	<vehicle key="deco_car2_brown.vehicle" />
 	<vehicle key="deco_car2_blue.vehicle" />
 	<vehicle key="deco_car2_black.vehicle" />
+
 	<vehicle key="deco_car3_sky.vehicle" />
 	<vehicle key="deco_car3_green.vehicle" />
 	<vehicle key="deco_car3_blue.vehicle" />
 	<vehicle key="deco_car3_red.vehicle" />
 	<vehicle key="deco_car3_yellow.vehicle" />
 	<vehicle key="deco_car3_black.vehicle" />
+
 	<vehicle key="deco_van_blue.vehicle" />
 	<vehicle key="deco_van_khaki.vehicle" />
 	<vehicle key="deco_van_sky.vehicle" />
@@ -117,11 +118,13 @@
 	<vehicle key="deco_van_yellow.vehicle" />
 	<vehicle key="deco_van_red.vehicle" />
 	<vehicle key="deco_van_green.vehicle" />
+
 	<vehicle key="deco_pickup_red.vehicle" />
 	<vehicle key="deco_pickup_yellow.vehicle" />
 	<vehicle key="deco_pickup_blue.vehicle" />
 	<vehicle key="deco_pickup_green.vehicle" />
 	<vehicle key="deco_pickup_khaki.vehicle" />
+
 	<vehicle key="racing_car1.vehicle" />
 	<vehicle key="racing_car1.vehicle" />
     <vehicle key="racing_car2.vehicle" />
@@ -131,16 +134,20 @@
 	<vehicle key="racing_car6.vehicle" />
 	<vehicle key="racing_car7.vehicle" />
 	<vehicle key="racing_car8.vehicle" />
+
 	<vehicle key="jeep_ee.vehicle" />
+
 	<vehicle key="dumpster.vehicle" />
 	<vehicle key="tractor.vehicle" />
 	<vehicle key="flare_checkpoint.vehicle" />
 	<vehicle key="heli_extraction_broken.vehicle" />
 	<vehicle key="heli_broken1.vehicle" />
 	<vehicle key="heli_broken2.vehicle" />
+
 	<vehicle key="cargo_truck.vehicle" />
 	<vehicle key="prison_bus.vehicle" />
 	<vehicle key="prison_door.vehicle" />
+
 	<vehicle key="tank_trap.vehicle" />
 
 	<!-- aa_emplacement can not be enabled by default; will be enabled by campaign script dynamically for the faction that has it -->
@@ -181,30 +188,21 @@
 	<vehicle key="vulcan_tank.vehicle" />
 	<vehicle key="buggy.vehicle" />
 	<vehicle key="technical.vehicle" />
+
 	<vehicle key="wiesel_tow.vehicle" />
 	<vehicle key="wiesel_spawn.vehicle" />
-	<!-- end RWR vehicles -->
 
-	<!-- SECESSION vehicles -->
+	<!-- SECESSION VEHICLES -->
 	<vehicle key="veh_speeder.vehicle" />
-	<vehicle key="veh_empl_turret.vehicle" />
-	<vehicle key="veh_empl_turret_offline.vehicle" />
-	<vehicle key="veh_terminal.vehicle" />
-	<!-- end SECESSION vehicles -->
-	<!-- END ALL COMMON VEHICLES -->
+	<vehicle key="empl_turret.vehicle" />
+	<vehicle key="empl_turret_offline.vehicle" />
+	<!-- END SECESSION VEHICLES -->
 
-	<!-- ALL COMMON CALLS -->
-	<!-- RWR calls -->
 	<call key="artillery1.call" />
 	<call key="buggy.call" />
+	<call key="bnn_advert.call" />
+	<call key="bnn_mission.call" />
 	<call key="cover_drop.call" />
 	<call key="mortar1.call" />
 	<call key="paratroopers1.call" />
-	<!-- end RWR calls -->
-
-	<!-- SECESSION calls -->
-	<call key="bnn_advert.call" />
-	<call key="bnn_mission.call" />
-	<!-- end SECESSION calls -->
-	<!-- END ALL COMMON CALLS -->
 </resources>
