@@ -179,7 +179,6 @@ class CallHandler : Tracker {
 					termTurrets.resize(0);
 				}
 			}
-
 		}
 		//else if (sCall == "bombing_run.call") {
 		//	_log("Bombing run from " + charPosi + " to " + sPosi + " queued", 1);

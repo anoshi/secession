@@ -10,9 +10,9 @@
 
 	<physics max_health="8.0" mass="1000.0" extent="1.2 0.0 1.2" offset="0 0.0 0" top_offset="0 2 0" collision_model_pos="0 0.2 0" collision_model_extent="1.2 0.4 1.2" visual_offset="0 0.0 0" collision_response_factor="0.2" blast_push_threshold="10.0" vehicle_collision_damage_factor="100.0" />
 
-	<turret offset="0 1.6 0.0" weapon_key="terminal.weapon" weapon_offset="0.0 -0.0 0.0" weapon_recoil="0.02" physics_recoil="0.0"  max_rotation_step="0.00015" rotation="0" rotation_range="1.92" />
+	<turret offset="0 1.6 0.0" weapon_key="terminal.weapon" weapon_offset="0.0 -0.0 0.0" weapon_recoil="0.02" physics_recoil="0.0"  max_rotation_step="0.00015" rotation="0" rotation_range="0.01" />
 
-	<visual class="chassis" mesh_filename="deployable_mg_tripod.mesh" texture_filename="deployable_mg.png" />
+	<visual class="chassis" mesh_filename="veh_terminal.mesh" material="veh_terminal.material"  />
 <!--	<visual class="chassis" key="broken" mesh_filename="deployable_mg_tripod.mesh" texture_filename="deployable_mg.png" />   -->
 
   <character_slot type="gunner" attached_on_turret="0" seat_position="0.0 -1.6 -0.8" enter_position="0 0 -1.5" rotation="0" exit_rotation="-1.57" hiding="0" animation_key="tank mg still">
