@@ -1,8 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapons>
-  <!-- SECESSION weapons -->
-    <weapon file="terminal.weapon" />
-
   <!-- BC weapons -->
   <weapon file="bc_lr.weapon"> <!-- laser rifle -->
     <capacity source="rank" source_value="0.0" value="1" />
@@ -43,13 +40,9 @@
     <capacity source="rank" source_value="0.05" value="1" />
   </weapon>
   <weapon file="bc_rl.weapon"> <!-- rocket launcher -->
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.05" value="1" />
-    <capacity source="rank" source_value="0.2" value="2" />
-  </weapon>
-  <weapon file="bc_gl.weapon"> <!-- (sticky) grenade launcher -->
-    <capacity source="rank" source_value="0.0" value="0" />
-    <capacity source="rank" source_value="0.2" value="1" />
+    <capacity value="0" source="rank" source_value="0.0" />
+    <capacity value="1" source="rank" source_value="0.05" />
+    <capacity value="2" source="rank" source_value="0.2" />
   </weapon>
   <!-- end BC weapons -->
 

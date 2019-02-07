@@ -14,7 +14,7 @@
   suppressed="0"
   name="Turret"
   class="0"
-  projectile_speed="105.0" />
+  projectile_speed="12.0" />
 
 	  <animation state_key="recoil"	animation_key="recoil, drone" />
 	  <animation state_key="hold"	animation_key="stand, drone" />
