@@ -25,6 +25,7 @@ class CallHandler : Tracker {
 	protected bool empActive = false; // only one EMP allowed at a time
 	protected array<int> empVeh; // array of vehicle ids affected by emp
 	protected array<int> ppVeh; // array of vehicle ids spotted by pathping
+	protected array<int> termTurrets; // array of turrets to be controlled by terminal interaction
 	protected array<string> activeTimers; // stores the names of active timers
 	/*
 	protected array<Timers@> m_timers; // to support multiple concurrent calls' countdown timers
@@ -138,6 +139,47 @@ class CallHandler : Tracker {
 		}
 		else if (sCall == "terminal.call") {
 			_log("Terminal call block processing...", 1);
+			// improve to detect hostile active turrets (enemy soldier 'turret') as well as offline turrets
+			if (phase == "queue") {
+				const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", iChar);
+					string termPos = qResult.getStringAttribute("position");
+				_log("locating turrets near: " + termPos, 1);
+				Vector3 v3termPos = stringToVector3(termPos);
+				array<const XmlElement@> foundTurrets = getVehiclesNearPosition(m_metagame, v3termPos, 0, 10.00f);
+				for (uint i = 0; i < foundTurrets.size(); ++i) {
+					const XmlElement@ info = foundTurrets[i];
+					int id = info.getIntAttribute("id");
+					_log("vehicle id: " + id, 1);
+					const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
+					string vehPosi = vehInfo.getStringAttribute("position");
+					Vector3 v3VehPosi = stringToVector3(vehPosi);
+					string sKey = vehInfo.getStringAttribute("key");
+					if (startsWith(sKey, "veh_empl_turret")) {
+						_log("found a turret at: " + vehPosi + ". (Re)Activating...", 1);
+						termTurrets.push_back(id);
+					} else {
+						foundTurrets.erase(i);
+						i--;
+					}
+				}
+			} else if (phase == "launch") {
+				for (uint i = 0; i < termTurrets.size(); ++i) {
+					uint turretID = termTurrets[i];
+					const XmlElement@ turretInfo = getVehicleInfo(m_metagame, turretID);
+					string turretPosi = turretInfo.getStringAttribute("position");
+					// remove turret vehicle/mesh from location
+					string remComm = "<command class='remove_vehicle' id='" + turretID + "'></command>";
+					m_metagame.getComms().send(remComm);
+					// place static turret char at location
+					string spawnComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + turretPosi + "' instance_key='empl_turret' /></command>";
+					m_metagame.getComms().send(spawnComm);
+				}
+			} else if (phase == "end") {
+				if (termTurrets.size() >= 1) {
+					termTurrets.resize(0);
+				}
+			}
+
 		}
 		//else if (sCall == "bombing_run.call") {
 		//	_log("Bombing run from " + charPosi + " to " + sPosi + " queued", 1);
