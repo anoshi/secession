@@ -16,7 +16,7 @@
     spread_range="0.05"
     sight_range_modifier="1"/>
 
-    <ballistics curve_height="2.0" near_far_distance="0.0" speed_estimation_near="9.0" speed_estimation_far="17.0" max_speed="120.0" randomness="0.0" tweak_factor="1.1" />
+    <ballistics curve_height="3.0" near_far_distance="0.0" speed_estimation_near="9.0" speed_estimation_far="17.0" max_speed="60.0" randomness="0.0" tweak_factor="1.1" />
 
     <animation key="recoil" ref="12" />
     <animation key="recoil" ref="13" />
@@ -37,18 +37,18 @@
     <capacity value="1" source="rank" source_value="0.2" />
 
     <hud_icon filename="hud_m79.png" />
-    <commonness value="0.00000" in_stock="1" can_respawn_with="1" />
+    <commonness value="0.001" in_stock="1" can_respawn_with="1" />
     <inventory encumbrance="10.0" price="50.0" />
 
     <effect class="muzzle" ref="LawMuzzle" />
     <effect class="muzzle" ref="UpDust" />
 
-    <stance state_key="running" accuracy="0.1" />
-    <stance state_key="walking" accuracy="0.25" />
+    <stance state_key="running" accuracy="0.4" />
+    <stance state_key="walking" accuracy="0.6" />
     <stance state_key="crouch_moving" accuracy="0.35" />
-    <stance state_key="prone_moving" accuracy="0.1" />
-    <stance state_key="standing" accuracy="0.6" />
-    <stance state_key="crouching" accuracy="0.9" />
+    <stance state_key="prone_moving" accuracy="0.3" />
+    <stance state_key="standing" accuracy="0.8" />
+    <stance state_key="crouching" accuracy="1.0" />
     <stance state_key="prone" accuracy="1.0" />
     <stance state_key="over_wall" accuracy="0.8" />
 
