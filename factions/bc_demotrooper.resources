@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <!-- Resources available to BlastCorp Demolition Troopers -->
-<resources> 
+<resources>
 	<weapon key="bc_rl.weapon" />
-	
+	<weapon key="bc_gl.weapon" />
+
 	<call key="bc_annihilator_1.call" />
 	<call key="bc_grenade_launcher_turret_1.call" />
 
-	<carry_item key="bc_power_armour.carry_item" enabled="1" />	
+	<carry_item key="bc_power_armour.carry_item" enabled="1" />
 </resources>

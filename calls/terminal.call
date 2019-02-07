@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<call name="Terminal activated" key="terminal.call" notify_metagame="1"
+  initiation_comment1="Activate Terminal"
+  acknowledge_comment="Terminal activated">
+
+  <round launch_time="4.0"
+    spawn_time="4.0">
+    <command
+      class="chat"
+      text="Turret coming online now"
+      priority="1"
+      faction="0">
+    </command>
+  </round>
+
+  <hud_icon filename="hud_at_mine.png" />
+  <capacity value="0" source="rank" source_value="0.0" />
+  <capacity value="100" source="rank" source_value="0.1" />
+  <inventory encumbrance="0.0" price="40.0" />
+</call>
