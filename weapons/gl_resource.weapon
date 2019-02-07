@@ -13,8 +13,8 @@
     <animation state_key="crouching" 		animation_key="crouch still, carrying load" />
     <animation state_key="crouch_moving" 	animation_key="crouching forwards, carrying load" />
     <animation state_key="changing_weapon_in" 	animation_key="change weapon in, single hand carry" />
-    
-    <sound class="impact" fileref="sandbag_drop.wav" />    
+
+    <sound class="impact" fileref="sandbag_drop.wav" />
 
     <model mesh_filename="barrier_item.mesh" texture_filename="gl_item.png" />
 
@@ -29,4 +29,3 @@
     <modifier class="speed" value="-0.4" />
 
 </weapon>
-
