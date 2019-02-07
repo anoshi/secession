@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <weapons>
   <!-- SECESSION weapons -->
-    <weapon file="terminal.weapon" />
+  <weapon file="terminal.weapon" />
 
   <!-- BC weapons -->
   <weapon file="bc_lr.weapon"> <!-- laser rifle -->

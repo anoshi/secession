@@ -15,6 +15,9 @@
 	<projectile file="mortar_shell.projectile" />
 	<projectile file="artillery_shell.projectile" />
 
+	<!-- SECESSION PROJECTILES -->
+	<projectile file="terminal.projectile" />
+
 	<!-- CLASS-SPECIFIC THROWABLES -->
 	<!-- GRENADIER -->
 	<projectile file="grenadier_he.projectile" />
