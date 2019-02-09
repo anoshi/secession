@@ -228,11 +228,11 @@ class StageConfiguratorInvasion : StageConfigurator {
 
 		stage.addTracker(PeacefulLastBase(m_metagame, 0));
 		stage.addTracker(CommsCapacityHandler(m_metagame));
-		stage.m_maxSoldiers = 12 * 8;                                             // was 12*7 in 1.65, 1 base added
+		stage.m_maxSoldiers = 25 * 2;
 
 		stage.m_soldierCapacityVariance = 0.3;
-		stage.m_playerAiCompensation = 2;                                         // wasn't set in 1.65, thus 8
-    stage.m_playerAiReduction = 2;                                            // wasn't set in 1.65, thus 0
+		stage.m_playerAiCompensation = 2;
+    stage.m_playerAiReduction = 2;
 
 		stage.m_minRandomCrates = 2;
 		stage.m_maxRandomCrates = 4;
@@ -255,7 +255,6 @@ class StageConfiguratorInvasion : StageConfigurator {
 		stage.m_primaryObjective = "capture";
 
 		setDefaultAttackBreakTimes(stage);
-		// setReduceDefenseForFinalAttack(stage, 0.1); // use this for final attack boost if needed for friendlies
 		return stage;
 	}
 

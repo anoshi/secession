@@ -145,7 +145,12 @@ class CallHandler : Tracker {
 					string termPos = qResult.getStringAttribute("position");
 				_log("locating turrets near: " + termPos, 1);
 				Vector3 v3termPos = stringToVector3(termPos);
-				array<const XmlElement@> foundTurrets = getVehiclesNearPosition(m_metagame, v3termPos, 0, 10.00f);
+				array<const XmlElement@> foundTurrets;
+				// start with the offline turrets (vehicles)
+				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+					array<const XmlElement@> offlineTurrets = getVehiclesNearPosition(m_metagame, v3termPos, i, 10.00f);
+					merge(foundTurrets, offlineTurrets);
+				}
 				for (uint i = 0; i < foundTurrets.size(); ++i) {
 					const XmlElement@ info = foundTurrets[i];
 					int id = info.getIntAttribute("id");
@@ -162,6 +167,31 @@ class CallHandler : Tracker {
 						i--;
 					}
 				}
+				// now find the online turrets (soldiers) ahhh balls can't find a character's class without consulting saved data.
+				// perhaps store all turret locations into an array at start of level, then if a character at almost one of those exact locations
+				// take a chance and kill it, spawn a friendly turret.
+				/*
+				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+					array<const XmlElement@> onlineTurrets = getCharactersNearPosition(m_metagame, v3termPos, i, 10.00f);
+				}
+				for (uint i = 0; i < onlineTurrets.size(); ++i) {
+					const XmlElement@ info = onlineTurrets[i];
+					int id = info.getIntAttribute("id");
+					const XmlElement@ charInfo = getCharacterInfo(m_metagame, id);
+					string charPosi = charInfo.getStringAttribute("position");
+					Vector3 v3CharPosi = stringToVector3(charPosi);
+					HERE NEEDS FIXING: string sClass = charInfo.getStringAttribute("key");
+					if (startsWith(sKey, "veh_empl_turret")) {
+						_log("found a hostile turret at: " + charPosi + ". Repurposing...", 1);
+						termTurrets.push_back(id);
+					} else {
+						onlineTurrets.erase(i);
+						i--;
+					}
+				}
+				// join the offline and online turret arrays, await launch phase
+				merge(foundTurrets, onlineTurets);
+				*/
 			} else if (phase == "launch") {
 				for (uint i = 0; i < termTurrets.size(); ++i) {
 					uint turretID = termTurrets[i];
@@ -169,6 +199,7 @@ class CallHandler : Tracker {
 					string turretPosi = turretInfo.getStringAttribute("position");
 					// remove turret vehicle/mesh from location
 					string remComm = "<command class='remove_vehicle' id='" + turretID + "'></command>";
+					//string remComm = "<command class='update_vehicle' id='" + turretID + " health='-1''></command>";
 					m_metagame.getComms().send(remComm);
 					// place static turret char at location
 					string spawnComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + turretPosi + "' instance_key='empl_turret' /></command>";

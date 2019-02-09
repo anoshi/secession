@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.6568555"
-     inkscape:cx="1127.7251"
-     inkscape:cy="1002.5469"
+     inkscape:zoom="11.313711"
+     inkscape:cx="1086.1926"
+     inkscape:cy="1029.3085"
      inkscape:document-units="px"
      inkscape:current-layer="layer13"
      showgrid="true"
@@ -17503,6 +17503,18 @@ tag = speeder;</desc>
          transform="rotate(179.75275)">
         <desc
            id="desc3838">type = vehicle; key = veh_terminal.vehicle;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+         id="spawn_terminal-1-7"
+         width="4.2094455"
+         height="3.4176004"
+         x="1069.802"
+         y="1005.7391"
+         inkscape:label=""
+         transform="rotate(-0.52919842)">
+        <desc
+           id="desc3838-9">type = vehicle; key = veh_terminal.vehicle;</desc>
       </rect>
     </g>
   </g>
