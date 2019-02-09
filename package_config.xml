@@ -5,8 +5,8 @@
 	description="Campaign description"
 	show_in_quick_match_mods="1"
 	show_in_campaign_menu="1"
-	campaign_entry_script="start_campaign.as">
-	<!-- image="imagename.png"> (drop into textures (or probably any folder inside the mod) -->
+	campaign_entry_script="start_campaign.as"
+	image="secession_campaign.png">
 
 	<campaign_options
 		faction="1"

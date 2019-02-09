@@ -1,57 +1,60 @@
 <?xml version="1.0" encoding="utf-8"?>
 <faction name="BlastCorp" color="0.2 0.2 0.3" firstnames_file="bc_firstnames.txt" lastnames_file="bc_lastnames.txt" chat_icon_filename="bc_chat_icon_soldier.png" chat_icon_commander_filename="bc_chat_icon_commander.png" campaign_completion_icon_filename="bc_campaign_win.png">
-	<rank xp="0.0" name="BlastCorp Civilian">
+	<rank xp="0.0" name="BC Civilian">
 		<hud_icon filename="hud_rank0.png" />
 	</rank>
-	<rank xp="0.05" name="BlastCorp One">
+	<rank xp="0.04" name="BC Turret">
+		<hud_icon filename="hud_rank0.png" />
+	</rank>
+	<rank xp="0.05" name="BC One">
 		<hud_icon filename="hud_rank1.png" />
 	</rank>
-	<rank xp="0.1" name="BlastCorp Two">
+	<rank xp="0.1" name="BC Two">
 		<hud_icon filename="hud_rank2.png" />
 	</rank>
-	<rank xp="0.2" name="BlastCorp Three">
+	<rank xp="0.2" name="BC Three">
 		<hud_icon filename="hud_rank3.png" />
 	</rank>
-	<rank xp="0.3" name="BlastCorp Four">
+	<rank xp="0.3" name="BC Four">
 		<hud_icon filename="hud_rank4.png" />
 	</rank>
-	<rank xp="0.4" name="BlastCorp Five">
+	<rank xp="0.4" name="BC Five">
 		<hud_icon filename="hud_rank5.png" />
 	</rank>
-	<rank xp="0.6" name="BlastCorp Six">
+	<rank xp="0.6" name="BC Six">
 		<hud_icon filename="hud_rank6.png" />
 	</rank>
-	<rank xp="0.8" name="BlastCorp Seven">
+	<rank xp="0.8" name="BC Seven">
 		<hud_icon filename="hud_rank7.png" />
 	</rank>
-	<rank xp="1.0" name="BlastCorp Eight">
+	<rank xp="1.0" name="BC Eight">
 		<hud_icon filename="hud_rank8.png" />
 	</rank>
-	<rank xp="1.2" name="BlastCorp Nine">
+	<rank xp="1.2" name="BC Nine">
 		<hud_icon filename="hud_rank9.png" />
 	</rank>
-	<rank xp="1.4" name="BlastCorp Ten">
+	<rank xp="1.4" name="BC Ten">
 		<hud_icon filename="hud_rank10.png" />
 	</rank>
-	<rank xp="2.0" name="BlastCorp Eleven">
+	<rank xp="2.0" name="BC Eleven">
 		<hud_icon filename="hud_rank11.png" />
 	</rank>
-	<rank xp="5.0" name="BlastCorp Twelve">
+	<rank xp="5.0" name="BC Twelve">
 		<hud_icon filename="hud_rank12.png" />
 	</rank>
-	<rank xp="10.0" name="BlastCorp Thirteen">
+	<rank xp="10.0" name="BC Thirteen">
 		<hud_icon filename="hud_rank13.png" />
 	</rank>
-	<rank xp="20.0" name="BlastCorp Fourteen">
+	<rank xp="20.0" name="BC Fourteen">
 		<hud_icon filename="hud_rank14.png" />
 	</rank>
-	<rank xp="50.0" name="BlastCorp Fifteen">
+	<rank xp="50.0" name="BC Fifteen">
 		<hud_icon filename="hud_rank15.png" />
 	</rank>
-	<rank xp="100.0" name="BlastCorp Sixteen">
+	<rank xp="100.0" name="BC Sixteen">
 		<hud_icon filename="hud_rank16.png" />
 	</rank>
-	<rank xp="1000.0" name="BlastCorp Seventeen">
+	<rank xp="1000.0" name="BC Seventeen">
 		<hud_icon filename="hud_rank17.png" />
 	</rank>
 
@@ -71,6 +74,7 @@
 		<resources file="bc_sniper.resources" />
 		<resources file="bc_secondaries.resources" />
 		<resources file="bc_default.resources" />
+		<resources file="bc_demotrooper.resources" /> <!-- testing bc_gl.weapon -->
 
 		<item_class_existence_config>
 			<!-- secondaries -->
@@ -284,6 +288,30 @@
 
 		<attribute_config class="xp">
 			<attribute weight="1.0" min="0.05" max="0.45" />
+		</attribute_config>
+	</soldier>
+
+	<!-- /////// -->
+	<!-- TURRETS -->
+	<!-- /////// -->
+	<soldier name="empl_turret" spawn_score="0.0000" firstnames_file="empl_firstnames.txt" lastnames_file="empl_lastnames.txt" squad_size_xp_cap="0.0">
+		<character filename="emplacement.character" />
+		<ai filename="emplacement.ai" />
+		<model filename="empl_turret.xml" />
+		<resources file="emplacement.resources" />
+
+		<item_class_existence_config>
+			<item_class_existence class="weapon" slot="1" probability="1.0" />
+			<item_class_existence class="carry_item" slot="1" probability="0.0" />
+			<item_class_existence class="carry_item" slot="0" probability="0.0" />
+		</item_class_existence_config>
+
+		<attribute_config class="rp">
+			<attribute weight="1.0" min="0.0" max="50.0" />
+		</attribute_config>
+
+		<attribute_config class="xp">
+			<attribute weight="1.0" min="0.04" max="0.049" />
 		</attribute_config>
 	</soldier>
 

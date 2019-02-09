@@ -17,12 +17,16 @@
 	  class="commander_ai"
 	  faction="0"
 	  base_defense="0.0"
-	  border_defense="0.1">
-  </command>
+	  border_defense="0.1" />
   <command
 	  class="commander_ai"
 	  faction="1"
 	  base_defense="0.75"
-	  border_defense="0.2">
-  </command>
+	  border_defense="0.2" />
+	<command
+		class="create_instance"
+		faction_id="0"
+		position="488.313 20.2981 510.688"
+		instance_class="vehicle"
+		instance_key="veh_empl_turret_offline.vehicle" />
 </commands>

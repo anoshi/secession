@@ -5,6 +5,7 @@
 	<projectile file="hand_grenade.projectile" />
 	<projectile file="impact_grenade.projectile" />
 	<projectile file="c4.projectile" />
+	<projectile file="empl_turret.projectile" />
 	<projectile file="hot_potato.projectile" />
 	<projectile file="hot_pot_boom.projectile" />
 
@@ -13,6 +14,9 @@
 	<!-- mortar shell is in slot 2 -->
 	<projectile file="mortar_shell.projectile" />
 	<projectile file="artillery_shell.projectile" />
+
+	<!-- SECESSION PROJECTILES -->
+	<projectile file="terminal.projectile" />
 
 	<!-- CLASS-SPECIFIC THROWABLES -->
 	<!-- GRENADIER -->
@@ -24,37 +28,37 @@
 
 	<!-- BC throwables -->
 
-	<!-- end BC throwables -->  
+	<!-- end BC throwables -->
 
 	<!-- LC throwables -->
 	<projectile file="lc_heal_bomb.projectile" />
-	<!-- end LC throwables -->  
+	<!-- end LC throwables -->
 	<!-- RA throwables -->
 
-	<!-- end RA throwables -->  
+	<!-- end RA throwables -->
 	<!-- SS throwables -->
 
-	<!-- end SS throwables -->  
+	<!-- end SS throwables -->
 	<!-- WT throwables -->
 	<projectile file="emp.projectile" />
-	<!-- end WT throwables -->  
+	<!-- end WT throwables -->
 
 <!--
 	<projectile file="at_mine.projectile" />
 -->
 	<projectile file="flare.projectile" />
-	<projectile file="claymore_blast.projectile" />   
-	<projectile file="claymore.projectile" />   
- 
-	<projectile file="naval_mine.projectile" />  
+	<projectile file="claymore_blast.projectile" />
+	<projectile file="claymore.projectile" />
+
+	<projectile file="naval_mine.projectile" />
  	<projectile file="flare_checkpoint.projectile" />
 	<projectile file="debri_stun.projectile" />
-	<projectile file="debri_stun_medium.projectile" />  
+	<projectile file="debri_stun_medium.projectile" />
 	<projectile file="debri_stun_big.projectile" />
-	<projectile file="debri_destroy_big.projectile" />  
-	<projectile file="debri_destroy_small.projectile" />  
-  
-	<projectile file="tracer_missile.projectile" />  
+	<projectile file="debri_destroy_big.projectile" />
+	<projectile file="debri_destroy_small.projectile" />
+
+	<projectile file="tracer_missile.projectile" />
 	<projectile file="wiesel_flare.projectile" />
-      
+
 </projectiles>

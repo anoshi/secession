@@ -13,8 +13,8 @@
 
   <vehicle file="radar_tower.vehicle" />
   <vehicle file="patrol_ship.vehicle" />
-  <vehicle file="deployable_mg.vehicle" />  
-  <vehicle file="transport_truck.vehicle" />  
+  <vehicle file="deployable_mg.vehicle" />
+  <vehicle file="transport_truck.vehicle" />
 
   <vehicle file="deco_vehicles.xml" />
 
@@ -28,59 +28,63 @@
   <vehicle file="para_spawn.vehicle" />
 
   <vehicle file="mortar.vehicle" />
-  <vehicle file="radio_jammer.vehicle" />  
+  <vehicle file="radio_jammer.vehicle" />
 
-  <vehicle file="aa_emplacement.vehicle" />  
-  <vehicle file="water_tower.vehicle" />  
-  <vehicle file="mortar_ammunition_crates.vehicle" />  
+  <vehicle file="aa_emplacement.vehicle" />
+  <vehicle file="water_tower.vehicle" />
+  <vehicle file="mortar_ammunition_crates.vehicle" />
 
-  <vehicle file="special_crates.xml" /> 
-  <vehicle file="special_crates2.xml" />  
-  <vehicle file="special_cargo_vehicles.xml" />  
-  <vehicle file="special_crates_wood.xml" />  
+  <vehicle file="special_crates.xml" />
+  <vehicle file="special_crates2.xml" />
+  <vehicle file="special_cargo_vehicles.xml" />
+  <vehicle file="special_crates_wood.xml" />
 
   <vehicle file="tractor.vehicle" />
-  <vehicle file="flare_checkpoint.vehicle" /> 
-  
-  <vehicle file="heli_extraction_broken.vehicle" /> 
-  <vehicle file="heli_broken1.vehicle" />   
-  <vehicle file="heli_broken2.vehicle" />     
+  <vehicle file="flare_checkpoint.vehicle" />
 
-  <vehicle file="heli_extraction.vehicle" /> 
+  <vehicle file="heli_extraction_broken.vehicle" />
+  <vehicle file="heli_broken1.vehicle" />
+  <vehicle file="heli_broken2.vehicle" />
 
-  <vehicle file="jeep_1.vehicle" /> 
-  <vehicle file="jeep_2.vehicle" />       
-  <vehicle file="apc_1.vehicle" />  
-  <vehicle file="apc_2.vehicle" />     
-  <vehicle file="tank_1.vehicle" />  
-  <vehicle file="tank_2.vehicle" />     
+  <vehicle file="heli_extraction.vehicle" />
 
-  <vehicle file="tank2.vehicle" /> 
+  <vehicle file="jeep_1.vehicle" />
+  <vehicle file="jeep_2.vehicle" />
+  <vehicle file="apc_1.vehicle" />
+  <vehicle file="apc_2.vehicle" />
+  <vehicle file="tank_1.vehicle" />
+  <vehicle file="tank_2.vehicle" />
 
-  <vehicle file="transport_truck_1.vehicle" />  
-  <vehicle file="transport_truck_2.vehicle" />  
+  <vehicle file="tank2.vehicle" />
 
-  <vehicle file="radio_jammer2.vehicle" />  
-  <vehicle file="vulcan_tank.vehicle" /> 
-  <vehicle file="buggy.vehicle" />        
+  <vehicle file="transport_truck_1.vehicle" />
+  <vehicle file="transport_truck_2.vehicle" />
 
-  <vehicle file="jeep_ee.vehicle" /> 
-  
+  <vehicle file="radio_jammer2.vehicle" />
+  <vehicle file="vulcan_tank.vehicle" />
+  <vehicle file="buggy.vehicle" />
+
+  <vehicle file="jeep_ee.vehicle" />
+
   <vehicle file="deployable_gl.vehicle" />
 
   <vehicle file="humvee_gl.vehicle" />
-  
+
   <vehicle file="m113_tank_mortar.vehicle" />
   <vehicle file="atv_base.vehicle" />
-  <vehicle file="atv_armory.vehicle" /> 
-  
+  <vehicle file="atv_armory.vehicle" />
+
   <vehicle file="wiesel_tow.vehicle" />
-  <vehicle file="wiesel_spawn.vehicle" />   
-    
+  <vehicle file="wiesel_spawn.vehicle" />
+
   <vehicle file="race_vehicles.xml" />
 
+  <!-- SECESSION vehicles -->
   <vehicle file="veh_speeder.vehicle" />
-  
+  <vehicle file="veh_empl_turret.vehicle" />
+  <vehicle file="veh_empl_turret_offline.vehicle" />
+  <vehicle file="veh_terminal.vehicle" />
+
   <!-- CLASS-SPECIFIC vehicles -->
   <!-- LightFoot -->
   <!-- Heavy Trooper -->
@@ -93,7 +97,7 @@
   <vehicle file="medic_supply_crate.vehicle" />
   <!-- Communications Technician -->
   <!-- Civilian -->
-  
+
   <!-- FACTION-SPECIFIC vehicles -->
   <!-- BlastCorp -->
   <!-- LifeCraft -->

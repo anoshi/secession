@@ -29,7 +29,8 @@
 	<animation state_key="walking" animation_key="walking, hip fire" />
 	<animation state_key="running" animation_key="walking, hip fire" />
 
-    <sound key="fire" fileref="microgun_shot.wav" pitch_variety="0.05" volume="0.85"/>
+    <!--<sound key="fire" fileref="microgun_shot.wav" pitch_variety="0.05" volume="0.85"/>-->
+    <sound key="fire" fileref="bc_mg_2.wav" pitch_variety="0.05" volume="0.85"/>
     <sound key="magazine_out" fileref="mg_clip_out.wav" />
     <sound key="magazine_in" fileref="mg_clip_in.wav" />
     <sound key="cycle" fileref="rifle_chamber.wav" />
