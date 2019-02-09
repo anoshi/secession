@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313711"
-     inkscape:cx="970.17829"
-     inkscape:cy="1013.3561"
+     inkscape:zoom="5.6568555"
+     inkscape:cx="1127.7251"
+     inkscape:cy="1002.5469"
      inkscape:document-units="px"
-     inkscape:current-layer="layer14"
+     inkscape:current-layer="layer13"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -43,7 +43,8 @@
      inkscape:object-nodes="true"
      inkscape:snap-global="false"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:lockguides="false">
     <inkscape:grid
        spacingy="68.2667"
        spacingx="68.2667"
@@ -17374,6 +17375,20 @@ tag = speeder;</desc>
          id="rect4878-8-6-42-7-9-6-0-8"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
     </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer13"
+       inkscape:label="extraction"
+       style="display:inline">
+      <rect
+         inkscape:label="#rect36349"
+         y="1024.1787"
+         x="1100.6688"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction4"
+         style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+    </g>
   </g>
   <g
      style="display:inline"
@@ -17467,18 +17482,6 @@ tag = speeder;</desc>
        inkscape:groupmode="layer">
       <rect
          style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-         id="spawn6969-30-3-0"
-         width="2.7343748"
-         height="2.7343748"
-         x="975.10565"
-         y="1020.1533"
-         inkscape:label=""
-         transform="rotate(-0.00852511)">
-        <desc
-           id="desc26444-1-8-2">type = vehicle; key = veh_empl_turret_offline.vehicle;</desc>
-      </rect>
-      <rect
-         style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
          id="spawn6969-30-3-0-3"
          width="2.7343748"
          height="2.7343748"
@@ -17507,10 +17510,5 @@ tag = speeder;</desc>
      inkscape:groupmode="layer"
      id="layer26"
      inkscape:label="path"
-     style="display:inline" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer13"
-     inkscape:label="divider"
      style="display:inline" />
 </svg>
