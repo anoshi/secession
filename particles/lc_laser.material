@@ -1,0 +1,20 @@
+material lc_laser
+{
+	receive_shadows off
+	technique
+	{
+		pass
+		{
+			lighting off
+			fog_override true
+
+			depth_write off
+			scene_blend alpha_blend
+
+			texture_unit
+			{
+				texture lc_laser.png
+			}
+		}
+	}
+}
