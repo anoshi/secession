@@ -221,10 +221,10 @@ class StageConfiguratorInvasion : StageConfigurator {
 	// ------------------------------------------------------------------------------------------------
 	protected Stage@ setupStage1() {
 		Stage@ stage = createStage();
-		//stage.m_mapInfo.m_name = "BC Side-Scroll 1";
-		stage.m_mapInfo.m_name = "Keepsake Bay";
-		//stage.m_mapInfo.m_path = "media/packages/secession/maps/side-scroll";
-		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map2";
+		stage.m_mapInfo.m_name = "BC Side-Scroll 1";
+		//stage.m_mapInfo.m_name = "Keepsake Bay";
+		stage.m_mapInfo.m_path = "media/packages/secession/maps/side-scroll";
+		//stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map2";
 		stage.m_mapInfo.m_id = "map2";
 		//stage.m_mapInfo.m_name = "train intro";
 		//stage.m_mapInfo.m_path = "media/packages/secession/maps/train_intro";
