@@ -33,8 +33,10 @@
     <inventory encumbrance="10.0" price="2.0" />
 
     <weak_hand_hold offset="0.0" />
-    <projectile file="bc_laser.projectile">
-        <result class="hit"  kill_probability="0.5" kill_decay_start_time="0.35" kill_decay_end_time="0.70" />
+    <!--<projectile file="bc_laser.projectile">-->
+    <projectile file="bullet.projectile">
+        <result class="hit" kill_probability="0.5" kill_decay_start_time="0.35" kill_decay_end_time="0.70" />
+        <trail key="bc_laser_short" />
     </projectile>
     <modifier class="speed" value="-0.018" />
 </weapon>

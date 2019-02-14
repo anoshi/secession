@@ -444,6 +444,9 @@ class CallHandler : Tracker {
 
 		// The Probe call launches a stealth device that alerts the caller's faction when an enemy unit passes near it.
 		// The probe emits a regular but infrequent visual 'blip' that enemies may notice and, after doing so, destroy the device.
+		// The probe will likely be of a similar concept to the turrets (an immobile faction unit) but unarmed. Its primary purpose
+		// will be to spot enemy vehicles so best to place these things near major (vehicular) thoroughfares.
+		// Alternative solution is to use getChars/getVehiclesNearPosition and notify every so often. Show on map what we can.
 		else if (sCall == "ss_probe_1.call") {
 			_log("SS probe not implemented, yet", 1);
 		}

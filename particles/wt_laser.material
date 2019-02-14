@@ -1,4 +1,4 @@
-material bc_laser_mat
+material wt_laser
 {
 	receive_shadows off
 	technique
@@ -13,7 +13,7 @@ material bc_laser_mat
 
 			texture_unit
 			{
-				texture bc_laser.png
+				texture wt_laser.png
 			}
 		}
 	}

@@ -1,4 +1,4 @@
-material lc_laser_mat
+material ra_laser
 {
 	receive_shadows off
 	technique
@@ -13,7 +13,7 @@ material lc_laser_mat
 
 			texture_unit
 			{
-				texture lc_laser.png
+				texture ra_laser.png
 			}
 		}
 	}

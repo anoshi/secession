@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="11.313711"
-     inkscape:cx="1086.1926"
-     inkscape:cy="1029.3085"
+     inkscape:zoom="16.000004"
+     inkscape:cx="970.02166"
+     inkscape:cy="1022.8491"
      inkscape:document-units="px"
-     inkscape:current-layer="layer13"
+     inkscape:current-layer="layer14"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -43,8 +43,7 @@
      inkscape:object-nodes="true"
      inkscape:snap-global="false"
      showguides="true"
-     inkscape:guide-bbox="true"
-     inkscape:lockguides="false">
+     inkscape:guide-bbox="true">
     <inkscape:grid
        spacingy="68.2667"
        spacingx="68.2667"
@@ -7510,7 +7509,7 @@
          x="3408.8633"
          id="tspan15286"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <rect
        y="841"
        x="3252.375"
@@ -7543,7 +7542,7 @@
          x="3408.8633"
          id="tspan15292"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <rect
        style="display:inline;fill:#ffff00;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect15274"
@@ -7682,7 +7681,7 @@
          id="tspan12929"
          x="3211.2661"
          y="640.40332"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <rect
        style="display:inline;fill:#ffff00;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect12968"
@@ -7907,7 +7906,7 @@
          id="tspan21181"
          x="3847.199"
          y="217.95296"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -7946,7 +7945,7 @@
          id="tspan21195"
          x="3847.199"
          y="267.24942"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
@@ -12141,7 +12140,7 @@ tag = jeep;</desc>
            y="935.89062"
            style="font-size:10px;font-family:sans-serif" /></flowRegion><flowPara
          id="flowPara20798"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </flowPara></flowRoot>    <flowRoot
+         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot20800"
        style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -12242,7 +12241,7 @@ tag = apc;</desc>
          id="tspan20968"
          x="2568.8311"
          y="1061.6345"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></text>
     <rect
        style="display:inline;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000106, 12.00000106;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
        id="spawn1-1-4-2-1-0-9"
@@ -12517,7 +12516,7 @@ key = radar_truck.vehicle;</desc>
          x="-2387.5898"
          id="tspan7313"
          sodipodi:role="line"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></text>
     <text
        id="text7315"
        y="-166.94984"
@@ -12544,7 +12543,7 @@ key = radar_truck.vehicle;</desc>
          x="2438.4131"
          id="tspan25037"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <text
        id="text25039"
        y="1362.2999"
@@ -12555,7 +12554,7 @@ key = radar_truck.vehicle;</desc>
          x="2432.7507"
          id="tspan25041"
          sodipodi:role="line"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></text>
     <text
        id="text25043"
        y="886.66949"
@@ -12764,7 +12763,7 @@ key = radar_truck.vehicle;</desc>
          x="2396.4841"
          id="tspan25125"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
     <text
        id="text25127"
        y="1462.8629"
@@ -13375,10 +13374,10 @@ key = radio_jammer.vehicle;
       <title
          id="title33916-8">armory</title>
       <desc
-         id="desc6851-7-7-8">name = armory; 
-mesh_name = armory.mesh; 
-texture0 = armory.png; 
-collision_model_type = 1; 
+         id="desc6851-7-7-8">name = armory;
+mesh_name = armory.mesh;
+texture0 = armory.png;
+collision_model_type = 1;
 collision_model_size = 3 3.5 5.4;</desc>
     </rect>
     <rect
@@ -17099,7 +17098,7 @@ capturable = 1;</desc>
          inkscape:label=""
          transform="rotate(-49.560591)">
         <desc
-           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6">type = vehicle; 
+           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6">type = vehicle;
 tag = speeder;</desc>
       </rect>
       <rect
@@ -17112,7 +17111,7 @@ tag = speeder;</desc>
          inkscape:label=""
          transform="rotate(98.859168)">
         <desc
-           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8">type = vehicle; 
+           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8">type = vehicle;
 tag = speeder;</desc>
       </rect>
       <rect
@@ -17375,20 +17374,6 @@ tag = speeder;</desc>
          id="rect4878-8-6-42-7-9-6-0-8"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
     </g>
-    <g
-       inkscape:groupmode="layer"
-       id="layer13"
-       inkscape:label="extraction"
-       style="display:inline">
-      <rect
-         inkscape:label="#rect36349"
-         y="1024.1787"
-         x="1100.6688"
-         height="17.539602"
-         width="18.270266"
-         id="hitbox_extraction4"
-         style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
-    </g>
   </g>
   <g
      style="display:inline"
@@ -17482,6 +17467,18 @@ tag = speeder;</desc>
        inkscape:groupmode="layer">
       <rect
          style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+         id="spawn6969-30-3-0"
+         width="2.7343748"
+         height="2.7343748"
+         x="975.10565"
+         y="1020.1533"
+         inkscape:label=""
+         transform="rotate(-0.00852511)">
+        <desc
+           id="desc26444-1-8-2">type = vehicle; key = veh_empl_turret_offline.vehicle;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
          id="spawn6969-30-3-0-3"
          width="2.7343748"
          height="2.7343748"
@@ -17495,12 +17492,12 @@ tag = speeder;</desc>
       <rect
          style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
          id="spawn_terminal-1"
-         width="4.2094455"
-         height="3.4176004"
-         x="-967.35571"
-         y="-1035.4922"
+         width="3.3321514"
+         height="3.3363316"
+         x="-981.57294"
+         y="-1023.7781"
          inkscape:label=""
-         transform="rotate(179.75275)">
+         transform="rotate(-179.54277)">
         <desc
            id="desc3838">type = vehicle; key = veh_terminal.vehicle;</desc>
       </rect>
@@ -17522,5 +17519,10 @@ tag = speeder;</desc>
      inkscape:groupmode="layer"
      id="layer26"
      inkscape:label="path"
+     style="display:inline" />
+  <g
+     inkscape:groupmode="layer"
+     id="layer13"
+     inkscape:label="divider"
      style="display:inline" />
 </svg>
