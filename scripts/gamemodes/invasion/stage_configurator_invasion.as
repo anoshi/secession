@@ -238,7 +238,8 @@ class StageConfiguratorInvasion : StageConfigurator {
 		stage.m_soldierCapacityVariance = 0.3;
 		stage.m_playerAiCompensation = 2;
     stage.m_playerAiReduction = 2;
-		stage.m_minRandomCrates = 2;
+
+    stage.m_minRandomCrates = 2;
 		stage.m_maxRandomCrates = 4;
 
 		// koth timer
@@ -274,10 +275,10 @@ class StageConfiguratorInvasion : StageConfigurator {
 	// ------------------------------------------------------------------------------------------------
 	protected Stage@ setupStage2() {
 		Stage@ stage = createStage();
-		//stage.m_mapInfo.m_name = "BC Corridor 1";
-		//stage.m_mapInfo.m_path = "media/packages/secession/maps/warehouse";
-		stage.m_mapInfo.m_name = "Fridge Valley";
-		stage.m_mapInfo.m_path = "media/packages/vanilla.winter/maps/map4";
+		stage.m_mapInfo.m_name = "BC Corridor 1";
+		stage.m_mapInfo.m_path = "media/packages/secession/maps/warehouse";
+		//stage.m_mapInfo.m_name = "Fridge Valley";
+		//stage.m_mapInfo.m_path = "media/packages/vanilla.winter/maps/map4";
 		stage.m_mapInfo.m_id = "map4";
 
     stage.m_fogOffset = 20.0;
