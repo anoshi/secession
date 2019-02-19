@@ -23,8 +23,9 @@
 #include "penalty_manager.as"
 
 // mod trackers
-#include "call_handler.as"
 #include "bnn.as"
+#include "call_handler.as"
+#include "hitbox_handler.as"
 
 // --------------------------------------------
 class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
@@ -277,9 +278,10 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 
 		addTracker(BasicCommandHandler(this));
 
-		addTracker(CallHandler(this)); // Secession: CallHandler Class and Methods
-
-		addTracker(BNN(this)); // Secession: Broadcast News Network Class and Methods
+		// Secession handlers:
+		addTracker(CallHandler(this));   // 'H' call menu and scripted call handler
+		addTracker(BNN(this));           // Broadcast News Network Class and Methods
+		addTracker(HitboxHandler(this)); // Trigger area (hitbox) HitboxHandler Class and Methods
 	}
 
 	// --------------------------------------------

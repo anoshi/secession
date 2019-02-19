@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="16.000004"
-     inkscape:cx="970.02166"
-     inkscape:cy="1022.8491"
+     inkscape:zoom="2.8284278"
+     inkscape:cx="943.17815"
+     inkscape:cy="1002.4053"
      inkscape:document-units="px"
-     inkscape:current-layer="layer14"
+     inkscape:current-layer="layer16"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -15883,7 +15883,20 @@ capturable = 1;</desc>
        style="display:inline"
        inkscape:label="extraction"
        id="layer28"
-       inkscape:groupmode="layer" />
+       inkscape:groupmode="layer">
+      <rect
+         inkscape:label="#rect36349"
+         y="1023.8251"
+         x="1101.7292"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction4"
+         style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+    </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer45"
+       inkscape:label="trigger" />
     <g
        style="display:inline"
        inkscape:label="ladders"
@@ -17140,6 +17153,14 @@ tag = speeder;</desc>
         <desc
            id="desc6851-7-7-1-7-9-4">template = armory;</desc>
       </rect>
+      <rect
+         inkscape:label="#rect36349"
+         y="993.06598"
+         x="862.0202"
+         height="50.066456"
+         width="29.58403"
+         id="hitbox_trigger_1"
+         style="display:inline;enable-background:new;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709" />
     </g>
     <g
        inkscape:groupmode="layer"

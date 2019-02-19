@@ -92,6 +92,7 @@ abstract class Tracker {
 		} else if (rootName == "player_wound") {
 			handlePlayerWoundEvent(event);
 		} else if (rootName == "hitbox_event") {
+			_log("handleHitboxEvent fired through tracker.as", 1);
 			handleHitboxEvent(event);
 		} else if (rootName == "dummy_event") {
 		} else if (rootName == "pause_event") {
@@ -127,4 +128,3 @@ abstract class Tracker {
 	void onAdd() {}
 	void onRemove() {}
 }
-

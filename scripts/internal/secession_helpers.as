@@ -4,6 +4,8 @@
 #include "resource.as"
 
 // --------------------------------------------------------
+// BEGIN SECESSION HELPERS
+// --------------------------------------------------------
 array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId, float range = 25.00f) {
 	array<const XmlElement@> allVehicles;
 	array<const XmlElement@> vehNearPos;
@@ -45,18 +47,18 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 
 	return vehNearPos;
 }
-// --------------------------------------------------------
 
-// BEGIN SECESSION HELPERS
 // BC Hot Potato Position Tracker
 string hpPosition;
 void setHotPotPosi(string pos) {
 	hpPosition = pos;
 	_log("Hot Potato now at: " + hpPosition, 1);
 }
+
 string getHotPotPosi() {
 	return hpPosition;
 }
 
+// --------------------------------------------
 // END SECESSION HELPERS
 // --------------------------------------------
