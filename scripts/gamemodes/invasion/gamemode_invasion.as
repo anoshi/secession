@@ -269,13 +269,9 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 		if (m_penaltyManager !is null) {
 			addTracker(m_penaltyManager);
 		}
-
 		addTracker(PrisonBreakObjective(this, 0));
-
 		setupDisableRadioAtMatchOver();
-
 		addTracker(AutoSaver(this));
-
 		addTracker(BasicCommandHandler(this));
 
 		// Secession handlers:

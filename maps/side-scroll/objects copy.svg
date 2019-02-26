@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142139"
-     inkscape:cx="3679.0023"
-     inkscape:cy="1632.4181"
+     inkscape:zoom="5.6568555"
+     inkscape:cx="1127.7251"
+     inkscape:cy="1002.5469"
      inkscape:document-units="px"
-     inkscape:current-layer="layer29"
+     inkscape:current-layer="layer13"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -43,7 +43,8 @@
      inkscape:object-nodes="true"
      inkscape:snap-global="false"
      showguides="true"
-     inkscape:guide-bbox="true">
+     inkscape:guide-bbox="true"
+     inkscape:lockguides="false">
     <inkscape:grid
        spacingy="68.2667"
        spacingx="68.2667"
@@ -7509,7 +7510,7 @@
          x="3408.8633"
          id="tspan15286"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <rect
        y="841"
        x="3252.375"
@@ -7542,7 +7543,7 @@
          x="3408.8633"
          id="tspan15292"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <rect
        style="display:inline;fill:#ffff00;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect15274"
@@ -7681,7 +7682,7 @@
          id="tspan12929"
          x="3211.2661"
          y="640.40332"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <rect
        style="display:inline;fill:#ffff00;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect12968"
@@ -7906,7 +7907,7 @@
          id="tspan21181"
          x="3847.199"
          y="217.95296"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <path
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
@@ -7945,7 +7946,7 @@
          id="tspan21195"
          x="3847.199"
          y="267.24942"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
@@ -7967,33 +7968,6 @@
          x="3209.7422"
          y="236.13644"
          style="font-size:8px;line-height:1.25;font-family:sans-serif">If you change the size, only use the F2 tool.</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
-       x="3845.636"
-       y="413.76129"
-       id="text21117-2"><tspan
-         sodipodi:role="line"
-         id="tspan21181-5"
-         x="3845.636"
-         y="413.76129"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">Trigger area. Ensure each is named 'hitbox_trigger_&lt;value&gt;' in</tspan><tspan
-         sodipodi:role="line"
-         x="3845.636"
-         y="423.76129"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"
-         id="tspan3935">order for the game to detect them as a trigger area the player</tspan><tspan
-         sodipodi:role="line"
-         x="3845.636"
-         y="433.76129"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"
-         id="tspan3937">can collide with.</tspan></text>
-    <path
-       style="display:inline;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-       d="m 3786.0277,418.48016 46.3114,-0.0147"
-       id="path21113-2"
-       inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cc" />
   </g>
   <g
      style="display:inline;opacity:0.93000034"
@@ -12167,7 +12141,7 @@ tag = jeep;</desc>
            y="935.89062"
            style="font-size:10px;font-family:sans-serif" /></flowRegion><flowPara
          id="flowPara20798"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></flowRoot>    <flowRoot
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot20800"
        style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
@@ -12268,7 +12242,7 @@ tag = apc;</desc>
          id="tspan20968"
          x="2568.8311"
          y="1061.6345"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <rect
        style="display:inline;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000106, 12.00000106;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
        id="spawn1-1-4-2-1-0-9"
@@ -12543,7 +12517,7 @@ key = radar_truck.vehicle;</desc>
          x="-2387.5898"
          id="tspan7313"
          sodipodi:role="line"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <text
        id="text7315"
        y="-166.94984"
@@ -12570,7 +12544,7 @@ key = radar_truck.vehicle;</desc>
          x="2438.4131"
          id="tspan25037"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <text
        id="text25039"
        y="1362.2999"
@@ -12581,7 +12555,7 @@ key = radar_truck.vehicle;</desc>
          x="2432.7507"
          id="tspan25041"
          sodipodi:role="line"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <text
        id="text25043"
        y="886.66949"
@@ -12790,7 +12764,7 @@ key = radar_truck.vehicle;</desc>
          x="2396.4841"
          id="tspan25125"
          sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif" /></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <text
        id="text25127"
        y="1462.8629"
@@ -15656,31 +15630,6 @@ key = empl_turret_offline.vehicle;</desc>
          id="desc3836">type = vehicle;
 key = veh_terminal.vehicle;</desc>
     </rect>
-    <rect
-       inkscape:label="#rect36349"
-       y="409.76093"
-       x="3739.793"
-       height="16.478903"
-       width="32.412472"
-       id="hitbox_trigger_999"
-       style="display:inline;enable-background:new;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465,2.64566929;stroke-dashoffset:0;stroke-opacity:0.97247709" />
-    <text
-       id="text7284-3"
-       y="381.77829"
-       x="3634.3806"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       xml:space="preserve"><tspan
-         sodipodi:role="line"
-         id="tspan7288-8"
-         x="3634.3806"
-         y="381.77829"
-         style="font-size:40px;line-height:1.25;font-family:sans-serif">SECESSION </tspan></text>
-    <path
-       sodipodi:nodetypes="cc"
-       inkscape:connector-curvature="0"
-       id="path7290-0"
-       d="M 3809.1833,401.89297 V 558.79632"
-       style="display:inline;opacity:0.93000034;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new" />
   </g>
   <g
      style="display:none"
@@ -15730,7 +15679,7 @@ key = veh_terminal.vehicle;</desc>
      id="layer31"
      inkscape:groupmode="layer">
     <path
-       style="fill:#4bcb00;fill-rule:evenodd;stroke:#000000;stroke-width:1.0015748;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;filter:url(#filter8381);stroke-miterlimit:4;stroke-dasharray:none"
+       style="fill:#4bcb00;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;filter:url(#filter8381)"
        d="M 794.96094 987.75 L 793.60742 994.51758 L 804.11133 994.52734 L 794.96094 987.75 z M 804.11133 994.52734 L 808.46094 997.75 L 808.7832 1001.5 L 820.40234 1010.1074 L 821 1017.0859 L 821.62305 1017.5469 L 823.12305 1035.0469 L 803.12305 1048.0469 L 801.14453 1046.1504 L 797.26758 1048.6699 L 788.72461 1040.4844 L 786.7168 1041.7891 L 775.86914 1031.3945 C 775.65036 1037.8791 775.43275 1044.1028 775.25586 1047.6895 L 788.61914 1057.5879 L 788.68359 1058.334 L 799.95703 1066.6855 L 800.05469 1067.8184 L 802.45508 1069.5977 L 802.57227 1070.9766 L 803.11133 1071.375 L 803.90234 1067.418 L 803.95703 1067.459 L 804.25781 1065.957 L 805.80273 1067.1016 L 806.26367 1064.793 L 807.25977 1065.5312 L 808.37109 1059.9824 L 821.87109 1069.9824 L 823.37109 1087.4824 L 820.98438 1089.0332 L 821.26367 1092.293 L 818.81445 1093.8848 L 818.90234 1094.918 L 798.90234 1107.918 L 798.76953 1107.791 L 795.48242 1109.9277 L 786.86133 1101.666 L 783.11914 1104.0996 L 771.11914 1092.5996 L 775.60938 1092.1016 L 771.95508 1088.5977 L 772.43945 1088.543 L 771.21875 1087.373 L 770.11914 1088.0879 L 769.35547 1087.3555 L 766.18945 1089.4141 L 762.93164 1086.293 L 758.99805 1088.8496 L 757.91602 1087.8125 L 756.91602 1088.4629 L 744.91602 1076.9629 L 748.0957 1076.6094 L 746.50195 1075.082 L 764.08008 1073.1289 L 757.41602 1070.4629 L 760.98828 1052.6055 C 744.83958 1052.6231 720.5 1051.5 720.5 1051.5 C 720.5 1051.5 717.5 1161 717.5 1163 C 717.5 1165 1348 1166 1348 1166 L 1344.5 1051 L 1261.5 1051.5 L 1260.918 1035.0449 L 1256.9766 1037.6074 L 1257.1914 1040.1016 L 1237.1914 1053.1016 L 1235.9062 1051.8691 L 1232.877 1053.8379 L 1222.9238 1044.2988 L 1219.9414 1046.2383 L 1207.9414 1034.7383 L 1214.6289 1033.9961 L 1210.5059 1030.0449 L 1221.8164 1028.7891 L 1220.4414 1028.2383 L 1224.9414 1005.7383 L 1226.3574 1006.7871 L 1227.5059 1001.0449 L 1235.0137 1006.6055 L 1236.1895 1000.7227 L 1243.5469 1006.1738 L 1243.8125 1004.8477 L 1248.4707 1008.2988 L 1249.0254 1005.5254 L 1260.1641 1013.7773 L 1259.5 995 L 1048.5469 994.78125 L 1058.6719 1002.2812 L 1059.4336 1011.1719 L 1061.5098 1012.709 L 1063.373 1003.3867 L 1076.873 1013.3867 L 1077.6328 1022.2402 L 1080.4688 1024.3418 L 1081.9688 1041.8418 L 1061.9688 1054.8418 L 1060.6348 1053.5645 L 1055.7363 1056.748 L 1054.6387 1055.6973 L 1046.0723 1061.2656 L 1034.0723 1049.7656 L 1036.8887 1049.4531 L 1030.8809 1043.6953 L 1032.6738 1043.4961 L 1029.0059 1039.9805 L 1034.666 1039.3516 L 1032.0137 1036.8105 L 1030.8496 1037.5664 L 1018.8496 1026.0664 L 1031.6777 1024.6406 L 1028.1719 1021.2812 L 1034.0137 1020.6328 L 1031.3496 1019.5664 L 1035.8496 997.06641 L 1041.209 1001.0352 L 1041.5039 999.55859 L 1042.6328 1000.3945 L 1042.9512 998.80273 L 1043.75 999.39453 L 1044.6738 994.77734 L 804.11133 994.52734 z M 1044.6738 994.77734 L 1048.5469 994.78125 L 1045.1719 992.28125 L 1044.6738 994.77734 z M 1260.1641 1013.7773 L 1260.918 1035.0449 L 1264.0254 1033.0254 L 1262.5254 1015.5254 L 1260.1641 1013.7773 z M 760.98828 1052.6055 C 768.87462 1052.5968 774.83594 1052.3203 775 1051.5 C 775.06843 1051.1579 775.15638 1049.7065 775.25586 1047.6895 L 775.11914 1047.5879 L 774.38086 1051.2773 L 771.18945 1048.9141 L 770.69141 1051.4062 L 763.50195 1046.082 L 762.9707 1048.7422 L 761.91602 1047.9629 L 760.98828 1052.6055 z M 775.86914 1031.3945 C 775.88343 1030.971 775.8978 1030.5852 775.91211 1030.1562 L 774.7168 1030.2891 L 775.86914 1031.3945 z M 775.91211 1030.1562 L 776.23828 1030.1211 L 775.92383 1029.8184 C 775.91992 1029.9358 775.91601 1030.0393 775.91211 1030.1562 z M 775.92383 1029.8184 C 776.02554 1026.7592 776.11091 1024.4647 776.20898 1021.3203 L 772.49805 1021.7324 L 774.72266 1023.8633 L 770.23047 1024.3633 L 775.92383 1029.8184 z M 776.20898 1021.3203 L 782.05273 1020.6719 L 777.96094 1016.75 L 783.06641 1016.1836 L 787.23047 995.36328 L 788.74805 996.48633 L 789.14258 994.51172 L 777 994.5 C 777 994.5 776.63121 1007.7839 776.20898 1021.3203 z M 789.14258 994.51172 L 791.90625 994.51562 L 789.49805 992.73242 L 789.14258 994.51172 z M 791.90625 994.51562 L 793.38867 995.61328 L 793.60742 994.51758 L 791.90625 994.51562 z M 981.00781 996.85352 L 993.80664 1006.334 L 993.86914 1006.0234 L 1007.3691 1016.0234 L 1008.8691 1033.5234 L 1006.5918 1035.0039 L 1006.707 1036.3594 L 986.70703 1049.3594 L 986.37109 1049.0371 L 979.45312 1053.5332 L 971.13867 1045.5645 L 970.01367 1046.2949 L 958.01367 1034.7949 L 968.01367 1033.6836 L 966.14258 1031.8906 L 968.25977 1031.6562 L 966.87305 1030.3262 L 968.48828 1030.1465 L 964.00781 1025.8535 L 971.16016 1025.0586 L 975.01367 1005.7949 L 978.67773 1008.5078 L 981.00781 996.85352 z M 874.99414 1020.3574 L 888.49414 1030.3574 L 889.99414 1047.8574 L 887.91602 1049.207 L 888.47266 1055.6953 L 868.47266 1068.6953 L 863.08984 1063.5352 L 859.06055 1066.1543 L 858.03125 1065.168 L 853.30469 1068.2402 L 841.30469 1056.7402 L 845.12305 1056.3164 L 840.01562 1051.4219 L 840.85938 1051.3281 L 838.98438 1049.5312 L 854.28711 1047.8301 L 854.69336 1045.793 L 852.51562 1044.9219 L 852.78906 1043.5527 L 851.48438 1043.0312 L 855.98438 1020.5312 L 863.38672 1026.0117 L 864.09375 1022.4727 L 864.41602 1022.7109 L 864.72852 1021.1504 L 873.53125 1027.6719 L 874.99414 1020.3574 z M 921.24805 1047.8789 L 934.74805 1057.8789 L 935.9043 1071.375 L 941.46094 1075.4902 L 942.96094 1092.9902 L 922.96094 1105.9902 L 917.64062 1100.8926 L 912.12305 1104.4785 L 903.04492 1095.7793 L 902.58789 1096.0762 L 890.58789 1084.5762 L 893.06836 1084.3008 L 891.16406 1082.4766 L 892.51953 1082.3262 L 888.91016 1078.8652 L 903.24805 1077.2715 L 904.02148 1073.4102 L 901.41016 1072.3652 L 905.91016 1049.8652 L 913.05078 1055.1562 L 913.49023 1052.9629 L 919.36133 1057.3125 L 921.24805 1047.8789 z M 1013.5918 1068.2617 L 1027.0918 1078.2617 L 1027.3438 1081.1875 L 1032.5215 1085.0234 L 1032.5957 1085.8965 L 1033.6992 1086.7129 L 1034.1719 1092.2363 L 1035.1172 1092.9355 L 1036.2109 1105.7031 L 1041.6426 1109.7266 L 1043.1426 1127.2266 L 1039.9492 1129.3027 L 1040.4199 1134.7949 L 1031.1895 1140.7949 L 1031.2383 1141.3574 L 1011.2383 1154.3574 L 999.23828 1142.8574 L 1013.6016 1141.2617 L 1008.4199 1136.2949 L 1009.9375 1136.127 L 1003.5684 1130.0234 L 1011.2148 1129.1738 L 1010.8262 1128.8008 L 1011.1797 1128.7617 L 1011.1426 1128.7266 L 1013.3125 1128.4863 L 1014.0977 1124.5586 L 1011.1406 1121.7246 L 1009.3535 1122.8867 L 1007.8203 1121.416 L 1004.4414 1123.6133 L 999.35742 1118.7402 L 997.85156 1119.7188 L 985.85156 1108.2188 L 986.76172 1108.1172 L 986.18359 1107.5645 L 986.51562 1107.5273 L 981.71289 1102.9258 L 987.43164 1102.291 L 987.18164 1102.0508 L 988.61523 1101.8906 L 986.19336 1099.5703 L 993.61523 1098.7461 L 992.56055 1097.7344 L 996.41211 1097.3066 L 994.21289 1096.4258 L 998.71289 1073.9258 L 1002.0312 1076.3828 L 1003.1934 1070.5703 L 1008.418 1074.4414 L 1009.5605 1068.7344 L 1010.1719 1069.1875 L 1010.2617 1068.7402 L 1013.0781 1070.8262 L 1013.5918 1068.2617 z M 1162.998 1068.543 L 1164.375 1069.5625 L 1164.5508 1068.6836 L 1171.1094 1073.541 L 1171.4473 1071.8516 L 1184.9473 1081.8516 L 1185.0664 1083.2422 L 1191.4629 1087.9805 L 1192.9629 1105.4805 L 1186.0938 1109.9453 L 1186.2734 1112.0508 L 1191.7402 1116.0996 L 1193.2402 1133.5996 L 1192.1133 1134.332 L 1192.7402 1141.6426 L 1172.7402 1154.6426 L 1169.2168 1151.2676 L 1168.7871 1151.5469 L 1162.7988 1145.8086 L 1162.1465 1146.2324 L 1150.1465 1134.7324 L 1157.0547 1133.9648 L 1150.0508 1127.252 L 1155.7207 1126.6211 L 1152.3242 1123.3672 L 1159.2695 1122.5957 L 1156.6074 1120.0449 L 1153.7734 1121.8867 L 1153.123 1121.2637 L 1152.9512 1121.375 L 1140.9512 1109.875 L 1142.1562 1109.7402 L 1136.3887 1104.2148 L 1142.1992 1103.5703 L 1141.7402 1103.1309 L 1146.6484 1102.5859 L 1143.9336 1099.9844 L 1148.0664 1099.5254 L 1145.998 1097.543 L 1148.9902 1097.2109 L 1153.3887 1075.2148 L 1157.8613 1078.5273 L 1158.7402 1074.1309 L 1160.1016 1075.1406 L 1160.9336 1070.9844 L 1162.3066 1072.002 L 1162.998 1068.543 z M 1100.7363 1068.9473 L 1106.623 1073.3086 L 1106.9629 1071.6113 L 1120.4629 1081.6113 L 1121.1543 1089.6758 L 1122.6992 1090.8203 L 1123.2734 1097.5293 L 1127.582 1100.7207 L 1129.082 1118.2207 L 1109.082 1131.2207 L 1102.1934 1124.6191 L 1101.7949 1124.877 L 1099.9883 1123.1465 L 1081.7344 1135.0117 L 1078.8516 1132.248 L 1078.1582 1132.6992 L 1066.1582 1121.1992 L 1068.7676 1120.9102 L 1066.0859 1118.3398 L 1080.5781 1116.7305 L 1072.2402 1108.7383 L 1078.4004 1108.0527 L 1076.8457 1106.5625 L 1078.8164 1106.3438 L 1076.9766 1104.5801 L 1080.1074 1104.2324 L 1083.0859 1089.3398 L 1086.7734 1092.0723 L 1089.2402 1079.7383 L 1092.6406 1082.2578 L 1093.9766 1075.5801 L 1098.709 1079.0859 L 1100.7363 1068.9473 z M 1251.0684 1075.8145 L 1264.5645 1085.8145 L 1266.0645 1103.3145 L 1264.1641 1104.5508 L 1264.3926 1107.2246 L 1267.877 1109.8047 L 1269.377 1127.3047 L 1266.5449 1129.1445 L 1266.6934 1130.8672 L 1263.5098 1132.9355 L 1263.5195 1133 L 1258.8828 1136.0137 L 1259.123 1138.8145 L 1239.123 1151.8145 L 1236.2051 1149.0176 L 1232.5273 1151.4082 L 1228.834 1147.8691 L 1228.7266 1147.9395 L 1216.7266 1136.4395 L 1218.4512 1136.248 L 1214.7422 1132.6953 L 1214.7188 1132.7109 L 1202.7188 1121.2109 L 1208.8008 1120.5352 L 1208.5469 1120.291 L 1210.1035 1120.1172 L 1208.1074 1118.2051 L 1208.7852 1118.1289 L 1205.6758 1115.1504 L 1208.0312 1114.8887 L 1206.3672 1113.2949 L 1214.9629 1112.3398 L 1214.0195 1111.4355 L 1215.916 1111.2246 L 1219.7188 1092.2109 L 1221.2383 1093.3359 L 1222.6758 1086.1504 L 1222.9551 1086.3574 L 1223.3672 1084.2949 L 1229.709 1088.9922 L 1231.0195 1082.4355 L 1237.3613 1087.1328 L 1237.959 1084.1465 L 1242.7227 1087.6758 L 1243.8672 1081.9512 L 1249.0703 1085.8047 L 1251.0684 1075.8145 z M 783.10742 1079.6445 L 774.71289 1085.1016 L 784.02539 1084.0664 L 784.77734 1080.3125 L 783.10742 1079.6445 z M 881.63281 1089.4258 L 895.13281 1099.4258 L 895.6543 1105.5 L 896.31055 1105.9863 L 897.45703 1119.3613 L 908.61328 1127.625 L 910.11328 1145.125 L 890.11328 1158.125 L 887.98438 1156.0859 L 885.28906 1157.8379 L 873.28906 1146.3379 L 895.78906 1143.8379 L 885.78906 1139.8379 L 887.75195 1130.0254 L 877.81055 1136.4863 L 873.17773 1132.0469 L 859.11328 1141.1895 L 859.28906 1143.252 L 839.28906 1156.252 L 827.28906 1144.752 L 830.25977 1144.4219 L 823.61523 1138.0547 L 835.36914 1136.75 L 827.57617 1129.2812 L 836.77344 1128.2598 L 840.61523 1109.0547 L 842.53711 1110.4785 L 844.57617 1100.2812 L 852.11328 1105.8652 L 853.20312 1100.4219 L 859.90625 1105.3867 L 860.35742 1103.1309 L 865.30859 1106.7988 L 867.80859 1094.2949 L 879 1102.5859 L 881.63281 1089.4258 z M 932.12109 1091.4551 L 932.12305 1091.4785 L 930.89844 1092.2754 L 933.46094 1091.9902 L 932.12109 1091.4551 z M 969.5 1104.5 L 983 1114.5 L 984.5 1132 L 981.17969 1134.1582 L 982.27344 1146.9141 L 962.27344 1159.9141 L 957.79102 1155.6172 L 953.62695 1158.3242 L 952.70312 1157.4395 L 949.19336 1159.7207 L 937.19336 1148.2207 L 938.53125 1148.0723 L 927.93945 1137.9219 L 950.43945 1135.4219 L 940.43945 1131.4219 L 944.93945 1108.9219 L 958.41211 1118.9004 L 958.62695 1117.8242 L 965.62695 1123.0098 L 966.89648 1116.6582 L 967.04688 1116.7695 L 969.5 1104.5 z M 764.00195 1105.9492 L 777.50195 1115.9492 L 777.71875 1118.4766 L 782.68945 1122.1582 L 784.18945 1139.6582 L 779.56445 1142.6641 L 779.8457 1145.9473 L 759.8457 1158.9473 L 747.8457 1147.4473 L 753.18359 1146.8535 L 743.29492 1137.377 L 748.88672 1136.7559 L 747.00195 1134.9492 L 761.85156 1133.2988 L 755.79492 1130.877 L 760.29492 1108.377 L 763.10156 1110.4551 L 764.00195 1105.9492 z M 1115.8633 1115.7324 L 1112.334 1118.0254 L 1119.582 1117.2207 L 1115.8633 1115.7324 z M 888.16602 1122.4297 L 888.0293 1122.5176 L 888.31055 1122.4863 L 888.16602 1122.4297 z M 950.99023 1142.2383 L 944.41211 1146.5156 L 950.12891 1145.8809 L 949.89648 1145.6582 L 957.44141 1144.8203 L 950.99023 1142.2383 z "
        id="path4385" />
   </g>
@@ -15935,20 +15884,7 @@ capturable = 1;</desc>
        style="display:inline"
        inkscape:label="extraction"
        id="layer28"
-       inkscape:groupmode="layer">
-      <rect
-         inkscape:label="#rect36349"
-         y="1023.8251"
-         x="1101.7292"
-         height="17.539602"
-         width="18.270266"
-         id="hitbox_extraction4"
-         style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
-    </g>
-    <g
-       inkscape:groupmode="layer"
-       id="layer45"
-       inkscape:label="trigger" />
+       inkscape:groupmode="layer" />
     <g
        style="display:inline"
        inkscape:label="ladders"
@@ -17205,22 +17141,6 @@ tag = speeder;</desc>
         <desc
            id="desc6851-7-7-1-7-9-4">template = armory;</desc>
       </rect>
-      <rect
-         inkscape:label="#rect36349"
-         y="1026.3"
-         x="849.2923"
-         height="16.478903"
-         width="32.412472"
-         id="hitbox_trigger_1"
-         style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465,2.64566929;stroke-dashoffset:0;stroke-opacity:0.97247708;enable-background:new" />
-      <rect
-         inkscape:label="#rect36349"
-         y="1015.3398"
-         x="939.4483"
-         height="12.236281"
-         width="8.3707685"
-         id="hitbox_trigger_2"
-         style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465,2.64566929;stroke-dashoffset:0;stroke-opacity:0.99047619;enable-background:new" />
     </g>
     <g
        inkscape:groupmode="layer"
@@ -17455,6 +17375,20 @@ tag = speeder;</desc>
          id="rect4878-8-6-42-7-9-6-0-8"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
     </g>
+    <g
+       inkscape:groupmode="layer"
+       id="layer13"
+       inkscape:label="extraction"
+       style="display:inline">
+      <rect
+         inkscape:label="#rect36349"
+         y="1024.1787"
+         x="1100.6688"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction4"
+         style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+    </g>
   </g>
   <g
      style="display:inline"
@@ -17548,18 +17482,6 @@ tag = speeder;</desc>
        inkscape:groupmode="layer">
       <rect
          style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-         id="spawn6969-30-3-0"
-         width="2.7343748"
-         height="2.7343748"
-         x="975.10565"
-         y="1020.1533"
-         inkscape:label=""
-         transform="rotate(-0.00852511)">
-        <desc
-           id="desc26444-1-8-2">type = vehicle; key = veh_empl_turret_offline.vehicle;</desc>
-      </rect>
-      <rect
-         style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
          id="spawn6969-30-3-0-3"
          width="2.7343748"
          height="2.7343748"
@@ -17573,26 +17495,14 @@ tag = speeder;</desc>
       <rect
          style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
          id="spawn_terminal-1"
-         width="3.3321514"
-         height="3.3363316"
-         x="-981.57294"
-         y="-1023.7781"
-         inkscape:label=""
-         transform="rotate(-179.54277)">
-        <desc
-           id="desc3838">type = vehicle; key = veh_terminal.vehicle;</desc>
-      </rect>
-      <rect
-         style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
-         id="spawn_terminal-1-7"
          width="4.2094455"
          height="3.4176004"
-         x="1069.802"
-         y="1005.7391"
+         x="-967.35571"
+         y="-1035.4922"
          inkscape:label=""
-         transform="rotate(-0.52919842)">
+         transform="rotate(179.75275)">
         <desc
-           id="desc3838-9">type = vehicle; key = veh_terminal.vehicle;</desc>
+           id="desc3838">type = vehicle; key = veh_terminal.vehicle;</desc>
       </rect>
     </g>
   </g>
@@ -17600,10 +17510,5 @@ tag = speeder;</desc>
      inkscape:groupmode="layer"
      id="layer26"
      inkscape:label="path"
-     style="display:inline" />
-  <g
-     inkscape:groupmode="layer"
-     id="layer13"
-     inkscape:label="divider"
      style="display:inline" />
 </svg>

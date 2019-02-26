@@ -10,8 +10,8 @@
 class BNN : Tracker {
 	protected GameMode@ m_metagame;
 
-    protected float MISSION_TIMER_MAX = 36.00; //180
-    protected float MISSION_TIMER_MIN = 18.00; //90
+    protected float MISSION_TIMER_MAX = 180.00; //36.00;
+    protected float MISSION_TIMER_MIN = 90.00; //18.00;
 	protected float miTimer; // mission random timer
     protected float ADVERT_TIMER_MAX = 240.00;
     protected float ADVERT_TIMER_MIN = 120.00;
@@ -54,17 +54,17 @@ class BNN : Tracker {
 			dictionary bnn_dict = {
 				{"%activity", "the thing"},
 				{"%character_name", "char name"},
-				{"%company_name", "Bob Pizza"}, 
+				{"%company_name", "Bob Pizza"},
 				{"%location_pickup", "round the corner"},
 				{"%location_drop", "rah bish binnie"},
 				{"%location", "secret loc"},
 				{"%vicinity", "k-mart carpark"},
 				{"%reward_amount", "heaps!"},
-				{"%reward_type", "Pants"}, 
+				{"%reward_type", "Pants"},
 				{"%rule_engage", "Kill em all!"},
 				{"%rule_loot", "don't touch!"}
 			};
-		} 
+		}
 		else if (type == "advert") {
 			dictionary bnn_dict = {
 				{"%company_name", "Bob Pizza"}
@@ -84,7 +84,7 @@ class BNN : Tracker {
     protected string getBNNAdvert() {
         return "advert";
     }
-    
+
 	// --------------------------------------------
 	bool hasEnded() const {
 		// always on
@@ -107,19 +107,19 @@ class BNN : Tracker {
 			dictionary miDict = {
 				{"%activity", actArr[rand(0, actArr.size() -1)] },
 				{"%character_name", charArr[rand(0, charArr.size() -1)] },
-				{"%company_name", compArr[rand(0, compArr.size() -1)] }, 
+				{"%company_name", compArr[rand(0, compArr.size() -1)] },
 				{"%location_pickup", rand(0, 1024) + ", " + rand(0,1024) },
 				{"%location_drop", rand(0, 1024) + ", " + rand(0,1024) },
 				{"%location", rand(0, 1024) + ", " + rand(0,1024) },
 				{"%vicinity", "map_area name" },
 				{"%reward_amount", rand(50, 5000) },
-				{"%reward_type", rTypeArr[rand(0, rTypeArr.size() -1)] }, 
+				{"%reward_type", rTypeArr[rand(0, rTypeArr.size() -1)] },
 				{"%rule_engage", rEngageArr[rand(0, rEngageArr.size() -1)] },
 				{"%rule_loot", rLootArr[rand(0, rLootArr.size() -1)] }
 			};
 			newBNNAnnouncement("mission", miDict);
 			restartTimer("mission");
-		} 
+		}
 		if (adTimer <= 0.0) {
 			_log("advert timer expired. BNN announcement incoming", 1);
 			dictionary adDict = makeBNNDict("advert");
