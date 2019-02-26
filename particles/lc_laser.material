@@ -1,4 +1,4 @@
-material ss_laser_mat
+material lc_laser
 {
 	receive_shadows off
 	technique
@@ -9,11 +9,11 @@ material ss_laser_mat
 			fog_override true
 
 			depth_write off
-        	scene_blend alpha_blend
+			scene_blend alpha_blend
 
 			texture_unit
 			{
-				texture ss_laser.png
+				texture lc_laser.png
 			}
 		}
 	}

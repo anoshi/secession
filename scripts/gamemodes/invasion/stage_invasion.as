@@ -260,7 +260,9 @@ class Stage {
 	// --------------------------------------------
 	protected void appendCamera(XmlElement@ scene) const {
 		XmlElement camera("camera");
+		//camera.setStringAttribute("direction", camdir);
 		camera.setStringAttribute("direction", "-0.01 -0.21 0.5");
+		//camera.setFloatAttribute("distance", 10.5);
 		camera.setFloatAttribute("distance", 25.5);
 		camera.setFloatAttribute("far_clip", 95.0);
 		camera.setFloatAttribute("shadow_far_clip", 80.0);

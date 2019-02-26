@@ -10,10 +10,10 @@ void main(dictionary@ inputData) {
 	settings.fromXmlElement(inputSettings);
 	_setupLog(inputSettings);
 	settings.print();
-	array<string> overlays = {
-                "media/packages/secession"
-        };
-        settings.m_overlayPaths = overlays;
+	//array<string> overlays = {
+    //            "media/packages/secession"
+    //    };
+    //    settings.m_overlayPaths = overlays;
 
 	MyGameMode metagame(settings);
 

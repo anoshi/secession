@@ -3,7 +3,9 @@
 #include "metagame.as"
 #include "resource.as"
 
-// --------------------------------------------------------
+/////////////////////////////////////////
+// ----- BEGIN SECESSION HELPERS ----- //
+/////////////////////////////////////////
 array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId, float range = 25.00f) {
 	array<const XmlElement@> allVehicles;
 	array<const XmlElement@> vehNearPos;
@@ -45,18 +47,103 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 
 	return vehNearPos;
 }
-// --------------------------------------------------------
 
-// BEGIN SECESSION HELPERS
+///////////////////////////////
+// ----- TRIGGER AREAS ----- //
+///////////////////////////////
+array<const XmlElement@>@ getTriggerAreas(const Metagame@ metagame) {
+	_log("** GET TRIGGER AREAS", 1);
+	XmlElement@ query = XmlElement(
+		makeQuery(metagame, array<dictionary> = {
+			dictionary = { {"TagName", "data"}, {"class", "hitboxes"} } }));
+
+	const XmlElement@ doc = metagame.getComms().query(query);
+	array<const XmlElement@> triggerAreas = doc.getElementsByTagName("hitbox");
+	return triggerAreas;
+}
+
+// -------------------------------------------------------
+void associateTriggerAreas(const Metagame@ metagame, const array<const XmlElement@>@ armoryList, string instanceType, int instanceId, array<string>@ trackedTriggerAreas) {
+	array<string> addIds;
+	_log("** SECESSION FEEDING associateTriggerAreasEx instanceType: " + instanceType + ", instanceId: " + instanceId, 1);
+	associateTriggerAreasEx(metagame, armoryList, instanceType, instanceId, trackedTriggerAreas, addIds);
+}
+
+// -------------------------------------------------------
+void associateTriggerAreasEx(const Metagame@ metagame, const array<const XmlElement@>@ armoryList, string instanceType, int instanceId, array<string>@ trackedTriggerAreas, array<string>@ addIds) {
+	_log("** ASSOCIATING TRIGGER AREAS", 1);
+	if (instanceId < 0) return;
+
+	// check against already associated triggerAreas
+	// and determine which need to be added and which to removed
+	_log("** SECESSION trackedTriggerAreas contains: ", 1);
+	for (uint i = 0; i < trackedTriggerAreas.size(); ++i) {
+		_log("** trackedTriggerAreas " + i + ": " + trackedTriggerAreas[i], 1);
+	}
+
+	// prepare to remove all triggerAreas
+	array<string> removeIds = trackedTriggerAreas;
+
+	for (uint i = 0; i < armoryList.size(); ++i) {
+		const XmlElement@ armory = armoryList[i];
+		string armoryId = armory.getStringAttribute("id");
+
+		int index = removeIds.find(armoryId);
+		if (index >= 0) {
+			// already tracked and still needed
+			// remove from ids to remove
+			removeIds.erase(index);
+		} else {
+			// not yet tracked, needs to be added
+			addIds.push_back(armoryId);
+		}
+	}
+
+	for (uint i = 0; i < removeIds.size(); ++i) {
+		string id = removeIds[i];
+		string command = "<command class='remove_hitbox_check' id='" + id + "' instance_type='" + instanceType + "' instance_id='" + instanceId + "' />";
+		metagame.getComms().send(command);
+		_log("** REMOVED instanceType: " + instanceType + ", instanceId: " + instanceId + " from trackedTriggerAreas." ,1);
+		trackedTriggerAreas.erase(trackedTriggerAreas.find(id));
+	}
+
+	for (uint i = 0; i < addIds.size(); ++i) {
+		string id = addIds[i];
+		string command = "<command class='add_hitbox_check' id='" + id + "' instance_type='" + instanceType + "' instance_id='" + instanceId + "' />";
+		metagame.getComms().send(command);
+		_log("** ADDED instanceType: " + instanceType + ", instanceId: " + instanceId + " to trackedTriggerAreas." ,1);
+		// remember we've set out to track this armory
+		trackedTriggerAreas.push_back(id);
+	}
+}
+
+// ----------------------------------------------------
+void clearTriggerAreaAssociations(const Metagame@ metagame, string instanceType, int instanceId, array<string>@ trackedTriggerAreas) {
+	if (instanceId < 0) return;
+
+	// remove all tracked triggerAreas
+	for (uint i = 0; i < trackedTriggerAreas.size(); ++i) {
+		string id = trackedTriggerAreas[i];
+		string command = "<command class='remove_hitbox_check' id='" + id + "' instance_type='" + instanceType + "' instance_id='" + instanceId + "' />";
+		metagame.getComms().send(command);
+		_log("** SECESSION query_helpers clearTriggerAreaAssociations has run", 1);
+		//refreshTriggerAreas(metagame, triggerIds, instanceId);
+	}
+
+	trackedTriggerAreas.clear();
+}
+
 // BC Hot Potato Position Tracker
 string hpPosition;
 void setHotPotPosi(string pos) {
 	hpPosition = pos;
 	_log("Hot Potato now at: " + hpPosition, 1);
 }
+
 string getHotPotPosi() {
 	return hpPosition;
 }
 
+// --------------------------------------------
 // END SECESSION HELPERS
 // --------------------------------------------

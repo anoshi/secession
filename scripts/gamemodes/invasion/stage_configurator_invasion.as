@@ -34,11 +34,10 @@ class StageConfiguratorInvasion : StageConfigurator {
 	const array<FactionConfig@>@ getAvailableFactionConfigs() const {
 		array<FactionConfig@> availableFactionConfigs;
 
-		availableFactionConfigs.push_back(FactionConfig(-1, "bc.xml", "BlastCorp", "0.2 0.2 0.3", "bc.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "lc.xml", "LifeCraft", "1.0 0.2 0.2", "lc.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "ra.xml", "ReflexArq", "0.5 0.2 0.5", "ra.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "ss.xml", "ScopeSystems", "0.2 0.4 0.2", "ss.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "wt.xml", "WyreTek", "0.0 0.1 0.6", "wt.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "green.xml", "Greenbelts", "0.1 0.5 0", "green_boss.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "grey.xml", "Graycollars", "0.5 0.5 0.5", "grey_boss.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "brown.xml", "Brownpants", "0.5 0.25 0", "brown_boss.xml"));
+
 		return availableFactionConfigs;
 	}
 
@@ -223,19 +222,30 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage1() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "BC Side-Scroll 1";
+		//stage.m_mapInfo.m_name = "Keepsake Bay";
 		stage.m_mapInfo.m_path = "media/packages/secession/maps/side-scroll";
+		//stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map2";
 		stage.m_mapInfo.m_id = "map2";
+		//stage.m_mapInfo.m_name = "train intro";
+		//stage.m_mapInfo.m_path = "media/packages/secession/maps/train_intro";
+		//stage.m_mapInfo.m_id = "map2";
 
 		stage.addTracker(PeacefulLastBase(m_metagame, 0));
 		stage.addTracker(CommsCapacityHandler(m_metagame));
-		stage.m_maxSoldiers = 25 * 2;
+		stage.m_maxSoldiers = 20 * 2; // sols x bases
+		//stage.m_maxSoldiers = 1 * 2;
 
 		stage.m_soldierCapacityVariance = 0.3;
 		stage.m_playerAiCompensation = 2;
     stage.m_playerAiReduction = 2;
 
-		stage.m_minRandomCrates = 2;
+    stage.m_minRandomCrates = 2;
 		stage.m_maxRandomCrates = 4;
+
+		// koth timer
+		//stage.m_defenseWinTime = 60;
+		//stage.m_defenseWinTimeMode = "custom";
+		//stage.addTracker(PausingKothTimer(m_metagame, stage.m_defenseWinTime));
 
 		{
 			Faction f(getFactionConfigs()[0], createFellowCommanderAiCommand(0));
@@ -246,12 +256,16 @@ class StageConfiguratorInvasion : StageConfigurator {
 		}
 		{
 			Faction f(getFactionConfigs()[1], createCommanderAiCommand(1));
-			f.m_overCapacity = 30;                                                  // was 0 in 1.65
+			//f.m_overCapacity = 30;                                                  // was 0 in 1.65
+			f.m_overCapacity = 0;
       f.m_capacityOffset = 5;                                                 // was 0 in 1.65
+			//f.m_capacityOffset = 0;
 			stage.m_factions.insertLast(f);                                         // was 0 in 1.65
 		}
 
 		// metadata
+		//stage.m_primaryObjective = "koth";
+		//stage.m_kothTargetBase = "Player Start";
 		stage.m_primaryObjective = "capture";
 
 		setDefaultAttackBreakTimes(stage);
@@ -263,6 +277,8 @@ class StageConfiguratorInvasion : StageConfigurator {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "BC Corridor 1";
 		stage.m_mapInfo.m_path = "media/packages/secession/maps/warehouse";
+		//stage.m_mapInfo.m_name = "Fridge Valley";
+		//stage.m_mapInfo.m_path = "media/packages/vanilla.winter/maps/map4";
 		stage.m_mapInfo.m_id = "map4";
 
     stage.m_fogOffset = 20.0;
@@ -300,7 +316,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage3() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Old Fort Creek";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map3";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map3";
 		stage.m_mapInfo.m_id = "map3";
 
 		stage.addTracker(PeacefulLastBase(m_metagame, 0));
@@ -339,7 +355,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage4() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Power Junction";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map7";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map7";
 		stage.m_mapInfo.m_id = "map7";
 
 		stage.addTracker(Overtime(m_metagame, 0));
@@ -391,7 +407,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage5() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Moorland Trenches";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map1";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map1";
 		stage.m_mapInfo.m_id = "map1";
 
 		stage.m_maxSoldiers = 18 * 14;
@@ -447,7 +463,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage6() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Bootleg Islands";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map5";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map5";
 		stage.m_mapInfo.m_id = "map5";
 
 		stage.m_maxSoldiers = 11 * 10;
@@ -491,7 +507,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage7() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Rattlesnake Crescent";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map6";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map6";
 		stage.m_mapInfo.m_id = "map6";
 
 		stage.m_maxSoldiers = 15 * 9;                                             // was 17*7 in 1.65
@@ -543,7 +559,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage8() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Vigil Island";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map8";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map8";
 		stage.m_mapInfo.m_id = "map8";
 
 		stage.m_includeLayers.insertLast("layer1.campaign"); // this is intentional
@@ -604,7 +620,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage9() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Black Gold Estuary";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map9";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map9";
 		stage.m_mapInfo.m_id = "map9";
 
 		stage.m_maxSoldiers = 17 * 13;                // 220 in 1.65
@@ -652,7 +668,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage10() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Railroad Gap";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map10";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map10";
 		stage.m_mapInfo.m_id = "map10";
 
 		stage.m_maxSoldiers = 13 * 12;                                            // 156, was 15*10 in 1.65
@@ -707,7 +723,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage11() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Iron Enclave";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map13";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map13";
 		stage.m_mapInfo.m_id = "map13";
 
 		stage.m_maxSoldiers = 15 * 15;
@@ -768,7 +784,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage12() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Misty Heights";
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map14";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map14";
 		stage.m_mapInfo.m_id = "map14";
 
     stage.m_fogOffset = 20.0;
@@ -830,7 +846,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupFinalStage1() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Final mission I"; // warning, default.character has reference to this name, careful if it needs to be changed
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map11";
+		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map11";
 		stage.m_mapInfo.m_id = "map11";
 
 		stage.m_maxSoldiers = 110;   // 100 in 0.99.4
@@ -908,7 +924,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 		PhasedStage@ stage = createPhasedStage();
 		stage.setPhaseController(PhaseControllerMap12(m_metagame));
 		stage.m_mapInfo.m_name = "Final mission II"; // warning, default.character has reference to this name, careful if it needs to be changed
-		stage.m_mapInfo.m_path = "media/packages/secession/maps/map12";
+		stage.m_mapInfo.m_path = "media/packages/vanilla.winter/maps/map12";
 		stage.m_mapInfo.m_id = "map12";
 
     stage.m_fogOffset = 20.0;
