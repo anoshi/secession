@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="-2197.7841"
-     inkscape:cy="1768.1018"
+     inkscape:zoom="1.8101934"
+     inkscape:cx="1494.6479"
+     inkscape:cy="1809.915"
      inkscape:document-units="px"
-     inkscape:current-layer="layer29"
+     inkscape:current-layer="layer30"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -15996,11 +15996,11 @@ separator_depth = 0.7;</desc>
       <desc
          id="desc7569-9-3-1-4-4-6-4-8-6-6-2-7-9-2-0-9-9">name = train boxcar;
 mesh_name = train_boxcar.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 7 1 8 8;
-collision_model_type = 1; 
-collision_model_size =  2.9 4.5 11; 
-collision_model_offset = 0 0.2 0; 
+collision_model_type = 1;
+collision_model_size =  2.9 4.5 11;
+collision_model_offset = 0 0.2 0;
 walkable = 1;</desc>
     </rect>
     <text
@@ -16612,11 +16612,11 @@ backline =1;</desc>
       <title
          id="title5522-9-7">awning</title>
       <desc
-         id="desc6588-4-2-4">name = awning_red; 
-mesh_name = awning.mesh; 
-texture0 = world_atlas1.png; 
+         id="desc6588-4-2-4">name = awning_red;
+mesh_name = awning.mesh;
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 10 17 32 32 0.001;
-collision_model_type = -1; 
+collision_model_type = -1;
 
 #visual_hitbox_size = 4 1 4;
 #visual_hitbox_offset = 0 8 0;
@@ -16646,11 +16646,11 @@ collision_model_type = -1;
        id="rect4021-6"
        style="display:inline;fill:#8e8e8e;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new">
       <desc
-         id="desc4023-5">name = camonet; 
-mesh_name = camonet.mesh; 
-texture0 = world_atlas1.png; 
-texture0_atlas_cell = 5 0 8 8; 
-collision_model_type = -1; 
+         id="desc4023-5">name = camonet;
+mesh_name = camonet.mesh;
+texture0 = world_atlas1.png;
+texture0_atlas_cell = 5 0 8 8;
+collision_model_type = -1;
 alpha_blend = 1;</desc>
     </rect>
     <rect
@@ -16711,7 +16711,7 @@ penetrability = 0.9; see_through = 1;</desc>
        id="rect4021-2-5"
        style="display:inline;fill:#8e8e8e;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new">
       <desc
-         id="desc4023-1-8">template = camonet; 
+         id="desc4023-1-8">template = camonet;
 </desc>
     </rect>
     <rect
@@ -16896,12 +16896,12 @@ penetrability = 0.9; see_through = 1;</desc>
       <desc
          id="desc9346-0-2-5-7-2-4-8-7-4-2">name = mosque;
 mesh_name = mosque.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 5 5 8 8;
-collision_model_type = 1; 
+collision_model_type = 1;
 collision_model_size = 19 8.4 11.5;
 collision_model_offset = -1.5 0 1.2;
-walkable = 1; 
+walkable = 1;
 backline =1;</desc>
     </rect>
     <rect
@@ -16928,7 +16928,7 @@ backline =1;</desc>
       <desc
          id="desc46349-1">name = radar_dish;
 mesh_name = radar_dish.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 6 8 16 16;
 collision_model_type = 1;
 collision_model_size = 3.0 6 3.0;
@@ -16960,11 +16960,11 @@ collision_model_size = 3.0 6 3.0;
       <title
          id="title5522-9-7-6">awning</title>
       <desc
-         id="desc6588-4-2-4-7">name = awning_green; 
-mesh_name = awning.mesh; 
-texture0 = world_atlas1.png; 
+         id="desc6588-4-2-4-7">name = awning_green;
+mesh_name = awning.mesh;
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 11 17 32 32 0.001;
-collision_model_type = -1; 
+collision_model_type = -1;
 
 #visual_hitbox_size = 4 1 4;
 #visual_hitbox_offset = 0 8 0;
@@ -17142,9 +17142,9 @@ visual_hitbox_size = 24 10 19;
        id="rect16633-4-8-2-8"
        style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000131;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:7;stroke-opacity:1;enable-background:new">
       <desc
-         id="desc16653-2-1-8">name = woodtower; 
-mesh_name = woodtower.mesh; 
-texture0 = world_atlas1.png; texture0_atlas_cell = 1 0 64 64; collision_model_type = 1; collision_model_size = 4.6 8.6 4.6; 
+         id="desc16653-2-1-8">name = woodtower;
+mesh_name = woodtower.mesh;
+texture0 = world_atlas1.png; texture0_atlas_cell = 1 0 64 64; collision_model_type = 1; collision_model_size = 4.6 8.6 4.6;
 walkable = 1;
 see_through =1;
 penetrability = 0.8;
@@ -17245,12 +17245,12 @@ key = mortar_ammunition_crates.vehicle;</desc>
       <desc
          id="desc9346-0-2-5-7-2-4-8-7-4-2-5">name = mosque2;
 mesh_name = mosque2.mesh;
-texture0 = mosque2.png; 
+texture0 = mosque2.png;
 #texture0_atlas_cell = 5 5 8 8;
-collision_model_type = 1; 
+collision_model_type = 1;
 collision_model_size = 30 10.8 30;
 #collision_model_offset = -1.5 0 1.2;
-walkable = 1; 
+walkable = 1;
 backline =1;</desc>
     </rect>
     <rect
@@ -17264,12 +17264,12 @@ backline =1;</desc>
       <desc
          id="desc9346-0-2-5-7-2-4-8-7-4-2-5-3">name = hangar2;
 mesh_name = hangar2.mesh;
-texture0 = hangar2.png; 
+texture0 = hangar2.png;
 #texture0_atlas_cell = 5 5 8 8;
-collision_model_type = -1; 
+collision_model_type = -1;
 collision_model_size = 26 8.4 30;
 #collision_model_offset = -1.5 0 1.2;
-walkable = 0; 
+walkable = 0;
 backline =0;</desc>
     </rect>
     <rect
@@ -17283,12 +17283,12 @@ backline =0;</desc>
       <desc
          id="desc9346-0-2-5-7-2-4-8-7-4-2-5-3-5">name = warehouse;
 mesh_name = warehouse.mesh;
-texture0 = warehouse.png; 
+texture0 = warehouse.png;
 #texture0_atlas_cell = 5 5 8 8;
-collision_model_type = 1; 
+collision_model_type = 1;
 collision_model_size = 21 5.4 21;
 #collision_model_offset = -1.5 0 1.2;
-walkable = 1; 
+walkable = 1;
 backline =1;</desc>
     </rect>
     <rect
@@ -17314,12 +17314,12 @@ backline =1;</desc>
       <desc
          id="desc9346-0-2-5-7-2-4-8-7-4-2-5-3-5-7">name = warehouse2;
 mesh_name = warehouse2.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 5 3 8 8;
-collision_model_type = -1; 
+collision_model_type = -1;
 collision_model_size = 30 8.2 30;
 #collision_model_offset = -1.5 0 1.2;
-walkable = 0; 
+walkable = 0;
 backline =1;</desc>
     </rect>
     <rect
@@ -17375,14 +17375,14 @@ backline =1;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-3">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-5">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 1.6 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-5">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 1.6 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17397,14 +17397,14 @@ see_through = 0;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-9-5">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-3-8">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 6.0 6.0 19.5; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-3-8">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 6.0 6.0 19.5;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17419,14 +17419,14 @@ see_through = 0;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-1-9">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-8-4">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-8-4">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17441,14 +17441,14 @@ see_through = 0;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-1-8-3">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-8-0-97">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-8-0-97">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17463,14 +17463,14 @@ see_through = 0;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-1-84-4">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-8-8-5">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-8-8-5">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17485,14 +17485,14 @@ see_through = 0;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-1-8-0-6">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-8-0-9-1">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-8-0-9-1">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17507,14 +17507,14 @@ see_through = 0;</desc>
       <title
          id="title49658-82-9-3-6-6-8-8-0-5">crane_collision</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-4-1-3-0-1">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 1.6 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc10288-1-3-4-4-3-1-4-1-3-0-1">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 1.6 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17529,14 +17529,14 @@ see_through = 0;</desc>
       <title
          id="title12153-6">crane_collision</title>
       <desc
-         id="desc12155-4">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 1.6 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12155-4">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 1.6 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17551,14 +17551,14 @@ see_through = 0;</desc>
       <title
          id="title12159-4">crane_collision</title>
       <desc
-         id="desc12161-2">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 6.0 6.0 19.5; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12161-2">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 6.0 6.0 19.5;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17573,14 +17573,14 @@ see_through = 0;</desc>
       <title
          id="title12165-3">crane_collision</title>
       <desc
-         id="desc12167-2">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12167-2">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17595,14 +17595,14 @@ see_through = 0;</desc>
       <title
          id="title12171-8">crane_collision</title>
       <desc
-         id="desc12173-2">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12173-2">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17617,14 +17617,14 @@ see_through = 0;</desc>
       <title
          id="title12177-6">crane_collision</title>
       <desc
-         id="desc12179-3">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12179-3">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17639,14 +17639,14 @@ see_through = 0;</desc>
       <title
          id="title12183-4">crane_collision</title>
       <desc
-         id="desc12185-5">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 2.0 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12185-5">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 2.0 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17661,14 +17661,14 @@ see_through = 0;</desc>
       <title
          id="title12189-2">crane_collision</title>
       <desc
-         id="desc12191-5">mesh_name = container.mesh; 
-texture0 = alpha.png; 
-collision_model_type = 1; 
-collision_model_size = 1.6 6.0 4.0; 
-walkable = 0; 
-texture0 = alpha.png; 
-alpha_blend = 1; 
-penetrability = 0.0; 
+         id="desc12191-5">mesh_name = container.mesh;
+texture0 = alpha.png;
+collision_model_type = 1;
+collision_model_size = 1.6 6.0 4.0;
+walkable = 0;
+texture0 = alpha.png;
+alpha_blend = 1;
+penetrability = 0.0;
 see_through = 0;</desc>
     </rect>
     <rect
@@ -17685,7 +17685,7 @@ see_through = 0;</desc>
       <desc
          id="desc7449-4-7-4-7-1-9-9-7-7-3-0-4">name = railroad_straight_element_50m;
 mesh_name = rail_straight_element.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 12 2 16 16;
 collision_model_type = -1; collision_model_size = 2.1 0.2 50; #collision_model_offset = 0 0 -9.3; #walkable = 1;</desc>
     </rect>
@@ -17796,11 +17796,11 @@ collision_model_type = -1; collision_model_size = 2.1 0.2 50; #collision_model_o
       <desc
          id="desc7569-9-3-1-4-4-6-4-8-6-6-2-7-9-2-0-9-7">name = train boxcar;
 mesh_name = train_boxcar.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 7 1 8 8;
-collision_model_type = 1; 
-collision_model_size =  2.9 4.5 11; 
-collision_model_offset = 0 0.2 0; 
+collision_model_type = 1;
+collision_model_size =  2.9 4.5 11;
+collision_model_offset = 0 0.2 0;
 walkable = 1;</desc>
     </rect>
     <rect
@@ -17817,11 +17817,11 @@ walkable = 1;</desc>
       <title
          id="title49658-82-9-3-6-9-7-6-4-77-8-0">big_oil_tank</title>
       <desc
-         id="desc10288-1-3-4-4-3-1-8-4-18-3-9-9-9">name = big_oil_tank; 
-mesh_name = big_oil_tank.mesh; 
-texture0 = big_oil_tank.png; 
-collision_model_type = 0; 
-collision_model_size = 16 7 16; 
+         id="desc10288-1-3-4-4-3-1-8-4-18-3-9-9-9">name = big_oil_tank;
+mesh_name = big_oil_tank.mesh;
+texture0 = big_oil_tank.png;
+collision_model_type = 0;
+collision_model_size = 16 7 16;
 walkable = 0;</desc>
     </rect>
     <rect
@@ -18166,7 +18166,24 @@ capturable = 1;</desc>
        style="display:inline"
        inkscape:label="extraction"
        id="layer28"
-       inkscape:groupmode="layer" />
+       inkscape:groupmode="layer">
+      <rect
+         inkscape:label="#rect36349"
+         y="297.42731"
+         x="1537.661"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction3"
+         style="display:inline;enable-background:new;opacity:0.93000034;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709" />
+      <rect
+         inkscape:label="#rect36349"
+         y="860.4234"
+         x="1699.7567"
+         height="9.3364868"
+         width="9.6765137"
+         id="hitbox_extraction2"
+         style="display:inline;opacity:0.93000034;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+    </g>
     <g
        style="display:inline"
        inkscape:label="ladders"
@@ -18455,11 +18472,11 @@ capturable = 1;</desc>
         <desc
            id="desc7569-9-3-1-4-4-6-4-8-6-6-2-7-9-2-0-9">name = train boxcar;
 mesh_name = train_boxcar.mesh;
-texture0 = world_atlas1.png; 
+texture0 = world_atlas1.png;
 texture0_atlas_cell = 7 1 8 8;
-collision_model_type = 1; 
-collision_model_size =  2.9 4.5 11; 
-collision_model_offset = 0 0.2 0; 
+collision_model_type = 1;
+collision_model_size =  2.9 4.5 11;
+collision_model_offset = 0 0.2 0;
 walkable = 1;</desc>
       </rect>
     </g>
@@ -19147,7 +19164,7 @@ backline = 1;</desc>
          inkscape:label=""
          transform="rotate(-49.560591)">
         <desc
-           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6">type = vehicle; 
+           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6">type = vehicle;
 tag = speeder;</desc>
       </rect>
       <rect
@@ -19208,7 +19225,7 @@ tag = speeder;</desc>
          inkscape:label=""
          transform="rotate(28.759844)">
         <desc
-           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8">type = vehicle; 
+           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8">type = vehicle;
 tag = speeder;</desc>
       </rect>
       <rect
@@ -19221,7 +19238,7 @@ tag = speeder;</desc>
          inkscape:label=""
          transform="rotate(-38.149496)">
         <desc
-           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8-7">type = vehicle; 
+           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8-7">type = vehicle;
 tag = speeder;</desc>
       </rect>
     </g>

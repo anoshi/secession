@@ -14,7 +14,6 @@ class HitboxHandler : Tracker {
 	protected GameModeInvasion@ m_metagame;
 	protected array<const XmlElement@> m_triggerAreas;
 	protected array<string> m_trackedTriggerAreas;
-	array<string> triggerIds;
 
 	protected int m_playerCharacterId;
 	protected float m_localPlayerCheckTimer;
@@ -25,6 +24,50 @@ class HitboxHandler : Tracker {
 	//HitboxHandler(Metagame@ metagame) {}
 		@m_metagame = @metagame;
 		determineTriggerAreasList();
+	}
+
+	// -------------------------------------------------------
+	protected void handleHitboxEvent(const XmlElement@ event) {
+		_log("** SECESSION hitbox event triggered. Running in hitbox_handler.as", 1);
+		// variablise returned handleHitboxEvent event attributes:
+		string sHId = event.getStringAttribute("hitbox_id");
+		string sIType = event.getStringAttribute("instance_type");
+		int iIId = event.getIntAttribute("instance_id");
+		string sPos = ""; // stores the xyz coords of the hitbox
+
+		// is it a trigger area hitbox? If not, this is not the handler you are looking for...
+		if (!startsWith(sHId, "hitbox_trigger_")) {
+			return;
+		}
+
+		// get details about the hitbox that has been entered
+		const array<const XmlElement@> list = getTriggerAreasList();
+		for (uint i = 0; i < list.size(); ++i) {
+			_log("** SECESSION looping through triggerAreasList. Looking for " + sHId, 1);
+			const XmlElement@ thisArea = list[i];
+			if (thisArea.getStringAttribute("id") == sHId) {
+				_log("** SECESSION trigger area found! " + sHId + " has position: " + thisArea.getStringAttribute("position"), 1);
+				sPos = thisArea.getStringAttribute("position");
+			}
+		}
+
+		if (sIType == "character" && iIId == m_playerCharacterId) {
+		// this event concerns our master player, who is being tracked for hitbox collisions via setupCharacterForTracking(int id);
+			_log("** player within trigger area: " + sHId, 1);
+			if (startsWith(sHId, "hitbox_trigger_jumppad")) {
+				_log("hitbox is a jump pad. Spawning jump projectile at location", 1);
+				string spawnComm = "<command class='create_instance' position='" + sPos + "' instance_class='vehicle' instance_key='platform.vehicle' /></command>";
+				m_metagame.getComms().send(spawnComm);
+
+			// const XmlElement@ triggerAreaNode = list[i];
+			// string id = triggerAreaNode.getStringAttribute("id");
+			// string position = triggerAreaNode.getStringAttribute("position");
+
+			}
+			// when we're done handling the event, we may want to clear hitbox checking
+			// (I don't think we want to clear these until the end of each map)
+			//clearTriggerAreaAssociations(m_metagame, "character", m_playerCharacterId, m_trackedTriggerAreas);
+		}
 	}
 
 	// -------------------------------------------------------
@@ -53,7 +96,7 @@ class HitboxHandler : Tracker {
 		}
 
 		m_triggerAreas = list;
-		markTriggerAreas();
+		markTriggerAreas(); // show the centre point of each trigger area with a mark and also on map
 	}
 
 	// -------------------------------------------------------
@@ -61,8 +104,9 @@ class HitboxHandler : Tracker {
 		return m_triggerAreas;
 	}
 
+	// -------------------------------------------------------
 	protected array<const XmlElement@>@ getTriggerAreas(const Metagame@ metagame) {
-		_log("running getTriggerHitboxes in hitbox_handler.as", 1);
+		_log("running getTriggerAreas in hitbox_handler.as", 1);
 		XmlElement@ query = XmlElement(
 			makeQuery(metagame, array<dictionary> = {
 				dictionary = { {"TagName", "data"}, {"class", "hitboxes"} } }));
@@ -82,24 +126,6 @@ class HitboxHandler : Tracker {
 		}
 		_log("* " + triggerList.size() + " trigger areas found", 1);
 		return triggerList;
-	}
-
-	protected void handleHitboxEvent(const XmlElement@ event) {
-		// variablise returned handleHitboxEvent event attributes:
-		string sHId = event.getStringAttribute("hitbox_id");
-		string sIType = event.getStringAttribute("instance_type");
-		int iIId = event.getIntAttribute("instance_id");
-
-		_log("** SECESSION hitbox event triggered. Running in hitbox_handler.as", 1);
-
-		if (sIType == "character" && iIId == m_playerCharacterId) {
-		// this event concerns our master player, who is being tracked for hitbox collisions via setupCharacterForTracking(int id);
-			_log("** player breached trigger area: " + sHId + ". Now what?", 1);
-
-			// when we're done handling the event, we may want to clear hitbox checking
-			// (I don't think we want to clear these until the end of each map)
-			//clearTriggerAreaAssociations(m_metagame, "character", m_playerCharacterId, m_trackedTriggerAreas);
-		}
 	}
 
 	// ----------------------------------------------------
@@ -157,7 +183,7 @@ class HitboxHandler : Tracker {
 		// debug:
         bool showAtScreenEdge = true;
 
-		int offset = 2000;
+		int offset = 2050;
 		for (uint i = 0; i < list.size(); ++i) {
 			const XmlElement@ triggerAreaNode = list[i];
 			string id = triggerAreaNode.getStringAttribute("id");
@@ -180,7 +206,7 @@ class HitboxHandler : Tracker {
 		const array<const XmlElement@> list = getTriggerAreasList();
 		if (list !is null) return;
 
-		int offset = 2000;
+		int offset = 2050;
 		for (uint i = 0; i < list.size(); ++i) {
 			string command = "<command class='set_marker' id='" + offset + "' enabled='0' />";
 			m_metagame.getComms().send(command);
