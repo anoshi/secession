@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.4142139"
-     inkscape:cx="3679.0023"
-     inkscape:cy="1632.4181"
+     inkscape:zoom="2.8284278"
+     inkscape:cx="990.40548"
+     inkscape:cy="1018.7314"
      inkscape:document-units="px"
-     inkscape:current-layer="layer29"
+     inkscape:current-layer="layer8"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -17215,12 +17215,12 @@ tag = speeder;</desc>
          style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465,2.64566929;stroke-dashoffset:0;stroke-opacity:0.97247708;enable-background:new" />
       <rect
          inkscape:label="#rect36349"
-         y="1015.3398"
-         x="939.4483"
-         height="12.236281"
-         width="8.3707685"
-         id="hitbox_trigger_2"
-         style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465,2.64566929;stroke-dashoffset:0;stroke-opacity:0.99047619;enable-background:new" />
+         y="1017.0898"
+         x="939.8233"
+         height="8.2362671"
+         width="7.6207886"
+         id="hitbox_trigger_jumppad_1"
+         style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465, 2.64566929;stroke-dashoffset:0;stroke-opacity:0.99047618;enable-background:new" />
     </g>
     <g
        inkscape:groupmode="layer"

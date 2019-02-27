@@ -34,10 +34,11 @@ class StageConfiguratorInvasion : StageConfigurator {
 	const array<FactionConfig@>@ getAvailableFactionConfigs() const {
 		array<FactionConfig@> availableFactionConfigs;
 
-		availableFactionConfigs.push_back(FactionConfig(-1, "green.xml", "Greenbelts", "0.1 0.5 0", "green_boss.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "grey.xml", "Graycollars", "0.5 0.5 0.5", "grey_boss.xml"));
-		availableFactionConfigs.push_back(FactionConfig(-1, "brown.xml", "Brownpants", "0.5 0.25 0", "brown_boss.xml"));
-
+		availableFactionConfigs.push_back(FactionConfig(-1, "bc.xml", "BlastCorp", "0.2 0.2 0.3", "bc.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "lc.xml", "LifeCraft", "1.0 0.2 0.2", "lc.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "ra.xml", "ReflexArq", "0.5 0.2 0.5", "ra.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "ss.xml", "ScopeSystems", "0.2 0.4 0.2", "ss.xml"));
+		availableFactionConfigs.push_back(FactionConfig(-1, "wt.xml", "WyreTek", "0.0 0.1 0.6", "wt.xml"));
 		return availableFactionConfigs;
 	}
 
@@ -222,18 +223,20 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage1() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "BC Side-Scroll 1";
-		//stage.m_mapInfo.m_name = "Keepsake Bay";
 		stage.m_mapInfo.m_path = "media/packages/secession/maps/side-scroll";
-		//stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map2";
-		stage.m_mapInfo.m_id = "map2";
+
 		//stage.m_mapInfo.m_name = "train intro";
 		//stage.m_mapInfo.m_path = "media/packages/secession/maps/train_intro";
-		//stage.m_mapInfo.m_id = "map2";
+
+		//stage.m_mapInfo.m_name = "Keepsake Bay";
+		//stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map2";
+
+		stage.m_mapInfo.m_id = "map2";
 
 		stage.addTracker(PeacefulLastBase(m_metagame, 0));
 		stage.addTracker(CommsCapacityHandler(m_metagame));
 		stage.m_maxSoldiers = 20 * 2; // sols x bases
-		//stage.m_maxSoldiers = 1 * 2;
+		//stage.m_maxSoldiers = 1 * 2; // train_intro
 
 		stage.m_soldierCapacityVariance = 0.3;
 		stage.m_playerAiCompensation = 2;
@@ -257,9 +260,9 @@ class StageConfiguratorInvasion : StageConfigurator {
 		{
 			Faction f(getFactionConfigs()[1], createCommanderAiCommand(1));
 			//f.m_overCapacity = 30;                                                  // was 0 in 1.65
+      //f.m_capacityOffset = 5;                                                 // was 0 in 1.65
 			f.m_overCapacity = 0;
-      f.m_capacityOffset = 5;                                                 // was 0 in 1.65
-			//f.m_capacityOffset = 0;
+			f.m_capacityOffset = 0;
 			stage.m_factions.insertLast(f);                                         // was 0 in 1.65
 		}
 

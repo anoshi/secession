@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.45254834"
-     inkscape:cx="-2197.7841"
-     inkscape:cy="1768.1018"
+     inkscape:zoom="1.8101934"
+     inkscape:cx="1494.6479"
+     inkscape:cy="1809.915"
      inkscape:document-units="px"
-     inkscape:current-layer="layer29"
+     inkscape:current-layer="layer30"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -18166,7 +18166,24 @@ capturable = 1;</desc>
        style="display:inline"
        inkscape:label="extraction"
        id="layer28"
-       inkscape:groupmode="layer" />
+       inkscape:groupmode="layer">
+      <rect
+         inkscape:label="#rect36349"
+         y="297.42731"
+         x="1537.661"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction3"
+         style="display:inline;enable-background:new;opacity:0.93000034;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709" />
+      <rect
+         inkscape:label="#rect36349"
+         y="860.4234"
+         x="1699.7567"
+         height="9.3364868"
+         width="9.6765137"
+         id="hitbox_extraction2"
+         style="display:inline;opacity:0.93000034;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+    </g>
     <g
        style="display:inline"
        inkscape:label="ladders"

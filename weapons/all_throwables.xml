@@ -17,6 +17,7 @@
 
 	<!-- SECESSION PROJECTILES -->
 	<projectile file="terminal.projectile" />
+	<projectile file="jump_pad.projectile" />
 
 	<!-- CLASS-SPECIFIC THROWABLES -->
 	<!-- GRENADIER -->

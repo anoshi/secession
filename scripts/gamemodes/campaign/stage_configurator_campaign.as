@@ -14,7 +14,7 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 	// ------------------------------------------------------------------------------------------------
 	void setup() {
 		StageConfiguratorInvasion::setup();
-		setupFinalStages();    
+		setupFinalStages();
 
 		setupTransports();
 		setupStartingMaps();
@@ -34,10 +34,10 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 			Faction f(getFactionConfigs()[0], createCommanderAiCommand(0));
 			stage.m_factions.insertLast(f);
 		}
-		
+
 		addFixedSpecialCrates(stage);
 		addRandomSpecialCrates(stage, stage.m_minRandomCrates, stage.m_maxRandomCrates);
-	
+
 		return stage;
 	}
 
@@ -53,7 +53,7 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 
 		return stage;
 	}
-  
+
 	// ------------------------------------------------------------------------------------------------
 	protected void setupNormalStages() {
 		addStage(setupStage1());
@@ -101,14 +101,14 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 	protected void setupTransports() {
 		addTransport("map1", "hitbox_extraction8", "map8");
 		addTransport("map1", "hitbox_extraction6", "map6");
-		addTransport("map1", "hitbox_extraction3", "map3");    
+		addTransport("map1", "hitbox_extraction3", "map3");
 	    addTransport("map1", "hitbox_extraction11", "map11");
 	    addTransport("map1", "hitbox_extraction12", "map12");
 
-		addTransport("map2", "hitbox_extraction8", "map8");
-		addTransport("map2", "hitbox_extraction4", "map4");    
-	    addTransport("map2", "hitbox_extraction11", "map11");
-	    addTransport("map2", "hitbox_extraction12", "map12");
+		//addTransport("map2", "hitbox_extraction8", "map8");
+		addTransport("map2", "hitbox_extraction4", "map4");
+	    //addTransport("map2", "hitbox_extraction11", "map11");
+	    //addTransport("map2", "hitbox_extraction12", "map12");
 
 		addTransport("map3", "hitbox_extraction7", "map7");
 		addTransport("map3", "hitbox_extraction9", "map9");
@@ -118,10 +118,10 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 	    addTransport("map3", "hitbox_extraction12", "map12");
 
 		addTransport("map4", "hitbox_extraction3", "map3");
-		addTransport("map4", "hitbox_extraction3-1", "map3");
-		addTransport("map4", "hitbox_extraction2", "map2");    
-	    addTransport("map4", "hitbox_extraction11", "map11");
-	    addTransport("map4", "hitbox_extraction12", "map12");
+		//addTransport("map4", "hitbox_extraction3-1", "map3");
+		addTransport("map4", "hitbox_extraction2", "map2");
+	    //addTransport("map4", "hitbox_extraction11", "map11");
+	    //addTransport("map4", "hitbox_extraction12", "map12");
 
 		addTransport("map5", "hitbox_extraction6", "map6");
 		addTransport("map5", "hitbox_extraction6-2", "map6");
@@ -143,20 +143,20 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 		addTransport("map8", "hitbox_extraction2", "map2");
 		addTransport("map8", "hitbox_extraction6", "map6");
 		addTransport("map8", "hitbox_extraction1", "map1");
-	    addTransport("map8", "hitbox_extraction11", "map11");  
-	    addTransport("map8", "hitbox_extraction12", "map12");  
+	    addTransport("map8", "hitbox_extraction11", "map11");
+	    addTransport("map8", "hitbox_extraction12", "map12");
 
 		addTransport("map9", "hitbox_extraction9-3", "map3");
 		addTransport("map9", "hitbox_extraction9-6", "map6");
 		addTransport("map9", "hitbox_extraction9-10", "map10");
-	    addTransport("map9", "hitbox_extraction11", "map11");  
-	    addTransport("map9", "hitbox_extraction12", "map12");  
+	    addTransport("map9", "hitbox_extraction11", "map11");
+	    addTransport("map9", "hitbox_extraction12", "map12");
 
 		addTransport("map10", "hitbox_extraction10-5", "map5");
-	    addTransport("map10", "hitbox_extraction10-9", "map9"); 
-	    addTransport("map10", "hitbox_extraction10-9-2", "map9");       
-	    addTransport("map10", "hitbox_extraction11", "map11");  
-	    addTransport("map10", "hitbox_extraction12", "map12");  
+	    addTransport("map10", "hitbox_extraction10-9", "map9");
+	    addTransport("map10", "hitbox_extraction10-9-2", "map9");
+	    addTransport("map10", "hitbox_extraction11", "map11");
+	    addTransport("map10", "hitbox_extraction12", "map12");
 
 		// from 1st final map, map11
 	    addTransport("map11", "hitbox_extraction1", "map1");
@@ -166,10 +166,10 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 	    addTransport("map11", "hitbox_extraction5", "map5");
 	    addTransport("map11", "hitbox_extraction6", "map6");
 	    addTransport("map11", "hitbox_extraction7", "map7");
-	    addTransport("map11", "hitbox_extraction8", "map8");  
-	    addTransport("map11", "hitbox_extraction9", "map9");  
-	    addTransport("map11", "hitbox_extraction10", "map10");  
-	    addTransport("map11", "hitbox_extraction12", "map12");  
+	    addTransport("map11", "hitbox_extraction8", "map8");
+	    addTransport("map11", "hitbox_extraction9", "map9");
+	    addTransport("map11", "hitbox_extraction10", "map10");
+	    addTransport("map11", "hitbox_extraction12", "map12");
 
 		// from 2nd final map, map12
 	    addTransport("map12", "hitbox_extraction1", "map1");
@@ -179,10 +179,10 @@ class StageConfiguratorCampaign : StageConfiguratorInvasion {
 	    addTransport("map12", "hitbox_extraction5", "map5");
 	    addTransport("map12", "hitbox_extraction6", "map6");
 	    addTransport("map12", "hitbox_extraction7", "map7");
-	    addTransport("map12", "hitbox_extraction8", "map8");  
-	    addTransport("map12", "hitbox_extraction9", "map9");  
-	    addTransport("map12", "hitbox_extraction9", "map10");  
-	    addTransport("map12", "hitbox_extraction11", "map11");  
+	    addTransport("map12", "hitbox_extraction8", "map8");
+	    addTransport("map12", "hitbox_extraction9", "map9");
+	    addTransport("map12", "hitbox_extraction9", "map10");
+	    addTransport("map12", "hitbox_extraction11", "map11");
 	}
 
 	// --------------------------------------------

@@ -8,12 +8,9 @@ void main(dictionary@ inputData) {
 
 	UserSettings settings;
 	settings.fromXmlElement(inputSettings);
-	_setupLog(inputSettings);
+	//_setupLog(inputSettings);
+	_setupLog("dev_verbose"); // comment out before go-live
 	settings.print();
-	//array<string> overlays = {
-    //            "media/packages/secession"
-    //    };
-    //    settings.m_overlayPaths = overlays;
 
 	MyGameMode metagame(settings);
 

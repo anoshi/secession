@@ -90,7 +90,7 @@ class Stage {
 	int m_defenseWinTime;
 	string m_defenseWinTimeMode;
 	float m_playerAiCompensation;
-  float m_playerAiReduction;
+  	float m_playerAiReduction;
 
 	// metadata, mostly for instructions comment selection logic
 	string m_primaryObjective;
@@ -259,13 +259,30 @@ class Stage {
 
 	// --------------------------------------------
 	protected void appendCamera(XmlElement@ scene) const {
+		string thisMap = m_mapInfo.m_name;
+		_log("*** SECESSION " + m_mapInfo.m_id + ": " + thisMap + " commencing.", 1);
 		XmlElement camera("camera");
-		//camera.setStringAttribute("direction", camdir);
-		camera.setStringAttribute("direction", "-0.01 -0.21 0.5");
-		//camera.setFloatAttribute("distance", 10.5);
-		camera.setFloatAttribute("distance", 25.5);
-		camera.setFloatAttribute("far_clip", 95.0);
-		camera.setFloatAttribute("shadow_far_clip", 80.0);
+		if (thisMap == 'Train Intro') {
+			camera.setStringAttribute("direction", "-0.01 -0.16 0.5");
+			camera.setFloatAttribute("distance", 12.5);
+			camera.setFloatAttribute("far_clip", 150.0);
+			camera.setFloatAttribute("shadow_far_clip", 150.0);
+		} else if (thisMap == 'BC Side-Scroll 1') {
+			camera.setStringAttribute("direction", "-0.01 -0.21 0.5");
+			camera.setFloatAttribute("distance", 25.5);
+			camera.setFloatAttribute("far_clip", 95.0);
+			camera.setFloatAttribute("shadow_far_clip", 80.0);
+		} else if (thisMap == 'BC Corridor 1') {
+			camera.setStringAttribute("direction", "-0.01 -0.21 0.5");
+			camera.setFloatAttribute("distance", 18.5);
+			camera.setFloatAttribute("far_clip", 80.0);
+			camera.setFloatAttribute("shadow_far_clip", 80.0);
+		} else { // vanilla maps / default cam position
+			camera.setStringAttribute("direction", "-0.3 -1.7 1.0");
+			camera.setFloatAttribute("distance", 36.0);
+			camera.setFloatAttribute("far_clip", 95.0);
+			camera.setFloatAttribute("shadow_far_clip", 80.0);
+		}
 		scene.appendChild(camera);
 	}
 
