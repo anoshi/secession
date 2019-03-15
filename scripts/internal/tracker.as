@@ -56,7 +56,7 @@ abstract class Tracker {
 
 		// check message type and dispatch to a handler
 		string rootName = event.getName();
-		//_log("tracker, rootName: " + rootName, 1);
+		//_log("*** TRACKER, rootName: " + rootName, 1);
 		if (rootName == "match_result") {
 			handleMatchEndEvent(event);
 		} else if (rootName == "query_result") {

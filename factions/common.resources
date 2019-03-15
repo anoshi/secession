@@ -199,6 +199,7 @@
 	<call key="artillery1.call" />
 	<call key="cover_drop.call" />
 	<call key="paratroopers1.call" />
+	<call key="bombing_run.call" />
 	<!-- end RWR calls -->
 
 	<!-- SECESSION calls -->

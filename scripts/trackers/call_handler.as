@@ -57,11 +57,10 @@ class CallHandler : Tracker {
 		string phase = event.getStringAttribute("phase");
 		string sChar = event.getStringAttribute("character_id");
 		int iChar = event.getIntAttribute("character_id");
+		string sCharPosi = getCharacterInfo(m_metagame, iChar).getStringAttribute("position");
 		string sCall = event.getStringAttribute("call_key");
 		string sPosi = event.getStringAttribute("target_position");
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
-		const XmlElement@ char = getCharacterInfo(m_metagame, iChar);
-		//return getGenericObjectInfo(metagame, "character", characterId);
 
 		_log("call made: " + sCall, 1);
 		//_log("call source position: " + getPlayerPosition, 1)
@@ -211,10 +210,15 @@ class CallHandler : Tracker {
 				}
 			}
 		}
-		//else if (sCall == "bombing_run.call") {
-		//	_log("Bombing run from " + charPosi + " to " + sPosi + " queued", 1);
-		// subtract caller pos from target pos to get vector that is dist and dir from target to player.
-		//}
+		else if (sCall == "bombing_run.call") {
+			if (phase == "queue") {
+				_log("Bombing run from " + sCharPosi + " to " + sPosi + " queued", 1);
+			} else if (phase == "launch") {
+				// shouts to DoomMetal @ Discord RUNNING WITH RIFLES #modding
+				//bombingRun(event, caller_position, number, instance_class, instance_key, height)
+      			bombingRun(event, sCharPosi, 10, "grenade", "grenadier_imp.projectile", 20.0);
+			}
+		}
 	////////////////////////
 	//  BlastCorp  Calls  //
 	////////////////////////
@@ -601,6 +605,31 @@ class CallHandler : Tracker {
 			} else if (phase == "end") {
 				_log("finished distributing propaganda", 1);
 			}
+		}
+	}
+
+/////////////////////////////
+// ----- CALL METHODS -----//
+/////////////////////////////
+	protected void bombingRun(const XmlElement@ event, string charPosi, int number, string instanceClass, string instanceKey, float height) {
+		// Get the info we need
+		int characterId = event.getIntAttribute("character_id");
+		Vector3 senderPos = stringToVector3(charPosi);
+		Vector3 targetPos = stringToVector3(event.getStringAttribute("target_position"));
+		// Find the line perpendicular to caller-target
+		Vector3 sightLine = senderPos.subtract(targetPos);
+		// Get x and z coords
+		float sx = sightLine.get_opIndex(0);
+		float sz = sightLine.get_opIndex(2);
+		// Flip x and z coords, make new z negative
+		// Add height to y while we're at it
+		Vector3 perpendicularLine = Vector3(sz, sightLine.get_opIndex(1) + height, -sx);
+		_log("sightLine: " + sightLine.toString(), 1);
+		for (int i = 0; i < number; i++) {
+			int j = i - 20;
+			Vector3 newPos = targetPos.subtract(perpendicularLine.scale(j * 0.05));
+			string c = '<command class="create_instance" faction_id="0" instance_class="' + instanceClass + '" instance_key="' + instanceKey + '" position="' + newPos.toString() + '" offset="0 0 0" />';
+			m_metagame.getComms().send(c);
 		}
 	}
 	// --------------------------------------------
