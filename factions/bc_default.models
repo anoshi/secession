@@ -207,9 +207,9 @@
 		<requirement class="rank" range="0 10000" />
 	</model>
 
-	<!-- ////////////////////////// -->
+	<!-- ///////// -->
 	<!-- high rank -->
-	<!-- ////////////////////////// -->
+	<!-- ///////// -->
 	<model filename="bc_soldier_5stars.xml">
 		<requirement class="rank" range="100 1000" />
 	</model>
