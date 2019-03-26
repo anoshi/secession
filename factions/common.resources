@@ -191,6 +191,8 @@
 	<vehicle key="veh_empl_turret_offline.vehicle" />
 	<vehicle key="veh_terminal.vehicle" />
 	<vehicle key="veh_platform.vehicle" />
+	<vehicle key="veh_repair_bay_large.vehicle" />
+	<vehicle key="veh_repair_bay_small.vehicle" />
 	<!-- end SECESSION vehicles -->
 	<!-- END ALL COMMON VEHICLES -->
 
