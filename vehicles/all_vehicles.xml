@@ -87,6 +87,7 @@
   <vehicle file="veh_platform.vehicle" />
   <vehicle file="veh_repair_bay_large.vehicle" />
   <vehicle file="veh_repair_bay_small.vehicle" />
+  <vehicle file="veh_repair_bay_terminal.vehicle" />
 
   <!-- CLASS-SPECIFIC vehicles -->
   <!-- LightFoot -->

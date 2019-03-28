@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.56"
-     inkscape:cx="3693.8644"
-     inkscape:cy="1602.2752"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="3819.5683"
+     inkscape:cy="1500.6875"
      inkscape:document-units="px"
      inkscape:current-layer="layer29"
      showgrid="true"
@@ -8220,7 +8220,7 @@
          style="font-size:8px;line-height:1.25;font-family:sans-serif">If you change the size, only use the F2 tool.</tspan></text>
     <text
        xml:space="preserve"
-       style="display:inline;enable-background:new;opacity:0.93000034;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#ff0000;fill-opacity:1;stroke:none"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
        x="3848.1062"
        y="449.57797"
        id="text21117-2"><tspan
@@ -8238,10 +8238,10 @@
          x="3848.1062"
          y="469.57797"
          style="font-size:8px;line-height:1.25;font-family:sans-serif"
-         id="tspan3937">can collide with.</tspan></text>
+         id="tspan3937">can collide with. Valid values are: </tspan></text>
     <path
-       style="display:inline;enable-background:new;opacity:0.93000034;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="m 3788.4979,454.29687 46.3114,-0.0147"
+       style="display:inline;opacity:0.93000034;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 3796.7843,455.12551 46.3114,-0.0147"
        id="path21113-2"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -17779,12 +17779,12 @@ alpha_blend = 1;</desc>
     </rect>
     <rect
        inkscape:label="#rect36349"
-       y="445.57761"
-       x="3742.2632"
+       y="446.40625"
+       x="3755.7976"
        height="16.478903"
        width="32.412472"
        id="hitbox_trigger_999"
-       style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465, 2.64566928999999984;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+       style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465, 2.64566929;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
     <text
        id="text7284-3"
        y="417.59497"
@@ -17813,30 +17813,6 @@ alpha_blend = 1;</desc>
          id="tspan7719-3"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">trigger area</tspan></text>
-    <rect
-       style="display:inline;enable-background:new;opacity:0.61600001;fill:#73a00f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709"
-       id="spawn_repair_bay_large-0"
-       width="11.324673"
-       height="22.097088"
-       x="3763.4783"
-       y="508.04523"
-       inkscape:label="">
-      <desc
-         id="desc8927-8-9">type = vehicle;
-key = veh_repair_bay_large.vehicle;</desc>
-    </rect>
-    <rect
-       style="display:inline;enable-background:new;opacity:0.61600001;fill:#bea00f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709"
-       id="spawn_repair_bay_small-0"
-       width="12.105957"
-       height="15.065857"
-       x="3765.0408"
-       y="555.31085"
-       inkscape:label="">
-      <desc
-         id="desc8927-8-22">type = vehicle;
-key = veh_repair_bay_small.vehicle;</desc>
-    </rect>
     <text
        xml:space="preserve"
        style="display:inline;enable-background:new;opacity:0.93000034;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
@@ -17860,12 +17836,12 @@ key = veh_repair_bay_small.vehicle;</desc>
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">repair bay (small)</tspan></text>
     <rect
-       style="display:inline;enable-background:new;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211761999999999;stroke-dashoffset:0.84000003;stroke-opacity:1"
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
        id="spawn_terminal-1-3"
        width="3.3321514"
        height="3.3363316"
-       x="-3768.6592"
-       y="-453.21585"
+       x="-3787.1826"
+       y="-455.2778"
        inkscape:label=""
        transform="rotate(-179.54277)">
       <desc
@@ -17882,6 +17858,54 @@ key = veh_repair_bay_small.vehicle;</desc>
          id="tspan7719-9-0"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">terminal</tspan></text>
+    <rect
+       style="display:inline;opacity:0.61600001;fill:#bea00f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new"
+       id="spawn1_2-3-4-5-0-0"
+       width="11.600886"
+       height="11.600957"
+       x="3776.2295"
+       y="556.47412"
+       inkscape:label="">
+      <desc
+         id="desc8927-8-2-2">type = vehicle;
+key = veh_repair_bay_small.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       id="spawn_terminal-1-3-7-3-4"
+       width="3.3321514"
+       height="3.3363316"
+       x="-2989.9487"
+       y="2374.7517"
+       inkscape:label=""
+       transform="rotate(-132.9425)">
+      <desc
+         id="desc3838-99-9-8-8">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.61600001;fill:#739d0f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new"
+       id="spawn1_2-3-4-5-3"
+       width="11.324673"
+       height="22.097088"
+       x="3776.6001"
+       y="509.26221"
+       inkscape:label="">
+      <desc
+         id="desc8927-8-9">type = vehicle;
+key = veh_repair_bay_large.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       id="spawn_terminal-1-3-7-0"
+       width="3.3321514"
+       height="3.3363316"
+       x="-3082.9666"
+       y="2245.6868"
+       inkscape:label=""
+       transform="rotate(-135.88181)">
+      <desc
+         id="desc3838-99-9-5">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+    </rect>
   </g>
   <g
      style="display:none"
@@ -18942,7 +18966,32 @@ backline = 1;</desc>
        style="display:inline"
        inkscape:label="objects"
        id="layer12"
-       inkscape:groupmode="layer" />
+       inkscape:groupmode="layer">
+      <rect
+         style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+         id="spawn_terminal-1-3-7"
+         width="3.3321514"
+         height="3.3363316"
+         x="-1777.8741"
+         y="425.7562"
+         inkscape:label=""
+         transform="rotate(-135.88181)">
+        <desc
+           id="desc3838-99-9">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+         id="spawn_terminal-1-3-7-3"
+         width="3.3321514"
+         height="3.3363316"
+         x="-1728.8495"
+         y="490.60196"
+         inkscape:label=""
+         transform="rotate(-132.9425)">
+        <desc
+           id="desc3838-99-9-8">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+      </rect>
+    </g>
     <g
        style="display:inline"
        inkscape:label="walls"

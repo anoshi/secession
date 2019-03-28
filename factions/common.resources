@@ -25,6 +25,7 @@
 	<!-- SECESSION weapons -->
 	<weapon key='empl_turret.weapon' />
 	<weapon key='terminal.weapon' />
+	<weapon key='repair_bay.weapon' />
 	<!-- end SECESSION weapons -->
 	<!-- END ALL COMMON WEAPONS -->
 
@@ -193,6 +194,7 @@
 	<vehicle key="veh_platform.vehicle" />
 	<vehicle key="veh_repair_bay_large.vehicle" />
 	<vehicle key="veh_repair_bay_small.vehicle" />
+	<vehicle key="veh_repair_bay_terminal.vehicle" />
 	<!-- end SECESSION vehicles -->
 	<!-- END ALL COMMON VEHICLES -->
 
