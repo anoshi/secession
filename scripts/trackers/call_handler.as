@@ -68,24 +68,6 @@ class CallHandler : Tracker {
 		//_log("distance from source to target: " + getPositionDistance(const Vector3@ pos1, posi), 1);
 		//_log("call effect area: " + area, 1);
 
-	///////////////////////////////////
-	// BNN Mission Dictionary populator
-	///////////////////////////////////
-	// Need to randomise the values of each dict map instead of hard-coded stuff, but this is mk.1 and working
-		dictionary bnn_dict = {
-			{"%activity", "call_handler the thing"},
-			{"%character_name", "char name"},
-			{"%company_name", "Bob Pizza"},
-			{"%location_pickup", "round the corner"},
-			{"%location_drop", "rah bish binnie"},
-			{"%location", "secret loc"},
-			{"%vicinity", "k-mart carpark"},
-			{"%reward_amount", "heaps!"},
-			{"%reward_type", "Pants"},
-			{"%rule_engage", "Kill em all!"},
-			{"%rule_loot", "don't touch!"}
-		};
-
 	////////////////////////
 	//   Common   Calls   //
 	////////////////////////
