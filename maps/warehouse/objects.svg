@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="1.8101934"
-     inkscape:cx="1494.6479"
-     inkscape:cy="1809.915"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="3819.5683"
+     inkscape:cy="1500.6875"
      inkscape:document-units="px"
-     inkscape:current-layer="layer30"
+     inkscape:current-layer="layer29"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -6935,17 +6935,6 @@
          style="stop-color:#4d4d4d;stop-opacity:0;" />
     </linearGradient>
     <filter
-       style="color-interpolation-filters:sRGB"
-       inkscape:collect="always"
-       id="filter10219-6"
-       color-interpolation-filters="sRGB">
-      <feBlend
-         inkscape:collect="always"
-         mode="multiply"
-         in2="BackgroundImage"
-         id="feBlend10221-5" />
-    </filter>
-    <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
        id="filter4390">
@@ -7451,6 +7440,20 @@
        id="pattern9664"
        xlink:href="#Wavy"
        inkscape:collect="always" />
+    <marker
+       style="overflow:visible"
+       id="Arrow2Mend-3-9"
+       refX="0"
+       refY="0"
+       orient="auto"
+       inkscape:stockid="Arrow2Mend">
+      <path
+         inkscape:connector-curvature="0"
+         transform="scale(-0.6)"
+         d="M 8.7185878,4.0337352 -2.2072895,0.01601326 8.7185884,-4.0017078 c -1.7454984,2.3720609 -1.7354408,5.6174519 -6e-7,8.035443 z"
+         style="font-size:12px;fill-rule:evenodd;stroke-width:0.625;stroke-linejoin:round"
+         id="path8804-9-0" />
+    </marker>
     <filter
        style="color-interpolation-filters:sRGB"
        id="filter10219-6-7"
@@ -7520,8 +7523,8 @@
     <rect
        y="150.86073"
        x="2660.2458"
-       height="502.13416"
-       width="18.871338"
+       height="527.72009"
+       width="18.676025"
        id="rect43431-1"
        style="display:inline;fill:#ffff00;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new" />
     <path
@@ -8215,9 +8218,36 @@
          x="3209.7422"
          y="236.13644"
          style="font-size:8px;line-height:1.25;font-family:sans-serif">If you change the size, only use the F2 tool.</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3848.1062"
+       y="449.57797"
+       id="text21117-2"><tspan
+         sodipodi:role="line"
+         id="tspan21181-5"
+         x="3848.1062"
+         y="449.57797"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif">Trigger area. Ensure each is named 'hitbox_trigger_&lt;value&gt;' in</tspan><tspan
+         sodipodi:role="line"
+         x="3848.1062"
+         y="459.57797"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"
+         id="tspan3935">order for the game to detect them as a trigger area the player</tspan><tspan
+         sodipodi:role="line"
+         x="3848.1062"
+         y="469.57797"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"
+         id="tspan3937">can collide with. Valid values are: </tspan></text>
+    <path
+       style="display:inline;opacity:0.93000034;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       d="m 3796.7843,455.12551 46.3114,-0.0147"
+       id="path21113-2"
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="cc" />
   </g>
   <g
-     style="display:inline;opacity:0.93000034"
+     style="display:inline;opacity:1"
      inkscape:label="materials"
      id="layer29"
      inkscape:groupmode="layer">
@@ -10431,7 +10461,7 @@ see_through = 1;
 climbable = 0;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999925, 3.99999925;stroke-dashoffset:6.99999952;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999925, 3.99999925000000012;stroke-dashoffset:6.99999952;stroke-opacity:1;enable-background:new"
        id="spawn2_5"
        width="5.7888808"
        height="6.6684999"
@@ -10443,7 +10473,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-4-9-3">type = vehicle; key = deco_car2_red.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#a5a5a5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000109;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#a5a5a5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000108999999959;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn2_6"
        width="5.7888808"
        height="6.6684999"
@@ -10455,7 +10485,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9">type = vehicle; key = deco_car2_grey.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999908, 3.99999908;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999908, 3.99999907999999982;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn2_3"
        width="5.7888808"
        height="6.6684999"
@@ -10467,7 +10497,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-0">type = vehicle; key = deco_car2_white.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#36f8ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999917, 3.99999917;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#36f8ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999917, 3.99999917000000016;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
        id="spawn3_5"
        width="5.7888808"
        height="6.6684999"
@@ -10479,7 +10509,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-7-1-4-6">type = vehicle; key = deco_car3_sky.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#1acc00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000009, 4.0000009;stroke-dashoffset:7.00000191;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#1acc00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000009, 4.00000089999999986;stroke-dashoffset:7.00000191;stroke-opacity:1;enable-background:new"
        id="spawn4_5"
        width="5.7888808"
        height="6.6684999"
@@ -10491,7 +10521,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-5-4-3-0">type = vehicle; key = deco_pickup_green.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000012, 4.0000012;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000012, 4.00000119999999981;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn2_8"
        width="5.7888808"
        height="6.6684999"
@@ -10503,7 +10533,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-6-0">type = vehicle; key = deco_car2_blue.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000123, 4.00000123;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000123, 4.00000122999999963;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn_2_9"
        width="5.7888808"
        height="6.6684999"
@@ -10515,7 +10545,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-6-9-8">type = vehicle; key = deco_car2_black.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#aa8800;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000012, 4.0000012;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#aa8800;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000012, 4.00000119999999981;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn2_7"
        width="5.7888808"
        height="6.6684999"
@@ -10527,7 +10557,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-6-9-5-13">type = vehicle; key = deco_car2_brown.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000125, 4.00000125;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000125, 4.00000125000000040;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn2_1"
        width="5.7888808"
        height="6.6684999"
@@ -10539,7 +10569,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-6-9-5-9-7">type = vehicle; key = deco_car2_green.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#d2d2d2;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000128, 4.00000128;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#d2d2d2;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000128, 4.00000128000000021;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn2_4"
        width="5.7888808"
        height="6.6684999"
@@ -10551,7 +10581,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-6-9-5-9-3-9">type = vehicle; key = deco_car2_silver.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999912, 3.99999912;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffffff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999912, 3.99999912000000002;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_8"
        width="5.7888808"
        height="6.6684999"
@@ -10563,7 +10593,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-66">type = vehicle; key = deco_car1_white.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999911, 3.99999911;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999911, 3.99999911000000008;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_7"
        width="5.7888808"
        height="6.6684999"
@@ -10575,7 +10605,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-0">type = vehicle; key = deco_car1_blue.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999909, 3.99999909;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#333333;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999909, 3.99999909000000020;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_6"
        width="5.7888808"
        height="6.6684999"
@@ -10587,7 +10617,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-4-8">type = vehicle; key = deco_car1_black.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#c87137;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999907, 3.99999907;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#c87137;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999907, 3.99999906999999988;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_5"
        width="5.7888808"
        height="6.6684999"
@@ -10599,7 +10629,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-4-4-2">type = vehicle; key = deco_car1_brown.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905000000000;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_4"
        width="5.7888808"
        height="6.6684999"
@@ -10611,7 +10641,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-4-4-7-0">type = vehicle; key = deco_car1_green.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999903, 3.99999903;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ff00ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999903, 3.99999903000000012;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_3"
        width="5.7888808"
        height="6.6684999"
@@ -10623,7 +10653,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-4-4-7-9-5">type = vehicle; key = deco_car1_pink.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999901, 3.99999901;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999901, 3.99999900999999980;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_2"
        width="5.7888808"
        height="6.6684999"
@@ -10635,7 +10665,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-4-4-7-9-6-9">type = vehicle; key = deco_car1_yellow.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999912, 3.99999912;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999912, 3.99999912000000002;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_7"
        width="5.7888808"
        height="6.6684999"
@@ -10647,7 +10677,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-8">type = vehicle; key = deco_van_yellow.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#a0892c;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999909, 3.99999909;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#a0892c;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999909, 3.99999909000000020;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_6"
        width="5.7888808"
        height="6.6684999"
@@ -10659,7 +10689,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-2-9">type = vehicle; key = deco_van_brown.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000009, 4.0000009;stroke-dashoffset:7.00000191;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.0000009, 4.00000089999999986;stroke-dashoffset:7.00000191;stroke-opacity:1;enable-background:new"
        id="spawn4_4"
        width="5.7888808"
        height="6.6684999"
@@ -10671,7 +10701,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-5-4-3-6-4">type = vehicle; key = deco_pickup_red.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999915, 3.99999915;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999915, 3.99999914999999984;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn3_4"
        width="5.7888808"
        height="6.6684999"
@@ -10683,7 +10713,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-7-1-4-7-2">type = vehicle; key = deco_car3_green.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#e9ddaf;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000111, 4.00000111;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#e9ddaf;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000111, 4.00000111000000036;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn4_3"
        width="5.7888808"
        height="6.6684999"
@@ -10695,7 +10725,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-5-4-3-6-7-2">type = vehicle; key = deco_pickup_khaki.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000118, 4.00000118;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000118, 4.00000117999999993;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
        id="spawn4_2"
        width="5.7888808"
        height="6.6684999"
@@ -10707,7 +10737,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-5-4-3-6-7-5-8">type = vehicle; key = deco_pickup_yellow.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999923, 3.99999923;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999923, 3.99999922999999979;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
        id="spawn3_3"
        width="5.7888808"
        height="6.6684999"
@@ -10719,7 +10749,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-7-1-4-7-1-7">type = vehicle; key = deco_car3_blue.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999921, 3.99999921;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999921, 3.99999920999999992;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
        id="spawn3_2"
        width="5.7888808"
        height="6.6684999"
@@ -10731,7 +10761,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-7-1-4-7-1-6-9">type = vehicle; key = deco_car3_black.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#f8ea00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999909, 3.99999909;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#f8ea00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999909, 3.99999909000000020;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn2_2"
        width="5.7888808"
        height="6.6684999"
@@ -10743,7 +10773,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-8">type = vehicle; key = deco_car2_yellow.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000074, 4.00000074;stroke-dashoffset:7.00000143;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000074, 4.00000073999999994;stroke-dashoffset:7.00000143;stroke-opacity:1;enable-background:new"
        id="spawn4_1"
        width="5.7888808"
        height="6.6684999"
@@ -10755,7 +10785,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-5-4-3-6-7-5-8-6">type = vehicle; key = deco_pickup_blue.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905000000000;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_5"
        width="5.7888808"
        height="6.6684999"
@@ -10767,7 +10797,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-2-9-9">type = vehicle; key = deco_van_green.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#36f8ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#36f8ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905000000000;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_4"
        width="5.7888808"
        height="6.6684999"
@@ -10779,7 +10809,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-2-9-1">type = vehicle; key = deco_van_sky.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#e9ddaf;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#e9ddaf;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905000000000;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_3"
        width="5.7888808"
        height="6.6684999"
@@ -10791,7 +10821,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-2-9-8">type = vehicle; key = deco_van_khaki.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#0000ff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999905, 3.99999905000000000;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_2"
        width="5.7888808"
        height="6.6684999"
@@ -10803,7 +10833,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-2-9-5">type = vehicle; key = deco_van_blue.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999906, 3.99999906;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999906, 3.99999905999999994;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn5_1"
        width="5.7888808"
        height="6.6684999"
@@ -10815,7 +10845,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-3-2-9-2">type = vehicle; key = deco_van_red.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.9999992, 3.9999992;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.9999992, 3.99999919999999998;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
        id="spawn3_1"
        width="5.7888808"
        height="6.6684999"
@@ -10827,7 +10857,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-7-1-4-7-1-6-9-7">type = vehicle; key = deco_car3_yellow.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999897, 3.99999897;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999897, 3.99999897000000004;stroke-dashoffset:6.99999809;stroke-opacity:1;enable-background:new"
        id="spawn1_1"
        width="5.7888808"
        height="6.6684999"
@@ -10839,7 +10869,7 @@ climbable = 0;</desc>
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-2-6-7-2-6-4-4-7-9-6-9-0">type = vehicle; key = deco_car1_red.vehicle;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999918, 3.99999918;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:3.99999918, 3.99999918000000010;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
        id="spawn3_6"
        width="5.7888808"
        height="6.6684999"
@@ -11166,7 +11196,7 @@ climbable = 0;</desc>
          id="desc32550-2">template = bush5; offset = 0 -0.0 0;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:#00ff00;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:0.60000001, 0.60000001;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:#00ff00;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:0.60000001, 0.60000001000000003;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect14642-1-94-86-5-54-1-22-1-17-1"
        width="5.3120146"
        height="5.3120146"
@@ -11186,7 +11216,7 @@ climbable = 0;</desc>
        height="2.6560073"
        width="2.6560073"
        id="rect11363"
-       style="display:inline;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:#00ff00;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:0.60000002, 0.60000002;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#008000;fill-opacity:1;fill-rule:nonzero;stroke:#00ff00;stroke-width:0.60000002;stroke-miterlimit:4;stroke-dasharray:0.60000002, 0.60000001999999997;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
       <title
          id="title11365">bush3_1</title>
       <desc
@@ -11410,7 +11440,7 @@ climbable = 0;</desc>
          id="desc6925-5-6-2-1">template = chairset_chair;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#855e00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.79999995;stroke-dasharray:5.99999947, 1.99999973;stroke-dashoffset:1.59999979;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#855e00;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:2.79999995;stroke-dasharray:5.99999947, 1.99999973000000009;stroke-dashoffset:1.59999979;stroke-opacity:1;enable-background:new"
        id="mesh923-5-7-7-9"
        width="2.6240289"
        height="1.5191746"
@@ -12343,7 +12373,7 @@ visual_hitbox_size = 2 2 2;
     </rect>
     <path
        style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-       d="M 2696.3825,151.76594 V 626.52326"
+       d="M 2696.3825,150.78938 V 678.55035"
        id="path8566-5-8-1-1"
        inkscape:connector-curvature="0"
        sodipodi:nodetypes="cc" />
@@ -12369,7 +12399,7 @@ visual_hitbox_size = 2 2 2;
        height="7.3961515"
        width="3.982286"
        id="spawn1-3-7"
-       style="display:inline;fill:#007cff;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:12.01889764, 12.01889764;stroke-dashoffset:4.60724401;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#007cff;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-miterlimit:4;stroke-dasharray:12.01889764, 12.01889764000000049;stroke-dashoffset:4.60724401;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-7-40">type = vehicle;
 tag = jeep;</desc>
@@ -12410,7 +12440,7 @@ tag = jeep;</desc>
        height="7.3961515"
        width="3.982286"
        id="spawn1-70-1-4-9-1-9"
-       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999945, 11.99999945;stroke-dashoffset:4.5999999;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#008000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999945, 11.99999945000000068;stroke-dashoffset:4.5999999;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-9-7-0-4-7-4">type = vehicle;
 key = armored_truck.vehicle;</desc>
@@ -12437,7 +12467,7 @@ key = armored_truck.vehicle;</desc>
        height="7.3961515"
        width="3.982286"
        id="spawn1-1-1-1-8"
-       style="display:inline;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999964, 11.99999964;stroke-dashoffset:4.5999999;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#ff7f2a;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999964, 11.99999964000000041;stroke-dashoffset:4.5999999;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-740-7-7-8">type = vehicle;
 tag = apc;</desc>
@@ -12457,7 +12487,7 @@ tag = apc;</desc>
            style="font-family:sans-serif" /></flowRegion><flowPara
          id="flowPara20897"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">APC</flowPara></flowRoot>    <rect
-       style="display:inline;fill:#d40000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99999991, 3.99999974;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#d40000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.99999991, 3.99999973999999980;stroke-dashoffset:6.99999857;stroke-opacity:1;enable-background:new"
        id="spawn1-70-3-9-5"
        width="5.7888808"
        height="6.6684999"
@@ -12491,7 +12521,7 @@ tag = apc;</desc>
          y="1061.6345"
          style="font-size:10px;line-height:1.25;font-family:sans-serif"> </tspan></text>
     <rect
-       style="display:inline;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000106, 12.00000106;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#4d4d4d;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000106, 12.00000106000000066;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
        id="spawn1-1-4-2-1-0-9"
        width="3.982286"
        height="7.3961515"
@@ -12515,7 +12545,7 @@ tag = tank;</desc>
          y="276.11179"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">tank</tspan></text>
     <rect
-       style="display:inline;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000088, 12.00000088;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000088, 12.00000088000000176;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
        id="spawn1-1-4-2-1-1-0-6-2-4"
        width="3.982286"
        height="7.3961515"
@@ -12539,7 +12569,7 @@ key = cargo_truck.vehicle;</desc>
          y="452.02963"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">cargo truck</tspan></text>
     <rect
-       style="display:inline;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999879, 11.99999879;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#00ff00;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999879, 11.99999878999999936;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new"
        id="spawn1-70-6-0-5-9"
        width="3.982286"
        height="7.3961515"
@@ -12563,7 +12593,7 @@ tag = truck;</desc>
          y="305.10901"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">transport truck</tspan></text>
     <rect
-       style="display:inline;fill:#6c5353;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.00000013, 4.00000056;stroke-dashoffset:6.99999952;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#6c5353;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:2.00000013, 4.00000056000000015;stroke-dashoffset:6.99999952;stroke-opacity:1;enable-background:new"
        id="spawn1-70-3-1"
        width="5.7888808"
        height="6.6684999"
@@ -12637,7 +12667,7 @@ key = radar_tower.vehicle;
          y="518.88794"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">radar tower</tspan></text>
     <rect
-       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999876, 11.99999876;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#000000;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999876, 11.99999876000000043;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new"
        id="spawn1-70-6-0-5-9-1"
        width="3.982286"
        height="7.3961515"
@@ -12721,7 +12751,7 @@ key = radar_truck.vehicle;</desc>
          style="font-size:10px;line-height:1.25;font-family:sans-serif">base</tspan></text>
     <rect
        transform="rotate(0.08978138)"
-       style="display:inline;opacity:0.5;fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999988;stroke-dashoffset:5;stroke-opacity:1;enable-background:new"
+       style="display:inline;opacity:0.5;fill:none;stroke:#000000;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999987999999984;stroke-dashoffset:5;stroke-opacity:1;enable-background:new"
        id="rect91118"
        width="45.429642"
        height="46.488388"
@@ -12738,7 +12768,7 @@ key = radar_truck.vehicle;</desc>
        height="46.488449"
        width="45.429886"
        id="rect91923"
-       style="display:inline;opacity:0.5;fill:none;stroke:#afafaf;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999988;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;opacity:0.5;fill:none;stroke:#afafaf;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999987999999984;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        transform="rotate(0.08978138)">
       <desc
          id="desc91925">name=Aqualand;</desc>
@@ -13067,28 +13097,6 @@ key = radar_truck.vehicle;</desc>
          id="tspan25145"
          sodipodi:role="line"
          style="font-size:8px;line-height:1.25;font-family:sans-serif">lighthouse</tspan></text>
-    <text
-       id="text25147"
-       y="1646.0852"
-       x="2603.5303"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         y="1646.0852"
-         x="2603.5303"
-         id="tspan25149"
-         sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">stash</tspan></text>
-    <text
-       id="text25151"
-       y="1675.3821"
-       x="2603.4873"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none"
-       xml:space="preserve"><tspan
-         y="1675.3821"
-         x="2603.4873"
-         id="tspan25153"
-         sodipodi:role="line"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">armory</tspan></text>
     <text
        id="text25163"
        y="1757.1628"
@@ -13612,118 +13620,6 @@ key = radio_jammer.vehicle;
 </desc>
     </rect>
     <rect
-       style="display:inline;fill:#800000;fill-opacity:1;stroke:#000000;enable-background:new"
-       id="mesh3-9-9-5-4-6-2-55-94"
-       width="6"
-       height="8"
-       x="2757.8716"
-       y="1667.6667"
-       inkscape:label="#mesh_template">
-      <title
-         id="title33916-8">armory</title>
-      <desc
-         id="desc6851-7-7-8">name = armory; mesh_name = armory.mesh; texture0 = armory.png; collision_model_type = 1; collision_model_size = 3 3.5 5.4;</desc>
-    </rect>
-    <rect
-       inkscape:label=""
-       y="-1573.5734"
-       x="-2788.8176"
-       height="4"
-       width="4"
-       id="item_supply2-2-4"
-       style="display:inline;fill:#de8787;fill-opacity:1;enable-background:new"
-       transform="rotate(-178.06243)">
-      <desc
-         id="desc9425-9-0">type = weapon_rack;</desc>
-    </rect>
-    <rect
-       style="display:inline;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;filter:url(#filter10219-6);enable-background:new"
-       id="mesh3-9-9-5-4-6-2-55-9-7-1"
-       width="6"
-       height="8"
-       x="1556.3521"
-       y="-104.72078"
-       inkscape:label="#mesh"
-       transform="rotate(-179.69258,2148.0477,783.44477)">
-      <title
-         id="title33916-4-7-0">armory</title>
-      <desc
-         id="desc6851-7-7-1-7-9">template = armory;</desc>
-    </rect>
-    <rect
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       id="mesh3-9-9-5-4-6-2-55-1-4-5-93-8-2-2-1-0-3-94"
-       width="12.982038"
-       height="12.153398"
-       x="1496.7841"
-       y="-2818.7212"
-       inkscape:label="#mesh"
-       transform="rotate(92.929897)">
-      <title
-         id="title14238-8-76-4-2-3-0-7-3-3-8">weapon_rack</title>
-      <desc
-         id="desc6851-7-7-7-8-1-4-6-1-0-7-8-7-8">template = weapon_rack;</desc>
-    </rect>
-    <path
-       style="display:inline;fill:#008000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-       d="m 2726.63,1645.77 0.2218,-5.8578 10.165,0.1483 -0.2146,6.0563"
-       id="wall37832-1-7-0-43-24"
-       inkscape:connector-curvature="0"
-       inkscape:label=""
-       sodipodi:nodetypes="cccc">
-      <desc
-         id="desc37834-46-7-1-8-5">template = InvisibleWall1;</desc>
-    </path>
-    <rect
-       inkscape:label=""
-       y="1559.1335"
-       x="2780.427"
-       height="4"
-       width="4"
-       id="item_supply2-2-4-8-388-7-0-3-2-0-51"
-       style="display:inline;fill:#de8787;fill-opacity:1;enable-background:new"
-       transform="rotate(1.80081)">
-      <desc
-         id="desc19397-9-7-3-5-8-7">type = stash;</desc>
-    </rect>
-    <rect
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       id="mesh3-9-9-5-4-6-2-55-1-4-5-93-8-2-2-1-0-3-8"
-       width="12.982038"
-       height="12.153398"
-       x="1494.5016"
-       y="-2847.2732"
-       inkscape:label="#mesh_template"
-       transform="rotate(92.929897)">
-      <title
-         id="title14238-8-76-4-2-3-0-7-3-3-0-1">weapon_rack</title>
-      <desc
-         id="desc6851-7-7-7-8-1-4-6-1-0-7-8-7-6-1">name = weapon_rack; mesh_name = weapon_rack.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 4 0 8 8; collision_model_type = 0; collision_model_size = 1.4 1.4 2.2; collision_model_offset = 0 0 0;
-alpha_blend = 1;</desc>
-    </rect>
-    <path
-       style="display:inline;fill:#008000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-       d="m 2755.2613,1644.9499 0.2218,-5.8578 10.165,0.1483 -0.2146,6.0563"
-       id="wall37832-1-7-0-43-8"
-       inkscape:connector-curvature="0"
-       inkscape:label=""
-       sodipodi:nodetypes="cccc">
-      <desc
-         id="desc37834-46-7-1-8-1-5">template = InvisibleWall1;</desc>
-    </path>
-    <rect
-       inkscape:label=""
-       y="1557.4143"
-       x="2809.0183"
-       height="4"
-       width="4"
-       id="item_supply2-2-4-8-388-7-0-3-2-0-9"
-       style="display:inline;fill:#de8787;fill-opacity:1;enable-background:new"
-       transform="rotate(1.80081)">
-      <desc
-         id="desc19397-9-7-3-5-8-8">type = stash;</desc>
-    </rect>
-    <rect
        style="display:inline;fill:#008000;fill-opacity:1;stroke:none;enable-background:new"
        id="mesh_template11-7-1-5"
        width="11.923013"
@@ -14185,7 +14081,7 @@ climb_type = 0;
          id="desc16653-2-9-3-3-8-7-0-7-9">name = barell_red; mesh_name = barell.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 10 16 32 32; collision_model_type = 0; collision_model_size = 1.2 1.4 1.2; penetrability = 0.4;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000122, 1.00000122;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000122, 1.00000121999999991;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect16633-4-8-7-6-9-9-3"
        width="3.411628"
        height="5.9932504"
@@ -14198,7 +14094,7 @@ climb_type = 0;
          id="desc16653-2-9-3-3-2-6">name = barbwire; mesh_name = barbwire.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 1 9 16 16; collision_model_type = 1; collision_model_size = 1.4 1.4 2.8; collision_model_offset = 0 0 0; walkable = 0; alpha_blend = 1; penetrability = 0.8; see_through = 1;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000246;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000246000000015;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect16633-4-8-7-6-8-1"
        width="1.8432783"
        height="9.5349865"
@@ -14289,7 +14185,7 @@ climb_type = 0;
          id="desc16653-2-9-3-3-8-7-0-7-4-6-1-5">template = barell_blue;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000247;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000247000000009;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect16633-4-8-7-6-0-2"
        width="1.8432783"
        height="9.5349865"
@@ -14304,7 +14200,7 @@ climb_type = 0;
          id="desc16653-2-9-3-6-0">template = barrier;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000123, 1.00000123;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000123, 1.00000123000000007;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect16633-4-8-7-6-9-9-5-7-48"
        width="3.411628"
        height="5.9932504"
@@ -14319,7 +14215,7 @@ climb_type = 0;
          id="desc16653-2-9-3-3-2-2-3-7">template = barbwire;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000246;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000246000000015;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect16633-4-8-7-6-8-1-8"
        width="3.11585"
        height="3.1687195"
@@ -14338,7 +14234,7 @@ penetrability = 0;
 see_through = 0;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000247;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#ffffff;fill-opacity:1;fill-rule:nonzero;stroke:#ff0000;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000118, 2.00000247000000009;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect16633-4-8-7-6-0-2-9"
        width="2.9338198"
        height="2.9869075"
@@ -15026,17 +14922,17 @@ visual_hitbox_size = 3.5 10 3.5;
          style="font-size:40px;line-height:1.25;font-family:sans-serif">config</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot23796"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ec6c3d;fill-opacity:1;stroke:none;enable-background:new;"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ec6c3d;fill-opacity:1;stroke:none;enable-background:new"
        transform="translate(-780.77372,-22.099102)"
        inkscape:label="#flowRoot9399-4-1-5"><flowRegion
          id="flowRegion23798"
-         style="font-family:sans-serif;fill:#ec6c3d;fill-opacity:1;"><rect
+         style="font-family:sans-serif;fill:#ec6c3d;fill-opacity:1"><rect
            id="rect23800"
            width="269.73715"
            height="228.1579"
            x="-1066.7211"
            y="-182.41685"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ec6c3d;fill-opacity:1;" /></flowRegion><flowPara
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:40px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start;fill:#ec6c3d;fill-opacity:1" /></flowRegion><flowPara
          id="flowPara23806"
          style="font-size:40px;line-height:1.25;font-family:sans-serif;fill:#ec313d;fill-opacity:1;-inkscape-font-specification:'sans-serif, Bold';font-weight:bold;font-style:normal;font-stretch:normal;font-variant:normal;text-anchor:start;text-align:start;writing-mode:lr;font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal">general</flowPara><flowPara
          id="flowPara23808"
@@ -15227,7 +15123,8 @@ visual_hitbox_size = 3.5 10 3.5;
          style="font-size:10px;line-height:1.25;font-family:sans-serif">brick wall</tspan></text>
     <g
        id="g18736"
-       transform="translate(0,6)">
+       transform="translate(0,6)"
+       style="">
       <path
          sodipodi:nodetypes="cc"
          style="color:#000000;display:inline;overflow:visible;visibility:visible;fill:none;stroke:#cb0000;stroke-width:1.5;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;marker:none;enable-background:new"
@@ -15254,7 +15151,8 @@ top_material = terrain;</desc>
     </g>
     <g
        id="g18722"
-       transform="translate(0,11.5)">
+       transform="translate(0,11.5)"
+       style="">
       <path
          sodipodi:nodetypes="cc"
          inkscape:label="#path7943_platform"
@@ -15535,7 +15433,7 @@ collision_model_size =0.4 8.5 0.4;</desc>
        height="7.3961515"
        width="3.982286"
        id="spawn1-70-1-4-9-17-2-25-2-6-1-52"
-       style="display:inline;fill:#ffd5d5;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999972, 11.99999972;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#ffd5d5;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999972, 11.99999972000000170;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-9-7-0-4-4-3-3-9-2-1-7">type = vehicle;
 key = mobile_armory.vehicle;</desc>
@@ -15555,7 +15453,8 @@ key = mobile_armory.vehicle;</desc>
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:10px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
          id="flowPara12851"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">armory truck</flowPara></flowRoot>    <g
-       id="g12962">
+       id="g12962"
+       style="">
       <path
          style="display:inline;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
          d="m 3074.7834,629.14368 4.0081,-4.3083 -0.041,-6.427 -5.1025,-3.23188"
@@ -15752,12 +15651,14 @@ separator_depth = 0.7;</desc>
        id="flowRoot12115"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        transform="translate(-115.69342,1343.6184)"><flowRegion
-         id="flowRegion12117"><rect
+         id="flowRegion12117"
+         style=""><rect
            id="rect12119"
            width="131.52182"
            height="53.740112"
            x="-1503.309"
-           y="-118.57512" /></flowRegion><flowPara
+           y="-118.57512"
+           style="" /></flowRegion><flowPara
          id="flowPara12121"
          style="font-size:18.66666603px">SS sandbag</flowPara></flowRoot>    <rect
        style="display:inline;opacity:0.93000034;fill:#bc5514;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000108999999959;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
@@ -15854,12 +15755,14 @@ separator_depth = 0.7;</desc>
        id="flowRoot12115-5"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        transform="translate(-115.54334,1041.0657)"><flowRegion
-         id="flowRegion12117-5"><rect
+         id="flowRegion12117-5"
+         style=""><rect
            id="rect12119-2"
            width="131.52182"
            height="53.740112"
            x="-1503.309"
-           y="-118.57512" /></flowRegion><flowPara
+           y="-118.57512"
+           style="" /></flowRegion><flowPara
          id="flowPara12121-3"
          style="font-size:18.66666603px">BC sandbag</flowPara></flowRoot>    <rect
        inkscape:label="#wall_template"
@@ -15895,12 +15798,14 @@ separator_depth = 0.7;</desc>
        id="flowRoot12115-1"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        transform="translate(-114.54334,1154.0657)"><flowRegion
-         id="flowRegion12117-9"><rect
+         id="flowRegion12117-9"
+         style=""><rect
            id="rect12119-8"
            width="131.52182"
            height="53.740112"
            x="-1503.309"
-           y="-118.57512" /></flowRegion><flowPara
+           y="-118.57512"
+           style="" /></flowRegion><flowPara
          id="flowPara12121-0"
          style="font-size:18.66666603px">LC sandbag</flowPara></flowRoot>    <rect
        inkscape:label="#wall_template"
@@ -15936,12 +15841,14 @@ separator_depth = 0.7;</desc>
        id="flowRoot12115-2"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        transform="translate(-116.54334,1248.0656)"><flowRegion
-         id="flowRegion12117-4"><rect
+         id="flowRegion12117-4"
+         style=""><rect
            id="rect12119-23"
            width="131.52182"
            height="53.740112"
            x="-1503.309"
-           y="-118.57512" /></flowRegion><flowPara
+           y="-118.57512"
+           style="" /></flowRegion><flowPara
          id="flowPara12121-5"
          style="font-size:18.66666603px">RA sandbag</flowPara></flowRoot>    <rect
        inkscape:label="#wall_template"
@@ -15977,12 +15884,14 @@ separator_depth = 0.7;</desc>
        id="flowRoot12115-11"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        transform="translate(-110.54334,1447.0656)"><flowRegion
-         id="flowRegion12117-0"><rect
+         id="flowRegion12117-0"
+         style=""><rect
            id="rect12119-4"
            width="131.52182"
            height="53.740112"
            x="-1503.309"
-           y="-118.57512" /></flowRegion><flowPara
+           y="-118.57512"
+           style="" /></flowRegion><flowPara
          id="flowPara12121-1"
          style="font-size:18.66666603px">WT sandbag</flowPara></flowRoot>    <rect
        transform="rotate(-179.91348,0.38657514,512)"
@@ -16037,7 +15946,7 @@ walkable = 1;</desc>
        height="5.9932504"
        width="3.411628"
        id="rect16633-4-8-7-6-9-9-3-7"
-       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000122, 1.00000122;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000122, 1.00000121999999991;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
       <desc
          id="desc16653-2-9-3-3-2-6-9">name = barbwire; mesh_name = barbwire.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 1 9 16 16; collision_model_type = 1; collision_model_size = 1.4 1.4 2.8; collision_model_offset = 0 0 0; walkable = 0; alpha_blend = 1; penetrability = 0.8; see_through = 1;</desc>
     </rect>
@@ -16050,7 +15959,7 @@ walkable = 1;</desc>
        height="5.9932504"
        width="3.411628"
        id="rect16633-4-8-7-6-9-9-5-7-48-7"
-       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000123, 1.00000123;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#6a6a6a;fill-opacity:1;fill-rule:nonzero;stroke:#ffff00;stroke-width:1.00000119;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.00000123, 1.00000123000000007;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
       <title
          id="title12523-8-5-0">barbwire</title>
       <desc
@@ -16524,83 +16433,6 @@ backline =1;</desc>
          id="desc10288-1-3-5-6">template=furrow_height2;</desc>
     </rect>
     <rect
-       inkscape:label="#mesh_template"
-       y="2256.9597"
-       x="2749.5005"
-       height="8"
-       width="6"
-       id="mesh3-9-9-5-4-6-2-55"
-       style="display:inline;fill:#800000;fill-opacity:1;stroke:#000000;enable-background:new">
-      <title
-         id="title33916">armory</title>
-      <desc
-         id="desc6851-7-7">name = armory; mesh_name = armory.mesh; texture0 = armory.png; collision_model_type = 1; collision_model_size = 3 3.5 5.4;</desc>
-    </rect>
-    <flowRoot
-       transform="translate(67.690662,538.69189)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       id="flowRoot7939-9-85-4-1-1-1-8-9"
-       xml:space="preserve"><flowRegion
-         id="flowRegion7941-4-1-8-52-38-1-7"
-         style="font-family:sans-serif"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="1737.8438"
-           x="2703.906"
-           height="30.859373"
-           width="76.171867"
-           id="rect7943-6-32-8-7-7-5-4" /></flowRegion><flowPara
-         id="flowPara21245"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">stash</flowPara></flowRoot>    <flowRoot
-       transform="translate(69.261362,510.65089)"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       id="flowRoot7939-9-85-4-1-1-1-8-7"
-       xml:space="preserve"><flowRegion
-         id="flowRegion7941-4-1-8-52-38-1-7-7"
-         style="font-family:sans-serif"><rect
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start"
-           y="1737.8438"
-           x="2703.906"
-           height="30.859373"
-           width="76.171867"
-           id="rect7943-6-32-8-7-7-5-4-9" /></flowRegion><flowPara
-         id="flowPara21274"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">armory</flowPara></flowRoot>    <rect
-       transform="rotate(-178.06243)"
-       style="display:inline;fill:#de8787;fill-opacity:1;enable-background:new"
-       id="item_supply2-2-4-9"
-       width="4"
-       height="4"
-       x="-2800.3755"
-       y="-2162.8127"
-       inkscape:label="">
-      <desc
-         id="desc9425-9-0-1">type = weapon_rack;</desc>
-    </rect>
-    <rect
-       transform="rotate(-179.69258,2144.6526,1078.1025)"
-       inkscape:label="#mesh"
-       y="-104.72078"
-       x="1556.3521"
-       height="8"
-       width="6"
-       id="mesh3-9-9-5-4-6-2-55-9-7-1-7"
-       style="display:inline;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;filter:url(#filter10219-6-7);enable-background:new">
-      <title
-         id="title33916-4-7-0-2">armory</title>
-      <desc
-         id="desc6851-7-7-1-7-9-3">template = armory;</desc>
-    </rect>
-    <path
-       sodipodi:nodetypes="ccccc"
-       inkscape:label=""
-       inkscape:connector-curvature="0"
-       id="wall126-9"
-       d="m 2727.3759,2243.673 -12.26,8.004 0.2535,17.1594 16.029,0.3042 0.1424,-17.1803"
-       style="display:inline;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new">
-      <desc
-         id="desc11325-6">template = SecurityFence1;</desc>
-    </path>
-    <rect
        transform="rotate(89.571832)"
        inkscape:label="#mesh_template"
        y="-2747.4651"
@@ -16771,7 +16603,7 @@ penetrability = 0.9; see_through = 1;</desc>
        height="7.3961515"
        width="3.982286"
        id="spawn1-1-1-1-9"
-       style="display:inline;fill:#007cff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000031, 12.00000031;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#007cff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000031, 12.00000031000000078;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-740-7-7-2">type = vehicle; tag = tank;</desc>
     </rect>
@@ -16881,7 +16713,7 @@ penetrability = 0.9; see_through = 1;</desc>
        height="7.3961515"
        width="3.982286"
        id="spawn1-1-4-2-1-1-02"
-       style="display:inline;fill:#007cff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999972, 11.99999972;stroke-dashoffset:4.5999999;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#007cff;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999972, 11.99999972000000170;stroke-dashoffset:4.5999999;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-7-0-45-7-9-4">type = vehicle; key = cargo_truck.vehicle;</desc>
     </rect>
@@ -17033,86 +16865,6 @@ collision_model_type = -1;
       <desc
          id="desc16396-8-0-4">template = HangarWall;</desc>
     </path>
-    <path
-       inkscape:label="#path7454"
-       sodipodi:nodetypes="ccccccccc"
-       inkscape:connector-curvature="0"
-       id="avoid1-7-7-0-9"
-       d="m 2735.2992,2278.9785 2.1556,7.8436 -1.5508,6.9648 -8.0943,4.7336 -9.5249,-3.4023 -1.8705,-6.7187 0.6308,-7.3642 8.7673,-3.8187 z"
-       style="display:inline;fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#Arrow2Mend-3);enable-background:new" />
-    <rect
-       transform="rotate(92.929897)"
-       inkscape:label="#mesh"
-       y="-2846.3528"
-       x="2138.1824"
-       height="12.153398"
-       width="12.982038"
-       id="mesh3-9-9-5-4-6-2-55-1-4-5-93-8-2-2-1-0-3-94-8"
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new">
-      <title
-         id="title14238-8-76-4-2-3-0-7-3-3-8-0">weapon_rack</title>
-      <desc
-         id="desc6851-7-7-7-8-1-4-6-1-0-7-8-7-8-4">template = weapon_rack;</desc>
-    </rect>
-    <path
-       sodipodi:nodetypes="cccc"
-       inkscape:label=""
-       inkscape:connector-curvature="0"
-       id="wall37832-1-7-0-43-24-6"
-       d="m 2721.4408,2287.7425 0.2218,-5.8578 10.165,0.1483 -0.2146,6.0563"
-       style="display:inline;fill:#008000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new">
-      <desc
-         id="desc37834-46-7-1-8-5-0">template = InvisibleWall1;</desc>
-    </path>
-    <rect
-       transform="rotate(1.80081)"
-       style="display:inline;fill:#de8787;fill-opacity:1;enable-background:new"
-       id="item_supply2-2-4-8-388-7-0-3-2-0-51-3"
-       width="4"
-       height="4"
-       x="2795.4146"
-       y="2200.9521"
-       inkscape:label="">
-      <desc
-         id="desc19397-9-7-3-5-8-7-2">type = stash;</desc>
-    </rect>
-    <rect
-       transform="rotate(92.929897)"
-       inkscape:label="#mesh_template"
-       y="-2874.9048"
-       x="2135.8999"
-       height="12.153398"
-       width="12.982038"
-       id="mesh3-9-9-5-4-6-2-55-1-4-5-93-8-2-2-1-0-3-8-6"
-       style="display:inline;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new">
-      <title
-         id="title14238-8-76-4-2-3-0-7-3-3-0-1-9">weapon_rack</title>
-      <desc
-         id="desc6851-7-7-7-8-1-4-6-1-0-7-8-7-6-1-4">name = weapon_rack; mesh_name = weapon_rack.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 4 0 8 8; collision_model_type = 0; collision_model_size = 1.4 1.4 2.2; collision_model_offset = 0 0 0;
-alpha_blend = 1;</desc>
-    </rect>
-    <path
-       sodipodi:nodetypes="cccc"
-       inkscape:label=""
-       inkscape:connector-curvature="0"
-       id="wall37832-1-7-0-43-8-1"
-       d="m 2750.0721,2286.9224 0.2218,-5.8578 10.165,0.1483 -0.2146,6.0563"
-       style="display:inline;fill:#008000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new">
-      <desc
-         id="desc37834-46-7-1-8-1-5-3">template = InvisibleWall1;</desc>
-    </path>
-    <rect
-       transform="rotate(1.80081)"
-       style="display:inline;fill:#de8787;fill-opacity:1;enable-background:new"
-       id="item_supply2-2-4-8-388-7-0-3-2-0-9-7"
-       width="4"
-       height="4"
-       x="2824.0059"
-       y="2199.2329"
-       inkscape:label="">
-      <desc
-         id="desc19397-9-7-3-5-8-8-8">type = stash;</desc>
-    </rect>
     <rect
        style="display:inline;fill:#855e00;fill-opacity:1;stroke:none;enable-background:new"
        id="rect3971-1-0-8-0-4-8-3"
@@ -17154,87 +16906,6 @@ visual_hitbox_size = 3 16 3;
 </desc>
     </rect>
     <rect
-       style="display:inline;fill:#00ffff;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="spawn1-70-1-4-922-9-1-4"
-       width="7"
-       height="7"
-       x="2599.1267"
-       y="-2711.958"
-       inkscape:label=""
-       transform="rotate(89.701088)">
-      <desc
-         id="desc152873-6-7-9">type = vehicle;
-key = aa_emplacement.vehicle;</desc>
-    </rect>
-    <flowRoot
-       xml:space="preserve"
-       id="flowRoot14247-1"
-       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       transform="translate(55.059162,846.20629)"><flowRegion
-         id="flowRegion14249-7"
-         style="font-family:sans-serif"><rect
-           id="rect14251-5"
-           width="76.171867"
-           height="30.859373"
-           x="2703.906"
-           y="1737.8438"
-           style="font-size:8px;font-family:sans-serif" /></flowRegion><flowPara
-         id="flowPara14255-5"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">anti-air</flowPara></flowRoot>    <rect
-       transform="rotate(89.701088)"
-       inkscape:label=""
-       y="-2711.8989"
-       x="2610.4546"
-       height="7"
-       width="7"
-       id="spawn44-4"
-       style="display:inline;fill:#0000ff;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
-      <desc
-         id="desc14261-1">type = vehicle;
-key = water_tower.vehicle;</desc>
-    </rect>
-    <rect
-       style="display:inline;fill:#008000;stroke:#ffff00;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="spawn66-8"
-       width="7"
-       height="7"
-       x="2620.6106"
-       y="-2711.8459"
-       inkscape:label=""
-       transform="rotate(89.701088)">
-      <desc
-         id="desc14265-8">type = vehicle;
-key = mortar_ammunition_crates.vehicle;</desc>
-    </rect>
-    <flowRoot
-       transform="translate(55.059162,856.70239)"
-       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       id="flowRoot14267-3"
-       xml:space="preserve"><flowRegion
-         id="flowRegion14269-5"
-         style="font-family:sans-serif"><rect
-           style="font-size:8px;font-family:sans-serif"
-           y="1737.8438"
-           x="2703.906"
-           height="30.859373"
-           width="76.171867"
-           id="rect14271-2" /></flowRegion><flowPara
-         id="flowPara14273-2"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">water tower</flowPara></flowRoot>    <flowRoot
-       xml:space="preserve"
-       id="flowRoot14275-6"
-       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       transform="translate(55.059162,867.33659)"><flowRegion
-         id="flowRegion14277-6"
-         style="font-family:sans-serif"><rect
-           id="rect14279-7"
-           width="76.171867"
-           height="30.859373"
-           x="2703.906"
-           y="1737.8438"
-           style="font-size:8px;font-family:sans-serif" /></flowRegion><flowPara
-         id="flowPara14281-8"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">mortar ammo</flowPara></flowRoot>    <rect
        inkscape:label="#mesh_template"
        y="2643.4648"
        x="2762.6614"
@@ -17893,6 +17564,348 @@ walkable = 0;</desc>
          id="desc7569-9-3-1-4-4-6-4-8-6-6-2-7-9-2-0-9-6">template = train boxcar;
 </desc>
     </rect>
+    <flowRoot
+       transform="translate(40.354463,-1087.9204)"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="flowRoot14275-7"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14277-9"
+         style="font-family:sans-serif"><rect
+           style="font-size:8px;font-family:sans-serif"
+           y="1737.8438"
+           x="2703.906"
+           height="14.010346"
+           width="76.724304"
+           id="rect14279-3" /></flowRegion><flowPara
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="flowPara14281-80">repair bay (lg)</flowPara></flowRoot>    <flowRoot
+       transform="translate(39.983938,-1071.2)"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="flowRoot14275-7-2"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14277-9-4"
+         style="font-family:sans-serif"><rect
+           style="font-size:8px;font-family:sans-serif"
+           y="1737.8438"
+           x="2703.906"
+           height="14.562774"
+           width="80.038864"
+           id="rect14279-3-8" /></flowRegion><flowPara
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="flowPara14281-80-3">repair bay (sm)</flowPara></flowRoot>    <flowRoot
+       transform="translate(174.77616,1424.3897)"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="flowRoot14275-7-9"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14277-9-0"
+         style="font-family:sans-serif"><rect
+           style="font-size:8px;font-family:sans-serif"
+           y="1737.8438"
+           x="2703.906"
+           height="14.28656"
+           width="63.466049"
+           id="rect14279-3-5" /></flowRegion><flowPara
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="flowPara14281-80-2">oil pipe</flowPara></flowRoot>    <flowRoot
+       transform="translate(169.80774,1343.7353)"
+       style="font-style:normal;font-weight:normal;line-height:0.01%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="flowRoot14275-7-9-2"
+       xml:space="preserve"><flowRegion
+         id="flowRegion14277-9-0-7"
+         style="font-family:sans-serif"><rect
+           style="font-size:8px;font-family:sans-serif"
+           y="1737.8438"
+           x="2703.906"
+           height="14.28656"
+           width="63.466049"
+           id="rect14279-3-5-3" /></flowRegion><flowPara
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="flowPara14281-80-2-7">railroad</flowPara></flowRoot>    <rect
+       inkscape:label="#mesh_template"
+       y="1641.916"
+       x="2758.0737"
+       height="8"
+       width="6"
+       id="mesh3-9-9-5-4-6-2-55"
+       style="display:inline;opacity:0.93000034;fill:#800000;fill-opacity:1;stroke:#000000;enable-background:new">
+      <title
+         id="title33916">armory</title>
+      <desc
+         id="desc6851-7-7">name = armory; mesh_name = armory.mesh; texture0 = armory.png; collision_model_type = 1; collision_model_size = 3 3.5 5.4;</desc>
+    </rect>
+    <flowRoot
+       transform="translate(-99.96037,-70.827486)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="flowRoot7939-9-85-4-1-1-1-8-9"
+       xml:space="preserve"><flowRegion
+         id="flowRegion7941-4-1-8-52-38-1-7"
+         style="font-family:sans-serif"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           y="1737.8438"
+           x="2703.906"
+           height="30.859373"
+           width="76.171867"
+           id="rect7943-6-32-8-7-7-5-4" /></flowRegion><flowPara
+         id="flowPara21245"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif">stash</flowPara></flowRoot>    <flowRoot
+       transform="translate(-98.38967,-98.868488)"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0.01%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       id="flowRoot7939-9-85-4-1-1-1-8-7"
+       xml:space="preserve"><flowRegion
+         id="flowRegion7941-4-1-8-52-38-1-7-7"
+         style="font-family:sans-serif"><rect
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:8px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:Sans;text-align:start;writing-mode:lr-tb;text-anchor:start"
+           y="1737.8438"
+           x="2703.906"
+           height="30.859373"
+           width="76.171867"
+           id="rect7943-6-32-8-7-7-5-4-9" /></flowRegion><flowPara
+         id="flowPara21274"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif">armory</flowPara></flowRoot>    <rect
+       transform="rotate(-178.06243)"
+       style="display:inline;opacity:0.93000034;fill:#de8787;fill-opacity:1;enable-background:new"
+       id="item_supply2-2-4-9"
+       width="4"
+       height="4"
+       x="-2780.9902"
+       y="-1548.6257"
+       inkscape:label="">
+      <desc
+         id="desc9425-9-0-1">type = weapon_rack;</desc>
+    </rect>
+    <rect
+       transform="rotate(-179.69258,2144.5242,770.85501)"
+       inkscape:label="#mesh"
+       y="-104.72078"
+       x="1556.3521"
+       height="8"
+       width="6"
+       id="mesh3-9-9-5-4-6-2-55-9-7-1-7"
+       style="display:inline;opacity:0.93000034;fill:#800000;fill-opacity:1;stroke:#000000;stroke-width:1;filter:url(#filter10219-6-7);enable-background:new">
+      <title
+         id="title33916-4-7-0-2">armory</title>
+      <desc
+         id="desc6851-7-7-1-7-9-3">template = armory;</desc>
+    </rect>
+    <path
+       sodipodi:nodetypes="ccccc"
+       inkscape:label=""
+       inkscape:connector-curvature="0"
+       id="wall126-9"
+       d="m 2728.7676,1629.1817 -12.26,8.004 0.2535,17.1594 16.029,0.3042 0.1424,-17.1803"
+       style="display:inline;opacity:0.93000034;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new">
+      <desc
+         id="desc11325-6">template = SecurityFence1;</desc>
+    </path>
+    <path
+       inkscape:label="#path7454"
+       sodipodi:nodetypes="ccccccccc"
+       inkscape:connector-curvature="0"
+       id="avoid1-7-7-0-9"
+       d="m 2731.7191,1664.4872 2.1556,7.8436 -1.5508,6.9648 -8.0943,4.7336 -9.5249,-3.4023 -1.8705,-6.7187 0.6308,-7.3642 8.7673,-3.8187 z"
+       style="display:inline;opacity:0.93000034;fill:none;stroke:#0000ff;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;marker-mid:url(#Arrow2Mend-3-9);enable-background:new" />
+    <rect
+       transform="rotate(92.929897)"
+       inkscape:label="#mesh"
+       y="-2811.3679"
+       x="1524.6774"
+       height="12.153398"
+       width="12.982038"
+       id="mesh3-9-9-5-4-6-2-55-1-4-5-93-8-2-2-1-0-3-94-8"
+       style="display:inline;opacity:0.93000034;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new">
+      <title
+         id="title14238-8-76-4-2-3-0-7-3-3-8-0">weapon_rack</title>
+      <desc
+         id="desc6851-7-7-7-8-1-4-6-1-0-7-8-7-8-4">template = weapon_rack;</desc>
+    </rect>
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:label=""
+       inkscape:connector-curvature="0"
+       id="wall37832-1-7-0-43-24-6"
+       d="m 2717.8607,1673.2512 0.2218,-5.8578 10.165,0.1483 -0.2146,6.0563"
+       style="display:inline;opacity:0.93000034;fill:#008000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new">
+      <desc
+         id="desc37834-46-7-1-8-5-0">template = InvisibleWall1;</desc>
+    </path>
+    <rect
+       transform="rotate(1.80081)"
+       style="display:inline;opacity:0.93000034;fill:#de8787;fill-opacity:1;enable-background:new"
+       id="item_supply2-2-4-8-388-7-0-3-2-0-51-3"
+       width="4"
+       height="4"
+       x="2772.5256"
+       y="1586.8768"
+       inkscape:label="">
+      <desc
+         id="desc19397-9-7-3-5-8-7-2">type = stash;</desc>
+    </rect>
+    <rect
+       transform="rotate(92.929897)"
+       inkscape:label="#mesh_template"
+       y="-2852.0293"
+       x="1521.2219"
+       height="12.153398"
+       width="12.982038"
+       id="mesh3-9-9-5-4-6-2-55-1-4-5-93-8-2-2-1-0-3-8-6"
+       style="display:inline;opacity:0.93000034;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new">
+      <title
+         id="title14238-8-76-4-2-3-0-7-3-3-0-1-9">weapon_rack</title>
+      <desc
+         id="desc6851-7-7-7-8-1-4-6-1-0-7-8-7-6-1-4">name = weapon_rack; mesh_name = weapon_rack.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 4 0 8 8; collision_model_type = 0; collision_model_size = 1.4 1.4 2.2; collision_model_offset = 0 0 0;
+alpha_blend = 1;</desc>
+    </rect>
+    <path
+       sodipodi:nodetypes="cccc"
+       inkscape:label=""
+       inkscape:connector-curvature="0"
+       id="wall37832-1-7-0-43-8-1"
+       d="m 2758.6454,1671.8787 0.2218,-5.8578 10.165,0.1483 -0.2146,6.0563"
+       style="display:inline;opacity:0.93000034;fill:#008000;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new">
+      <desc
+         id="desc37834-46-7-1-8-1-5-3">template = InvisibleWall1;</desc>
+    </path>
+    <rect
+       transform="rotate(1.80081)"
+       style="display:inline;opacity:0.93000034;fill:#de8787;fill-opacity:1;enable-background:new"
+       id="item_supply2-2-4-8-388-7-0-3-2-0-9-7"
+       width="4"
+       height="4"
+       x="2813.2471"
+       y="1584.2235"
+       inkscape:label="">
+      <desc
+         id="desc19397-9-7-3-5-8-8-8">type = stash;</desc>
+    </rect>
+    <rect
+       inkscape:label="#rect36349"
+       y="446.40625"
+       x="3755.7976"
+       height="16.478903"
+       width="32.412472"
+       id="hitbox_trigger_999"
+       style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465, 2.64566929;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+    <text
+       id="text7284-3"
+       y="417.59497"
+       x="3636.8508"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       xml:space="preserve"><tspan
+         sodipodi:role="line"
+         id="tspan7288-8"
+         x="3636.8508"
+         y="417.59497"
+         style="font-size:40px;line-height:1.25;font-family:sans-serif">SECESSION </tspan></text>
+    <path
+       sodipodi:nodetypes="cc"
+       inkscape:connector-curvature="0"
+       id="path7290-0"
+       d="M 3811.6535,437.70968 V 594.61303"
+       style="display:inline;opacity:0.93000034;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new" />
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3661.6455"
+       y="454.66504"
+       id="text107814-1-4-7"><tspan
+         y="454.66504"
+         x="3661.6455"
+         id="tspan7719-3"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">trigger area</tspan></text>
+    <text
+       xml:space="preserve"
+       style="display:inline;enable-background:new;opacity:0.93000034;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="3662.8516"
+       y="525.75879"
+       id="text107814-1-4-7-7"><tspan
+         y="525.75879"
+         x="3662.8516"
+         id="tspan7719-3-9"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">repair bay (large)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="display:inline;enable-background:new;opacity:0.93000034;font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;fill:#000000;fill-opacity:1;stroke:none"
+       x="3662.8516"
+       y="565.60254"
+       id="text107814-1-4-7-0"><tspan
+         y="565.60254"
+         x="3662.8516"
+         id="tspan7719-3-2"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">repair bay (small)</tspan></text>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       id="spawn_terminal-1-3"
+       width="3.3321514"
+       height="3.3363316"
+       x="-3787.1826"
+       y="-455.2778"
+       inkscape:label=""
+       transform="rotate(-179.54277)">
+      <desc
+         id="desc3838-99">type = vehicle; key = veh_terminal.vehicle;</desc>
+    </rect>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3662.2307"
+       y="484.1499"
+       id="text107814-1-4-7-7-3"><tspan
+         y="484.1499"
+         x="3662.2307"
+         id="tspan7719-9-0"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">terminal</tspan></text>
+    <rect
+       style="display:inline;opacity:0.61600001;fill:#bea00f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new"
+       id="spawn1_2-3-4-5-0-0"
+       width="11.600886"
+       height="11.600957"
+       x="3776.2295"
+       y="556.47412"
+       inkscape:label="">
+      <desc
+         id="desc8927-8-2-2">type = vehicle;
+key = veh_repair_bay_small.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       id="spawn_terminal-1-3-7-3-4"
+       width="3.3321514"
+       height="3.3363316"
+       x="-2989.9487"
+       y="2374.7517"
+       inkscape:label=""
+       transform="rotate(-132.9425)">
+      <desc
+         id="desc3838-99-9-8-8">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.61600001;fill:#739d0f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new"
+       id="spawn1_2-3-4-5-3"
+       width="11.324673"
+       height="22.097088"
+       x="3776.6001"
+       y="509.26221"
+       inkscape:label="">
+      <desc
+         id="desc8927-8-9">type = vehicle;
+key = veh_repair_bay_large.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       id="spawn_terminal-1-3-7-0"
+       width="3.3321514"
+       height="3.3363316"
+       x="-3082.9666"
+       y="2245.6868"
+       inkscape:label=""
+       transform="rotate(-135.88181)">
+      <desc
+         id="desc3838-99-9-5">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+    </rect>
   </g>
   <g
      style="display:none"
@@ -17938,7 +17951,7 @@ walkable = 0;</desc>
      inkscape:groupmode="layer"
      id="layer45"
      inkscape:label="trace"
-     style="opacity:0.26000001"
+     style="display:inline;opacity:0.26000001"
      sodipodi:insensitive="true">
     <image
        y="152.85532"
@@ -18479,6 +18492,31 @@ collision_model_size =  2.9 4.5 11;
 collision_model_offset = 0 0.2 0;
 walkable = 1;</desc>
       </rect>
+      <rect
+         style="display:inline;opacity:0.61600001;fill:#739d0f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new"
+         id="spawn1_2-3-4-5"
+         width="11.324673"
+         height="22.097088"
+         x="1572.7395"
+         y="907.27203"
+         transform="translate(0,-1024)"
+         inkscape:label="">
+        <desc
+           id="desc8927-8">type = vehicle;
+key = veh_repair_bay_large.vehicle;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.61600001;fill:#739d0f;fill-opacity:1;fill-rule:nonzero;stroke:#056010;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new"
+         id="spawn1_2-3-4-5-0"
+         width="11.600886"
+         height="11.600957"
+         x="1537.8192"
+         y="-107.09463"
+         inkscape:label="">
+        <desc
+           id="desc8927-8-2">type = vehicle;
+key = veh_repair_bay_small.vehicle;</desc>
+      </rect>
     </g>
     <g
        style="display:inline;opacity:1"
@@ -18928,7 +18966,32 @@ backline = 1;</desc>
        style="display:inline"
        inkscape:label="objects"
        id="layer12"
-       inkscape:groupmode="layer" />
+       inkscape:groupmode="layer">
+      <rect
+         style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+         id="spawn_terminal-1-3-7"
+         width="3.3321514"
+         height="3.3363316"
+         x="-1777.8741"
+         y="425.7562"
+         inkscape:label=""
+         transform="rotate(-135.88181)">
+        <desc
+           id="desc3838-99-9">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+         id="spawn_terminal-1-3-7-3"
+         width="3.3321514"
+         height="3.3363316"
+         x="-1728.8495"
+         y="490.60196"
+         inkscape:label=""
+         transform="rotate(-132.9425)">
+        <desc
+           id="desc3838-99-9-8">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+      </rect>
+    </g>
     <g
        style="display:inline"
        inkscape:label="walls"

@@ -5,9 +5,6 @@
 	<projectile file="hand_grenade.projectile" />
 	<projectile file="impact_grenade.projectile" />
 	<projectile file="c4.projectile" />
-	<projectile file="empl_turret.projectile" />
-	<projectile file="hot_potato.projectile" />
-	<projectile file="hot_pot_boom.projectile" />
 
 	<!-- rather awkward place for this definition, but for now, that's the way it is -->
 	<!-- projectile itself defines its slot, 0 being actual throwables that can also equipped, thrown, bought and found -->
@@ -16,7 +13,11 @@
 	<projectile file="artillery_shell.projectile" />
 
 	<!-- SECESSION PROJECTILES -->
+	<projectile file="empl_turret.projectile" />
+	<projectile file="hot_potato.projectile" />
+	<projectile file="hot_pot_boom.projectile" />
 	<projectile file="terminal.projectile" />
+	<projectile file="repair_bay.projectile" />
 	<projectile file="jump_pad.projectile" />
 
 	<!-- CLASS-SPECIFIC THROWABLES -->
@@ -43,6 +44,8 @@
 	<!-- WT throwables -->
 	<projectile file="emp.projectile" />
 	<!-- end WT throwables -->
+
+	<!-- END SECESSION PROJECTILES -->
 
 <!--
 	<projectile file="at_mine.projectile" />

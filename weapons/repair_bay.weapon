@@ -1,20 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
-<weapon file="base_secondary_sidearm.weapon" key="terminal.weapon">
-    <tag name="assault" />
+<weapon file="base_secondary_sidearm.weapon" key="repair_bay.weapon">
+    <tag name="repair" />
 
     <specification
-    retrigger_time="30.0"
+    retrigger_time="0.1"
 	accuracy_factor="1.0"
 	sustained_fire_grow_step="0.8"
 	sustained_fire_diminish_rate="0.65"
 	magazine_size="-1"
 	can_shoot_standing="1"
+    can_shoot_crouching="1"
+    affect_characters="0"
+    affect_vehicles="1"
+    character_state="unwound"
+    damage="-0.005"
+    consume="0"
+    sight_range_modifier="0.3"
+    range="0.06"
     carry_in_two_hands="1"
-	suppressed="1"
-	name="terminal"
+	suppressed="0"
+	name="repair bay console"
 	class="3"
-	reload_one_at_a_time="1"
-	sight_range_modifier="1.0"
+	reload_one_at_a_time="0"
 	projectile_speed="60.0"
 	projectiles_per_shot="1"
     slot="1" />
@@ -46,10 +53,9 @@
     <weak_hand_hold offset="0.1" />
 
     <capacity value="0" source="rank" source_value="0.0" />
-    <capacity value="5" source="rank" source_value="0.4" />
+    <capacity value="1" source="rank" source_value="0.4" />
 
-    <projectile file="terminal.projectile">
-
+    <projectile file="repair_bay.projectile">
     </projectile>
 
     <stance state_key="running" accuracy="0.4" />

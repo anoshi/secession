@@ -34,6 +34,7 @@ class HitboxHandler : Tracker {
 		string sIType = event.getStringAttribute("instance_type");
 		int iIId = event.getIntAttribute("instance_id");
 		string sPos = ""; // stores the xyz coords of the hitbox
+		Vector3 v3Pos; // stores same as Vector3
 
 		// is it a trigger area hitbox? If not, this is not the handler you are looking for...
 		if (!startsWith(sHId, "hitbox_trigger_")) {
@@ -48,6 +49,7 @@ class HitboxHandler : Tracker {
 			if (thisArea.getStringAttribute("id") == sHId) {
 				_log("** SECESSION trigger area found! " + sHId + " has position: " + thisArea.getStringAttribute("position"), 1);
 				sPos = thisArea.getStringAttribute("position");
+				Vector3 v3Pos = stringToVector3(sPos);
 			}
 		}
 
@@ -55,15 +57,15 @@ class HitboxHandler : Tracker {
 		// this event concerns our master player, who is being tracked for hitbox collisions via setupCharacterForTracking(int id);
 			_log("** player within trigger area: " + sHId, 1);
 			if (startsWith(sHId, "hitbox_trigger_jumppad")) {
-				_log("hitbox is a jump pad. Spawning jump projectile at location", 1);
+				_log("hitbox is a jump pad. Spawning jump platform at location", 1);
 				string spawnComm = "<command class='create_instance' position='" + sPos + "' instance_class='vehicle' instance_key='platform.vehicle' /></command>";
 				m_metagame.getComms().send(spawnComm);
-
-			// const XmlElement@ triggerAreaNode = list[i];
-			// string id = triggerAreaNode.getStringAttribute("id");
-			// string position = triggerAreaNode.getStringAttribute("position");
-
 			}
+			else if (startsWith(sHId, "hitbox_trigger_repairbay")) {
+				_log("hitbox is a repair bay. Starting repairs", 1);
+				array<const XmlElement@> repVehicle = getVehiclesNearPosition(m_metagame, v3Pos, 0, 7.00f);
+			} // note terminal, mounted weapon, fires healing stream at vehicle.
+
 			// when we're done handling the event, we may want to clear hitbox checking
 			// (I don't think we want to clear these until the end of each map)
 			//clearTriggerAreaAssociations(m_metagame, "character", m_playerCharacterId, m_trackedTriggerAreas);

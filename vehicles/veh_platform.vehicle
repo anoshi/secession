@@ -1,12 +1,13 @@
-<vehicle file="vehicle_base.vehicle" name="Platform" key="platform.vehicle" map_view_atlas_index="0" time_to_live="8.0" >
-	<tag name="sandbag" />
+<vehicle name="Platform" key="platform.vehicle" map_view_atlas_index="16" max_character_collision_speed="-1" max_character_collision_speed_on_normal="-1" time_to_live="8.0" >
+	<tag name="vehicle" />
+	<tag name="elevator" />
 
 	<tire_set offset="1.0 0.0 1.0" radius="0.65" />
 	<tire_set offset="1.0 0.0 -1.0" radius="0.65" />
 
 	<control max_speed="20.0" acceleration="6.7" max_reverse_speed="6.0" max_rotation="0.8" max_water_depth="1.9" />
 
-	<physics max_health="100.0" mass="0.1" offset="0 0.0 0" top_offset="0 1 0" collision_model_pos="0 -0.2 0" collision_model_extent="2.0 0.1 1.4" visual_offset="0 0.3 0" gravity="5"/>
+	<physics max_health="100.0" mass="0.1" offset="0 0.0 0" top_offset="0 0 0" collision_model_pos="0 -1.2 0" collision_model_extent="3.0 1.1 3.0" visual_offset="0 0.0 0" gravity="7"/>
 
 	<visual class="chassis" mesh_filename="crate_wood.mesh" texture_filename="crate_wood.png" />
 

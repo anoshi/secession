@@ -6,6 +6,35 @@
 /////////////////////////////////////////
 // ----- BEGIN SECESSION HELPERS ----- //
 /////////////////////////////////////////
+
+///////////////////////////
+// ----- BIG DICTS ----- //
+///////////////////////////
+dictionary bnn_dict = {
+	{"%activity", "call_handler the thing"},
+	{"%character_name", "char name"},
+	{"%company_name", "Bob Pizza"},
+	{"%location_pickup", "round the corner"},
+	{"%location_drop", "rah bish binnie"},
+	{"%location", "secret loc"},
+	{"%vicinity", "k-mart carpark"},
+	{"%reward_amount", "heaps!"},
+	{"%reward_type", "Pants"},
+	{"%rule_engage", "Kill em all!"},
+	{"%rule_loot", "don't touch!"}
+};
+
+/*
+dictionary veh_stats = {
+	{'veh_speeder.vehicle', dictionary = {{'max_health', 2.4}, {'ab', 2}} },
+    {'lc_jeep.vehicle', dictionary = {{'max_health', 1}, {'bb', 2}} },
+	{'veh_terminal.vehicle', dictionary = {{'max_health', 23.0} {'cc', 3}} }
+};
+*/
+
+////////////////////////////////
+// ----- GLOBAL METHODS ----- //
+////////////////////////////////
 array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, const Vector3@ position, int factionId, float range = 25.00f) {
 	array<const XmlElement@> allVehicles;
 	array<const XmlElement@> vehNearPos;
@@ -75,7 +104,7 @@ void associateTriggerAreasEx(const Metagame@ metagame, const array<const XmlElem
 	if (instanceId < 0) return;
 
 	// check against already associated triggerAreas
-	// and determine which need to be added and which to removed
+	// and determine which need to be added or removed
 	_log("** SECESSION trackedTriggerAreas contains: ", 1);
 	for (uint i = 0; i < trackedTriggerAreas.size(); ++i) {
 		_log("** trackedTriggerAreas " + i + ": " + trackedTriggerAreas[i], 1);
@@ -112,7 +141,6 @@ void associateTriggerAreasEx(const Metagame@ metagame, const array<const XmlElem
 		string command = "<command class='add_hitbox_check' id='" + id + "' instance_type='" + instanceType + "' instance_id='" + instanceId + "' />";
 		metagame.getComms().send(command);
 		_log("** ADDED instanceType: " + instanceType + ", instanceId: " + instanceId + " to trackedTriggerAreas." ,1);
-		// remember we've set out to track this armory
 		trackedTriggerAreas.push_back(id);
 	}
 }
@@ -133,8 +161,12 @@ void clearTriggerAreaAssociations(const Metagame@ metagame, string instanceType,
 	trackedTriggerAreas.clear();
 }
 
+///////////////////////
+// ----- CALLS ----- //
+///////////////////////
 // BC Hot Potato Position Tracker
-string hpPosition;
+string hpPosition; // global var lols
+
 void setHotPotPosi(string pos) {
 	hpPosition = pos;
 	_log("Hot Potato now at: " + hpPosition, 1);
@@ -144,6 +176,8 @@ string getHotPotPosi() {
 	return hpPosition;
 }
 
-// --------------------------------------------
-// END SECESSION HELPERS
-// --------------------------------------------
+
+
+///////////////////////////////////////
+// ----- END SECESSION HELPERS ----- //
+///////////////////////////////////////

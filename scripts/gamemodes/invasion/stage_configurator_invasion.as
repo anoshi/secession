@@ -319,7 +319,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	protected Stage@ setupStage3() {
 		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Old Fort Creek";
-		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map3";
+		stage.m_mapInfo.m_path = "media/packages/secession/maps/intro";
 		stage.m_mapInfo.m_id = "map3";
 
 		stage.addTracker(PeacefulLastBase(m_metagame, 0));

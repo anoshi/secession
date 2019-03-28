@@ -18,9 +18,9 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
-    <modifier class="speed" value="-0.25" />  
+    <modifier class="speed" value="-0.25" />
     </carry_item>
-    
+
     <carry_item key="bc_vest3_2" name="BC Vest, type III 80%" slot="1" transform_on_consume="bc_vest3_3" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_80.png" />
         <capacity value="1" source="rank" source_value="0.0" />
@@ -38,9 +38,9 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
-    <modifier class="speed" value="-0.25" />  
+    <modifier class="speed" value="-0.25" />
     </carry_item>
-    
+
         <carry_item key="bc_vest3_3" name="BC Vest, type III 60%" slot="1" transform_on_consume="bc_vest3_4" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_60.png" />
         <capacity value="1" source="rank" source_value="0.0" />
@@ -58,9 +58,9 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="none" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
-    <modifier class="speed" value="-0.25" />  
+    <modifier class="speed" value="-0.25" />
     </carry_item>
-    
+
     <carry_item key="bc_vest3_4" name="BC Vest, type III 40%" slot="1" transform_on_consume="bc_vest3_5" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_40.png" />
         <capacity value="1" source="rank" source_value="0.0" />
@@ -78,9 +78,9 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
-    <modifier class="speed" value="-0.25" />  
+    <modifier class="speed" value="-0.25" />
     </carry_item>
-    
+
     <carry_item key="bc_vest3_5" name="BC Vest, type III 20%" slot="1" transform_on_consume="bc_vest3_6" time_to_live_out_in_the_open="120.0">
         <hud_icon filename="hud_vest3_20.png" />
         <capacity value="1" source="rank" source_value="0.0" />
@@ -98,9 +98,9 @@
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="wound" output_character_state="stun" />
         <modifier class="projectile_hit_result" input_character_state="stun" output_character_state="stun" consumes_item="0" /> <!-- melee hits will not destroy the vest -->
-    <modifier class="speed" value="-0.25" />  
+    <modifier class="speed" value="-0.25" />
     </carry_item>
-    
+
 	<carry_item key="bc_vest3_6" name="BC Vest, type III, 0%" slot="1">
         <hud_icon filename="hud_vest3_1.png" />
         <capacity value="0" source="rank" source_value="0.0" />
@@ -114,6 +114,6 @@
 	<!-- final armour stage, wound -->
         <modifier class="projectile_blast_result" input_character_state="death" output_character_state="wound" />
         <modifier class="projectile_hit_result" input_character_state="death" output_character_state="wound" />
-    	<modifier class="speed" value="-0.25" />    
+    	<modifier class="speed" value="-0.25" />
     </carry_item>
 </carry_items>

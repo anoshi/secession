@@ -2,11 +2,11 @@
 <intro>
   <text key="Hint" text="BlastCorp are leaders in the explosives field"/>
   <text key="Hint" text="LifeCraft specialises in survival skills and medical procedures"/>
-  <text key="Hint" text="ReflexArq uses a system that improves the reflexes of its subjects"/>
+  <text key="Hint" text="ReflexArq uses a serum that improves the reflexes of its subjects"/>
   <text key="Hint" text="ScopeSystems develops long-range targeting equipment"/>
   <text key="Hint" text="WyreTek have created an advanced communications network"/>
   <text key="Hint" text="Contract missions advertised via the Broadcast News Network (BNN) pay handsomely"/>
-  <text key="Hint" text="The Grenadier class equips vastly improved throwable weapons but is limited to 1-handed firearms"/>
+  <text key="Hint" text="The Grenadier class equips vastly improved throwable weapons but is limited to one-handed firearms"/>
   <text key="Hint" text="EMP grenades are highly effective against power armours, such as those worn by BlastCorp troops"/>
   <text key="Hint" text="Use remote-detonated sticky explosives on heavy vehicles and large structures"/>
   <text key="Hint" text="Backpacks over 20% full slow you down and reduce weapon accuracy"/>
