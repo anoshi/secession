@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.000001"
-     inkscape:cx="3698.3183"
-     inkscape:cy="1529.0546"
+     inkscape:zoom="0.35355348"
+     inkscape:cx="1323.7785"
+     inkscape:cy="1278.8084"
      inkscape:document-units="px"
-     inkscape:current-layer="layer29"
+     inkscape:current-layer="layer16"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -7967,27 +7967,6 @@
          x="3209.7422"
          y="236.13644"
          style="font-size:8px;line-height:1.25;font-family:sans-serif">If you change the size, only use the F2 tool.</tspan></text>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
-       x="3845.636"
-       y="413.76129"
-       id="text21117-2"><tspan
-         sodipodi:role="line"
-         id="tspan21181-5"
-         x="3845.636"
-         y="413.76129"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">Trigger area. Ensure each is named 'hitbox_trigger_&lt;value&gt;' in</tspan><tspan
-         sodipodi:role="line"
-         x="3845.636"
-         y="423.76129"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"
-         id="tspan3935">order for the game to detect them as a trigger area the player</tspan><tspan
-         sodipodi:role="line"
-         x="3845.636"
-         y="433.76129"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif"
-         id="tspan3937">can collide with.</tspan></text>
     <path
        style="display:inline;fill:none;stroke:#ff0000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
        d="m 3786.0277,418.48016 46.3114,-0.0147"
@@ -15693,12 +15672,12 @@ key = veh_terminal.vehicle;</desc>
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">trigger area</tspan></text>
     <rect
-       style="display:inline;enable-background:new;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211761999999999;stroke-dashoffset:0.84000003;stroke-opacity:1"
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
        id="spawn_terminal-1-3"
        width="3.3321514"
        height="3.3363316"
-       x="-3771.9978"
-       y="-435.59482"
+       x="-3772.0981"
+       y="-416.84341"
        inkscape:label=""
        transform="rotate(-179.54277)">
       <desc
@@ -15707,11 +15686,11 @@ key = veh_terminal.vehicle;</desc>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       x="3673.9131"
-       y="468.50916"
+       x="3674.1631"
+       y="449.75916"
        id="text107814-1-4-7-7"><tspan
-         y="468.50916"
-         x="3673.9131"
+         y="449.75916"
+         x="3674.1631"
          id="tspan7719-9-0"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">terminal</tspan></text>
@@ -15761,6 +15740,74 @@ key = veh_repair_bay_small.vehicle;</desc>
          id="tspan7719-3-2"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">repair bay (small)</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#ff0000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3840.7808"
+       y="410.63052"
+       id="text21117-2-3"><tspan
+         sodipodi:role="line"
+         id="tspan21181-5-9"
+         x="3840.7808"
+         y="410.63052"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif">Trigger area. Ensure each is named 'hitbox_trigger_&lt;value&gt;' in</tspan><tspan
+         sodipodi:role="line"
+         x="3840.7808"
+         y="420.63052"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"
+         id="tspan3935-0">order for the game to detect them as a trigger area the player</tspan><tspan
+         sodipodi:role="line"
+         x="3840.7808"
+         y="430.63052"
+         style="font-size:8px;line-height:1.25;font-family:sans-serif"
+         id="tspan3937-5">can collide with. Valid values are: jumppad, repairbay, trap</tspan></text>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       id="spawn_terminal-1-3-7-3-4"
+       width="3.3321514"
+       height="3.3363316"
+       x="-2972.2615"
+       y="2374.6704"
+       inkscape:label=""
+       transform="rotate(-132.9425)">
+      <desc
+         id="desc3838-99-9-8-8">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#191919;fill-opacity:1;fill-rule:nonzero;stroke:#e6142d;stroke-width:0.57070863;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0.83793145;stroke-opacity:1;enable-background:new"
+       id="spawn_camera-1-0"
+       width="3.3321514"
+       height="3.3363316"
+       x="-3775.6973"
+       y="-444.49411"
+       inkscape:label=""
+       transform="rotate(-179.54277)">
+      <desc
+         id="desc3838-99-3">type = vehicle; key = veh_empl_camera.vehicle;</desc>
+    </rect>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3649.6599"
+       y="476.39999"
+       id="text107814-1-4-7-7-3-8"><tspan
+         y="476.39999"
+         x="3649.6599"
+         id="tspan7719-9-0-0"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">surveillance camera</tspan></text>
+    <rect
+       style="display:inline;enable-background:new;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211761999999999;stroke-dashoffset:0.84000003;stroke-opacity:1"
+       id="spawn_terminal-1-3-7-0"
+       width="3.3321514"
+       height="3.3363316"
+       x="-3061.0896"
+       y="2246.8608"
+       inkscape:label=""
+       transform="rotate(-135.88181)">
+      <desc
+         id="desc3838-99-9-5">type = vehicle; key = veh_repair_bay_terminal.vehicle;</desc>
+    </rect>
   </g>
   <g
      style="display:none"

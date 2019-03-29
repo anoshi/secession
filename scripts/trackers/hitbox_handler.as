@@ -65,7 +65,13 @@ class HitboxHandler : Tracker {
 				_log("hitbox is a repair bay. Starting repairs", 1);
 				array<const XmlElement@> repVehicle = getVehiclesNearPosition(m_metagame, v3Pos, 0, 7.00f);
 			} // note terminal, mounted weapon, fires healing stream at vehicle.
+			else if (startsWith(sHId, "hitbox_trigger_trap")) {
+				_log("hitbox is a trap. Running deterrent routines...", 1);
+				// Player has entered an area that is tracked by an enemy device.
+				// Add a particle effect like a flashing red light on the detecting device
 
+				// Spawn some baddies || commander alert to enemy faction ||  some other dastardly act.
+			}
 			// when we're done handling the event, we may want to clear hitbox checking
 			// (I don't think we want to clear these until the end of each map)
 			//clearTriggerAreaAssociations(m_metagame, "character", m_playerCharacterId, m_trackedTriggerAreas);
