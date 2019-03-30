@@ -4,13 +4,12 @@
 	  class="start_game"
 	  vehicles="1"
 	  max_soldiers="30"
-	  player_ai_compensation="0"
+	  player_bot_compensation="0"
 	  xp_multiplier="1.0"
 	  rp_multiplier="1.0"
 	  friendly_fire="1"
 	  base_capture_system="any"
     soldier_capacity_variance="0.1">
-
   	<!-- game will remove the ones that are over the faction count loaded in the game -->
     <faction initial_occupied_bases="1" initial_over_capacity="0" capacity_multiplier="0.9" />
     <faction initial_occupied_bases="1" initial_over_capacity="0" capacity_offset="20" />

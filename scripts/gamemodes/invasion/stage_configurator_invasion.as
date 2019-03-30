@@ -318,7 +318,7 @@ class StageConfiguratorInvasion : StageConfigurator {
 	// ------------------------------------------------------------------------------------------------
 	protected Stage@ setupStage3() {
 		Stage@ stage = createStage();
-		stage.m_mapInfo.m_name = "Old Fort Creek";
+		stage.m_mapInfo.m_name = "Secession Intro";
 		stage.m_mapInfo.m_path = "media/packages/secession/maps/intro";
 		stage.m_mapInfo.m_id = "map3";
 
@@ -341,12 +341,29 @@ class StageConfiguratorInvasion : StageConfigurator {
 			stage.m_factions.insertLast(f);
 		}
 		{
-			Faction f(getFactionConfigs()[2], createCommanderAiCommand(1));
-			f.m_overCapacity = 30;                                                  // was 0 in 1.65
-      f.m_capacityOffset = 5;                                                 // was 0 in 1.65
+			Faction f(getFactionConfigs()[1], createCommanderAiCommand(1));
+			f.m_overCapacity = 0;
+      f.m_capacityOffset = 0;
 			stage.m_factions.insertLast(f);
 		}
-
+		{
+			Faction f(getFactionConfigs()[2], createCommanderAiCommand(2));
+			f.m_overCapacity = 0;
+      f.m_capacityOffset = 0;
+			stage.m_factions.insertLast(f);
+		}
+		{
+			Faction f(getFactionConfigs()[3], createCommanderAiCommand(3));
+			f.m_overCapacity = 0;
+      f.m_capacityOffset = 0;
+			stage.m_factions.insertLast(f);
+		}
+		{
+			Faction f(getFactionConfigs()[4], createCommanderAiCommand(4));
+			f.m_overCapacity = 0;
+      f.m_capacityOffset = 0;
+			stage.m_factions.insertLast(f);
+		}
 		// metadata
 		stage.m_primaryObjective = "capture";
 
