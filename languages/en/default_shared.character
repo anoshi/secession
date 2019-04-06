@@ -247,9 +247,11 @@
  	<comment key="enemy seen, vehicle tag = truck" text="Transportation truck spotted!" />
  	<comment key="enemy seen, vehicle tag = truck" text="Enemy transport vehicle incoming!" />
 
+ 	<comment key="enemy seen, vehicle tag = speeder" text="Enemy speeder ahead!" />
+ 	<comment key="enemy seen, vehicle tag = speeder" text="Eyes on fast transport!" />
+ 	<comment key="enemy seen, vehicle tag = speeder" text="Speeder sighted!" />
 
-	<comment key="enemy not seen, taking suppressed fire" text="?" />
-	<comment key="enemy not seen, taking suppressed fire" text="What was that?" />
+	<comment key="enemy not seen, taking suppressed fire" text="Find cover" />
 	<comment key="enemy not seen, taking suppressed fire" text="Alert!" />
 	<comment key="enemy not seen, taking suppressed fire" text="Incoming fire" />
 
@@ -283,20 +285,15 @@
 	<comment key="Yes sir" text="Got it" />
 
 	<comment key="Uh, I can't drive this thing" />
-	<comment key="Uh, I can't drive this thing" text="Back to driving school, eh?" />
-	<comment key="Uh, I can't drive this thing" text="Oops!" />
-	<comment key="Uh, I can't drive this thing" text="Dang!" />
-	<comment key="Uh, I can't drive this thing" text="I bet the crankshaft is busted" />
-	<comment key="Uh, I can't drive this thing" text="I'm pretty sure the carburetor is broken" />
-	<comment key="Uh, I can't drive this thing" text="I'm sure this steering wheel doesn't work" />
-	<comment key="Uh, I can't drive this thing" text="Ah, so that's the clutch" />
+	<comment key="Uh, I can't drive this thing" text="I'll work it out shortly" />
+	<comment key="Uh, I can't drive this thing" text="Someone find me the manual, fast!" />
+	<comment key="Uh, I can't drive this thing" text="Not going to plan..." />
+	<comment key="Uh, I can't drive this thing" text="I'm not trained to operate this" />
 	<comment key="Uh, I can't drive this thing" text="Wish I didn't have to drive" />
-	<comment key="Uh, I can't drive this thing" text="Oh man!" />
-	<comment key="Uh, I can't drive this thing" text="Oh man, again!" />
+	<comment key="Uh, I can't drive this thing" text="Umm..." />
 	<comment key="Uh, I can't drive this thing" text="Anyone else want to try driving?" />
-	<comment key="Uh, I can't drive this thing" text="I need my glasses" />
-	<comment key="Uh, I can't drive this thing" text="Uh, the steering seems inversed" />
-	<comment key="Uh, I can't drive this thing" text="That wasn't my fault" />
+	<comment key="Uh, I can't drive this thing" text="OK, that wasn't meant to happen" />
+	<comment key="Uh, I can't drive this thing" text="Sorry about this, I'm working on it..." />
 
 	<comment key="Waiting for squad" />
 	<comment key="Waiting for squad" text="Load up!" />
@@ -307,30 +304,25 @@
 
 	<comment key="overencumbered" text="Damn this backpack!" />
 	<comment key="overencumbered" text="Can't shoot straight with all this weight" />
-	<comment key="overencumbered" text="I should remove stuff from my backpack" />
+	<comment key="overencumbered" text="Pack is too heavy. Gotta unload" />
 
 	<comment key="Where to, chief?" />
 	<comment key="Where to, chief?" text="Going anywhere in particular?" />
 	<comment key="Where to, chief?" text="At your service" />
 	<comment key="Where to, chief?" text="Awaiting orders" />
 
-	<comment key="Press SPACE to continue!" />
+	<comment key="Press SPACE to continue!" text="SPACE: Cycle unit" />
 
-	<comment key="celebrating" text="We won!" />
-	<comment key="celebrating" text="I didn't die!" />
+	<comment key="celebrating" text="Victory!" />
+	<comment key="celebrating" text="Mission complete!" />
 	<comment key="celebrating" text="I survived!" />
 	<comment key="celebrating" text="Woo" />
-	<comment key="celebrating" text="GG" />
 	<comment key="celebrating" text="Finally we did it" />
 	<comment key="celebrating" text="Can't believe I'm alive" />
 	<comment key="celebrating" text="I'm alive!" />
 	<comment key="celebrating" text="That was so badass!" />
 	<comment key="celebrating" text="!" />
 	<comment key="celebrating" text=":D" />
-	<comment key="celebrating" text="We pwned them hard!" />
-	<comment key="celebrating" text="Finally I can go to the toilet!" />
-	<comment key="celebrating" text="That took ages!" />
-	<comment key="celebrating" text="Talk about a good stalemate" />
 	<comment key="celebrating" text="Now that's how it's done!" />
 	<comment key="celebrating" text="Sweeeet!" />
 	<comment key="celebrating" text="Noice!" />
@@ -338,6 +330,7 @@
 
 	<comment key="about to drive over a friendly" text="Watch out!" />
 	<comment key="about to drive over a friendly" text="Get out of the way!" />
+	<comment key="about to drive over a friendly" text="Clear a path. We're coming through!" />
 
   	<comment key="this is as close as i can get" text="This is as close as I can get" />
 	<comment key="this is as close as i can get" text="Won't be getting closer than this" />
@@ -346,9 +339,10 @@
 	<comment key="enemy vehicle spotted, not near base" text="%enemy_name %vehicle_name spotted" />
 
 	<comment key="comms have been restored" />
-	<comment key="enemy comms have been restored" text="%enemy_name comms have been fully restored" />
+	<comment key="comms have been restored" text="Radios are back online" />
+	<comment key="comms have been destroyed" text="They've destroyed our comms equipment!" />
 
-	<comment key="comms have been destroyed" text="comms have been destroyed by enemy" />
+	<comment key="enemy comms have been restored" text="%enemy_name comms have been fully restored" />
 	<comment key="enemy comms have been destroyed, by us" text="Well done, %enemy_name comms destroyed!" />
 
 	<dialogue key="wander dialogue 2 men">
@@ -496,18 +490,6 @@
  	<dialogue key="vehicle dialogue 2 men">
 		<comment text="" />
 		<comment text="" />
-	</dialogue>
-
-	<dialogue key="defense dialogue 2 men">
-		<comment text="I recently had a firefight with the devs" />
-		<comment text="You mean Pasik and JackMayol" />
-    <comment text="Yes, Pasik aims like a granny but this JackMayol is even worse!" />
-	</dialogue>
-
-	<dialogue key="defense dialogue 2 men">
-		<comment text="'Osumia Games'... Who comes up with these names?" />
-		<comment text="Wait wut, what are you talking about?" />
-        <comment text="Not sure I know myself" />
 	</dialogue>
 
 	<dialogue key="defense dialogue 2 men">
