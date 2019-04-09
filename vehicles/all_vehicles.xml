@@ -80,6 +80,7 @@
   <vehicle file="race_vehicles.xml" />
 
   <!-- SECESSION vehicles -->
+  <vehicle file="veh_dropship.vehicle" />
   <vehicle file="veh_speeder.vehicle" />
   <vehicle file="veh_empl_camera.vehicle" />
   <vehicle file="veh_empl_turret.vehicle" />

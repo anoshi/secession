@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="5.12"
-     inkscape:cx="1621.4363"
-     inkscape:cy="1135.9355"
+     inkscape:zoom="3.6203867"
+     inkscape:cx="3760.4342"
+     inkscape:cy="1444.1516"
      inkscape:document-units="px"
-     inkscape:current-layer="layer16"
+     inkscape:current-layer="layer29"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -17929,6 +17929,30 @@ key = veh_repair_bay_large.vehicle;</desc>
          id="tspan7719-9-0-0"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">surveillance camera</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3661.8921"
+       y="628.88379"
+       id="text107814-1-4-7-0-7"><tspan
+         y="628.88379"
+         x="3661.8921"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="tspan8380">dropship</tspan></text>
+    <rect
+       style="display:inline;opacity:0.61600001;fill:#e97c17;fill-opacity:1;fill-rule:nonzero;stroke:#050505;stroke-width:0.72299999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:5.78399992, 5.78399992;stroke-dashoffset:1.87979996;stroke-opacity:0.97247709;enable-background:new"
+       id="spawn_dropship-1"
+       width="12.456593"
+       height="22.969526"
+       x="619.82123"
+       y="-3782.1428"
+       inkscape:label=""
+       transform="rotate(89.991443)">
+      <desc
+         id="desc8927-8-9-8">type = vehicle;
+key = veh_dropship.vehicle;</desc>
+    </rect>
   </g>
   <g
      style="display:none"
@@ -18540,6 +18564,19 @@ key = veh_repair_bay_large.vehicle;</desc>
            id="desc8927-8-2">type = vehicle;
 key = veh_repair_bay_small.vehicle;</desc>
       </rect>
+      <rect
+         style="display:inline;opacity:0.61600001;fill:#e97c17;fill-opacity:1;fill-rule:nonzero;stroke:#050505;stroke-width:0.72299999;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:5.78399992, 5.78399992;stroke-dashoffset:1.87979996;stroke-opacity:0.97247709;enable-background:new"
+         id="spawn_dropship-1-0"
+         width="13.452161"
+         height="20.903748"
+         x="1543.6448"
+         y="775.16718"
+         inkscape:label=""
+         transform="rotate(-30.086802)">
+        <desc
+           id="desc8927-8-9-8-2">type = vehicle;
+key = veh_dropship.vehicle;</desc>
+      </rect>
     </g>
     <g
        style="display:inline;opacity:1"
@@ -18748,8 +18785,8 @@ backline = 1;</desc>
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="905.13196"
-         x="1715.9714"
+         y="868.57361"
+         x="1688.1078"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0"
@@ -18828,8 +18865,8 @@ backline = 1;</desc>
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="932.73364"
-         x="1750.9218"
+         y="847.94324"
+         x="1740.183"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-0"
@@ -18852,16 +18889,16 @@ backline = 1;</desc>
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="907.3656"
-         x="1747.0435"
+         y="897.40466"
+         x="1761.3013"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-24"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="930.3656"
-         x="1727.7936"
+         y="904.38904"
+         x="1651.2311"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-83"
@@ -18876,48 +18913,48 @@ backline = 1;</desc>
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="919.3656"
-         x="1759.7935"
+         y="873.23792"
+         x="1714.7706"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-5"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="919.1156"
-         x="1732.5435"
+         y="877.11823"
+         x="1755.7914"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-22"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="892.8656"
-         x="1730.7935"
+         y="882.78448"
+         x="1807.4722"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-73"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="894.6156"
-         x="1697.2935"
+         y="891.05261"
+         x="1667.605"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-79"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="933.6156"
-         x="1706.2936"
+         y="929.51404"
+         x="1652.778"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-02"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="915.1156"
-         x="1777.2935"
+         y="864.2923"
+         x="1724.8129"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-39"
@@ -19326,8 +19363,8 @@ tag = speeder;</desc>
          id="spawn2_6-9-4-3"
          width="5.7888808"
          height="6.6684999"
-         x="1933.1459"
-         y="-19.728228"
+         x="1866.1981"
+         y="-1.2537328"
          inkscape:label=""
          transform="rotate(28.759844)">
         <desc
@@ -19339,8 +19376,8 @@ tag = speeder;</desc>
          id="spawn2_6-9-4-3-9"
          width="5.7888808"
          height="6.6684999"
-         x="806.75726"
-         y="1824.337"
+         x="732.57178"
+         y="1769.5417"
          inkscape:label=""
          transform="rotate(-38.149496)">
         <desc

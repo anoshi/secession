@@ -187,6 +187,7 @@
 	<!-- end RWR vehicles -->
 
 	<!-- SECESSION vehicles -->
+	<vehicle key="veh_dropship.vehicle" />
 	<vehicle key="veh_speeder.vehicle" />
 	<vehicle key="veh_empl_camera.vehicle" />
 	<vehicle key="veh_empl_turret.vehicle" />
