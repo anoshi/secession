@@ -151,7 +151,6 @@ class HitboxHandler : Tracker {
 
 	// ----------------------------------------------------
 	protected void setupCharacterForTracking(int id) {
-		// it's the local player, do stuff now
 		clearTriggerAreaAssociations(m_metagame, "character", m_playerCharacterId, m_trackedTriggerAreas);
 		m_playerCharacterId = id;
 
