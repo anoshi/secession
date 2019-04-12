@@ -66,6 +66,14 @@
 	<comment key="BNN advert" text="MATTER SHUNT Molecules - MATTER. OVER THERE. PUT IT HERE. NOW IT'S NEW. YOU'RE WELCOME." />
 	<!-- END BNN announcements -->
 
+	<!-- SECESSION story cues -->
+	<comment key="story_1" text="we sure are chatty today" />
+	<comment key="story_1" text="when's the next RWR community box?" />
+	<comment key="story_1" text="has anyone tested the next RWR release?" />
+	<comment key="story_1" text="are we at version 1.71 yet?" />
+	<comment key="story_1" text="got any last minute contributions for CB3?" />
+	<!-- END SECESSION story cues -->
+
 	<!-- BEGIN calls -->
 	<comment key="lc_conversion" text="Let it replenish your soul" />
 	<comment key="ra_nanobot_cloud" text="Nanobot cloud spreading" />
@@ -508,12 +516,6 @@
 		<comment text="Awesome" />
 	</dialogue>
 
-	<dialogue key="vehicle dialogue 2 men tag=truck" >
-		<comment text="Dude, did you fart?" />
-		<comment text="Could be" />
-		<comment text="Damn! Open the window!" />
-	</dialogue>
-
  	<dialogue key="vehicle dialogue 2 men">
 		<comment text="You know what?" />
 		<comment text="Hmm?" />
@@ -522,51 +524,13 @@
 	</dialogue>
 
  	<dialogue key="vehicle dialogue 2 men">
-		<comment text="Where did you get your driver's license?" />
-		<comment text="Your mom gave it to me" />
-	</dialogue>
-
- 	<dialogue key="vehicle dialogue 2 men">
-		<comment text="Hit me baby one more tiiiime" />
-		<comment text="Gladly" />
-	</dialogue>
-
- 	<dialogue key="vehicle dialogue 2 men">
-		<comment text="I feel unsecure in this thing" />
-		<comment text="Why that?" />
-		<comment text="Check the wheels" />
-		<comment text="What's wrong with them?" />
-		<comment text="They aren't even connected to the axles" />
-	</dialogue>
-
- 	<dialogue key="vehicle dialogue 2 men">
 		<comment text="Sure would love to listen to the radio" />
 		<comment text="Indeed" />
 	</dialogue>
 
  	<dialogue key="vehicle dialogue 2 men">
-		<comment text="Always scared to be assigned the same squad as you" />
-		<comment text="What's wrong with that?" />
-		<comment text="Odd objects attract fire. You are odd" />
-	</dialogue>
-
- 	<dialogue key="vehicle dialogue 2 men">
 		<comment text="Success always occurs when no one is looking" />
 		<comment text="Failure occurs when the Commander is watching" />
-	</dialogue>
-
-
- 	<dialogue key="vehicle dialogue 2 men">
-		<comment text="Watch out for impact grenades" />
-		<comment text="Yes, they make much more damage than frag grenades" />
-		<comment text="Fortunately, they have a smaller radius though" />
-	</dialogue>
-
-
- 	<dialogue key="vehicle dialogue 2 men">
-		<comment text="Stun grenades are not as useless as you might think" />
-		<comment text="Yes, they disable the enemy for a while" />
-		<comment text="In a pretty big radius!" />
 	</dialogue>
 
  	<dialogue key="vehicle dialogue 2 men">
@@ -612,7 +576,7 @@
 		<comment text="Did they give you new equipment?" />
 		<comment text="Yeah" />
 		<comment text="Aww, that's unfair..." />
-   	<comment text="You mad bro?" />
+   		<comment text="You mad bro?" />
 	</dialogue>
 
 	<dialogue key="vehicle dialogue 2 men">

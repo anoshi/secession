@@ -26,6 +26,7 @@
 #include "bnn.as"
 #include "call_handler.as"
 #include "hitbox_handler.as"
+#include "story.as"
 
 // --------------------------------------------
 class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
@@ -278,6 +279,7 @@ class GameModeInvasion : GameMode, UnlockRemoveListener, UnlockListener {
 		addTracker(CallHandler(this));   // 'H' call menu and scripted call handler
 		addTracker(BNN(this));           // Broadcast News Network Class and Methods
 		addTracker(HitboxHandler(this)); // Trigger area (hitbox) HitboxHandler Class and Methods
+		addTracker(Story(this));         // Storyline manager
 	}
 
 	// --------------------------------------------

@@ -39,7 +39,7 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 	array<const XmlElement@> allVehicles;
 	array<const XmlElement@> vehNearPos;
 
-	_log("* getVehiclesNearPosition running", 1);
+	_log("* SECESSION getVehiclesNearPosition running", 1);
 
 // querying 'vehicles' doesn't support a range variable, like 'characters' does.
 // Must grab all vehicles and check their proximity to event, in turn.

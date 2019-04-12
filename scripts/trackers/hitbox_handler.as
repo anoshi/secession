@@ -34,7 +34,7 @@ class HitboxHandler : Tracker {
 		string sIType = event.getStringAttribute("instance_type");
 		int iIId = event.getIntAttribute("instance_id");
 		string sPos = ""; // stores the xyz coords of the hitbox
-		Vector3 v3Pos; // stores same as Vector3
+		Vector3 v3Pos; // stores same as a Vector3
 
 		// is it a trigger area hitbox? If not, this is not the handler you are looking for...
 		if (!startsWith(sHId, "hitbox_trigger_")) {
@@ -49,7 +49,7 @@ class HitboxHandler : Tracker {
 			if (thisArea.getStringAttribute("id") == sHId) {
 				_log("** SECESSION trigger area found! " + sHId + " has position: " + thisArea.getStringAttribute("position"), 1);
 				sPos = thisArea.getStringAttribute("position");
-				Vector3 v3Pos = stringToVector3(sPos);
+				v3Pos = stringToVector3(sPos);
 			}
 		}
 
@@ -64,7 +64,8 @@ class HitboxHandler : Tracker {
 			else if (startsWith(sHId, "hitbox_trigger_repairbay")) {
 				_log("hitbox is a repair bay. Starting repairs", 1);
 				array<const XmlElement@> repVehicle = getVehiclesNearPosition(m_metagame, v3Pos, 0, 7.00f);
-			} // note terminal, mounted weapon, fires healing stream at vehicle.
+				// note terminal, mounted weapon, fires healing stream at vehicle.
+			}
 			else if (startsWith(sHId, "hitbox_trigger_trap")) {
 				_log("hitbox is a trap. Running deterrent routines...", 1);
 				// Player has entered an area that is tracked by an enemy device.
