@@ -11,10 +11,9 @@
 // --------------------------------------------
 class CallHandler : Tracker {
 	//protected Metagame@ m_metagame;
+	//protected GameMode@ m_metagame;
 	protected GameModeInvasion@ m_metagame;
-	//protected dictionary m_trackedMaps;
 	//protected Vector3 m_position;
-	//protected string m_managerName;
 	//protected int m_factionId;
 
 	protected string BNNFILE = "bnn_status.xml"; // BNN mission dictionary and state information
@@ -34,6 +33,7 @@ class CallHandler : Tracker {
 
 	// ----------------------------------------------------
 	CallHandler(GameModeInvasion@ metagame) {
+	//CallHandler(GameMode@ metagame) {
 	//CallHandler(Metagame@ metagame) {}
 		@m_metagame = @metagame;
 	}

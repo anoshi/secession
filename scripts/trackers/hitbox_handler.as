@@ -10,8 +10,8 @@
 
 // --------------------------------------------
 class HitboxHandler : Tracker {
-	//protected Metagame@ m_metagame;
 	protected GameModeInvasion@ m_metagame;
+	//protected GameMode@ m_metagame;
 	protected array<const XmlElement@> m_triggerAreas;
 	protected array<string> m_trackedTriggerAreas;
 
@@ -21,7 +21,7 @@ class HitboxHandler : Tracker {
 
 	// ----------------------------------------------------
 	HitboxHandler(GameModeInvasion@ metagame) {
-	//HitboxHandler(Metagame@ metagame) {}
+	//HitboxHandler(GameMode@ metagame) {
 		@m_metagame = @metagame;
 		determineTriggerAreasList();
 	}
