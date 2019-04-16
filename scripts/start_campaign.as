@@ -1,6 +1,6 @@
 #include "path://media/packages/vanilla/scripts"
 #include "path://media/packages/secession/scripts"
-#include "my_gamemode.as"
+#include "secession_gamemode.as"
 
 // --------------------------------------------
 void main(dictionary@ inputData) {
@@ -12,7 +12,7 @@ void main(dictionary@ inputData) {
 	_setupLog("dev_verbose"); // comment out before go-live
 	settings.print();
 
-	MyGameMode metagame(settings);
+	SecessionCampaign metagame(settings);
 
 	metagame.init();
 	metagame.run();
