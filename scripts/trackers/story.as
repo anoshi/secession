@@ -10,8 +10,8 @@
 class Story : Tracker {
 	protected GameModeInvasion@ m_metagame;
 
-    protected float STORY_DELAY_MAX = 10.00; //180.00;
-    protected float STORY_DELAY_MIN = 5.00; //90.00;
+    protected float STORY_DELAY_MAX = 50.00; //180.00;
+    protected float STORY_DELAY_MIN = 25.00; //90.00;
 	protected float storyDelay; // randomise time between story delivery
 	protected dictionary story_dict;
 	protected int m_playerCharacterId;
