@@ -73,6 +73,11 @@ class HitboxHandler : Tracker {
 
 				// Spawn some baddies || commander alert to enemy faction ||  some other dastardly act.
 			}
+			else if (startsWith(sHId, "hitbox_trigger_repairbay")) {
+				_log("hitbox is a repair bay. Starting repairs", 1);
+				array<const XmlElement@> repVehicle = getVehiclesNearPosition(m_metagame, v3Pos, 0, 7.00f);
+			} // note terminal, mounted weapon, fires healing stream at vehicle.
+
 			// when we're done handling the event, we may want to clear hitbox checking
 			// (I don't think we want to clear these until the end of each map)
 			//clearTriggerAreaAssociations(m_metagame, "character", m_playerCharacterId, m_trackedTriggerAreas);
