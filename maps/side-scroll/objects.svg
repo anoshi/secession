@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.35355348"
-     inkscape:cx="1323.7785"
-     inkscape:cy="1278.8084"
+     inkscape:zoom="5.6568557"
+     inkscape:cx="2735.5451"
+     inkscape:cy="1828.5311"
      inkscape:document-units="px"
-     inkscape:current-layer="layer16"
+     inkscape:current-layer="layer29"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -15562,14 +15562,14 @@ separator_depth = 0.7;</desc>
            y="-118.57512" /></flowRegion><flowPara
          id="flowPara12121"
          style="font-size:18.66666603px">SS sandbag</flowPara></flowRoot>    <rect
-       style="display:inline;opacity:0.93000034;fill:#bc5514;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000109;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+       style="display:inline;opacity:0.93000034;fill:#bc5514;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.9000001;stroke-opacity:1;enable-background:new"
        id="spawn2_6-9-4-9"
        width="5.7888808"
        height="6.6684999"
-       x="2666.3547"
-       y="184.42433"
+       x="-2675.0293"
+       y="-144.18634"
        inkscape:label=""
-       transform="rotate(-1.7644218e-4)">
+       transform="rotate(-178.99389)">
       <desc
          id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-7">type = vehicle;
 tag = speeder;</desc>
@@ -17281,27 +17281,27 @@ capturable = 1;</desc>
            id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-7-1-4-7-1-6-9-5">type = vehicle; key = deco_car3_black.vehicle;</desc>
       </rect>
       <rect
-         style="display:inline;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000109;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+         style="display:inline;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.9000001;stroke-opacity:1;enable-background:new"
          id="spawn2_6-9-4"
          width="5.7888808"
          height="6.6684999"
-         x="20.080555"
-         y="1602.8765"
+         x="1590.2294"
+         y="-209.2402"
          inkscape:label=""
-         transform="rotate(-49.560591)">
+         transform="rotate(46.984378)">
         <desc
            id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6">type = vehicle;
 tag = speeder;</desc>
       </rect>
       <rect
-         style="display:inline;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000109;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
+         style="display:inline;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00629902,4.00629902;stroke-dashoffset:2.90456679;stroke-opacity:1;enable-background:new"
          id="spawn2_6-9-4-3"
          width="5.7888808"
          height="6.6684999"
-         x="882.13074"
-         y="-947.45282"
+         x="-725.35724"
+         y="1070.2937"
          inkscape:label=""
-         transform="rotate(98.859168)">
+         transform="rotate(-71.928512)">
         <desc
            id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8">type = vehicle;
 tag = speeder;</desc>
