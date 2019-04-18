@@ -18,8 +18,6 @@
 // --------------------------------------------
 class SecessionQuickie : GameMode {
 	protected UserSettings@ m_userSettings;
-	array<Faction@> m_factions;
-
 	string m_gameMapPath = "";
 
 	// --------------------------------------------
@@ -168,10 +166,6 @@ class SecessionQuickie : GameMode {
 			}
 		}
 		return player;
-	}
-
-	const array<Faction@>@ getFactions() const {
-		return m_factions;
 	}
 
 	void setMapInfo(const MapInfo@ info) {

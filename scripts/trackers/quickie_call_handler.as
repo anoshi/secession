@@ -51,6 +51,8 @@ class QuickieCallHandler : Tracker {
 		string sPosi = event.getStringAttribute("target_position");
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
 
+		int numFactions = getFactions(m_metagame).size();
+
 		_log("call made: " + sCall, 1);
 		//_log("call source position: " + getPlayerPosition, 1)
 		_log("call target position: " + sPosi, 1);
@@ -117,7 +119,7 @@ class QuickieCallHandler : Tracker {
 				Vector3 v3termPos = stringToVector3(termPos);
 				array<const XmlElement@> foundTurrets;
 				// start with the offline turrets (vehicles)
-				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+				for (uint i = 0; i < numFactions; ++i) {
 					array<const XmlElement@> offlineTurrets = getVehiclesNearPosition(m_metagame, v3termPos, i, 10.00f);
 					merge(foundTurrets, offlineTurrets);
 				}
@@ -204,7 +206,7 @@ class QuickieCallHandler : Tracker {
 				_log("BC hot potato requested at: " + sPosi, 1);
 				hpActive = true;
 				array<const XmlElement@> targetChars;
-				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+				for (uint i = 0; i < numFactions; ++i) {
 					array<const XmlElement@> tempTargetChars = getCharactersNearPosition(m_metagame, v3Posi, i, 10.00f);
 					merge(targetChars, tempTargetChars);
 				}
