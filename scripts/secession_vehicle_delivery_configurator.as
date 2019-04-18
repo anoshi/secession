@@ -1,9 +1,9 @@
 #include "vehicle_delivery_configurator_invasion.as"
 
 // ------------------------------------------------------------------------------------------------
-class MyVehicleDeliveryConfigurator : VehicleDeliveryConfiguratorInvasion {
+class SecessionVehicleDeliveryConfigurator : VehicleDeliveryConfiguratorInvasion {
 	// ------------------------------------------------------------------------------------------------
-	MyVehicleDeliveryConfigurator(GameModeInvasion@ metagame) {
+	SecessionVehicleDeliveryConfigurator(GameModeInvasion@ metagame) {
 		super(metagame);
 	}
 
@@ -23,9 +23,8 @@ class MyVehicleDeliveryConfigurator : VehicleDeliveryConfiguratorInvasion {
 		list.push_back(Resource("minig_resource.weapon", "weapon"));
 		list.push_back(Resource("desert_eagle.weapon", "weapon"));
 		list.push_back(Resource("tow_resource.weapon", "weapon"));
-   		list.push_back(Resource("eodvest.carry_item", "carry_item"));   
-         
+   		list.push_back(Resource("eodvest.carry_item", "carry_item"));
+
 		return list;
 	}
 }
-

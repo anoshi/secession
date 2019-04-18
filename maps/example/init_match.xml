@@ -10,8 +10,10 @@
 	  friendly_fire="1"
 	  base_capture_system="any"
     soldier_capacity_variance="0.4">
-
     <faction initial_over_capacity="0" ai_accuracy="0.94" capacity_multiplier="0.9" />
-    <faction initial_over_capacity="50" ai_accuracy="0.94" capacity_offset="20" />
+    <faction initial_over_capacity="0" ai_accuracy="0.94" capacity_offset="20" />
+		<faction initial_over_capacity="0" ai_accuracy="0.94" capacity_offset="20" />
+		<faction initial_over_capacity="0" ai_accuracy="0.94" capacity_offset="20" />
+		<faction initial_over_capacity="0" ai_accuracy="0.94" capacity_offset="20" />
   </command>
 </commands>

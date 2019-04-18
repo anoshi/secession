@@ -39,7 +39,7 @@
     <animation state_key="prone_still" animation_key="prone_still, pistol" />
     <animation state_key="walking_backwards" animation_key="walking backwards, pistol" />
 
-    <sound key="fire" fileref="compy_console_open_2.wav" pitch_variety="0.01" volume="0.75" />
+    <sound key="fire" fileref="repair_beam.wav" pitch_variety="0.00" volume="0.75" />
     <sound key="cycle" fileref="compy_notification_error_2.wav" volume="1.0" />
     <sound key="magazine_out" fileref="compy_notification_high.wav" volume="1.0" />
     <sound key="magazine_in" fileref="compy_notification_login.wav" volume="1.0" />

@@ -1,9 +1,9 @@
 #include "item_delivery_configurator_invasion.as"
 
 // ------------------------------------------------------------------------------------------------
-class MyItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
+class SecessionItemDeliveryConfigurator : ItemDeliveryConfiguratorInvasion {
 	// ------------------------------------------------------------------------------------------------
-	MyItemDeliveryConfigurator(GameModeInvasion@ metagame) {
+	SecessionItemDeliveryConfigurator(GameModeInvasion@ metagame) {
 		super(metagame);
 	}
 

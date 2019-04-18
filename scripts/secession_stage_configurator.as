@@ -1,9 +1,9 @@
 #include "stage_configurator_campaign.as"
 
 // ------------------------------------------------------------------------------------------------
-class MyStageConfigurator : StageConfiguratorCampaign {
+class SecessionStageConfigurator : StageConfiguratorCampaign {
 	// ------------------------------------------------------------------------------------------------
-	MyStageConfigurator(GameModeInvasion@ metagame, MapRotatorCampaign@ mapRotator) {
+	SecessionStageConfigurator(GameModeInvasion@ metagame, MapRotatorCampaign@ mapRotator) {
 		super(metagame, mapRotator);
 	}
 

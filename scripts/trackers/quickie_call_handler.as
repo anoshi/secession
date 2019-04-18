@@ -9,32 +9,21 @@
 
 
 // --------------------------------------------
-class CallHandler : Tracker {
-	//protected Metagame@ m_metagame;
-	//protected GameMode@ m_metagame;
-	protected GameModeInvasion@ m_metagame;
-	//protected Vector3 m_position;
-	//protected int m_factionId;
+class QuickieCallHandler : Tracker {
+	protected SecessionQuickie@ m_metagame;
 
 	protected string BNNFILE = "bnn_status.xml"; // BNN mission dictionary and state information
 	protected bool hpActive = false; // only one Hot Potato allowed at a time
 	protected int hpHolder; // id of character holding the hot potato
 	protected int numToTele = 0; // number of RA units removed during teleport 1 call, and to be delivered via teleport 2 call
-	//protected string hpHolderPosi; // location of the target when receiving the hot potato
 	protected bool empActive = false; // only one EMP allowed at a time
 	protected array<int> empVeh; // array of vehicle ids affected by emp
 	protected array<int> ppVeh; // array of vehicle ids spotted by pathping
 	protected array<int> termTurrets; // array of turrets to be controlled by terminal interaction
 	protected array<string> activeTimers; // stores the names of active timers
-	/*
-	protected array<Timers@> m_timers; // to support multiple concurrent calls' countdown timers
-	// requires Timers class - see prison_break_objective.as for an example
-	*/
 
 	// ----------------------------------------------------
-	CallHandler(GameModeInvasion@ metagame) {
-	//CallHandler(GameMode@ metagame) {
-	//CallHandler(Metagame@ metagame) {}
+	QuickieCallHandler(SecessionQuickie@ metagame) {
 		@m_metagame = @metagame;
 	}
 
@@ -61,6 +50,8 @@ class CallHandler : Tracker {
 		string sCall = event.getStringAttribute("call_key");
 		string sPosi = event.getStringAttribute("target_position");
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
+
+		int numFactions = getFactions(m_metagame).size();
 
 		_log("call made: " + sCall, 1);
 		//_log("call source position: " + getPlayerPosition, 1)
@@ -128,7 +119,7 @@ class CallHandler : Tracker {
 				Vector3 v3termPos = stringToVector3(termPos);
 				array<const XmlElement@> foundTurrets;
 				// start with the offline turrets (vehicles)
-				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+				for (uint i = 0; i < numFactions; ++i) {
 					array<const XmlElement@> offlineTurrets = getVehiclesNearPosition(m_metagame, v3termPos, i, 10.00f);
 					merge(foundTurrets, offlineTurrets);
 				}
@@ -215,7 +206,7 @@ class CallHandler : Tracker {
 				_log("BC hot potato requested at: " + sPosi, 1);
 				hpActive = true;
 				array<const XmlElement@> targetChars;
-				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+				for (uint i = 0; i < numFactions; ++i) {
 					array<const XmlElement@> tempTargetChars = getCharactersNearPosition(m_metagame, v3Posi, i, 10.00f);
 					merge(targetChars, tempTargetChars);
 				}

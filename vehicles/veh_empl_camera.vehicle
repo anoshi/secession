@@ -1,0 +1,26 @@
+<vehicle name="Surveillance Camera" key="veh_empl_camera.vehicle" map_view_atlas_index="0" respawn_time="120" usable_for_cover="0" protectors="0" >
+	<tag name="emplacement" />
+
+	<tire_set offset="0.1 0.0 0.1" radius="0.1" />
+	<tire_set offset="0.1 0.0 -0.1" radius="0.1" />
+
+	<control max_speed="1.0" acceleration="1" max_reverse_speed="1.0" max_rotation="0.2" max_water_depth="1.9" />
+
+	<physics max_health="2" mass="70.0" extent="0.2 0.0 0.2" offset="0 0.0 0" top_offset="0 0.5 0" collision_model_pos="0 0.2 0" collision_model_extent="0.6 0.2 0.6" visual_offset="0 0.0 0" />
+
+	<visual class="chassis" mesh_filename="flare_stick.mesh" texture_filename="flare_stick_cyan.png" />
+	<!-- visual class="chassis" mesh_filename="veh_empl_camera.mesh" texture_filename="veh_empl_camera.png" />-->
+
+	<!--<effect event_key="destroy" key="other" ref="RedShine" lighting="0" />-->
+
+	<event key="receive_damage_xp_reward">
+		<trigger class="receive_damage" />
+		<result class="reward" xp="0.0050" />
+	</event>
+
+	<event key="spot_rp_reward">
+		<trigger class="spot" />
+		<result class="reward" rp="15.0" />
+	</event>
+
+</vehicle>

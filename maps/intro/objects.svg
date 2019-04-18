@@ -28,16 +28,16 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.50000003"
-     inkscape:cx="890.59783"
-     inkscape:cy="793.58852"
+     inkscape:zoom="1.0000001"
+     inkscape:cx="937.93564"
+     inkscape:cy="1428.9525"
      inkscape:document-units="px"
-     inkscape:current-layer="layer37"
+     inkscape:current-layer="layer39"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
-     inkscape:window-x="1048"
-     inkscape:window-y="341"
+     inkscape:window-x="1062"
+     inkscape:window-y="335"
      inkscape:window-maximized="0"
      inkscape:snap-bbox="false"
      inkscape:object-nodes="true"
@@ -981,8 +981,7 @@
        width="1"
        height="1"
        x="0"
-       y="0">
-    </filter>
+       y="0" />
     <filter
        style="color-interpolation-filters:sRGB"
        color-interpolation-filters="sRGB"
@@ -15846,58 +15845,6 @@ faction_index=5;</desc>
     </rect>
     <rect
        inkscape:label="#rect11324_base"
-       y="-418.53958"
-       x="578.43854"
-       height="68.075806"
-       width="68.368263"
-       id="rect4874-8-1-8-0-8"
-       style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       transform="rotate(90.067586)">
-      <desc
-         id="desc4876-3-1-3-9-3">name=BC Recon 3;
-faction_index=0;</desc>
-    </rect>
-    <rect
-       inkscape:label="#rect11324_base"
-       y="-789.08722"
-       x="854.92584"
-       height="68.075806"
-       width="68.368263"
-       id="rect4874-8-1-8-0-0"
-       style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       transform="rotate(90.067586)">
-      <desc
-         id="desc4876-3-1-3-9-4">name=BC Recon 6;
-faction_index=0;</desc>
-    </rect>
-    <rect
-       inkscape:label="#rect11324_base"
-       y="-738.8631"
-       x="664.98499"
-       height="68.075806"
-       width="68.368263"
-       id="rect4874-8-1-8-0-1"
-       style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       transform="rotate(90.067586)">
-      <desc
-         id="desc4876-3-1-3-9-79">name=BC Recon 5;
-faction_index=0;</desc>
-    </rect>
-    <rect
-       inkscape:label="#rect11324_base"
-       y="-548.9765"
-       x="761.20905"
-       height="68.075806"
-       width="68.368263"
-       id="rect4874-8-1-8-0-5"
-       style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       transform="rotate(90.067586)">
-      <desc
-         id="desc4876-3-1-3-9-32">name=BC Recon 4;
-faction_index=0;</desc>
-    </rect>
-    <rect
-       inkscape:label="#rect11324_base"
        y="-564.26398"
        x="157.1906"
        height="68.075806"
@@ -15909,32 +15856,6 @@ faction_index=0;</desc>
          id="desc4876-3-1-3-9-9">name=BC Dropzone;
 faction_index=0;
 capturable = 0;</desc>
-    </rect>
-    <rect
-       inkscape:label="#rect11324_base"
-       y="-648.49988"
-       x="357.09137"
-       height="68.075806"
-       width="68.368263"
-       id="rect4874-8-1-8-0-80"
-       style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       transform="rotate(90.067586)">
-      <desc
-         id="desc4876-3-1-3-9-8">name=BC Recon 1;
-faction_index=0;</desc>
-    </rect>
-    <rect
-       inkscape:label="#rect11324_base"
-       y="-512.5943"
-       x="437.25174"
-       height="68.075806"
-       width="68.368263"
-       id="rect4874-8-1-8-0-97"
-       style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
-       transform="rotate(90.067586)">
-      <desc
-         id="desc4876-3-1-3-9-0">name=BC Recon 2;
-faction_index=0;</desc>
     </rect>
     <rect
        inkscape:label="#rect11324_base"
@@ -16251,6 +16172,97 @@ faction_index=1;</desc>
          id="desc4876-3-1-3-9-58">name=LC Recon 4;
 faction_index=1;</desc>
     </rect>
+  </g>
+  <g
+     inkscape:groupmode="layer"
+     id="layer45"
+     inkscape:label="bases.bc">
+    <rect
+       inkscape:label="#rect11324_base"
+       y="-418.53958"
+       x="578.43854"
+       height="68.075806"
+       width="68.368263"
+       id="rect4874-8-1-8-0-8"
+       style="display:inline;enable-background:new;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none"
+       transform="rotate(90.067586)">
+      <desc
+         id="desc4876-3-1-3-9-3">name=BC Recon 3;
+faction_index=0;</desc>
+    </rect>
+    <rect
+       inkscape:label="#rect11324_base"
+       y="-789.08722"
+       x="854.92584"
+       height="68.075806"
+       width="68.368263"
+       id="rect4874-8-1-8-0-0"
+       style="display:inline;enable-background:new;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none"
+       transform="rotate(90.067586)">
+      <desc
+         id="desc4876-3-1-3-9-4">name=BC Recon 6;
+faction_index=0;</desc>
+    </rect>
+    <rect
+       inkscape:label="#rect11324_base"
+       y="-738.8631"
+       x="664.98499"
+       height="68.075806"
+       width="68.368263"
+       id="rect4874-8-1-8-0-1"
+       style="display:inline;enable-background:new;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none"
+       transform="rotate(90.067586)">
+      <desc
+         id="desc4876-3-1-3-9-79">name=BC Recon 5;
+faction_index=0;</desc>
+    </rect>
+    <rect
+       inkscape:label="#rect11324_base"
+       y="-548.9765"
+       x="761.20905"
+       height="68.075806"
+       width="68.368263"
+       id="rect4874-8-1-8-0-5"
+       style="display:inline;enable-background:new;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none"
+       transform="rotate(90.067586)">
+      <desc
+         id="desc4876-3-1-3-9-32">name=BC Recon 4;
+faction_index=0;</desc>
+    </rect>
+    <rect
+       inkscape:label="#rect11324_base"
+       y="-648.49988"
+       x="357.09137"
+       height="68.075806"
+       width="68.368263"
+       id="rect4874-8-1-8-0-80"
+       style="display:inline;enable-background:new;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none"
+       transform="rotate(90.067586)">
+      <desc
+         id="desc4876-3-1-3-9-8">name=BC Recon 1;
+faction_index=0;</desc>
+    </rect>
+    <rect
+       inkscape:label="#rect11324_base"
+       y="-512.5943"
+       x="437.25174"
+       height="68.075806"
+       width="68.368263"
+       id="rect4874-8-1-8-0-97"
+       style="display:inline;enable-background:new;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none"
+       transform="rotate(90.067586)">
+      <desc
+         id="desc4876-3-1-3-9-0">name=BC Recon 2;
+faction_index=0;</desc>
+    </rect>
+    <rect
+       inkscape:label="#spawnrect10748"
+       y="162.5265"
+       x="518.57458"
+       height="2.0679491"
+       width="2.2977724"
+       id="rect4878-8-6-42-7-9-6-69-80-03"
+       style="display:inline;enable-background:new;opacity:0.93000034;fill:#594931;fill-opacity:1;stroke:none" />
   </g>
   <g
      style="display:inline"
@@ -20152,14 +20164,6 @@ top_material = terrain;</desc>
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-69-80-97"
-         style="display:inline;opacity:0.93000034;fill:#594931;fill-opacity:1;stroke:none;enable-background:new" />
-      <rect
-         inkscape:label="#spawnrect10748"
-         y="162.5265"
-         x="518.57458"
-         height="2.0679491"
-         width="2.2977724"
-         id="rect4878-8-6-42-7-9-6-69-80-03"
          style="display:inline;opacity:0.93000034;fill:#594931;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"

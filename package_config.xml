@@ -6,6 +6,7 @@
 	show_in_quick_match_mods="1"
 	show_in_campaign_menu="1"
 	campaign_entry_script="start_campaign.as"
+	quick_match_entry_script="start_quickie.as"
 	image="secession_campaign.png">
 
 	<campaign_options
@@ -19,7 +20,7 @@
 		rp_multiplier="1"
 		allow_activate_server="1">
 
-		<preset text="Easy" help="Help:Easy" id="easy"
+		<preset text="Recruit" help="Help:Easy" id="easy"
 			friendly_capacity="1.22"
 			friendly_accuracy="0.95"
 			enemy_capacity="1.0"
@@ -28,7 +29,7 @@
 			rp_multiplier="1.0"
 			player_damage_modifier="0.33"
 			/>
-		<preset text="Hard" help="Help:Hard" id="hard"
+		<preset text="Professional" help="Help:Hard" id="hard"
 			friendly_capacity="1.20"
 			friendly_accuracy="0.94"
 			enemy_capacity="1.0"

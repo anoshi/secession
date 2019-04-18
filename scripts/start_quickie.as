@@ -1,8 +1,10 @@
+// paths containing angel script files
 #include "path://media/packages/vanilla/scripts"
 #include "path://media/packages/secession/scripts"
-#include "secession_gamemode.as"
 
-// --------------------------------------------
+// secession quickmatch gamemode and script refs
+#include "secession_quickie.as"
+
 void main(dictionary@ inputData) {
 	XmlElement inputSettings(inputData);
 
@@ -10,9 +12,9 @@ void main(dictionary@ inputData) {
 	settings.fromXmlElement(inputSettings);
 	//_setupLog(inputSettings);
 	_setupLog("dev_verbose"); // comment out before go-live
-	settings.print();
+	_log("*** SECESSION: start_quickie.as running...",1);
 
-	SecessionCampaign metagame(settings);
+	SecessionQuickie metagame(settings);
 
 	metagame.init();
 	metagame.run();
