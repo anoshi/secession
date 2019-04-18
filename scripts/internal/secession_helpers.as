@@ -181,3 +181,22 @@ string getHotPotPosi() {
 ///////////////////////////////////////
 // ----- END SECESSION HELPERS ----- //
 ///////////////////////////////////////
+
+/*
+// --------------------------------------------------------
+const XmlElement@ getExtCharacterInfo(const Metagame@ metagame, int characterId) {
+	XmlElement@ query = XmlElement(
+		makeQuery(metagame, array<dictionary> = {
+			dictionary = { {"TagName", "data"}, {"class", "character"}, {"id", characterId}, {"include_equipment", 1}}}));
+
+	const XmlElement@ doc = metagame.getComms().query(query);
+	return doc.getFirstElementByTagName("character"); //.getElementsByTagName("item")
+}
+const XmlElement@ characterInfo = getExtCharacterInfo(m_metagame, characterId);
+array<const XmlElement@>@ equipment = characterInfo.getElementsByTagName("item");
+
+	string primary = equipment[0].getStringAttribute("key");
+	string secondary = equipment[1].getStringAttribute("key");
+	string throwable = equipment[2].getStringAttribute("key");
+	string carry = equipment[4].getStringAttribute("key");
+*/
