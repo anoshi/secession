@@ -3,9 +3,9 @@
 <package
 	name="secession"
 	description="Campaign description"
-	show_in_quick_match_mods="1"
 	show_in_campaign_menu="1"
 	campaign_entry_script="start_campaign.as"
+	show_in_quick_match_mods="1"
 	quick_match_entry_script="start_quickie.as"
 	image="secession_campaign.png">
 

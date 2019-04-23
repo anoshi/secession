@@ -51,7 +51,7 @@ class QuickieCallHandler : Tracker {
 		string sPosi = event.getStringAttribute("target_position");
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
 
-		int numFactions = getFactions(m_metagame).size();
+		uint numFactions = getFactions(m_metagame).size();
 
 		_log("call made: " + sCall, 1);
 		//_log("call source position: " + getPlayerPosition, 1)
@@ -581,9 +581,9 @@ class QuickieCallHandler : Tracker {
 		}
 	}
 
-/////////////////////////////
-// ----- CALL METHODS -----//
-/////////////////////////////
+	/////////////////////////////
+	// ----- CALL METHODS -----//
+	/////////////////////////////
 	protected void bombingRun(const XmlElement@ event, string charPosi, int number, string instanceClass, string instanceKey, float height) {
 		// Get the info we need
 		int characterId = event.getIntAttribute("character_id");
