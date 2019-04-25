@@ -3,11 +3,17 @@
 //#include "user_settings_simple.as"
 #include "user_settings.as"
 #include "log.as"
+#include "announce_task.as"
+#include "query_helpers.as"
 
 // generic trackers
 #include "basic_command_handler.as"
 #include "autosaver.as"
 #include "looper.as"
+
+// secession helpers
+#include "secession_helpers.as"
+#include "short_story.as"
 
 // secession trackers
 #include "bnn.as"
@@ -83,6 +89,11 @@ class SecessionQuickie : GameMode {
 		addTracker(BNN(this));                  // Broadcast News Network Class and Methods
 		addTracker(QuickieCallHandler(this));   // 'H' call menu and scripted call handler
 		addTracker(QuickieHitboxHandler(this)); // Trigger area (hitbox) HitboxHandler Class and Methods
+		addTracker(QuickieStory(this));
+
+		_log("*** SECESSION: getting user settings: ", 1);
+		getUserSettings();
+		_log("*** SECESSION: got user settings", 1);
 	}
 
 	// --------------------------------------------
@@ -148,6 +159,7 @@ class SecessionQuickie : GameMode {
 		resetTimer();
 	}
 
+	// --------------------------------------------
 	const XmlElement@ queryLocalPlayer() const {
 		array<const XmlElement@> players = getGenericObjectList(this, "players", "player");
 		const XmlElement@ player = null;

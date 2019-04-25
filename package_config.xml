@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!-- package 'description' is used here as a key, not a value. See languages/<language>/package_ui.xml> -->
+<!-- package 'description' is used here as a key, not a value. See languages/<language>/package_ui.xml>-->
 <package
 	name="secession"
 	description="Campaign description"

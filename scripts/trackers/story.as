@@ -10,8 +10,8 @@
 class Story : Tracker {
 	protected GameModeInvasion@ m_metagame;
 
-    protected float STORY_DELAY_MAX = 50.00; //180.00;
-    protected float STORY_DELAY_MIN = 25.00; //90.00;
+    protected float STORY_DELAY_MAX = 15.00; //180.00;
+    protected float STORY_DELAY_MIN = 5.00; //90.00;
 	protected float storyDelay; // randomise time between story delivery
 	protected dictionary story_dict;
 	protected int m_playerCharacterId;
@@ -29,24 +29,50 @@ class Story : Tracker {
 
 	protected void tellNextStoryItem() {
 
+		// hard-coded list for now. Become a per-faction, tracked list with current, next (and branching story arc logic)?
 		string storyKey = "story_1";
-		dictionary a = {};
+		dictionary a = {
+			// format: {"%text_replacement_key", textReplacementValue},
+			// {"%another_key", some_array_of_text_items[rand(0, some_array_of_text_items.size() -1)]},
+			// {"%mission_goal", anyMissionGoal(faction_name)}, // <-- might even work
+			// {"%last_key", "bye bye"}
+			{"%mission_goal", anyMissionGoal()}
+		};
 
 		// What is the player character's Id?
 		const XmlElement@ player = m_metagame.queryLocalPlayer();
 		int playerCharId = player.getIntAttribute("character_id");
 		// what is the player character's position?
 		const XmlElement@ playerInfo = getCharacterInfo(m_metagame, playerCharId);
-		Vector3 playerPos = stringToVector3(playerInfo.getStringAttribute("position"));
-		// find nearby friendlies
-		array<const XmlElement@> friendlyChars = getCharactersNearPosition(m_metagame, playerPos, 0, 10.0f);
-		// have one of them say the next line of the story
-		_log("*** SECESSION: found " + friendlyChars.size() + " friendlies near player character!", 1);
-		uint friendlyCharId = friendlyChars[rand(0, friendlyChars.size() -1)].getIntAttribute("id");
-		const XmlElement@ friendlyCharInfo = getCharacterInfo(m_metagame, friendlyCharId);
-		_log("*** SECESSION: character ID " + friendlyCharId + " about to say a story item!", 1);
-		sendFactionMessageKeySaidAsCharacter(m_metagame, 0, friendlyCharId, storyKey, a);
-		// update the reference var to where the player is at in the story (persist beyond saves)
+		if (playerInfo.getIntAttribute("wounded") != 1 && playerInfo.getIntAttribute("dead") != 1) {
+			_log("*** SECESSION: player is alive, tell more story");
+			Vector3 playerPos = stringToVector3(playerInfo.getStringAttribute("position"));
+			// find nearby friendlies
+			array<const XmlElement@> friendlyChars = getCharactersNearPosition(m_metagame, playerPos, 0, 10.0f);
+			if (friendlyChars.size() > 0) { // pc and inanimate objects won't continue the story
+				for (uint fc = 0; fc < friendlyChars.size(); ++fc) { // array contains playerCharId lookup instead?
+					uint fcId = friendlyChars[fc].getIntAttribute("id");
+					if (fcId == playerCharId) {
+						friendlyChars.erase(fc);
+					}
+				}
+			}
+			if (friendlyChars.size() > 0) { // anyone left nearby?
+				_log("*** SECESSION: found " + friendlyChars.size() + " friendlies near player character!", 1);
+				// have one of them say the next line of the story
+				uint friendlyCharId = friendlyChars[rand(0, friendlyChars.size() -1)].getIntAttribute("id");
+				const XmlElement@ friendlyCharInfo = getCharacterInfo(m_metagame, friendlyCharId);
+				// DOESN'T WORK _log("*** SECESSION: storyteller group name is: " + friendlyCharInfo.getStringAttribute("soldier_group_name"), 1);
+				_log("*** SECESSION: character ID " + friendlyCharId + " about to say a story item!", 1);
+				sendFactionMessageKeySaidAsCharacter(m_metagame, 0, friendlyCharId, storyKey, a);
+				// update the reference var to where the player is at in the story (persist beyond saves)
+			}
+		}
+	}
+
+	protected string anyMissionGoal() {
+		array<string> missionGoals = {"fun", "NOFUN", "MANY WOW", "such adventure"};
+		return missionGoals[rand(0, missionGoals.size() -1)];
 	}
 
 	// /////////////////////// //

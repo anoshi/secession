@@ -1,11 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
-<map_config min_factions="2" max_factions="5">
-	<faction file="bc.xml" />
-	<faction file="lc.xml" />
-	<faction file="ra.xml" />
-	<faction file="ss.xml" />
-	<faction file="wt.xml" />
-	<faction file="neutral.xml" />
+<map_config min_factions="2" max_factions="5" quick_match_entry_script="start_quickie.as">
+	<faction file="all_factions.xml" />
 	<weapon file="all_weapons.xml" />
 	<projectile file="all_throwables.xml" />
 	<call file="all_calls.xml" />

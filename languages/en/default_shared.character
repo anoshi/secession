@@ -68,10 +68,10 @@
 
 	<!-- SECESSION story cues -->
 	<comment key="story_1" text="we sure are chatty today" />
-	<comment key="story_1" text="when's the next RWR community box?" />
-	<comment key="story_1" text="has anyone tested the next RWR release?" />
-	<comment key="story_1" text="are we at version 1.71 yet?" />
-	<comment key="story_1" text="got any last minute contributions for CB3?" />
+	<comment key="story_1" text="when's the next %mission_goal or RWR community box?" />
+	<comment key="story_1" text="has anyone tested the next %mission_goal or RWR release?" />
+	<comment key="story_1" text="our goal is simple: %mission_goal" />
+	<comment key="story_1" text="got any last minute %mission_goal ?" />
 	<!-- END SECESSION story cues -->
 
 	<!-- BEGIN calls -->
