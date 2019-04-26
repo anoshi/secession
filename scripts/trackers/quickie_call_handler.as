@@ -27,16 +27,6 @@ class QuickieCallHandler : Tracker {
 		@m_metagame = @metagame;
 	}
 
-	protected void handleItemDropEvent(const XmlElement@ event) {
-		// BC Hot Potato item tracker
-		// we only need to know if the hot potato is dropped on the ground. Otherwise, it's still held by the target
-		if ((event.getStringAttribute("item_key") == "hot_potato.projectile") && (event.getStringAttribute("target_container_type_id") == "0")) {
-			string hpPosi = event.getStringAttribute("position");
-			_log("Hot Potato has been dropped on the ground at " + hpPosi, 1);
-			setHotPotPosi(hpPosi); // see secession_helpers.as
-		}
-	}
-
 	protected void handleCallEvent(const XmlElement@ event) {
 	/* REMEMBER: Only calls that have notify_metagame="1" declared are sent here
 	Calls that don't require script-side support will use '<command>' blocks in the call itself. */
@@ -227,20 +217,16 @@ class QuickieCallHandler : Tracker {
 				}
 			} else if (phase == "end") {
 				string hpPosition = getHotPotPosi();
-				if (hpPosition == "init") {
-					// hot potato wasn't dropped onto ground; may have been thrown. check if resource still exists
-					//const XmlElement@ isActive = getResource(m_metagame, "hot_potato.projectile", "grenade");
-					//if (isActive !is null) {
+				if (hpPosition == "init" && hpActive) {
 					_log("Character id: " + hpHolder + " still has the hot potato. Good bye!", 1);
 					const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", hpHolder);
 					hpPosition = qResult.getStringAttribute("position");
-					//}
 				}
-				string boomComm = "<command class='create_instance' position='" + hpPosition + "' instance_class='grenade' instance_key='hot_pot_boom.projectile' activated='1'></command>";
-				m_metagame.getComms().send(boomComm);
-				// remove the hot potato item from play - not yet implemented
-				// reset the hot potato countdown timer
-				hpActive = false;
+				if (hpActive){
+					string boomComm = "<command class='create_instance' position='" + hpPosition + "' instance_class='grenade' instance_key='hot_pot_boom.projectile' activated='1'></command>";
+					m_metagame.getComms().send(boomComm);
+					hpActive = false;
+				}
 			}
 		}
 	////////////////////////
@@ -605,6 +591,28 @@ class QuickieCallHandler : Tracker {
 			m_metagame.getComms().send(c);
 		}
 	}
+
+	// ------------- BC Hot Potato tracking methods ------------- //
+	protected void handleItemDropEvent(const XmlElement@ event) {
+		// BC Hot Potato item tracker
+		// we only need to know if the hot potato is dropped on the ground. Otherwise, it's still held by the target
+		if ((event.getStringAttribute("item_key") == "hot_potato.projectile") && (event.getStringAttribute("target_container_type_id") == "0")) {
+			string hpPosi = event.getStringAttribute("position");
+			_log("Hot Potato has been dropped on the ground at " + hpPosi, 1);
+			setHotPotPosi(hpPosi); // see secession_helpers.as
+		}
+	}
+
+	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
+		// tracking for the hot potato in case of being discovered and thrown as a grenade
+		_log("*** SECESSION: call_handler handleVehicleDestroyEvent running",1);
+		if (event.getStringAttribute("vehicle_key") == "hot_potato_dummy.vehicle") {
+			// stop tracking the hot potato. It's blown up!
+			_log("*** SECESSION: hot potato was used as grenade and detonated.");
+			hpActive = false;
+		}
+	}
+
 	// --------------------------------------------
 	/*
 	// --------------------------------------------

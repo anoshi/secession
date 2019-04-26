@@ -2,9 +2,9 @@
 <projectile class="grenade" name="HOT POTATO" key="hot_potato.projectile" slot="0" radius="0.15" can_be_disarmed="0" drop_count_factor_on_death="0.0" time_to_live_out_in_the_open="10.0">
     <tag name="grenade" />
 
-    <result class="blast" radius="9.0" damage="8.01" push="8" decal="1" character_state="death" />
-    <trigger class="time" time_to_live="6.0"/>
-
+    <trigger class="time" time_to_live="3.0"/>
+    <result class="spawn" instance_class="vehicle" instance_key="hot_potato_dummy.vehicle"  min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
+    <!-- only one result per projectile it seems, so the 0 TTL vehicle's destroy event spawns a hot_pot_boom.projectile that creates the blast result. -->
     <rotation class="random" />
 
     <model mesh_filename="grenade.xml" />
@@ -18,7 +18,7 @@
 
     <sound class="result" key="other" fileref="explosion1.wav" />
     <sound class="result" key="other" fileref="explosion2.wav" />
-    <sound class="result" key="other" fileref="explosion2_1.wav" />    
+    <sound class="result" key="other" fileref="explosion2_1.wav" />
 
     <sound class="result" key="terrain" copy="other" />
     <sound class="result" key="static_object" copy="other" />

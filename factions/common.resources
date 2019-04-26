@@ -197,6 +197,8 @@
 	<vehicle key="veh_repair_bay_large.vehicle" />
 	<vehicle key="veh_repair_bay_small.vehicle" />
 	<vehicle key="veh_repair_bay_terminal.vehicle" />
+	<!-- SECESSION DUMMY vehicles -->
+	<vehicle key="hot_potato_dummy.vehicle" />
 	<!-- end SECESSION vehicles -->
 	<!-- END ALL COMMON VEHICLES -->
 

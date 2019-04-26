@@ -91,6 +91,9 @@
   <vehicle file="veh_repair_bay_small.vehicle" />
   <vehicle file="veh_repair_bay_terminal.vehicle" />
 
+  <!-- DUMMY vehicles (for tracking purposes) -->
+  <vehicle file="hot_potato_dummy.vehicle" />
+
   <!-- CLASS-SPECIFIC vehicles -->
   <!-- LightFoot -->
   <!-- Heavy Trooper -->
