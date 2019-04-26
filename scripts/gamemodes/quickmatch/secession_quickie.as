@@ -18,6 +18,7 @@
 // secession trackers
 #include "bnn.as"
 #include "quickie_call_handler.as"
+#include "dummy_vehicle_handler.as"
 #include "quickie_hitbox_handler.as"
 // #include "story.as" // hey! play the campaign, punk :-P
 
@@ -89,7 +90,8 @@ class SecessionQuickie : GameMode {
 		addTracker(BNN(this));                  // Broadcast News Network Class and Methods
 		addTracker(QuickieCallHandler(this));   // 'H' call menu and scripted call handler
 		addTracker(QuickieHitboxHandler(this)); // Trigger area (hitbox) HitboxHandler Class and Methods
-		addTracker(QuickieStory(this));
+		addTracker(QuickieStory(this));         // NPC comms to player
+		addTracker(DummyVehicleHandler(this));	// Performs tasks when (dummy) vehicles are destroyed
 
 		_log("*** SECESSION: getting user settings: ", 1);
 		getUserSettings();
@@ -126,7 +128,7 @@ class SecessionQuickie : GameMode {
 
 	// --------------------------------------------
 	void load() {
-		_log("loading metagame", 1);
+		_log("*** SECESSION: loading metagame", 1);
 
 		XmlElement@ query = XmlElement(
 			makeQuery(this, array<dictionary> = {

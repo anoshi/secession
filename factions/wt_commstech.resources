@@ -11,4 +11,5 @@
 
 	<!--<call key="some_call_noone_else_has.call" />-->
 	<call key="wt_propaganda_1.call" />
+	<call key="wt_remote_hack_1.call" />
 </resources>

@@ -10,8 +10,8 @@
 class Story : Tracker {
 	protected GameModeInvasion@ m_metagame;
 
-    protected float STORY_DELAY_MAX = 15.00; //180.00;
-    protected float STORY_DELAY_MIN = 5.00; //90.00;
+    protected float STORY_DELAY_MAX = 50.00; //180.00;
+    protected float STORY_DELAY_MIN = 25.00; //90.00;
 	protected float storyDelay; // randomise time between story delivery
 	protected dictionary story_dict;
 	protected int m_playerCharacterId;
@@ -51,7 +51,7 @@ class Story : Tracker {
 			array<const XmlElement@> friendlyChars = getCharactersNearPosition(m_metagame, playerPos, 0, 10.0f);
 			if (friendlyChars.size() > 0) { // pc and inanimate objects won't continue the story
 				for (uint fc = 0; fc < friendlyChars.size(); ++fc) { // array contains playerCharId lookup instead?
-					uint fcId = friendlyChars[fc].getIntAttribute("id");
+					int fcId = friendlyChars[fc].getIntAttribute("id");
 					if (fcId == playerCharId) {
 						friendlyChars.erase(fc);
 					}

@@ -99,80 +99,6 @@ class QuickieCallHandler : Tracker {
 		else if (sCall == "bnn_advert.call") {
 			notify(m_metagame, "BNN advert", bnn_dict);
 		}
-		else if (sCall == "terminal.call") {
-			_log("Terminal call block processing...", 1);
-			// improve to detect hostile active turrets (enemy soldier 'turret') as well as offline turrets
-			if (phase == "queue") {
-				const XmlElement@ qResult = getGenericObjectInfo(m_metagame, "character", iChar);
-					string termPos = qResult.getStringAttribute("position");
-				_log("locating turrets near: " + termPos, 1);
-				Vector3 v3termPos = stringToVector3(termPos);
-				array<const XmlElement@> foundTurrets;
-				// start with the offline turrets (vehicles)
-				for (uint i = 0; i < numFactions; ++i) {
-					array<const XmlElement@> offlineTurrets = getVehiclesNearPosition(m_metagame, v3termPos, i, 10.00f);
-					merge(foundTurrets, offlineTurrets);
-				}
-				for (uint i = 0; i < foundTurrets.size(); ++i) {
-					const XmlElement@ info = foundTurrets[i];
-					int id = info.getIntAttribute("id");
-					_log("vehicle id: " + id, 1);
-					const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
-					string vehPosi = vehInfo.getStringAttribute("position");
-					Vector3 v3VehPosi = stringToVector3(vehPosi);
-					string sKey = vehInfo.getStringAttribute("key");
-					if (startsWith(sKey, "veh_empl_turret")) {
-						_log("found a turret at: " + vehPosi + ". (Re)Activating...", 1);
-						termTurrets.push_back(id);
-					} else {
-						foundTurrets.erase(i);
-						i--;
-					}
-				}
-				// now find the online turrets (soldiers) ahhh balls can't find a character's class without consulting saved data.
-				// perhaps store all turret locations into an array at start of level, then if a character at almost one of those exact locations
-				// take a chance and kill it, spawn a friendly turret.
-				/*
-				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
-					array<const XmlElement@> onlineTurrets = getCharactersNearPosition(m_metagame, v3termPos, i, 10.00f);
-				}
-				for (uint i = 0; i < onlineTurrets.size(); ++i) {
-					const XmlElement@ info = onlineTurrets[i];
-					int id = info.getIntAttribute("id");
-					const XmlElement@ charInfo = getCharacterInfo(m_metagame, id);
-					string charPosi = charInfo.getStringAttribute("position");
-					Vector3 v3CharPosi = stringToVector3(charPosi);
-					HERE NEEDS FIXING: string sClass = charInfo.getStringAttribute("key");
-					if (startsWith(sKey, "veh_empl_turret")) {
-						_log("found a hostile turret at: " + charPosi + ". Repurposing...", 1);
-						termTurrets.push_back(id);
-					} else {
-						onlineTurrets.erase(i);
-						i--;
-					}
-				}
-				// join the offline and online turret arrays, await launch phase
-				merge(foundTurrets, onlineTurets);
-				*/
-			} else if (phase == "launch") {
-				for (uint i = 0; i < termTurrets.size(); ++i) {
-					uint turretID = termTurrets[i];
-					const XmlElement@ turretInfo = getVehicleInfo(m_metagame, turretID);
-					string turretPosi = turretInfo.getStringAttribute("position");
-					// remove turret vehicle/mesh from location
-					string remComm = "<command class='remove_vehicle' id='" + turretID + "'></command>";
-					//string remComm = "<command class='update_vehicle' id='" + turretID + " health='-1''></command>";
-					m_metagame.getComms().send(remComm);
-					// place static turret char at location
-					string spawnComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + turretPosi + "' instance_key='empl_turret' /></command>";
-					m_metagame.getComms().send(spawnComm);
-				}
-			} else if (phase == "end") {
-				if (termTurrets.size() >= 1) {
-					termTurrets.resize(0);
-				}
-			}
-		}
 		else if (sCall == "bombing_run.call") {
 			if (phase == "queue") {
 				_log("Bombing run from " + sCharPosi + " to " + sPosi + " queued", 1);
@@ -565,6 +491,77 @@ class QuickieCallHandler : Tracker {
 				_log("finished distributing propaganda", 1);
 			}
 		}
+		else if (sCall == "wt_remote_hack_1.call") {
+			_log("*** SECESSION: WyreTek remote hack call block processing...", 1);
+			// improve to detect hostile active turrets (enemy soldier 'turret') as well as offline turrets
+			if (phase == "queue") {
+				_log("locating turrets near: " + sPosi, 1);
+				array<const XmlElement@> foundTurrets;
+				// start with the offline turrets (vehicles)
+				for (uint i = 0; i < numFactions; ++i) {
+					array<const XmlElement@> offlineTurrets = getVehiclesNearPosition(m_metagame, v3Posi, i, 10.00f);
+					merge(foundTurrets, offlineTurrets);
+				}
+				for (uint i = 0; i < foundTurrets.size(); ++i) {
+					const XmlElement@ info = foundTurrets[i];
+					int id = info.getIntAttribute("id");
+					_log("vehicle id: " + id, 1);
+					const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
+					string vehPosi = vehInfo.getStringAttribute("position");
+					Vector3 v3VehPosi = stringToVector3(vehPosi);
+					string sKey = vehInfo.getStringAttribute("key");
+					if (startsWith(sKey, "veh_empl_turret")) {
+						_log("found a turret at: " + vehPosi + ". (Re)Activating...", 1);
+						termTurrets.push_back(id);
+					} else {
+						foundTurrets.erase(i);
+						i--;
+					}
+				}
+				// now find the online turrets (soldiers) ahhh balls can't find a character's class without consulting saved data.
+				// perhaps store all turret locations into an array at start of level, then if a character at almost one of those exact locations
+				// take a chance and kill it, spawn a friendly turret.
+				/*
+				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
+					array<const XmlElement@> onlineTurrets = getCharactersNearPosition(m_metagame, v3termPos, i, 10.00f);
+				}
+				for (uint i = 0; i < onlineTurrets.size(); ++i) {
+					const XmlElement@ info = onlineTurrets[i];
+					int id = info.getIntAttribute("id");
+					const XmlElement@ charInfo = getCharacterInfo(m_metagame, id);
+					string charPosi = charInfo.getStringAttribute("position");
+					Vector3 v3CharPosi = stringToVector3(charPosi);
+					HERE NEEDS FIXING: string sClass = charInfo.getStringAttribute("key");
+					if (startsWith(sKey, "veh_empl_turret")) {
+						_log("found a hostile turret at: " + charPosi + ". Repurposing...", 1);
+						termTurrets.push_back(id);
+					} else {
+						onlineTurrets.erase(i);
+						i--;
+					}
+				}
+				// join the offline and online turret arrays, await launch phase
+				merge(foundTurrets, onlineTurets);
+				*/
+			} else if (phase == "launch") {
+				for (uint i = 0; i < termTurrets.size(); ++i) {
+					uint turretID = termTurrets[i];
+					const XmlElement@ turretInfo = getVehicleInfo(m_metagame, turretID);
+					string turretPosi = turretInfo.getStringAttribute("position");
+					// remove turret vehicle/mesh from location
+					string remComm = "<command class='remove_vehicle' id='" + turretID + "'></command>";
+					//string remComm = "<command class='update_vehicle' id='" + turretID + " health='-1''></command>";
+					m_metagame.getComms().send(remComm);
+					// place static turret char at location
+					string spawnComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + turretPosi + "' instance_key='empl_turret' /></command>";
+					m_metagame.getComms().send(spawnComm);
+				}
+			} else if (phase == "end") {
+				if (termTurrets.size() >= 1) {
+					termTurrets.resize(0);
+				}
+			}
+		}
 	}
 
 	/////////////////////////////
@@ -606,7 +603,7 @@ class QuickieCallHandler : Tracker {
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
 		// tracking for the hot potato in case of being discovered and thrown as a grenade
 		_log("*** SECESSION: call_handler handleVehicleDestroyEvent running",1);
-		if (event.getStringAttribute("vehicle_key") == "hot_potato_dummy.vehicle") {
+		if (event.getStringAttribute("vehicle_key") == "dummy_hot_potato.vehicle") {
 			// stop tracking the hot potato. It's blown up!
 			_log("*** SECESSION: hot potato was used as grenade and detonated.");
 			hpActive = false;

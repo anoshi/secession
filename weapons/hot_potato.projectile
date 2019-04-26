@@ -3,7 +3,7 @@
     <tag name="grenade" />
 
     <trigger class="time" time_to_live="3.0"/>
-    <result class="spawn" instance_class="vehicle" instance_key="hot_potato_dummy.vehicle"  min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
+    <result class="spawn" instance_class="vehicle" instance_key="dummy_hot_potato.vehicle"  min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
     <!-- only one result per projectile it seems, so the 0 TTL vehicle's destroy event spawns a hot_pot_boom.projectile that creates the blast result. -->
     <rotation class="random" />
 

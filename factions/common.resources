@@ -198,7 +198,8 @@
 	<vehicle key="veh_repair_bay_small.vehicle" />
 	<vehicle key="veh_repair_bay_terminal.vehicle" />
 	<!-- SECESSION DUMMY vehicles -->
-	<vehicle key="hot_potato_dummy.vehicle" />
+	<vehicle key="dummy_hot_potato.vehicle" />
+	<vehicle key="dummy_terminal.vehicle" />
 	<!-- end SECESSION vehicles -->
 	<!-- END ALL COMMON VEHICLES -->
 
@@ -213,7 +214,6 @@
 	<!-- SECESSION calls -->
 	<call key="bnn_advert.call" />
 	<call key="bnn_mission.call" />
-	<call key="terminal.call" />
 	<!-- end SECESSION calls -->
 	<!-- END ALL COMMON CALLS -->
 </resources>

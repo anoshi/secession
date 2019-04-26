@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<call name="Terminal activated" key="terminal.call" notify_metagame="1"
-  initiation_comment1="Activate Terminal"
-  acknowledge_comment="Terminal activated">
+<call name="WT Remote Hack" key="wt_remote_hack_1.call" notify_metagame="1"
+  initiation_comment1="Remote Hack"
+  acknowledge_comment="Hacking Terminal">
 
   <round launch_time="4.0"
     spawn_time="4.0">
     <command
       class="chat"
-      text="Turret coming online now"
+      text="Knock knock..."
       priority="1"
       faction="0">
     </command>

@@ -10,7 +10,7 @@
     carry_in_two_hands="1"
 	suppressed="1"
 	name="terminal"
-	class="3"
+	class="4"
 	reload_one_at_a_time="1"
 	sight_range_modifier="1.0"
 	projectile_speed="60.0"

@@ -9,7 +9,7 @@
 	<!-- end COMMON calls -->
 
 	<!-- AUTOMATED calls -->
-	<call file="terminal.call" />
+	<!-- (moved to wt_remote_hack_1.call) <call file="terminal.call" />-->
 	<!-- end AUTOMATED calls -->
 
 	<!-- CLASS calls -->
@@ -61,6 +61,7 @@
 	<call file="wt_jammer_1.call" />
 	<call file="wt_pathping_1.call" />
 	<call file="wt_propaganda_1.call" />
+	<call file="wt_remote_hack_1.call" />
 	<!-- end WyreTek calls -->
 	<!-- end FACTION calls -->
 </calls>

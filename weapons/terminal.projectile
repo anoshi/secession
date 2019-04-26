@@ -4,7 +4,7 @@
     <collision class="sticky" />
     <trigger class="time" time_to_live="0.1"/>
     <rotation class="motion" />
-    <result class="spawn" instance_class="call" instance_key="terminal.call"  min_amount="1" max_amount="1" offset="0 3.0 0" position_spread="0 0" direction_spread="0 0" />
+    <result class="spawn" instance_class="vehicle" instance_key="dummy_terminal.vehicle" min_amount="1" max_amount="1" offset="0 0 0" position_spread="0 0" direction_spread="0 0" />
 
     <model mesh_filename="paw20_round.xml" />
     <hud_icon filename="hud_grenade.png" />

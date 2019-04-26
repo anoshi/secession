@@ -1,6 +1,5 @@
 <vehicle name="turret" key="veh_empl_turret.vehicle" map_view_atlas_index="0" usable_for_cover="0" time_to_live="0.0" >
 	<tag name="emplacement" />
-	<!--<tag name="sandbag" />-->
 
 	<tire_set offset="0.1 0.0 0.1" radius="0.1" />
 	<tire_set offset="0.1 0.0 -0.1" radius="0.1" />
