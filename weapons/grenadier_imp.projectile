@@ -2,8 +2,8 @@
 <projectile class="grenade" name="Imp. Gren." key="grenadier_imp.projectile" slot="0" radius="0.15">
     <tag name="grenade" />
 
-    <result class="blast" radius="3.0" damage="2.4" push="0.8" decal="1" character_state="death" />
     <trigger class="impact" />
+    <result class="blast" radius="3.0" damage="2.4" push="0.8" decal="1" character_state="death" />
     <rotation class="random" />
 
     <model mesh_filename="impact_grenade.xml" />
@@ -21,8 +21,8 @@
     <inventory encumbrance="1.5" price="2.0" />
 
     <sound class="result" key="other" fileref="explosion1.wav" />
-    <sound class="result" key="other" fileref="explosion2.wav" />  
-    <sound class="result" key="other" fileref="explosion2_1.wav" />     
+    <sound class="result" key="other" fileref="explosion2.wav" />
+    <sound class="result" key="other" fileref="explosion2_1.wav" />
 
     <sound class="result" key="terrain" copy="other" />
     <sound class="result" key="static_object" copy="other" />
@@ -31,7 +31,7 @@
 
    	<effect class="result" key="vehicle" ref="HitTank" lighting="1" />
    	<effect class="result" key="vehicle" ref="HitTankSparks" />
-    <effect class="result" key="vehicle" ref="SmokeBurst" post_processing="1" />  
+    <effect class="result" key="vehicle" ref="SmokeBurst" post_processing="1" />
     <effect class="result" key="vehicle" ref="BurstShine" lighting="0" />
     <effect class="result" key="vehicle" ref="Godray" lighting="0" />
 
