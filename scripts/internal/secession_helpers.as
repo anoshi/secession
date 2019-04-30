@@ -39,7 +39,7 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 	array<const XmlElement@> allVehicles;
 	array<const XmlElement@> vehNearPos;
 
-	_log("* SECESSION getVehiclesNearPosition running", 1);
+	_log("*** SECESSION getVehiclesNearPosition running", 1);
 
 // querying 'vehicles' doesn't support a range variable, like 'characters' does.
 // Must grab all vehicles and check their proximity to event, in turn.
@@ -60,22 +60,121 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 		string sName = vehInfo.getStringAttribute("name");
 		string sKey = vehInfo.getStringAttribute("key");
 		Vector3 curVehPos = stringToVector3(vehInfo.getStringAttribute("position"));
-		_log("working on vehicle: " + id + " (" + sKey + ") ", 1);
+		_log("*** SECESSION: working on vehicle: " + id + " (" + sKey + ") ", 1);
 		if (checkRange(position, curVehPos, range) ) {
 			// we should never need to know where the decoration vehicles are.
 			if ( startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") ) {
 				allVehicles.erase(i);
 				i--;
-				_log("removed vehicle " + id + " (decoration) from list.", 1);
+				_log("*** SECESSION: removed vehicle " + id + " (decoration) from list.", 1);
 			} else {
 				vehNearPos.insertLast(curVeh);
-				_log("vehicle: " + id + " (" + sName + ") is within desired range. Adding.", 1);
+				_log("*** SECESSION: vehicle: " + id + " (" + sName + ") is within desired range. Adding.", 1);
 			}
 		}
 	}
 
 	return vehNearPos;
 }
+
+// --------------------//
+// Commander Greetings //
+// --------------------//
+void commanderGreeting(const Metagame@ metagame) {
+
+	array<const XmlElement@> allFactions;
+
+	_log("*** SECESSION commanderGreeting running", 1);
+
+	// borrowed from scripts/invasion/map_rotator_invasion.as
+	// commander jumps on the airwaves and tells the player about what's happening
+	// first we pull some info about the player character's location and the level's state in general
+	string baseName = "one of the bases";
+	string factionName = "unknown faction";
+	int numFactions;
+
+	XmlElement@ factionData = XmlElement(
+		makeQuery(metagame, array<dictionary> = {
+			dictionary = { {"TagName", "data"}, {"class", "factions"} }
+		})
+	);
+	const XmlElement@ factionDoc = metagame.getComms().query(factionData);
+	allFactions = factionDoc.getElementsByTagName("faction");
+
+	numFactions = allFactions.size();
+
+	_log("*** SECESSION: " + numFactions + " factions", 1);
+
+	//const XmlElement@ base = getStartingBase(m_metagame, 0);
+	//	if (base !is null) {
+	//		baseName = base.getStringAttribute("name");
+	//	}
+
+	dictionary a = {
+		//{"%map_name", stage.m_mapInfo.m_name},
+		{"%base_name", baseName},
+		{"%faction_name", factionName}
+		//{"%number_of_bases", formatUInt(stage.m_factions[0].m_ownedBases.size())}
+	};
+
+	/*
+	// commander says something
+	m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 2.0, 0, "quickmatch commander greeting", a));
+
+	/*
+	// capture map?
+	if (stage.isCapture()) {
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 6.0, 0, "map start with 1 base, capture", a));
+
+	} else if (stage.isKoth()) {
+		// koth map?
+		a["%target_base_name"] = stage.m_kothTargetBase;
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 6.0, 0, "map start with 1 base, koth", a));
+	}
+
+	// side objectives?
+	if (stage.hasSideObjectives()) {
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "side objectives", a));
+	}
+
+	// intel objectives
+	if (stage.hasIntelManager()) {
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "intel objectives", a));
+	}
+
+	// loot / cargo trucks?
+	if (stage.hasLootObjective()) {
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "loot objective", a));
+	}
+
+	// radio tower / truck?
+	if (stage.hasRadioObjective()) {
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "radio tower or truck objective", a));
+	}
+
+	// aa?
+	if (hasAaObjective()) {
+		m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 5.0, 0, "aa objective", a));
+	}
+
+	m_metagame.getTaskSequencer().add(AnnounceTask(m_metagame, 0.0, 0, "map start, ending", a));
+
+	// finally enable "in game commander" radio, battle and event reports
+	m_metagame.getTaskSequencer().add(CallFloat(CALL_FLOAT(this.setCommanderAiReports), 1.0));
+	*/
+}
+
+/*
+void setCommanderAiReports(float percentage) {
+	string command =
+		"<command\n" +
+		"  class='commander_ai'" +
+		"  faction='0'" +
+		"  commander_radio_reports='" + percentage + "'>" +
+		"</command>\n";
+	m_metagame.getComms().send(command);
+}
+*/
 
 ///////////////////////////////
 // ----- TRIGGER AREAS ----- //
@@ -184,7 +283,7 @@ string getHotPotPosi() {
 
 /*
 // --------------------------------------------------------
-const XmlElement@ getExtCharacterInfo(const Metagame@ metagame, int characterId) {
+const XmlElement@ getExtraCharacterInfo(const Metagame@ metagame, int characterId) {
 	XmlElement@ query = XmlElement(
 		makeQuery(metagame, array<dictionary> = {
 			dictionary = { {"TagName", "data"}, {"class", "character"}, {"id", characterId}, {"include_equipment", 1}}}));
@@ -192,7 +291,7 @@ const XmlElement@ getExtCharacterInfo(const Metagame@ metagame, int characterId)
 	const XmlElement@ doc = metagame.getComms().query(query);
 	return doc.getFirstElementByTagName("character"); //.getElementsByTagName("item")
 }
-const XmlElement@ characterInfo = getExtCharacterInfo(m_metagame, characterId);
+const XmlElement@ characterInfo = getExtraCharacterInfo(m_metagame, characterId);
 array<const XmlElement@>@ equipment = characterInfo.getElementsByTagName("item");
 
 	string primary = equipment[0].getStringAttribute("key");

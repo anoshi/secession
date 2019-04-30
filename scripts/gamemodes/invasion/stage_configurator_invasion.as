@@ -374,6 +374,46 @@ class StageConfiguratorInvasion : StageConfigurator {
 	// ------------------------------------------------------------------------------------------------
 	protected Stage@ setupStage4() {
 		Stage@ stage = createStage();
+		stage.m_mapInfo.m_name = "Top Down";
+		stage.m_mapInfo.m_path = "media/packages/secession/maps/top-down";
+		stage.m_mapInfo.m_id = "map1";
+
+		stage.m_maxSoldiers = 18 * 14;
+		stage.m_playerAiCompensation = 2;
+    stage.m_playerAiReduction = 1;                                            // wasn't set in 1.65, thus 0
+
+		stage.m_soldierCapacityVariance = 0.4; // map1 is a big map; using high variance helps keep the attack group not growing super large when more bases are captured
+
+		stage.addTracker(PeacefulLastBase(m_metagame, 0));
+		stage.addTracker(CommsCapacityHandler(m_metagame));
+
+    stage.m_minRandomCrates = 4;
+    stage.m_maxRandomCrates = 6;
+
+		{
+			Faction f(getFactionConfigs()[0], createFellowCommanderAiCommand(0));
+			f.m_overCapacity = 6;
+			f.m_bases = 1;
+			f.m_capacityMultiplier = 0.79;                                          // was 0.81 in 1.65
+			stage.m_factions.insertLast(f);
+		}
+		{
+			Faction f(getFactionConfigs()[1], createCommanderAiCommand(1));
+			f.m_overCapacity = 50;                                             // was 0 in 1.65
+			f.m_bases = 1;
+			stage.m_factions.insertLast(f);
+		}
+
+		// metadata
+		stage.m_primaryObjective = "capture";
+
+		setDefaultAttackBreakTimes(stage);
+		return stage;
+	}
+
+	// ------------------------------------------------------------------------------------------------
+	protected Stage@ setupStage5() {
+		Stage@ stage = createStage();
 		stage.m_mapInfo.m_name = "Power Junction";
 		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map7";
 		stage.m_mapInfo.m_id = "map7";
@@ -420,62 +460,6 @@ class StageConfiguratorInvasion : StageConfigurator {
 		stage.m_primaryObjective = "koth";
 		stage.m_kothTargetBase = "Power Plant";
 
-		return stage;
-	}
-
-	// ------------------------------------------------------------------------------------------------
-	protected Stage@ setupStage5() {
-		Stage@ stage = createStage();
-		stage.m_mapInfo.m_name = "Moorland Trenches";
-		stage.m_mapInfo.m_path = "media/packages/vanilla/maps/map1";
-		stage.m_mapInfo.m_id = "map1";
-
-		stage.m_maxSoldiers = 18 * 14;
-		stage.m_playerAiCompensation = 2;
-    stage.m_playerAiReduction = 1;                                            // wasn't set in 1.65, thus 0
-
-		stage.m_soldierCapacityVariance = 0.4; // map1 is a big map; using high variance helps keep the attack group not growing super large when more bases are captured
-
-		stage.addTracker(PeacefulLastBase(m_metagame, 0));
-		stage.addTracker(CommsCapacityHandler(m_metagame));
-
-    stage.m_minRandomCrates = 4;
-    stage.m_maxRandomCrates = 6;
-
-		{
-			Faction f(getFactionConfigs()[0], createFellowCommanderAiCommand(0));
-			f.m_overCapacity = 6;
-			f.m_bases = 1;
-			f.m_capacityMultiplier = 0.79;                                          // was 0.81 in 1.65
-			stage.m_factions.insertLast(f);
-		}
-		{
-			Faction f(getFactionConfigs()[1], createCommanderAiCommand(1));
-			f.m_overCapacity = 50;                                                  // was 0 in 1.65
-			stage.m_factions.insertLast(f);
-		}
-		{
-			Faction f(getFactionConfigs()[2], createCommanderAiCommand(2));
-			f.m_overCapacity = 50;                                                  // was 0 in 1.65
-			stage.m_factions.insertLast(f);
-		}
-
-		// aa emplacements work right only if one enemy faction has them
-		// - all factions have it disabled by default
-		// - manually enable it for faction #1 in map1
-		{
-			XmlElement command("command");
-			command.setStringAttribute("class", "faction_resources");
-			command.setIntAttribute("faction_id", 1);
-			addFactionResourceElements(command, "vehicle", array<string> = {"aa_emplacement.vehicle"}, true);
-
-			stage.m_extraCommands.insertLast(command);
-		}
-
-		// metadata
-		stage.m_primaryObjective = "capture";
-
-		setDefaultAttackBreakTimes(stage);
 		return stage;
 	}
 

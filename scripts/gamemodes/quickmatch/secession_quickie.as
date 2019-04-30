@@ -1,6 +1,5 @@
 // internal
 #include "gamemode.as"
-//#include "user_settings_simple.as"
 #include "user_settings.as"
 #include "log.as"
 #include "announce_task.as"
@@ -13,7 +12,6 @@
 
 // secession helpers
 #include "secession_helpers.as"
-#include "short_story.as"
 
 // secession trackers
 #include "bnn.as"
@@ -25,13 +23,16 @@
 // --------------------------------------------
 class SecessionQuickie : GameMode {
 	protected UserSettings@ m_userSettings;
+	//protected ShortStory@ m_shortStory;
+
 	string m_gameMapPath = "";
 
 	// --------------------------------------------
 	SecessionQuickie(UserSettings@ settings) {
-		super(settings.m_startServerCommand);
+		super(settings.m_startServerCommand); // this is passing the string 'm_startServerCommand'
 		@m_userSettings = @settings;
-		_log("*** SECESSION : made it into SecessionQuickie constructor", 1);
+
+		_log("*** SECESSION: player using faction " + m_userSettings.m_factionChoice, 1);
 	}
 
 	// --------------------------------------------
@@ -46,7 +47,6 @@ class SecessionQuickie : GameMode {
 
 		} else {
 			// no, it's not a save game
-			changeMap();
 			sync();
 			preBeginMatch();
 			startMatch();
@@ -63,11 +63,6 @@ class SecessionQuickie : GameMode {
 	void uninit() {
 		save();
 		GameMode::uninit();
-	}
-
-	// --------------------------------------------
-	protected void changeMap() {
-		// TODO: derive and implement
 	}
 
 	// --------------------------------------------
@@ -90,12 +85,9 @@ class SecessionQuickie : GameMode {
 		addTracker(BNN(this));                  // Broadcast News Network Class and Methods
 		addTracker(QuickieCallHandler(this));   // 'H' call menu and scripted call handler
 		addTracker(QuickieHitboxHandler(this)); // Trigger area (hitbox) HitboxHandler Class and Methods
-		addTracker(QuickieStory(this));         // NPC comms to player
 		addTracker(DummyVehicleHandler(this));	// Performs tasks when (dummy) vehicles are destroyed
 
-		_log("*** SECESSION: getting user settings: ", 1);
 		getUserSettings();
-		_log("*** SECESSION: got user settings", 1);
 	}
 
 	// --------------------------------------------
@@ -113,7 +105,7 @@ class SecessionQuickie : GameMode {
 
 	// --------------------------------------------
 	void save() {
-		_log("saving metagame", 1);
+		_log("*** SECESSION: saving metagame", 1);
 
 		XmlElement commandRoot("command");
 		commandRoot.setStringAttribute("class", "save_data");

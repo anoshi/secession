@@ -28,11 +28,11 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="4.000001"
-     inkscape:cx="1014.1337"
-     inkscape:cy="993.90467"
+     inkscape:zoom="2.0000005"
+     inkscape:cx="3682.4569"
+     inkscape:cy="1346.5185"
      inkscape:document-units="px"
-     inkscape:current-layer="layer28"
+     inkscape:current-layer="layer29"
      showgrid="true"
      inkscape:window-width="1680"
      inkscape:window-height="951"
@@ -7203,15 +7203,32 @@
     <filter
        inkscape:collect="always"
        style="color-interpolation-filters:sRGB"
-       id="filter8381"
-       x="-0.03052815"
-       width="1.0610563"
-       y="-0.11223327"
-       height="1.2244665">
-      <feGaussianBlur
+       id="filter4390-6">
+      <feBlend
          inkscape:collect="always"
-         stdDeviation="8.0199984"
-         id="feGaussianBlur8383" />
+         mode="color-burn"
+         in2="BackgroundImage"
+         id="feBlend4392-5" />
+    </filter>
+    <filter
+       inkscape:collect="always"
+       style="color-interpolation-filters:sRGB"
+       id="filter4390-6-2">
+      <feBlend
+         inkscape:collect="always"
+         mode="color-burn"
+         in2="BackgroundImage"
+         id="feBlend4392-5-6" />
+    </filter>
+    <filter
+       style="color-interpolation-filters:sRGB"
+       inkscape:collect="always"
+       id="filter11084-896-0">
+      <feBlend
+         inkscape:collect="always"
+         mode="multiply"
+         in2="BackgroundImage"
+         id="feBlend11086-25-9" />
     </filter>
   </defs>
   <metadata
@@ -7222,7 +7239,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title />
+        <dc:title></dc:title>
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -7754,7 +7771,7 @@
          id="tspan13828"
          x="3141.5459"
          y="1751.454"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">This is the shape of a building, in its properties you can set the height, if the roof is</tspan><tspan
+         style="font-size:8px;line-height:1.25;font-family:sans-serif">This is the shape of a building, in its properties you can set the height and if the roof is</tspan><tspan
          sodipodi:role="line"
          id="tspan13830"
          x="3141.5459"
@@ -7789,7 +7806,7 @@
          id="tspan13842"
          x="3141.5459"
          y="1821.454"
-         style="font-size:8px;line-height:1.25;font-family:sans-serif">It should be placed in a &quot;objects&quot; sub-layer. </tspan></text>
+         style="font-size:8px;line-height:1.25;font-family:sans-serif">Place building rectangles in an &quot;objects&quot; sub-layer. </tspan></text>
     <rect
        style="display:inline;fill:#ffff00;fill-opacity:0.07843137;fill-rule:nonzero;stroke:#ff0000;stroke-width:1;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        id="rect13800"
@@ -8732,7 +8749,7 @@ see_through = 1;</desc>
          id="desc10349-8-98-8-7-0">template = streetlantern;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#fb8800;fill-opacity:1;fill-rule:evenodd;stroke:none;filter:url(#filter11084-896);enable-background:new"
+       style="display:inline;fill:#fad219;fill-opacity:1;fill-rule:evenodd;stroke:#323232;filter:url(#filter11084-896);enable-background:new;stroke-opacity:1;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none"
        id="rect10340-4-5-7-9-9"
        width="4.4683914"
        height="3.811275"
@@ -8744,7 +8761,7 @@ see_through = 1;</desc>
          id="desc10349-9-4-79-8-4">name = streetlight; mesh_name = streetlight.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 0 1 128 128; collision_model_type = 0; collision_model_size = .3 7 .3;</desc>
     </rect>
     <rect
-       style="display:inline;fill:#fb8800;fill-opacity:1;fill-rule:evenodd;stroke:none;enable-background:new"
+       style="display:inline;fill:#fad219;fill-opacity:1;fill-rule:evenodd;stroke:#323232;enable-background:new;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
        id="rect10340-4-5-7-9-9-8"
        width="4.4683914"
        height="3.811275"
@@ -11714,7 +11731,7 @@ tag = tank;</desc>
          y="276.11179"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">tank</tspan></text>
     <rect
-       style="display:inline;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000088, 12.00000087999999998;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
+       style="display:inline;fill:#b3b3b3;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:12.00000088, 12.00000088000000176;stroke-dashoffset:4.60000038;stroke-opacity:1;enable-background:new"
        id="spawn1-1-4-2-1-1-0-6-2-4"
        width="3.982286"
        height="7.3961515"
@@ -11905,7 +11922,9 @@ key = radar_truck.vehicle;</desc>
        style="display:inline;opacity:0.72566373;fill:#ffff00;fill-opacity:1;stroke:none;enable-background:new"
        transform="rotate(90.067586)">
       <desc
-         id="desc4876-3-1-3">name=Name of the base;</desc>
+         id="desc4876-3-1-3">name=Name of the base;
+faction_index = 1;
+capturable = 1;</desc>
     </rect>
     <text
        xml:space="preserve"
@@ -11940,7 +11959,7 @@ key = radar_truck.vehicle;</desc>
        style="display:inline;opacity:0.5;fill:none;stroke:#afafaf;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999987999999984;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
        transform="rotate(0.08978138)">
       <desc
-         id="desc91925">name=Aqualand;</desc>
+         id="desc91925">name=Name of the base;</desc>
     </rect>
     <text
        xml:space="preserve"
@@ -14668,7 +14687,7 @@ collision_model_size =0.4 8.5 0.4;</desc>
        height="7.3961515"
        width="3.982286"
        id="spawn1-70-1-4-9-17-2-25-2-6-1-52"
-       style="display:inline;fill:#ffd5d5;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999972, 11.99999971999999993;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new">
+       style="display:inline;fill:#ffd5d5;fill-opacity:1;stroke:#ff00ff;stroke-width:1;stroke-miterlimit:4;stroke-dasharray:11.99999972, 11.99999972000000170;stroke-dashoffset:4.59999943;stroke-opacity:1;enable-background:new">
       <desc
          id="desc7082-9-7-0-4-4-3-3-9-2-1-7">type = vehicle;
 key = mobile_armory.vehicle;</desc>
@@ -14904,12 +14923,14 @@ separator_depth = 0.7;</desc>
        id="flowRoot12115"
        style="font-style:normal;font-weight:normal;font-size:40px;line-height:125%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
        transform="translate(250.92886,55.497471)"><flowRegion
-         id="flowRegion12117"><rect
+         id="flowRegion12117"
+         style=""><rect
            id="rect12119"
            width="131.52182"
            height="53.740112"
            x="-1503.309"
-           y="-118.57512" /></flowRegion><flowPara
+           y="-118.57512"
+           style="" /></flowRegion><flowPara
          id="flowPara12121"
          style="font-size:18.66666603px">SS sandbag</flowPara></flowRoot>    <rect
        style="display:inline;opacity:0.93000034;fill:#bc5514;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4, 4;stroke-dashoffset:2.9000001;stroke-opacity:1;enable-background:new"
@@ -14938,54 +14959,7 @@ tag = speeder;</desc>
            y="915.57812"
            style="font-family:sans-serif" /></flowRegion><flowPara
          id="flowPara20806-2"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif">speeder</flowPara></flowRoot>    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       x="2744.1167"
-       y="498.26541"
-       id="text82319-7"><tspan
-         sodipodi:role="line"
-         id="tspan82321-9"
-         x="2744.1167"
-         y="498.26541"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif">turret (offline)</tspan></text>
-    <rect
-       style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.8;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       id="spawn6969-30-3"
-       width="2.7343748"
-       height="2.7343748"
-       x="2668.1836"
-       y="493.78027"
-       inkscape:label=""
-       transform="rotate(-0.00852511)">
-      <desc
-         id="desc26444-1-8">type = vehicle;
-key = empl_turret_offline.vehicle;</desc>
-    </rect>
-    <text
-       xml:space="preserve"
-       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       x="2743.5923"
-       y="518.63989"
-       id="text82319-7-7"><tspan
-         sodipodi:role="line"
-         id="tspan82321-9-9"
-         x="2743.5923"
-         y="518.63989"
-         style="font-size:10px;line-height:1.25;font-family:sans-serif">terminal</tspan></text>
-    <rect
-       style="opacity:1;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.43429655;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.43429655, 0.43429655000000000;stroke-dashoffset:0.34743724;stroke-opacity:1"
-       id="spawn7000-terminal-0"
-       width="2.3697872"
-       height="4.5846992"
-       x="2668.2356"
-       y="513.80438"
-       inkscape:label="">
-      <desc
-         id="desc3836">type = vehicle;
-key = veh_terminal.vehicle;</desc>
-    </rect>
-    <rect
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">speeder</flowPara></flowRoot>    <rect
        inkscape:label="#rect36349"
        y="409.76093"
        x="3739.793"
@@ -15008,7 +14982,7 @@ key = veh_terminal.vehicle;</desc>
        sodipodi:nodetypes="cc"
        inkscape:connector-curvature="0"
        id="path7290-0"
-       d="M 3809.1833,401.89297 V 558.79632"
+       d="m 3809.1833,401.89297 0,227.65333"
        style="display:inline;opacity:0.93000034;fill:none;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new" />
     <text
        xml:space="preserve"
@@ -15049,8 +15023,8 @@ key = veh_terminal.vehicle;</desc>
        id="spawn_repair_bay_large-0"
        width="11.324673"
        height="22.097088"
-       x="3761.9434"
-       y="492.83463"
+       x="3764.9434"
+       y="553.33459"
        inkscape:label="">
       <desc
          id="desc8927-8-9">type = vehicle;
@@ -15061,8 +15035,8 @@ key = veh_repair_bay_large.vehicle;</desc>
        id="spawn_repair_bay_small-0"
        width="12.105957"
        height="15.065857"
-       x="3763.5059"
-       y="540.10022"
+       x="3766.5059"
+       y="600.60022"
        inkscape:label="">
       <desc
          id="desc8927-8-22">type = vehicle;
@@ -15071,22 +15045,22 @@ key = veh_repair_bay_small.vehicle;</desc>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       x="3661.3167"
-       y="510.54819"
+       x="3662.0667"
+       y="569.29816"
        id="text107814-1-4-7-7-9"><tspan
-         y="510.54819"
-         x="3661.3167"
+         y="569.29816"
+         x="3662.0667"
          id="tspan7719-3-9"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">repair bay (large)</tspan></text>
     <text
        xml:space="preserve"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
-       x="3661.3167"
-       y="550.39191"
+       x="3664.3167"
+       y="610.89191"
        id="text107814-1-4-7-0"><tspan
-         y="550.39191"
-         x="3661.3167"
+         y="610.89191"
+         x="3664.3167"
          id="tspan7719-3-2"
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">repair bay (small)</tspan></text>
@@ -15112,12 +15086,12 @@ key = veh_repair_bay_small.vehicle;</desc>
          style="font-size:8px;line-height:1.25;font-family:sans-serif"
          id="tspan3937-5">can collide with. Valid values are: jumppad, repairbay, trap</tspan></text>
     <rect
-       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211761999999999;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
        id="spawn_terminal-1-3-7-3-4"
        width="3.3321514"
        height="3.3363316"
-       x="-2972.2615"
-       y="2374.6704"
+       x="-3018.5935"
+       y="2335.6501"
        inkscape:label=""
        transform="rotate(-132.9425)">
       <desc
@@ -15147,12 +15121,12 @@ key = veh_repair_bay_small.vehicle;</desc>
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif">surveillance camera</tspan></text>
     <rect
-       style="display:inline;enable-background:new;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211761999999999;stroke-dashoffset:0.84000003;stroke-opacity:1"
+       style="display:inline;opacity:0.93000034;fill:#e66e2d;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
        id="spawn_terminal-1-3-7-0"
        width="3.3321514"
        height="3.3363316"
-       x="-3061.0896"
-       y="2246.8608"
+       x="-3105.3599"
+       y="2205.5161"
        inkscape:label=""
        transform="rotate(-135.88181)">
       <desc
@@ -15503,8 +15477,8 @@ sequence = apartment1_1st_floor_window, apartment1_1st_floor_empty;</desc>
       <desc
          id="desc9346-4-7-4">day_color = fill;
 night_color = stroke;
-name = BC Side-scroll 1;
-description = Secession: Blastcorp Side Scroll mission 1;
+name = Top Down;
+description = Secession: Top Down mission 1;
 randomize_faction_index=0;
 flip = 1;
 visible_in_menu = 1;
@@ -15916,6 +15890,68 @@ roof_texture_atlas_cell = 0 4 8 8;
 roof_texture_scale = 3 3;
 roof_cutout_texture = cutout.png; roof_cutout_texture_channel = 1; roof_cutout_texture_scale = 15 15;</desc>
     </rect>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3666.6631"
+       y="662.25916"
+       id="text107814-1-4-7-2"><tspan
+         y="662.25916"
+         x="3666.6631"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="tspan4956">extraction point</tspan></text>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-weight:normal;line-height:0%;font-family:sans-serif;letter-spacing:0px;word-spacing:0px;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3679.8308"
+       y="516.86755"
+       id="text82319-7"><tspan
+         sodipodi:role="line"
+         id="tspan82321-9"
+         x="3679.8308"
+         y="516.86755"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif">turret (offline)</tspan></text>
+    <rect
+       style="display:inline;opacity:0.93000034;fill:#b41e1e;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:1.79999995;stroke-linecap:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       id="spawn_turret_offline-1-0"
+       width="2.7343748"
+       height="2.7343748"
+       x="3767.6448"
+       y="513.04608"
+       inkscape:label=""
+       transform="rotate(-0.00852511)">
+      <desc
+         id="desc26444-1-8">type = vehicle;
+key = empl_turret_offline.vehicle;</desc>
+    </rect>
+    <rect
+       style="display:inline;opacity:1;fill:#9e5013;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter11084-896-0);enable-background:new"
+       id="rect10340-4-5-7-9-9-5"
+       width="7.5537963"
+       height="23.076324"
+       x="3084.7515"
+       y="504.43643"
+       inkscape:label="#mesh_template"
+       transform="rotate(-89.853636,3522.2929,268.88216)">
+      <desc
+         id="desc10349-9-4-79-8-4-6">name = ramp; mesh_name = obj_ramp.mesh; texture0 = sec_ramp.png;
+collision_model_type = 1;
+collision_model_size = 2.0 -0.2 4.0;
+walkable = 1;
+backline = 1;</desc>
+    </rect>
+    <text
+       xml:space="preserve"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;line-height:0%;font-family:sans-serif;-inkscape-font-specification:'Sans, Normal';text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.93000034;fill:#000000;fill-opacity:1;stroke:none;enable-background:new"
+       x="3718.3457"
+       y="706.69849"
+       id="text107814-1-4-7-2-2"><tspan
+         y="706.69849"
+         x="3718.3457"
+         sodipodi:role="line"
+         style="font-size:10px;line-height:1.25;font-family:sans-serif"
+         id="tspan4956-8">ramp</tspan></text>
   </g>
   <g
      style="display:none"
@@ -15935,12 +15971,14 @@ roof_cutout_texture = cutout.png; roof_cutout_texture_channel = 1; roof_cutout_t
      style="display:none"
      inkscape:label="height"
      id="layer30"
-     inkscape:groupmode="layer">
+     inkscape:groupmode="layer"
+     sodipodi:insensitive="true">
     <path
        style="fill:#969696;fill-opacity:1;fill-rule:evenodd;stroke:#000000;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       d="M -123.99998,63.000115 H 1875.9999 l 8,2011.999885 -1991.99988,-8 z"
+       d="M -123.99998,-101.04862 H 2113.5877 l 8,2176.04862 -2229.58768,-8 z"
        id="path4624"
-       inkscape:connector-curvature="0" />
+       inkscape:connector-curvature="0"
+       sodipodi:nodetypes="ccccc" />
   </g>
   <g
      style="display:none"
@@ -15960,26 +15998,21 @@ roof_cutout_texture = cutout.png; roof_cutout_texture_channel = 1; roof_cutout_t
        transform="translate(-2369.1654,916.37685)" />
   </g>
   <g
-     style="display:inline"
+     style="display:none"
      inkscape:label="alpha_grass"
      id="layer31"
-     inkscape:groupmode="layer">
-    <path
-       style="fill:#4bcb00;fill-rule:evenodd;stroke:#000000;stroke-width:1.0015748;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;fill-opacity:1;filter:url(#filter8381);stroke-miterlimit:4;stroke-dasharray:none"
-       d="M 794.96094 987.75 L 793.60742 994.51758 L 804.11133 994.52734 L 794.96094 987.75 z M 804.11133 994.52734 L 808.46094 997.75 L 808.7832 1001.5 L 820.40234 1010.1074 L 821 1017.0859 L 821.62305 1017.5469 L 823.12305 1035.0469 L 803.12305 1048.0469 L 801.14453 1046.1504 L 797.26758 1048.6699 L 788.72461 1040.4844 L 786.7168 1041.7891 L 775.86914 1031.3945 C 775.65036 1037.8791 775.43275 1044.1028 775.25586 1047.6895 L 788.61914 1057.5879 L 788.68359 1058.334 L 799.95703 1066.6855 L 800.05469 1067.8184 L 802.45508 1069.5977 L 802.57227 1070.9766 L 803.11133 1071.375 L 803.90234 1067.418 L 803.95703 1067.459 L 804.25781 1065.957 L 805.80273 1067.1016 L 806.26367 1064.793 L 807.25977 1065.5312 L 808.37109 1059.9824 L 821.87109 1069.9824 L 823.37109 1087.4824 L 820.98438 1089.0332 L 821.26367 1092.293 L 818.81445 1093.8848 L 818.90234 1094.918 L 798.90234 1107.918 L 798.76953 1107.791 L 795.48242 1109.9277 L 786.86133 1101.666 L 783.11914 1104.0996 L 771.11914 1092.5996 L 775.60938 1092.1016 L 771.95508 1088.5977 L 772.43945 1088.543 L 771.21875 1087.373 L 770.11914 1088.0879 L 769.35547 1087.3555 L 766.18945 1089.4141 L 762.93164 1086.293 L 758.99805 1088.8496 L 757.91602 1087.8125 L 756.91602 1088.4629 L 744.91602 1076.9629 L 748.0957 1076.6094 L 746.50195 1075.082 L 764.08008 1073.1289 L 757.41602 1070.4629 L 760.98828 1052.6055 C 744.83958 1052.6231 720.5 1051.5 720.5 1051.5 C 720.5 1051.5 717.5 1161 717.5 1163 C 717.5 1165 1348 1166 1348 1166 L 1344.5 1051 L 1261.5 1051.5 L 1260.918 1035.0449 L 1256.9766 1037.6074 L 1257.1914 1040.1016 L 1237.1914 1053.1016 L 1235.9062 1051.8691 L 1232.877 1053.8379 L 1222.9238 1044.2988 L 1219.9414 1046.2383 L 1207.9414 1034.7383 L 1214.6289 1033.9961 L 1210.5059 1030.0449 L 1221.8164 1028.7891 L 1220.4414 1028.2383 L 1224.9414 1005.7383 L 1226.3574 1006.7871 L 1227.5059 1001.0449 L 1235.0137 1006.6055 L 1236.1895 1000.7227 L 1243.5469 1006.1738 L 1243.8125 1004.8477 L 1248.4707 1008.2988 L 1249.0254 1005.5254 L 1260.1641 1013.7773 L 1259.5 995 L 1048.5469 994.78125 L 1058.6719 1002.2812 L 1059.4336 1011.1719 L 1061.5098 1012.709 L 1063.373 1003.3867 L 1076.873 1013.3867 L 1077.6328 1022.2402 L 1080.4688 1024.3418 L 1081.9688 1041.8418 L 1061.9688 1054.8418 L 1060.6348 1053.5645 L 1055.7363 1056.748 L 1054.6387 1055.6973 L 1046.0723 1061.2656 L 1034.0723 1049.7656 L 1036.8887 1049.4531 L 1030.8809 1043.6953 L 1032.6738 1043.4961 L 1029.0059 1039.9805 L 1034.666 1039.3516 L 1032.0137 1036.8105 L 1030.8496 1037.5664 L 1018.8496 1026.0664 L 1031.6777 1024.6406 L 1028.1719 1021.2812 L 1034.0137 1020.6328 L 1031.3496 1019.5664 L 1035.8496 997.06641 L 1041.209 1001.0352 L 1041.5039 999.55859 L 1042.6328 1000.3945 L 1042.9512 998.80273 L 1043.75 999.39453 L 1044.6738 994.77734 L 804.11133 994.52734 z M 1044.6738 994.77734 L 1048.5469 994.78125 L 1045.1719 992.28125 L 1044.6738 994.77734 z M 1260.1641 1013.7773 L 1260.918 1035.0449 L 1264.0254 1033.0254 L 1262.5254 1015.5254 L 1260.1641 1013.7773 z M 760.98828 1052.6055 C 768.87462 1052.5968 774.83594 1052.3203 775 1051.5 C 775.06843 1051.1579 775.15638 1049.7065 775.25586 1047.6895 L 775.11914 1047.5879 L 774.38086 1051.2773 L 771.18945 1048.9141 L 770.69141 1051.4062 L 763.50195 1046.082 L 762.9707 1048.7422 L 761.91602 1047.9629 L 760.98828 1052.6055 z M 775.86914 1031.3945 C 775.88343 1030.971 775.8978 1030.5852 775.91211 1030.1562 L 774.7168 1030.2891 L 775.86914 1031.3945 z M 775.91211 1030.1562 L 776.23828 1030.1211 L 775.92383 1029.8184 C 775.91992 1029.9358 775.91601 1030.0393 775.91211 1030.1562 z M 775.92383 1029.8184 C 776.02554 1026.7592 776.11091 1024.4647 776.20898 1021.3203 L 772.49805 1021.7324 L 774.72266 1023.8633 L 770.23047 1024.3633 L 775.92383 1029.8184 z M 776.20898 1021.3203 L 782.05273 1020.6719 L 777.96094 1016.75 L 783.06641 1016.1836 L 787.23047 995.36328 L 788.74805 996.48633 L 789.14258 994.51172 L 777 994.5 C 777 994.5 776.63121 1007.7839 776.20898 1021.3203 z M 789.14258 994.51172 L 791.90625 994.51562 L 789.49805 992.73242 L 789.14258 994.51172 z M 791.90625 994.51562 L 793.38867 995.61328 L 793.60742 994.51758 L 791.90625 994.51562 z M 981.00781 996.85352 L 993.80664 1006.334 L 993.86914 1006.0234 L 1007.3691 1016.0234 L 1008.8691 1033.5234 L 1006.5918 1035.0039 L 1006.707 1036.3594 L 986.70703 1049.3594 L 986.37109 1049.0371 L 979.45312 1053.5332 L 971.13867 1045.5645 L 970.01367 1046.2949 L 958.01367 1034.7949 L 968.01367 1033.6836 L 966.14258 1031.8906 L 968.25977 1031.6562 L 966.87305 1030.3262 L 968.48828 1030.1465 L 964.00781 1025.8535 L 971.16016 1025.0586 L 975.01367 1005.7949 L 978.67773 1008.5078 L 981.00781 996.85352 z M 874.99414 1020.3574 L 888.49414 1030.3574 L 889.99414 1047.8574 L 887.91602 1049.207 L 888.47266 1055.6953 L 868.47266 1068.6953 L 863.08984 1063.5352 L 859.06055 1066.1543 L 858.03125 1065.168 L 853.30469 1068.2402 L 841.30469 1056.7402 L 845.12305 1056.3164 L 840.01562 1051.4219 L 840.85938 1051.3281 L 838.98438 1049.5312 L 854.28711 1047.8301 L 854.69336 1045.793 L 852.51562 1044.9219 L 852.78906 1043.5527 L 851.48438 1043.0312 L 855.98438 1020.5312 L 863.38672 1026.0117 L 864.09375 1022.4727 L 864.41602 1022.7109 L 864.72852 1021.1504 L 873.53125 1027.6719 L 874.99414 1020.3574 z M 921.24805 1047.8789 L 934.74805 1057.8789 L 935.9043 1071.375 L 941.46094 1075.4902 L 942.96094 1092.9902 L 922.96094 1105.9902 L 917.64062 1100.8926 L 912.12305 1104.4785 L 903.04492 1095.7793 L 902.58789 1096.0762 L 890.58789 1084.5762 L 893.06836 1084.3008 L 891.16406 1082.4766 L 892.51953 1082.3262 L 888.91016 1078.8652 L 903.24805 1077.2715 L 904.02148 1073.4102 L 901.41016 1072.3652 L 905.91016 1049.8652 L 913.05078 1055.1562 L 913.49023 1052.9629 L 919.36133 1057.3125 L 921.24805 1047.8789 z M 1013.5918 1068.2617 L 1027.0918 1078.2617 L 1027.3438 1081.1875 L 1032.5215 1085.0234 L 1032.5957 1085.8965 L 1033.6992 1086.7129 L 1034.1719 1092.2363 L 1035.1172 1092.9355 L 1036.2109 1105.7031 L 1041.6426 1109.7266 L 1043.1426 1127.2266 L 1039.9492 1129.3027 L 1040.4199 1134.7949 L 1031.1895 1140.7949 L 1031.2383 1141.3574 L 1011.2383 1154.3574 L 999.23828 1142.8574 L 1013.6016 1141.2617 L 1008.4199 1136.2949 L 1009.9375 1136.127 L 1003.5684 1130.0234 L 1011.2148 1129.1738 L 1010.8262 1128.8008 L 1011.1797 1128.7617 L 1011.1426 1128.7266 L 1013.3125 1128.4863 L 1014.0977 1124.5586 L 1011.1406 1121.7246 L 1009.3535 1122.8867 L 1007.8203 1121.416 L 1004.4414 1123.6133 L 999.35742 1118.7402 L 997.85156 1119.7188 L 985.85156 1108.2188 L 986.76172 1108.1172 L 986.18359 1107.5645 L 986.51562 1107.5273 L 981.71289 1102.9258 L 987.43164 1102.291 L 987.18164 1102.0508 L 988.61523 1101.8906 L 986.19336 1099.5703 L 993.61523 1098.7461 L 992.56055 1097.7344 L 996.41211 1097.3066 L 994.21289 1096.4258 L 998.71289 1073.9258 L 1002.0312 1076.3828 L 1003.1934 1070.5703 L 1008.418 1074.4414 L 1009.5605 1068.7344 L 1010.1719 1069.1875 L 1010.2617 1068.7402 L 1013.0781 1070.8262 L 1013.5918 1068.2617 z M 1162.998 1068.543 L 1164.375 1069.5625 L 1164.5508 1068.6836 L 1171.1094 1073.541 L 1171.4473 1071.8516 L 1184.9473 1081.8516 L 1185.0664 1083.2422 L 1191.4629 1087.9805 L 1192.9629 1105.4805 L 1186.0938 1109.9453 L 1186.2734 1112.0508 L 1191.7402 1116.0996 L 1193.2402 1133.5996 L 1192.1133 1134.332 L 1192.7402 1141.6426 L 1172.7402 1154.6426 L 1169.2168 1151.2676 L 1168.7871 1151.5469 L 1162.7988 1145.8086 L 1162.1465 1146.2324 L 1150.1465 1134.7324 L 1157.0547 1133.9648 L 1150.0508 1127.252 L 1155.7207 1126.6211 L 1152.3242 1123.3672 L 1159.2695 1122.5957 L 1156.6074 1120.0449 L 1153.7734 1121.8867 L 1153.123 1121.2637 L 1152.9512 1121.375 L 1140.9512 1109.875 L 1142.1562 1109.7402 L 1136.3887 1104.2148 L 1142.1992 1103.5703 L 1141.7402 1103.1309 L 1146.6484 1102.5859 L 1143.9336 1099.9844 L 1148.0664 1099.5254 L 1145.998 1097.543 L 1148.9902 1097.2109 L 1153.3887 1075.2148 L 1157.8613 1078.5273 L 1158.7402 1074.1309 L 1160.1016 1075.1406 L 1160.9336 1070.9844 L 1162.3066 1072.002 L 1162.998 1068.543 z M 1100.7363 1068.9473 L 1106.623 1073.3086 L 1106.9629 1071.6113 L 1120.4629 1081.6113 L 1121.1543 1089.6758 L 1122.6992 1090.8203 L 1123.2734 1097.5293 L 1127.582 1100.7207 L 1129.082 1118.2207 L 1109.082 1131.2207 L 1102.1934 1124.6191 L 1101.7949 1124.877 L 1099.9883 1123.1465 L 1081.7344 1135.0117 L 1078.8516 1132.248 L 1078.1582 1132.6992 L 1066.1582 1121.1992 L 1068.7676 1120.9102 L 1066.0859 1118.3398 L 1080.5781 1116.7305 L 1072.2402 1108.7383 L 1078.4004 1108.0527 L 1076.8457 1106.5625 L 1078.8164 1106.3438 L 1076.9766 1104.5801 L 1080.1074 1104.2324 L 1083.0859 1089.3398 L 1086.7734 1092.0723 L 1089.2402 1079.7383 L 1092.6406 1082.2578 L 1093.9766 1075.5801 L 1098.709 1079.0859 L 1100.7363 1068.9473 z M 1251.0684 1075.8145 L 1264.5645 1085.8145 L 1266.0645 1103.3145 L 1264.1641 1104.5508 L 1264.3926 1107.2246 L 1267.877 1109.8047 L 1269.377 1127.3047 L 1266.5449 1129.1445 L 1266.6934 1130.8672 L 1263.5098 1132.9355 L 1263.5195 1133 L 1258.8828 1136.0137 L 1259.123 1138.8145 L 1239.123 1151.8145 L 1236.2051 1149.0176 L 1232.5273 1151.4082 L 1228.834 1147.8691 L 1228.7266 1147.9395 L 1216.7266 1136.4395 L 1218.4512 1136.248 L 1214.7422 1132.6953 L 1214.7188 1132.7109 L 1202.7188 1121.2109 L 1208.8008 1120.5352 L 1208.5469 1120.291 L 1210.1035 1120.1172 L 1208.1074 1118.2051 L 1208.7852 1118.1289 L 1205.6758 1115.1504 L 1208.0312 1114.8887 L 1206.3672 1113.2949 L 1214.9629 1112.3398 L 1214.0195 1111.4355 L 1215.916 1111.2246 L 1219.7188 1092.2109 L 1221.2383 1093.3359 L 1222.6758 1086.1504 L 1222.9551 1086.3574 L 1223.3672 1084.2949 L 1229.709 1088.9922 L 1231.0195 1082.4355 L 1237.3613 1087.1328 L 1237.959 1084.1465 L 1242.7227 1087.6758 L 1243.8672 1081.9512 L 1249.0703 1085.8047 L 1251.0684 1075.8145 z M 783.10742 1079.6445 L 774.71289 1085.1016 L 784.02539 1084.0664 L 784.77734 1080.3125 L 783.10742 1079.6445 z M 881.63281 1089.4258 L 895.13281 1099.4258 L 895.6543 1105.5 L 896.31055 1105.9863 L 897.45703 1119.3613 L 908.61328 1127.625 L 910.11328 1145.125 L 890.11328 1158.125 L 887.98438 1156.0859 L 885.28906 1157.8379 L 873.28906 1146.3379 L 895.78906 1143.8379 L 885.78906 1139.8379 L 887.75195 1130.0254 L 877.81055 1136.4863 L 873.17773 1132.0469 L 859.11328 1141.1895 L 859.28906 1143.252 L 839.28906 1156.252 L 827.28906 1144.752 L 830.25977 1144.4219 L 823.61523 1138.0547 L 835.36914 1136.75 L 827.57617 1129.2812 L 836.77344 1128.2598 L 840.61523 1109.0547 L 842.53711 1110.4785 L 844.57617 1100.2812 L 852.11328 1105.8652 L 853.20312 1100.4219 L 859.90625 1105.3867 L 860.35742 1103.1309 L 865.30859 1106.7988 L 867.80859 1094.2949 L 879 1102.5859 L 881.63281 1089.4258 z M 932.12109 1091.4551 L 932.12305 1091.4785 L 930.89844 1092.2754 L 933.46094 1091.9902 L 932.12109 1091.4551 z M 969.5 1104.5 L 983 1114.5 L 984.5 1132 L 981.17969 1134.1582 L 982.27344 1146.9141 L 962.27344 1159.9141 L 957.79102 1155.6172 L 953.62695 1158.3242 L 952.70312 1157.4395 L 949.19336 1159.7207 L 937.19336 1148.2207 L 938.53125 1148.0723 L 927.93945 1137.9219 L 950.43945 1135.4219 L 940.43945 1131.4219 L 944.93945 1108.9219 L 958.41211 1118.9004 L 958.62695 1117.8242 L 965.62695 1123.0098 L 966.89648 1116.6582 L 967.04688 1116.7695 L 969.5 1104.5 z M 764.00195 1105.9492 L 777.50195 1115.9492 L 777.71875 1118.4766 L 782.68945 1122.1582 L 784.18945 1139.6582 L 779.56445 1142.6641 L 779.8457 1145.9473 L 759.8457 1158.9473 L 747.8457 1147.4473 L 753.18359 1146.8535 L 743.29492 1137.377 L 748.88672 1136.7559 L 747.00195 1134.9492 L 761.85156 1133.2988 L 755.79492 1130.877 L 760.29492 1108.377 L 763.10156 1110.4551 L 764.00195 1105.9492 z M 1115.8633 1115.7324 L 1112.334 1118.0254 L 1119.582 1117.2207 L 1115.8633 1115.7324 z M 888.16602 1122.4297 L 888.0293 1122.5176 L 888.31055 1122.4863 L 888.16602 1122.4297 z M 950.99023 1142.2383 L 944.41211 1146.5156 L 950.12891 1145.8809 L 949.89648 1145.6582 L 957.44141 1144.8203 L 950.99023 1142.2383 z "
-       id="path4385" />
-  </g>
+     inkscape:groupmode="layer" />
   <g
      style="display:inline"
      inkscape:label="alpha_asphalt"
      id="layer34"
      inkscape:groupmode="layer">
     <path
-       style="fill:none;fill-rule:evenodd;stroke:#646464;stroke-width:18;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1"
-       d="m 586.99991,1090.5002 c 77.99998,9.5 175.24035,50.1941 191.99996,5.5 12,-22.5 -9.49999,-93.75 9.25,-94.5 38,-1 200.42025,-6.33363 261.37123,2.5052 17.5,3.5 1.3787,74.7448 28.3787,78.2448 76.5,1.25 354,-0.25 354,-0.25"
-       id="path9045"
+       style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#646464;stroke-width:18;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4390-6-2);enable-background:new"
+       d="m 931.84015,956.638 c 6.68886,1.2906 93.33525,0.61925 102.60045,16.45719 10.7127,18.31221 8.4852,60.46011 21.9732,62.58661 89.4012,14.095 170.6207,35.3495 183.7454,0.3488 12,-22.5 -16.9246,-90.92154 37.1807,-93.08576 59.5668,-3.12132 172.4896,-7.74801 233.4405,1.09099 17.5,3.5 1.3787,74.74477 28.3787,78.24477 76.5,1.25 354,-0.25 354,-0.25"
+       id="path9045-4-5-6"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
+       sodipodi:nodetypes="cssccccc" />
   </g>
   <g
      style="display:inline;filter:url(#filter4390)"
@@ -15987,11 +16020,11 @@ roof_cutout_texture = cutout.png; roof_cutout_texture_channel = 1; roof_cutout_t
      id="layer35"
      inkscape:groupmode="layer">
     <path
-       style="display:inline;fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
-       d="m 586.56411,1090.5128 c 77.99998,9.5 175.24035,50.1941 191.99996,5.5 12,-22.5 -9.49999,-93.75 9.25,-94.5 38,-1 200.42025,-6.33373 261.37123,2.5052 17.5,3.5 1.3787,74.7448 28.3787,78.2448 76.5,1.25 354,-0.25 354,-0.25"
-       id="path9045-4"
+       style="display:inline;opacity:1;fill:none;fill-rule:evenodd;stroke:#191919;stroke-width:10;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;filter:url(#filter4390-6);enable-background:new"
+       d="m 931.73549,956.50556 c 6.68886,1.2906 93.33521,0.61925 102.60041,16.45719 10.7127,18.31221 8.4852,60.46015 21.9732,62.58665 89.4012,14.095 170.6207,35.3494 183.7454,0.3488 12,-22.5 -16.9246,-90.92158 37.1807,-93.0858 59.5668,-3.12132 172.4896,-7.74801 233.4405,1.09099 17.5,3.5 1.3787,74.74481 28.3787,78.24481 76.5,1.25 354,-0.25 354,-0.25"
+       id="path9045-4-5"
        inkscape:connector-curvature="0"
-       sodipodi:nodetypes="cccccc" />
+       sodipodi:nodetypes="cssccccc" />
   </g>
   <g
      style="display:inline"
@@ -16005,8 +16038,8 @@ roof_cutout_texture = cutout.png; roof_cutout_texture_channel = 1; roof_cutout_t
      inkscape:groupmode="layer">
     <rect
        inkscape:label="#rect11324_base"
-       y="-827.64209"
-       x="1004.0945"
+       y="-1095.2073"
+       x="1216.4452"
        height="41.120255"
        width="31.086529"
        id="rect4874-8-1-8-0-11"
@@ -16019,8 +16052,8 @@ capturable = 1;</desc>
     </rect>
     <rect
        inkscape:label="#rect11324_base"
-       y="-1251.8906"
-       x="1002.5941"
+       y="-1127.2974"
+       x="936.93671"
        height="39.116478"
        width="34.333961"
        id="rect4874-8-1-8-0-11-7"
@@ -16057,8 +16090,8 @@ capturable = 1;</desc>
      inkscape:groupmode="layer">
     <rect
        inkscape:label="#rect11324_base"
-       y="1003.8641"
-       x="786.52039"
+       y="1216.1112"
+       x="1054.1677"
        height="31.495108"
        width="41.156467"
        id="rect91923-7-88"
@@ -16067,37 +16100,11 @@ capturable = 1;</desc>
       <desc
          id="desc91925-6-96">name=Other Guys;</desc>
     </rect>
-    <rect
-       inkscape:label="#rect11324_base"
-       y="1000.4474"
-       x="1212.0156"
-       height="34.74538"
-       width="40.911522"
-       id="rect91923-7-88-3"
-       style="display:inline;opacity:0.5;fill:none;stroke:#afafaf;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999988;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-       transform="rotate(0.08978138)">
-      <desc
-         id="desc91925-6-96-8">name=Bad Guys;</desc>
-    </rect>
     <flowRoot
-       xml:space="preserve"
-       id="flowRoot3482"
-       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1"
-       transform="translate(105.3055,-534.98162)"><flowRegion
-         id="flowRegion3484"
-         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1"><rect
-           id="rect3486"
-           width="235.46648"
-           height="79.903023"
-           x="383.95892"
-           y="1492.2141"
-           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara3492">Blastcorp</flowPara><flowPara
-         id="flowPara3494">Start</flowPara></flowRoot>    <flowRoot
        xml:space="preserve"
        id="flowRoot3482-1"
        style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#303030;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-       transform="translate(916.3874,-531.98785)"><flowRegion
+       transform="translate(604.69959,-635.22923)"><flowRegion
          id="flowRegion3484-4"
          style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1"><rect
            id="rect3486-2"
@@ -16106,7 +16113,34 @@ capturable = 1;</desc>
            x="383.95892"
            y="1492.2141"
            style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1" /></flowRegion><flowPara
-         id="flowPara3494-0">ReflexArqStart</flowPara></flowRoot>  </g>
+         id="flowPara3494-0">target</flowPara><flowPara
+         id="flowPara5618">Gamma</flowPara></flowRoot>    <rect
+       inkscape:label="#rect11324_base"
+       y="936.99164"
+       x="1087.2087"
+       height="31.495108"
+       width="41.156467"
+       id="rect91923-7-88-9"
+       style="display:inline;opacity:0.5;fill:none;stroke:#afafaf;stroke-width:5;stroke-miterlimit:4;stroke-dasharray:4.99999988, 4.99999988;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
+       transform="rotate(0.08978138)">
+      <desc
+         id="desc91925-6-96-8">name=Bad Guys;</desc>
+    </rect>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3482-1-1"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;line-height:125%;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:middle;display:inline;fill:#303030;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       transform="translate(580.60422,-206.17781)"><flowRegion
+         id="flowRegion3484-4-1"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1"><rect
+           id="rect3486-2-0"
+           width="235.46648"
+           height="79.903023"
+           x="383.95892"
+           y="1492.2141"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:32px;font-family:'Damage Inc';-inkscape-font-specification:'Damage Inc, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:center;writing-mode:lr-tb;text-anchor:middle;fill:#303030;fill-opacity:1" /></flowRegion><flowPara
+         id="flowPara3494-0-1">target</flowPara><flowPara
+         id="flowPara5616">Alpha</flowPara></flowRoot>  </g>
   <g
      inkscape:groupmode="layer"
      id="layer5"
@@ -16173,19 +16207,27 @@ capturable = 1;</desc>
        inkscape:groupmode="layer">
       <rect
          inkscape:label="#rect36349"
-         y="1025.8251"
-         x="1104.7292"
-         height="12.039552"
-         width="13.520265"
+         y="648.23059"
+         x="3761.864"
+         height="17.539602"
+         width="18.270266"
          id="hitbox_extraction4"
          style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
       <rect
          inkscape:label="#rect36349"
-         y="1028.7305"
-         x="930.36462"
-         height="12.289552"
-         width="11.770266"
-         id="hitbox_extraction1"
+         y="1253.2812"
+         x="1107.7397"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction2"
+         style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
+      <rect
+         inkscape:label="#rect36349"
+         y="1010.3901"
+         x="1146.9841"
+         height="17.539602"
+         width="18.270266"
+         id="hitbox_extraction3"
          style="display:inline;fill:#00ffff;fill-opacity:1;fill-rule:evenodd;stroke:#ff00ff;stroke-width:4;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:0.97247709;enable-background:new" />
     </g>
     <g
@@ -16200,15 +16242,6 @@ capturable = 1;</desc>
        inkscape:groupmode="layer">
       <rect
          style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
-         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1"
-         width="6"
-         height="2.25"
-         x="1000.8378"
-         y="-1071.5518"
-         inkscape:label="#ladder"
-         transform="rotate(90.257537)" />
-      <rect
-         style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
          id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4"
          width="6"
          height="2.25"
@@ -16221,944 +16254,43 @@ capturable = 1;</desc>
          id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-7"
          width="6"
          height="2.25"
-         x="1226.3218"
-         y="1018.825"
+         x="1411.5823"
+         y="910.60516"
          inkscape:label="#ladder"
          transform="rotate(-1.1762223)" />
       <rect
          style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
-         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-9"
+         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-73"
          width="6"
          height="2.25"
-         x="766.16882"
-         y="1009.3772"
+         x="997.20172"
+         y="-1014.9814"
          inkscape:label="#ladder"
-         transform="rotate(-1.1762223)" />
+         transform="rotate(91.258799)" />
       <rect
          style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
-         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-9-0"
+         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-73-3"
          width="6"
          height="2.25"
-         x="887.38812"
-         y="1012.1161"
+         x="-1082.8264"
+         y="1100.6371"
          inkscape:label="#ladder"
-         transform="rotate(-1.1762223)" />
+         transform="rotate(-89.606098)" />
       <rect
          style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
-         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-9-5"
+         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-73-3-4"
          width="6"
          height="2.25"
-         x="1010.1225"
-         y="1014.136"
+         x="-1023.302"
+         y="-1172.9851"
          inkscape:label="#ladder"
-         transform="rotate(-1.1762223)" />
-      <rect
-         style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
-         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-4-9-2"
-         width="6"
-         height="2.25"
-         x="1128.9282"
-         y="1016.7362"
-         inkscape:label="#ladder"
-         transform="rotate(-1.1762223)" />
-      <rect
-         style="display:inline;opacity:0.79775277;fill:#2cffe7;fill-opacity:1;fill-rule:nonzero;stroke:none;enable-background:new"
-         id="rect7651-13-5-8-33-8-6-9-8-2-3-4-1-4-3-1-4-2-2-7-3-4-0-0-2-6-2-1-48"
-         width="6"
-         height="2.25"
-         x="1013.9933"
-         y="-950.45569"
-         inkscape:label="#ladder"
-         transform="rotate(90.257537)" />
+         transform="rotate(179.65076)" />
     </g>
     <g
        style="display:inline"
        inkscape:label="foliage"
        id="layer21"
-       inkscape:groupmode="layer">
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-769.74487"
-         x="1035.1665"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2"
-         style="display:inline;enable-background:new;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-823.69177"
-         x="1036.2021"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-7"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-9">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-0">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-894.30872"
-         x="1053.0162"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-2"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-3">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-9">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-854.0752"
-         x="1080.5706"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-9"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-7">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-03">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-861.85413"
-         x="1062.209"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-98"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-6">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-5">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-859.43646"
-         x="1046.8732"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-76"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-2">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-7">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-819.75555"
-         x="1070.4474"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-0"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-39">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-99">marram</title>
-      </rect>
-      <rect
-         transform="rotate(138.35844)"
-         inkscape:label="#mesh"
-         y="-1398.8317"
-         x="102.43193"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-1"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-72">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-3">marram</title>
-      </rect>
-      <rect
-         transform="rotate(31.46426)"
-         inkscape:label="#mesh"
-         y="452.74869"
-         x="1285.2881"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-6"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-5">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-58">marram</title>
-      </rect>
-      <rect
-         transform="rotate(57.033026)"
-         inkscape:label="#mesh"
-         y="-87.173119"
-         x="1332.9948"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-14"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-71">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-38">marram</title>
-      </rect>
-      <rect
-         transform="rotate(47.298906)"
-         inkscape:label="#mesh"
-         y="155.37918"
-         x="1294.4216"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-4"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-8">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-04">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-224.15134"
-         x="-1411.0397"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-60"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-32">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-6">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-902.40503"
-         x="1037.9108"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-94"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-1">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-37">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-304.49445"
-         x="-1304.819"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-8"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-83">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-8">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-943.23346"
-         x="1046.317"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-15"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-35">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-4">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-982.3161"
-         x="1074.2061"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-3"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-65">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-95">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1016.5602"
-         x="1035.6829"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-49"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-17">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-55">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-350.6402"
-         x="-1324.2384"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-41"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-88">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-35">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-942.26288"
-         x="1069.321"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-22"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-66">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-78">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-389.31519"
-         x="-1308.1123"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-417"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-18">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-787">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-373.59955"
-         x="-1278.4418"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-74"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-4">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-91">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1036.087"
-         x="1049.593"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-5"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-55">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-82">marram</title>
-      </rect>
-      <rect
-         transform="rotate(142.33341)"
-         inkscape:label="#mesh"
-         y="-1484.9375"
-         x="-180.26431"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-982"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-0">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-74">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-42.925811)"
-         inkscape:label="#mesh"
-         y="1511.6001"
-         x="60.853939"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-85"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-830">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-62">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1124.9694"
-         x="1081.7083"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-25"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-22">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-71">marram</title>
-      </rect>
-      <rect
-         transform="rotate(128.12291)"
-         inkscape:label="#mesh"
-         y="-1543.4935"
-         x="138.26707"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-52"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-11">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-01">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1125.4321"
-         x="1031.6244"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-87"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-60">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-09">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1096.812"
-         x="1070.2285"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-56"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-28">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-59">marram</title>
-      </rect>
-      <rect
-         transform="rotate(46.62268)"
-         inkscape:label="#mesh"
-         y="-70.819054"
-         x="1535.3333"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-43"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-90">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-56">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-123.34742)"
-         inkscape:label="#mesh"
-         y="374.94659"
-         x="-1530.9672"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-36"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-30">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-84">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-30.984311)"
-         inkscape:label="#mesh"
-         y="1529.5544"
-         x="399.32166"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-04"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-64">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-64">marram</title>
-      </rect>
-      <rect
-         transform="rotate(110.24753)"
-         inkscape:label="#mesh"
-         y="-1485.5264"
-         x="615.89044"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-38"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-40">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-093">marram</title>
-      </rect>
-      <rect
-         transform="rotate(51.929486)"
-         inkscape:label="#mesh"
-         y="-281.81522"
-         x="1569.1481"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-75"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-729">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-75">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-116.05417)"
-         inkscape:label="#mesh"
-         y="632.23663"
-         x="-1496.7692"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-65"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-304">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-85">marram</title>
-      </rect>
-      <rect
-         transform="rotate(134.9531)"
-         inkscape:label="#mesh"
-         y="-1672.6714"
-         x="-125.33028"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-55"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-42">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-1">marram</title>
-      </rect>
-      <rect
-         transform="rotate(49.106973)"
-         inkscape:label="#mesh"
-         y="-238.79004"
-         x="1667.7233"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-92"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-45">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-86">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1332.8245"
-         x="1041.2744"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-251"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-397">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-375">marram</title>
-      </rect>
-      <rect
-         transform="rotate(47.279569)"
-         inkscape:label="#mesh"
-         y="-255.87927"
-         x="1680.7985"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-02"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-187">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-15">marram</title>
-      </rect>
-      <rect
-         transform="rotate(45.813876)"
-         inkscape:label="#mesh"
-         y="-176.21533"
-         x="1650.2341"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-58"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-56">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-79">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-163.72326)"
-         inkscape:label="#mesh"
-         y="-717.2204"
-         x="-1471.3219"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-416"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-12">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-044">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1260.8629"
-         x="1071.9086"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-59"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-75">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-39">marram</title>
-      </rect>
-      <rect
-         transform="rotate(117.65189)"
-         inkscape:label="#mesh"
-         y="-1654.6044"
-         x="371.73785"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-05"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-563">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-2">marram</title>
-      </rect>
-      <rect
-         transform="rotate(142.33341)"
-         inkscape:label="#mesh"
-         y="-1667.3098"
-         x="-367.49374"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-68"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-91">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-48">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-69.223319)"
-         inkscape:label="#mesh"
-         y="1627.4261"
-         x="-566.57117"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-871"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-93">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-11">marram</title>
-      </rect>
-      <rect
-         transform="rotate(16.656114)"
-         inkscape:label="#mesh"
-         y="651.77783"
-         x="1424.6697"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-495"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-909">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-34">marram</title>
-      </rect>
-      <rect
-         transform="rotate(131.56595)"
-         inkscape:label="#mesh"
-         y="-1588.1569"
-         x="57.282402"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-07"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-57">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-50">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1142.2278"
-         x="1070.0967"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-64"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-78">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-40">marram</title>
-      </rect>
-      <rect
-         transform="rotate(17.439637)"
-         inkscape:label="#mesh"
-         y="729.46771"
-         x="1298.556"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-06"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-24">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-741">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1068.267"
-         x="1056.9882"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-858"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-99">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-93">marram</title>
-      </rect>
-      <rect
-         transform="rotate(162.88349)"
-         inkscape:label="#mesh"
-         y="-1347.6188"
-         x="-637.03632"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-37"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-73">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-25">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-1002.9331"
-         x="1061.4315"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-63"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-406">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-040">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-929.76428"
-         x="1084.6956"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-568"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-53">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-76">marram</title>
-      </rect>
-      <rect
-         transform="rotate(145.91407)"
-         inkscape:label="#mesh"
-         y="-1391.9248"
-         x="-135.87834"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-86"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-718">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-49">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-886.39819"
-         x="1069.6918"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-73"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-10">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-23">marram</title>
-      </rect>
-      <rect
-         transform="rotate(15.819096)"
-         inkscape:label="#mesh"
-         y="769.11292"
-         x="1155.8313"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-71"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-89">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-374">marram</title>
-      </rect>
-      <rect
-         transform="rotate(64.883235)"
-         inkscape:label="#mesh"
-         y="-398.33618"
-         x="1369.0956"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-80"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-405">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-70">marram</title>
-      </rect>
-      <rect
-         transform="rotate(97.083135)"
-         inkscape:label="#mesh"
-         y="-942.52863"
-         x="970.67358"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-056"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-780">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-65">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-786.23431"
-         x="1061.4248"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-734"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-3048">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-759">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-240.74811"
-         x="-1378.73"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-53"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-27">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-397">marram</title>
-      </rect>
-      <rect
-         transform="rotate(37.077524)"
-         inkscape:label="#mesh"
-         y="420.3046"
-         x="1243.3438"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-79"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-533">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-385">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-140.91311)"
-         inkscape:label="#mesh"
-         y="-198.84666"
-         x="-1407.2434"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-89"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-604">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-233">marram</title>
-      </rect>
-      <rect
-         transform="rotate(91.105498)"
-         inkscape:label="#mesh"
-         y="-755.86749"
-         x="1111.9697"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-70"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-01">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-030">marram</title>
-      </rect>
-      <rect
-         transform="rotate(-123.78611)"
-         inkscape:label="#mesh"
-         y="12.579191"
-         x="-1298.7703"
-         height="5.75"
-         width="5.25"
-         id="rect6021-50-33-71-9-8-10-0-1-2-03"
-         style="display:inline;opacity:0.93000034;fill:#a49b82;fill-opacity:1;stroke:#e5b950;stroke-width:5;stroke-linecap:butt;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:0;enable-background:new">
-        <desc
-           id="desc6025-28-59-0-34-1-76-0-7-7-836">template = marram; </desc>
-        <title
-           id="title6023-60-98-73-4-2-68-8-4-3-0409">marram</title>
-      </rect>
-    </g>
+       inkscape:groupmode="layer" />
     <g
        transform="translate(0,1024)"
        style="display:inline"
@@ -17166,40 +16298,16 @@ capturable = 1;</desc>
        inkscape:groupmode="layer"
        inkscape:label="objects">
       <rect
-         style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
-         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5"
-         width="25.276648"
-         height="24.593174"
-         x="-5.5847616"
-         y="-925.15332"
-         inkscape:label="#rect6406"
-         transform="rotate(89.747014)">
-        <desc
-           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2">height=2; material = BuildingVilla; offset=0 0 0;</desc>
-      </rect>
-      <rect
          style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#acad8d;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
          id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-9"
          width="21.245779"
          height="31.575474"
-         x="-13.864058"
-         y="-980.31146"
+         x="-10.415396"
+         y="-1025.2966"
          inkscape:label="#rect6406"
          transform="rotate(89.747014)">
         <desc
            id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-7">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
-      </rect>
-      <rect
-         style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
-         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-0"
-         width="17.790434"
-         height="22.060596"
-         x="1010.8422"
-         y="-5.9565473"
-         inkscape:label="#rect6406"
-         transform="rotate(-0.27101905)">
-        <desc
-           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-3">height=2; material = BuildingVilla; offset=0 0 0;</desc>
       </rect>
       <rect
          style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
@@ -17211,7 +16319,7 @@ capturable = 1;</desc>
          inkscape:label="#rect6406"
          transform="rotate(89.747014)">
         <desc
-           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6">height=4; material = BuildingWhite3Busy; offset=0 0 0;</desc>
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
       </rect>
       <rect
          style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
@@ -17226,61 +16334,348 @@ capturable = 1;</desc>
            id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-76">height=2; material = SecessionBuilding2Busy; offset=0 0 0;</desc>
       </rect>
       <rect
-         style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
-         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-2"
-         width="24.212696"
-         height="39.088707"
-         x="-19.914658"
-         y="-1195.3401"
+         style="display:inline;opacity:0.92000002;fill:#fad219;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         id="rect10340-4-5-7-9-9-8-7"
+         width="4.4683914"
+         height="3.811275"
+         x="-1051.1833"
+         y="-73.52005"
+         inkscape:label="#mesh"
+         transform="rotate(179.90842)">
+        <desc
+           id="desc10349-9-4-79-8-4-8-9">template = streetlight;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-0"
+         width="20.4319"
+         height="44.360584"
+         x="111.70634"
+         y="-1136.6525"
          inkscape:label="#rect6406"
          transform="rotate(89.747014)">
         <desc
-           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-70">height=2; material = BuildingVilla; offset=0 0 0;</desc>
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-2">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
       </rect>
       <rect
-         style="display:inline;fill:#ff0000;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
-         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-3"
-         width="19.245768"
-         height="31.566622"
-         x="-14.550035"
-         y="-881.56348"
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3"
+         width="20.4319"
+         height="44.360584"
+         x="-1045.8575"
+         y="-129.57129"
+         inkscape:label="#rect6406"
+         transform="rotate(-179.9248)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-9"
+         width="31.726763"
+         height="48.653149"
+         x="73.541718"
+         y="-1156.0712"
          inkscape:label="#rect6406"
          transform="rotate(89.747014)">
         <desc
-           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-9">height=2; material = BuildingVilla; offset=0 0 0;</desc>
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-7">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
       </rect>
       <rect
-         style="display:inline;opacity:1;fill:#c8b482;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.00157475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-         id="buildingrect3628"
-         width="490.43616"
-         height="179.61363"
-         x="772.93982"
-         y="-212.03633"
-         inkscape:label="#rect3628">
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-03"
+         width="20.4319"
+         height="44.360584"
+         x="82.80098"
+         y="-1101.5298"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)">
         <desc
-           id="desc3631">height=10; material = SecessionBackdropBuilding1; offset=0 0 0;</desc>
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-98">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
       </rect>
       <rect
-         style="display:inline;opacity:1;fill:#c8b482;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.00157475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-         id="buildingrect3628-0"
-         width="41.198853"
-         height="234.4588"
-         x="1262.7689"
-         y="-211.93417"
-         inkscape:label="#rect3628">
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-6"
+         width="20.4319"
+         height="44.360584"
+         x="29.05315"
+         y="-1045.5166"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)">
         <desc
-           id="desc3631-2">height=10; material = SecessionBackdropBuilding1; offset=0 0 0;</desc>
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-5">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
       </rect>
       <rect
-         style="display:inline;opacity:1;fill:#c8b482;fill-opacity:1;fill-rule:nonzero;stroke:#000000;stroke-width:1.00157475;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new"
-         id="buildingrect3628-0-4"
-         width="48.196457"
-         height="233.58417"
-         x="724.90442"
-         y="-212.4955"
-         inkscape:label="#rect3628">
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-7"
+         width="20.4319"
+         height="44.360584"
+         x="42.746769"
+         y="-1145.957"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)">
         <desc
-           id="desc3631-2-8">height=10; material = SecessionBackdropBuilding1; offset=0 0 0;</desc>
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-6">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-2"
+         width="20.4319"
+         height="44.360584"
+         x="61.30283"
+         y="-1045.3743"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)"
+         inkscape:transform-center-x="4.9999987"
+         inkscape:transform-center-y="8.7499978">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-70">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-3"
+         width="20.426781"
+         height="40.4715"
+         x="-1092.2775"
+         y="-68.510384"
+         inkscape:label="#rect6406"
+         transform="rotate(-179.9248)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-9">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-9"
+         width="30.336008"
+         height="47.883118"
+         x="-1085.8932"
+         y="-156.76883"
+         inkscape:label="#rect6406"
+         transform="rotate(-179.9248)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-91">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-7"
+         width="27.890055"
+         height="12.600772"
+         x="-56.730385"
+         y="1051.7133"
+         inkscape:label="#rect6406"
+         transform="rotate(-89.981592)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-2">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-7-8"
+         width="60.046909"
+         height="17.31115"
+         x="-1025.2111"
+         y="21.112778"
+         inkscape:label="#rect6406"
+         transform="rotate(179.7966)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-2-1">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-6-7"
+         width="20.4319"
+         height="44.360584"
+         x="-1076.6122"
+         y="23.260036"
+         inkscape:label="#rect6406"
+         transform="rotate(179.90188)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-5-8">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-0-4"
+         width="4"
+         height="4"
+         x="-78.365089"
+         y="-1071.0245"
+         inkscape:label="#mesh_template"
+         transform="rotate(90.709071)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-32-1">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-6-71"
+         width="20.4319"
+         height="44.360584"
+         x="-41.27438"
+         y="-1130.7178"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-5-87">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-6-74"
+         width="20.4319"
+         height="44.360584"
+         x="1137.6807"
+         y="-72.284447"
+         inkscape:label="#rect6406"
+         transform="rotate(0.10633966)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-5-4">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.92000002;fill:#fad219;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         id="rect10340-4-5-7-9-9-8-7-5"
+         width="4.4683914"
+         height="3.811275"
+         x="-56.754028"
+         y="1102.7635"
+         inkscape:label="#mesh"
+         transform="rotate(-89.642936)">
+        <desc
+           id="desc10349-9-4-79-8-4-8-9-5">template = streetlight;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.92000002;fill:#fad219;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         id="rect10340-4-5-7-9-9-8-7-8"
+         width="4.4683914"
+         height="3.811275"
+         x="-0.2757667"
+         y="-1112.2823"
+         inkscape:label="#mesh"
+         transform="rotate(89.925126)">
+        <desc
+           id="desc10349-9-4-79-8-4-8-9-2">template = streetlight;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-0-2"
+         width="20.4319"
+         height="44.360584"
+         x="239.65149"
+         y="-1067.3369"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-2-0">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-2-7"
+         width="20.4319"
+         height="44.360584"
+         x="174.78351"
+         y="-1097.3737"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)"
+         inkscape:transform-center-x="4.9999987"
+         inkscape:transform-center-y="8.7499978">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-70-4">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-3-8"
+         width="20.426781"
+         height="40.4715"
+         x="-1128.712"
+         y="-172.56099"
+         inkscape:label="#rect6406"
+         transform="rotate(-179.9248)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-9-5">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-3-"
+         width="20.426781"
+         height="40.4715"
+         x="-1045.2123"
+         y="-209.3777"
+         inkscape:label="#rect6406"
+         transform="rotate(-179.9248)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-9-0">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-7-"
+         width="24.530132"
+         height="8.889637"
+         x="-162.88507"
+         y="1092.6792"
+         inkscape:label="#rect6406"
+         transform="rotate(-89.981592)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-2-2">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-7-2"
+         width="20.133688"
+         height="19.695774"
+         x="-1045.2878"
+         y="-160.24509"
+         inkscape:label="#rect6406"
+         transform="rotate(-179.82347)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-2-5">height=6; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-7-2"
+         width="20.4319"
+         height="44.360584"
+         x="188.61264"
+         y="-1147.7343"
+         inkscape:label="#rect6406"
+         transform="rotate(89.747014)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-6-2">height=4; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-6-7"
+         width="4"
+         height="4"
+         x="1109.517"
+         y="175.2961"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-9-1">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:0.92000002;fill:#fad219;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         id="rect10340-4-5-7-9-9-8-7-8-5"
+         width="4.4683914"
+         height="3.811275"
+         x="-130.26479"
+         y="1094.173"
+         inkscape:label="#mesh"
+         transform="rotate(-89.873063)">
+        <desc
+           id="desc10349-9-4-79-8-4-8-9-2-2">template = streetlight;</desc>
+      </rect>
+      <rect
+         style="display:inline;fill:#d9d6b1;fill-opacity:1;stroke:#000000;stroke-width:1.00000012;stroke-opacity:1;enable-background:new"
+         id="buildingrect6406-7-4-1-3-8-0-15-7-2-74-5-3-27-8-82-4-6-5-98-3-7--8"
+         width="65.366531"
+         height="12.058491"
+         x="-185.37823"
+         y="1010.2206"
+         inkscape:label="#rect6406"
+         transform="rotate(-89.981592)">
+        <desc
+           id="desc6462-7-9-9-5-9-0-4-3-7-6-0-1-6-9-2-6-9-2-2-7">height=6; material = SecessionBuilding1Busy; offset=0 0 0;</desc>
       </rect>
     </g>
     <g
@@ -17339,16 +16734,6 @@ capturable = 1;</desc>
        inkscape:label="other"
        id="layer16"
        inkscape:groupmode="layer">
-      <path
-         style="display:inline;opacity:0.93000034;fill:none;stroke:#9d7b00;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-         d="m 1257.773,1044.075 -44.6591,-0.066 -76.9928,0.7453 -105.0083,0.134 -67.0557,0.4797 -53.43748,-0.49 -64.75004,-0.5 -69.0859,-0.085"
-         id="path6989-17-4-5-8-8-0-0-6-8-12-03-8-3-4-1-8-9-0-1-9-3-7"
-         inkscape:connector-curvature="0"
-         inkscape:label="post"
-         sodipodi:nodetypes="cccccccc">
-        <desc
-           id="desc103044-9">post_template = post1_1;</desc>
-      </path>
       <rect
          style="display:inline;opacity:0.93000034;fill:#a5a5a5;fill-opacity:1;stroke:#000000;stroke-width:1;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00000109, 4.00000109;stroke-dashoffset:7.00000238;stroke-opacity:1;enable-background:new"
          id="spawn2_6-9"
@@ -17378,8 +16763,8 @@ capturable = 1;</desc>
          id="spawn4_3-2"
          width="5.7888808"
          height="6.6684999"
-         x="37.726379"
-         y="1428.9694"
+         x="68.821495"
+         y="1461.6597"
          inkscape:label=""
          transform="rotate(-42.301718)">
         <desc
@@ -17402,8 +16787,8 @@ capturable = 1;</desc>
          id="spawn2_6-9-4"
          width="5.7888808"
          height="6.6684999"
-         x="1590.2294"
-         y="-209.2402"
+         x="1457.171"
+         y="-163.08987"
          inkscape:label=""
          transform="rotate(46.984378)">
         <desc
@@ -17411,12 +16796,12 @@ capturable = 1;</desc>
 tag = speeder;</desc>
       </rect>
       <rect
-         style="display:inline;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00629902,4.00629902;stroke-dashoffset:2.90456679;stroke-opacity:1;enable-background:new"
+         style="display:inline;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00629902, 4.00629902;stroke-dashoffset:2.90456676;stroke-opacity:1;enable-background:new"
          id="spawn2_6-9-4-3"
          width="5.7888808"
          height="6.6684999"
-         x="-725.35724"
-         y="1070.2937"
+         x="-844.6109"
+         y="1390.3914"
          inkscape:label=""
          transform="rotate(-71.928512)">
         <desc
@@ -17425,8 +16810,8 @@ tag = speeder;</desc>
       </rect>
       <rect
          inkscape:label=""
-         y="1030.8929"
-         x="811.32935"
+         y="1245.8892"
+         x="1076.7734"
          height="4"
          width="4"
          id="item_supply2-2-4-3"
@@ -17440,8 +16825,8 @@ tag = speeder;</desc>
          id="mesh3-9-9-5-4-6-2-55-9-7-1-0"
          width="6"
          height="8"
-         x="814.61316"
-         y="1018.9902"
+         x="1080.947"
+         y="1232.8833"
          inkscape:label="#mesh"
          transform="rotate(-0.26343815)">
         <title
@@ -17449,45 +16834,11 @@ tag = speeder;</desc>
         <desc
            id="desc6851-7-7-1-7-9-4">template = armory;</desc>
       </rect>
-      <rect
-         inkscape:label="#rect36349"
-         y="1026.3"
-         x="849.2923"
-         height="16.478903"
-         width="32.412472"
-         id="hitbox_trigger_1"
-         style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283465;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465,2.64566929;stroke-dashoffset:0;stroke-opacity:0.97247708;enable-background:new">
-        <desc
-           id="desc3776">text = &quot;another trigger area&quot;; size = &quot;5&quot;;</desc>
-      </rect>
-      <rect
-         inkscape:label="#rect36349"
-         y="1017.0898"
-         x="939.8233"
-         height="8.2362671"
-         width="7.6207886"
-         id="hitbox_trigger_jumppad_1"
-         style="display:inline;opacity:0.4;fill:#ffffff;fill-opacity:1;fill-rule:evenodd;stroke:#787878;stroke-width:1.32283461;stroke-linecap:round;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:1.32283465, 2.64566929;stroke-dashoffset:0;stroke-opacity:0.99047618;enable-background:new" />
     </g>
     <g
        inkscape:groupmode="layer"
        id="layer27"
-       inkscape:label="avoid">
-      <path
-         style="fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1.00157475;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mend);marker-mid:url(#Arrow1Mend);marker-end:url(#Arrow1Mend)"
-         d="m 714.91117,1046.2629 633.52603,1.7427 1.8284,122.2412 -635.99047,-3.2929 z"
-         id="avoid14999"
-         inkscape:connector-curvature="0"
-         inkscape:label="#path14999"
-         sodipodi:nodetypes="ccccc" />
-      <path
-         style="display:inline;fill:none;fill-rule:evenodd;stroke:#0000ff;stroke-width:1.00157475;stroke-linecap:butt;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;marker-start:url(#Arrow1Mend-2);marker-mid:url(#Arrow1Mend-2);marker-end:url(#Arrow1Mend-2);enable-background:new"
-         d="m 789.79632,821.68884 449.59708,0.7782 73.8107,109.54055 -88.1391,43.45794 -417.27216,-1.80711 -95.09449,-47.97969 z"
-         id="avoid14999-7"
-         inkscape:connector-curvature="0"
-         inkscape:label="#path14999"
-         sodipodi:nodetypes="ccccccc" />
-    </g>
+       inkscape:label="avoid" />
     <g
        style="display:inline"
        inkscape:label="crates"
@@ -17498,8 +16849,8 @@ tag = speeder;</desc>
          id="craterect10748-4-29-6-8-48-7-1-7-4-8-5-5"
          width="4"
          height="4"
-         x="-1028.0232"
-         y="855.05322"
+         x="-1162.3087"
+         y="1044.7838"
          inkscape:label="#rect10748"
          transform="rotate(-89.765408)" />
       <rect
@@ -17507,8 +16858,8 @@ tag = speeder;</desc>
          id="craterect10748-4-29-6-8-48-7-1-7-4-8-5-5-8"
          width="4"
          height="4"
-         x="-1007.4589"
-         y="906.27759"
+         x="-1162.7943"
+         y="1091.8236"
          inkscape:label="#rect10748"
          transform="rotate(-89.765408)" />
       <rect
@@ -17516,8 +16867,8 @@ tag = speeder;</desc>
          id="craterect10748-4-29-6-8-48-7-1-7-4-8-5-5-1"
          width="4"
          height="4"
-         x="-1028.6539"
-         y="953.91766"
+         x="-1031.7197"
+         y="998.93054"
          inkscape:label="#rect10748"
          transform="rotate(-89.765408)" />
       <rect
@@ -17525,8 +16876,8 @@ tag = speeder;</desc>
          id="craterect10748-4-29-6-8-48-7-1-7-4-8-5-5-4"
          width="4"
          height="4"
-         x="-1017.466"
-         y="1009.557"
+         x="-1070.2238"
+         y="1007.7731"
          inkscape:label="#rect10748"
          transform="rotate(-89.765408)" />
       <rect
@@ -17558,14 +16909,126 @@ tag = speeder;</desc>
          rx="2"
          transform="rotate(-88.846228)"
          inkscape:label="#rect10748"
-         y="856.69061"
-         x="-1020.9164"
+         y="1102.3698"
+         x="-1020.3422"
          height="4"
          width="4"
          id="decal5-4-5-6-3"
-         style="display:inline;enable-background:new;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none">
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
         <desc
            id="desc8011-6-0-5-4-9">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1077.6122"
+         x="-1072.8237"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-1"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-5">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1139.8254"
+         x="-948.6861"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-3"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-54">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1055.0206"
+         x="-1145.0646"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-5"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-4">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1019.6446"
+         x="-1249.7428"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-9"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-1">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="976.27136"
+         x="-939.77997"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-7"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-55">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1205.5249"
+         x="-1032.7633"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-4"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-18">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1260.3402"
+         x="-962.70251"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-8"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-3">template = manhole;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         transform="rotate(-88.846228)"
+         inkscape:label="#rect10748"
+         y="1381.3588"
+         x="-913.94031"
+         height="4"
+         width="4"
+         id="decal5-4-5-6-3-8-5"
+         style="display:inline;opacity:0.93000034;fill:#c83737;fill-opacity:1;stroke:none;enable-background:new">
+        <desc
+           id="desc8011-6-0-5-4-9-3-2">template = manhole;</desc>
       </rect>
     </g>
     <g
@@ -17575,128 +17038,128 @@ tag = speeder;</desc>
        style="opacity:0.98000004">
       <rect
          inkscape:label="#spawnrect10748"
-         y="1019.7162"
-         x="786.35095"
+         y="1232.3824"
+         x="1053.6654"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-8"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1013.3651"
-         x="801.17078"
+         y="1226.0314"
+         x="1068.4852"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1018.9662"
-         x="1213.601"
+         y="953.16193"
+         x="1089.0852"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-8-0"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1006.6047"
-         x="1233.3705"
+         y="940.80042"
+         x="1108.8547"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1027.9662"
-         x="1225.601"
+         y="962.16193"
+         x="1101.0852"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2-9"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1013.2162"
-         x="1223.101"
+         y="947.41193"
+         x="1098.5852"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2-5"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1034.9662"
-         x="1165.351"
+         y="967.18829"
+         x="1092.5422"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2-57"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1027.7162"
-         x="1182.851"
+         y="957.18829"
+         x="1119.7924"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2-0"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1029.7162"
-         x="1201.101"
+         y="936.68829"
+         x="1077.2924"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2-7"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1013.4387"
-         x="1243.2993"
+         y="947.63446"
+         x="1118.7836"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-2-79"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1039.4712"
-         x="825.05005"
+         y="1252.1375"
+         x="1092.3645"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-3"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1025.9897"
-         x="814.26239"
+         y="1238.656"
+         x="1081.5769"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-0"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1028.6415"
-         x="800.65057"
+         y="1241.3077"
+         x="1067.9651"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-9"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1031.4698"
-         x="844.84473"
+         y="1244.1361"
+         x="1112.1592"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-7"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1036.7732"
-         x="860.04755"
+         y="1249.4395"
+         x="1127.3621"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-1"
          style="display:inline;opacity:0.93000034;fill:#de7524;fill-opacity:1;stroke:none;enable-background:new" />
       <rect
          inkscape:label="#spawnrect10748"
-         y="1010.6102"
-         x="838.83435"
+         y="1260.3995"
+         x="1084.4053"
          height="2.0679491"
          width="2.2977724"
          id="rect4878-8-6-42-7-9-6-0-8"
@@ -17726,6 +17189,118 @@ tag = speeder;</desc>
          transform="rotate(0.55420551)">
         <desc
            id="desc7569-86-7-2-8-1-4-7-3">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-4"
+         width="4"
+         height="4"
+         x="1071.4409"
+         y="1094.863"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-7">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-1"
+         width="4"
+         height="4"
+         x="1142.0649"
+         y="1122.1119"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-3">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-8"
+         width="4"
+         height="4"
+         x="1044.005"
+         y="1109.5997"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-4">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-80"
+         width="4"
+         height="4"
+         x="1044.621"
+         y="1132.2798"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-46">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-0"
+         width="4"
+         height="4"
+         x="1015.7865"
+         y="1043.4266"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-32">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-6"
+         width="4"
+         height="4"
+         x="1115.5898"
+         y="1053.4219"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-9">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-41"
+         width="4"
+         height="4"
+         x="1135.3892"
+         y="1016.8127"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-37">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
+      </rect>
+      <rect
+         ry="2"
+         rx="2"
+         style="display:inline;opacity:0.93000034;fill:#909090;fill-opacity:1;stroke:#000000;stroke-width:0.99999976;stroke-opacity:1;enable-background:new"
+         id="mesh_template1-2-8-88"
+         width="4"
+         height="4"
+         x="1134.4838"
+         y="996.31439"
+         inkscape:label="#mesh_template"
+         transform="rotate(0.55420551)">
+        <desc
+           id="desc7569-86-7-2-8-1-4-7-3-38">name = pipe; mesh_name = pipe.mesh; texture0 = world_atlas1.png; texture0_atlas_cell = 5 3 32 32; collision_model_type = 1; collision_model_size = 1.0 1.2 1.0;</desc>
       </rect>
     </g>
     <g
@@ -17783,7 +17358,32 @@ tag = speeder;</desc>
        style="display:inline"
        inkscape:label="objects"
        id="layer23"
-       inkscape:groupmode="layer" />
+       inkscape:groupmode="layer">
+      <rect
+         style="display:inline;opacity:1;fill:#953f19;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         id="rect10340-4-5-7-9-9-8-7-5-6"
+         width="6.025291"
+         height="13.329958"
+         x="1098.7252"
+         y="995.47589"
+         inkscape:label="#mesh"
+         transform="rotate(-0.3272511)">
+        <desc
+           id="desc10349-9-4-79-8-4-8-9-5-0">template = ramp;</desc>
+      </rect>
+      <rect
+         style="display:inline;opacity:1;fill:#953f19;fill-opacity:1;fill-rule:evenodd;stroke:#323232;stroke-width:0.2;stroke-miterlimit:4;stroke-dasharray:none;stroke-opacity:1;enable-background:new"
+         id="rect10340-4-5-7-9-9-8-7-5-6-5"
+         width="4.3719435"
+         height="10.752926"
+         x="1170.5264"
+         y="-1037.1213"
+         inkscape:label="#mesh"
+         transform="rotate(90.279291)">
+        <desc
+           id="desc10349-9-4-79-8-4-8-9-5-0-9">template = ramp;</desc>
+      </rect>
+    </g>
     <g
        style="display:inline"
        inkscape:label="other"
@@ -17807,18 +17407,6 @@ tag = speeder;</desc>
       </rect>
       <rect
          style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
-         id="spawn_terminal-1"
-         width="3.3321514"
-         height="3.3363316"
-         x="-981.57294"
-         y="-1023.7781"
-         inkscape:label=""
-         transform="rotate(-179.54277)">
-        <desc
-           id="desc3838">type = vehicle; key = veh_terminal.vehicle;</desc>
-      </rect>
-      <rect
-         style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
          id="spawn_terminal-1-7"
          width="4.2094455"
          height="3.4176004"
@@ -17830,17 +17418,16 @@ tag = speeder;</desc>
            id="desc3838-9">type = vehicle; key = veh_terminal.vehicle;</desc>
       </rect>
       <rect
-         style="display:inline;enable-background:new;opacity:0.93000034;fill:#7d3928;fill-opacity:1;stroke:#000000;stroke-width:1.00157475;stroke-linecap:square;stroke-linejoin:miter;stroke-miterlimit:4;stroke-dasharray:4.00629902, 4.00629902000000016;stroke-dashoffset:2.90456676;stroke-opacity:1"
-         id="spawn2_6-9-4-3-7"
-         width="5.7888808"
-         height="6.6684999"
-         x="-664.95355"
-         y="1233.1863"
+         style="display:inline;opacity:0.93000034;fill:#86af6c;fill-opacity:1;fill-rule:nonzero;stroke:#1e1e1e;stroke-width:0.57211763;stroke-linecap:round;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:0.57211762, 0.57211762;stroke-dashoffset:0.84000003;stroke-opacity:1;enable-background:new"
+         id="spawn_terminal-1"
+         width="3.3321514"
+         height="3.3363316"
+         x="1174.9525"
+         y="-1043.9785"
          inkscape:label=""
-         transform="rotate(-71.928512)">
+         transform="rotate(90.777947)">
         <desc
-           id="desc9788-45-3-6-1-6-7-2-09-4-7-2-82-2-4-4-2-4-7-5-1-7-0-2-9-9-6-8-9">type = vehicle;
-tag = speeder;</desc>
+           id="desc3838">type = vehicle; key = veh_terminal.vehicle;</desc>
       </rect>
     </g>
   </g>

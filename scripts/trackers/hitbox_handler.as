@@ -205,11 +205,9 @@ class HitboxHandler : Tracker {
 			float size = 1.0;
 			string color = "#E0E0E0";
 			string position = triggerAreaNode.getStringAttribute("position");
-
 			string command = "<command class='set_marker' id='" + offset + "' faction_id='0' atlas_index='" + atlasIndex +
 				"' text='" + text + "' position='" + position + "' color='" + color + "' size='" + size + "' show_at_screen_edge='" + (showAtScreenEdge?1:0) + "' />";
 			m_metagame.getComms().send(command);
-
 			offset++;
 		}
 	}

@@ -262,7 +262,12 @@ class Stage {
 		string thisMap = m_mapInfo.m_name;
 		_log("*** SECESSION " + m_mapInfo.m_id + ": " + thisMap + " commencing.", 1);
 		XmlElement camera("camera");
-		if (thisMap == 'Train Intro') {
+		if (thisMap == 'Top Down') {
+			camera.setStringAttribute("direction", "-0.001 -1.0 0.001");
+			camera.setFloatAttribute("distance", 70.0);
+			camera.setFloatAttribute("far_clip", 150.0);
+			camera.setFloatAttribute("shadow_far_clip", 150.0);
+		} else if (thisMap == 'Train Intro') {
 			camera.setStringAttribute("direction", "-0.01 -0.16 0.5");
 			camera.setFloatAttribute("distance", 12.5);
 			camera.setFloatAttribute("far_clip", 150.0);
