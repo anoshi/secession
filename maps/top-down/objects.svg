@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="2.0000005"
-     inkscape:cx="3682.4569"
-     inkscape:cy="1346.5185"
+     inkscape:zoom="0.70710696"
+     inkscape:cx="3185.6003"
+     inkscape:cy="1287.8748"
      inkscape:document-units="px"
      inkscape:current-layer="layer29"
      showgrid="true"
@@ -7239,7 +7239,7 @@
         <dc:format>image/svg+xml</dc:format>
         <dc:type
            rdf:resource="http://purl.org/dc/dcmitype/StillImage" />
-        <dc:title></dc:title>
+        <dc:title />
       </cc:Work>
     </rdf:RDF>
   </metadata>
@@ -15935,9 +15935,11 @@ key = empl_turret_offline.vehicle;</desc>
        inkscape:label="#mesh_template"
        transform="rotate(-89.853636,3522.2929,268.88216)">
       <desc
-         id="desc10349-9-4-79-8-4-6">name = ramp; mesh_name = obj_ramp.mesh; texture0 = sec_ramp.png;
+         id="desc10349-9-4-79-8-4-6">name = ramp; 
+mesh_name = obj_ramp.mesh; 
+texture0 = obj_ramp.png;
 collision_model_type = 1;
-collision_model_size = 2.0 -0.2 4.0;
+collision_model_size = 8.0 -0.2 4.0;
 walkable = 1;
 backline = 1;</desc>
     </rect>
@@ -16152,8 +16154,8 @@ capturable = 1;</desc>
        id="boundary_rect4"
        width="2148.1272"
        height="65.065483"
-       x="-42.378387"
-       y="-30.472612"
+       x="-42.268196"
+       y="-28.384325"
        inkscape:label="#rect4003">
       <desc
          id="desc6099-8">height=3;</desc>
@@ -16164,8 +16166,8 @@ capturable = 1;</desc>
        id="boundary_rect2"
        width="2154.8738"
        height="66.575668"
-       x="-50.433014"
-       y="-2049.6377"
+       x="-50.327374"
+       y="-2047.5491"
        inkscape:label="#rect4003">
       <desc
          id="desc6099-8-7">height=3;</desc>
@@ -16176,8 +16178,8 @@ capturable = 1;</desc>
        id="boundary_rect1"
        width="2170.8892"
        height="59.01173"
-       x="-69.748138"
-       y="-11.020633"
+       x="-71.836174"
+       y="-10.906236"
        inkscape:label="#rect4003">
       <desc
          id="desc6099-8-7-4">height=3;</desc>
@@ -16188,8 +16190,8 @@ capturable = 1;</desc>
        id="boundary_rect3"
        width="2102.5742"
        height="49.949806"
-       x="-49.110695"
-       y="2009.9401"
+       x="-51.19873"
+       y="2010.0544"
        inkscape:label="#rect4003">
       <desc
          id="desc6099-8-7-4-4">height=3;</desc>
@@ -16679,31 +16681,10 @@ capturable = 1;</desc>
       </rect>
     </g>
     <g
-       style="display:none;opacity:0.18900003"
+       style="display:inline;opacity:0.563"
        inkscape:label="walls"
        id="layer8"
-       inkscape:groupmode="layer">
-      <path
-         style="display:inline;opacity:0.93000034;fill:#ffffff;fill-opacity:1;stroke:#fffffe;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-         d="m 1344.0959,815.26673 0.2711,107.99352 -628.49328,-0.17693 1.13606,-107.48502"
-         id="wall37832-1-7-0-43-24-4-3"
-         inkscape:connector-curvature="0"
-         inkscape:label=""
-         sodipodi:nodetypes="cccc">
-        <desc
-           id="desc37834-46-7-1-8-5-8-9">template = InvisibleWall1;</desc>
-      </path>
-      <path
-         style="display:inline;opacity:0.93000034;fill:#ffffff;fill-opacity:1;stroke:#fffffd;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
-         d="m 718.75835,1158.1155 -1.2782,-88.3517 628.84675,1.3125 1.2854,88.5502"
-         id="wall37832-1-7-0-43-24-4"
-         inkscape:connector-curvature="0"
-         inkscape:label=""
-         sodipodi:nodetypes="cccc">
-        <desc
-           id="desc37834-46-7-1-8-5-8">template = InvisibleWall1;</desc>
-      </path>
-    </g>
+       inkscape:groupmode="layer" />
     <g
        style="display:inline"
        inkscape:label="rocks"
@@ -17376,10 +17357,10 @@ tag = speeder;</desc>
          id="rect10340-4-5-7-9-9-8-7-5-6-5"
          width="4.3719435"
          height="10.752926"
-         x="1170.5264"
-         y="-1037.1213"
+         x="1175.9663"
+         y="-1030.4026"
          inkscape:label="#mesh"
-         transform="rotate(90.279291)">
+         transform="rotate(89.935238)">
         <desc
            id="desc10349-9-4-79-8-4-8-9-5-0-9">template = ramp;</desc>
       </rect>
