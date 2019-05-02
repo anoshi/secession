@@ -51,13 +51,13 @@
 	<command
 		class="commander_ai"
 		faction="0"
-		base_defense="0.0"
-		border_defense="0.1">
+		base_defense="0.4"
+		border_defense="0.4">
   </command>
   <command
 		class="commander_ai"
 		faction="1"
-		base_defense="0.75"
-		border_defense="0.2">
+		base_defense="0.4"
+		border_defense="0.4">
   </command>
 </commands>
