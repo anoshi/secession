@@ -26,6 +26,11 @@
 	<projectile file="grenadier_imp.projectile" />
 	<projectile file="grenadier_stun.projectile" />
 	<!-- end GRENADIER -->
+
+	<!-- SNIPER -->
+	<projectile file="all_laser_designator.projectile" />
+	<!-- end SNIPER -->
+
 	<!-- FACTION-SPECIFIC THROWABLES -->
 
 	<!-- BC throwables -->

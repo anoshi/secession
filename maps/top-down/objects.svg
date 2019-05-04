@@ -28,9 +28,9 @@
      borderopacity="1.0"
      inkscape:pageopacity="0.0"
      inkscape:pageshadow="2"
-     inkscape:zoom="0.70710696"
-     inkscape:cx="3185.6003"
-     inkscape:cy="1287.8748"
+     inkscape:zoom="0.50000013"
+     inkscape:cx="-2555.452"
+     inkscape:cy="1626.7649"
      inkscape:document-units="px"
      inkscape:current-layer="layer29"
      showgrid="true"
@@ -15139,7 +15139,7 @@ key = veh_repair_bay_small.vehicle;</desc>
        height="50.507629"
        width="77.781746"
        id="rect9344-60-5-0"
-       style="display:inline;opacity:0.93000034;fill:#57b548;fill-opacity:1;fill-rule:nonzero;stroke:#4d3a4b;stroke-width:5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
+       style="display:inline;opacity:0.93000034;fill:#233448;fill-opacity:1;fill-rule:nonzero;stroke:#4d3a4b;stroke-width:5;stroke-linecap:square;stroke-linejoin:round;stroke-miterlimit:4;stroke-dasharray:none;stroke-dashoffset:0;stroke-opacity:1;enable-background:new">
       <desc
          id="desc9346-8-9-2">name = SecessionBuilding1Busy;
 color = stroke;
@@ -15954,7 +15954,33 @@ backline = 1;</desc>
          sodipodi:role="line"
          style="font-size:10px;line-height:1.25;font-family:sans-serif"
          id="tspan4956-8">ramp</tspan></text>
-  </g>
+    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3616-7"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.92000002;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       transform="translate(-766.29428,715.30109)"><flowRegion
+         id="flowRegion3618-9"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect3620-3"
+           width="192"
+           height="73.000015"
+           x="-1848"
+           y="112.00005"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara3622-8">Secession building1 busy</flowPara></flowRoot>    <flowRoot
+       xml:space="preserve"
+       id="flowRoot3616-7-0"
+       style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;line-height:125%;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;letter-spacing:0px;word-spacing:0px;writing-mode:lr-tb;text-anchor:start;display:inline;opacity:0.92000002;fill:#000000;fill-opacity:1;stroke:none;stroke-width:1px;stroke-linecap:butt;stroke-linejoin:miter;stroke-opacity:1;enable-background:new"
+       transform="translate(-795.41928,834.96772)"><flowRegion
+         id="flowRegion3618-9-2"
+         style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start"><rect
+           id="rect3620-3-4"
+           width="192"
+           height="73.000015"
+           x="-1848"
+           y="112.00005"
+           style="font-style:normal;font-variant:normal;font-weight:normal;font-stretch:normal;font-size:18.66666603px;font-family:sans-serif;-inkscape-font-specification:'sans-serif, Normal';font-variant-ligatures:normal;font-variant-caps:normal;font-variant-numeric:normal;font-feature-settings:normal;text-align:start;writing-mode:lr-tb;text-anchor:start" /></flowRegion><flowPara
+         id="flowPara3622-8-8">Secession building2 busy</flowPara></flowRoot>  </g>
   <g
      style="display:none"
      inkscape:label="dirt"

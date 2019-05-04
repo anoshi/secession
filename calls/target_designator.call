@@ -2,18 +2,22 @@
 <call name="target designator" key="target_designator.call"  notify_metagame="1"
   initiation_comment1="Target Painted"
   acknowledge_comment="Confirmed. Maintain lock for 10"
-  launch_comment="Sandbags on the way">
+  launch_comment="On your target in 3...">
   <round instances="2"
-    instance_class="weapon"
-    instance_key="cover_resource.weapon"
+    instance_class="projectile"
+    instance_key="artillery_shell.projectile"
     instance_spread="0.5 0.5 0.5"
-    common_spread="0 0 0"
+    common_spread="1 1 1"
     launch_time="7.0"
     spawn_time="10.0">
     <sound class="spawn" fileref="woosh1.wav" volume="0.07" />
   </round>
-  <hud_icon filename="hud_hesco_barrier.png" />
+  <hud_icon filename="hud_hornet.png" />
   <capacity value="0" source="rank" source_value="0.0" />
-  <capacity value="100" source="rank" source_value="0.1" />
+  <capacity value="100" source="rank" source_value="0.5" />
   <inventory encumbrance="0.0" price="40.0" />
 </call>
+
+<!-- instance_spread and common_spread are both circular / hemispherical areas. -->
+<!-- the instance_spread area is placed randomly within the common_spread area -->
+<!-- projectiles land within the instance spread area -->

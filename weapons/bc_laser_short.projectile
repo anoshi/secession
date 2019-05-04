@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <projectile class="bullet" name="bc_laser_short" slot="1" time_to_live="1.0" pulldown_in_air="4">
-    <result class="hit" />
     <trigger class="impact" />
+    <result class="hit" />
+
     <rotation class="motion" />
 
     <sound class="result" key="terrain" fileref="ricochet1.wav" />

@@ -26,6 +26,8 @@
 	<weapon key='empl_turret.weapon' />
 	<weapon key='terminal.weapon' />
 	<weapon key='repair_bay.weapon' />
+	<weapon key='all_laser_designator_resource.weapon' />
+	<weapon key='all_laser_designator.weapon' />
 	<!-- end SECESSION weapons -->
 	<!-- END ALL COMMON WEAPONS -->
 
@@ -200,6 +202,7 @@
 	<!-- SECESSION DUMMY vehicles -->
 	<vehicle key="dummy_hot_potato.vehicle" />
 	<vehicle key="dummy_terminal.vehicle" />
+	<vehicle key="dummy_laser_designator.vehicle" />
 	<!-- end SECESSION vehicles -->
 	<!-- END ALL COMMON VEHICLES -->
 

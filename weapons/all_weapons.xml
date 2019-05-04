@@ -3,6 +3,8 @@
   <!-- SECESSION weapons -->
   <weapon file="terminal.weapon" />
   <weapon file="repair_bay.weapon" />
+  <weapon file="all_laser_designator_resource.weapon" />
+  <weapon file="all_laser_designator.weapon" />
 
   <!-- BC weapons -->
   <weapon file="bc_lr.weapon"> <!-- laser rifle -->

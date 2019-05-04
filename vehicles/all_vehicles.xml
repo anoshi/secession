@@ -94,11 +94,13 @@
   <!-- DUMMY vehicles (for tracking purposes) -->
   <vehicle file="dummy_hot_potato.vehicle" />
   <vehicle file="dummy_terminal.vehicle" />
+  <vehicle file="dummy_laser_designator.vehicle" />
 
   <!-- CLASS-SPECIFIC vehicles -->
   <!-- LightFoot -->
   <!-- Heavy Trooper -->
   <!-- Sniper -->
+  <vehicle file="all_laser_designator.vehicle" />
   <!-- Grenadier -->
   <vehicle file="gren_supply_crate.vehicle" />
   <!-- Demolitions Trooper -->
