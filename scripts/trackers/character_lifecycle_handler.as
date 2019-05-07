@@ -83,7 +83,7 @@ class CharacterLifecycleHandler : Tracker {
 
 		// create a new Vector3 as (enemyX, playerY +2, playerZ)
 		//float retX = v3charPos.get_opIndex(0);
-		float retX = v3playerPos.get_opIndex(0);
+		float retX = v3charPos.get_opIndex(0);
         float retY = v3playerPos.get_opIndex(1) + 2.0;
         float retZ = v3playerPos.get_opIndex(2);
         Vector3 dropPos = Vector3(retX, retY, retZ);
