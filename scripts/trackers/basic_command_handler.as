@@ -134,7 +134,14 @@ class BasicCommandHandler : Tracker {
 					destroyVehicle(m_metagame, id);
 				}
 			}
-		} else  if(checkCommand(message, "promote")) {
+		} else if(checkCommand(message, "suicide")) {
+			const XmlElement@ info = getPlayerInfo(m_metagame, senderId);
+			if (info !is null) {
+				int playerCharId = info.getIntAttribute("character_id");
+				string suicideComm = "<command class='update_character' id='" + playerCharId + "' dead='1' /></command>";
+				m_metagame.getComms().send(suicideComm);
+			}
+		} else if(checkCommand(message, "promote")) {
 			const XmlElement@ info = getPlayerInfo(m_metagame, senderId);
 			if (info !is null) {
 				int id = info.getIntAttribute("character_id");

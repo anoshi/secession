@@ -42,12 +42,12 @@ class QuickieCallHandler : Tracker {
 
 		uint numFactions = getFactions(m_metagame).size();
 
-		if (iChar !is null) {
+		//if (iChar !is null) {
 			string sCharPosi = getCharacterInfo(m_metagame, iChar).getStringAttribute("position");
 			_log("*** SECESSION: Call: " + sCall + " made from: " + sCharPosi + ", targeting: " + sPosi, 1);
 			_log("*** SECESSION: distance from source to target: " + getPositionDistance(stringToVector3(sCharPosi), v3Posi), 1);
 			//_log("call effect area: " + area, 1);
-		}
+		//}
 
 	////////////////////////
 	//   Common   Calls   //
@@ -101,15 +101,15 @@ class QuickieCallHandler : Tracker {
 		}
 		else if (sCall == "bombing_run.call") {
 			if (phase == "queue") {
-				if (sCharPosi !is null) {
+				//if (sCharPosi !is null) {
 					_log("Bombing run from " + sCharPosi + " to " + sPosi + " queued", 1);
-				} else { _log("Bombing run must be called by a character - requires caller pos to activate"); }
+				//} else { _log("Bombing run must be called by a character - requires caller pos to activate"); }
 			} else if (phase == "launch") {
 				// shouts to DoomMetal @ Discord RUNNING WITH RIFLES #modding
 				//bombingRun(event, caller_position, number, instance_class, instance_key, height)
-      			if (sCharPosi !is null) {
+      			//if (sCharPosi !is null) {
 					  bombingRun(event, sCharPosi, 10, "grenade", "grenadier_imp.projectile", 20.0);
-				} else { _log("Bombing run must be called by a character - requires caller pos to activate"); }
+				//} else { _log("Bombing run must be called by a character - requires caller pos to activate"); }
 			}
 		}
 	////////////////////////

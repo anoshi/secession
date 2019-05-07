@@ -2,7 +2,8 @@
 #include "path://media/packages/vanilla/scripts"
 #include "path://media/packages/secession/scripts"
 // secession quickmatch gamemode and script refs
-#include "secession_quickie.as"
+//#include "secession_quickie.as"
+#include "gamemode_cabal.as"
 
 void main(dictionary@ inputData) {
 	XmlElement inputSettings(inputData);
@@ -14,7 +15,8 @@ void main(dictionary@ inputData) {
 	_log("*** SECESSION: start_quickie.as running...",1);
 	settings.print();
 
-	SecessionQuickie metagame(settings);
+	//SecessionQuickie metagame(settings);
+	Cabal metagame(settings);
 
 	metagame.init();
 	metagame.run();

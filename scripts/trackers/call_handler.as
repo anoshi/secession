@@ -53,10 +53,11 @@ class CallHandler : Tracker {
 
 		_log("call made: " + sCall, 1);
 		_log("call target position: " + sPosi, 1);
-		if (iChar !is null) {
+		//if (iChar !is null) {
+		if (sCall != "target_designator.call") {
 			string sCharPosi = getCharacterInfo(m_metagame, iChar).getStringAttribute("position");
-			_log("call source position: " + getPlayerPosition, 1)
-			_log("distance from source to target: " + getPositionDistance(const Vector3@ pos1, posi), 1);
+			_log("*** SECESSION: Call: " + sCall + " made from: " + sCharPosi + ", targeting: " + sPosi, 1);
+			_log("*** SECESSION: distance from source to target: " + getPositionDistance(stringToVector3(sCharPosi), v3Posi), 1);
 			//_log("call effect area: " + area, 1);
 		}
 
