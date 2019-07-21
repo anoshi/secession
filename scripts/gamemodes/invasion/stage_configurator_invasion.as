@@ -240,9 +240,9 @@ class StageConfiguratorInvasion : StageConfigurator {
 
 		stage.m_soldierCapacityVariance = 0.3;
 		stage.m_playerAiCompensation = 2;
-    stage.m_playerAiReduction = 2;
+    	stage.m_playerAiReduction = 2;
 
-    stage.m_minRandomCrates = 2;
+    	stage.m_minRandomCrates = 2;
 		stage.m_maxRandomCrates = 4;
 
 		// koth timer
