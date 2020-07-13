@@ -15,12 +15,22 @@
 
 	<event key="receive_damage_xp_reward">
 		<trigger class="receive_damage" />
+		<result class="reward" xp="0.0010" />
+	</event>
+
+	<event key="destroy_xp_reward">
+		<trigger class="destroy" />
 		<result class="reward" xp="0.0050" />
 	</event>
 
 	<event key="spot_rp_reward">
 		<trigger class="spot" />
 		<result class="reward" rp="15.0" />
+	</event>
+
+	<event key="destroy_rp_reward">
+		<trigger class="destroy" />
+		<result class="reward" rp="200" />
 	</event>
 
 </vehicle>
