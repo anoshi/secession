@@ -32,7 +32,7 @@ class SecessionQuickie : GameMode {
 		super(settings.m_startServerCommand); // this is passing the string 'm_startServerCommand'
 		@m_userSettings = @settings;
 
-		_log("*** SECESSION: player using faction " + m_userSettings.m_factionChoice, 1);
+		_log("** SECESSION: player using faction " + m_userSettings.m_factionChoice, 1);
 	}
 
 	// --------------------------------------------
@@ -105,7 +105,7 @@ class SecessionQuickie : GameMode {
 
 	// --------------------------------------------
 	void save() {
-		_log("*** SECESSION: saving metagame", 1);
+		_log("** SECESSION: saving metagame", 1);
 
 		XmlElement commandRoot("command");
 		commandRoot.setStringAttribute("class", "save_data");
@@ -120,7 +120,7 @@ class SecessionQuickie : GameMode {
 
 	// --------------------------------------------
 	void load() {
-		_log("*** SECESSION: loading metagame", 1);
+		_log("** SECESSION: loading metagame", 1);
 
 		XmlElement@ query = XmlElement(
 			makeQuery(this, array<dictionary> = {

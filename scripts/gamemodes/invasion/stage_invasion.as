@@ -260,7 +260,7 @@ class Stage {
 	// --------------------------------------------
 	protected void appendCamera(XmlElement@ scene) const {
 		string thisMap = m_mapInfo.m_name;
-		_log("*** SECESSION " + m_mapInfo.m_id + ": " + thisMap + " commencing.", 1);
+		_log("** SECESSION " + m_mapInfo.m_id + ": " + thisMap + " commencing.", 1);
 		XmlElement camera("camera");
 		if (thisMap == 'Top Down') {
 			camera.setStringAttribute("direction", "0.0 -1.0 0.001");

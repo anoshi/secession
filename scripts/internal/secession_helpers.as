@@ -24,14 +24,6 @@ dictionary bnn_dict = {
 	{"%rule_loot", "don't touch!"}
 };
 
-/*
-dictionary veh_stats = {
-	{'veh_speeder.vehicle', dictionary = {{'max_health', 2.4}, {'ab', 2}} },
-    {'lc_jeep.vehicle', dictionary = {{'max_health', 1}, {'bb', 2}} },
-	{'veh_terminal.vehicle', dictionary = {{'max_health', 23.0} {'cc', 3}} }
-};
-*/
-
 ////////////////////////////////
 // ----- GLOBAL METHODS ----- //
 ////////////////////////////////
@@ -39,7 +31,7 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 	array<const XmlElement@> allVehicles;
 	array<const XmlElement@> vehNearPos;
 
-	_log("*** SECESSION getVehiclesNearPosition running", 1);
+	_log("** SECESSION getVehiclesNearPosition running", 1);
 
 // querying 'vehicles' doesn't support a range variable, like 'characters' does.
 // Must grab all vehicles and check their proximity to event, in turn.
@@ -60,16 +52,16 @@ array<const XmlElement@>@ getVehiclesNearPosition(const Metagame@ metagame, cons
 		string sName = vehInfo.getStringAttribute("name");
 		string sKey = vehInfo.getStringAttribute("key");
 		Vector3 curVehPos = stringToVector3(vehInfo.getStringAttribute("position"));
-		_log("*** SECESSION: working on vehicle: " + id + " (" + sKey + ") ", 1);
+		_log("** SECESSION: working on vehicle: " + id + " (" + sKey + ") ", 1);
 		if (checkRange(position, curVehPos, range) ) {
 			// we should never need to know where the decoration vehicles are.
 			if ( startsWith(sKey, "deco_") || startsWith(sKey, "dumpster") ) {
 				allVehicles.erase(i);
 				i--;
-				_log("*** SECESSION: removed vehicle " + id + " (decoration) from list.", 1);
+				_log("** SECESSION: removed vehicle " + id + " (decoration) from list.", 1);
 			} else {
 				vehNearPos.insertLast(curVeh);
-				_log("*** SECESSION: vehicle: " + id + " (" + sName + ") is within desired range. Adding.", 1);
+				_log("** SECESSION: vehicle: " + id + " (" + sName + ") is within desired range. Adding.", 1);
 			}
 		}
 	}
@@ -84,7 +76,7 @@ void commanderGreeting(const Metagame@ metagame) {
 
 	array<const XmlElement@> allFactions;
 
-	_log("*** SECESSION commanderGreeting running", 1);
+	_log("** SECESSION commanderGreeting running", 1);
 
 	// borrowed from scripts/invasion/map_rotator_invasion.as
 	// commander jumps on the airwaves and tells the player about what's happening
@@ -103,7 +95,7 @@ void commanderGreeting(const Metagame@ metagame) {
 
 	numFactions = allFactions.size();
 
-	_log("*** SECESSION: " + numFactions + " factions", 1);
+	_log("** SECESSION: " + numFactions + " factions", 1);
 
 	//const XmlElement@ base = getStartingBase(m_metagame, 0);
 	//	if (base !is null) {

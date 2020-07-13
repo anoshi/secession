@@ -10,7 +10,7 @@ void main(dictionary@ inputData) {
 	settings.fromXmlElement(inputSettings);
 	//_setupLog(inputSettings);
 	_setupLog("dev_verbose"); // comment out before go-live
-	_log("*** SECESSION: start_campaign.as running...",1);
+	_log("** SECESSION: start_campaign.as running...",1);
 	settings.print();
 
 	SecessionCampaign metagame(settings);

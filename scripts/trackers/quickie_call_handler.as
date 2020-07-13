@@ -44,8 +44,8 @@ class QuickieCallHandler : Tracker {
 
 		//if (iChar !is null) {
 			string sCharPosi = getCharacterInfo(m_metagame, iChar).getStringAttribute("position");
-			_log("*** SECESSION: Call: " + sCall + " made from: " + sCharPosi + ", targeting: " + sPosi, 1);
-			_log("*** SECESSION: distance from source to target: " + getPositionDistance(stringToVector3(sCharPosi), v3Posi), 1);
+			_log("** SECESSION: Call: " + sCall + " made from: " + sCharPosi + ", targeting: " + sPosi, 1);
+			_log("** SECESSION: distance from source to target: " + getPositionDistance(stringToVector3(sCharPosi), v3Posi), 1);
 			//_log("call effect area: " + area, 1);
 		//}
 
@@ -496,7 +496,7 @@ class QuickieCallHandler : Tracker {
 			}
 		}
 		else if (sCall == "wt_remote_hack_1.call") {
-			_log("*** SECESSION: WyreTek remote hack call block processing...", 1);
+			_log("** SECESSION: WyreTek remote hack call block processing...", 1);
 			// improve to detect hostile active turrets (enemy soldier 'turret') as well as offline turrets
 			if (phase == "queue") {
 				_log("locating turrets near: " + sPosi, 1);
@@ -606,10 +606,10 @@ class QuickieCallHandler : Tracker {
 
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
 		// tracking for the hot potato in case of being discovered and thrown as a grenade
-		_log("*** SECESSION: call_handler handleVehicleDestroyEvent running",1);
+		_log("** SECESSION: call_handler handleVehicleDestroyEvent running",1);
 		if (event.getStringAttribute("vehicle_key") == "dummy_hot_potato.vehicle") {
 			// stop tracking the hot potato. It's blown up!
-			_log("*** SECESSION: hot potato was used as grenade and detonated.");
+			_log("** SECESSION: hot potato was used as grenade and detonated.");
 			hpActive = false;
 		}
 	}

@@ -24,7 +24,7 @@ class DummyVehicleHandler : Tracker {
     protected void handleVehicleDestroyEvent(const XmlElement@ event) {
 		// we are only interested in the destruction of dummy vehicles
         if (startsWith(event.getStringAttribute("vehicle_key"), "dummy_")) {
-            _log("*** SECESSION: DummyVehicleHandler going to work!", 1);
+            _log("** SECESSION: DummyVehicleHandler going to work!", 1);
 
             // variablise attributes
             int factionId = event.getIntAttribute("owner_id");
@@ -34,7 +34,7 @@ class DummyVehicleHandler : Tracker {
             uint numFactions = getFactions(m_metagame).size();
 
             if (vKey == "dummy_terminal.vehicle") {
-                _log("*** SECESSION: Terminal at " + sPosi + " has been activated... Locating nearby equipment", 1);
+                _log("** SECESSION: Terminal at " + sPosi + " has been activated... Locating nearby equipment", 1);
                 // improve to detect hostile active turrets (enemy soldier 'turret') as well as offline turrets
                 array<const XmlElement@> foundEquip;
                 // start with the offline turrets (vehicles)
@@ -45,13 +45,13 @@ class DummyVehicleHandler : Tracker {
                 for (uint i = 0; i < foundEquip.size(); ++i) {
                     const XmlElement@ info = foundEquip[i];
                     int id = info.getIntAttribute("id");
-                    _log("*** SECESSION: vehicle id: " + id, 1);
+                    _log("** SECESSION: vehicle id: " + id, 1);
                     const XmlElement@ vehInfo = getVehicleInfo(m_metagame, id);
                     string vehPosi = vehInfo.getStringAttribute("position");
                     Vector3 v3VehPosi = stringToVector3(vehPosi);
                     string sKey = vehInfo.getStringAttribute("key");
                     if (startsWith(sKey, "veh_empl_turret")) {
-                        _log("*** SECESSION: found a turret at: " + vehPosi + ". (Re)Activating...", 1);
+                        _log("** SECESSION: found a turret at: " + vehPosi + ". (Re)Activating...", 1);
                         termTurrets.push_back(id);
                     } else {
                         foundEquip.erase(i);
