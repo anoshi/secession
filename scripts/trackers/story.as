@@ -24,7 +24,7 @@ class Story : Tracker {
 
 	protected void queueStoryItem() {
 		storyDelay = rand(STORY_DELAY_MIN, STORY_DELAY_MAX);
-		_log("*** SECESSION Story continues in: " + storyDelay + " seconds." ,1);
+		_log("** SECESSION Story continues in: " + storyDelay + " seconds." ,1);
 	}
 
 	protected void tellNextStoryItem() {
@@ -45,25 +45,23 @@ class Story : Tracker {
 		// what is the player character's position?
 		const XmlElement@ playerInfo = getCharacterInfo(m_metagame, playerCharId);
 		if (playerInfo.getIntAttribute("wounded") != 1 && playerInfo.getIntAttribute("dead") != 1) {
-			_log("*** SECESSION: player is alive, tell more story");
+			_log("** SECESSION: player is alive, tell more story");
 			Vector3 playerPos = stringToVector3(playerInfo.getStringAttribute("position"));
 			// find nearby friendlies
 			array<const XmlElement@> friendlyChars = getCharactersNearPosition(m_metagame, playerPos, 0, 10.0f);
 			if (friendlyChars.size() > 0) { // pc and inanimate objects won't continue the story
-				for (uint fc = 0; fc < friendlyChars.size(); ++fc) { // array contains playerCharId lookup instead?
-					int fcId = friendlyChars[fc].getIntAttribute("id");
-					if (fcId == playerCharId) {
+				for (uint fc = 0; fc < friendlyChars.size(); ++fc) {
+					if ((friendlyChars[fc].getIntAttribute("id") == playerCharId) || (friendlyChars[fc].getStringAttribute("soldier_group_name") == "empl_turret")) {
 						friendlyChars.erase(fc);
 					}
 				}
 			}
 			if (friendlyChars.size() > 0) { // anyone left nearby?
-				_log("*** SECESSION: found " + friendlyChars.size() + " friendlies near player character!", 1);
+				_log("** SECESSION: found " + friendlyChars.size() + " friendlies near player character!", 1);
 				// have one of them say the next line of the story
 				uint friendlyCharId = friendlyChars[rand(0, friendlyChars.size() -1)].getIntAttribute("id");
 				const XmlElement@ friendlyCharInfo = getCharacterInfo(m_metagame, friendlyCharId);
-				// DOESN'T WORK _log("*** SECESSION: storyteller group name is: " + friendlyCharInfo.getStringAttribute("soldier_group_name"), 1);
-				_log("*** SECESSION: character ID " + friendlyCharId + " about to say a story item!", 1);
+				_log("** SECESSION: character ID " + friendlyCharId + " about to say a story item!", 1);
 				sendFactionMessageKeySaidAsCharacter(m_metagame, 0, friendlyCharId, storyKey, a);
 				// update the reference var to where the player is at in the story (persist beyond saves)
 			}
@@ -104,7 +102,7 @@ class Story : Tracker {
 	void update(float time) {
 		storyDelay -= time;
 		if (storyDelay <= 0.0) {
-			_log("*** SECESSION story update incoming!", 1);
+			_log("** SECESSION story update incoming!", 1);
 			tellNextStoryItem();
 			queueStoryItem();
 		}

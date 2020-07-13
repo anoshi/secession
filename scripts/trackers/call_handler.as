@@ -49,15 +49,16 @@ class CallHandler : Tracker {
 		int iChar = event.getIntAttribute("character_id");
 		string sCall = event.getStringAttribute("call_key");
 		string sPosi = event.getStringAttribute("target_position");
+		string sCharPosi;
 		Vector3 v3Posi = stringToVector3(event.getStringAttribute("target_position"));
 
 		_log("call made: " + sCall, 1);
 		_log("call target position: " + sPosi, 1);
 		//if (iChar !is null) {
 		if (sCall != "target_designator.call") {
-			string sCharPosi = getCharacterInfo(m_metagame, iChar).getStringAttribute("position");
-			_log("*** SECESSION: Call: " + sCall + " made from: " + sCharPosi + ", targeting: " + sPosi, 1);
-			_log("*** SECESSION: distance from source to target: " + getPositionDistance(stringToVector3(sCharPosi), v3Posi), 1);
+			sCharPosi = getCharacterInfo(m_metagame, iChar).getStringAttribute("position");
+			_log("** SECESSION: Call: " + sCall + " made from: " + sCharPosi + ", targeting: " + sPosi, 1);
+			_log("** SECESSION: distance from source to target: " + getPositionDistance(stringToVector3(sCharPosi), v3Posi), 1);
 			//_log("call effect area: " + area, 1);
 		}
 
@@ -113,13 +114,13 @@ class CallHandler : Tracker {
 		}
 		else if (sCall == "bombing_run.call") {
 			if (phase == "queue") {
-				if (sCharPosi !is null) {
+				if (sCharPosi.length() > 0) {
 					_log("Bombing run from " + sCharPosi + " to " + sPosi + " queued", 1);
 				} else { _log("Bombing run must be called by a character - requires caller pos to activate"); }
 			} else if (phase == "launch") {
 				// shouts to DoomMetal @ Discord RUNNING WITH RIFLES #modding
 				//bombingRun(event, caller_position, number, instance_class, instance_key, height)
-      			if (sCharPosi !is null) {
+				if (sCharPosi.length() > 0) {
 					bombingRun(event, sCharPosi, 10, "grenade", "grenadier_imp.projectile", 20.0);
 				} else { _log("Bombing run must be called by a character - requires caller pos to activate"); }
 			}
@@ -508,10 +509,10 @@ class CallHandler : Tracker {
 			}
 		}
 		else if (sCall == "wt_remote_hack_1.call") {
-			_log("*** SECESSION: WyreTek remote hack call block processing...", 1);
+			_log("** SECESSION: WyreTek remote hack call block processing...", 1);
 			// improve to detect hostile active turrets (enemy soldier 'turret') as well as offline turrets
 			if (phase == "queue") {
-				_log("*** SECESSION: locating turrets near: " + sPosi, 1);
+				_log("** SECESSION: locating turrets near: " + sPosi, 1);
 				array<const XmlElement@> foundTurrets;
 				// start with the offline turrets (vehicles)
 				for (uint i = 0; i < m_metagame.getFactions().size(); ++i) {
@@ -527,7 +528,7 @@ class CallHandler : Tracker {
 					Vector3 v3VehPosi = stringToVector3(vehPosi);
 					string sKey = vehInfo.getStringAttribute("key");
 					if (startsWith(sKey, "veh_empl_turret")) {
-						_log("*** SECESSION: found a turret at: " + vehPosi + ". (Re)Activating...", 1);
+						_log("** SECESSION: found a turret at: " + vehPosi + ". (Re)Activating...", 1);
 						termTurrets.push_back(id);
 					} else {
 						foundTurrets.erase(i);
@@ -565,12 +566,12 @@ class CallHandler : Tracker {
 					const XmlElement@ turretInfo = getVehicleInfo(m_metagame, turretID);
 					string turretPosi = turretInfo.getStringAttribute("position");
 					// remove turret vehicle/mesh from location
-					_log("*** SECESSION: Removing turret from " + turretPosi, 1);
+					_log("** SECESSION: Removing turret from " + turretPosi, 1);
 					string remComm = "<command class='remove_vehicle' id='" + turretID + "'></command>";
 					//string remComm = "<command class='update_vehicle' id='" + turretID + " health='-1''></command>";
 					m_metagame.getComms().send(remComm);
 					// place static turret char at location
-					_log("*** SECESSION: Placing a turret at " + turretPosi, 1);
+					_log("** SECESSION: Placing a turret at " + turretPosi, 1);
 					string spawnComm = "<command class='create_instance' instance_class='character' faction_id='0' position='" + turretPosi + "' instance_key='empl_turret' /></command>";
 					m_metagame.getComms().send(spawnComm);
 				}
@@ -620,7 +621,7 @@ class CallHandler : Tracker {
 
 	protected void handleVehicleDestroyEvent(const XmlElement@ event) {
 		// tracking for the hot potato in case of being discovered and thrown as a grenade
-		_log("*** SECESSION: call_handler handleVehicleDestroyEvent running",1);
+		_log("** SECESSION: call_handler handleVehicleDestroyEvent running",1);
 		if (event.getStringAttribute("vehicle_key") == "dummy_hot_potato.vehicle") {
 			// stop tracking the hot potato. It's blown up!
 			hpActive = false;
